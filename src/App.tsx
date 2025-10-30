@@ -6,7 +6,7 @@ import { Box } from './components/Box';
 import { tools } from './tools';
 import './App.css';
 import { NavigationButton } from './components/NavigationButton';
-import { VisuallyHidden } from '../styled-system/jsx';
+import { Flex, VisuallyHidden } from '../styled-system/jsx';
 
 export function App() {
   return (
@@ -29,7 +29,13 @@ export function App() {
             </Box>
           ))}
         </Stack>
-        <Suspense fallback={<div>Loading…</div>}>
+        <Suspense
+          fallback={
+            <Flex height="100vh" alignItems="center" justifyContent="center">
+              Loading…
+            </Flex>
+          }
+        >
           <Routes>
             <Route
               path="/"
