@@ -25,4 +25,13 @@ export const tools: Tool[] = [
       }))
     ),
   },
+  {
+    id: 'base64',
+    name: 'Base64 Encoder/Decoder',
+    component: lazy(() =>
+      import('./tools/Base64').then((m) => ({
+        default: m.Base64,
+      }))
+    ),
+  },
 ];
