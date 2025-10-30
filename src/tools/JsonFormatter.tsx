@@ -11,11 +11,13 @@ import { Flex } from '../components/Flex';
 import { Button } from '../components/Button';
 
 export function JsonFormatter() {
+  const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
   const [isCopied, setIsCopied] = useState(false);
 
   const handleChange = useCallback((value: string) => {
+    setInput(value);
     const formatJson = async () => {
       try {
         const formatted = await prettier.format(value, {
@@ -44,11 +46,22 @@ export function JsonFormatter() {
     void copyOutput();
   }, [output]);
 
+  const handleClear = useCallback(() => {
+    setInput('');
+    setOutput('');
+    setErrorMessage('');
+  }, []);
+
   return (
     <Grid gridTemplateColumns="1fr 1fr" gap="l" height="100vh" padding="s">
       <Stack gap="xs">
-        <Text>Input:</Text>
-        <Editor language="json" onChange={handleChange} />
+        <Flex justifyContent="space-between" alignItems="center">
+          <Text>Input:</Text>
+          <Button onClick={handleClear} disabled={input === ''}>
+            Clear
+          </Button>
+        </Flex>
+        <Editor value={input} language="json" onChange={handleChange} />
       </Stack>
       <Stack gap="xs" position="relative">
         {errorMessage && (
