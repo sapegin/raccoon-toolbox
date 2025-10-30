@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect } from 'react';
-import { diffWords, diffLines } from 'diff';
+import { diffChars, diffLines } from 'diff';
 import { Grid } from '../components/Grid';
 import { Editor } from '../components/Editor';
 import { Button } from '../components/Button';
@@ -39,19 +39,19 @@ export function TextDiff() {
       const part = lineDiff[index];
 
       if (part.removed && lineDiff[index + 1]?.added) {
-        // Found a removed line followed by an added line -- do word diff
+        // Found a removed line followed by an added line -- do character diff
         const removed = lineDiff[index];
         const added = lineDiff[index + 1];
-        const wordDiff = diffWords(removed.value, added.value);
+        const charDiff = diffChars(removed.value, added.value);
 
-        for (const word of wordDiff) {
-          const wordSafe = escapeHtml(word.value);
-          if (word.added) {
-            resultHtml += `<span class="${addedClass}">${wordSafe}</span>`;
-          } else if (word.removed) {
-            resultHtml += `<span class="${removedClass}">${wordSafe}</span>`;
+        for (const char of charDiff) {
+          const charSafe = escapeHtml(char.value);
+          if (char.added) {
+            resultHtml += `<span class="${addedClass}">${charSafe}</span>`;
+          } else if (char.removed) {
+            resultHtml += `<span class="${removedClass}">${charSafe}</span>`;
           } else {
-            resultHtml += wordSafe;
+            resultHtml += charSafe;
           }
         }
         // Skip both the removed and added parts
