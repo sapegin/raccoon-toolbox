@@ -1,43 +1,11 @@
-import { Suspense, type ReactNode } from 'react';
-import { Routes, Route, NavLink, Navigate } from 'react-router-dom';
+import { Suspense } from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { Grid } from './components/Grid';
 import { Stack } from './components/Stack';
 import { Box } from './components/Box';
 import { tools } from './tools';
 import './App.css';
-import { css } from '../styled-system/css';
-
-function NavigationButton({
-  to,
-  children,
-}: {
-  to: string;
-  children: ReactNode;
-}) {
-  return (
-    <NavLink
-      to={to}
-      className={css({
-        display: 'block',
-        px: 's',
-        py: 'xs',
-        borderRadius: 'button',
-        color: 'textForeground',
-        textDecoration: 'none',
-        _hover: {
-          color: 'activeForeground',
-          backgroundColor: 'hoverBackground',
-        },
-        '&.active': {
-          color: 'buttonForeground',
-          backgroundColor: 'activeBackground',
-        },
-      })}
-    >
-      {children}
-    </NavLink>
-  );
-}
+import { NavigationButton } from './components/NavigationButton';
 
 export function App() {
   return (
