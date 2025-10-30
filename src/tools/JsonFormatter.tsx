@@ -37,11 +37,9 @@ export function JsonFormatter() {
 
   const handleCopy = useCallback(() => {
     const copyOutput = async () => {
-      if (output) {
-        await navigator.clipboard.writeText(output);
-        setIsCopied(true);
-        setTimeout(() => setIsCopied(false), 2000);
-      }
+      setIsCopied(true);
+      setTimeout(() => setIsCopied(false), 2000);
+      await navigator.clipboard.writeText(output);
     };
     void copyOutput();
   }, [output]);
@@ -60,7 +58,9 @@ export function JsonFormatter() {
         )}
         <Flex justifyContent="space-between" alignItems="center">
           <Text>Output:</Text>
-          <Button onClick={handleCopy}>{isCopied ? 'Copied!' : 'Copy'}</Button>
+          <Button onClick={handleCopy} disabled={output === ''}>
+            {isCopied ? 'Copied!' : 'Copy'}
+          </Button>
         </Flex>
         <Editor value={output} language="json" editable={false} />
       </Stack>

@@ -1,8 +1,6 @@
-import { type ReactNode } from 'react';
-import { cva, type RecipeVariantProps } from '../../styled-system/css';
-import { Box, type BoxProps } from './Box';
+import { styled } from '../../styled-system/jsx';
 
-const button = cva({
+export const Button = styled('button', {
   base: {
     display: 'inline-block',
     borderWidth: 0,
@@ -19,6 +17,10 @@ const button = cva({
     },
     _active: {
       transform: 'translateY(1px)',
+    },
+    _disabled: {
+      opacity: 0.6,
+      pointerEvents: 'none',
     },
     _focusVisible: {
       outline: 'focus',
@@ -54,22 +56,8 @@ const button = cva({
       },
     },
   },
+  defaultVariants: {
+    variant: 'secondary',
+    size: 'small',
+  },
 });
-
-export type ButtonProps = BoxProps &
-  RecipeVariantProps<typeof button> & {
-    children: ReactNode;
-  };
-
-export function Button({
-  variant = 'secondary',
-  size = 'small',
-  children,
-  ...props
-}: ButtonProps) {
-  return (
-    <Box as="button" {...props} className={button({ variant, size })}>
-      {children}
-    </Box>
-  );
-}
