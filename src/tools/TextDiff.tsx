@@ -89,12 +89,10 @@ export function TextDiff() {
 
   const handleAClear = useCallback(() => {
     setTextA('');
-    setResult('');
   }, []);
 
   const handleBClear = useCallback(() => {
     setTextB('');
-    setResult('');
   }, []);
 
   return (

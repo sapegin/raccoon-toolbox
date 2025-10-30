@@ -4,6 +4,8 @@ import { Flex } from './Flex';
 import { Stack } from './Stack';
 import { Text } from './Text';
 
+// TODO: Labels should actually be <label>s and activate the editor or whatever
+
 export function Panel({
   label,
   actions,
