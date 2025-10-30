@@ -7,20 +7,38 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "tauri": "tauri"
+    "tauri": "tauri",
+    "lint": "eslint . --cache --fix",
+    "format": "prettier --log-level warn --write \"**/*.{js,cjs,mjs,ts,tsx,astro,css,json,md}\"",
+    "pretest": "npm run lint",
+    "test": "true",
+    "posttest": "npm run format",
+    "prepare": "husky"
   },
   "dependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
     "@tauri-apps/api": "^2",
-    "@tauri-apps/plugin-opener": "^2"
+    "@tauri-apps/plugin-opener": "^2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
+    "@tauri-apps/cli": "^2",
+    "@types/node": "24.9.2",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react": "^4.6.0",
+    "eslint": "^9.38.0",
+    "eslint-config-tamia": "^9.7.0",
+    "eslint-plugin-astro": "^1.4.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.6",
+    "prettier": "3.6.2",
     "typescript": "~5.8.3",
-    "vite": "^7.0.4",
-    "@tauri-apps/cli": "^2"
+    "vite": "^7.0.4"
+  },
+  "lint-staged": {
+    "*.{js,cjs,mjs,ts,tsx,astro,css,json,md}": "prettier --write",
+    "*.{js,cjs,mjs,ts,tsx,astro}": "eslint --cache --fix"
   }
 }
