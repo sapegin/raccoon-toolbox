@@ -13,6 +13,7 @@ const lightTheme = {
   green: '#9bae7e',
   teal: '#5f9b8d',
   blue: '#80a4be',
+  redContrast: '#c06159',
   orange: '#de9e59',
 };
 const darkTheme = {
@@ -29,6 +30,7 @@ const darkTheme = {
   green: '#558240',
   teal: '#4f9593',
   orange: '#b18433',
+  redContrast: '#ce574a',
   brightPink: '#ca5a83',
 };
 
@@ -40,6 +42,7 @@ export const colors = {
   activeForeground: lightTheme.gray060,
   border: lightTheme.gray140,
   buttonForeground: lightTheme.gray180,
+  errorForeground: lightTheme.redContrast,
   hoverBackground: lightTheme.gray160,
   lightBorder: lightTheme.gray160,
   lineHighlightBackground: lightTheme.gray170,
@@ -65,10 +68,11 @@ const colorsDark = {
   activeForeground: darkTheme.gray060,
   border: darkTheme.gray140,
   buttonForeground: darkTheme.gray180,
+  errorForeground: darkTheme.redContrast,
   hoverBackground: darkTheme.gray160,
   lightBorder: darkTheme.gray160,
   lineHighlightBackground: darkTheme.gray170,
-  secondaryTextForeground: lightTheme.gray100,
+  secondaryTextForeground: darkTheme.gray100,
   textBackground: darkTheme.gray180,
   textForeground: darkTheme.gray090,
   uiBackground: darkTheme.gray170,
@@ -79,7 +83,7 @@ const colorsDark = {
   codeString: darkTheme.green,
   codeValue: darkTheme.orange,
   codeOperator: darkTheme.teal,
-  codePunctuation: lightTheme.gray060,
+  codePunctuation: darkTheme.gray060,
 };
 
 export const lineHeights = {
@@ -108,9 +112,6 @@ export const theme = {
     extend: {
       tokens: {
         fonts: {
-          body: { value: "'Helvetica Neue', Arial, sans-serif" },
-          heading: { value: "'Mondwest-Regular', sans-serif" },
-          ui: { value: 'NeueBit, sans-serif' },
           code: { value: 'MonoLisa, monospace' },
         },
         fontSizes: {
@@ -166,40 +167,6 @@ export const theme = {
           listMargin: { value: '0' },
         },
       },
-    },
-  },
-
-  // TODO: Extract
-  // Code styles
-  globalCss: {
-    pre: {
-      display: 'block',
-      lineHeight: 'code',
-      fontSize: 's',
-      fontFamily: 'code',
-      fontStyle: 'normal',
-      whiteSpace: 'pre-wrap',
-      tabSize: 4,
-      textSizeAdjust: 'none',
-      // Expand background for dark themes
-      height: '100%',
-      marginInline: { base: '-m', tablet: '-s' },
-      padding: { base: 'm', tablet: 's' },
-      borderRadius: { tablet: 'default' },
-    },
-    'pre code': {
-      display: 'block',
-      fontSize: 'inherit',
-      fontStyle: 'inherit',
-      color: 'inherit',
-    },
-    '[data-highlighted-line]': {
-      backgroundColor: { base: '#f5f5f7', _osDark: '#3a3d40' },
-    },
-
-    // HACK: Override default Astro/Shiki styles
-    '.astro-code[style], .shiki[style]': {
-      overflowX: 'visible!important',
     },
   },
 } as const satisfies Config;

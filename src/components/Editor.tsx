@@ -21,7 +21,10 @@ interface EditorProps {
 
 const theme = EditorView.theme({
   '&': { height: '100%' },
-  '.cm-scroller': { overflow: 'auto' },
+  '.cm-scroller': {
+    overflow: 'auto',
+    fontFamily: 'var(--fonts-code)',
+  },
   '.cm-activeLine': {
     backgroundColor: 'var(--colors-line-highlight-background)',
   },
