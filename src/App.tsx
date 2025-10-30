@@ -16,6 +16,7 @@ export function App() {
       <Grid gridTemplateColumns="16rem auto" gap="m" px="s" height="100vh">
         <Stack
           as="ul"
+          gap="xs"
           padding="s"
           borderRight="1px solid"
           borderColor="lightBorder"
@@ -23,11 +24,11 @@ export function App() {
           backgroundColor="uiBackground"
         >
           {tools.map((tool) => (
-            <Box key={tool.id} as="li">
+            <li key={tool.id}>
               <NavigationButton to={`/${tool.id}`}>
                 {tool.name}
               </NavigationButton>
-            </Box>
+            </li>
           ))}
         </Stack>
         <Suspense
