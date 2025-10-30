@@ -30,6 +30,10 @@ export function NavigationButton({
         '&.active': {
           color: 'buttonForeground',
           backgroundColor: 'activeBackground',
+          _hover: {
+            color: 'buttonForeground',
+            backgroundColor: 'activeBackground',
+          },
         },
       })}
     >
