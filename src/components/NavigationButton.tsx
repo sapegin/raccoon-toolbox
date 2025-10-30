@@ -23,6 +23,10 @@ export function NavigationButton({
           color: 'activeForeground',
           backgroundColor: 'hoverBackground',
         },
+        _focusVisible: {
+          outline: 'focus',
+          outlineOffset: 'token(borderWidths.focusOutlineOffset)',
+        },
         '&.active': {
           color: 'buttonForeground',
           backgroundColor: 'activeBackground',
