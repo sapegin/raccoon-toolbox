@@ -1,13 +1,13 @@
-import { Suspense } from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
 import { Grid } from './components/Grid';
 import { Stack } from './components/Stack';
 import { Box } from './components/Box';
-import { Spinner } from './components/Spinner';
 import { tools } from './tools';
 import './App.css';
 import { NavigationButton } from './components/NavigationButton';
 import { Flex, VisuallyHidden } from '../styled-system/jsx';
+import { Router } from './components/Router';
+import { Suspense } from 'react';
+import { Spinner } from './components/Spinner';
 
 export function App() {
   return (
@@ -37,19 +37,7 @@ export function App() {
             </Flex>
           }
         >
-          <Routes>
-            <Route
-              path="/"
-              element={<Navigate to={`/${tools[0].id}`} replace />}
-            />
-            {tools.map((tool) => (
-              <Route
-                key={tool.id}
-                path={`/${tool.id}`}
-                element={<tool.component />}
-              />
-            ))}
-          </Routes>
+          <Router />
         </Suspense>
       </Grid>
     </>
