@@ -178,6 +178,12 @@ export const theme = {
           hover: { value: '0.1s' },
         },
       },
+      keyframes: {
+        spin: {
+          from: { transform: 'rotate(0deg)' },
+          to: { transform: 'rotate(360deg)' },
+        },
+      },
       semanticTokens: {
         colors: createPalette(colors, colorsDark),
         fontSizes: {

@@ -3,6 +3,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import { Grid } from './components/Grid';
 import { Stack } from './components/Stack';
 import { Box } from './components/Box';
+import { Spinner } from './components/Spinner';
 import { tools } from './tools';
 import './App.css';
 import { NavigationButton } from './components/NavigationButton';
@@ -32,7 +33,7 @@ export function App() {
         <Suspense
           fallback={
             <Flex height="100vh" alignItems="center" justifyContent="center">
-              Loading…
+              <Spinner />
             </Flex>
           }
         >
