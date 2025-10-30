@@ -65,7 +65,7 @@ const squirrelsongHighlighting = syntaxHighlighting(
 
 export function Editor({
   value = '',
-  language = 'json',
+  language,
   editable = true,
   onChange,
 }: EditorProps) {
@@ -77,7 +77,7 @@ export function Editor({
       return;
     }
 
-    const languageExtension = json();
+    const languageExtension = language === 'json' ? json() : undefined;
 
     const updateListener = EditorView.updateListener.of((update) => {
       if (update.docChanged && onChange) {
@@ -99,7 +99,7 @@ export function Editor({
         EditorView.editable.of(editable),
         squirrelsongHighlighting,
         theme,
-      ],
+      ].filter((x) => x !== undefined),
     });
 
     const view = new EditorView({

@@ -16,4 +16,13 @@ export const tools: Tool[] = [
       }))
     ),
   },
+  {
+    id: 'text-diff',
+    name: 'Text Diff',
+    component: lazy(() =>
+      import('./tools/TextDiff').then((m) => ({
+        default: m.TextDiff,
+      }))
+    ),
+  },
 ];
