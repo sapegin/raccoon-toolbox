@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { Grid } from '../components/Grid';
 import prettier from 'prettier/standalone';
 import prettierPluginEstree from 'prettier/plugins/estree';
@@ -10,12 +10,19 @@ import { ErrorMessage } from '../components/ErrorMessage';
 import { Flex } from '../components/Flex';
 import { Button } from '../components/Button';
 import { VisuallyHidden } from '../../styled-system/jsx';
+import { usePersistentState } from '../hooks/usePersistentState';
 
 export function JsonFormatter() {
-  const [input, setInput] = useState('');
+  const [input, setInput] = usePersistentState('jsonFormatter.input', '');
   const [output, setOutput] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
   const [isCopied, setIsCopied] = useState(false);
+
+  useEffect(() => {
+    if (input !== '') {
+      handleChange(input);
+    }
+  }, []);
 
   const handleChange = useCallback((value: string) => {
     setInput(value);
