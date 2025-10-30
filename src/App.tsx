@@ -1,8 +1,7 @@
 import { Grid } from './components/Grid';
 import { Stack } from './components/Stack';
-import { Box } from './components/Box';
 import { tools } from './tools';
-import './App.css';
+import './styles.css';
 import { NavigationButton } from './components/NavigationButton';
 import { Flex, VisuallyHidden } from '../styled-system/jsx';
 import { Router } from './components/Router';
