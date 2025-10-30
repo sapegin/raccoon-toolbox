@@ -21,7 +21,9 @@ interface EditorProps {
 }
 
 const theme = EditorView.theme({
-  '&': { height: '100%' },
+  '&': {
+    height: '100%',
+  },
   '.cm-scroller': {
     overflow: 'auto',
     fontFamily: 'var(--fonts-code)',
@@ -124,5 +126,13 @@ export function Editor({
     }
   }, [value]);
 
-  return <Box ref={editorRef} flex={1} height="100%" />;
+  return (
+    <Box
+      ref={editorRef}
+      height="100%"
+      minHeight={0}
+      border="1px solid"
+      borderColor="lightBorder"
+    />
+  );
 }

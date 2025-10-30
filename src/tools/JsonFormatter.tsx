@@ -64,7 +64,7 @@ export function JsonFormatter() {
     <>
       <VisuallyHidden as="h2">JSON Formatter</VisuallyHidden>
       <Grid gridTemplateColumns="1fr 1fr" gap="m" height="100vh" padding="s">
-        <Stack gap="xs">
+        <Stack gap="xs" minHeight={0}>
           <Flex justifyContent="space-between" alignItems="center">
             <Text>Input:</Text>
             <Button onClick={handleClear} disabled={input === ''}>
@@ -73,7 +73,7 @@ export function JsonFormatter() {
           </Flex>
           <Editor value={input} language="json" onChange={handleChange} />
         </Stack>
-        <Stack gap="xs" position="relative">
+        <Stack gap="xs" minHeight={0} position="relative">
           {errorMessage && (
             <ErrorMessage position="absolute" inset={0} zIndex={99} p="m">
               {errorMessage}
