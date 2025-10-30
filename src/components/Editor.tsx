@@ -1,5 +1,3 @@
-import { javascript } from '@codemirror/lang-javascript';
-import { css } from '@codemirror/lang-css';
 import { json } from '@codemirror/lang-json';
 import { search, searchKeymap } from '@codemirror/search';
 import { HighlightStyle, syntaxHighlighting } from '@codemirror/language';
@@ -16,7 +14,7 @@ import { Box } from './Box';
 
 interface EditorProps {
   value?: string;
-  language?: 'javascript' | 'css' | 'json';
+  language?: 'json';
   editable?: boolean;
   onChange?: (value: string) => void;
 }
@@ -53,26 +51,19 @@ const squirrelsongHighlighting = syntaxHighlighting(
 
 export function Editor({
   value = '',
-  language = 'javascript',
+  language = 'json',
   editable = true,
   onChange,
 }: EditorProps) {
   const editorRef = useRef<HTMLDivElement>(null);
   const viewRef = useRef<EditorView | null>(null);
 
-  useEffect(() => console.log('editor created'), []);
-
   useEffect(() => {
     if (editorRef.current === null) {
       return;
     }
 
-    const languageExtension =
-      language === 'javascript'
-        ? javascript({ jsx: true, typescript: true })
-        : language === 'css'
-          ? css()
-          : json();
+    const languageExtension = json();
 
     const updateListener = EditorView.updateListener.of((update) => {
       if (update.docChanged && onChange) {

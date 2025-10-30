@@ -10,11 +10,7 @@ import { Editor } from '../components/Editor';
 export function JsonFormatter() {
   const [output, setOutput] = useState('');
 
-  useEffect(() => console.log('parent created'), []);
-
   const handleChange = useCallback((value: string) => {
-    console.log('🔥 handleChange', handleChange);
-
     const formatJson = async () => {
       try {
         const formatted = await prettier.format(value, {
