@@ -1,8 +1,7 @@
-import { type ElementType } from 'react';
 import { cva, type RecipeVariantProps } from '../../styled-system/css';
-import { createBox, type BoxProps } from './Box';
+import { Box, type BoxProps } from './Box';
 
-const text = cva({
+export const text = cva({
   base: {
     color: 'text',
   },
@@ -73,18 +72,9 @@ const text = cva({
   },
 });
 
-export type TextProps<C extends ElementType> = Omit<BoxProps<C>, 'className'> &
+export type TextProps = Omit<BoxProps, 'className'> &
   RecipeVariantProps<typeof text>;
 
-export function Text<C extends ElementType = 'p'>({
-  variant = 'body',
-  ...props
-}: TextProps<C>) {
-  return createBox(
-    {
-      ...props,
-      className: text({ variant }),
-    },
-    'p'
-  );
+export function Text({ variant = 'body', ...props }: TextProps) {
+  return <Box as="p" {...props} className={text({ variant })} />;
 }

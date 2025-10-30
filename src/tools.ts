@@ -11,7 +11,9 @@ export const tools: Tool[] = [
     id: 'json-formatter',
     name: 'JSON Formatter',
     component: lazy(() =>
-      import('./tools/JsonFormatter').then((m) => ({ default: m.JsonFormatter }))
+      import('./tools/JsonFormatter').then((m) => ({
+        default: m.JsonFormatter,
+      }))
     ),
   },
 ];

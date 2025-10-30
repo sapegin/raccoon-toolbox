@@ -5,6 +5,7 @@ import { Stack } from './components/Stack';
 import { Box } from './components/Box';
 import { tools } from './tools';
 import './App.css';
+import { css } from '../styled-system/css';
 
 function NavigationButton({
   to,
@@ -14,28 +15,27 @@ function NavigationButton({
   children: ReactNode;
 }) {
   return (
-    <Box
-      as={NavLink}
-      display="block"
+    <NavLink
       to={to}
-      px="s"
-      py="xs"
-      borderRadius="button"
-      color="textForeground"
-      textDecoration="none"
-      _hover={{
-        color: 'activeForeground',
-        backgroundColor: 'hoverBackground',
-      }}
-      css={{
+      className={css({
+        display: 'block',
+        px: 's',
+        py: 'xs',
+        borderRadius: 'button',
+        color: 'textForeground',
+        textDecoration: 'none',
+        _hover: {
+          color: 'activeForeground',
+          backgroundColor: 'hoverBackground',
+        },
         '&.active': {
           color: 'buttonForeground',
           backgroundColor: 'activeBackground',
         },
-      }}
+      })}
     >
       {children}
-    </Box>
+    </NavLink>
   );
 }
 

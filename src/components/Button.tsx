@@ -1,4 +1,4 @@
-import { type ElementType, type ReactNode } from 'react';
+import { type ReactNode } from 'react';
 import { cva, type RecipeVariantProps } from '../../styled-system/css';
 import { Box, type BoxProps } from './Box';
 
@@ -62,7 +62,7 @@ const button = cva({
   },
 });
 
-export type ButtonProps<C extends ElementType> = BoxProps<C> &
+export type ButtonProps = BoxProps &
   RecipeVariantProps<typeof button> & {
     children: ReactNode;
   };
@@ -89,13 +89,12 @@ function Pixel({
   );
 }
 
-export function Button<C extends ElementType = 'button'>({
+export function Button({
   variant = 'medium',
   children,
   ...props
-}: ButtonProps<C>) {
+}: ButtonProps) {
   return (
-    // @ts-expect-error: I have no idea what's wrong here but it works...
     <Box {...props} className={button({ variant })}>
       {children}
       {/* Top left corner */}

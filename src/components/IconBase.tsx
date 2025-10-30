@@ -1,23 +1,25 @@
-import type { PropsWithoutRef } from 'react';
-import { Box, type BoxProps } from './Box';
+import type { SVGProps } from 'react';
+import { css } from '../../styled-system/css';
+import type { BoxProps } from './Box';
 
-export type BaseIconProps = Omit<
-  PropsWithoutRef<BoxProps<'svg'>>,
-  | 'aria-hidden'
-  | 'fill'
-  | 'height'
-  | 'preserveAspectRatio'
-  | 'viewBox'
-  | 'width'
-> & {
-  width: number;
-  height: number;
-  viewBox: {
+export type BaseIconProps = Pick<BoxProps, 'display' | 'verticalAlign'> &
+  Omit<
+    SVGProps<SVGSVGElement>,
+    | 'aria-hidden'
+    | 'fill'
+    | 'height'
+    | 'preserveAspectRatio'
+    | 'viewBox'
+    | 'width'
+  > & {
     width: number;
     height: number;
+    viewBox: {
+      width: number;
+      height: number;
+    };
+    fill?: string;
   };
-  fill?: string;
-};
 
 /**
  * Base for SVG icons:
@@ -35,17 +37,18 @@ export function IconBase({
   ...props
 }: BaseIconProps) {
   return (
-    <Box
-      as="svg"
+    <svg
       {...props}
-      display={display}
-      verticalAlign={verticalAlign}
+      className={css({
+        display,
+        verticalAlign,
+      })}
       viewBox={`0 0 ${viewBox.width} ${viewBox.height}`}
       fill={fill}
       preserveAspectRatio="xMidYMid meet"
       aria-hidden="true"
     >
       {children}
-    </Box>
+    </svg>
   );
 }
