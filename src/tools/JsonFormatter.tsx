@@ -7,10 +7,13 @@ import { Stack } from '../components/Stack';
 import { Text } from '../components/Text';
 import { Editor } from '../components/Editor';
 import { ErrorMessage } from '../components/ErrorMessage';
+import { Flex } from '../components/Flex';
+import { Button } from '../components/Button';
 
 export function JsonFormatter() {
   const [output, setOutput] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const [isCopied, setIsCopied] = useState(false);
 
   const handleChange = useCallback((value: string) => {
     const formatJson = async () => {
@@ -32,6 +35,17 @@ export function JsonFormatter() {
     void formatJson();
   }, []);
 
+  const handleCopy = useCallback(() => {
+    const copyOutput = async () => {
+      if (output) {
+        await navigator.clipboard.writeText(output);
+        setIsCopied(true);
+        setTimeout(() => setIsCopied(false), 2000);
+      }
+    };
+    void copyOutput();
+  }, [output]);
+
   return (
     <Grid gridTemplateColumns="1fr 1fr" gap="l" height="100vh" padding="s">
       <Stack gap="xs">
@@ -44,7 +58,10 @@ export function JsonFormatter() {
             {errorMessage}
           </ErrorMessage>
         )}
-        <Text>Output:</Text>
+        <Flex justifyContent="space-between" alignItems="center">
+          <Text>Output:</Text>
+          <Button onClick={handleCopy}>{isCopied ? 'Copied!' : 'Copy'}</Button>
+        </Flex>
         <Editor value={output} language="json" editable={false} />
       </Stack>
     </Grid>

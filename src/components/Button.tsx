@@ -4,15 +4,9 @@ import { Box, type BoxProps } from './Box';
 
 const button = cva({
   base: {
-    position: 'relative',
     display: 'inline-block',
-    px: { base: 'm', tablet: 'l' },
-    pt: { base: 'm', tablet: 'calc(token(spacing.m) + token(spacing.xs))' },
-    pb: { base: 'm', tablet: 'm' },
-    fontFamily: 'ui',
-    color: 'text',
-    borderStyle: 'solid',
-    borderWidth: 2,
+    borderWidth: 0,
+    borderRadius: 'button',
     lineHeight: '1rem',
     textDecoration: 'none',
     userSelect: 'none',
@@ -22,7 +16,6 @@ const button = cva({
     transitionProperty: 'all',
     _hover: {
       cursor: 'pointer',
-      color: 'accent',
     },
     _active: {
       transform: 'translateY(1px)',
@@ -38,25 +31,26 @@ const button = cva({
   },
   variants: {
     variant: {
-      medium: {
-        backgroundColor: 'background',
-        height: '2.2rem',
-        py: 's',
-        fontSize: 'ui',
-      },
-      large: {
-        backgroundColor: 'background',
-        py: 'm',
-        fontSize: 'xl',
-      },
-      coffee: {
-        background: 'coffeeBackground',
-        color: 'coffeeText',
-        py: 'm',
-        fontSize: 'xl',
+      primary: {
+        color: 'buttonForeground',
+        backgroundColor: 'buttonBackground',
         _hover: {
-          color: 'coffeeHover',
+          backgroundColor: 'buttonHoverBackground',
         },
+      },
+      secondary: {
+        color: 'secondaryButtonForeground',
+        backgroundColor: 'secondaryButtonBackground',
+        _hover: {
+          backgroundColor: 'secondaryButtonHoverBackground',
+        },
+      },
+    },
+    size: {
+      small: {
+        height: '1.4rem',
+        px: 's',
+        fontSize: 'medium',
       },
     },
   },
@@ -67,59 +61,15 @@ export type ButtonProps = BoxProps &
     children: ReactNode;
   };
 
-function Pixel({
-  type = 'print',
-  ...props
-}: {
-  type?: 'print' | 'erase';
-  top?: number;
-  right?: number;
-  bottom?: number;
-  left?: number;
-}) {
-  return (
-    <Box
-      {...props}
-      position="absolute"
-      width={2}
-      height={2}
-      bg={type === 'print' ? 'currentColor' : 'background'}
-      css={{ content: `''` }}
-    />
-  );
-}
-
 export function Button({
-  variant = 'medium',
+  variant = 'secondary',
+  size = 'small',
   children,
   ...props
 }: ButtonProps) {
   return (
-    <Box {...props} className={button({ variant })}>
+    <Box as="button" {...props} className={button({ variant, size })}>
       {children}
-      {/* Top left corner */}
-      <Pixel top={0} left={0} />
-      <Pixel top={-2} left={-2} type="erase" />
-      <Pixel top={0} left={-2} type="erase" />
-      <Pixel top={-2} left={0} type="erase" />
-
-      {/* Top right corner */}
-      <Pixel top={0} right={0} />
-      <Pixel top={-2} right={-2} type="erase" />
-      <Pixel top={0} right={-2} type="erase" />
-      <Pixel top={-2} right={0} type="erase" />
-
-      {/* Bottom left corner */}
-      <Pixel bottom={0} left={0} />
-      <Pixel bottom={-2} left={-2} type="erase" />
-      <Pixel bottom={0} left={-2} type="erase" />
-      <Pixel bottom={-2} left={0} type="erase" />
-
-      {/* Bottom right corner */}
-      <Pixel bottom={0} right={0} />
-      <Pixel bottom={-2} right={-2} type="erase" />
-      <Pixel bottom={0} right={-2} type="erase" />
-      <Pixel bottom={-2} right={0} type="erase" />
     </Box>
   );
 }
