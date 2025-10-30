@@ -24,6 +24,9 @@ const theme = EditorView.theme({
   '&': {
     height: '100%',
   },
+  '&.cm-focused': {
+    outline: '1px solid var(--colors-active-border)',
+  },
   '.cm-scroller': {
     overflow: 'auto',
     fontFamily: 'var(--fonts-code)',
@@ -36,9 +39,9 @@ const theme = EditorView.theme({
       'radial-gradient(circle at 50% 55%, var(--colors-light-border) 20%, transparent 5%)',
   },
   '.cm-gutters': {
-    color: 'var(--colors-secondary-text-foreground)',
-    backgroundColor: 'var(--colors-ui-background)',
-    borderColor: 'var(--colors-light-border)',
+    color: 'var(--colors-disabled-foreground)',
+    backgroundColor: 'transparent',
+    borderColor: 'transparent',
   },
 });
 
