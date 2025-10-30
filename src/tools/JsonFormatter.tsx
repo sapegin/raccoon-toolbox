@@ -9,6 +9,7 @@ import { Editor } from '../components/Editor';
 import { ErrorMessage } from '../components/ErrorMessage';
 import { Flex } from '../components/Flex';
 import { Button } from '../components/Button';
+import { VisuallyHidden } from '../../styled-system/jsx';
 
 export function JsonFormatter() {
   const [input, setInput] = useState('');
@@ -53,30 +54,33 @@ export function JsonFormatter() {
   }, []);
 
   return (
-    <Grid gridTemplateColumns="1fr 1fr" gap="l" height="100vh" padding="s">
-      <Stack gap="xs">
-        <Flex justifyContent="space-between" alignItems="center">
-          <Text>Input:</Text>
-          <Button onClick={handleClear} disabled={input === ''}>
-            Clear
-          </Button>
-        </Flex>
-        <Editor value={input} language="json" onChange={handleChange} />
-      </Stack>
-      <Stack gap="xs" position="relative">
-        {errorMessage && (
-          <ErrorMessage position="absolute" inset={0} zIndex={99} p="m">
-            {errorMessage}
-          </ErrorMessage>
-        )}
-        <Flex justifyContent="space-between" alignItems="center">
-          <Text>Output:</Text>
-          <Button onClick={handleCopy} disabled={output === ''}>
-            {isCopied ? 'Copied!' : 'Copy'}
-          </Button>
-        </Flex>
-        <Editor value={output} language="json" editable={false} />
-      </Stack>
-    </Grid>
+    <>
+      <VisuallyHidden as="h2">JSON Formatter</VisuallyHidden>
+      <Grid gridTemplateColumns="1fr 1fr" gap="m" height="100vh" padding="s">
+        <Stack gap="xs">
+          <Flex justifyContent="space-between" alignItems="center">
+            <Text>Input:</Text>
+            <Button onClick={handleClear} disabled={input === ''}>
+              Clear
+            </Button>
+          </Flex>
+          <Editor value={input} language="json" onChange={handleChange} />
+        </Stack>
+        <Stack gap="xs" position="relative">
+          {errorMessage && (
+            <ErrorMessage position="absolute" inset={0} zIndex={99} p="m">
+              {errorMessage}
+            </ErrorMessage>
+          )}
+          <Flex justifyContent="space-between" alignItems="center">
+            <Text>Output:</Text>
+            <Button onClick={handleCopy} disabled={output === ''}>
+              {isCopied ? 'Copied!' : 'Copy'}
+            </Button>
+          </Flex>
+          <Editor value={output} language="json" editable={false} />
+        </Stack>
+      </Grid>
+    </>
   );
 }
