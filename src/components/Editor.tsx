@@ -47,6 +47,7 @@ const squirrelsongHighlighting = syntaxHighlighting(
     { tag: tags.regexp, color: 'var(--colors-code-string)' },
     { tag: tags.number, color: 'var(--colors-code-value)' },
     { tag: tags.bool, color: 'var(--colors-code-value)' },
+    { tag: tags.null, color: 'var(--colors-code-value)' },
     { tag: tags.operator, color: 'var(--colors-code-operator)' },
     { tag: tags.punctuation, color: 'var(--colors-code-punctuation)' },
   ])
