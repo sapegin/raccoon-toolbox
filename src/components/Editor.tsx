@@ -7,6 +7,7 @@ import {
   keymap,
   lineNumbers,
   highlightActiveLine,
+  highlightWhitespace,
 } from '@codemirror/view';
 import { EditorState } from '@codemirror/state';
 import { useRef, useEffect } from 'react';
@@ -27,6 +28,10 @@ const theme = EditorView.theme({
   },
   '.cm-activeLine': {
     backgroundColor: 'var(--colors-line-highlight-background)',
+  },
+  '.cm-highlightSpace': {
+    backgroundImage:
+      'radial-gradient(circle at 50% 55%, var(--colors-light-border) 20%, transparent 5%)',
   },
   '.cm-gutters': {
     color: 'var(--colors-secondary-text-foreground)',
@@ -78,14 +83,15 @@ export function Editor({
     const state = EditorState.create({
       doc: value,
       extensions: [
+        languageExtension,
+        updateListener,
         lineNumbers(),
         highlightActiveLine(),
-        languageExtension,
+        highlightWhitespace(),
         search(),
         keymap.of(searchKeymap),
         EditorView.lineWrapping,
         EditorView.editable.of(editable),
-        updateListener,
         squirrelsongHighlighting,
         theme,
       ],
