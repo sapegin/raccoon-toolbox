@@ -45,7 +45,7 @@ export function Editor({
       onChange={handleChange}
       extensions={[getLanguageExtension(), search(), keymap.of(searchKeymap)]}
       height="100%"
-      theme={isDark ? "dark" : "light"}
+      theme={isDark ? 'dark' : 'light'}
     />
   );
 }

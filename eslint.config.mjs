@@ -7,6 +7,6 @@ export default [
   ...eslintPluginAstro.configs.recommended,
   jsxAccessibility.flatConfigs.strict,
   {
-    ignores: ['src-tauri/', 'assets/', 'dist/', 'dist-ssr/'],
+    ignores: ['src-tauri/', 'assets/', 'styled-system/', 'dist/', 'dist-ssr/'],
   },
 ];
