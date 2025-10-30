@@ -1,6 +1,5 @@
 import { type ReactNode } from 'react';
 import { NavLink } from 'react-router-dom';
-import './App.css';
 import { css } from '../../styled-system/css';
 
 export function NavigationButton({
