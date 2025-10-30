@@ -11,6 +11,7 @@ import { Flex } from '../components/Flex';
 import { Button } from '../components/Button';
 import { VisuallyHidden } from '../../styled-system/jsx';
 import { usePersistentState } from '../hooks/usePersistentState';
+import { Panel } from '../components/Panel';
 
 export function JsonFormatter() {
   const [input, setInput] = usePersistentState('jsonFormatter.input', '');
@@ -64,29 +65,27 @@ export function JsonFormatter() {
     <>
       <VisuallyHidden as="h2">JSON Formatter</VisuallyHidden>
       <Grid gridTemplateColumns="1fr 1fr" gap="m" height="100vh" padding="s">
-        <Stack gap="xs" minHeight={0}>
-          <Flex justifyContent="space-between" alignItems="center">
-            <Text>Input:</Text>
+        <Panel
+          label="Input"
+          actions={
             <Button onClick={handleClear} disabled={input === ''}>
               Clear
             </Button>
-          </Flex>
+          }
+        >
           <Editor value={input} language="json" onChange={handleChange} />
-        </Stack>
-        <Stack gap="xs" minHeight={0} position="relative">
-          {errorMessage && (
-            <ErrorMessage position="absolute" inset={0} zIndex={99} p="m">
-              {errorMessage}
-            </ErrorMessage>
-          )}
-          <Flex justifyContent="space-between" alignItems="center">
-            <Text>Output:</Text>
+        </Panel>
+        <Panel
+          label="Output"
+          errorMessage={errorMessage}
+          actions={
             <Button onClick={handleCopy} disabled={output === ''}>
               {isCopied ? 'Copied!' : 'Copy'}
             </Button>
-          </Flex>
+          }
+        >
           <Editor value={output} language="json" editable={false} />
-        </Stack>
+        </Panel>
       </Grid>
     </>
   );
