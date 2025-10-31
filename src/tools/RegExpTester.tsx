@@ -10,6 +10,7 @@ import { Input } from '../components/Input';
 
 // TODO: Add a button to show cheat sheet
 // TODO: Add a button to show docs
+// TODO: Add a button to show help for the f
 
 const defaultFormatter = String.raw`$0\n`;
 
