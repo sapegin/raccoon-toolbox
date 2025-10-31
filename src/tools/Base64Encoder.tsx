@@ -10,9 +10,12 @@ import { CopyButton } from '../components/CopyButton';
 
 type Mode = 'encode' | 'decode';
 
-export function Base64() {
-  const [input, setInput] = usePersistentState('base64.input', '');
-  const [mode, setMode] = usePersistentState<Mode>('base64.mode', 'encode');
+export function Base64Encoder() {
+  const [input, setInput] = usePersistentState('base64Encoder.input', '');
+  const [mode, setMode] = usePersistentState<Mode>(
+    'base64Encoder.mode',
+    'encode'
+  );
   const [output, setOutput] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
@@ -61,7 +64,7 @@ export function Base64() {
 
   return (
     <>
-      <VisuallyHidden as="h2">Base64 Encoder/Decoder</VisuallyHidden>
+      <VisuallyHidden as="h2">Base64 encoder/decoder</VisuallyHidden>
       <Grid gridTemplateColumns="1fr 1fr" gap="m" height="100vh" padding="s">
         <Panel
           label="Input"

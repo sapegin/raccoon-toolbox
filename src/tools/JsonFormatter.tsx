@@ -50,7 +50,7 @@ export function JsonFormatter() {
 
   return (
     <>
-      <VisuallyHidden as="h2">JSON Formatter</VisuallyHidden>
+      <VisuallyHidden as="h2">JSON formatter</VisuallyHidden>
       <Grid gridTemplateColumns="1fr 1fr" gap="m" height="100vh" padding="s">
         <Panel
           label="Input"

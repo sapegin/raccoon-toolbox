@@ -8,8 +8,17 @@ export interface Tool {
 
 export const tools: Tool[] = [
   {
+    id: 'base64-encoder',
+    name: 'Base64 encoder/decoder',
+    component: lazy(() =>
+      import('./tools/Base64Encoder').then((m) => ({
+        default: m.Base64Encoder,
+      }))
+    ),
+  },
+  {
     id: 'json-formatter',
-    name: 'JSON Formatter',
+    name: 'JSON formatter',
     component: lazy(() =>
       import('./tools/JsonFormatter').then((m) => ({
         default: m.JsonFormatter,
@@ -18,7 +27,7 @@ export const tools: Tool[] = [
   },
   {
     id: 'text-diff',
-    name: 'Text Diff',
+    name: 'Text diff',
     component: lazy(() =>
       import('./tools/TextDiff').then((m) => ({
         default: m.TextDiff,
@@ -26,17 +35,8 @@ export const tools: Tool[] = [
     ),
   },
   {
-    id: 'base64',
-    name: 'Base64 Encoder/Decoder',
-    component: lazy(() =>
-      import('./tools/Base64').then((m) => ({
-        default: m.Base64,
-      }))
-    ),
-  },
-  {
     id: 'url-encoder',
-    name: 'URL Encoder/Decoder',
+    name: 'URL encoder/decoder',
     component: lazy(() =>
       import('./tools/UrlEncoder').then((m) => ({
         default: m.UrlEncoder,

@@ -61,7 +61,7 @@ export function UrlEncoder() {
 
   return (
     <>
-      <VisuallyHidden as="h2">URL Encoder/Decoder</VisuallyHidden>
+      <VisuallyHidden as="h2">URL encoder/decoder</VisuallyHidden>
       <Grid gridTemplateColumns="1fr 1fr" gap="m" height="100vh" padding="s">
         <Panel
           label="Input"

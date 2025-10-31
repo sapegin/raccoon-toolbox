@@ -97,7 +97,7 @@ export function TextDiff() {
 
   return (
     <>
-      <VisuallyHidden as="h2">Text Diff</VisuallyHidden>
+      <VisuallyHidden as="h2">Text diff</VisuallyHidden>
       <Grid gridTemplateRows="1fr 1fr" gap="m" height="100vh" padding="s">
         <Grid gridTemplateColumns="1fr 1fr" gap="m">
           <Panel
