@@ -35,6 +35,15 @@ export const tools: Tool[] = [
     ),
   },
   {
+    id: 'regexp-tester',
+    name: 'RegExp tester',
+    component: lazy(() =>
+      import('./tools/RegExpTester').then((m) => ({
+        default: m.RegExpTester,
+      }))
+    ),
+  },
+  {
     id: 'text-diff',
     name: 'Text diff',
     component: lazy(() =>

@@ -19,12 +19,14 @@ export function Panel({
   children: ReactNode;
 }) {
   return (
-    <Stack gap="xs" minHeight={0}>
+    <Stack gap="xs" minHeight={0} height="100%">
       <Flex justifyContent="space-between" alignItems="center">
         <Text as="h3">{label}</Text>
-        <Stack direction="row" gap="s">
-          {actions}
-        </Stack>
+        {actions && (
+          <Stack direction="row" gap="s">
+            {actions}
+          </Stack>
+        )}
       </Flex>
       <Box position="relative" height="100%" minHeight={0}>
         {errorMessage && (
