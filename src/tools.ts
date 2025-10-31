@@ -88,4 +88,13 @@ export const tools: Tool[] = [
       }))
     ),
   },
+  {
+    id: 'url-parser',
+    name: 'URL parser',
+    component: lazy(() =>
+      import('./tools/UrlParser').then((m) => ({
+        default: m.UrlParser,
+      }))
+    ),
+  },
 ];
