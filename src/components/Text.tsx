@@ -1,5 +1,5 @@
-import { cva, type RecipeVariantProps } from '../../styled-system/css';
-import { Box, type BoxProps } from './Box';
+import { cva } from '../../styled-system/css';
+import { styled } from '../../styled-system/jsx';
 
 export const text = cva({
   base: {
@@ -58,23 +58,20 @@ export const text = cva({
         lineHeight: 'base',
         letterSpacing: 'base',
       },
-      flag: {
+      error: {
         fontFamily: 'body',
         fontSize: 'base',
         fontStyle: 'normal',
-        fontWeight: 'bold',
+        fontWeight: 'normal',
         lineHeight: 'base',
         letterSpacing: 'base',
-        textTransform: 'uppercase',
-        color: 'secondary',
+        color: 'errorForeground',
       },
     },
   },
+  defaultVariants: {
+    variant: 'body',
+  },
 });
 
-export type TextProps = Omit<BoxProps, 'className'> &
-  RecipeVariantProps<typeof text>;
-
-export function Text({ variant = 'body', ...props }: TextProps) {
-  return <Box as="p" {...props} className={text({ variant })} />;
-}
+export const Text = styled('p', text);

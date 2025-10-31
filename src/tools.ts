@@ -17,6 +17,15 @@ export const tools: Tool[] = [
     ),
   },
   {
+    id: 'color-converter',
+    name: 'Color converter',
+    component: lazy(() =>
+      import('./tools/ColorConverter').then((m) => ({
+        default: m.ColorConverter,
+      }))
+    ),
+  },
+  {
     id: 'json-formatter',
     name: 'JSON formatter',
     component: lazy(() =>

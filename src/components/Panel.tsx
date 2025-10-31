@@ -5,8 +5,6 @@ import { Stack } from './Stack';
 import { Text } from './Text';
 import { Box } from './Box';
 
-// TODO: Labels should actually be <label>s and activate the editor or whatever
-
 export function Panel({
   label,
   actions,
@@ -23,7 +21,7 @@ export function Panel({
   return (
     <Stack gap="xs" minHeight={0}>
       <Flex justifyContent="space-between" alignItems="center">
-        <Text>{label}</Text>
+        <Text as="h3">{label}</Text>
         <Stack direction="row" gap="s">
           {actions}
         </Stack>
