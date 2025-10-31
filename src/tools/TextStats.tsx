@@ -12,10 +12,10 @@ import { calculateTextStats, type TextStats } from '../util/text-stats';
 function StatItem({ label, value }: { label: string; value: string | number }) {
   return (
     <Stack>
-      <Text as="dt" fontSize="s" color="textForeground">
+      <Text as="dt" variant="small">
         {label}
       </Text>
-      <Text as="dd" fontSize="l" fontWeight="medium">
+      <Text as="dd" variant="large">
         {value}
       </Text>
     </Stack>

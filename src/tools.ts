@@ -44,6 +44,15 @@ export const tools: Tool[] = [
     ),
   },
   {
+    id: 'string-case-converter',
+    name: 'String case converter',
+    component: lazy(() =>
+      import('./tools/StringCaseConverter').then((m) => ({
+        default: m.StringCaseConverter,
+      }))
+    ),
+  },
+  {
     id: 'text-diff',
     name: 'Text diff',
     component: lazy(() =>
