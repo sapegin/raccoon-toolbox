@@ -9,7 +9,7 @@ const ToggleButtonContainer = styled('div', {
     borderRadius: 'button',
     overflow: 'hidden',
     border: '1px solid',
-    borderColor: 'primaryButtonBackground',
+    borderColor: 'lightBorder',
   },
 });
 
@@ -30,8 +30,8 @@ const ToggleButtonLabel = styled('label', {
     height: 'calc(1.4rem - 2px)',
     px: 's',
     fontSize: 'medium',
-    color: 'secondaryButtonForeground',
-    backgroundColor: 'secondaryButtonBackground',
+    color: 'textForeground',
+    backgroundColor: 'textBackground',
     borderWidth: 0,
     userSelect: 'none',
     outline: 0,
@@ -51,10 +51,10 @@ const ToggleButtonLabel = styled('label', {
   variants: {
     checked: {
       true: {
-        color: 'buttonForeground',
-        backgroundColor: 'buttonBackground',
+        color: 'secondaryButtonForeground',
+        backgroundColor: 'secondaryButtonBackground',
         _hover: {
-          backgroundColor: 'buttonBackground',
+          backgroundColor: 'secondaryButtonBackground',
         },
       },
     },
