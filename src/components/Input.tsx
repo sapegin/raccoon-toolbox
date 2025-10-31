@@ -43,7 +43,7 @@ export function Input({
   errorMessage?: string;
 }) {
   return (
-    <Stack gap="xs" minHeight={0}>
+    <Stack gap="xs">
       <Flex justifyContent="space-between" alignItems="center">
         <label htmlFor={id} className={text()}>
           {label}

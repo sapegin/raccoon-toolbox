@@ -19,6 +19,7 @@ const lightTheme = {
   redDimer: '#f2dbda',
   redContrast: '#c06159',
   orange: '#de9e59',
+  brightPinkDim: '#f0a8c2',
 };
 const darkTheme = {
   gray060: '#bea3d9',
@@ -42,6 +43,7 @@ const darkTheme = {
   redDimer: '#552f25',
   redContrast: '#ce574a',
   brightPink: '#ca5a83',
+  brightPinkDim: '#97576f',
 };
 
 export const colors = {
@@ -62,6 +64,7 @@ export const colors = {
   hoverBackground: lightTheme.gray160,
   lightBorder: lightTheme.gray160,
   lineHighlightBackground: lightTheme.gray170,
+  matchBackground: lightTheme.brightPinkDim,
   secondaryButtonBackground: lightTheme.gray160,
   secondaryButtonForeground: lightTheme.gray080,
   secondaryButtonHoverBackground: lightTheme.gray150,
@@ -98,6 +101,7 @@ const colorsDark = {
   hoverBackground: darkTheme.gray160,
   lightBorder: darkTheme.gray160,
   lineHighlightBackground: darkTheme.gray170,
+  matchBackground: darkTheme.brightPinkDim,
   secondaryButtonBackground: darkTheme.gray150,
   secondaryButtonForeground: darkTheme.gray080,
   secondaryButtonHoverBackground: darkTheme.gray130,

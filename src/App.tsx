@@ -12,7 +12,7 @@ export function App() {
   return (
     <>
       <VisuallyHidden as="h1">Raccoon Toolbox</VisuallyHidden>
-      <Grid gridTemplateColumns="16rem auto" gap="m" px="s" height="100vh">
+      <Grid gridTemplateColumns="16rem auto" gap="m" pr="s" height="100vh">
         <Stack
           as="ul"
           gap="xs"

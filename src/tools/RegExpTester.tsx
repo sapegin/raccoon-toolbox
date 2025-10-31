@@ -22,6 +22,9 @@ export function RegExpTester() {
   );
   const [output, setOutput] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const [highlightRegexp, setHighlightRegexp] = useState<RegExp | undefined>(
+    undefined
+  );
 
   useEffect(() => {
     if (regexpInput !== '' && textInput !== '') {
@@ -54,8 +57,11 @@ export function RegExpTester() {
       if (regexp === null) {
         setErrorMessage('Invalid regular expression');
         setOutput('');
+        setHighlightRegexp(undefined);
         return;
       }
+
+      setHighlightRegexp(regexp);
 
       const matches = Array.from(textInput.matchAll(regexp));
       if (matches.length === 0) {
@@ -102,6 +108,7 @@ export function RegExpTester() {
     setFormatter(defaultFormatter);
     setOutput('');
     setErrorMessage('');
+    setHighlightRegexp(undefined);
   }, []);
 
   return (
@@ -123,7 +130,11 @@ export function RegExpTester() {
             }
           />
           <Panel label="Text">
-            <Editor value={textInput} onChange={setTextInput} />
+            <Editor
+              value={textInput}
+              onChange={setTextInput}
+              highlightRegexp={highlightRegexp}
+            />
           </Panel>
         </Stack>
         <Stack gap="m">

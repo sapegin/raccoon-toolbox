@@ -8,6 +8,11 @@ import {
   lineNumbers,
   highlightActiveLine,
   highlightWhitespace,
+  Decoration,
+  ViewPlugin,
+  type DecorationSet,
+  type ViewUpdate,
+  MatchDecorator,
 } from '@codemirror/view';
 import { EditorState } from '@codemirror/state';
 import { useRef, useEffect } from 'react';
@@ -18,6 +23,8 @@ interface EditorProps {
   language?: 'json';
   editable?: boolean;
   onChange?: (value: string) => void;
+  /** Highlight matches in the editor. */
+  highlightRegexp?: RegExp;
 }
 
 const theme = EditorView.theme({
@@ -43,6 +50,9 @@ const theme = EditorView.theme({
     backgroundColor: 'transparent',
     borderColor: 'transparent',
   },
+  '.cm-regexp-match': {
+    backgroundColor: 'var(--colors-match-background)',
+  },
 });
 
 // All available tags:
@@ -63,11 +73,36 @@ const squirrelsongHighlighting = syntaxHighlighting(
   ])
 );
 
+function getMatchHighlighter(regExp: RegExp) {
+  return ViewPlugin.fromClass(
+    class {
+      public decorations: DecorationSet;
+      public decorator: MatchDecorator;
+
+      public constructor(view: EditorView) {
+        this.decorator = new MatchDecorator({
+          regexp: regExp,
+          decoration: () => Decoration.mark({ class: 'cm-regexp-match' }),
+        });
+        this.decorations = this.decorator.createDeco(view);
+      }
+
+      public update(update: ViewUpdate) {
+        this.decorations = this.decorator.updateDeco(update, this.decorations);
+      }
+    },
+    {
+      decorations: (instance) => instance.decorations,
+    }
+  );
+}
+
 export function Editor({
   value = '',
   language,
   editable = true,
   onChange,
+  highlightRegexp,
 }: EditorProps) {
   const editorRef = useRef<HTMLDivElement>(null);
   const viewRef = useRef<EditorView | null>(null);
@@ -85,11 +120,16 @@ export function Editor({
       }
     });
 
+    const matchHighlighter = highlightRegexp
+      ? getMatchHighlighter(highlightRegexp)
+      : undefined;
+
     const state = EditorState.create({
       doc: value,
       extensions: [
         languageExtension,
         updateListener,
+        matchHighlighter,
         lineNumbers(),
         highlightActiveLine(),
         highlightWhitespace(),
@@ -113,7 +153,7 @@ export function Editor({
       view.destroy();
       viewRef.current = null;
     };
-  }, [language, editable, onChange]);
+  }, [language, editable, onChange, highlightRegexp]);
 
   useEffect(() => {
     const view = viewRef.current;
