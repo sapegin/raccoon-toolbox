@@ -7,6 +7,7 @@
     "dev": "vite",
     "dev:app": "npm run tauri dev",
     "build": "tsc && vite build",
+    "build:app": "npm run tauri build -- --bundles app",
     "preview": "vite preview",
     "tauri": "tauri",
     "lint": "eslint . --cache --fix",
