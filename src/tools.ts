@@ -53,6 +53,15 @@ export const tools: Tool[] = [
     ),
   },
   {
+    id: 'unicode-lookup',
+    name: 'Unicode lookup',
+    component: lazy(() =>
+      import('./tools/UnicodeLookup').then((m) => ({
+        default: m.UnicodeLookup,
+      }))
+    ),
+  },
+  {
     id: 'url-encoder',
     name: 'URL encoder/decoder',
     component: lazy(() =>

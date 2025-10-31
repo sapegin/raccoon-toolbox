@@ -16,6 +16,7 @@ const lightTheme = {
   greenDimer: '#e2ebdf',
   teal: '#5f9b8d',
   blue: '#80a4be',
+  blueContrast: '#527b98',
   redDimer: '#f2dbda',
   redContrast: '#c06159',
   orange: '#de9e59',
@@ -51,6 +52,7 @@ const darkTheme = {
 export const colors = {
   background: lightTheme.gray180,
   text: lightTheme.gray090,
+  primary: lightTheme.blueContrast,
   accent: lightTheme.magenta,
 
   activeBackground: lightTheme.magenta,
@@ -91,6 +93,7 @@ export const colors = {
 const colorsDark = {
   background: darkTheme.gray180,
   text: darkTheme.gray090,
+  primary: lightTheme.blue,
   accent: darkTheme.brightPink,
 
   activeBackground: darkTheme.brightPink,

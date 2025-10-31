@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "target": "ES2022",
     "composite": true,
     "skipLibCheck": true,
     "module": "ESNext",
@@ -7,5 +8,5 @@
     "allowSyntheticDefaultImports": true,
     "strict": true
   },
-  "include": ["*.config.ts"]
+  "include": ["*.config.ts", "scripts/**/*"]
 }

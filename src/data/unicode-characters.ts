@@ -1,0 +1,38539 @@
+// Auto-generated file. Do not edit manually.
+// Generated from @unicode/unicode-17.0.0 by scripts/generate-unicode-data.ts
+
+export type UnicodeCharacter = [number, string];
+
+export const unicodeCharacters: UnicodeCharacter[] = [
+  [
+    32,
+    "SPACE"
+  ],
+  [
+    33,
+    "EXCLAMATION MARK"
+  ],
+  [
+    34,
+    "QUOTATION MARK"
+  ],
+  [
+    35,
+    "NUMBER SIGN"
+  ],
+  [
+    36,
+    "DOLLAR SIGN"
+  ],
+  [
+    37,
+    "PERCENT SIGN"
+  ],
+  [
+    38,
+    "AMPERSAND"
+  ],
+  [
+    39,
+    "APOSTROPHE"
+  ],
+  [
+    40,
+    "LEFT PARENTHESIS"
+  ],
+  [
+    41,
+    "RIGHT PARENTHESIS"
+  ],
+  [
+    42,
+    "ASTERISK"
+  ],
+  [
+    43,
+    "PLUS SIGN"
+  ],
+  [
+    44,
+    "COMMA"
+  ],
+  [
+    45,
+    "HYPHEN-MINUS"
+  ],
+  [
+    46,
+    "FULL STOP"
+  ],
+  [
+    47,
+    "SOLIDUS"
+  ],
+  [
+    48,
+    "DIGIT ZERO"
+  ],
+  [
+    49,
+    "DIGIT ONE"
+  ],
+  [
+    50,
+    "DIGIT TWO"
+  ],
+  [
+    51,
+    "DIGIT THREE"
+  ],
+  [
+    52,
+    "DIGIT FOUR"
+  ],
+  [
+    53,
+    "DIGIT FIVE"
+  ],
+  [
+    54,
+    "DIGIT SIX"
+  ],
+  [
+    55,
+    "DIGIT SEVEN"
+  ],
+  [
+    56,
+    "DIGIT EIGHT"
+  ],
+  [
+    57,
+    "DIGIT NINE"
+  ],
+  [
+    58,
+    "COLON"
+  ],
+  [
+    59,
+    "SEMICOLON"
+  ],
+  [
+    60,
+    "LESS-THAN SIGN"
+  ],
+  [
+    61,
+    "EQUALS SIGN"
+  ],
+  [
+    62,
+    "GREATER-THAN SIGN"
+  ],
+  [
+    63,
+    "QUESTION MARK"
+  ],
+  [
+    64,
+    "COMMERCIAL AT"
+  ],
+  [
+    65,
+    "LATIN CAPITAL LETTER A"
+  ],
+  [
+    66,
+    "LATIN CAPITAL LETTER B"
+  ],
+  [
+    67,
+    "LATIN CAPITAL LETTER C"
+  ],
+  [
+    68,
+    "LATIN CAPITAL LETTER D"
+  ],
+  [
+    69,
+    "LATIN CAPITAL LETTER E"
+  ],
+  [
+    70,
+    "LATIN CAPITAL LETTER F"
+  ],
+  [
+    71,
+    "LATIN CAPITAL LETTER G"
+  ],
+  [
+    72,
+    "LATIN CAPITAL LETTER H"
+  ],
+  [
+    73,
+    "LATIN CAPITAL LETTER I"
+  ],
+  [
+    74,
+    "LATIN CAPITAL LETTER J"
+  ],
+  [
+    75,
+    "LATIN CAPITAL LETTER K"
+  ],
+  [
+    76,
+    "LATIN CAPITAL LETTER L"
+  ],
+  [
+    77,
+    "LATIN CAPITAL LETTER M"
+  ],
+  [
+    78,
+    "LATIN CAPITAL LETTER N"
+  ],
+  [
+    79,
+    "LATIN CAPITAL LETTER O"
+  ],
+  [
+    80,
+    "LATIN CAPITAL LETTER P"
+  ],
+  [
+    81,
+    "LATIN CAPITAL LETTER Q"
+  ],
+  [
+    82,
+    "LATIN CAPITAL LETTER R"
+  ],
+  [
+    83,
+    "LATIN CAPITAL LETTER S"
+  ],
+  [
+    84,
+    "LATIN CAPITAL LETTER T"
+  ],
+  [
+    85,
+    "LATIN CAPITAL LETTER U"
+  ],
+  [
+    86,
+    "LATIN CAPITAL LETTER V"
+  ],
+  [
+    87,
+    "LATIN CAPITAL LETTER W"
+  ],
+  [
+    88,
+    "LATIN CAPITAL LETTER X"
+  ],
+  [
+    89,
+    "LATIN CAPITAL LETTER Y"
+  ],
+  [
+    90,
+    "LATIN CAPITAL LETTER Z"
+  ],
+  [
+    91,
+    "LEFT SQUARE BRACKET"
+  ],
+  [
+    92,
+    "REVERSE SOLIDUS"
+  ],
+  [
+    93,
+    "RIGHT SQUARE BRACKET"
+  ],
+  [
+    94,
+    "CIRCUMFLEX ACCENT"
+  ],
+  [
+    95,
+    "LOW LINE"
+  ],
+  [
+    96,
+    "GRAVE ACCENT"
+  ],
+  [
+    97,
+    "LATIN SMALL LETTER A"
+  ],
+  [
+    98,
+    "LATIN SMALL LETTER B"
+  ],
+  [
+    99,
+    "LATIN SMALL LETTER C"
+  ],
+  [
+    100,
+    "LATIN SMALL LETTER D"
+  ],
+  [
+    101,
+    "LATIN SMALL LETTER E"
+  ],
+  [
+    102,
+    "LATIN SMALL LETTER F"
+  ],
+  [
+    103,
+    "LATIN SMALL LETTER G"
+  ],
+  [
+    104,
+    "LATIN SMALL LETTER H"
+  ],
+  [
+    105,
+    "LATIN SMALL LETTER I"
+  ],
+  [
+    106,
+    "LATIN SMALL LETTER J"
+  ],
+  [
+    107,
+    "LATIN SMALL LETTER K"
+  ],
+  [
+    108,
+    "LATIN SMALL LETTER L"
+  ],
+  [
+    109,
+    "LATIN SMALL LETTER M"
+  ],
+  [
+    110,
+    "LATIN SMALL LETTER N"
+  ],
+  [
+    111,
+    "LATIN SMALL LETTER O"
+  ],
+  [
+    112,
+    "LATIN SMALL LETTER P"
+  ],
+  [
+    113,
+    "LATIN SMALL LETTER Q"
+  ],
+  [
+    114,
+    "LATIN SMALL LETTER R"
+  ],
+  [
+    115,
+    "LATIN SMALL LETTER S"
+  ],
+  [
+    116,
+    "LATIN SMALL LETTER T"
+  ],
+  [
+    117,
+    "LATIN SMALL LETTER U"
+  ],
+  [
+    118,
+    "LATIN SMALL LETTER V"
+  ],
+  [
+    119,
+    "LATIN SMALL LETTER W"
+  ],
+  [
+    120,
+    "LATIN SMALL LETTER X"
+  ],
+  [
+    121,
+    "LATIN SMALL LETTER Y"
+  ],
+  [
+    122,
+    "LATIN SMALL LETTER Z"
+  ],
+  [
+    123,
+    "LEFT CURLY BRACKET"
+  ],
+  [
+    124,
+    "VERTICAL LINE"
+  ],
+  [
+    125,
+    "RIGHT CURLY BRACKET"
+  ],
+  [
+    126,
+    "TILDE"
+  ],
+  [
+    160,
+    "NO-BREAK SPACE"
+  ],
+  [
+    161,
+    "INVERTED EXCLAMATION MARK"
+  ],
+  [
+    162,
+    "CENT SIGN"
+  ],
+  [
+    163,
+    "POUND SIGN"
+  ],
+  [
+    164,
+    "CURRENCY SIGN"
+  ],
+  [
+    165,
+    "YEN SIGN"
+  ],
+  [
+    166,
+    "BROKEN BAR"
+  ],
+  [
+    167,
+    "SECTION SIGN"
+  ],
+  [
+    168,
+    "DIAERESIS"
+  ],
+  [
+    169,
+    "COPYRIGHT SIGN"
+  ],
+  [
+    170,
+    "FEMININE ORDINAL INDICATOR"
+  ],
+  [
+    171,
+    "LEFT-POINTING DOUBLE ANGLE QUOTATION MARK"
+  ],
+  [
+    172,
+    "NOT SIGN"
+  ],
+  [
+    173,
+    "SOFT HYPHEN"
+  ],
+  [
+    174,
+    "REGISTERED SIGN"
+  ],
+  [
+    175,
+    "MACRON"
+  ],
+  [
+    176,
+    "DEGREE SIGN"
+  ],
+  [
+    177,
+    "PLUS-MINUS SIGN"
+  ],
+  [
+    178,
+    "SUPERSCRIPT TWO"
+  ],
+  [
+    179,
+    "SUPERSCRIPT THREE"
+  ],
+  [
+    180,
+    "ACUTE ACCENT"
+  ],
+  [
+    181,
+    "MICRO SIGN"
+  ],
+  [
+    182,
+    "PILCROW SIGN"
+  ],
+  [
+    183,
+    "MIDDLE DOT"
+  ],
+  [
+    184,
+    "CEDILLA"
+  ],
+  [
+    185,
+    "SUPERSCRIPT ONE"
+  ],
+  [
+    186,
+    "MASCULINE ORDINAL INDICATOR"
+  ],
+  [
+    187,
+    "RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK"
+  ],
+  [
+    188,
+    "VULGAR FRACTION ONE QUARTER"
+  ],
+  [
+    189,
+    "VULGAR FRACTION ONE HALF"
+  ],
+  [
+    190,
+    "VULGAR FRACTION THREE QUARTERS"
+  ],
+  [
+    191,
+    "INVERTED QUESTION MARK"
+  ],
+  [
+    192,
+    "LATIN CAPITAL LETTER A WITH GRAVE"
+  ],
+  [
+    193,
+    "LATIN CAPITAL LETTER A WITH ACUTE"
+  ],
+  [
+    194,
+    "LATIN CAPITAL LETTER A WITH CIRCUMFLEX"
+  ],
+  [
+    195,
+    "LATIN CAPITAL LETTER A WITH TILDE"
+  ],
+  [
+    196,
+    "LATIN CAPITAL LETTER A WITH DIAERESIS"
+  ],
+  [
+    197,
+    "LATIN CAPITAL LETTER A WITH RING ABOVE"
+  ],
+  [
+    198,
+    "LATIN CAPITAL LETTER AE"
+  ],
+  [
+    199,
+    "LATIN CAPITAL LETTER C WITH CEDILLA"
+  ],
+  [
+    200,
+    "LATIN CAPITAL LETTER E WITH GRAVE"
+  ],
+  [
+    201,
+    "LATIN CAPITAL LETTER E WITH ACUTE"
+  ],
+  [
+    202,
+    "LATIN CAPITAL LETTER E WITH CIRCUMFLEX"
+  ],
+  [
+    203,
+    "LATIN CAPITAL LETTER E WITH DIAERESIS"
+  ],
+  [
+    204,
+    "LATIN CAPITAL LETTER I WITH GRAVE"
+  ],
+  [
+    205,
+    "LATIN CAPITAL LETTER I WITH ACUTE"
+  ],
+  [
+    206,
+    "LATIN CAPITAL LETTER I WITH CIRCUMFLEX"
+  ],
+  [
+    207,
+    "LATIN CAPITAL LETTER I WITH DIAERESIS"
+  ],
+  [
+    208,
+    "LATIN CAPITAL LETTER ETH"
+  ],
+  [
+    209,
+    "LATIN CAPITAL LETTER N WITH TILDE"
+  ],
+  [
+    210,
+    "LATIN CAPITAL LETTER O WITH GRAVE"
+  ],
+  [
+    211,
+    "LATIN CAPITAL LETTER O WITH ACUTE"
+  ],
+  [
+    212,
+    "LATIN CAPITAL LETTER O WITH CIRCUMFLEX"
+  ],
+  [
+    213,
+    "LATIN CAPITAL LETTER O WITH TILDE"
+  ],
+  [
+    214,
+    "LATIN CAPITAL LETTER O WITH DIAERESIS"
+  ],
+  [
+    215,
+    "MULTIPLICATION SIGN"
+  ],
+  [
+    216,
+    "LATIN CAPITAL LETTER O WITH STROKE"
+  ],
+  [
+    217,
+    "LATIN CAPITAL LETTER U WITH GRAVE"
+  ],
+  [
+    218,
+    "LATIN CAPITAL LETTER U WITH ACUTE"
+  ],
+  [
+    219,
+    "LATIN CAPITAL LETTER U WITH CIRCUMFLEX"
+  ],
+  [
+    220,
+    "LATIN CAPITAL LETTER U WITH DIAERESIS"
+  ],
+  [
+    221,
+    "LATIN CAPITAL LETTER Y WITH ACUTE"
+  ],
+  [
+    222,
+    "LATIN CAPITAL LETTER THORN"
+  ],
+  [
+    223,
+    "LATIN SMALL LETTER SHARP S"
+  ],
+  [
+    224,
+    "LATIN SMALL LETTER A WITH GRAVE"
+  ],
+  [
+    225,
+    "LATIN SMALL LETTER A WITH ACUTE"
+  ],
+  [
+    226,
+    "LATIN SMALL LETTER A WITH CIRCUMFLEX"
+  ],
+  [
+    227,
+    "LATIN SMALL LETTER A WITH TILDE"
+  ],
+  [
+    228,
+    "LATIN SMALL LETTER A WITH DIAERESIS"
+  ],
+  [
+    229,
+    "LATIN SMALL LETTER A WITH RING ABOVE"
+  ],
+  [
+    230,
+    "LATIN SMALL LETTER AE"
+  ],
+  [
+    231,
+    "LATIN SMALL LETTER C WITH CEDILLA"
+  ],
+  [
+    232,
+    "LATIN SMALL LETTER E WITH GRAVE"
+  ],
+  [
+    233,
+    "LATIN SMALL LETTER E WITH ACUTE"
+  ],
+  [
+    234,
+    "LATIN SMALL LETTER E WITH CIRCUMFLEX"
+  ],
+  [
+    235,
+    "LATIN SMALL LETTER E WITH DIAERESIS"
+  ],
+  [
+    236,
+    "LATIN SMALL LETTER I WITH GRAVE"
+  ],
+  [
+    237,
+    "LATIN SMALL LETTER I WITH ACUTE"
+  ],
+  [
+    238,
+    "LATIN SMALL LETTER I WITH CIRCUMFLEX"
+  ],
+  [
+    239,
+    "LATIN SMALL LETTER I WITH DIAERESIS"
+  ],
+  [
+    240,
+    "LATIN SMALL LETTER ETH"
+  ],
+  [
+    241,
+    "LATIN SMALL LETTER N WITH TILDE"
+  ],
+  [
+    242,
+    "LATIN SMALL LETTER O WITH GRAVE"
+  ],
+  [
+    243,
+    "LATIN SMALL LETTER O WITH ACUTE"
+  ],
+  [
+    244,
+    "LATIN SMALL LETTER O WITH CIRCUMFLEX"
+  ],
+  [
+    245,
+    "LATIN SMALL LETTER O WITH TILDE"
+  ],
+  [
+    246,
+    "LATIN SMALL LETTER O WITH DIAERESIS"
+  ],
+  [
+    247,
+    "DIVISION SIGN"
+  ],
+  [
+    248,
+    "LATIN SMALL LETTER O WITH STROKE"
+  ],
+  [
+    249,
+    "LATIN SMALL LETTER U WITH GRAVE"
+  ],
+  [
+    250,
+    "LATIN SMALL LETTER U WITH ACUTE"
+  ],
+  [
+    251,
+    "LATIN SMALL LETTER U WITH CIRCUMFLEX"
+  ],
+  [
+    252,
+    "LATIN SMALL LETTER U WITH DIAERESIS"
+  ],
+  [
+    253,
+    "LATIN SMALL LETTER Y WITH ACUTE"
+  ],
+  [
+    254,
+    "LATIN SMALL LETTER THORN"
+  ],
+  [
+    255,
+    "LATIN SMALL LETTER Y WITH DIAERESIS"
+  ],
+  [
+    256,
+    "LATIN CAPITAL LETTER A WITH MACRON"
+  ],
+  [
+    257,
+    "LATIN SMALL LETTER A WITH MACRON"
+  ],
+  [
+    258,
+    "LATIN CAPITAL LETTER A WITH BREVE"
+  ],
+  [
+    259,
+    "LATIN SMALL LETTER A WITH BREVE"
+  ],
+  [
+    260,
+    "LATIN CAPITAL LETTER A WITH OGONEK"
+  ],
+  [
+    261,
+    "LATIN SMALL LETTER A WITH OGONEK"
+  ],
+  [
+    262,
+    "LATIN CAPITAL LETTER C WITH ACUTE"
+  ],
+  [
+    263,
+    "LATIN SMALL LETTER C WITH ACUTE"
+  ],
+  [
+    264,
+    "LATIN CAPITAL LETTER C WITH CIRCUMFLEX"
+  ],
+  [
+    265,
+    "LATIN SMALL LETTER C WITH CIRCUMFLEX"
+  ],
+  [
+    266,
+    "LATIN CAPITAL LETTER C WITH DOT ABOVE"
+  ],
+  [
+    267,
+    "LATIN SMALL LETTER C WITH DOT ABOVE"
+  ],
+  [
+    268,
+    "LATIN CAPITAL LETTER C WITH CARON"
+  ],
+  [
+    269,
+    "LATIN SMALL LETTER C WITH CARON"
+  ],
+  [
+    270,
+    "LATIN CAPITAL LETTER D WITH CARON"
+  ],
+  [
+    271,
+    "LATIN SMALL LETTER D WITH CARON"
+  ],
+  [
+    272,
+    "LATIN CAPITAL LETTER D WITH STROKE"
+  ],
+  [
+    273,
+    "LATIN SMALL LETTER D WITH STROKE"
+  ],
+  [
+    274,
+    "LATIN CAPITAL LETTER E WITH MACRON"
+  ],
+  [
+    275,
+    "LATIN SMALL LETTER E WITH MACRON"
+  ],
+  [
+    276,
+    "LATIN CAPITAL LETTER E WITH BREVE"
+  ],
+  [
+    277,
+    "LATIN SMALL LETTER E WITH BREVE"
+  ],
+  [
+    278,
+    "LATIN CAPITAL LETTER E WITH DOT ABOVE"
+  ],
+  [
+    279,
+    "LATIN SMALL LETTER E WITH DOT ABOVE"
+  ],
+  [
+    280,
+    "LATIN CAPITAL LETTER E WITH OGONEK"
+  ],
+  [
+    281,
+    "LATIN SMALL LETTER E WITH OGONEK"
+  ],
+  [
+    282,
+    "LATIN CAPITAL LETTER E WITH CARON"
+  ],
+  [
+    283,
+    "LATIN SMALL LETTER E WITH CARON"
+  ],
+  [
+    284,
+    "LATIN CAPITAL LETTER G WITH CIRCUMFLEX"
+  ],
+  [
+    285,
+    "LATIN SMALL LETTER G WITH CIRCUMFLEX"
+  ],
+  [
+    286,
+    "LATIN CAPITAL LETTER G WITH BREVE"
+  ],
+  [
+    287,
+    "LATIN SMALL LETTER G WITH BREVE"
+  ],
+  [
+    288,
+    "LATIN CAPITAL LETTER G WITH DOT ABOVE"
+  ],
+  [
+    289,
+    "LATIN SMALL LETTER G WITH DOT ABOVE"
+  ],
+  [
+    290,
+    "LATIN CAPITAL LETTER G WITH CEDILLA"
+  ],
+  [
+    291,
+    "LATIN SMALL LETTER G WITH CEDILLA"
+  ],
+  [
+    292,
+    "LATIN CAPITAL LETTER H WITH CIRCUMFLEX"
+  ],
+  [
+    293,
+    "LATIN SMALL LETTER H WITH CIRCUMFLEX"
+  ],
+  [
+    294,
+    "LATIN CAPITAL LETTER H WITH STROKE"
+  ],
+  [
+    295,
+    "LATIN SMALL LETTER H WITH STROKE"
+  ],
+  [
+    296,
+    "LATIN CAPITAL LETTER I WITH TILDE"
+  ],
+  [
+    297,
+    "LATIN SMALL LETTER I WITH TILDE"
+  ],
+  [
+    298,
+    "LATIN CAPITAL LETTER I WITH MACRON"
+  ],
+  [
+    299,
+    "LATIN SMALL LETTER I WITH MACRON"
+  ],
+  [
+    300,
+    "LATIN CAPITAL LETTER I WITH BREVE"
+  ],
+  [
+    301,
+    "LATIN SMALL LETTER I WITH BREVE"
+  ],
+  [
+    302,
+    "LATIN CAPITAL LETTER I WITH OGONEK"
+  ],
+  [
+    303,
+    "LATIN SMALL LETTER I WITH OGONEK"
+  ],
+  [
+    304,
+    "LATIN CAPITAL LETTER I WITH DOT ABOVE"
+  ],
+  [
+    305,
+    "LATIN SMALL LETTER DOTLESS I"
+  ],
+  [
+    306,
+    "LATIN CAPITAL LIGATURE IJ"
+  ],
+  [
+    307,
+    "LATIN SMALL LIGATURE IJ"
+  ],
+  [
+    308,
+    "LATIN CAPITAL LETTER J WITH CIRCUMFLEX"
+  ],
+  [
+    309,
+    "LATIN SMALL LETTER J WITH CIRCUMFLEX"
+  ],
+  [
+    310,
+    "LATIN CAPITAL LETTER K WITH CEDILLA"
+  ],
+  [
+    311,
+    "LATIN SMALL LETTER K WITH CEDILLA"
+  ],
+  [
+    312,
+    "LATIN SMALL LETTER KRA"
+  ],
+  [
+    313,
+    "LATIN CAPITAL LETTER L WITH ACUTE"
+  ],
+  [
+    314,
+    "LATIN SMALL LETTER L WITH ACUTE"
+  ],
+  [
+    315,
+    "LATIN CAPITAL LETTER L WITH CEDILLA"
+  ],
+  [
+    316,
+    "LATIN SMALL LETTER L WITH CEDILLA"
+  ],
+  [
+    317,
+    "LATIN CAPITAL LETTER L WITH CARON"
+  ],
+  [
+    318,
+    "LATIN SMALL LETTER L WITH CARON"
+  ],
+  [
+    319,
+    "LATIN CAPITAL LETTER L WITH MIDDLE DOT"
+  ],
+  [
+    320,
+    "LATIN SMALL LETTER L WITH MIDDLE DOT"
+  ],
+  [
+    321,
+    "LATIN CAPITAL LETTER L WITH STROKE"
+  ],
+  [
+    322,
+    "LATIN SMALL LETTER L WITH STROKE"
+  ],
+  [
+    323,
+    "LATIN CAPITAL LETTER N WITH ACUTE"
+  ],
+  [
+    324,
+    "LATIN SMALL LETTER N WITH ACUTE"
+  ],
+  [
+    325,
+    "LATIN CAPITAL LETTER N WITH CEDILLA"
+  ],
+  [
+    326,
+    "LATIN SMALL LETTER N WITH CEDILLA"
+  ],
+  [
+    327,
+    "LATIN CAPITAL LETTER N WITH CARON"
+  ],
+  [
+    328,
+    "LATIN SMALL LETTER N WITH CARON"
+  ],
+  [
+    329,
+    "LATIN SMALL LETTER N PRECEDED BY APOSTROPHE"
+  ],
+  [
+    330,
+    "LATIN CAPITAL LETTER ENG"
+  ],
+  [
+    331,
+    "LATIN SMALL LETTER ENG"
+  ],
+  [
+    332,
+    "LATIN CAPITAL LETTER O WITH MACRON"
+  ],
+  [
+    333,
+    "LATIN SMALL LETTER O WITH MACRON"
+  ],
+  [
+    334,
+    "LATIN CAPITAL LETTER O WITH BREVE"
+  ],
+  [
+    335,
+    "LATIN SMALL LETTER O WITH BREVE"
+  ],
+  [
+    336,
+    "LATIN CAPITAL LETTER O WITH DOUBLE ACUTE"
+  ],
+  [
+    337,
+    "LATIN SMALL LETTER O WITH DOUBLE ACUTE"
+  ],
+  [
+    338,
+    "LATIN CAPITAL LIGATURE OE"
+  ],
+  [
+    339,
+    "LATIN SMALL LIGATURE OE"
+  ],
+  [
+    340,
+    "LATIN CAPITAL LETTER R WITH ACUTE"
+  ],
+  [
+    341,
+    "LATIN SMALL LETTER R WITH ACUTE"
+  ],
+  [
+    342,
+    "LATIN CAPITAL LETTER R WITH CEDILLA"
+  ],
+  [
+    343,
+    "LATIN SMALL LETTER R WITH CEDILLA"
+  ],
+  [
+    344,
+    "LATIN CAPITAL LETTER R WITH CARON"
+  ],
+  [
+    345,
+    "LATIN SMALL LETTER R WITH CARON"
+  ],
+  [
+    346,
+    "LATIN CAPITAL LETTER S WITH ACUTE"
+  ],
+  [
+    347,
+    "LATIN SMALL LETTER S WITH ACUTE"
+  ],
+  [
+    348,
+    "LATIN CAPITAL LETTER S WITH CIRCUMFLEX"
+  ],
+  [
+    349,
+    "LATIN SMALL LETTER S WITH CIRCUMFLEX"
+  ],
+  [
+    350,
+    "LATIN CAPITAL LETTER S WITH CEDILLA"
+  ],
+  [
+    351,
+    "LATIN SMALL LETTER S WITH CEDILLA"
+  ],
+  [
+    352,
+    "LATIN CAPITAL LETTER S WITH CARON"
+  ],
+  [
+    353,
+    "LATIN SMALL LETTER S WITH CARON"
+  ],
+  [
+    354,
+    "LATIN CAPITAL LETTER T WITH CEDILLA"
+  ],
+  [
+    355,
+    "LATIN SMALL LETTER T WITH CEDILLA"
+  ],
+  [
+    356,
+    "LATIN CAPITAL LETTER T WITH CARON"
+  ],
+  [
+    357,
+    "LATIN SMALL LETTER T WITH CARON"
+  ],
+  [
+    358,
+    "LATIN CAPITAL LETTER T WITH STROKE"
+  ],
+  [
+    359,
+    "LATIN SMALL LETTER T WITH STROKE"
+  ],
+  [
+    360,
+    "LATIN CAPITAL LETTER U WITH TILDE"
+  ],
+  [
+    361,
+    "LATIN SMALL LETTER U WITH TILDE"
+  ],
+  [
+    362,
+    "LATIN CAPITAL LETTER U WITH MACRON"
+  ],
+  [
+    363,
+    "LATIN SMALL LETTER U WITH MACRON"
+  ],
+  [
+    364,
+    "LATIN CAPITAL LETTER U WITH BREVE"
+  ],
+  [
+    365,
+    "LATIN SMALL LETTER U WITH BREVE"
+  ],
+  [
+    366,
+    "LATIN CAPITAL LETTER U WITH RING ABOVE"
+  ],
+  [
+    367,
+    "LATIN SMALL LETTER U WITH RING ABOVE"
+  ],
+  [
+    368,
+    "LATIN CAPITAL LETTER U WITH DOUBLE ACUTE"
+  ],
+  [
+    369,
+    "LATIN SMALL LETTER U WITH DOUBLE ACUTE"
+  ],
+  [
+    370,
+    "LATIN CAPITAL LETTER U WITH OGONEK"
+  ],
+  [
+    371,
+    "LATIN SMALL LETTER U WITH OGONEK"
+  ],
+  [
+    372,
+    "LATIN CAPITAL LETTER W WITH CIRCUMFLEX"
+  ],
+  [
+    373,
+    "LATIN SMALL LETTER W WITH CIRCUMFLEX"
+  ],
+  [
+    374,
+    "LATIN CAPITAL LETTER Y WITH CIRCUMFLEX"
+  ],
+  [
+    375,
+    "LATIN SMALL LETTER Y WITH CIRCUMFLEX"
+  ],
+  [
+    376,
+    "LATIN CAPITAL LETTER Y WITH DIAERESIS"
+  ],
+  [
+    377,
+    "LATIN CAPITAL LETTER Z WITH ACUTE"
+  ],
+  [
+    378,
+    "LATIN SMALL LETTER Z WITH ACUTE"
+  ],
+  [
+    379,
+    "LATIN CAPITAL LETTER Z WITH DOT ABOVE"
+  ],
+  [
+    380,
+    "LATIN SMALL LETTER Z WITH DOT ABOVE"
+  ],
+  [
+    381,
+    "LATIN CAPITAL LETTER Z WITH CARON"
+  ],
+  [
+    382,
+    "LATIN SMALL LETTER Z WITH CARON"
+  ],
+  [
+    383,
+    "LATIN SMALL LETTER LONG S"
+  ],
+  [
+    384,
+    "LATIN SMALL LETTER B WITH STROKE"
+  ],
+  [
+    385,
+    "LATIN CAPITAL LETTER B WITH HOOK"
+  ],
+  [
+    386,
+    "LATIN CAPITAL LETTER B WITH TOPBAR"
+  ],
+  [
+    387,
+    "LATIN SMALL LETTER B WITH TOPBAR"
+  ],
+  [
+    388,
+    "LATIN CAPITAL LETTER TONE SIX"
+  ],
+  [
+    389,
+    "LATIN SMALL LETTER TONE SIX"
+  ],
+  [
+    390,
+    "LATIN CAPITAL LETTER OPEN O"
+  ],
+  [
+    391,
+    "LATIN CAPITAL LETTER C WITH HOOK"
+  ],
+  [
+    392,
+    "LATIN SMALL LETTER C WITH HOOK"
+  ],
+  [
+    393,
+    "LATIN CAPITAL LETTER AFRICAN D"
+  ],
+  [
+    394,
+    "LATIN CAPITAL LETTER D WITH HOOK"
+  ],
+  [
+    395,
+    "LATIN CAPITAL LETTER D WITH TOPBAR"
+  ],
+  [
+    396,
+    "LATIN SMALL LETTER D WITH TOPBAR"
+  ],
+  [
+    397,
+    "LATIN SMALL LETTER TURNED DELTA"
+  ],
+  [
+    398,
+    "LATIN CAPITAL LETTER REVERSED E"
+  ],
+  [
+    399,
+    "LATIN CAPITAL LETTER SCHWA"
+  ],
+  [
+    400,
+    "LATIN CAPITAL LETTER OPEN E"
+  ],
+  [
+    401,
+    "LATIN CAPITAL LETTER F WITH HOOK"
+  ],
+  [
+    402,
+    "LATIN SMALL LETTER F WITH HOOK"
+  ],
+  [
+    403,
+    "LATIN CAPITAL LETTER G WITH HOOK"
+  ],
+  [
+    404,
+    "LATIN CAPITAL LETTER GAMMA"
+  ],
+  [
+    405,
+    "LATIN SMALL LETTER HV"
+  ],
+  [
+    406,
+    "LATIN CAPITAL LETTER IOTA"
+  ],
+  [
+    407,
+    "LATIN CAPITAL LETTER I WITH STROKE"
+  ],
+  [
+    408,
+    "LATIN CAPITAL LETTER K WITH HOOK"
+  ],
+  [
+    409,
+    "LATIN SMALL LETTER K WITH HOOK"
+  ],
+  [
+    410,
+    "LATIN SMALL LETTER L WITH BAR"
+  ],
+  [
+    411,
+    "LATIN SMALL LETTER LAMBDA WITH STROKE"
+  ],
+  [
+    412,
+    "LATIN CAPITAL LETTER TURNED M"
+  ],
+  [
+    413,
+    "LATIN CAPITAL LETTER N WITH LEFT HOOK"
+  ],
+  [
+    414,
+    "LATIN SMALL LETTER N WITH LONG RIGHT LEG"
+  ],
+  [
+    415,
+    "LATIN CAPITAL LETTER O WITH MIDDLE TILDE"
+  ],
+  [
+    416,
+    "LATIN CAPITAL LETTER O WITH HORN"
+  ],
+  [
+    417,
+    "LATIN SMALL LETTER O WITH HORN"
+  ],
+  [
+    418,
+    "LATIN CAPITAL LETTER OI"
+  ],
+  [
+    419,
+    "LATIN SMALL LETTER OI"
+  ],
+  [
+    420,
+    "LATIN CAPITAL LETTER P WITH HOOK"
+  ],
+  [
+    421,
+    "LATIN SMALL LETTER P WITH HOOK"
+  ],
+  [
+    422,
+    "LATIN LETTER YR"
+  ],
+  [
+    423,
+    "LATIN CAPITAL LETTER TONE TWO"
+  ],
+  [
+    424,
+    "LATIN SMALL LETTER TONE TWO"
+  ],
+  [
+    425,
+    "LATIN CAPITAL LETTER ESH"
+  ],
+  [
+    426,
+    "LATIN LETTER REVERSED ESH LOOP"
+  ],
+  [
+    427,
+    "LATIN SMALL LETTER T WITH PALATAL HOOK"
+  ],
+  [
+    428,
+    "LATIN CAPITAL LETTER T WITH HOOK"
+  ],
+  [
+    429,
+    "LATIN SMALL LETTER T WITH HOOK"
+  ],
+  [
+    430,
+    "LATIN CAPITAL LETTER T WITH RETROFLEX HOOK"
+  ],
+  [
+    431,
+    "LATIN CAPITAL LETTER U WITH HORN"
+  ],
+  [
+    432,
+    "LATIN SMALL LETTER U WITH HORN"
+  ],
+  [
+    433,
+    "LATIN CAPITAL LETTER UPSILON"
+  ],
+  [
+    434,
+    "LATIN CAPITAL LETTER V WITH HOOK"
+  ],
+  [
+    435,
+    "LATIN CAPITAL LETTER Y WITH HOOK"
+  ],
+  [
+    436,
+    "LATIN SMALL LETTER Y WITH HOOK"
+  ],
+  [
+    437,
+    "LATIN CAPITAL LETTER Z WITH STROKE"
+  ],
+  [
+    438,
+    "LATIN SMALL LETTER Z WITH STROKE"
+  ],
+  [
+    439,
+    "LATIN CAPITAL LETTER EZH"
+  ],
+  [
+    440,
+    "LATIN CAPITAL LETTER EZH REVERSED"
+  ],
+  [
+    441,
+    "LATIN SMALL LETTER EZH REVERSED"
+  ],
+  [
+    442,
+    "LATIN SMALL LETTER EZH WITH TAIL"
+  ],
+  [
+    443,
+    "LATIN LETTER TWO WITH STROKE"
+  ],
+  [
+    444,
+    "LATIN CAPITAL LETTER TONE FIVE"
+  ],
+  [
+    445,
+    "LATIN SMALL LETTER TONE FIVE"
+  ],
+  [
+    446,
+    "LATIN LETTER INVERTED GLOTTAL STOP WITH STROKE"
+  ],
+  [
+    447,
+    "LATIN LETTER WYNN"
+  ],
+  [
+    448,
+    "LATIN LETTER DENTAL CLICK"
+  ],
+  [
+    449,
+    "LATIN LETTER LATERAL CLICK"
+  ],
+  [
+    450,
+    "LATIN LETTER ALVEOLAR CLICK"
+  ],
+  [
+    451,
+    "LATIN LETTER RETROFLEX CLICK"
+  ],
+  [
+    452,
+    "LATIN CAPITAL LETTER DZ WITH CARON"
+  ],
+  [
+    453,
+    "LATIN CAPITAL LETTER D WITH SMALL LETTER Z WITH CARON"
+  ],
+  [
+    454,
+    "LATIN SMALL LETTER DZ WITH CARON"
+  ],
+  [
+    455,
+    "LATIN CAPITAL LETTER LJ"
+  ],
+  [
+    456,
+    "LATIN CAPITAL LETTER L WITH SMALL LETTER J"
+  ],
+  [
+    457,
+    "LATIN SMALL LETTER LJ"
+  ],
+  [
+    458,
+    "LATIN CAPITAL LETTER NJ"
+  ],
+  [
+    459,
+    "LATIN CAPITAL LETTER N WITH SMALL LETTER J"
+  ],
+  [
+    460,
+    "LATIN SMALL LETTER NJ"
+  ],
+  [
+    461,
+    "LATIN CAPITAL LETTER A WITH CARON"
+  ],
+  [
+    462,
+    "LATIN SMALL LETTER A WITH CARON"
+  ],
+  [
+    463,
+    "LATIN CAPITAL LETTER I WITH CARON"
+  ],
+  [
+    464,
+    "LATIN SMALL LETTER I WITH CARON"
+  ],
+  [
+    465,
+    "LATIN CAPITAL LETTER O WITH CARON"
+  ],
+  [
+    466,
+    "LATIN SMALL LETTER O WITH CARON"
+  ],
+  [
+    467,
+    "LATIN CAPITAL LETTER U WITH CARON"
+  ],
+  [
+    468,
+    "LATIN SMALL LETTER U WITH CARON"
+  ],
+  [
+    469,
+    "LATIN CAPITAL LETTER U WITH DIAERESIS AND MACRON"
+  ],
+  [
+    470,
+    "LATIN SMALL LETTER U WITH DIAERESIS AND MACRON"
+  ],
+  [
+    471,
+    "LATIN CAPITAL LETTER U WITH DIAERESIS AND ACUTE"
+  ],
+  [
+    472,
+    "LATIN SMALL LETTER U WITH DIAERESIS AND ACUTE"
+  ],
+  [
+    473,
+    "LATIN CAPITAL LETTER U WITH DIAERESIS AND CARON"
+  ],
+  [
+    474,
+    "LATIN SMALL LETTER U WITH DIAERESIS AND CARON"
+  ],
+  [
+    475,
+    "LATIN CAPITAL LETTER U WITH DIAERESIS AND GRAVE"
+  ],
+  [
+    476,
+    "LATIN SMALL LETTER U WITH DIAERESIS AND GRAVE"
+  ],
+  [
+    477,
+    "LATIN SMALL LETTER TURNED E"
+  ],
+  [
+    478,
+    "LATIN CAPITAL LETTER A WITH DIAERESIS AND MACRON"
+  ],
+  [
+    479,
+    "LATIN SMALL LETTER A WITH DIAERESIS AND MACRON"
+  ],
+  [
+    480,
+    "LATIN CAPITAL LETTER A WITH DOT ABOVE AND MACRON"
+  ],
+  [
+    481,
+    "LATIN SMALL LETTER A WITH DOT ABOVE AND MACRON"
+  ],
+  [
+    482,
+    "LATIN CAPITAL LETTER AE WITH MACRON"
+  ],
+  [
+    483,
+    "LATIN SMALL LETTER AE WITH MACRON"
+  ],
+  [
+    484,
+    "LATIN CAPITAL LETTER G WITH STROKE"
+  ],
+  [
+    485,
+    "LATIN SMALL LETTER G WITH STROKE"
+  ],
+  [
+    486,
+    "LATIN CAPITAL LETTER G WITH CARON"
+  ],
+  [
+    487,
+    "LATIN SMALL LETTER G WITH CARON"
+  ],
+  [
+    488,
+    "LATIN CAPITAL LETTER K WITH CARON"
+  ],
+  [
+    489,
+    "LATIN SMALL LETTER K WITH CARON"
+  ],
+  [
+    490,
+    "LATIN CAPITAL LETTER O WITH OGONEK"
+  ],
+  [
+    491,
+    "LATIN SMALL LETTER O WITH OGONEK"
+  ],
+  [
+    492,
+    "LATIN CAPITAL LETTER O WITH OGONEK AND MACRON"
+  ],
+  [
+    493,
+    "LATIN SMALL LETTER O WITH OGONEK AND MACRON"
+  ],
+  [
+    494,
+    "LATIN CAPITAL LETTER EZH WITH CARON"
+  ],
+  [
+    495,
+    "LATIN SMALL LETTER EZH WITH CARON"
+  ],
+  [
+    496,
+    "LATIN SMALL LETTER J WITH CARON"
+  ],
+  [
+    497,
+    "LATIN CAPITAL LETTER DZ"
+  ],
+  [
+    498,
+    "LATIN CAPITAL LETTER D WITH SMALL LETTER Z"
+  ],
+  [
+    499,
+    "LATIN SMALL LETTER DZ"
+  ],
+  [
+    500,
+    "LATIN CAPITAL LETTER G WITH ACUTE"
+  ],
+  [
+    501,
+    "LATIN SMALL LETTER G WITH ACUTE"
+  ],
+  [
+    502,
+    "LATIN CAPITAL LETTER HWAIR"
+  ],
+  [
+    503,
+    "LATIN CAPITAL LETTER WYNN"
+  ],
+  [
+    504,
+    "LATIN CAPITAL LETTER N WITH GRAVE"
+  ],
+  [
+    505,
+    "LATIN SMALL LETTER N WITH GRAVE"
+  ],
+  [
+    506,
+    "LATIN CAPITAL LETTER A WITH RING ABOVE AND ACUTE"
+  ],
+  [
+    507,
+    "LATIN SMALL LETTER A WITH RING ABOVE AND ACUTE"
+  ],
+  [
+    508,
+    "LATIN CAPITAL LETTER AE WITH ACUTE"
+  ],
+  [
+    509,
+    "LATIN SMALL LETTER AE WITH ACUTE"
+  ],
+  [
+    510,
+    "LATIN CAPITAL LETTER O WITH STROKE AND ACUTE"
+  ],
+  [
+    511,
+    "LATIN SMALL LETTER O WITH STROKE AND ACUTE"
+  ],
+  [
+    512,
+    "LATIN CAPITAL LETTER A WITH DOUBLE GRAVE"
+  ],
+  [
+    513,
+    "LATIN SMALL LETTER A WITH DOUBLE GRAVE"
+  ],
+  [
+    514,
+    "LATIN CAPITAL LETTER A WITH INVERTED BREVE"
+  ],
+  [
+    515,
+    "LATIN SMALL LETTER A WITH INVERTED BREVE"
+  ],
+  [
+    516,
+    "LATIN CAPITAL LETTER E WITH DOUBLE GRAVE"
+  ],
+  [
+    517,
+    "LATIN SMALL LETTER E WITH DOUBLE GRAVE"
+  ],
+  [
+    518,
+    "LATIN CAPITAL LETTER E WITH INVERTED BREVE"
+  ],
+  [
+    519,
+    "LATIN SMALL LETTER E WITH INVERTED BREVE"
+  ],
+  [
+    520,
+    "LATIN CAPITAL LETTER I WITH DOUBLE GRAVE"
+  ],
+  [
+    521,
+    "LATIN SMALL LETTER I WITH DOUBLE GRAVE"
+  ],
+  [
+    522,
+    "LATIN CAPITAL LETTER I WITH INVERTED BREVE"
+  ],
+  [
+    523,
+    "LATIN SMALL LETTER I WITH INVERTED BREVE"
+  ],
+  [
+    524,
+    "LATIN CAPITAL LETTER O WITH DOUBLE GRAVE"
+  ],
+  [
+    525,
+    "LATIN SMALL LETTER O WITH DOUBLE GRAVE"
+  ],
+  [
+    526,
+    "LATIN CAPITAL LETTER O WITH INVERTED BREVE"
+  ],
+  [
+    527,
+    "LATIN SMALL LETTER O WITH INVERTED BREVE"
+  ],
+  [
+    528,
+    "LATIN CAPITAL LETTER R WITH DOUBLE GRAVE"
+  ],
+  [
+    529,
+    "LATIN SMALL LETTER R WITH DOUBLE GRAVE"
+  ],
+  [
+    530,
+    "LATIN CAPITAL LETTER R WITH INVERTED BREVE"
+  ],
+  [
+    531,
+    "LATIN SMALL LETTER R WITH INVERTED BREVE"
+  ],
+  [
+    532,
+    "LATIN CAPITAL LETTER U WITH DOUBLE GRAVE"
+  ],
+  [
+    533,
+    "LATIN SMALL LETTER U WITH DOUBLE GRAVE"
+  ],
+  [
+    534,
+    "LATIN CAPITAL LETTER U WITH INVERTED BREVE"
+  ],
+  [
+    535,
+    "LATIN SMALL LETTER U WITH INVERTED BREVE"
+  ],
+  [
+    536,
+    "LATIN CAPITAL LETTER S WITH COMMA BELOW"
+  ],
+  [
+    537,
+    "LATIN SMALL LETTER S WITH COMMA BELOW"
+  ],
+  [
+    538,
+    "LATIN CAPITAL LETTER T WITH COMMA BELOW"
+  ],
+  [
+    539,
+    "LATIN SMALL LETTER T WITH COMMA BELOW"
+  ],
+  [
+    540,
+    "LATIN CAPITAL LETTER YOGH"
+  ],
+  [
+    541,
+    "LATIN SMALL LETTER YOGH"
+  ],
+  [
+    542,
+    "LATIN CAPITAL LETTER H WITH CARON"
+  ],
+  [
+    543,
+    "LATIN SMALL LETTER H WITH CARON"
+  ],
+  [
+    544,
+    "LATIN CAPITAL LETTER N WITH LONG RIGHT LEG"
+  ],
+  [
+    545,
+    "LATIN SMALL LETTER D WITH CURL"
+  ],
+  [
+    546,
+    "LATIN CAPITAL LETTER OU"
+  ],
+  [
+    547,
+    "LATIN SMALL LETTER OU"
+  ],
+  [
+    548,
+    "LATIN CAPITAL LETTER Z WITH HOOK"
+  ],
+  [
+    549,
+    "LATIN SMALL LETTER Z WITH HOOK"
+  ],
+  [
+    550,
+    "LATIN CAPITAL LETTER A WITH DOT ABOVE"
+  ],
+  [
+    551,
+    "LATIN SMALL LETTER A WITH DOT ABOVE"
+  ],
+  [
+    552,
+    "LATIN CAPITAL LETTER E WITH CEDILLA"
+  ],
+  [
+    553,
+    "LATIN SMALL LETTER E WITH CEDILLA"
+  ],
+  [
+    554,
+    "LATIN CAPITAL LETTER O WITH DIAERESIS AND MACRON"
+  ],
+  [
+    555,
+    "LATIN SMALL LETTER O WITH DIAERESIS AND MACRON"
+  ],
+  [
+    556,
+    "LATIN CAPITAL LETTER O WITH TILDE AND MACRON"
+  ],
+  [
+    557,
+    "LATIN SMALL LETTER O WITH TILDE AND MACRON"
+  ],
+  [
+    558,
+    "LATIN CAPITAL LETTER O WITH DOT ABOVE"
+  ],
+  [
+    559,
+    "LATIN SMALL LETTER O WITH DOT ABOVE"
+  ],
+  [
+    560,
+    "LATIN CAPITAL LETTER O WITH DOT ABOVE AND MACRON"
+  ],
+  [
+    561,
+    "LATIN SMALL LETTER O WITH DOT ABOVE AND MACRON"
+  ],
+  [
+    562,
+    "LATIN CAPITAL LETTER Y WITH MACRON"
+  ],
+  [
+    563,
+    "LATIN SMALL LETTER Y WITH MACRON"
+  ],
+  [
+    564,
+    "LATIN SMALL LETTER L WITH CURL"
+  ],
+  [
+    565,
+    "LATIN SMALL LETTER N WITH CURL"
+  ],
+  [
+    566,
+    "LATIN SMALL LETTER T WITH CURL"
+  ],
+  [
+    567,
+    "LATIN SMALL LETTER DOTLESS J"
+  ],
+  [
+    568,
+    "LATIN SMALL LETTER DB DIGRAPH"
+  ],
+  [
+    569,
+    "LATIN SMALL LETTER QP DIGRAPH"
+  ],
+  [
+    570,
+    "LATIN CAPITAL LETTER A WITH STROKE"
+  ],
+  [
+    571,
+    "LATIN CAPITAL LETTER C WITH STROKE"
+  ],
+  [
+    572,
+    "LATIN SMALL LETTER C WITH STROKE"
+  ],
+  [
+    573,
+    "LATIN CAPITAL LETTER L WITH BAR"
+  ],
+  [
+    574,
+    "LATIN CAPITAL LETTER T WITH DIAGONAL STROKE"
+  ],
+  [
+    575,
+    "LATIN SMALL LETTER S WITH SWASH TAIL"
+  ],
+  [
+    576,
+    "LATIN SMALL LETTER Z WITH SWASH TAIL"
+  ],
+  [
+    577,
+    "LATIN CAPITAL LETTER GLOTTAL STOP"
+  ],
+  [
+    578,
+    "LATIN SMALL LETTER GLOTTAL STOP"
+  ],
+  [
+    579,
+    "LATIN CAPITAL LETTER B WITH STROKE"
+  ],
+  [
+    580,
+    "LATIN CAPITAL LETTER U BAR"
+  ],
+  [
+    581,
+    "LATIN CAPITAL LETTER TURNED V"
+  ],
+  [
+    582,
+    "LATIN CAPITAL LETTER E WITH STROKE"
+  ],
+  [
+    583,
+    "LATIN SMALL LETTER E WITH STROKE"
+  ],
+  [
+    584,
+    "LATIN CAPITAL LETTER J WITH STROKE"
+  ],
+  [
+    585,
+    "LATIN SMALL LETTER J WITH STROKE"
+  ],
+  [
+    586,
+    "LATIN CAPITAL LETTER SMALL Q WITH HOOK TAIL"
+  ],
+  [
+    587,
+    "LATIN SMALL LETTER Q WITH HOOK TAIL"
+  ],
+  [
+    588,
+    "LATIN CAPITAL LETTER R WITH STROKE"
+  ],
+  [
+    589,
+    "LATIN SMALL LETTER R WITH STROKE"
+  ],
+  [
+    590,
+    "LATIN CAPITAL LETTER Y WITH STROKE"
+  ],
+  [
+    591,
+    "LATIN SMALL LETTER Y WITH STROKE"
+  ],
+  [
+    592,
+    "LATIN SMALL LETTER TURNED A"
+  ],
+  [
+    593,
+    "LATIN SMALL LETTER ALPHA"
+  ],
+  [
+    594,
+    "LATIN SMALL LETTER TURNED ALPHA"
+  ],
+  [
+    595,
+    "LATIN SMALL LETTER B WITH HOOK"
+  ],
+  [
+    596,
+    "LATIN SMALL LETTER OPEN O"
+  ],
+  [
+    597,
+    "LATIN SMALL LETTER C WITH CURL"
+  ],
+  [
+    598,
+    "LATIN SMALL LETTER D WITH TAIL"
+  ],
+  [
+    599,
+    "LATIN SMALL LETTER D WITH HOOK"
+  ],
+  [
+    600,
+    "LATIN SMALL LETTER REVERSED E"
+  ],
+  [
+    601,
+    "LATIN SMALL LETTER SCHWA"
+  ],
+  [
+    602,
+    "LATIN SMALL LETTER SCHWA WITH HOOK"
+  ],
+  [
+    603,
+    "LATIN SMALL LETTER OPEN E"
+  ],
+  [
+    604,
+    "LATIN SMALL LETTER REVERSED OPEN E"
+  ],
+  [
+    605,
+    "LATIN SMALL LETTER REVERSED OPEN E WITH HOOK"
+  ],
+  [
+    606,
+    "LATIN SMALL LETTER CLOSED REVERSED OPEN E"
+  ],
+  [
+    607,
+    "LATIN SMALL LETTER DOTLESS J WITH STROKE"
+  ],
+  [
+    608,
+    "LATIN SMALL LETTER G WITH HOOK"
+  ],
+  [
+    609,
+    "LATIN SMALL LETTER SCRIPT G"
+  ],
+  [
+    610,
+    "LATIN LETTER SMALL CAPITAL G"
+  ],
+  [
+    611,
+    "LATIN SMALL LETTER GAMMA"
+  ],
+  [
+    612,
+    "LATIN SMALL LETTER RAMS HORN"
+  ],
+  [
+    613,
+    "LATIN SMALL LETTER TURNED H"
+  ],
+  [
+    614,
+    "LATIN SMALL LETTER H WITH HOOK"
+  ],
+  [
+    615,
+    "LATIN SMALL LETTER HENG WITH HOOK"
+  ],
+  [
+    616,
+    "LATIN SMALL LETTER I WITH STROKE"
+  ],
+  [
+    617,
+    "LATIN SMALL LETTER IOTA"
+  ],
+  [
+    618,
+    "LATIN LETTER SMALL CAPITAL I"
+  ],
+  [
+    619,
+    "LATIN SMALL LETTER L WITH MIDDLE TILDE"
+  ],
+  [
+    620,
+    "LATIN SMALL LETTER L WITH BELT"
+  ],
+  [
+    621,
+    "LATIN SMALL LETTER L WITH RETROFLEX HOOK"
+  ],
+  [
+    622,
+    "LATIN SMALL LETTER LEZH"
+  ],
+  [
+    623,
+    "LATIN SMALL LETTER TURNED M"
+  ],
+  [
+    624,
+    "LATIN SMALL LETTER TURNED M WITH LONG LEG"
+  ],
+  [
+    625,
+    "LATIN SMALL LETTER M WITH HOOK"
+  ],
+  [
+    626,
+    "LATIN SMALL LETTER N WITH LEFT HOOK"
+  ],
+  [
+    627,
+    "LATIN SMALL LETTER N WITH RETROFLEX HOOK"
+  ],
+  [
+    628,
+    "LATIN LETTER SMALL CAPITAL N"
+  ],
+  [
+    629,
+    "LATIN SMALL LETTER BARRED O"
+  ],
+  [
+    630,
+    "LATIN LETTER SMALL CAPITAL OE"
+  ],
+  [
+    631,
+    "LATIN SMALL LETTER CLOSED OMEGA"
+  ],
+  [
+    632,
+    "LATIN SMALL LETTER PHI"
+  ],
+  [
+    633,
+    "LATIN SMALL LETTER TURNED R"
+  ],
+  [
+    634,
+    "LATIN SMALL LETTER TURNED R WITH LONG LEG"
+  ],
+  [
+    635,
+    "LATIN SMALL LETTER TURNED R WITH HOOK"
+  ],
+  [
+    636,
+    "LATIN SMALL LETTER R WITH LONG LEG"
+  ],
+  [
+    637,
+    "LATIN SMALL LETTER R WITH TAIL"
+  ],
+  [
+    638,
+    "LATIN SMALL LETTER R WITH FISHHOOK"
+  ],
+  [
+    639,
+    "LATIN SMALL LETTER REVERSED R WITH FISHHOOK"
+  ],
+  [
+    640,
+    "LATIN LETTER SMALL CAPITAL R"
+  ],
+  [
+    641,
+    "LATIN LETTER SMALL CAPITAL INVERTED R"
+  ],
+  [
+    642,
+    "LATIN SMALL LETTER S WITH HOOK"
+  ],
+  [
+    643,
+    "LATIN SMALL LETTER ESH"
+  ],
+  [
+    644,
+    "LATIN SMALL LETTER DOTLESS J WITH STROKE AND HOOK"
+  ],
+  [
+    645,
+    "LATIN SMALL LETTER SQUAT REVERSED ESH"
+  ],
+  [
+    646,
+    "LATIN SMALL LETTER ESH WITH CURL"
+  ],
+  [
+    647,
+    "LATIN SMALL LETTER TURNED T"
+  ],
+  [
+    648,
+    "LATIN SMALL LETTER T WITH RETROFLEX HOOK"
+  ],
+  [
+    649,
+    "LATIN SMALL LETTER U BAR"
+  ],
+  [
+    650,
+    "LATIN SMALL LETTER UPSILON"
+  ],
+  [
+    651,
+    "LATIN SMALL LETTER V WITH HOOK"
+  ],
+  [
+    652,
+    "LATIN SMALL LETTER TURNED V"
+  ],
+  [
+    653,
+    "LATIN SMALL LETTER TURNED W"
+  ],
+  [
+    654,
+    "LATIN SMALL LETTER TURNED Y"
+  ],
+  [
+    655,
+    "LATIN LETTER SMALL CAPITAL Y"
+  ],
+  [
+    656,
+    "LATIN SMALL LETTER Z WITH RETROFLEX HOOK"
+  ],
+  [
+    657,
+    "LATIN SMALL LETTER Z WITH CURL"
+  ],
+  [
+    658,
+    "LATIN SMALL LETTER EZH"
+  ],
+  [
+    659,
+    "LATIN SMALL LETTER EZH WITH CURL"
+  ],
+  [
+    660,
+    "LATIN LETTER GLOTTAL STOP"
+  ],
+  [
+    661,
+    "LATIN LETTER PHARYNGEAL VOICED FRICATIVE"
+  ],
+  [
+    662,
+    "LATIN LETTER INVERTED GLOTTAL STOP"
+  ],
+  [
+    663,
+    "LATIN LETTER STRETCHED C"
+  ],
+  [
+    664,
+    "LATIN LETTER BILABIAL CLICK"
+  ],
+  [
+    665,
+    "LATIN LETTER SMALL CAPITAL B"
+  ],
+  [
+    666,
+    "LATIN SMALL LETTER CLOSED OPEN E"
+  ],
+  [
+    667,
+    "LATIN LETTER SMALL CAPITAL G WITH HOOK"
+  ],
+  [
+    668,
+    "LATIN LETTER SMALL CAPITAL H"
+  ],
+  [
+    669,
+    "LATIN SMALL LETTER J WITH CROSSED-TAIL"
+  ],
+  [
+    670,
+    "LATIN SMALL LETTER TURNED K"
+  ],
+  [
+    671,
+    "LATIN LETTER SMALL CAPITAL L"
+  ],
+  [
+    672,
+    "LATIN SMALL LETTER Q WITH HOOK"
+  ],
+  [
+    673,
+    "LATIN LETTER GLOTTAL STOP WITH STROKE"
+  ],
+  [
+    674,
+    "LATIN LETTER REVERSED GLOTTAL STOP WITH STROKE"
+  ],
+  [
+    675,
+    "LATIN SMALL LETTER DZ DIGRAPH"
+  ],
+  [
+    676,
+    "LATIN SMALL LETTER DEZH DIGRAPH"
+  ],
+  [
+    677,
+    "LATIN SMALL LETTER DZ DIGRAPH WITH CURL"
+  ],
+  [
+    678,
+    "LATIN SMALL LETTER TS DIGRAPH"
+  ],
+  [
+    679,
+    "LATIN SMALL LETTER TESH DIGRAPH"
+  ],
+  [
+    680,
+    "LATIN SMALL LETTER TC DIGRAPH WITH CURL"
+  ],
+  [
+    681,
+    "LATIN SMALL LETTER FENG DIGRAPH"
+  ],
+  [
+    682,
+    "LATIN SMALL LETTER LS DIGRAPH"
+  ],
+  [
+    683,
+    "LATIN SMALL LETTER LZ DIGRAPH"
+  ],
+  [
+    684,
+    "LATIN LETTER BILABIAL PERCUSSIVE"
+  ],
+  [
+    685,
+    "LATIN LETTER BIDENTAL PERCUSSIVE"
+  ],
+  [
+    686,
+    "LATIN SMALL LETTER TURNED H WITH FISHHOOK"
+  ],
+  [
+    687,
+    "LATIN SMALL LETTER TURNED H WITH FISHHOOK AND TAIL"
+  ],
+  [
+    688,
+    "MODIFIER LETTER SMALL H"
+  ],
+  [
+    689,
+    "MODIFIER LETTER SMALL H WITH HOOK"
+  ],
+  [
+    690,
+    "MODIFIER LETTER SMALL J"
+  ],
+  [
+    691,
+    "MODIFIER LETTER SMALL R"
+  ],
+  [
+    692,
+    "MODIFIER LETTER SMALL TURNED R"
+  ],
+  [
+    693,
+    "MODIFIER LETTER SMALL TURNED R WITH HOOK"
+  ],
+  [
+    694,
+    "MODIFIER LETTER SMALL CAPITAL INVERTED R"
+  ],
+  [
+    695,
+    "MODIFIER LETTER SMALL W"
+  ],
+  [
+    696,
+    "MODIFIER LETTER SMALL Y"
+  ],
+  [
+    697,
+    "MODIFIER LETTER PRIME"
+  ],
+  [
+    698,
+    "MODIFIER LETTER DOUBLE PRIME"
+  ],
+  [
+    699,
+    "MODIFIER LETTER TURNED COMMA"
+  ],
+  [
+    700,
+    "MODIFIER LETTER APOSTROPHE"
+  ],
+  [
+    701,
+    "MODIFIER LETTER REVERSED COMMA"
+  ],
+  [
+    702,
+    "MODIFIER LETTER RIGHT HALF RING"
+  ],
+  [
+    703,
+    "MODIFIER LETTER LEFT HALF RING"
+  ],
+  [
+    704,
+    "MODIFIER LETTER GLOTTAL STOP"
+  ],
+  [
+    705,
+    "MODIFIER LETTER REVERSED GLOTTAL STOP"
+  ],
+  [
+    706,
+    "MODIFIER LETTER LEFT ARROWHEAD"
+  ],
+  [
+    707,
+    "MODIFIER LETTER RIGHT ARROWHEAD"
+  ],
+  [
+    708,
+    "MODIFIER LETTER UP ARROWHEAD"
+  ],
+  [
+    709,
+    "MODIFIER LETTER DOWN ARROWHEAD"
+  ],
+  [
+    710,
+    "MODIFIER LETTER CIRCUMFLEX ACCENT"
+  ],
+  [
+    711,
+    "CARON"
+  ],
+  [
+    712,
+    "MODIFIER LETTER VERTICAL LINE"
+  ],
+  [
+    713,
+    "MODIFIER LETTER MACRON"
+  ],
+  [
+    714,
+    "MODIFIER LETTER ACUTE ACCENT"
+  ],
+  [
+    715,
+    "MODIFIER LETTER GRAVE ACCENT"
+  ],
+  [
+    716,
+    "MODIFIER LETTER LOW VERTICAL LINE"
+  ],
+  [
+    717,
+    "MODIFIER LETTER LOW MACRON"
+  ],
+  [
+    718,
+    "MODIFIER LETTER LOW GRAVE ACCENT"
+  ],
+  [
+    719,
+    "MODIFIER LETTER LOW ACUTE ACCENT"
+  ],
+  [
+    720,
+    "MODIFIER LETTER TRIANGULAR COLON"
+  ],
+  [
+    721,
+    "MODIFIER LETTER HALF TRIANGULAR COLON"
+  ],
+  [
+    722,
+    "MODIFIER LETTER CENTRED RIGHT HALF RING"
+  ],
+  [
+    723,
+    "MODIFIER LETTER CENTRED LEFT HALF RING"
+  ],
+  [
+    724,
+    "MODIFIER LETTER UP TACK"
+  ],
+  [
+    725,
+    "MODIFIER LETTER DOWN TACK"
+  ],
+  [
+    726,
+    "MODIFIER LETTER PLUS SIGN"
+  ],
+  [
+    727,
+    "MODIFIER LETTER MINUS SIGN"
+  ],
+  [
+    728,
+    "BREVE"
+  ],
+  [
+    729,
+    "DOT ABOVE"
+  ],
+  [
+    730,
+    "RING ABOVE"
+  ],
+  [
+    731,
+    "OGONEK"
+  ],
+  [
+    732,
+    "SMALL TILDE"
+  ],
+  [
+    733,
+    "DOUBLE ACUTE ACCENT"
+  ],
+  [
+    734,
+    "MODIFIER LETTER RHOTIC HOOK"
+  ],
+  [
+    735,
+    "MODIFIER LETTER CROSS ACCENT"
+  ],
+  [
+    736,
+    "MODIFIER LETTER SMALL GAMMA"
+  ],
+  [
+    737,
+    "MODIFIER LETTER SMALL L"
+  ],
+  [
+    738,
+    "MODIFIER LETTER SMALL S"
+  ],
+  [
+    739,
+    "MODIFIER LETTER SMALL X"
+  ],
+  [
+    740,
+    "MODIFIER LETTER SMALL REVERSED GLOTTAL STOP"
+  ],
+  [
+    741,
+    "MODIFIER LETTER EXTRA-HIGH TONE BAR"
+  ],
+  [
+    742,
+    "MODIFIER LETTER HIGH TONE BAR"
+  ],
+  [
+    743,
+    "MODIFIER LETTER MID TONE BAR"
+  ],
+  [
+    744,
+    "MODIFIER LETTER LOW TONE BAR"
+  ],
+  [
+    745,
+    "MODIFIER LETTER EXTRA-LOW TONE BAR"
+  ],
+  [
+    746,
+    "MODIFIER LETTER YIN DEPARTING TONE MARK"
+  ],
+  [
+    747,
+    "MODIFIER LETTER YANG DEPARTING TONE MARK"
+  ],
+  [
+    748,
+    "MODIFIER LETTER VOICING"
+  ],
+  [
+    749,
+    "MODIFIER LETTER UNASPIRATED"
+  ],
+  [
+    750,
+    "MODIFIER LETTER DOUBLE APOSTROPHE"
+  ],
+  [
+    751,
+    "MODIFIER LETTER LOW DOWN ARROWHEAD"
+  ],
+  [
+    752,
+    "MODIFIER LETTER LOW UP ARROWHEAD"
+  ],
+  [
+    753,
+    "MODIFIER LETTER LOW LEFT ARROWHEAD"
+  ],
+  [
+    754,
+    "MODIFIER LETTER LOW RIGHT ARROWHEAD"
+  ],
+  [
+    755,
+    "MODIFIER LETTER LOW RING"
+  ],
+  [
+    756,
+    "MODIFIER LETTER MIDDLE GRAVE ACCENT"
+  ],
+  [
+    757,
+    "MODIFIER LETTER MIDDLE DOUBLE GRAVE ACCENT"
+  ],
+  [
+    758,
+    "MODIFIER LETTER MIDDLE DOUBLE ACUTE ACCENT"
+  ],
+  [
+    759,
+    "MODIFIER LETTER LOW TILDE"
+  ],
+  [
+    760,
+    "MODIFIER LETTER RAISED COLON"
+  ],
+  [
+    761,
+    "MODIFIER LETTER BEGIN HIGH TONE"
+  ],
+  [
+    762,
+    "MODIFIER LETTER END HIGH TONE"
+  ],
+  [
+    763,
+    "MODIFIER LETTER BEGIN LOW TONE"
+  ],
+  [
+    764,
+    "MODIFIER LETTER END LOW TONE"
+  ],
+  [
+    765,
+    "MODIFIER LETTER SHELF"
+  ],
+  [
+    766,
+    "MODIFIER LETTER OPEN SHELF"
+  ],
+  [
+    767,
+    "MODIFIER LETTER LOW LEFT ARROW"
+  ],
+  [
+    768,
+    "COMBINING GRAVE ACCENT"
+  ],
+  [
+    769,
+    "COMBINING ACUTE ACCENT"
+  ],
+  [
+    770,
+    "COMBINING CIRCUMFLEX ACCENT"
+  ],
+  [
+    771,
+    "COMBINING TILDE"
+  ],
+  [
+    772,
+    "COMBINING MACRON"
+  ],
+  [
+    773,
+    "COMBINING OVERLINE"
+  ],
+  [
+    774,
+    "COMBINING BREVE"
+  ],
+  [
+    775,
+    "COMBINING DOT ABOVE"
+  ],
+  [
+    776,
+    "COMBINING DIAERESIS"
+  ],
+  [
+    777,
+    "COMBINING HOOK ABOVE"
+  ],
+  [
+    778,
+    "COMBINING RING ABOVE"
+  ],
+  [
+    779,
+    "COMBINING DOUBLE ACUTE ACCENT"
+  ],
+  [
+    780,
+    "COMBINING CARON"
+  ],
+  [
+    781,
+    "COMBINING VERTICAL LINE ABOVE"
+  ],
+  [
+    782,
+    "COMBINING DOUBLE VERTICAL LINE ABOVE"
+  ],
+  [
+    783,
+    "COMBINING DOUBLE GRAVE ACCENT"
+  ],
+  [
+    784,
+    "COMBINING CANDRABINDU"
+  ],
+  [
+    785,
+    "COMBINING INVERTED BREVE"
+  ],
+  [
+    786,
+    "COMBINING TURNED COMMA ABOVE"
+  ],
+  [
+    787,
+    "COMBINING COMMA ABOVE"
+  ],
+  [
+    788,
+    "COMBINING REVERSED COMMA ABOVE"
+  ],
+  [
+    789,
+    "COMBINING COMMA ABOVE RIGHT"
+  ],
+  [
+    790,
+    "COMBINING GRAVE ACCENT BELOW"
+  ],
+  [
+    791,
+    "COMBINING ACUTE ACCENT BELOW"
+  ],
+  [
+    792,
+    "COMBINING LEFT TACK BELOW"
+  ],
+  [
+    793,
+    "COMBINING RIGHT TACK BELOW"
+  ],
+  [
+    794,
+    "COMBINING LEFT ANGLE ABOVE"
+  ],
+  [
+    795,
+    "COMBINING HORN"
+  ],
+  [
+    796,
+    "COMBINING LEFT HALF RING BELOW"
+  ],
+  [
+    797,
+    "COMBINING UP TACK BELOW"
+  ],
+  [
+    798,
+    "COMBINING DOWN TACK BELOW"
+  ],
+  [
+    799,
+    "COMBINING PLUS SIGN BELOW"
+  ],
+  [
+    800,
+    "COMBINING MINUS SIGN BELOW"
+  ],
+  [
+    801,
+    "COMBINING PALATALIZED HOOK BELOW"
+  ],
+  [
+    802,
+    "COMBINING RETROFLEX HOOK BELOW"
+  ],
+  [
+    803,
+    "COMBINING DOT BELOW"
+  ],
+  [
+    804,
+    "COMBINING DIAERESIS BELOW"
+  ],
+  [
+    805,
+    "COMBINING RING BELOW"
+  ],
+  [
+    806,
+    "COMBINING COMMA BELOW"
+  ],
+  [
+    807,
+    "COMBINING CEDILLA"
+  ],
+  [
+    808,
+    "COMBINING OGONEK"
+  ],
+  [
+    809,
+    "COMBINING VERTICAL LINE BELOW"
+  ],
+  [
+    810,
+    "COMBINING BRIDGE BELOW"
+  ],
+  [
+    811,
+    "COMBINING INVERTED DOUBLE ARCH BELOW"
+  ],
+  [
+    812,
+    "COMBINING CARON BELOW"
+  ],
+  [
+    813,
+    "COMBINING CIRCUMFLEX ACCENT BELOW"
+  ],
+  [
+    814,
+    "COMBINING BREVE BELOW"
+  ],
+  [
+    815,
+    "COMBINING INVERTED BREVE BELOW"
+  ],
+  [
+    816,
+    "COMBINING TILDE BELOW"
+  ],
+  [
+    817,
+    "COMBINING MACRON BELOW"
+  ],
+  [
+    818,
+    "COMBINING LOW LINE"
+  ],
+  [
+    819,
+    "COMBINING DOUBLE LOW LINE"
+  ],
+  [
+    820,
+    "COMBINING TILDE OVERLAY"
+  ],
+  [
+    821,
+    "COMBINING SHORT STROKE OVERLAY"
+  ],
+  [
+    822,
+    "COMBINING LONG STROKE OVERLAY"
+  ],
+  [
+    823,
+    "COMBINING SHORT SOLIDUS OVERLAY"
+  ],
+  [
+    824,
+    "COMBINING LONG SOLIDUS OVERLAY"
+  ],
+  [
+    825,
+    "COMBINING RIGHT HALF RING BELOW"
+  ],
+  [
+    826,
+    "COMBINING INVERTED BRIDGE BELOW"
+  ],
+  [
+    827,
+    "COMBINING SQUARE BELOW"
+  ],
+  [
+    828,
+    "COMBINING SEAGULL BELOW"
+  ],
+  [
+    829,
+    "COMBINING X ABOVE"
+  ],
+  [
+    830,
+    "COMBINING VERTICAL TILDE"
+  ],
+  [
+    831,
+    "COMBINING DOUBLE OVERLINE"
+  ],
+  [
+    832,
+    "COMBINING GRAVE TONE MARK"
+  ],
+  [
+    833,
+    "COMBINING ACUTE TONE MARK"
+  ],
+  [
+    834,
+    "COMBINING GREEK PERISPOMENI"
+  ],
+  [
+    835,
+    "COMBINING GREEK KORONIS"
+  ],
+  [
+    836,
+    "COMBINING GREEK DIALYTIKA TONOS"
+  ],
+  [
+    837,
+    "COMBINING GREEK YPOGEGRAMMENI"
+  ],
+  [
+    838,
+    "COMBINING BRIDGE ABOVE"
+  ],
+  [
+    839,
+    "COMBINING EQUALS SIGN BELOW"
+  ],
+  [
+    840,
+    "COMBINING DOUBLE VERTICAL LINE BELOW"
+  ],
+  [
+    841,
+    "COMBINING LEFT ANGLE BELOW"
+  ],
+  [
+    842,
+    "COMBINING NOT TILDE ABOVE"
+  ],
+  [
+    843,
+    "COMBINING HOMOTHETIC ABOVE"
+  ],
+  [
+    844,
+    "COMBINING ALMOST EQUAL TO ABOVE"
+  ],
+  [
+    845,
+    "COMBINING LEFT RIGHT ARROW BELOW"
+  ],
+  [
+    846,
+    "COMBINING UPWARDS ARROW BELOW"
+  ],
+  [
+    847,
+    "COMBINING GRAPHEME JOINER"
+  ],
+  [
+    848,
+    "COMBINING RIGHT ARROWHEAD ABOVE"
+  ],
+  [
+    849,
+    "COMBINING LEFT HALF RING ABOVE"
+  ],
+  [
+    850,
+    "COMBINING FERMATA"
+  ],
+  [
+    851,
+    "COMBINING X BELOW"
+  ],
+  [
+    852,
+    "COMBINING LEFT ARROWHEAD BELOW"
+  ],
+  [
+    853,
+    "COMBINING RIGHT ARROWHEAD BELOW"
+  ],
+  [
+    854,
+    "COMBINING RIGHT ARROWHEAD AND UP ARROWHEAD BELOW"
+  ],
+  [
+    855,
+    "COMBINING RIGHT HALF RING ABOVE"
+  ],
+  [
+    856,
+    "COMBINING DOT ABOVE RIGHT"
+  ],
+  [
+    857,
+    "COMBINING ASTERISK BELOW"
+  ],
+  [
+    858,
+    "COMBINING DOUBLE RING BELOW"
+  ],
+  [
+    859,
+    "COMBINING ZIGZAG ABOVE"
+  ],
+  [
+    860,
+    "COMBINING DOUBLE BREVE BELOW"
+  ],
+  [
+    861,
+    "COMBINING DOUBLE BREVE"
+  ],
+  [
+    862,
+    "COMBINING DOUBLE MACRON"
+  ],
+  [
+    863,
+    "COMBINING DOUBLE MACRON BELOW"
+  ],
+  [
+    864,
+    "COMBINING DOUBLE TILDE"
+  ],
+  [
+    865,
+    "COMBINING DOUBLE INVERTED BREVE"
+  ],
+  [
+    866,
+    "COMBINING DOUBLE RIGHTWARDS ARROW BELOW"
+  ],
+  [
+    867,
+    "COMBINING LATIN SMALL LETTER A"
+  ],
+  [
+    868,
+    "COMBINING LATIN SMALL LETTER E"
+  ],
+  [
+    869,
+    "COMBINING LATIN SMALL LETTER I"
+  ],
+  [
+    870,
+    "COMBINING LATIN SMALL LETTER O"
+  ],
+  [
+    871,
+    "COMBINING LATIN SMALL LETTER U"
+  ],
+  [
+    872,
+    "COMBINING LATIN SMALL LETTER C"
+  ],
+  [
+    873,
+    "COMBINING LATIN SMALL LETTER D"
+  ],
+  [
+    874,
+    "COMBINING LATIN SMALL LETTER H"
+  ],
+  [
+    875,
+    "COMBINING LATIN SMALL LETTER M"
+  ],
+  [
+    876,
+    "COMBINING LATIN SMALL LETTER R"
+  ],
+  [
+    877,
+    "COMBINING LATIN SMALL LETTER T"
+  ],
+  [
+    878,
+    "COMBINING LATIN SMALL LETTER V"
+  ],
+  [
+    879,
+    "COMBINING LATIN SMALL LETTER X"
+  ],
+  [
+    880,
+    "GREEK CAPITAL LETTER HETA"
+  ],
+  [
+    881,
+    "GREEK SMALL LETTER HETA"
+  ],
+  [
+    882,
+    "GREEK CAPITAL LETTER ARCHAIC SAMPI"
+  ],
+  [
+    883,
+    "GREEK SMALL LETTER ARCHAIC SAMPI"
+  ],
+  [
+    884,
+    "GREEK NUMERAL SIGN"
+  ],
+  [
+    885,
+    "GREEK LOWER NUMERAL SIGN"
+  ],
+  [
+    886,
+    "GREEK CAPITAL LETTER PAMPHYLIAN DIGAMMA"
+  ],
+  [
+    887,
+    "GREEK SMALL LETTER PAMPHYLIAN DIGAMMA"
+  ],
+  [
+    890,
+    "GREEK YPOGEGRAMMENI"
+  ],
+  [
+    891,
+    "GREEK SMALL REVERSED LUNATE SIGMA SYMBOL"
+  ],
+  [
+    892,
+    "GREEK SMALL DOTTED LUNATE SIGMA SYMBOL"
+  ],
+  [
+    893,
+    "GREEK SMALL REVERSED DOTTED LUNATE SIGMA SYMBOL"
+  ],
+  [
+    894,
+    "GREEK QUESTION MARK"
+  ],
+  [
+    895,
+    "GREEK CAPITAL LETTER YOT"
+  ],
+  [
+    900,
+    "GREEK TONOS"
+  ],
+  [
+    901,
+    "GREEK DIALYTIKA TONOS"
+  ],
+  [
+    902,
+    "GREEK CAPITAL LETTER ALPHA WITH TONOS"
+  ],
+  [
+    903,
+    "GREEK ANO TELEIA"
+  ],
+  [
+    904,
+    "GREEK CAPITAL LETTER EPSILON WITH TONOS"
+  ],
+  [
+    905,
+    "GREEK CAPITAL LETTER ETA WITH TONOS"
+  ],
+  [
+    906,
+    "GREEK CAPITAL LETTER IOTA WITH TONOS"
+  ],
+  [
+    908,
+    "GREEK CAPITAL LETTER OMICRON WITH TONOS"
+  ],
+  [
+    910,
+    "GREEK CAPITAL LETTER UPSILON WITH TONOS"
+  ],
+  [
+    911,
+    "GREEK CAPITAL LETTER OMEGA WITH TONOS"
+  ],
+  [
+    912,
+    "GREEK SMALL LETTER IOTA WITH DIALYTIKA AND TONOS"
+  ],
+  [
+    913,
+    "GREEK CAPITAL LETTER ALPHA"
+  ],
+  [
+    914,
+    "GREEK CAPITAL LETTER BETA"
+  ],
+  [
+    915,
+    "GREEK CAPITAL LETTER GAMMA"
+  ],
+  [
+    916,
+    "GREEK CAPITAL LETTER DELTA"
+  ],
+  [
+    917,
+    "GREEK CAPITAL LETTER EPSILON"
+  ],
+  [
+    918,
+    "GREEK CAPITAL LETTER ZETA"
+  ],
+  [
+    919,
+    "GREEK CAPITAL LETTER ETA"
+  ],
+  [
+    920,
+    "GREEK CAPITAL LETTER THETA"
+  ],
+  [
+    921,
+    "GREEK CAPITAL LETTER IOTA"
+  ],
+  [
+    922,
+    "GREEK CAPITAL LETTER KAPPA"
+  ],
+  [
+    923,
+    "GREEK CAPITAL LETTER LAMDA"
+  ],
+  [
+    924,
+    "GREEK CAPITAL LETTER MU"
+  ],
+  [
+    925,
+    "GREEK CAPITAL LETTER NU"
+  ],
+  [
+    926,
+    "GREEK CAPITAL LETTER XI"
+  ],
+  [
+    927,
+    "GREEK CAPITAL LETTER OMICRON"
+  ],
+  [
+    928,
+    "GREEK CAPITAL LETTER PI"
+  ],
+  [
+    929,
+    "GREEK CAPITAL LETTER RHO"
+  ],
+  [
+    931,
+    "GREEK CAPITAL LETTER SIGMA"
+  ],
+  [
+    932,
+    "GREEK CAPITAL LETTER TAU"
+  ],
+  [
+    933,
+    "GREEK CAPITAL LETTER UPSILON"
+  ],
+  [
+    934,
+    "GREEK CAPITAL LETTER PHI"
+  ],
+  [
+    935,
+    "GREEK CAPITAL LETTER CHI"
+  ],
+  [
+    936,
+    "GREEK CAPITAL LETTER PSI"
+  ],
+  [
+    937,
+    "GREEK CAPITAL LETTER OMEGA"
+  ],
+  [
+    938,
+    "GREEK CAPITAL LETTER IOTA WITH DIALYTIKA"
+  ],
+  [
+    939,
+    "GREEK CAPITAL LETTER UPSILON WITH DIALYTIKA"
+  ],
+  [
+    940,
+    "GREEK SMALL LETTER ALPHA WITH TONOS"
+  ],
+  [
+    941,
+    "GREEK SMALL LETTER EPSILON WITH TONOS"
+  ],
+  [
+    942,
+    "GREEK SMALL LETTER ETA WITH TONOS"
+  ],
+  [
+    943,
+    "GREEK SMALL LETTER IOTA WITH TONOS"
+  ],
+  [
+    944,
+    "GREEK SMALL LETTER UPSILON WITH DIALYTIKA AND TONOS"
+  ],
+  [
+    945,
+    "GREEK SMALL LETTER ALPHA"
+  ],
+  [
+    946,
+    "GREEK SMALL LETTER BETA"
+  ],
+  [
+    947,
+    "GREEK SMALL LETTER GAMMA"
+  ],
+  [
+    948,
+    "GREEK SMALL LETTER DELTA"
+  ],
+  [
+    949,
+    "GREEK SMALL LETTER EPSILON"
+  ],
+  [
+    950,
+    "GREEK SMALL LETTER ZETA"
+  ],
+  [
+    951,
+    "GREEK SMALL LETTER ETA"
+  ],
+  [
+    952,
+    "GREEK SMALL LETTER THETA"
+  ],
+  [
+    953,
+    "GREEK SMALL LETTER IOTA"
+  ],
+  [
+    954,
+    "GREEK SMALL LETTER KAPPA"
+  ],
+  [
+    955,
+    "GREEK SMALL LETTER LAMDA"
+  ],
+  [
+    956,
+    "GREEK SMALL LETTER MU"
+  ],
+  [
+    957,
+    "GREEK SMALL LETTER NU"
+  ],
+  [
+    958,
+    "GREEK SMALL LETTER XI"
+  ],
+  [
+    959,
+    "GREEK SMALL LETTER OMICRON"
+  ],
+  [
+    960,
+    "GREEK SMALL LETTER PI"
+  ],
+  [
+    961,
+    "GREEK SMALL LETTER RHO"
+  ],
+  [
+    962,
+    "GREEK SMALL LETTER FINAL SIGMA"
+  ],
+  [
+    963,
+    "GREEK SMALL LETTER SIGMA"
+  ],
+  [
+    964,
+    "GREEK SMALL LETTER TAU"
+  ],
+  [
+    965,
+    "GREEK SMALL LETTER UPSILON"
+  ],
+  [
+    966,
+    "GREEK SMALL LETTER PHI"
+  ],
+  [
+    967,
+    "GREEK SMALL LETTER CHI"
+  ],
+  [
+    968,
+    "GREEK SMALL LETTER PSI"
+  ],
+  [
+    969,
+    "GREEK SMALL LETTER OMEGA"
+  ],
+  [
+    970,
+    "GREEK SMALL LETTER IOTA WITH DIALYTIKA"
+  ],
+  [
+    971,
+    "GREEK SMALL LETTER UPSILON WITH DIALYTIKA"
+  ],
+  [
+    972,
+    "GREEK SMALL LETTER OMICRON WITH TONOS"
+  ],
+  [
+    973,
+    "GREEK SMALL LETTER UPSILON WITH TONOS"
+  ],
+  [
+    974,
+    "GREEK SMALL LETTER OMEGA WITH TONOS"
+  ],
+  [
+    975,
+    "GREEK CAPITAL KAI SYMBOL"
+  ],
+  [
+    976,
+    "GREEK BETA SYMBOL"
+  ],
+  [
+    977,
+    "GREEK THETA SYMBOL"
+  ],
+  [
+    978,
+    "GREEK UPSILON WITH HOOK SYMBOL"
+  ],
+  [
+    979,
+    "GREEK UPSILON WITH ACUTE AND HOOK SYMBOL"
+  ],
+  [
+    980,
+    "GREEK UPSILON WITH DIAERESIS AND HOOK SYMBOL"
+  ],
+  [
+    981,
+    "GREEK PHI SYMBOL"
+  ],
+  [
+    982,
+    "GREEK PI SYMBOL"
+  ],
+  [
+    983,
+    "GREEK KAI SYMBOL"
+  ],
+  [
+    984,
+    "GREEK LETTER ARCHAIC KOPPA"
+  ],
+  [
+    985,
+    "GREEK SMALL LETTER ARCHAIC KOPPA"
+  ],
+  [
+    986,
+    "GREEK LETTER STIGMA"
+  ],
+  [
+    987,
+    "GREEK SMALL LETTER STIGMA"
+  ],
+  [
+    988,
+    "GREEK LETTER DIGAMMA"
+  ],
+  [
+    989,
+    "GREEK SMALL LETTER DIGAMMA"
+  ],
+  [
+    990,
+    "GREEK LETTER KOPPA"
+  ],
+  [
+    991,
+    "GREEK SMALL LETTER KOPPA"
+  ],
+  [
+    992,
+    "GREEK LETTER SAMPI"
+  ],
+  [
+    993,
+    "GREEK SMALL LETTER SAMPI"
+  ],
+  [
+    994,
+    "COPTIC CAPITAL LETTER SHEI"
+  ],
+  [
+    995,
+    "COPTIC SMALL LETTER SHEI"
+  ],
+  [
+    996,
+    "COPTIC CAPITAL LETTER FEI"
+  ],
+  [
+    997,
+    "COPTIC SMALL LETTER FEI"
+  ],
+  [
+    998,
+    "COPTIC CAPITAL LETTER KHEI"
+  ],
+  [
+    999,
+    "COPTIC SMALL LETTER KHEI"
+  ],
+  [
+    1000,
+    "COPTIC CAPITAL LETTER HORI"
+  ],
+  [
+    1001,
+    "COPTIC SMALL LETTER HORI"
+  ],
+  [
+    1002,
+    "COPTIC CAPITAL LETTER GANGIA"
+  ],
+  [
+    1003,
+    "COPTIC SMALL LETTER GANGIA"
+  ],
+  [
+    1004,
+    "COPTIC CAPITAL LETTER SHIMA"
+  ],
+  [
+    1005,
+    "COPTIC SMALL LETTER SHIMA"
+  ],
+  [
+    1006,
+    "COPTIC CAPITAL LETTER DEI"
+  ],
+  [
+    1007,
+    "COPTIC SMALL LETTER DEI"
+  ],
+  [
+    1008,
+    "GREEK KAPPA SYMBOL"
+  ],
+  [
+    1009,
+    "GREEK RHO SYMBOL"
+  ],
+  [
+    1010,
+    "GREEK LUNATE SIGMA SYMBOL"
+  ],
+  [
+    1011,
+    "GREEK LETTER YOT"
+  ],
+  [
+    1012,
+    "GREEK CAPITAL THETA SYMBOL"
+  ],
+  [
+    1013,
+    "GREEK LUNATE EPSILON SYMBOL"
+  ],
+  [
+    1014,
+    "GREEK REVERSED LUNATE EPSILON SYMBOL"
+  ],
+  [
+    1015,
+    "GREEK CAPITAL LETTER SHO"
+  ],
+  [
+    1016,
+    "GREEK SMALL LETTER SHO"
+  ],
+  [
+    1017,
+    "GREEK CAPITAL LUNATE SIGMA SYMBOL"
+  ],
+  [
+    1018,
+    "GREEK CAPITAL LETTER SAN"
+  ],
+  [
+    1019,
+    "GREEK SMALL LETTER SAN"
+  ],
+  [
+    1020,
+    "GREEK RHO WITH STROKE SYMBOL"
+  ],
+  [
+    1021,
+    "GREEK CAPITAL REVERSED LUNATE SIGMA SYMBOL"
+  ],
+  [
+    1022,
+    "GREEK CAPITAL DOTTED LUNATE SIGMA SYMBOL"
+  ],
+  [
+    1023,
+    "GREEK CAPITAL REVERSED DOTTED LUNATE SIGMA SYMBOL"
+  ],
+  [
+    1024,
+    "CYRILLIC CAPITAL LETTER IE WITH GRAVE"
+  ],
+  [
+    1025,
+    "CYRILLIC CAPITAL LETTER IO"
+  ],
+  [
+    1026,
+    "CYRILLIC CAPITAL LETTER DJE"
+  ],
+  [
+    1027,
+    "CYRILLIC CAPITAL LETTER GJE"
+  ],
+  [
+    1028,
+    "CYRILLIC CAPITAL LETTER UKRAINIAN IE"
+  ],
+  [
+    1029,
+    "CYRILLIC CAPITAL LETTER DZE"
+  ],
+  [
+    1030,
+    "CYRILLIC CAPITAL LETTER BYELORUSSIAN-UKRAINIAN I"
+  ],
+  [
+    1031,
+    "CYRILLIC CAPITAL LETTER YI"
+  ],
+  [
+    1032,
+    "CYRILLIC CAPITAL LETTER JE"
+  ],
+  [
+    1033,
+    "CYRILLIC CAPITAL LETTER LJE"
+  ],
+  [
+    1034,
+    "CYRILLIC CAPITAL LETTER NJE"
+  ],
+  [
+    1035,
+    "CYRILLIC CAPITAL LETTER TSHE"
+  ],
+  [
+    1036,
+    "CYRILLIC CAPITAL LETTER KJE"
+  ],
+  [
+    1037,
+    "CYRILLIC CAPITAL LETTER I WITH GRAVE"
+  ],
+  [
+    1038,
+    "CYRILLIC CAPITAL LETTER SHORT U"
+  ],
+  [
+    1039,
+    "CYRILLIC CAPITAL LETTER DZHE"
+  ],
+  [
+    1040,
+    "CYRILLIC CAPITAL LETTER A"
+  ],
+  [
+    1041,
+    "CYRILLIC CAPITAL LETTER BE"
+  ],
+  [
+    1042,
+    "CYRILLIC CAPITAL LETTER VE"
+  ],
+  [
+    1043,
+    "CYRILLIC CAPITAL LETTER GHE"
+  ],
+  [
+    1044,
+    "CYRILLIC CAPITAL LETTER DE"
+  ],
+  [
+    1045,
+    "CYRILLIC CAPITAL LETTER IE"
+  ],
+  [
+    1046,
+    "CYRILLIC CAPITAL LETTER ZHE"
+  ],
+  [
+    1047,
+    "CYRILLIC CAPITAL LETTER ZE"
+  ],
+  [
+    1048,
+    "CYRILLIC CAPITAL LETTER I"
+  ],
+  [
+    1049,
+    "CYRILLIC CAPITAL LETTER SHORT I"
+  ],
+  [
+    1050,
+    "CYRILLIC CAPITAL LETTER KA"
+  ],
+  [
+    1051,
+    "CYRILLIC CAPITAL LETTER EL"
+  ],
+  [
+    1052,
+    "CYRILLIC CAPITAL LETTER EM"
+  ],
+  [
+    1053,
+    "CYRILLIC CAPITAL LETTER EN"
+  ],
+  [
+    1054,
+    "CYRILLIC CAPITAL LETTER O"
+  ],
+  [
+    1055,
+    "CYRILLIC CAPITAL LETTER PE"
+  ],
+  [
+    1056,
+    "CYRILLIC CAPITAL LETTER ER"
+  ],
+  [
+    1057,
+    "CYRILLIC CAPITAL LETTER ES"
+  ],
+  [
+    1058,
+    "CYRILLIC CAPITAL LETTER TE"
+  ],
+  [
+    1059,
+    "CYRILLIC CAPITAL LETTER U"
+  ],
+  [
+    1060,
+    "CYRILLIC CAPITAL LETTER EF"
+  ],
+  [
+    1061,
+    "CYRILLIC CAPITAL LETTER HA"
+  ],
+  [
+    1062,
+    "CYRILLIC CAPITAL LETTER TSE"
+  ],
+  [
+    1063,
+    "CYRILLIC CAPITAL LETTER CHE"
+  ],
+  [
+    1064,
+    "CYRILLIC CAPITAL LETTER SHA"
+  ],
+  [
+    1065,
+    "CYRILLIC CAPITAL LETTER SHCHA"
+  ],
+  [
+    1066,
+    "CYRILLIC CAPITAL LETTER HARD SIGN"
+  ],
+  [
+    1067,
+    "CYRILLIC CAPITAL LETTER YERU"
+  ],
+  [
+    1068,
+    "CYRILLIC CAPITAL LETTER SOFT SIGN"
+  ],
+  [
+    1069,
+    "CYRILLIC CAPITAL LETTER E"
+  ],
+  [
+    1070,
+    "CYRILLIC CAPITAL LETTER YU"
+  ],
+  [
+    1071,
+    "CYRILLIC CAPITAL LETTER YA"
+  ],
+  [
+    1072,
+    "CYRILLIC SMALL LETTER A"
+  ],
+  [
+    1073,
+    "CYRILLIC SMALL LETTER BE"
+  ],
+  [
+    1074,
+    "CYRILLIC SMALL LETTER VE"
+  ],
+  [
+    1075,
+    "CYRILLIC SMALL LETTER GHE"
+  ],
+  [
+    1076,
+    "CYRILLIC SMALL LETTER DE"
+  ],
+  [
+    1077,
+    "CYRILLIC SMALL LETTER IE"
+  ],
+  [
+    1078,
+    "CYRILLIC SMALL LETTER ZHE"
+  ],
+  [
+    1079,
+    "CYRILLIC SMALL LETTER ZE"
+  ],
+  [
+    1080,
+    "CYRILLIC SMALL LETTER I"
+  ],
+  [
+    1081,
+    "CYRILLIC SMALL LETTER SHORT I"
+  ],
+  [
+    1082,
+    "CYRILLIC SMALL LETTER KA"
+  ],
+  [
+    1083,
+    "CYRILLIC SMALL LETTER EL"
+  ],
+  [
+    1084,
+    "CYRILLIC SMALL LETTER EM"
+  ],
+  [
+    1085,
+    "CYRILLIC SMALL LETTER EN"
+  ],
+  [
+    1086,
+    "CYRILLIC SMALL LETTER O"
+  ],
+  [
+    1087,
+    "CYRILLIC SMALL LETTER PE"
+  ],
+  [
+    1088,
+    "CYRILLIC SMALL LETTER ER"
+  ],
+  [
+    1089,
+    "CYRILLIC SMALL LETTER ES"
+  ],
+  [
+    1090,
+    "CYRILLIC SMALL LETTER TE"
+  ],
+  [
+    1091,
+    "CYRILLIC SMALL LETTER U"
+  ],
+  [
+    1092,
+    "CYRILLIC SMALL LETTER EF"
+  ],
+  [
+    1093,
+    "CYRILLIC SMALL LETTER HA"
+  ],
+  [
+    1094,
+    "CYRILLIC SMALL LETTER TSE"
+  ],
+  [
+    1095,
+    "CYRILLIC SMALL LETTER CHE"
+  ],
+  [
+    1096,
+    "CYRILLIC SMALL LETTER SHA"
+  ],
+  [
+    1097,
+    "CYRILLIC SMALL LETTER SHCHA"
+  ],
+  [
+    1098,
+    "CYRILLIC SMALL LETTER HARD SIGN"
+  ],
+  [
+    1099,
+    "CYRILLIC SMALL LETTER YERU"
+  ],
+  [
+    1100,
+    "CYRILLIC SMALL LETTER SOFT SIGN"
+  ],
+  [
+    1101,
+    "CYRILLIC SMALL LETTER E"
+  ],
+  [
+    1102,
+    "CYRILLIC SMALL LETTER YU"
+  ],
+  [
+    1103,
+    "CYRILLIC SMALL LETTER YA"
+  ],
+  [
+    1104,
+    "CYRILLIC SMALL LETTER IE WITH GRAVE"
+  ],
+  [
+    1105,
+    "CYRILLIC SMALL LETTER IO"
+  ],
+  [
+    1106,
+    "CYRILLIC SMALL LETTER DJE"
+  ],
+  [
+    1107,
+    "CYRILLIC SMALL LETTER GJE"
+  ],
+  [
+    1108,
+    "CYRILLIC SMALL LETTER UKRAINIAN IE"
+  ],
+  [
+    1109,
+    "CYRILLIC SMALL LETTER DZE"
+  ],
+  [
+    1110,
+    "CYRILLIC SMALL LETTER BYELORUSSIAN-UKRAINIAN I"
+  ],
+  [
+    1111,
+    "CYRILLIC SMALL LETTER YI"
+  ],
+  [
+    1112,
+    "CYRILLIC SMALL LETTER JE"
+  ],
+  [
+    1113,
+    "CYRILLIC SMALL LETTER LJE"
+  ],
+  [
+    1114,
+    "CYRILLIC SMALL LETTER NJE"
+  ],
+  [
+    1115,
+    "CYRILLIC SMALL LETTER TSHE"
+  ],
+  [
+    1116,
+    "CYRILLIC SMALL LETTER KJE"
+  ],
+  [
+    1117,
+    "CYRILLIC SMALL LETTER I WITH GRAVE"
+  ],
+  [
+    1118,
+    "CYRILLIC SMALL LETTER SHORT U"
+  ],
+  [
+    1119,
+    "CYRILLIC SMALL LETTER DZHE"
+  ],
+  [
+    1120,
+    "CYRILLIC CAPITAL LETTER OMEGA"
+  ],
+  [
+    1121,
+    "CYRILLIC SMALL LETTER OMEGA"
+  ],
+  [
+    1122,
+    "CYRILLIC CAPITAL LETTER YAT"
+  ],
+  [
+    1123,
+    "CYRILLIC SMALL LETTER YAT"
+  ],
+  [
+    1124,
+    "CYRILLIC CAPITAL LETTER IOTIFIED E"
+  ],
+  [
+    1125,
+    "CYRILLIC SMALL LETTER IOTIFIED E"
+  ],
+  [
+    1126,
+    "CYRILLIC CAPITAL LETTER LITTLE YUS"
+  ],
+  [
+    1127,
+    "CYRILLIC SMALL LETTER LITTLE YUS"
+  ],
+  [
+    1128,
+    "CYRILLIC CAPITAL LETTER IOTIFIED LITTLE YUS"
+  ],
+  [
+    1129,
+    "CYRILLIC SMALL LETTER IOTIFIED LITTLE YUS"
+  ],
+  [
+    1130,
+    "CYRILLIC CAPITAL LETTER BIG YUS"
+  ],
+  [
+    1131,
+    "CYRILLIC SMALL LETTER BIG YUS"
+  ],
+  [
+    1132,
+    "CYRILLIC CAPITAL LETTER IOTIFIED BIG YUS"
+  ],
+  [
+    1133,
+    "CYRILLIC SMALL LETTER IOTIFIED BIG YUS"
+  ],
+  [
+    1134,
+    "CYRILLIC CAPITAL LETTER KSI"
+  ],
+  [
+    1135,
+    "CYRILLIC SMALL LETTER KSI"
+  ],
+  [
+    1136,
+    "CYRILLIC CAPITAL LETTER PSI"
+  ],
+  [
+    1137,
+    "CYRILLIC SMALL LETTER PSI"
+  ],
+  [
+    1138,
+    "CYRILLIC CAPITAL LETTER FITA"
+  ],
+  [
+    1139,
+    "CYRILLIC SMALL LETTER FITA"
+  ],
+  [
+    1140,
+    "CYRILLIC CAPITAL LETTER IZHITSA"
+  ],
+  [
+    1141,
+    "CYRILLIC SMALL LETTER IZHITSA"
+  ],
+  [
+    1142,
+    "CYRILLIC CAPITAL LETTER IZHITSA WITH DOUBLE GRAVE ACCENT"
+  ],
+  [
+    1143,
+    "CYRILLIC SMALL LETTER IZHITSA WITH DOUBLE GRAVE ACCENT"
+  ],
+  [
+    1144,
+    "CYRILLIC CAPITAL LETTER UK"
+  ],
+  [
+    1145,
+    "CYRILLIC SMALL LETTER UK"
+  ],
+  [
+    1146,
+    "CYRILLIC CAPITAL LETTER ROUND OMEGA"
+  ],
+  [
+    1147,
+    "CYRILLIC SMALL LETTER ROUND OMEGA"
+  ],
+  [
+    1148,
+    "CYRILLIC CAPITAL LETTER OMEGA WITH TITLO"
+  ],
+  [
+    1149,
+    "CYRILLIC SMALL LETTER OMEGA WITH TITLO"
+  ],
+  [
+    1150,
+    "CYRILLIC CAPITAL LETTER OT"
+  ],
+  [
+    1151,
+    "CYRILLIC SMALL LETTER OT"
+  ],
+  [
+    1152,
+    "CYRILLIC CAPITAL LETTER KOPPA"
+  ],
+  [
+    1153,
+    "CYRILLIC SMALL LETTER KOPPA"
+  ],
+  [
+    1154,
+    "CYRILLIC THOUSANDS SIGN"
+  ],
+  [
+    1155,
+    "COMBINING CYRILLIC TITLO"
+  ],
+  [
+    1156,
+    "COMBINING CYRILLIC PALATALIZATION"
+  ],
+  [
+    1157,
+    "COMBINING CYRILLIC DASIA PNEUMATA"
+  ],
+  [
+    1158,
+    "COMBINING CYRILLIC PSILI PNEUMATA"
+  ],
+  [
+    1159,
+    "COMBINING CYRILLIC POKRYTIE"
+  ],
+  [
+    1160,
+    "COMBINING CYRILLIC HUNDRED THOUSANDS SIGN"
+  ],
+  [
+    1161,
+    "COMBINING CYRILLIC MILLIONS SIGN"
+  ],
+  [
+    1162,
+    "CYRILLIC CAPITAL LETTER SHORT I WITH TAIL"
+  ],
+  [
+    1163,
+    "CYRILLIC SMALL LETTER SHORT I WITH TAIL"
+  ],
+  [
+    1164,
+    "CYRILLIC CAPITAL LETTER SEMISOFT SIGN"
+  ],
+  [
+    1165,
+    "CYRILLIC SMALL LETTER SEMISOFT SIGN"
+  ],
+  [
+    1166,
+    "CYRILLIC CAPITAL LETTER ER WITH TICK"
+  ],
+  [
+    1167,
+    "CYRILLIC SMALL LETTER ER WITH TICK"
+  ],
+  [
+    1168,
+    "CYRILLIC CAPITAL LETTER GHE WITH UPTURN"
+  ],
+  [
+    1169,
+    "CYRILLIC SMALL LETTER GHE WITH UPTURN"
+  ],
+  [
+    1170,
+    "CYRILLIC CAPITAL LETTER GHE WITH STROKE"
+  ],
+  [
+    1171,
+    "CYRILLIC SMALL LETTER GHE WITH STROKE"
+  ],
+  [
+    1172,
+    "CYRILLIC CAPITAL LETTER GHE WITH MIDDLE HOOK"
+  ],
+  [
+    1173,
+    "CYRILLIC SMALL LETTER GHE WITH MIDDLE HOOK"
+  ],
+  [
+    1174,
+    "CYRILLIC CAPITAL LETTER ZHE WITH DESCENDER"
+  ],
+  [
+    1175,
+    "CYRILLIC SMALL LETTER ZHE WITH DESCENDER"
+  ],
+  [
+    1176,
+    "CYRILLIC CAPITAL LETTER ZE WITH DESCENDER"
+  ],
+  [
+    1177,
+    "CYRILLIC SMALL LETTER ZE WITH DESCENDER"
+  ],
+  [
+    1178,
+    "CYRILLIC CAPITAL LETTER KA WITH DESCENDER"
+  ],
+  [
+    1179,
+    "CYRILLIC SMALL LETTER KA WITH DESCENDER"
+  ],
+  [
+    1180,
+    "CYRILLIC CAPITAL LETTER KA WITH VERTICAL STROKE"
+  ],
+  [
+    1181,
+    "CYRILLIC SMALL LETTER KA WITH VERTICAL STROKE"
+  ],
+  [
+    1182,
+    "CYRILLIC CAPITAL LETTER KA WITH STROKE"
+  ],
+  [
+    1183,
+    "CYRILLIC SMALL LETTER KA WITH STROKE"
+  ],
+  [
+    1184,
+    "CYRILLIC CAPITAL LETTER BASHKIR KA"
+  ],
+  [
+    1185,
+    "CYRILLIC SMALL LETTER BASHKIR KA"
+  ],
+  [
+    1186,
+    "CYRILLIC CAPITAL LETTER EN WITH DESCENDER"
+  ],
+  [
+    1187,
+    "CYRILLIC SMALL LETTER EN WITH DESCENDER"
+  ],
+  [
+    1188,
+    "CYRILLIC CAPITAL LIGATURE EN GHE"
+  ],
+  [
+    1189,
+    "CYRILLIC SMALL LIGATURE EN GHE"
+  ],
+  [
+    1190,
+    "CYRILLIC CAPITAL LETTER PE WITH MIDDLE HOOK"
+  ],
+  [
+    1191,
+    "CYRILLIC SMALL LETTER PE WITH MIDDLE HOOK"
+  ],
+  [
+    1192,
+    "CYRILLIC CAPITAL LETTER ABKHASIAN HA"
+  ],
+  [
+    1193,
+    "CYRILLIC SMALL LETTER ABKHASIAN HA"
+  ],
+  [
+    1194,
+    "CYRILLIC CAPITAL LETTER ES WITH DESCENDER"
+  ],
+  [
+    1195,
+    "CYRILLIC SMALL LETTER ES WITH DESCENDER"
+  ],
+  [
+    1196,
+    "CYRILLIC CAPITAL LETTER TE WITH DESCENDER"
+  ],
+  [
+    1197,
+    "CYRILLIC SMALL LETTER TE WITH DESCENDER"
+  ],
+  [
+    1198,
+    "CYRILLIC CAPITAL LETTER STRAIGHT U"
+  ],
+  [
+    1199,
+    "CYRILLIC SMALL LETTER STRAIGHT U"
+  ],
+  [
+    1200,
+    "CYRILLIC CAPITAL LETTER STRAIGHT U WITH STROKE"
+  ],
+  [
+    1201,
+    "CYRILLIC SMALL LETTER STRAIGHT U WITH STROKE"
+  ],
+  [
+    1202,
+    "CYRILLIC CAPITAL LETTER HA WITH DESCENDER"
+  ],
+  [
+    1203,
+    "CYRILLIC SMALL LETTER HA WITH DESCENDER"
+  ],
+  [
+    1204,
+    "CYRILLIC CAPITAL LIGATURE TE TSE"
+  ],
+  [
+    1205,
+    "CYRILLIC SMALL LIGATURE TE TSE"
+  ],
+  [
+    1206,
+    "CYRILLIC CAPITAL LETTER CHE WITH DESCENDER"
+  ],
+  [
+    1207,
+    "CYRILLIC SMALL LETTER CHE WITH DESCENDER"
+  ],
+  [
+    1208,
+    "CYRILLIC CAPITAL LETTER CHE WITH VERTICAL STROKE"
+  ],
+  [
+    1209,
+    "CYRILLIC SMALL LETTER CHE WITH VERTICAL STROKE"
+  ],
+  [
+    1210,
+    "CYRILLIC CAPITAL LETTER SHHA"
+  ],
+  [
+    1211,
+    "CYRILLIC SMALL LETTER SHHA"
+  ],
+  [
+    1212,
+    "CYRILLIC CAPITAL LETTER ABKHASIAN CHE"
+  ],
+  [
+    1213,
+    "CYRILLIC SMALL LETTER ABKHASIAN CHE"
+  ],
+  [
+    1214,
+    "CYRILLIC CAPITAL LETTER ABKHASIAN CHE WITH DESCENDER"
+  ],
+  [
+    1215,
+    "CYRILLIC SMALL LETTER ABKHASIAN CHE WITH DESCENDER"
+  ],
+  [
+    1216,
+    "CYRILLIC LETTER PALOCHKA"
+  ],
+  [
+    1217,
+    "CYRILLIC CAPITAL LETTER ZHE WITH BREVE"
+  ],
+  [
+    1218,
+    "CYRILLIC SMALL LETTER ZHE WITH BREVE"
+  ],
+  [
+    1219,
+    "CYRILLIC CAPITAL LETTER KA WITH HOOK"
+  ],
+  [
+    1220,
+    "CYRILLIC SMALL LETTER KA WITH HOOK"
+  ],
+  [
+    1221,
+    "CYRILLIC CAPITAL LETTER EL WITH TAIL"
+  ],
+  [
+    1222,
+    "CYRILLIC SMALL LETTER EL WITH TAIL"
+  ],
+  [
+    1223,
+    "CYRILLIC CAPITAL LETTER EN WITH HOOK"
+  ],
+  [
+    1224,
+    "CYRILLIC SMALL LETTER EN WITH HOOK"
+  ],
+  [
+    1225,
+    "CYRILLIC CAPITAL LETTER EN WITH TAIL"
+  ],
+  [
+    1226,
+    "CYRILLIC SMALL LETTER EN WITH TAIL"
+  ],
+  [
+    1227,
+    "CYRILLIC CAPITAL LETTER KHAKASSIAN CHE"
+  ],
+  [
+    1228,
+    "CYRILLIC SMALL LETTER KHAKASSIAN CHE"
+  ],
+  [
+    1229,
+    "CYRILLIC CAPITAL LETTER EM WITH TAIL"
+  ],
+  [
+    1230,
+    "CYRILLIC SMALL LETTER EM WITH TAIL"
+  ],
+  [
+    1231,
+    "CYRILLIC SMALL LETTER PALOCHKA"
+  ],
+  [
+    1232,
+    "CYRILLIC CAPITAL LETTER A WITH BREVE"
+  ],
+  [
+    1233,
+    "CYRILLIC SMALL LETTER A WITH BREVE"
+  ],
+  [
+    1234,
+    "CYRILLIC CAPITAL LETTER A WITH DIAERESIS"
+  ],
+  [
+    1235,
+    "CYRILLIC SMALL LETTER A WITH DIAERESIS"
+  ],
+  [
+    1236,
+    "CYRILLIC CAPITAL LIGATURE A IE"
+  ],
+  [
+    1237,
+    "CYRILLIC SMALL LIGATURE A IE"
+  ],
+  [
+    1238,
+    "CYRILLIC CAPITAL LETTER IE WITH BREVE"
+  ],
+  [
+    1239,
+    "CYRILLIC SMALL LETTER IE WITH BREVE"
+  ],
+  [
+    1240,
+    "CYRILLIC CAPITAL LETTER SCHWA"
+  ],
+  [
+    1241,
+    "CYRILLIC SMALL LETTER SCHWA"
+  ],
+  [
+    1242,
+    "CYRILLIC CAPITAL LETTER SCHWA WITH DIAERESIS"
+  ],
+  [
+    1243,
+    "CYRILLIC SMALL LETTER SCHWA WITH DIAERESIS"
+  ],
+  [
+    1244,
+    "CYRILLIC CAPITAL LETTER ZHE WITH DIAERESIS"
+  ],
+  [
+    1245,
+    "CYRILLIC SMALL LETTER ZHE WITH DIAERESIS"
+  ],
+  [
+    1246,
+    "CYRILLIC CAPITAL LETTER ZE WITH DIAERESIS"
+  ],
+  [
+    1247,
+    "CYRILLIC SMALL LETTER ZE WITH DIAERESIS"
+  ],
+  [
+    1248,
+    "CYRILLIC CAPITAL LETTER ABKHASIAN DZE"
+  ],
+  [
+    1249,
+    "CYRILLIC SMALL LETTER ABKHASIAN DZE"
+  ],
+  [
+    1250,
+    "CYRILLIC CAPITAL LETTER I WITH MACRON"
+  ],
+  [
+    1251,
+    "CYRILLIC SMALL LETTER I WITH MACRON"
+  ],
+  [
+    1252,
+    "CYRILLIC CAPITAL LETTER I WITH DIAERESIS"
+  ],
+  [
+    1253,
+    "CYRILLIC SMALL LETTER I WITH DIAERESIS"
+  ],
+  [
+    1254,
+    "CYRILLIC CAPITAL LETTER O WITH DIAERESIS"
+  ],
+  [
+    1255,
+    "CYRILLIC SMALL LETTER O WITH DIAERESIS"
+  ],
+  [
+    1256,
+    "CYRILLIC CAPITAL LETTER BARRED O"
+  ],
+  [
+    1257,
+    "CYRILLIC SMALL LETTER BARRED O"
+  ],
+  [
+    1258,
+    "CYRILLIC CAPITAL LETTER BARRED O WITH DIAERESIS"
+  ],
+  [
+    1259,
+    "CYRILLIC SMALL LETTER BARRED O WITH DIAERESIS"
+  ],
+  [
+    1260,
+    "CYRILLIC CAPITAL LETTER E WITH DIAERESIS"
+  ],
+  [
+    1261,
+    "CYRILLIC SMALL LETTER E WITH DIAERESIS"
+  ],
+  [
+    1262,
+    "CYRILLIC CAPITAL LETTER U WITH MACRON"
+  ],
+  [
+    1263,
+    "CYRILLIC SMALL LETTER U WITH MACRON"
+  ],
+  [
+    1264,
+    "CYRILLIC CAPITAL LETTER U WITH DIAERESIS"
+  ],
+  [
+    1265,
+    "CYRILLIC SMALL LETTER U WITH DIAERESIS"
+  ],
+  [
+    1266,
+    "CYRILLIC CAPITAL LETTER U WITH DOUBLE ACUTE"
+  ],
+  [
+    1267,
+    "CYRILLIC SMALL LETTER U WITH DOUBLE ACUTE"
+  ],
+  [
+    1268,
+    "CYRILLIC CAPITAL LETTER CHE WITH DIAERESIS"
+  ],
+  [
+    1269,
+    "CYRILLIC SMALL LETTER CHE WITH DIAERESIS"
+  ],
+  [
+    1270,
+    "CYRILLIC CAPITAL LETTER GHE WITH DESCENDER"
+  ],
+  [
+    1271,
+    "CYRILLIC SMALL LETTER GHE WITH DESCENDER"
+  ],
+  [
+    1272,
+    "CYRILLIC CAPITAL LETTER YERU WITH DIAERESIS"
+  ],
+  [
+    1273,
+    "CYRILLIC SMALL LETTER YERU WITH DIAERESIS"
+  ],
+  [
+    1274,
+    "CYRILLIC CAPITAL LETTER GHE WITH STROKE AND HOOK"
+  ],
+  [
+    1275,
+    "CYRILLIC SMALL LETTER GHE WITH STROKE AND HOOK"
+  ],
+  [
+    1276,
+    "CYRILLIC CAPITAL LETTER HA WITH HOOK"
+  ],
+  [
+    1277,
+    "CYRILLIC SMALL LETTER HA WITH HOOK"
+  ],
+  [
+    1278,
+    "CYRILLIC CAPITAL LETTER HA WITH STROKE"
+  ],
+  [
+    1279,
+    "CYRILLIC SMALL LETTER HA WITH STROKE"
+  ],
+  [
+    1280,
+    "CYRILLIC CAPITAL LETTER KOMI DE"
+  ],
+  [
+    1281,
+    "CYRILLIC SMALL LETTER KOMI DE"
+  ],
+  [
+    1282,
+    "CYRILLIC CAPITAL LETTER KOMI DJE"
+  ],
+  [
+    1283,
+    "CYRILLIC SMALL LETTER KOMI DJE"
+  ],
+  [
+    1284,
+    "CYRILLIC CAPITAL LETTER KOMI ZJE"
+  ],
+  [
+    1285,
+    "CYRILLIC SMALL LETTER KOMI ZJE"
+  ],
+  [
+    1286,
+    "CYRILLIC CAPITAL LETTER KOMI DZJE"
+  ],
+  [
+    1287,
+    "CYRILLIC SMALL LETTER KOMI DZJE"
+  ],
+  [
+    1288,
+    "CYRILLIC CAPITAL LETTER KOMI LJE"
+  ],
+  [
+    1289,
+    "CYRILLIC SMALL LETTER KOMI LJE"
+  ],
+  [
+    1290,
+    "CYRILLIC CAPITAL LETTER KOMI NJE"
+  ],
+  [
+    1291,
+    "CYRILLIC SMALL LETTER KOMI NJE"
+  ],
+  [
+    1292,
+    "CYRILLIC CAPITAL LETTER KOMI SJE"
+  ],
+  [
+    1293,
+    "CYRILLIC SMALL LETTER KOMI SJE"
+  ],
+  [
+    1294,
+    "CYRILLIC CAPITAL LETTER KOMI TJE"
+  ],
+  [
+    1295,
+    "CYRILLIC SMALL LETTER KOMI TJE"
+  ],
+  [
+    1296,
+    "CYRILLIC CAPITAL LETTER REVERSED ZE"
+  ],
+  [
+    1297,
+    "CYRILLIC SMALL LETTER REVERSED ZE"
+  ],
+  [
+    1298,
+    "CYRILLIC CAPITAL LETTER EL WITH HOOK"
+  ],
+  [
+    1299,
+    "CYRILLIC SMALL LETTER EL WITH HOOK"
+  ],
+  [
+    1300,
+    "CYRILLIC CAPITAL LETTER LHA"
+  ],
+  [
+    1301,
+    "CYRILLIC SMALL LETTER LHA"
+  ],
+  [
+    1302,
+    "CYRILLIC CAPITAL LETTER RHA"
+  ],
+  [
+    1303,
+    "CYRILLIC SMALL LETTER RHA"
+  ],
+  [
+    1304,
+    "CYRILLIC CAPITAL LETTER YAE"
+  ],
+  [
+    1305,
+    "CYRILLIC SMALL LETTER YAE"
+  ],
+  [
+    1306,
+    "CYRILLIC CAPITAL LETTER QA"
+  ],
+  [
+    1307,
+    "CYRILLIC SMALL LETTER QA"
+  ],
+  [
+    1308,
+    "CYRILLIC CAPITAL LETTER WE"
+  ],
+  [
+    1309,
+    "CYRILLIC SMALL LETTER WE"
+  ],
+  [
+    1310,
+    "CYRILLIC CAPITAL LETTER ALEUT KA"
+  ],
+  [
+    1311,
+    "CYRILLIC SMALL LETTER ALEUT KA"
+  ],
+  [
+    1312,
+    "CYRILLIC CAPITAL LETTER EL WITH MIDDLE HOOK"
+  ],
+  [
+    1313,
+    "CYRILLIC SMALL LETTER EL WITH MIDDLE HOOK"
+  ],
+  [
+    1314,
+    "CYRILLIC CAPITAL LETTER EN WITH MIDDLE HOOK"
+  ],
+  [
+    1315,
+    "CYRILLIC SMALL LETTER EN WITH MIDDLE HOOK"
+  ],
+  [
+    1316,
+    "CYRILLIC CAPITAL LETTER PE WITH DESCENDER"
+  ],
+  [
+    1317,
+    "CYRILLIC SMALL LETTER PE WITH DESCENDER"
+  ],
+  [
+    1318,
+    "CYRILLIC CAPITAL LETTER SHHA WITH DESCENDER"
+  ],
+  [
+    1319,
+    "CYRILLIC SMALL LETTER SHHA WITH DESCENDER"
+  ],
+  [
+    1320,
+    "CYRILLIC CAPITAL LETTER EN WITH LEFT HOOK"
+  ],
+  [
+    1321,
+    "CYRILLIC SMALL LETTER EN WITH LEFT HOOK"
+  ],
+  [
+    1322,
+    "CYRILLIC CAPITAL LETTER DZZHE"
+  ],
+  [
+    1323,
+    "CYRILLIC SMALL LETTER DZZHE"
+  ],
+  [
+    1324,
+    "CYRILLIC CAPITAL LETTER DCHE"
+  ],
+  [
+    1325,
+    "CYRILLIC SMALL LETTER DCHE"
+  ],
+  [
+    1326,
+    "CYRILLIC CAPITAL LETTER EL WITH DESCENDER"
+  ],
+  [
+    1327,
+    "CYRILLIC SMALL LETTER EL WITH DESCENDER"
+  ],
+  [
+    6832,
+    "COMBINING DOUBLED CIRCUMFLEX ACCENT"
+  ],
+  [
+    6833,
+    "COMBINING DIAERESIS-RING"
+  ],
+  [
+    6834,
+    "COMBINING INFINITY"
+  ],
+  [
+    6835,
+    "COMBINING DOWNWARDS ARROW"
+  ],
+  [
+    6836,
+    "COMBINING TRIPLE DOT"
+  ],
+  [
+    6837,
+    "COMBINING X-X BELOW"
+  ],
+  [
+    6838,
+    "COMBINING WIGGLY LINE BELOW"
+  ],
+  [
+    6839,
+    "COMBINING OPEN MARK BELOW"
+  ],
+  [
+    6840,
+    "COMBINING DOUBLE OPEN MARK BELOW"
+  ],
+  [
+    6841,
+    "COMBINING LIGHT CENTRALIZATION STROKE BELOW"
+  ],
+  [
+    6842,
+    "COMBINING STRONG CENTRALIZATION STROKE BELOW"
+  ],
+  [
+    6843,
+    "COMBINING PARENTHESES ABOVE"
+  ],
+  [
+    6844,
+    "COMBINING DOUBLE PARENTHESES ABOVE"
+  ],
+  [
+    6845,
+    "COMBINING PARENTHESES BELOW"
+  ],
+  [
+    6846,
+    "COMBINING PARENTHESES OVERLAY"
+  ],
+  [
+    6847,
+    "COMBINING LATIN SMALL LETTER W BELOW"
+  ],
+  [
+    6848,
+    "COMBINING LATIN SMALL LETTER TURNED W BELOW"
+  ],
+  [
+    6849,
+    "COMBINING LEFT PARENTHESIS ABOVE LEFT"
+  ],
+  [
+    6850,
+    "COMBINING RIGHT PARENTHESIS ABOVE RIGHT"
+  ],
+  [
+    6851,
+    "COMBINING LEFT PARENTHESIS BELOW LEFT"
+  ],
+  [
+    6852,
+    "COMBINING RIGHT PARENTHESIS BELOW RIGHT"
+  ],
+  [
+    6853,
+    "COMBINING SQUARE BRACKETS ABOVE"
+  ],
+  [
+    6854,
+    "COMBINING NUMBER SIGN ABOVE"
+  ],
+  [
+    6855,
+    "COMBINING INVERTED DOUBLE ARCH ABOVE"
+  ],
+  [
+    6856,
+    "COMBINING PLUS SIGN ABOVE"
+  ],
+  [
+    6857,
+    "COMBINING DOUBLE PLUS SIGN ABOVE"
+  ],
+  [
+    6858,
+    "COMBINING DOUBLE PLUS SIGN BELOW"
+  ],
+  [
+    6859,
+    "COMBINING TRIPLE ACUTE ACCENT"
+  ],
+  [
+    6860,
+    "COMBINING LATIN SMALL LETTER INSULAR G"
+  ],
+  [
+    6861,
+    "COMBINING LATIN SMALL LETTER INSULAR R"
+  ],
+  [
+    6862,
+    "COMBINING LATIN SMALL LETTER INSULAR T"
+  ],
+  [
+    6863,
+    "COMBINING DOUBLE CARON"
+  ],
+  [
+    6864,
+    "COMBINING VERTICAL-LINE-ACUTE"
+  ],
+  [
+    6865,
+    "COMBINING GRAVE-VERTICAL-LINE"
+  ],
+  [
+    6866,
+    "COMBINING VERTICAL-LINE-GRAVE"
+  ],
+  [
+    6867,
+    "COMBINING ACUTE-VERTICAL-LINE"
+  ],
+  [
+    6868,
+    "COMBINING VERTICAL-LINE-MACRON"
+  ],
+  [
+    6869,
+    "COMBINING MACRON-VERTICAL-LINE"
+  ],
+  [
+    6870,
+    "COMBINING VERTICAL-LINE-ACUTE-GRAVE"
+  ],
+  [
+    6871,
+    "COMBINING VERTICAL-LINE-GRAVE-ACUTE"
+  ],
+  [
+    6872,
+    "COMBINING MACRON-ACUTE-GRAVE"
+  ],
+  [
+    6873,
+    "COMBINING SHARP SIGN"
+  ],
+  [
+    6874,
+    "COMBINING FLAT SIGN"
+  ],
+  [
+    6875,
+    "COMBINING DOWN TACK ABOVE"
+  ],
+  [
+    6876,
+    "COMBINING DIAERESIS WITH RAISED LEFT DOT"
+  ],
+  [
+    6877,
+    "COMBINING DOT-AND-RING BELOW"
+  ],
+  [
+    6880,
+    "COMBINING LEFT TACK ABOVE"
+  ],
+  [
+    6881,
+    "COMBINING RIGHT TACK ABOVE"
+  ],
+  [
+    6882,
+    "COMBINING MINUS SIGN ABOVE"
+  ],
+  [
+    6883,
+    "COMBINING INVERTED BRIDGE ABOVE"
+  ],
+  [
+    6884,
+    "COMBINING SQUARE ABOVE"
+  ],
+  [
+    6885,
+    "COMBINING SEAGULL ABOVE"
+  ],
+  [
+    6886,
+    "COMBINING DOUBLE ARCH BELOW"
+  ],
+  [
+    6887,
+    "COMBINING DOUBLE ARCH ABOVE"
+  ],
+  [
+    6888,
+    "COMBINING EQUALS SIGN ABOVE"
+  ],
+  [
+    6889,
+    "COMBINING LEFT ANGLE CENTRED ABOVE"
+  ],
+  [
+    6890,
+    "COMBINING UPWARDS ARROW ABOVE"
+  ],
+  [
+    6891,
+    "COMBINING DOUBLE RIGHTWARDS ARROW ABOVE"
+  ],
+  [
+    7296,
+    "CYRILLIC SMALL LETTER ROUNDED VE"
+  ],
+  [
+    7297,
+    "CYRILLIC SMALL LETTER LONG-LEGGED DE"
+  ],
+  [
+    7298,
+    "CYRILLIC SMALL LETTER NARROW O"
+  ],
+  [
+    7299,
+    "CYRILLIC SMALL LETTER WIDE ES"
+  ],
+  [
+    7300,
+    "CYRILLIC SMALL LETTER TALL TE"
+  ],
+  [
+    7301,
+    "CYRILLIC SMALL LETTER THREE-LEGGED TE"
+  ],
+  [
+    7302,
+    "CYRILLIC SMALL LETTER TALL HARD SIGN"
+  ],
+  [
+    7303,
+    "CYRILLIC SMALL LETTER TALL YAT"
+  ],
+  [
+    7304,
+    "CYRILLIC SMALL LETTER UNBLENDED UK"
+  ],
+  [
+    7305,
+    "CYRILLIC CAPITAL LETTER TJE"
+  ],
+  [
+    7306,
+    "CYRILLIC SMALL LETTER TJE"
+  ],
+  [
+    7424,
+    "LATIN LETTER SMALL CAPITAL A"
+  ],
+  [
+    7425,
+    "LATIN LETTER SMALL CAPITAL AE"
+  ],
+  [
+    7426,
+    "LATIN SMALL LETTER TURNED AE"
+  ],
+  [
+    7427,
+    "LATIN LETTER SMALL CAPITAL BARRED B"
+  ],
+  [
+    7428,
+    "LATIN LETTER SMALL CAPITAL C"
+  ],
+  [
+    7429,
+    "LATIN LETTER SMALL CAPITAL D"
+  ],
+  [
+    7430,
+    "LATIN LETTER SMALL CAPITAL ETH"
+  ],
+  [
+    7431,
+    "LATIN LETTER SMALL CAPITAL E"
+  ],
+  [
+    7432,
+    "LATIN SMALL LETTER TURNED OPEN E"
+  ],
+  [
+    7433,
+    "LATIN SMALL LETTER TURNED I"
+  ],
+  [
+    7434,
+    "LATIN LETTER SMALL CAPITAL J"
+  ],
+  [
+    7435,
+    "LATIN LETTER SMALL CAPITAL K"
+  ],
+  [
+    7436,
+    "LATIN LETTER SMALL CAPITAL L WITH STROKE"
+  ],
+  [
+    7437,
+    "LATIN LETTER SMALL CAPITAL M"
+  ],
+  [
+    7438,
+    "LATIN LETTER SMALL CAPITAL REVERSED N"
+  ],
+  [
+    7439,
+    "LATIN LETTER SMALL CAPITAL O"
+  ],
+  [
+    7440,
+    "LATIN LETTER SMALL CAPITAL OPEN O"
+  ],
+  [
+    7441,
+    "LATIN SMALL LETTER SIDEWAYS O"
+  ],
+  [
+    7442,
+    "LATIN SMALL LETTER SIDEWAYS OPEN O"
+  ],
+  [
+    7443,
+    "LATIN SMALL LETTER SIDEWAYS O WITH STROKE"
+  ],
+  [
+    7444,
+    "LATIN SMALL LETTER TURNED OE"
+  ],
+  [
+    7445,
+    "LATIN LETTER SMALL CAPITAL OU"
+  ],
+  [
+    7446,
+    "LATIN SMALL LETTER TOP HALF O"
+  ],
+  [
+    7447,
+    "LATIN SMALL LETTER BOTTOM HALF O"
+  ],
+  [
+    7448,
+    "LATIN LETTER SMALL CAPITAL P"
+  ],
+  [
+    7449,
+    "LATIN LETTER SMALL CAPITAL REVERSED R"
+  ],
+  [
+    7450,
+    "LATIN LETTER SMALL CAPITAL TURNED R"
+  ],
+  [
+    7451,
+    "LATIN LETTER SMALL CAPITAL T"
+  ],
+  [
+    7452,
+    "LATIN LETTER SMALL CAPITAL U"
+  ],
+  [
+    7453,
+    "LATIN SMALL LETTER SIDEWAYS U"
+  ],
+  [
+    7454,
+    "LATIN SMALL LETTER SIDEWAYS DIAERESIZED U"
+  ],
+  [
+    7455,
+    "LATIN SMALL LETTER SIDEWAYS TURNED M"
+  ],
+  [
+    7456,
+    "LATIN LETTER SMALL CAPITAL V"
+  ],
+  [
+    7457,
+    "LATIN LETTER SMALL CAPITAL W"
+  ],
+  [
+    7458,
+    "LATIN LETTER SMALL CAPITAL Z"
+  ],
+  [
+    7459,
+    "LATIN LETTER SMALL CAPITAL EZH"
+  ],
+  [
+    7460,
+    "LATIN LETTER VOICED LARYNGEAL SPIRANT"
+  ],
+  [
+    7461,
+    "LATIN LETTER AIN"
+  ],
+  [
+    7462,
+    "GREEK LETTER SMALL CAPITAL GAMMA"
+  ],
+  [
+    7463,
+    "GREEK LETTER SMALL CAPITAL LAMDA"
+  ],
+  [
+    7464,
+    "GREEK LETTER SMALL CAPITAL PI"
+  ],
+  [
+    7465,
+    "GREEK LETTER SMALL CAPITAL RHO"
+  ],
+  [
+    7466,
+    "GREEK LETTER SMALL CAPITAL PSI"
+  ],
+  [
+    7467,
+    "CYRILLIC LETTER SMALL CAPITAL EL"
+  ],
+  [
+    7468,
+    "MODIFIER LETTER CAPITAL A"
+  ],
+  [
+    7469,
+    "MODIFIER LETTER CAPITAL AE"
+  ],
+  [
+    7470,
+    "MODIFIER LETTER CAPITAL B"
+  ],
+  [
+    7471,
+    "MODIFIER LETTER CAPITAL BARRED B"
+  ],
+  [
+    7472,
+    "MODIFIER LETTER CAPITAL D"
+  ],
+  [
+    7473,
+    "MODIFIER LETTER CAPITAL E"
+  ],
+  [
+    7474,
+    "MODIFIER LETTER CAPITAL REVERSED E"
+  ],
+  [
+    7475,
+    "MODIFIER LETTER CAPITAL G"
+  ],
+  [
+    7476,
+    "MODIFIER LETTER CAPITAL H"
+  ],
+  [
+    7477,
+    "MODIFIER LETTER CAPITAL I"
+  ],
+  [
+    7478,
+    "MODIFIER LETTER CAPITAL J"
+  ],
+  [
+    7479,
+    "MODIFIER LETTER CAPITAL K"
+  ],
+  [
+    7480,
+    "MODIFIER LETTER CAPITAL L"
+  ],
+  [
+    7481,
+    "MODIFIER LETTER CAPITAL M"
+  ],
+  [
+    7482,
+    "MODIFIER LETTER CAPITAL N"
+  ],
+  [
+    7483,
+    "MODIFIER LETTER CAPITAL REVERSED N"
+  ],
+  [
+    7484,
+    "MODIFIER LETTER CAPITAL O"
+  ],
+  [
+    7485,
+    "MODIFIER LETTER CAPITAL OU"
+  ],
+  [
+    7486,
+    "MODIFIER LETTER CAPITAL P"
+  ],
+  [
+    7487,
+    "MODIFIER LETTER CAPITAL R"
+  ],
+  [
+    7488,
+    "MODIFIER LETTER CAPITAL T"
+  ],
+  [
+    7489,
+    "MODIFIER LETTER CAPITAL U"
+  ],
+  [
+    7490,
+    "MODIFIER LETTER CAPITAL W"
+  ],
+  [
+    7491,
+    "MODIFIER LETTER SMALL A"
+  ],
+  [
+    7492,
+    "MODIFIER LETTER SMALL TURNED A"
+  ],
+  [
+    7493,
+    "MODIFIER LETTER SMALL ALPHA"
+  ],
+  [
+    7494,
+    "MODIFIER LETTER SMALL TURNED AE"
+  ],
+  [
+    7495,
+    "MODIFIER LETTER SMALL B"
+  ],
+  [
+    7496,
+    "MODIFIER LETTER SMALL D"
+  ],
+  [
+    7497,
+    "MODIFIER LETTER SMALL E"
+  ],
+  [
+    7498,
+    "MODIFIER LETTER SMALL SCHWA"
+  ],
+  [
+    7499,
+    "MODIFIER LETTER SMALL OPEN E"
+  ],
+  [
+    7500,
+    "MODIFIER LETTER SMALL TURNED OPEN E"
+  ],
+  [
+    7501,
+    "MODIFIER LETTER SMALL G"
+  ],
+  [
+    7502,
+    "MODIFIER LETTER SMALL TURNED I"
+  ],
+  [
+    7503,
+    "MODIFIER LETTER SMALL K"
+  ],
+  [
+    7504,
+    "MODIFIER LETTER SMALL M"
+  ],
+  [
+    7505,
+    "MODIFIER LETTER SMALL ENG"
+  ],
+  [
+    7506,
+    "MODIFIER LETTER SMALL O"
+  ],
+  [
+    7507,
+    "MODIFIER LETTER SMALL OPEN O"
+  ],
+  [
+    7508,
+    "MODIFIER LETTER SMALL TOP HALF O"
+  ],
+  [
+    7509,
+    "MODIFIER LETTER SMALL BOTTOM HALF O"
+  ],
+  [
+    7510,
+    "MODIFIER LETTER SMALL P"
+  ],
+  [
+    7511,
+    "MODIFIER LETTER SMALL T"
+  ],
+  [
+    7512,
+    "MODIFIER LETTER SMALL U"
+  ],
+  [
+    7513,
+    "MODIFIER LETTER SMALL SIDEWAYS U"
+  ],
+  [
+    7514,
+    "MODIFIER LETTER SMALL TURNED M"
+  ],
+  [
+    7515,
+    "MODIFIER LETTER SMALL V"
+  ],
+  [
+    7516,
+    "MODIFIER LETTER SMALL AIN"
+  ],
+  [
+    7517,
+    "MODIFIER LETTER SMALL BETA"
+  ],
+  [
+    7518,
+    "MODIFIER LETTER SMALL GREEK GAMMA"
+  ],
+  [
+    7519,
+    "MODIFIER LETTER SMALL DELTA"
+  ],
+  [
+    7520,
+    "MODIFIER LETTER SMALL GREEK PHI"
+  ],
+  [
+    7521,
+    "MODIFIER LETTER SMALL CHI"
+  ],
+  [
+    7522,
+    "LATIN SUBSCRIPT SMALL LETTER I"
+  ],
+  [
+    7523,
+    "LATIN SUBSCRIPT SMALL LETTER R"
+  ],
+  [
+    7524,
+    "LATIN SUBSCRIPT SMALL LETTER U"
+  ],
+  [
+    7525,
+    "LATIN SUBSCRIPT SMALL LETTER V"
+  ],
+  [
+    7526,
+    "GREEK SUBSCRIPT SMALL LETTER BETA"
+  ],
+  [
+    7527,
+    "GREEK SUBSCRIPT SMALL LETTER GAMMA"
+  ],
+  [
+    7528,
+    "GREEK SUBSCRIPT SMALL LETTER RHO"
+  ],
+  [
+    7529,
+    "GREEK SUBSCRIPT SMALL LETTER PHI"
+  ],
+  [
+    7530,
+    "GREEK SUBSCRIPT SMALL LETTER CHI"
+  ],
+  [
+    7531,
+    "LATIN SMALL LETTER UE"
+  ],
+  [
+    7532,
+    "LATIN SMALL LETTER B WITH MIDDLE TILDE"
+  ],
+  [
+    7533,
+    "LATIN SMALL LETTER D WITH MIDDLE TILDE"
+  ],
+  [
+    7534,
+    "LATIN SMALL LETTER F WITH MIDDLE TILDE"
+  ],
+  [
+    7535,
+    "LATIN SMALL LETTER M WITH MIDDLE TILDE"
+  ],
+  [
+    7536,
+    "LATIN SMALL LETTER N WITH MIDDLE TILDE"
+  ],
+  [
+    7537,
+    "LATIN SMALL LETTER P WITH MIDDLE TILDE"
+  ],
+  [
+    7538,
+    "LATIN SMALL LETTER R WITH MIDDLE TILDE"
+  ],
+  [
+    7539,
+    "LATIN SMALL LETTER R WITH FISHHOOK AND MIDDLE TILDE"
+  ],
+  [
+    7540,
+    "LATIN SMALL LETTER S WITH MIDDLE TILDE"
+  ],
+  [
+    7541,
+    "LATIN SMALL LETTER T WITH MIDDLE TILDE"
+  ],
+  [
+    7542,
+    "LATIN SMALL LETTER Z WITH MIDDLE TILDE"
+  ],
+  [
+    7543,
+    "LATIN SMALL LETTER TURNED G"
+  ],
+  [
+    7544,
+    "MODIFIER LETTER CYRILLIC EN"
+  ],
+  [
+    7545,
+    "LATIN SMALL LETTER INSULAR G"
+  ],
+  [
+    7546,
+    "LATIN SMALL LETTER TH WITH STRIKETHROUGH"
+  ],
+  [
+    7547,
+    "LATIN SMALL CAPITAL LETTER I WITH STROKE"
+  ],
+  [
+    7548,
+    "LATIN SMALL LETTER IOTA WITH STROKE"
+  ],
+  [
+    7549,
+    "LATIN SMALL LETTER P WITH STROKE"
+  ],
+  [
+    7550,
+    "LATIN SMALL CAPITAL LETTER U WITH STROKE"
+  ],
+  [
+    7551,
+    "LATIN SMALL LETTER UPSILON WITH STROKE"
+  ],
+  [
+    7552,
+    "LATIN SMALL LETTER B WITH PALATAL HOOK"
+  ],
+  [
+    7553,
+    "LATIN SMALL LETTER D WITH PALATAL HOOK"
+  ],
+  [
+    7554,
+    "LATIN SMALL LETTER F WITH PALATAL HOOK"
+  ],
+  [
+    7555,
+    "LATIN SMALL LETTER G WITH PALATAL HOOK"
+  ],
+  [
+    7556,
+    "LATIN SMALL LETTER K WITH PALATAL HOOK"
+  ],
+  [
+    7557,
+    "LATIN SMALL LETTER L WITH PALATAL HOOK"
+  ],
+  [
+    7558,
+    "LATIN SMALL LETTER M WITH PALATAL HOOK"
+  ],
+  [
+    7559,
+    "LATIN SMALL LETTER N WITH PALATAL HOOK"
+  ],
+  [
+    7560,
+    "LATIN SMALL LETTER P WITH PALATAL HOOK"
+  ],
+  [
+    7561,
+    "LATIN SMALL LETTER R WITH PALATAL HOOK"
+  ],
+  [
+    7562,
+    "LATIN SMALL LETTER S WITH PALATAL HOOK"
+  ],
+  [
+    7563,
+    "LATIN SMALL LETTER ESH WITH PALATAL HOOK"
+  ],
+  [
+    7564,
+    "LATIN SMALL LETTER V WITH PALATAL HOOK"
+  ],
+  [
+    7565,
+    "LATIN SMALL LETTER X WITH PALATAL HOOK"
+  ],
+  [
+    7566,
+    "LATIN SMALL LETTER Z WITH PALATAL HOOK"
+  ],
+  [
+    7567,
+    "LATIN SMALL LETTER A WITH RETROFLEX HOOK"
+  ],
+  [
+    7568,
+    "LATIN SMALL LETTER ALPHA WITH RETROFLEX HOOK"
+  ],
+  [
+    7569,
+    "LATIN SMALL LETTER D WITH HOOK AND TAIL"
+  ],
+  [
+    7570,
+    "LATIN SMALL LETTER E WITH RETROFLEX HOOK"
+  ],
+  [
+    7571,
+    "LATIN SMALL LETTER OPEN E WITH RETROFLEX HOOK"
+  ],
+  [
+    7572,
+    "LATIN SMALL LETTER REVERSED OPEN E WITH RETROFLEX HOOK"
+  ],
+  [
+    7573,
+    "LATIN SMALL LETTER SCHWA WITH RETROFLEX HOOK"
+  ],
+  [
+    7574,
+    "LATIN SMALL LETTER I WITH RETROFLEX HOOK"
+  ],
+  [
+    7575,
+    "LATIN SMALL LETTER OPEN O WITH RETROFLEX HOOK"
+  ],
+  [
+    7576,
+    "LATIN SMALL LETTER ESH WITH RETROFLEX HOOK"
+  ],
+  [
+    7577,
+    "LATIN SMALL LETTER U WITH RETROFLEX HOOK"
+  ],
+  [
+    7578,
+    "LATIN SMALL LETTER EZH WITH RETROFLEX HOOK"
+  ],
+  [
+    7579,
+    "MODIFIER LETTER SMALL TURNED ALPHA"
+  ],
+  [
+    7580,
+    "MODIFIER LETTER SMALL C"
+  ],
+  [
+    7581,
+    "MODIFIER LETTER SMALL C WITH CURL"
+  ],
+  [
+    7582,
+    "MODIFIER LETTER SMALL ETH"
+  ],
+  [
+    7583,
+    "MODIFIER LETTER SMALL REVERSED OPEN E"
+  ],
+  [
+    7584,
+    "MODIFIER LETTER SMALL F"
+  ],
+  [
+    7585,
+    "MODIFIER LETTER SMALL DOTLESS J WITH STROKE"
+  ],
+  [
+    7586,
+    "MODIFIER LETTER SMALL SCRIPT G"
+  ],
+  [
+    7587,
+    "MODIFIER LETTER SMALL TURNED H"
+  ],
+  [
+    7588,
+    "MODIFIER LETTER SMALL I WITH STROKE"
+  ],
+  [
+    7589,
+    "MODIFIER LETTER SMALL IOTA"
+  ],
+  [
+    7590,
+    "MODIFIER LETTER SMALL CAPITAL I"
+  ],
+  [
+    7591,
+    "MODIFIER LETTER SMALL CAPITAL I WITH STROKE"
+  ],
+  [
+    7592,
+    "MODIFIER LETTER SMALL J WITH CROSSED-TAIL"
+  ],
+  [
+    7593,
+    "MODIFIER LETTER SMALL L WITH RETROFLEX HOOK"
+  ],
+  [
+    7594,
+    "MODIFIER LETTER SMALL L WITH PALATAL HOOK"
+  ],
+  [
+    7595,
+    "MODIFIER LETTER SMALL CAPITAL L"
+  ],
+  [
+    7596,
+    "MODIFIER LETTER SMALL M WITH HOOK"
+  ],
+  [
+    7597,
+    "MODIFIER LETTER SMALL TURNED M WITH LONG LEG"
+  ],
+  [
+    7598,
+    "MODIFIER LETTER SMALL N WITH LEFT HOOK"
+  ],
+  [
+    7599,
+    "MODIFIER LETTER SMALL N WITH RETROFLEX HOOK"
+  ],
+  [
+    7600,
+    "MODIFIER LETTER SMALL CAPITAL N"
+  ],
+  [
+    7601,
+    "MODIFIER LETTER SMALL BARRED O"
+  ],
+  [
+    7602,
+    "MODIFIER LETTER SMALL PHI"
+  ],
+  [
+    7603,
+    "MODIFIER LETTER SMALL S WITH HOOK"
+  ],
+  [
+    7604,
+    "MODIFIER LETTER SMALL ESH"
+  ],
+  [
+    7605,
+    "MODIFIER LETTER SMALL T WITH PALATAL HOOK"
+  ],
+  [
+    7606,
+    "MODIFIER LETTER SMALL U BAR"
+  ],
+  [
+    7607,
+    "MODIFIER LETTER SMALL UPSILON"
+  ],
+  [
+    7608,
+    "MODIFIER LETTER SMALL CAPITAL U"
+  ],
+  [
+    7609,
+    "MODIFIER LETTER SMALL V WITH HOOK"
+  ],
+  [
+    7610,
+    "MODIFIER LETTER SMALL TURNED V"
+  ],
+  [
+    7611,
+    "MODIFIER LETTER SMALL Z"
+  ],
+  [
+    7612,
+    "MODIFIER LETTER SMALL Z WITH RETROFLEX HOOK"
+  ],
+  [
+    7613,
+    "MODIFIER LETTER SMALL Z WITH CURL"
+  ],
+  [
+    7614,
+    "MODIFIER LETTER SMALL EZH"
+  ],
+  [
+    7615,
+    "MODIFIER LETTER SMALL THETA"
+  ],
+  [
+    7616,
+    "COMBINING DOTTED GRAVE ACCENT"
+  ],
+  [
+    7617,
+    "COMBINING DOTTED ACUTE ACCENT"
+  ],
+  [
+    7618,
+    "COMBINING SNAKE BELOW"
+  ],
+  [
+    7619,
+    "COMBINING SUSPENSION MARK"
+  ],
+  [
+    7620,
+    "COMBINING MACRON-ACUTE"
+  ],
+  [
+    7621,
+    "COMBINING GRAVE-MACRON"
+  ],
+  [
+    7622,
+    "COMBINING MACRON-GRAVE"
+  ],
+  [
+    7623,
+    "COMBINING ACUTE-MACRON"
+  ],
+  [
+    7624,
+    "COMBINING GRAVE-ACUTE-GRAVE"
+  ],
+  [
+    7625,
+    "COMBINING ACUTE-GRAVE-ACUTE"
+  ],
+  [
+    7626,
+    "COMBINING LATIN SMALL LETTER R BELOW"
+  ],
+  [
+    7627,
+    "COMBINING BREVE-MACRON"
+  ],
+  [
+    7628,
+    "COMBINING MACRON-BREVE"
+  ],
+  [
+    7629,
+    "COMBINING DOUBLE CIRCUMFLEX ABOVE"
+  ],
+  [
+    7630,
+    "COMBINING OGONEK ABOVE"
+  ],
+  [
+    7631,
+    "COMBINING ZIGZAG BELOW"
+  ],
+  [
+    7632,
+    "COMBINING IS BELOW"
+  ],
+  [
+    7633,
+    "COMBINING UR ABOVE"
+  ],
+  [
+    7634,
+    "COMBINING US ABOVE"
+  ],
+  [
+    7635,
+    "COMBINING LATIN SMALL LETTER FLATTENED OPEN A ABOVE"
+  ],
+  [
+    7636,
+    "COMBINING LATIN SMALL LETTER AE"
+  ],
+  [
+    7637,
+    "COMBINING LATIN SMALL LETTER AO"
+  ],
+  [
+    7638,
+    "COMBINING LATIN SMALL LETTER AV"
+  ],
+  [
+    7639,
+    "COMBINING LATIN SMALL LETTER C CEDILLA"
+  ],
+  [
+    7640,
+    "COMBINING LATIN SMALL LETTER INSULAR D"
+  ],
+  [
+    7641,
+    "COMBINING LATIN SMALL LETTER ETH"
+  ],
+  [
+    7642,
+    "COMBINING LATIN SMALL LETTER G"
+  ],
+  [
+    7643,
+    "COMBINING LATIN LETTER SMALL CAPITAL G"
+  ],
+  [
+    7644,
+    "COMBINING LATIN SMALL LETTER K"
+  ],
+  [
+    7645,
+    "COMBINING LATIN SMALL LETTER L"
+  ],
+  [
+    7646,
+    "COMBINING LATIN LETTER SMALL CAPITAL L"
+  ],
+  [
+    7647,
+    "COMBINING LATIN LETTER SMALL CAPITAL M"
+  ],
+  [
+    7648,
+    "COMBINING LATIN SMALL LETTER N"
+  ],
+  [
+    7649,
+    "COMBINING LATIN LETTER SMALL CAPITAL N"
+  ],
+  [
+    7650,
+    "COMBINING LATIN LETTER SMALL CAPITAL R"
+  ],
+  [
+    7651,
+    "COMBINING LATIN SMALL LETTER R ROTUNDA"
+  ],
+  [
+    7652,
+    "COMBINING LATIN SMALL LETTER S"
+  ],
+  [
+    7653,
+    "COMBINING LATIN SMALL LETTER LONG S"
+  ],
+  [
+    7654,
+    "COMBINING LATIN SMALL LETTER Z"
+  ],
+  [
+    7655,
+    "COMBINING LATIN SMALL LETTER ALPHA"
+  ],
+  [
+    7656,
+    "COMBINING LATIN SMALL LETTER B"
+  ],
+  [
+    7657,
+    "COMBINING LATIN SMALL LETTER BETA"
+  ],
+  [
+    7658,
+    "COMBINING LATIN SMALL LETTER SCHWA"
+  ],
+  [
+    7659,
+    "COMBINING LATIN SMALL LETTER F"
+  ],
+  [
+    7660,
+    "COMBINING LATIN SMALL LETTER L WITH DOUBLE MIDDLE TILDE"
+  ],
+  [
+    7661,
+    "COMBINING LATIN SMALL LETTER O WITH LIGHT CENTRALIZATION STROKE"
+  ],
+  [
+    7662,
+    "COMBINING LATIN SMALL LETTER P"
+  ],
+  [
+    7663,
+    "COMBINING LATIN SMALL LETTER ESH"
+  ],
+  [
+    7664,
+    "COMBINING LATIN SMALL LETTER U WITH LIGHT CENTRALIZATION STROKE"
+  ],
+  [
+    7665,
+    "COMBINING LATIN SMALL LETTER W"
+  ],
+  [
+    7666,
+    "COMBINING LATIN SMALL LETTER A WITH DIAERESIS"
+  ],
+  [
+    7667,
+    "COMBINING LATIN SMALL LETTER O WITH DIAERESIS"
+  ],
+  [
+    7668,
+    "COMBINING LATIN SMALL LETTER U WITH DIAERESIS"
+  ],
+  [
+    7669,
+    "COMBINING UP TACK ABOVE"
+  ],
+  [
+    7670,
+    "COMBINING KAVYKA ABOVE RIGHT"
+  ],
+  [
+    7671,
+    "COMBINING KAVYKA ABOVE LEFT"
+  ],
+  [
+    7672,
+    "COMBINING DOT ABOVE LEFT"
+  ],
+  [
+    7673,
+    "COMBINING WIDE INVERTED BRIDGE BELOW"
+  ],
+  [
+    7674,
+    "COMBINING DOT BELOW LEFT"
+  ],
+  [
+    7675,
+    "COMBINING DELETION MARK"
+  ],
+  [
+    7676,
+    "COMBINING DOUBLE INVERTED BREVE BELOW"
+  ],
+  [
+    7677,
+    "COMBINING ALMOST EQUAL TO BELOW"
+  ],
+  [
+    7678,
+    "COMBINING LEFT ARROWHEAD ABOVE"
+  ],
+  [
+    7679,
+    "COMBINING RIGHT ARROWHEAD AND DOWN ARROWHEAD BELOW"
+  ],
+  [
+    7680,
+    "LATIN CAPITAL LETTER A WITH RING BELOW"
+  ],
+  [
+    7681,
+    "LATIN SMALL LETTER A WITH RING BELOW"
+  ],
+  [
+    7682,
+    "LATIN CAPITAL LETTER B WITH DOT ABOVE"
+  ],
+  [
+    7683,
+    "LATIN SMALL LETTER B WITH DOT ABOVE"
+  ],
+  [
+    7684,
+    "LATIN CAPITAL LETTER B WITH DOT BELOW"
+  ],
+  [
+    7685,
+    "LATIN SMALL LETTER B WITH DOT BELOW"
+  ],
+  [
+    7686,
+    "LATIN CAPITAL LETTER B WITH LINE BELOW"
+  ],
+  [
+    7687,
+    "LATIN SMALL LETTER B WITH LINE BELOW"
+  ],
+  [
+    7688,
+    "LATIN CAPITAL LETTER C WITH CEDILLA AND ACUTE"
+  ],
+  [
+    7689,
+    "LATIN SMALL LETTER C WITH CEDILLA AND ACUTE"
+  ],
+  [
+    7690,
+    "LATIN CAPITAL LETTER D WITH DOT ABOVE"
+  ],
+  [
+    7691,
+    "LATIN SMALL LETTER D WITH DOT ABOVE"
+  ],
+  [
+    7692,
+    "LATIN CAPITAL LETTER D WITH DOT BELOW"
+  ],
+  [
+    7693,
+    "LATIN SMALL LETTER D WITH DOT BELOW"
+  ],
+  [
+    7694,
+    "LATIN CAPITAL LETTER D WITH LINE BELOW"
+  ],
+  [
+    7695,
+    "LATIN SMALL LETTER D WITH LINE BELOW"
+  ],
+  [
+    7696,
+    "LATIN CAPITAL LETTER D WITH CEDILLA"
+  ],
+  [
+    7697,
+    "LATIN SMALL LETTER D WITH CEDILLA"
+  ],
+  [
+    7698,
+    "LATIN CAPITAL LETTER D WITH CIRCUMFLEX BELOW"
+  ],
+  [
+    7699,
+    "LATIN SMALL LETTER D WITH CIRCUMFLEX BELOW"
+  ],
+  [
+    7700,
+    "LATIN CAPITAL LETTER E WITH MACRON AND GRAVE"
+  ],
+  [
+    7701,
+    "LATIN SMALL LETTER E WITH MACRON AND GRAVE"
+  ],
+  [
+    7702,
+    "LATIN CAPITAL LETTER E WITH MACRON AND ACUTE"
+  ],
+  [
+    7703,
+    "LATIN SMALL LETTER E WITH MACRON AND ACUTE"
+  ],
+  [
+    7704,
+    "LATIN CAPITAL LETTER E WITH CIRCUMFLEX BELOW"
+  ],
+  [
+    7705,
+    "LATIN SMALL LETTER E WITH CIRCUMFLEX BELOW"
+  ],
+  [
+    7706,
+    "LATIN CAPITAL LETTER E WITH TILDE BELOW"
+  ],
+  [
+    7707,
+    "LATIN SMALL LETTER E WITH TILDE BELOW"
+  ],
+  [
+    7708,
+    "LATIN CAPITAL LETTER E WITH CEDILLA AND BREVE"
+  ],
+  [
+    7709,
+    "LATIN SMALL LETTER E WITH CEDILLA AND BREVE"
+  ],
+  [
+    7710,
+    "LATIN CAPITAL LETTER F WITH DOT ABOVE"
+  ],
+  [
+    7711,
+    "LATIN SMALL LETTER F WITH DOT ABOVE"
+  ],
+  [
+    7712,
+    "LATIN CAPITAL LETTER G WITH MACRON"
+  ],
+  [
+    7713,
+    "LATIN SMALL LETTER G WITH MACRON"
+  ],
+  [
+    7714,
+    "LATIN CAPITAL LETTER H WITH DOT ABOVE"
+  ],
+  [
+    7715,
+    "LATIN SMALL LETTER H WITH DOT ABOVE"
+  ],
+  [
+    7716,
+    "LATIN CAPITAL LETTER H WITH DOT BELOW"
+  ],
+  [
+    7717,
+    "LATIN SMALL LETTER H WITH DOT BELOW"
+  ],
+  [
+    7718,
+    "LATIN CAPITAL LETTER H WITH DIAERESIS"
+  ],
+  [
+    7719,
+    "LATIN SMALL LETTER H WITH DIAERESIS"
+  ],
+  [
+    7720,
+    "LATIN CAPITAL LETTER H WITH CEDILLA"
+  ],
+  [
+    7721,
+    "LATIN SMALL LETTER H WITH CEDILLA"
+  ],
+  [
+    7722,
+    "LATIN CAPITAL LETTER H WITH BREVE BELOW"
+  ],
+  [
+    7723,
+    "LATIN SMALL LETTER H WITH BREVE BELOW"
+  ],
+  [
+    7724,
+    "LATIN CAPITAL LETTER I WITH TILDE BELOW"
+  ],
+  [
+    7725,
+    "LATIN SMALL LETTER I WITH TILDE BELOW"
+  ],
+  [
+    7726,
+    "LATIN CAPITAL LETTER I WITH DIAERESIS AND ACUTE"
+  ],
+  [
+    7727,
+    "LATIN SMALL LETTER I WITH DIAERESIS AND ACUTE"
+  ],
+  [
+    7728,
+    "LATIN CAPITAL LETTER K WITH ACUTE"
+  ],
+  [
+    7729,
+    "LATIN SMALL LETTER K WITH ACUTE"
+  ],
+  [
+    7730,
+    "LATIN CAPITAL LETTER K WITH DOT BELOW"
+  ],
+  [
+    7731,
+    "LATIN SMALL LETTER K WITH DOT BELOW"
+  ],
+  [
+    7732,
+    "LATIN CAPITAL LETTER K WITH LINE BELOW"
+  ],
+  [
+    7733,
+    "LATIN SMALL LETTER K WITH LINE BELOW"
+  ],
+  [
+    7734,
+    "LATIN CAPITAL LETTER L WITH DOT BELOW"
+  ],
+  [
+    7735,
+    "LATIN SMALL LETTER L WITH DOT BELOW"
+  ],
+  [
+    7736,
+    "LATIN CAPITAL LETTER L WITH DOT BELOW AND MACRON"
+  ],
+  [
+    7737,
+    "LATIN SMALL LETTER L WITH DOT BELOW AND MACRON"
+  ],
+  [
+    7738,
+    "LATIN CAPITAL LETTER L WITH LINE BELOW"
+  ],
+  [
+    7739,
+    "LATIN SMALL LETTER L WITH LINE BELOW"
+  ],
+  [
+    7740,
+    "LATIN CAPITAL LETTER L WITH CIRCUMFLEX BELOW"
+  ],
+  [
+    7741,
+    "LATIN SMALL LETTER L WITH CIRCUMFLEX BELOW"
+  ],
+  [
+    7742,
+    "LATIN CAPITAL LETTER M WITH ACUTE"
+  ],
+  [
+    7743,
+    "LATIN SMALL LETTER M WITH ACUTE"
+  ],
+  [
+    7744,
+    "LATIN CAPITAL LETTER M WITH DOT ABOVE"
+  ],
+  [
+    7745,
+    "LATIN SMALL LETTER M WITH DOT ABOVE"
+  ],
+  [
+    7746,
+    "LATIN CAPITAL LETTER M WITH DOT BELOW"
+  ],
+  [
+    7747,
+    "LATIN SMALL LETTER M WITH DOT BELOW"
+  ],
+  [
+    7748,
+    "LATIN CAPITAL LETTER N WITH DOT ABOVE"
+  ],
+  [
+    7749,
+    "LATIN SMALL LETTER N WITH DOT ABOVE"
+  ],
+  [
+    7750,
+    "LATIN CAPITAL LETTER N WITH DOT BELOW"
+  ],
+  [
+    7751,
+    "LATIN SMALL LETTER N WITH DOT BELOW"
+  ],
+  [
+    7752,
+    "LATIN CAPITAL LETTER N WITH LINE BELOW"
+  ],
+  [
+    7753,
+    "LATIN SMALL LETTER N WITH LINE BELOW"
+  ],
+  [
+    7754,
+    "LATIN CAPITAL LETTER N WITH CIRCUMFLEX BELOW"
+  ],
+  [
+    7755,
+    "LATIN SMALL LETTER N WITH CIRCUMFLEX BELOW"
+  ],
+  [
+    7756,
+    "LATIN CAPITAL LETTER O WITH TILDE AND ACUTE"
+  ],
+  [
+    7757,
+    "LATIN SMALL LETTER O WITH TILDE AND ACUTE"
+  ],
+  [
+    7758,
+    "LATIN CAPITAL LETTER O WITH TILDE AND DIAERESIS"
+  ],
+  [
+    7759,
+    "LATIN SMALL LETTER O WITH TILDE AND DIAERESIS"
+  ],
+  [
+    7760,
+    "LATIN CAPITAL LETTER O WITH MACRON AND GRAVE"
+  ],
+  [
+    7761,
+    "LATIN SMALL LETTER O WITH MACRON AND GRAVE"
+  ],
+  [
+    7762,
+    "LATIN CAPITAL LETTER O WITH MACRON AND ACUTE"
+  ],
+  [
+    7763,
+    "LATIN SMALL LETTER O WITH MACRON AND ACUTE"
+  ],
+  [
+    7764,
+    "LATIN CAPITAL LETTER P WITH ACUTE"
+  ],
+  [
+    7765,
+    "LATIN SMALL LETTER P WITH ACUTE"
+  ],
+  [
+    7766,
+    "LATIN CAPITAL LETTER P WITH DOT ABOVE"
+  ],
+  [
+    7767,
+    "LATIN SMALL LETTER P WITH DOT ABOVE"
+  ],
+  [
+    7768,
+    "LATIN CAPITAL LETTER R WITH DOT ABOVE"
+  ],
+  [
+    7769,
+    "LATIN SMALL LETTER R WITH DOT ABOVE"
+  ],
+  [
+    7770,
+    "LATIN CAPITAL LETTER R WITH DOT BELOW"
+  ],
+  [
+    7771,
+    "LATIN SMALL LETTER R WITH DOT BELOW"
+  ],
+  [
+    7772,
+    "LATIN CAPITAL LETTER R WITH DOT BELOW AND MACRON"
+  ],
+  [
+    7773,
+    "LATIN SMALL LETTER R WITH DOT BELOW AND MACRON"
+  ],
+  [
+    7774,
+    "LATIN CAPITAL LETTER R WITH LINE BELOW"
+  ],
+  [
+    7775,
+    "LATIN SMALL LETTER R WITH LINE BELOW"
+  ],
+  [
+    7776,
+    "LATIN CAPITAL LETTER S WITH DOT ABOVE"
+  ],
+  [
+    7777,
+    "LATIN SMALL LETTER S WITH DOT ABOVE"
+  ],
+  [
+    7778,
+    "LATIN CAPITAL LETTER S WITH DOT BELOW"
+  ],
+  [
+    7779,
+    "LATIN SMALL LETTER S WITH DOT BELOW"
+  ],
+  [
+    7780,
+    "LATIN CAPITAL LETTER S WITH ACUTE AND DOT ABOVE"
+  ],
+  [
+    7781,
+    "LATIN SMALL LETTER S WITH ACUTE AND DOT ABOVE"
+  ],
+  [
+    7782,
+    "LATIN CAPITAL LETTER S WITH CARON AND DOT ABOVE"
+  ],
+  [
+    7783,
+    "LATIN SMALL LETTER S WITH CARON AND DOT ABOVE"
+  ],
+  [
+    7784,
+    "LATIN CAPITAL LETTER S WITH DOT BELOW AND DOT ABOVE"
+  ],
+  [
+    7785,
+    "LATIN SMALL LETTER S WITH DOT BELOW AND DOT ABOVE"
+  ],
+  [
+    7786,
+    "LATIN CAPITAL LETTER T WITH DOT ABOVE"
+  ],
+  [
+    7787,
+    "LATIN SMALL LETTER T WITH DOT ABOVE"
+  ],
+  [
+    7788,
+    "LATIN CAPITAL LETTER T WITH DOT BELOW"
+  ],
+  [
+    7789,
+    "LATIN SMALL LETTER T WITH DOT BELOW"
+  ],
+  [
+    7790,
+    "LATIN CAPITAL LETTER T WITH LINE BELOW"
+  ],
+  [
+    7791,
+    "LATIN SMALL LETTER T WITH LINE BELOW"
+  ],
+  [
+    7792,
+    "LATIN CAPITAL LETTER T WITH CIRCUMFLEX BELOW"
+  ],
+  [
+    7793,
+    "LATIN SMALL LETTER T WITH CIRCUMFLEX BELOW"
+  ],
+  [
+    7794,
+    "LATIN CAPITAL LETTER U WITH DIAERESIS BELOW"
+  ],
+  [
+    7795,
+    "LATIN SMALL LETTER U WITH DIAERESIS BELOW"
+  ],
+  [
+    7796,
+    "LATIN CAPITAL LETTER U WITH TILDE BELOW"
+  ],
+  [
+    7797,
+    "LATIN SMALL LETTER U WITH TILDE BELOW"
+  ],
+  [
+    7798,
+    "LATIN CAPITAL LETTER U WITH CIRCUMFLEX BELOW"
+  ],
+  [
+    7799,
+    "LATIN SMALL LETTER U WITH CIRCUMFLEX BELOW"
+  ],
+  [
+    7800,
+    "LATIN CAPITAL LETTER U WITH TILDE AND ACUTE"
+  ],
+  [
+    7801,
+    "LATIN SMALL LETTER U WITH TILDE AND ACUTE"
+  ],
+  [
+    7802,
+    "LATIN CAPITAL LETTER U WITH MACRON AND DIAERESIS"
+  ],
+  [
+    7803,
+    "LATIN SMALL LETTER U WITH MACRON AND DIAERESIS"
+  ],
+  [
+    7804,
+    "LATIN CAPITAL LETTER V WITH TILDE"
+  ],
+  [
+    7805,
+    "LATIN SMALL LETTER V WITH TILDE"
+  ],
+  [
+    7806,
+    "LATIN CAPITAL LETTER V WITH DOT BELOW"
+  ],
+  [
+    7807,
+    "LATIN SMALL LETTER V WITH DOT BELOW"
+  ],
+  [
+    7808,
+    "LATIN CAPITAL LETTER W WITH GRAVE"
+  ],
+  [
+    7809,
+    "LATIN SMALL LETTER W WITH GRAVE"
+  ],
+  [
+    7810,
+    "LATIN CAPITAL LETTER W WITH ACUTE"
+  ],
+  [
+    7811,
+    "LATIN SMALL LETTER W WITH ACUTE"
+  ],
+  [
+    7812,
+    "LATIN CAPITAL LETTER W WITH DIAERESIS"
+  ],
+  [
+    7813,
+    "LATIN SMALL LETTER W WITH DIAERESIS"
+  ],
+  [
+    7814,
+    "LATIN CAPITAL LETTER W WITH DOT ABOVE"
+  ],
+  [
+    7815,
+    "LATIN SMALL LETTER W WITH DOT ABOVE"
+  ],
+  [
+    7816,
+    "LATIN CAPITAL LETTER W WITH DOT BELOW"
+  ],
+  [
+    7817,
+    "LATIN SMALL LETTER W WITH DOT BELOW"
+  ],
+  [
+    7818,
+    "LATIN CAPITAL LETTER X WITH DOT ABOVE"
+  ],
+  [
+    7819,
+    "LATIN SMALL LETTER X WITH DOT ABOVE"
+  ],
+  [
+    7820,
+    "LATIN CAPITAL LETTER X WITH DIAERESIS"
+  ],
+  [
+    7821,
+    "LATIN SMALL LETTER X WITH DIAERESIS"
+  ],
+  [
+    7822,
+    "LATIN CAPITAL LETTER Y WITH DOT ABOVE"
+  ],
+  [
+    7823,
+    "LATIN SMALL LETTER Y WITH DOT ABOVE"
+  ],
+  [
+    7824,
+    "LATIN CAPITAL LETTER Z WITH CIRCUMFLEX"
+  ],
+  [
+    7825,
+    "LATIN SMALL LETTER Z WITH CIRCUMFLEX"
+  ],
+  [
+    7826,
+    "LATIN CAPITAL LETTER Z WITH DOT BELOW"
+  ],
+  [
+    7827,
+    "LATIN SMALL LETTER Z WITH DOT BELOW"
+  ],
+  [
+    7828,
+    "LATIN CAPITAL LETTER Z WITH LINE BELOW"
+  ],
+  [
+    7829,
+    "LATIN SMALL LETTER Z WITH LINE BELOW"
+  ],
+  [
+    7830,
+    "LATIN SMALL LETTER H WITH LINE BELOW"
+  ],
+  [
+    7831,
+    "LATIN SMALL LETTER T WITH DIAERESIS"
+  ],
+  [
+    7832,
+    "LATIN SMALL LETTER W WITH RING ABOVE"
+  ],
+  [
+    7833,
+    "LATIN SMALL LETTER Y WITH RING ABOVE"
+  ],
+  [
+    7834,
+    "LATIN SMALL LETTER A WITH RIGHT HALF RING"
+  ],
+  [
+    7835,
+    "LATIN SMALL LETTER LONG S WITH DOT ABOVE"
+  ],
+  [
+    7836,
+    "LATIN SMALL LETTER LONG S WITH DIAGONAL STROKE"
+  ],
+  [
+    7837,
+    "LATIN SMALL LETTER LONG S WITH HIGH STROKE"
+  ],
+  [
+    7838,
+    "LATIN CAPITAL LETTER SHARP S"
+  ],
+  [
+    7839,
+    "LATIN SMALL LETTER DELTA"
+  ],
+  [
+    7840,
+    "LATIN CAPITAL LETTER A WITH DOT BELOW"
+  ],
+  [
+    7841,
+    "LATIN SMALL LETTER A WITH DOT BELOW"
+  ],
+  [
+    7842,
+    "LATIN CAPITAL LETTER A WITH HOOK ABOVE"
+  ],
+  [
+    7843,
+    "LATIN SMALL LETTER A WITH HOOK ABOVE"
+  ],
+  [
+    7844,
+    "LATIN CAPITAL LETTER A WITH CIRCUMFLEX AND ACUTE"
+  ],
+  [
+    7845,
+    "LATIN SMALL LETTER A WITH CIRCUMFLEX AND ACUTE"
+  ],
+  [
+    7846,
+    "LATIN CAPITAL LETTER A WITH CIRCUMFLEX AND GRAVE"
+  ],
+  [
+    7847,
+    "LATIN SMALL LETTER A WITH CIRCUMFLEX AND GRAVE"
+  ],
+  [
+    7848,
+    "LATIN CAPITAL LETTER A WITH CIRCUMFLEX AND HOOK ABOVE"
+  ],
+  [
+    7849,
+    "LATIN SMALL LETTER A WITH CIRCUMFLEX AND HOOK ABOVE"
+  ],
+  [
+    7850,
+    "LATIN CAPITAL LETTER A WITH CIRCUMFLEX AND TILDE"
+  ],
+  [
+    7851,
+    "LATIN SMALL LETTER A WITH CIRCUMFLEX AND TILDE"
+  ],
+  [
+    7852,
+    "LATIN CAPITAL LETTER A WITH CIRCUMFLEX AND DOT BELOW"
+  ],
+  [
+    7853,
+    "LATIN SMALL LETTER A WITH CIRCUMFLEX AND DOT BELOW"
+  ],
+  [
+    7854,
+    "LATIN CAPITAL LETTER A WITH BREVE AND ACUTE"
+  ],
+  [
+    7855,
+    "LATIN SMALL LETTER A WITH BREVE AND ACUTE"
+  ],
+  [
+    7856,
+    "LATIN CAPITAL LETTER A WITH BREVE AND GRAVE"
+  ],
+  [
+    7857,
+    "LATIN SMALL LETTER A WITH BREVE AND GRAVE"
+  ],
+  [
+    7858,
+    "LATIN CAPITAL LETTER A WITH BREVE AND HOOK ABOVE"
+  ],
+  [
+    7859,
+    "LATIN SMALL LETTER A WITH BREVE AND HOOK ABOVE"
+  ],
+  [
+    7860,
+    "LATIN CAPITAL LETTER A WITH BREVE AND TILDE"
+  ],
+  [
+    7861,
+    "LATIN SMALL LETTER A WITH BREVE AND TILDE"
+  ],
+  [
+    7862,
+    "LATIN CAPITAL LETTER A WITH BREVE AND DOT BELOW"
+  ],
+  [
+    7863,
+    "LATIN SMALL LETTER A WITH BREVE AND DOT BELOW"
+  ],
+  [
+    7864,
+    "LATIN CAPITAL LETTER E WITH DOT BELOW"
+  ],
+  [
+    7865,
+    "LATIN SMALL LETTER E WITH DOT BELOW"
+  ],
+  [
+    7866,
+    "LATIN CAPITAL LETTER E WITH HOOK ABOVE"
+  ],
+  [
+    7867,
+    "LATIN SMALL LETTER E WITH HOOK ABOVE"
+  ],
+  [
+    7868,
+    "LATIN CAPITAL LETTER E WITH TILDE"
+  ],
+  [
+    7869,
+    "LATIN SMALL LETTER E WITH TILDE"
+  ],
+  [
+    7870,
+    "LATIN CAPITAL LETTER E WITH CIRCUMFLEX AND ACUTE"
+  ],
+  [
+    7871,
+    "LATIN SMALL LETTER E WITH CIRCUMFLEX AND ACUTE"
+  ],
+  [
+    7872,
+    "LATIN CAPITAL LETTER E WITH CIRCUMFLEX AND GRAVE"
+  ],
+  [
+    7873,
+    "LATIN SMALL LETTER E WITH CIRCUMFLEX AND GRAVE"
+  ],
+  [
+    7874,
+    "LATIN CAPITAL LETTER E WITH CIRCUMFLEX AND HOOK ABOVE"
+  ],
+  [
+    7875,
+    "LATIN SMALL LETTER E WITH CIRCUMFLEX AND HOOK ABOVE"
+  ],
+  [
+    7876,
+    "LATIN CAPITAL LETTER E WITH CIRCUMFLEX AND TILDE"
+  ],
+  [
+    7877,
+    "LATIN SMALL LETTER E WITH CIRCUMFLEX AND TILDE"
+  ],
+  [
+    7878,
+    "LATIN CAPITAL LETTER E WITH CIRCUMFLEX AND DOT BELOW"
+  ],
+  [
+    7879,
+    "LATIN SMALL LETTER E WITH CIRCUMFLEX AND DOT BELOW"
+  ],
+  [
+    7880,
+    "LATIN CAPITAL LETTER I WITH HOOK ABOVE"
+  ],
+  [
+    7881,
+    "LATIN SMALL LETTER I WITH HOOK ABOVE"
+  ],
+  [
+    7882,
+    "LATIN CAPITAL LETTER I WITH DOT BELOW"
+  ],
+  [
+    7883,
+    "LATIN SMALL LETTER I WITH DOT BELOW"
+  ],
+  [
+    7884,
+    "LATIN CAPITAL LETTER O WITH DOT BELOW"
+  ],
+  [
+    7885,
+    "LATIN SMALL LETTER O WITH DOT BELOW"
+  ],
+  [
+    7886,
+    "LATIN CAPITAL LETTER O WITH HOOK ABOVE"
+  ],
+  [
+    7887,
+    "LATIN SMALL LETTER O WITH HOOK ABOVE"
+  ],
+  [
+    7888,
+    "LATIN CAPITAL LETTER O WITH CIRCUMFLEX AND ACUTE"
+  ],
+  [
+    7889,
+    "LATIN SMALL LETTER O WITH CIRCUMFLEX AND ACUTE"
+  ],
+  [
+    7890,
+    "LATIN CAPITAL LETTER O WITH CIRCUMFLEX AND GRAVE"
+  ],
+  [
+    7891,
+    "LATIN SMALL LETTER O WITH CIRCUMFLEX AND GRAVE"
+  ],
+  [
+    7892,
+    "LATIN CAPITAL LETTER O WITH CIRCUMFLEX AND HOOK ABOVE"
+  ],
+  [
+    7893,
+    "LATIN SMALL LETTER O WITH CIRCUMFLEX AND HOOK ABOVE"
+  ],
+  [
+    7894,
+    "LATIN CAPITAL LETTER O WITH CIRCUMFLEX AND TILDE"
+  ],
+  [
+    7895,
+    "LATIN SMALL LETTER O WITH CIRCUMFLEX AND TILDE"
+  ],
+  [
+    7896,
+    "LATIN CAPITAL LETTER O WITH CIRCUMFLEX AND DOT BELOW"
+  ],
+  [
+    7897,
+    "LATIN SMALL LETTER O WITH CIRCUMFLEX AND DOT BELOW"
+  ],
+  [
+    7898,
+    "LATIN CAPITAL LETTER O WITH HORN AND ACUTE"
+  ],
+  [
+    7899,
+    "LATIN SMALL LETTER O WITH HORN AND ACUTE"
+  ],
+  [
+    7900,
+    "LATIN CAPITAL LETTER O WITH HORN AND GRAVE"
+  ],
+  [
+    7901,
+    "LATIN SMALL LETTER O WITH HORN AND GRAVE"
+  ],
+  [
+    7902,
+    "LATIN CAPITAL LETTER O WITH HORN AND HOOK ABOVE"
+  ],
+  [
+    7903,
+    "LATIN SMALL LETTER O WITH HORN AND HOOK ABOVE"
+  ],
+  [
+    7904,
+    "LATIN CAPITAL LETTER O WITH HORN AND TILDE"
+  ],
+  [
+    7905,
+    "LATIN SMALL LETTER O WITH HORN AND TILDE"
+  ],
+  [
+    7906,
+    "LATIN CAPITAL LETTER O WITH HORN AND DOT BELOW"
+  ],
+  [
+    7907,
+    "LATIN SMALL LETTER O WITH HORN AND DOT BELOW"
+  ],
+  [
+    7908,
+    "LATIN CAPITAL LETTER U WITH DOT BELOW"
+  ],
+  [
+    7909,
+    "LATIN SMALL LETTER U WITH DOT BELOW"
+  ],
+  [
+    7910,
+    "LATIN CAPITAL LETTER U WITH HOOK ABOVE"
+  ],
+  [
+    7911,
+    "LATIN SMALL LETTER U WITH HOOK ABOVE"
+  ],
+  [
+    7912,
+    "LATIN CAPITAL LETTER U WITH HORN AND ACUTE"
+  ],
+  [
+    7913,
+    "LATIN SMALL LETTER U WITH HORN AND ACUTE"
+  ],
+  [
+    7914,
+    "LATIN CAPITAL LETTER U WITH HORN AND GRAVE"
+  ],
+  [
+    7915,
+    "LATIN SMALL LETTER U WITH HORN AND GRAVE"
+  ],
+  [
+    7916,
+    "LATIN CAPITAL LETTER U WITH HORN AND HOOK ABOVE"
+  ],
+  [
+    7917,
+    "LATIN SMALL LETTER U WITH HORN AND HOOK ABOVE"
+  ],
+  [
+    7918,
+    "LATIN CAPITAL LETTER U WITH HORN AND TILDE"
+  ],
+  [
+    7919,
+    "LATIN SMALL LETTER U WITH HORN AND TILDE"
+  ],
+  [
+    7920,
+    "LATIN CAPITAL LETTER U WITH HORN AND DOT BELOW"
+  ],
+  [
+    7921,
+    "LATIN SMALL LETTER U WITH HORN AND DOT BELOW"
+  ],
+  [
+    7922,
+    "LATIN CAPITAL LETTER Y WITH GRAVE"
+  ],
+  [
+    7923,
+    "LATIN SMALL LETTER Y WITH GRAVE"
+  ],
+  [
+    7924,
+    "LATIN CAPITAL LETTER Y WITH DOT BELOW"
+  ],
+  [
+    7925,
+    "LATIN SMALL LETTER Y WITH DOT BELOW"
+  ],
+  [
+    7926,
+    "LATIN CAPITAL LETTER Y WITH HOOK ABOVE"
+  ],
+  [
+    7927,
+    "LATIN SMALL LETTER Y WITH HOOK ABOVE"
+  ],
+  [
+    7928,
+    "LATIN CAPITAL LETTER Y WITH TILDE"
+  ],
+  [
+    7929,
+    "LATIN SMALL LETTER Y WITH TILDE"
+  ],
+  [
+    7930,
+    "LATIN CAPITAL LETTER MIDDLE-WELSH LL"
+  ],
+  [
+    7931,
+    "LATIN SMALL LETTER MIDDLE-WELSH LL"
+  ],
+  [
+    7932,
+    "LATIN CAPITAL LETTER MIDDLE-WELSH V"
+  ],
+  [
+    7933,
+    "LATIN SMALL LETTER MIDDLE-WELSH V"
+  ],
+  [
+    7934,
+    "LATIN CAPITAL LETTER Y WITH LOOP"
+  ],
+  [
+    7935,
+    "LATIN SMALL LETTER Y WITH LOOP"
+  ],
+  [
+    7936,
+    "GREEK SMALL LETTER ALPHA WITH PSILI"
+  ],
+  [
+    7937,
+    "GREEK SMALL LETTER ALPHA WITH DASIA"
+  ],
+  [
+    7938,
+    "GREEK SMALL LETTER ALPHA WITH PSILI AND VARIA"
+  ],
+  [
+    7939,
+    "GREEK SMALL LETTER ALPHA WITH DASIA AND VARIA"
+  ],
+  [
+    7940,
+    "GREEK SMALL LETTER ALPHA WITH PSILI AND OXIA"
+  ],
+  [
+    7941,
+    "GREEK SMALL LETTER ALPHA WITH DASIA AND OXIA"
+  ],
+  [
+    7942,
+    "GREEK SMALL LETTER ALPHA WITH PSILI AND PERISPOMENI"
+  ],
+  [
+    7943,
+    "GREEK SMALL LETTER ALPHA WITH DASIA AND PERISPOMENI"
+  ],
+  [
+    7944,
+    "GREEK CAPITAL LETTER ALPHA WITH PSILI"
+  ],
+  [
+    7945,
+    "GREEK CAPITAL LETTER ALPHA WITH DASIA"
+  ],
+  [
+    7946,
+    "GREEK CAPITAL LETTER ALPHA WITH PSILI AND VARIA"
+  ],
+  [
+    7947,
+    "GREEK CAPITAL LETTER ALPHA WITH DASIA AND VARIA"
+  ],
+  [
+    7948,
+    "GREEK CAPITAL LETTER ALPHA WITH PSILI AND OXIA"
+  ],
+  [
+    7949,
+    "GREEK CAPITAL LETTER ALPHA WITH DASIA AND OXIA"
+  ],
+  [
+    7950,
+    "GREEK CAPITAL LETTER ALPHA WITH PSILI AND PERISPOMENI"
+  ],
+  [
+    7951,
+    "GREEK CAPITAL LETTER ALPHA WITH DASIA AND PERISPOMENI"
+  ],
+  [
+    7952,
+    "GREEK SMALL LETTER EPSILON WITH PSILI"
+  ],
+  [
+    7953,
+    "GREEK SMALL LETTER EPSILON WITH DASIA"
+  ],
+  [
+    7954,
+    "GREEK SMALL LETTER EPSILON WITH PSILI AND VARIA"
+  ],
+  [
+    7955,
+    "GREEK SMALL LETTER EPSILON WITH DASIA AND VARIA"
+  ],
+  [
+    7956,
+    "GREEK SMALL LETTER EPSILON WITH PSILI AND OXIA"
+  ],
+  [
+    7957,
+    "GREEK SMALL LETTER EPSILON WITH DASIA AND OXIA"
+  ],
+  [
+    7960,
+    "GREEK CAPITAL LETTER EPSILON WITH PSILI"
+  ],
+  [
+    7961,
+    "GREEK CAPITAL LETTER EPSILON WITH DASIA"
+  ],
+  [
+    7962,
+    "GREEK CAPITAL LETTER EPSILON WITH PSILI AND VARIA"
+  ],
+  [
+    7963,
+    "GREEK CAPITAL LETTER EPSILON WITH DASIA AND VARIA"
+  ],
+  [
+    7964,
+    "GREEK CAPITAL LETTER EPSILON WITH PSILI AND OXIA"
+  ],
+  [
+    7965,
+    "GREEK CAPITAL LETTER EPSILON WITH DASIA AND OXIA"
+  ],
+  [
+    7968,
+    "GREEK SMALL LETTER ETA WITH PSILI"
+  ],
+  [
+    7969,
+    "GREEK SMALL LETTER ETA WITH DASIA"
+  ],
+  [
+    7970,
+    "GREEK SMALL LETTER ETA WITH PSILI AND VARIA"
+  ],
+  [
+    7971,
+    "GREEK SMALL LETTER ETA WITH DASIA AND VARIA"
+  ],
+  [
+    7972,
+    "GREEK SMALL LETTER ETA WITH PSILI AND OXIA"
+  ],
+  [
+    7973,
+    "GREEK SMALL LETTER ETA WITH DASIA AND OXIA"
+  ],
+  [
+    7974,
+    "GREEK SMALL LETTER ETA WITH PSILI AND PERISPOMENI"
+  ],
+  [
+    7975,
+    "GREEK SMALL LETTER ETA WITH DASIA AND PERISPOMENI"
+  ],
+  [
+    7976,
+    "GREEK CAPITAL LETTER ETA WITH PSILI"
+  ],
+  [
+    7977,
+    "GREEK CAPITAL LETTER ETA WITH DASIA"
+  ],
+  [
+    7978,
+    "GREEK CAPITAL LETTER ETA WITH PSILI AND VARIA"
+  ],
+  [
+    7979,
+    "GREEK CAPITAL LETTER ETA WITH DASIA AND VARIA"
+  ],
+  [
+    7980,
+    "GREEK CAPITAL LETTER ETA WITH PSILI AND OXIA"
+  ],
+  [
+    7981,
+    "GREEK CAPITAL LETTER ETA WITH DASIA AND OXIA"
+  ],
+  [
+    7982,
+    "GREEK CAPITAL LETTER ETA WITH PSILI AND PERISPOMENI"
+  ],
+  [
+    7983,
+    "GREEK CAPITAL LETTER ETA WITH DASIA AND PERISPOMENI"
+  ],
+  [
+    7984,
+    "GREEK SMALL LETTER IOTA WITH PSILI"
+  ],
+  [
+    7985,
+    "GREEK SMALL LETTER IOTA WITH DASIA"
+  ],
+  [
+    7986,
+    "GREEK SMALL LETTER IOTA WITH PSILI AND VARIA"
+  ],
+  [
+    7987,
+    "GREEK SMALL LETTER IOTA WITH DASIA AND VARIA"
+  ],
+  [
+    7988,
+    "GREEK SMALL LETTER IOTA WITH PSILI AND OXIA"
+  ],
+  [
+    7989,
+    "GREEK SMALL LETTER IOTA WITH DASIA AND OXIA"
+  ],
+  [
+    7990,
+    "GREEK SMALL LETTER IOTA WITH PSILI AND PERISPOMENI"
+  ],
+  [
+    7991,
+    "GREEK SMALL LETTER IOTA WITH DASIA AND PERISPOMENI"
+  ],
+  [
+    7992,
+    "GREEK CAPITAL LETTER IOTA WITH PSILI"
+  ],
+  [
+    7993,
+    "GREEK CAPITAL LETTER IOTA WITH DASIA"
+  ],
+  [
+    7994,
+    "GREEK CAPITAL LETTER IOTA WITH PSILI AND VARIA"
+  ],
+  [
+    7995,
+    "GREEK CAPITAL LETTER IOTA WITH DASIA AND VARIA"
+  ],
+  [
+    7996,
+    "GREEK CAPITAL LETTER IOTA WITH PSILI AND OXIA"
+  ],
+  [
+    7997,
+    "GREEK CAPITAL LETTER IOTA WITH DASIA AND OXIA"
+  ],
+  [
+    7998,
+    "GREEK CAPITAL LETTER IOTA WITH PSILI AND PERISPOMENI"
+  ],
+  [
+    7999,
+    "GREEK CAPITAL LETTER IOTA WITH DASIA AND PERISPOMENI"
+  ],
+  [
+    8000,
+    "GREEK SMALL LETTER OMICRON WITH PSILI"
+  ],
+  [
+    8001,
+    "GREEK SMALL LETTER OMICRON WITH DASIA"
+  ],
+  [
+    8002,
+    "GREEK SMALL LETTER OMICRON WITH PSILI AND VARIA"
+  ],
+  [
+    8003,
+    "GREEK SMALL LETTER OMICRON WITH DASIA AND VARIA"
+  ],
+  [
+    8004,
+    "GREEK SMALL LETTER OMICRON WITH PSILI AND OXIA"
+  ],
+  [
+    8005,
+    "GREEK SMALL LETTER OMICRON WITH DASIA AND OXIA"
+  ],
+  [
+    8008,
+    "GREEK CAPITAL LETTER OMICRON WITH PSILI"
+  ],
+  [
+    8009,
+    "GREEK CAPITAL LETTER OMICRON WITH DASIA"
+  ],
+  [
+    8010,
+    "GREEK CAPITAL LETTER OMICRON WITH PSILI AND VARIA"
+  ],
+  [
+    8011,
+    "GREEK CAPITAL LETTER OMICRON WITH DASIA AND VARIA"
+  ],
+  [
+    8012,
+    "GREEK CAPITAL LETTER OMICRON WITH PSILI AND OXIA"
+  ],
+  [
+    8013,
+    "GREEK CAPITAL LETTER OMICRON WITH DASIA AND OXIA"
+  ],
+  [
+    8016,
+    "GREEK SMALL LETTER UPSILON WITH PSILI"
+  ],
+  [
+    8017,
+    "GREEK SMALL LETTER UPSILON WITH DASIA"
+  ],
+  [
+    8018,
+    "GREEK SMALL LETTER UPSILON WITH PSILI AND VARIA"
+  ],
+  [
+    8019,
+    "GREEK SMALL LETTER UPSILON WITH DASIA AND VARIA"
+  ],
+  [
+    8020,
+    "GREEK SMALL LETTER UPSILON WITH PSILI AND OXIA"
+  ],
+  [
+    8021,
+    "GREEK SMALL LETTER UPSILON WITH DASIA AND OXIA"
+  ],
+  [
+    8022,
+    "GREEK SMALL LETTER UPSILON WITH PSILI AND PERISPOMENI"
+  ],
+  [
+    8023,
+    "GREEK SMALL LETTER UPSILON WITH DASIA AND PERISPOMENI"
+  ],
+  [
+    8025,
+    "GREEK CAPITAL LETTER UPSILON WITH DASIA"
+  ],
+  [
+    8027,
+    "GREEK CAPITAL LETTER UPSILON WITH DASIA AND VARIA"
+  ],
+  [
+    8029,
+    "GREEK CAPITAL LETTER UPSILON WITH DASIA AND OXIA"
+  ],
+  [
+    8031,
+    "GREEK CAPITAL LETTER UPSILON WITH DASIA AND PERISPOMENI"
+  ],
+  [
+    8032,
+    "GREEK SMALL LETTER OMEGA WITH PSILI"
+  ],
+  [
+    8033,
+    "GREEK SMALL LETTER OMEGA WITH DASIA"
+  ],
+  [
+    8034,
+    "GREEK SMALL LETTER OMEGA WITH PSILI AND VARIA"
+  ],
+  [
+    8035,
+    "GREEK SMALL LETTER OMEGA WITH DASIA AND VARIA"
+  ],
+  [
+    8036,
+    "GREEK SMALL LETTER OMEGA WITH PSILI AND OXIA"
+  ],
+  [
+    8037,
+    "GREEK SMALL LETTER OMEGA WITH DASIA AND OXIA"
+  ],
+  [
+    8038,
+    "GREEK SMALL LETTER OMEGA WITH PSILI AND PERISPOMENI"
+  ],
+  [
+    8039,
+    "GREEK SMALL LETTER OMEGA WITH DASIA AND PERISPOMENI"
+  ],
+  [
+    8040,
+    "GREEK CAPITAL LETTER OMEGA WITH PSILI"
+  ],
+  [
+    8041,
+    "GREEK CAPITAL LETTER OMEGA WITH DASIA"
+  ],
+  [
+    8042,
+    "GREEK CAPITAL LETTER OMEGA WITH PSILI AND VARIA"
+  ],
+  [
+    8043,
+    "GREEK CAPITAL LETTER OMEGA WITH DASIA AND VARIA"
+  ],
+  [
+    8044,
+    "GREEK CAPITAL LETTER OMEGA WITH PSILI AND OXIA"
+  ],
+  [
+    8045,
+    "GREEK CAPITAL LETTER OMEGA WITH DASIA AND OXIA"
+  ],
+  [
+    8046,
+    "GREEK CAPITAL LETTER OMEGA WITH PSILI AND PERISPOMENI"
+  ],
+  [
+    8047,
+    "GREEK CAPITAL LETTER OMEGA WITH DASIA AND PERISPOMENI"
+  ],
+  [
+    8048,
+    "GREEK SMALL LETTER ALPHA WITH VARIA"
+  ],
+  [
+    8049,
+    "GREEK SMALL LETTER ALPHA WITH OXIA"
+  ],
+  [
+    8050,
+    "GREEK SMALL LETTER EPSILON WITH VARIA"
+  ],
+  [
+    8051,
+    "GREEK SMALL LETTER EPSILON WITH OXIA"
+  ],
+  [
+    8052,
+    "GREEK SMALL LETTER ETA WITH VARIA"
+  ],
+  [
+    8053,
+    "GREEK SMALL LETTER ETA WITH OXIA"
+  ],
+  [
+    8054,
+    "GREEK SMALL LETTER IOTA WITH VARIA"
+  ],
+  [
+    8055,
+    "GREEK SMALL LETTER IOTA WITH OXIA"
+  ],
+  [
+    8056,
+    "GREEK SMALL LETTER OMICRON WITH VARIA"
+  ],
+  [
+    8057,
+    "GREEK SMALL LETTER OMICRON WITH OXIA"
+  ],
+  [
+    8058,
+    "GREEK SMALL LETTER UPSILON WITH VARIA"
+  ],
+  [
+    8059,
+    "GREEK SMALL LETTER UPSILON WITH OXIA"
+  ],
+  [
+    8060,
+    "GREEK SMALL LETTER OMEGA WITH VARIA"
+  ],
+  [
+    8061,
+    "GREEK SMALL LETTER OMEGA WITH OXIA"
+  ],
+  [
+    8064,
+    "GREEK SMALL LETTER ALPHA WITH PSILI AND YPOGEGRAMMENI"
+  ],
+  [
+    8065,
+    "GREEK SMALL LETTER ALPHA WITH DASIA AND YPOGEGRAMMENI"
+  ],
+  [
+    8066,
+    "GREEK SMALL LETTER ALPHA WITH PSILI AND VARIA AND YPOGEGRAMMENI"
+  ],
+  [
+    8067,
+    "GREEK SMALL LETTER ALPHA WITH DASIA AND VARIA AND YPOGEGRAMMENI"
+  ],
+  [
+    8068,
+    "GREEK SMALL LETTER ALPHA WITH PSILI AND OXIA AND YPOGEGRAMMENI"
+  ],
+  [
+    8069,
+    "GREEK SMALL LETTER ALPHA WITH DASIA AND OXIA AND YPOGEGRAMMENI"
+  ],
+  [
+    8070,
+    "GREEK SMALL LETTER ALPHA WITH PSILI AND PERISPOMENI AND YPOGEGRAMMENI"
+  ],
+  [
+    8071,
+    "GREEK SMALL LETTER ALPHA WITH DASIA AND PERISPOMENI AND YPOGEGRAMMENI"
+  ],
+  [
+    8072,
+    "GREEK CAPITAL LETTER ALPHA WITH PSILI AND PROSGEGRAMMENI"
+  ],
+  [
+    8073,
+    "GREEK CAPITAL LETTER ALPHA WITH DASIA AND PROSGEGRAMMENI"
+  ],
+  [
+    8074,
+    "GREEK CAPITAL LETTER ALPHA WITH PSILI AND VARIA AND PROSGEGRAMMENI"
+  ],
+  [
+    8075,
+    "GREEK CAPITAL LETTER ALPHA WITH DASIA AND VARIA AND PROSGEGRAMMENI"
+  ],
+  [
+    8076,
+    "GREEK CAPITAL LETTER ALPHA WITH PSILI AND OXIA AND PROSGEGRAMMENI"
+  ],
+  [
+    8077,
+    "GREEK CAPITAL LETTER ALPHA WITH DASIA AND OXIA AND PROSGEGRAMMENI"
+  ],
+  [
+    8078,
+    "GREEK CAPITAL LETTER ALPHA WITH PSILI AND PERISPOMENI AND PROSGEGRAMMENI"
+  ],
+  [
+    8079,
+    "GREEK CAPITAL LETTER ALPHA WITH DASIA AND PERISPOMENI AND PROSGEGRAMMENI"
+  ],
+  [
+    8080,
+    "GREEK SMALL LETTER ETA WITH PSILI AND YPOGEGRAMMENI"
+  ],
+  [
+    8081,
+    "GREEK SMALL LETTER ETA WITH DASIA AND YPOGEGRAMMENI"
+  ],
+  [
+    8082,
+    "GREEK SMALL LETTER ETA WITH PSILI AND VARIA AND YPOGEGRAMMENI"
+  ],
+  [
+    8083,
+    "GREEK SMALL LETTER ETA WITH DASIA AND VARIA AND YPOGEGRAMMENI"
+  ],
+  [
+    8084,
+    "GREEK SMALL LETTER ETA WITH PSILI AND OXIA AND YPOGEGRAMMENI"
+  ],
+  [
+    8085,
+    "GREEK SMALL LETTER ETA WITH DASIA AND OXIA AND YPOGEGRAMMENI"
+  ],
+  [
+    8086,
+    "GREEK SMALL LETTER ETA WITH PSILI AND PERISPOMENI AND YPOGEGRAMMENI"
+  ],
+  [
+    8087,
+    "GREEK SMALL LETTER ETA WITH DASIA AND PERISPOMENI AND YPOGEGRAMMENI"
+  ],
+  [
+    8088,
+    "GREEK CAPITAL LETTER ETA WITH PSILI AND PROSGEGRAMMENI"
+  ],
+  [
+    8089,
+    "GREEK CAPITAL LETTER ETA WITH DASIA AND PROSGEGRAMMENI"
+  ],
+  [
+    8090,
+    "GREEK CAPITAL LETTER ETA WITH PSILI AND VARIA AND PROSGEGRAMMENI"
+  ],
+  [
+    8091,
+    "GREEK CAPITAL LETTER ETA WITH DASIA AND VARIA AND PROSGEGRAMMENI"
+  ],
+  [
+    8092,
+    "GREEK CAPITAL LETTER ETA WITH PSILI AND OXIA AND PROSGEGRAMMENI"
+  ],
+  [
+    8093,
+    "GREEK CAPITAL LETTER ETA WITH DASIA AND OXIA AND PROSGEGRAMMENI"
+  ],
+  [
+    8094,
+    "GREEK CAPITAL LETTER ETA WITH PSILI AND PERISPOMENI AND PROSGEGRAMMENI"
+  ],
+  [
+    8095,
+    "GREEK CAPITAL LETTER ETA WITH DASIA AND PERISPOMENI AND PROSGEGRAMMENI"
+  ],
+  [
+    8096,
+    "GREEK SMALL LETTER OMEGA WITH PSILI AND YPOGEGRAMMENI"
+  ],
+  [
+    8097,
+    "GREEK SMALL LETTER OMEGA WITH DASIA AND YPOGEGRAMMENI"
+  ],
+  [
+    8098,
+    "GREEK SMALL LETTER OMEGA WITH PSILI AND VARIA AND YPOGEGRAMMENI"
+  ],
+  [
+    8099,
+    "GREEK SMALL LETTER OMEGA WITH DASIA AND VARIA AND YPOGEGRAMMENI"
+  ],
+  [
+    8100,
+    "GREEK SMALL LETTER OMEGA WITH PSILI AND OXIA AND YPOGEGRAMMENI"
+  ],
+  [
+    8101,
+    "GREEK SMALL LETTER OMEGA WITH DASIA AND OXIA AND YPOGEGRAMMENI"
+  ],
+  [
+    8102,
+    "GREEK SMALL LETTER OMEGA WITH PSILI AND PERISPOMENI AND YPOGEGRAMMENI"
+  ],
+  [
+    8103,
+    "GREEK SMALL LETTER OMEGA WITH DASIA AND PERISPOMENI AND YPOGEGRAMMENI"
+  ],
+  [
+    8104,
+    "GREEK CAPITAL LETTER OMEGA WITH PSILI AND PROSGEGRAMMENI"
+  ],
+  [
+    8105,
+    "GREEK CAPITAL LETTER OMEGA WITH DASIA AND PROSGEGRAMMENI"
+  ],
+  [
+    8106,
+    "GREEK CAPITAL LETTER OMEGA WITH PSILI AND VARIA AND PROSGEGRAMMENI"
+  ],
+  [
+    8107,
+    "GREEK CAPITAL LETTER OMEGA WITH DASIA AND VARIA AND PROSGEGRAMMENI"
+  ],
+  [
+    8108,
+    "GREEK CAPITAL LETTER OMEGA WITH PSILI AND OXIA AND PROSGEGRAMMENI"
+  ],
+  [
+    8109,
+    "GREEK CAPITAL LETTER OMEGA WITH DASIA AND OXIA AND PROSGEGRAMMENI"
+  ],
+  [
+    8110,
+    "GREEK CAPITAL LETTER OMEGA WITH PSILI AND PERISPOMENI AND PROSGEGRAMMENI"
+  ],
+  [
+    8111,
+    "GREEK CAPITAL LETTER OMEGA WITH DASIA AND PERISPOMENI AND PROSGEGRAMMENI"
+  ],
+  [
+    8112,
+    "GREEK SMALL LETTER ALPHA WITH VRACHY"
+  ],
+  [
+    8113,
+    "GREEK SMALL LETTER ALPHA WITH MACRON"
+  ],
+  [
+    8114,
+    "GREEK SMALL LETTER ALPHA WITH VARIA AND YPOGEGRAMMENI"
+  ],
+  [
+    8115,
+    "GREEK SMALL LETTER ALPHA WITH YPOGEGRAMMENI"
+  ],
+  [
+    8116,
+    "GREEK SMALL LETTER ALPHA WITH OXIA AND YPOGEGRAMMENI"
+  ],
+  [
+    8118,
+    "GREEK SMALL LETTER ALPHA WITH PERISPOMENI"
+  ],
+  [
+    8119,
+    "GREEK SMALL LETTER ALPHA WITH PERISPOMENI AND YPOGEGRAMMENI"
+  ],
+  [
+    8120,
+    "GREEK CAPITAL LETTER ALPHA WITH VRACHY"
+  ],
+  [
+    8121,
+    "GREEK CAPITAL LETTER ALPHA WITH MACRON"
+  ],
+  [
+    8122,
+    "GREEK CAPITAL LETTER ALPHA WITH VARIA"
+  ],
+  [
+    8123,
+    "GREEK CAPITAL LETTER ALPHA WITH OXIA"
+  ],
+  [
+    8124,
+    "GREEK CAPITAL LETTER ALPHA WITH PROSGEGRAMMENI"
+  ],
+  [
+    8125,
+    "GREEK KORONIS"
+  ],
+  [
+    8126,
+    "GREEK PROSGEGRAMMENI"
+  ],
+  [
+    8127,
+    "GREEK PSILI"
+  ],
+  [
+    8128,
+    "GREEK PERISPOMENI"
+  ],
+  [
+    8129,
+    "GREEK DIALYTIKA AND PERISPOMENI"
+  ],
+  [
+    8130,
+    "GREEK SMALL LETTER ETA WITH VARIA AND YPOGEGRAMMENI"
+  ],
+  [
+    8131,
+    "GREEK SMALL LETTER ETA WITH YPOGEGRAMMENI"
+  ],
+  [
+    8132,
+    "GREEK SMALL LETTER ETA WITH OXIA AND YPOGEGRAMMENI"
+  ],
+  [
+    8134,
+    "GREEK SMALL LETTER ETA WITH PERISPOMENI"
+  ],
+  [
+    8135,
+    "GREEK SMALL LETTER ETA WITH PERISPOMENI AND YPOGEGRAMMENI"
+  ],
+  [
+    8136,
+    "GREEK CAPITAL LETTER EPSILON WITH VARIA"
+  ],
+  [
+    8137,
+    "GREEK CAPITAL LETTER EPSILON WITH OXIA"
+  ],
+  [
+    8138,
+    "GREEK CAPITAL LETTER ETA WITH VARIA"
+  ],
+  [
+    8139,
+    "GREEK CAPITAL LETTER ETA WITH OXIA"
+  ],
+  [
+    8140,
+    "GREEK CAPITAL LETTER ETA WITH PROSGEGRAMMENI"
+  ],
+  [
+    8141,
+    "GREEK PSILI AND VARIA"
+  ],
+  [
+    8142,
+    "GREEK PSILI AND OXIA"
+  ],
+  [
+    8143,
+    "GREEK PSILI AND PERISPOMENI"
+  ],
+  [
+    8144,
+    "GREEK SMALL LETTER IOTA WITH VRACHY"
+  ],
+  [
+    8145,
+    "GREEK SMALL LETTER IOTA WITH MACRON"
+  ],
+  [
+    8146,
+    "GREEK SMALL LETTER IOTA WITH DIALYTIKA AND VARIA"
+  ],
+  [
+    8147,
+    "GREEK SMALL LETTER IOTA WITH DIALYTIKA AND OXIA"
+  ],
+  [
+    8150,
+    "GREEK SMALL LETTER IOTA WITH PERISPOMENI"
+  ],
+  [
+    8151,
+    "GREEK SMALL LETTER IOTA WITH DIALYTIKA AND PERISPOMENI"
+  ],
+  [
+    8152,
+    "GREEK CAPITAL LETTER IOTA WITH VRACHY"
+  ],
+  [
+    8153,
+    "GREEK CAPITAL LETTER IOTA WITH MACRON"
+  ],
+  [
+    8154,
+    "GREEK CAPITAL LETTER IOTA WITH VARIA"
+  ],
+  [
+    8155,
+    "GREEK CAPITAL LETTER IOTA WITH OXIA"
+  ],
+  [
+    8157,
+    "GREEK DASIA AND VARIA"
+  ],
+  [
+    8158,
+    "GREEK DASIA AND OXIA"
+  ],
+  [
+    8159,
+    "GREEK DASIA AND PERISPOMENI"
+  ],
+  [
+    8160,
+    "GREEK SMALL LETTER UPSILON WITH VRACHY"
+  ],
+  [
+    8161,
+    "GREEK SMALL LETTER UPSILON WITH MACRON"
+  ],
+  [
+    8162,
+    "GREEK SMALL LETTER UPSILON WITH DIALYTIKA AND VARIA"
+  ],
+  [
+    8163,
+    "GREEK SMALL LETTER UPSILON WITH DIALYTIKA AND OXIA"
+  ],
+  [
+    8164,
+    "GREEK SMALL LETTER RHO WITH PSILI"
+  ],
+  [
+    8165,
+    "GREEK SMALL LETTER RHO WITH DASIA"
+  ],
+  [
+    8166,
+    "GREEK SMALL LETTER UPSILON WITH PERISPOMENI"
+  ],
+  [
+    8167,
+    "GREEK SMALL LETTER UPSILON WITH DIALYTIKA AND PERISPOMENI"
+  ],
+  [
+    8168,
+    "GREEK CAPITAL LETTER UPSILON WITH VRACHY"
+  ],
+  [
+    8169,
+    "GREEK CAPITAL LETTER UPSILON WITH MACRON"
+  ],
+  [
+    8170,
+    "GREEK CAPITAL LETTER UPSILON WITH VARIA"
+  ],
+  [
+    8171,
+    "GREEK CAPITAL LETTER UPSILON WITH OXIA"
+  ],
+  [
+    8172,
+    "GREEK CAPITAL LETTER RHO WITH DASIA"
+  ],
+  [
+    8173,
+    "GREEK DIALYTIKA AND VARIA"
+  ],
+  [
+    8174,
+    "GREEK DIALYTIKA AND OXIA"
+  ],
+  [
+    8175,
+    "GREEK VARIA"
+  ],
+  [
+    8178,
+    "GREEK SMALL LETTER OMEGA WITH VARIA AND YPOGEGRAMMENI"
+  ],
+  [
+    8179,
+    "GREEK SMALL LETTER OMEGA WITH YPOGEGRAMMENI"
+  ],
+  [
+    8180,
+    "GREEK SMALL LETTER OMEGA WITH OXIA AND YPOGEGRAMMENI"
+  ],
+  [
+    8182,
+    "GREEK SMALL LETTER OMEGA WITH PERISPOMENI"
+  ],
+  [
+    8183,
+    "GREEK SMALL LETTER OMEGA WITH PERISPOMENI AND YPOGEGRAMMENI"
+  ],
+  [
+    8184,
+    "GREEK CAPITAL LETTER OMICRON WITH VARIA"
+  ],
+  [
+    8185,
+    "GREEK CAPITAL LETTER OMICRON WITH OXIA"
+  ],
+  [
+    8186,
+    "GREEK CAPITAL LETTER OMEGA WITH VARIA"
+  ],
+  [
+    8187,
+    "GREEK CAPITAL LETTER OMEGA WITH OXIA"
+  ],
+  [
+    8188,
+    "GREEK CAPITAL LETTER OMEGA WITH PROSGEGRAMMENI"
+  ],
+  [
+    8189,
+    "GREEK OXIA"
+  ],
+  [
+    8190,
+    "GREEK DASIA"
+  ],
+  [
+    8192,
+    "EN QUAD"
+  ],
+  [
+    8193,
+    "EM QUAD"
+  ],
+  [
+    8194,
+    "EN SPACE"
+  ],
+  [
+    8195,
+    "EM SPACE"
+  ],
+  [
+    8196,
+    "THREE-PER-EM SPACE"
+  ],
+  [
+    8197,
+    "FOUR-PER-EM SPACE"
+  ],
+  [
+    8198,
+    "SIX-PER-EM SPACE"
+  ],
+  [
+    8199,
+    "FIGURE SPACE"
+  ],
+  [
+    8200,
+    "PUNCTUATION SPACE"
+  ],
+  [
+    8201,
+    "THIN SPACE"
+  ],
+  [
+    8202,
+    "HAIR SPACE"
+  ],
+  [
+    8203,
+    "ZERO WIDTH SPACE"
+  ],
+  [
+    8204,
+    "ZERO WIDTH NON-JOINER"
+  ],
+  [
+    8205,
+    "ZERO WIDTH JOINER"
+  ],
+  [
+    8206,
+    "LEFT-TO-RIGHT MARK"
+  ],
+  [
+    8207,
+    "RIGHT-TO-LEFT MARK"
+  ],
+  [
+    8208,
+    "HYPHEN"
+  ],
+  [
+    8209,
+    "NON-BREAKING HYPHEN"
+  ],
+  [
+    8210,
+    "FIGURE DASH"
+  ],
+  [
+    8211,
+    "EN DASH"
+  ],
+  [
+    8212,
+    "EM DASH"
+  ],
+  [
+    8213,
+    "HORIZONTAL BAR"
+  ],
+  [
+    8214,
+    "DOUBLE VERTICAL LINE"
+  ],
+  [
+    8215,
+    "DOUBLE LOW LINE"
+  ],
+  [
+    8216,
+    "LEFT SINGLE QUOTATION MARK"
+  ],
+  [
+    8217,
+    "RIGHT SINGLE QUOTATION MARK"
+  ],
+  [
+    8218,
+    "SINGLE LOW-9 QUOTATION MARK"
+  ],
+  [
+    8219,
+    "SINGLE HIGH-REVERSED-9 QUOTATION MARK"
+  ],
+  [
+    8220,
+    "LEFT DOUBLE QUOTATION MARK"
+  ],
+  [
+    8221,
+    "RIGHT DOUBLE QUOTATION MARK"
+  ],
+  [
+    8222,
+    "DOUBLE LOW-9 QUOTATION MARK"
+  ],
+  [
+    8223,
+    "DOUBLE HIGH-REVERSED-9 QUOTATION MARK"
+  ],
+  [
+    8224,
+    "DAGGER"
+  ],
+  [
+    8225,
+    "DOUBLE DAGGER"
+  ],
+  [
+    8226,
+    "BULLET"
+  ],
+  [
+    8227,
+    "TRIANGULAR BULLET"
+  ],
+  [
+    8228,
+    "ONE DOT LEADER"
+  ],
+  [
+    8229,
+    "TWO DOT LEADER"
+  ],
+  [
+    8230,
+    "HORIZONTAL ELLIPSIS"
+  ],
+  [
+    8231,
+    "HYPHENATION POINT"
+  ],
+  [
+    8232,
+    "LINE SEPARATOR"
+  ],
+  [
+    8233,
+    "PARAGRAPH SEPARATOR"
+  ],
+  [
+    8234,
+    "LEFT-TO-RIGHT EMBEDDING"
+  ],
+  [
+    8235,
+    "RIGHT-TO-LEFT EMBEDDING"
+  ],
+  [
+    8236,
+    "POP DIRECTIONAL FORMATTING"
+  ],
+  [
+    8237,
+    "LEFT-TO-RIGHT OVERRIDE"
+  ],
+  [
+    8238,
+    "RIGHT-TO-LEFT OVERRIDE"
+  ],
+  [
+    8239,
+    "NARROW NO-BREAK SPACE"
+  ],
+  [
+    8240,
+    "PER MILLE SIGN"
+  ],
+  [
+    8241,
+    "PER TEN THOUSAND SIGN"
+  ],
+  [
+    8242,
+    "PRIME"
+  ],
+  [
+    8243,
+    "DOUBLE PRIME"
+  ],
+  [
+    8244,
+    "TRIPLE PRIME"
+  ],
+  [
+    8245,
+    "REVERSED PRIME"
+  ],
+  [
+    8246,
+    "REVERSED DOUBLE PRIME"
+  ],
+  [
+    8247,
+    "REVERSED TRIPLE PRIME"
+  ],
+  [
+    8248,
+    "CARET"
+  ],
+  [
+    8249,
+    "SINGLE LEFT-POINTING ANGLE QUOTATION MARK"
+  ],
+  [
+    8250,
+    "SINGLE RIGHT-POINTING ANGLE QUOTATION MARK"
+  ],
+  [
+    8251,
+    "REFERENCE MARK"
+  ],
+  [
+    8252,
+    "DOUBLE EXCLAMATION MARK"
+  ],
+  [
+    8253,
+    "INTERROBANG"
+  ],
+  [
+    8254,
+    "OVERLINE"
+  ],
+  [
+    8255,
+    "UNDERTIE"
+  ],
+  [
+    8256,
+    "CHARACTER TIE"
+  ],
+  [
+    8257,
+    "CARET INSERTION POINT"
+  ],
+  [
+    8258,
+    "ASTERISM"
+  ],
+  [
+    8259,
+    "HYPHEN BULLET"
+  ],
+  [
+    8260,
+    "FRACTION SLASH"
+  ],
+  [
+    8261,
+    "LEFT SQUARE BRACKET WITH QUILL"
+  ],
+  [
+    8262,
+    "RIGHT SQUARE BRACKET WITH QUILL"
+  ],
+  [
+    8263,
+    "DOUBLE QUESTION MARK"
+  ],
+  [
+    8264,
+    "QUESTION EXCLAMATION MARK"
+  ],
+  [
+    8265,
+    "EXCLAMATION QUESTION MARK"
+  ],
+  [
+    8266,
+    "TIRONIAN SIGN ET"
+  ],
+  [
+    8267,
+    "REVERSED PILCROW SIGN"
+  ],
+  [
+    8268,
+    "BLACK LEFTWARDS BULLET"
+  ],
+  [
+    8269,
+    "BLACK RIGHTWARDS BULLET"
+  ],
+  [
+    8270,
+    "LOW ASTERISK"
+  ],
+  [
+    8271,
+    "REVERSED SEMICOLON"
+  ],
+  [
+    8272,
+    "CLOSE UP"
+  ],
+  [
+    8273,
+    "TWO ASTERISKS ALIGNED VERTICALLY"
+  ],
+  [
+    8274,
+    "COMMERCIAL MINUS SIGN"
+  ],
+  [
+    8275,
+    "SWUNG DASH"
+  ],
+  [
+    8276,
+    "INVERTED UNDERTIE"
+  ],
+  [
+    8277,
+    "FLOWER PUNCTUATION MARK"
+  ],
+  [
+    8278,
+    "THREE DOT PUNCTUATION"
+  ],
+  [
+    8279,
+    "QUADRUPLE PRIME"
+  ],
+  [
+    8280,
+    "FOUR DOT PUNCTUATION"
+  ],
+  [
+    8281,
+    "FIVE DOT PUNCTUATION"
+  ],
+  [
+    8282,
+    "TWO DOT PUNCTUATION"
+  ],
+  [
+    8283,
+    "FOUR DOT MARK"
+  ],
+  [
+    8284,
+    "DOTTED CROSS"
+  ],
+  [
+    8285,
+    "TRICOLON"
+  ],
+  [
+    8286,
+    "VERTICAL FOUR DOTS"
+  ],
+  [
+    8287,
+    "MEDIUM MATHEMATICAL SPACE"
+  ],
+  [
+    8288,
+    "WORD JOINER"
+  ],
+  [
+    8289,
+    "FUNCTION APPLICATION"
+  ],
+  [
+    8290,
+    "INVISIBLE TIMES"
+  ],
+  [
+    8291,
+    "INVISIBLE SEPARATOR"
+  ],
+  [
+    8292,
+    "INVISIBLE PLUS"
+  ],
+  [
+    8294,
+    "LEFT-TO-RIGHT ISOLATE"
+  ],
+  [
+    8295,
+    "RIGHT-TO-LEFT ISOLATE"
+  ],
+  [
+    8296,
+    "FIRST STRONG ISOLATE"
+  ],
+  [
+    8297,
+    "POP DIRECTIONAL ISOLATE"
+  ],
+  [
+    8298,
+    "INHIBIT SYMMETRIC SWAPPING"
+  ],
+  [
+    8299,
+    "ACTIVATE SYMMETRIC SWAPPING"
+  ],
+  [
+    8300,
+    "INHIBIT ARABIC FORM SHAPING"
+  ],
+  [
+    8301,
+    "ACTIVATE ARABIC FORM SHAPING"
+  ],
+  [
+    8302,
+    "NATIONAL DIGIT SHAPES"
+  ],
+  [
+    8303,
+    "NOMINAL DIGIT SHAPES"
+  ],
+  [
+    8304,
+    "SUPERSCRIPT ZERO"
+  ],
+  [
+    8305,
+    "SUPERSCRIPT LATIN SMALL LETTER I"
+  ],
+  [
+    8308,
+    "SUPERSCRIPT FOUR"
+  ],
+  [
+    8309,
+    "SUPERSCRIPT FIVE"
+  ],
+  [
+    8310,
+    "SUPERSCRIPT SIX"
+  ],
+  [
+    8311,
+    "SUPERSCRIPT SEVEN"
+  ],
+  [
+    8312,
+    "SUPERSCRIPT EIGHT"
+  ],
+  [
+    8313,
+    "SUPERSCRIPT NINE"
+  ],
+  [
+    8314,
+    "SUPERSCRIPT PLUS SIGN"
+  ],
+  [
+    8315,
+    "SUPERSCRIPT MINUS"
+  ],
+  [
+    8316,
+    "SUPERSCRIPT EQUALS SIGN"
+  ],
+  [
+    8317,
+    "SUPERSCRIPT LEFT PARENTHESIS"
+  ],
+  [
+    8318,
+    "SUPERSCRIPT RIGHT PARENTHESIS"
+  ],
+  [
+    8319,
+    "SUPERSCRIPT LATIN SMALL LETTER N"
+  ],
+  [
+    8320,
+    "SUBSCRIPT ZERO"
+  ],
+  [
+    8321,
+    "SUBSCRIPT ONE"
+  ],
+  [
+    8322,
+    "SUBSCRIPT TWO"
+  ],
+  [
+    8323,
+    "SUBSCRIPT THREE"
+  ],
+  [
+    8324,
+    "SUBSCRIPT FOUR"
+  ],
+  [
+    8325,
+    "SUBSCRIPT FIVE"
+  ],
+  [
+    8326,
+    "SUBSCRIPT SIX"
+  ],
+  [
+    8327,
+    "SUBSCRIPT SEVEN"
+  ],
+  [
+    8328,
+    "SUBSCRIPT EIGHT"
+  ],
+  [
+    8329,
+    "SUBSCRIPT NINE"
+  ],
+  [
+    8330,
+    "SUBSCRIPT PLUS SIGN"
+  ],
+  [
+    8331,
+    "SUBSCRIPT MINUS"
+  ],
+  [
+    8332,
+    "SUBSCRIPT EQUALS SIGN"
+  ],
+  [
+    8333,
+    "SUBSCRIPT LEFT PARENTHESIS"
+  ],
+  [
+    8334,
+    "SUBSCRIPT RIGHT PARENTHESIS"
+  ],
+  [
+    8336,
+    "LATIN SUBSCRIPT SMALL LETTER A"
+  ],
+  [
+    8337,
+    "LATIN SUBSCRIPT SMALL LETTER E"
+  ],
+  [
+    8338,
+    "LATIN SUBSCRIPT SMALL LETTER O"
+  ],
+  [
+    8339,
+    "LATIN SUBSCRIPT SMALL LETTER X"
+  ],
+  [
+    8340,
+    "LATIN SUBSCRIPT SMALL LETTER SCHWA"
+  ],
+  [
+    8341,
+    "LATIN SUBSCRIPT SMALL LETTER H"
+  ],
+  [
+    8342,
+    "LATIN SUBSCRIPT SMALL LETTER K"
+  ],
+  [
+    8343,
+    "LATIN SUBSCRIPT SMALL LETTER L"
+  ],
+  [
+    8344,
+    "LATIN SUBSCRIPT SMALL LETTER M"
+  ],
+  [
+    8345,
+    "LATIN SUBSCRIPT SMALL LETTER N"
+  ],
+  [
+    8346,
+    "LATIN SUBSCRIPT SMALL LETTER P"
+  ],
+  [
+    8347,
+    "LATIN SUBSCRIPT SMALL LETTER S"
+  ],
+  [
+    8348,
+    "LATIN SUBSCRIPT SMALL LETTER T"
+  ],
+  [
+    8352,
+    "EURO-CURRENCY SIGN"
+  ],
+  [
+    8353,
+    "COLON SIGN"
+  ],
+  [
+    8354,
+    "CRUZEIRO SIGN"
+  ],
+  [
+    8355,
+    "FRENCH FRANC SIGN"
+  ],
+  [
+    8356,
+    "LIRA SIGN"
+  ],
+  [
+    8357,
+    "MILL SIGN"
+  ],
+  [
+    8358,
+    "NAIRA SIGN"
+  ],
+  [
+    8359,
+    "PESETA SIGN"
+  ],
+  [
+    8360,
+    "RUPEE SIGN"
+  ],
+  [
+    8361,
+    "WON SIGN"
+  ],
+  [
+    8362,
+    "NEW SHEQEL SIGN"
+  ],
+  [
+    8363,
+    "DONG SIGN"
+  ],
+  [
+    8364,
+    "EURO SIGN"
+  ],
+  [
+    8365,
+    "KIP SIGN"
+  ],
+  [
+    8366,
+    "TUGRIK SIGN"
+  ],
+  [
+    8367,
+    "DRACHMA SIGN"
+  ],
+  [
+    8368,
+    "GERMAN PENNY SIGN"
+  ],
+  [
+    8369,
+    "PESO SIGN"
+  ],
+  [
+    8370,
+    "GUARANI SIGN"
+  ],
+  [
+    8371,
+    "AUSTRAL SIGN"
+  ],
+  [
+    8372,
+    "HRYVNIA SIGN"
+  ],
+  [
+    8373,
+    "CEDI SIGN"
+  ],
+  [
+    8374,
+    "LIVRE TOURNOIS SIGN"
+  ],
+  [
+    8375,
+    "SPESMILO SIGN"
+  ],
+  [
+    8376,
+    "TENGE SIGN"
+  ],
+  [
+    8377,
+    "INDIAN RUPEE SIGN"
+  ],
+  [
+    8378,
+    "TURKISH LIRA SIGN"
+  ],
+  [
+    8379,
+    "NORDIC MARK SIGN"
+  ],
+  [
+    8380,
+    "MANAT SIGN"
+  ],
+  [
+    8381,
+    "RUBLE SIGN"
+  ],
+  [
+    8382,
+    "LARI SIGN"
+  ],
+  [
+    8383,
+    "BITCOIN SIGN"
+  ],
+  [
+    8384,
+    "SOM SIGN"
+  ],
+  [
+    8385,
+    "SAUDI RIYAL SIGN"
+  ],
+  [
+    8448,
+    "ACCOUNT OF"
+  ],
+  [
+    8449,
+    "ADDRESSED TO THE SUBJECT"
+  ],
+  [
+    8450,
+    "DOUBLE-STRUCK CAPITAL C"
+  ],
+  [
+    8451,
+    "DEGREE CELSIUS"
+  ],
+  [
+    8452,
+    "CENTRE LINE SYMBOL"
+  ],
+  [
+    8453,
+    "CARE OF"
+  ],
+  [
+    8454,
+    "CADA UNA"
+  ],
+  [
+    8455,
+    "EULER CONSTANT"
+  ],
+  [
+    8456,
+    "SCRUPLE"
+  ],
+  [
+    8457,
+    "DEGREE FAHRENHEIT"
+  ],
+  [
+    8458,
+    "SCRIPT SMALL G"
+  ],
+  [
+    8459,
+    "SCRIPT CAPITAL H"
+  ],
+  [
+    8460,
+    "BLACK-LETTER CAPITAL H"
+  ],
+  [
+    8461,
+    "DOUBLE-STRUCK CAPITAL H"
+  ],
+  [
+    8462,
+    "PLANCK CONSTANT"
+  ],
+  [
+    8463,
+    "PLANCK CONSTANT OVER TWO PI"
+  ],
+  [
+    8464,
+    "SCRIPT CAPITAL I"
+  ],
+  [
+    8465,
+    "BLACK-LETTER CAPITAL I"
+  ],
+  [
+    8466,
+    "SCRIPT CAPITAL L"
+  ],
+  [
+    8467,
+    "SCRIPT SMALL L"
+  ],
+  [
+    8468,
+    "L B BAR SYMBOL"
+  ],
+  [
+    8469,
+    "DOUBLE-STRUCK CAPITAL N"
+  ],
+  [
+    8470,
+    "NUMERO SIGN"
+  ],
+  [
+    8471,
+    "SOUND RECORDING COPYRIGHT"
+  ],
+  [
+    8472,
+    "SCRIPT CAPITAL P"
+  ],
+  [
+    8473,
+    "DOUBLE-STRUCK CAPITAL P"
+  ],
+  [
+    8474,
+    "DOUBLE-STRUCK CAPITAL Q"
+  ],
+  [
+    8475,
+    "SCRIPT CAPITAL R"
+  ],
+  [
+    8476,
+    "BLACK-LETTER CAPITAL R"
+  ],
+  [
+    8477,
+    "DOUBLE-STRUCK CAPITAL R"
+  ],
+  [
+    8478,
+    "PRESCRIPTION TAKE"
+  ],
+  [
+    8479,
+    "RESPONSE"
+  ],
+  [
+    8480,
+    "SERVICE MARK"
+  ],
+  [
+    8481,
+    "TELEPHONE SIGN"
+  ],
+  [
+    8482,
+    "TRADE MARK SIGN"
+  ],
+  [
+    8483,
+    "VERSICLE"
+  ],
+  [
+    8484,
+    "DOUBLE-STRUCK CAPITAL Z"
+  ],
+  [
+    8485,
+    "OUNCE SIGN"
+  ],
+  [
+    8486,
+    "OHM SIGN"
+  ],
+  [
+    8487,
+    "INVERTED OHM SIGN"
+  ],
+  [
+    8488,
+    "BLACK-LETTER CAPITAL Z"
+  ],
+  [
+    8489,
+    "TURNED GREEK SMALL LETTER IOTA"
+  ],
+  [
+    8490,
+    "KELVIN SIGN"
+  ],
+  [
+    8491,
+    "ANGSTROM SIGN"
+  ],
+  [
+    8492,
+    "SCRIPT CAPITAL B"
+  ],
+  [
+    8493,
+    "BLACK-LETTER CAPITAL C"
+  ],
+  [
+    8494,
+    "ESTIMATED SYMBOL"
+  ],
+  [
+    8495,
+    "SCRIPT SMALL E"
+  ],
+  [
+    8496,
+    "SCRIPT CAPITAL E"
+  ],
+  [
+    8497,
+    "SCRIPT CAPITAL F"
+  ],
+  [
+    8498,
+    "TURNED CAPITAL F"
+  ],
+  [
+    8499,
+    "SCRIPT CAPITAL M"
+  ],
+  [
+    8500,
+    "SCRIPT SMALL O"
+  ],
+  [
+    8501,
+    "ALEF SYMBOL"
+  ],
+  [
+    8502,
+    "BET SYMBOL"
+  ],
+  [
+    8503,
+    "GIMEL SYMBOL"
+  ],
+  [
+    8504,
+    "DALET SYMBOL"
+  ],
+  [
+    8505,
+    "INFORMATION SOURCE"
+  ],
+  [
+    8506,
+    "ROTATED CAPITAL Q"
+  ],
+  [
+    8507,
+    "FACSIMILE SIGN"
+  ],
+  [
+    8508,
+    "DOUBLE-STRUCK SMALL PI"
+  ],
+  [
+    8509,
+    "DOUBLE-STRUCK SMALL GAMMA"
+  ],
+  [
+    8510,
+    "DOUBLE-STRUCK CAPITAL GAMMA"
+  ],
+  [
+    8511,
+    "DOUBLE-STRUCK CAPITAL PI"
+  ],
+  [
+    8512,
+    "DOUBLE-STRUCK N-ARY SUMMATION"
+  ],
+  [
+    8513,
+    "TURNED SANS-SERIF CAPITAL G"
+  ],
+  [
+    8514,
+    "TURNED SANS-SERIF CAPITAL L"
+  ],
+  [
+    8515,
+    "REVERSED SANS-SERIF CAPITAL L"
+  ],
+  [
+    8516,
+    "TURNED SANS-SERIF CAPITAL Y"
+  ],
+  [
+    8517,
+    "DOUBLE-STRUCK ITALIC CAPITAL D"
+  ],
+  [
+    8518,
+    "DOUBLE-STRUCK ITALIC SMALL D"
+  ],
+  [
+    8519,
+    "DOUBLE-STRUCK ITALIC SMALL E"
+  ],
+  [
+    8520,
+    "DOUBLE-STRUCK ITALIC SMALL I"
+  ],
+  [
+    8521,
+    "DOUBLE-STRUCK ITALIC SMALL J"
+  ],
+  [
+    8522,
+    "PROPERTY LINE"
+  ],
+  [
+    8523,
+    "TURNED AMPERSAND"
+  ],
+  [
+    8524,
+    "PER SIGN"
+  ],
+  [
+    8525,
+    "AKTIESELSKAB"
+  ],
+  [
+    8526,
+    "TURNED SMALL F"
+  ],
+  [
+    8527,
+    "SYMBOL FOR SAMARITAN SOURCE"
+  ],
+  [
+    8528,
+    "VULGAR FRACTION ONE SEVENTH"
+  ],
+  [
+    8529,
+    "VULGAR FRACTION ONE NINTH"
+  ],
+  [
+    8530,
+    "VULGAR FRACTION ONE TENTH"
+  ],
+  [
+    8531,
+    "VULGAR FRACTION ONE THIRD"
+  ],
+  [
+    8532,
+    "VULGAR FRACTION TWO THIRDS"
+  ],
+  [
+    8533,
+    "VULGAR FRACTION ONE FIFTH"
+  ],
+  [
+    8534,
+    "VULGAR FRACTION TWO FIFTHS"
+  ],
+  [
+    8535,
+    "VULGAR FRACTION THREE FIFTHS"
+  ],
+  [
+    8536,
+    "VULGAR FRACTION FOUR FIFTHS"
+  ],
+  [
+    8537,
+    "VULGAR FRACTION ONE SIXTH"
+  ],
+  [
+    8538,
+    "VULGAR FRACTION FIVE SIXTHS"
+  ],
+  [
+    8539,
+    "VULGAR FRACTION ONE EIGHTH"
+  ],
+  [
+    8540,
+    "VULGAR FRACTION THREE EIGHTHS"
+  ],
+  [
+    8541,
+    "VULGAR FRACTION FIVE EIGHTHS"
+  ],
+  [
+    8542,
+    "VULGAR FRACTION SEVEN EIGHTHS"
+  ],
+  [
+    8543,
+    "FRACTION NUMERATOR ONE"
+  ],
+  [
+    8544,
+    "ROMAN NUMERAL ONE"
+  ],
+  [
+    8545,
+    "ROMAN NUMERAL TWO"
+  ],
+  [
+    8546,
+    "ROMAN NUMERAL THREE"
+  ],
+  [
+    8547,
+    "ROMAN NUMERAL FOUR"
+  ],
+  [
+    8548,
+    "ROMAN NUMERAL FIVE"
+  ],
+  [
+    8549,
+    "ROMAN NUMERAL SIX"
+  ],
+  [
+    8550,
+    "ROMAN NUMERAL SEVEN"
+  ],
+  [
+    8551,
+    "ROMAN NUMERAL EIGHT"
+  ],
+  [
+    8552,
+    "ROMAN NUMERAL NINE"
+  ],
+  [
+    8553,
+    "ROMAN NUMERAL TEN"
+  ],
+  [
+    8554,
+    "ROMAN NUMERAL ELEVEN"
+  ],
+  [
+    8555,
+    "ROMAN NUMERAL TWELVE"
+  ],
+  [
+    8556,
+    "ROMAN NUMERAL FIFTY"
+  ],
+  [
+    8557,
+    "ROMAN NUMERAL ONE HUNDRED"
+  ],
+  [
+    8558,
+    "ROMAN NUMERAL FIVE HUNDRED"
+  ],
+  [
+    8559,
+    "ROMAN NUMERAL ONE THOUSAND"
+  ],
+  [
+    8560,
+    "SMALL ROMAN NUMERAL ONE"
+  ],
+  [
+    8561,
+    "SMALL ROMAN NUMERAL TWO"
+  ],
+  [
+    8562,
+    "SMALL ROMAN NUMERAL THREE"
+  ],
+  [
+    8563,
+    "SMALL ROMAN NUMERAL FOUR"
+  ],
+  [
+    8564,
+    "SMALL ROMAN NUMERAL FIVE"
+  ],
+  [
+    8565,
+    "SMALL ROMAN NUMERAL SIX"
+  ],
+  [
+    8566,
+    "SMALL ROMAN NUMERAL SEVEN"
+  ],
+  [
+    8567,
+    "SMALL ROMAN NUMERAL EIGHT"
+  ],
+  [
+    8568,
+    "SMALL ROMAN NUMERAL NINE"
+  ],
+  [
+    8569,
+    "SMALL ROMAN NUMERAL TEN"
+  ],
+  [
+    8570,
+    "SMALL ROMAN NUMERAL ELEVEN"
+  ],
+  [
+    8571,
+    "SMALL ROMAN NUMERAL TWELVE"
+  ],
+  [
+    8572,
+    "SMALL ROMAN NUMERAL FIFTY"
+  ],
+  [
+    8573,
+    "SMALL ROMAN NUMERAL ONE HUNDRED"
+  ],
+  [
+    8574,
+    "SMALL ROMAN NUMERAL FIVE HUNDRED"
+  ],
+  [
+    8575,
+    "SMALL ROMAN NUMERAL ONE THOUSAND"
+  ],
+  [
+    8576,
+    "ROMAN NUMERAL ONE THOUSAND C D"
+  ],
+  [
+    8577,
+    "ROMAN NUMERAL FIVE THOUSAND"
+  ],
+  [
+    8578,
+    "ROMAN NUMERAL TEN THOUSAND"
+  ],
+  [
+    8579,
+    "ROMAN NUMERAL REVERSED ONE HUNDRED"
+  ],
+  [
+    8580,
+    "LATIN SMALL LETTER REVERSED C"
+  ],
+  [
+    8581,
+    "ROMAN NUMERAL SIX LATE FORM"
+  ],
+  [
+    8582,
+    "ROMAN NUMERAL FIFTY EARLY FORM"
+  ],
+  [
+    8583,
+    "ROMAN NUMERAL FIFTY THOUSAND"
+  ],
+  [
+    8584,
+    "ROMAN NUMERAL ONE HUNDRED THOUSAND"
+  ],
+  [
+    8585,
+    "VULGAR FRACTION ZERO THIRDS"
+  ],
+  [
+    8586,
+    "TURNED DIGIT TWO"
+  ],
+  [
+    8587,
+    "TURNED DIGIT THREE"
+  ],
+  [
+    8592,
+    "LEFTWARDS ARROW"
+  ],
+  [
+    8593,
+    "UPWARDS ARROW"
+  ],
+  [
+    8594,
+    "RIGHTWARDS ARROW"
+  ],
+  [
+    8595,
+    "DOWNWARDS ARROW"
+  ],
+  [
+    8596,
+    "LEFT RIGHT ARROW"
+  ],
+  [
+    8597,
+    "UP DOWN ARROW"
+  ],
+  [
+    8598,
+    "NORTH WEST ARROW"
+  ],
+  [
+    8599,
+    "NORTH EAST ARROW"
+  ],
+  [
+    8600,
+    "SOUTH EAST ARROW"
+  ],
+  [
+    8601,
+    "SOUTH WEST ARROW"
+  ],
+  [
+    8602,
+    "LEFTWARDS ARROW WITH STROKE"
+  ],
+  [
+    8603,
+    "RIGHTWARDS ARROW WITH STROKE"
+  ],
+  [
+    8604,
+    "LEFTWARDS WAVE ARROW"
+  ],
+  [
+    8605,
+    "RIGHTWARDS WAVE ARROW"
+  ],
+  [
+    8606,
+    "LEFTWARDS TWO HEADED ARROW"
+  ],
+  [
+    8607,
+    "UPWARDS TWO HEADED ARROW"
+  ],
+  [
+    8608,
+    "RIGHTWARDS TWO HEADED ARROW"
+  ],
+  [
+    8609,
+    "DOWNWARDS TWO HEADED ARROW"
+  ],
+  [
+    8610,
+    "LEFTWARDS ARROW WITH TAIL"
+  ],
+  [
+    8611,
+    "RIGHTWARDS ARROW WITH TAIL"
+  ],
+  [
+    8612,
+    "LEFTWARDS ARROW FROM BAR"
+  ],
+  [
+    8613,
+    "UPWARDS ARROW FROM BAR"
+  ],
+  [
+    8614,
+    "RIGHTWARDS ARROW FROM BAR"
+  ],
+  [
+    8615,
+    "DOWNWARDS ARROW FROM BAR"
+  ],
+  [
+    8616,
+    "UP DOWN ARROW WITH BASE"
+  ],
+  [
+    8617,
+    "LEFTWARDS ARROW WITH HOOK"
+  ],
+  [
+    8618,
+    "RIGHTWARDS ARROW WITH HOOK"
+  ],
+  [
+    8619,
+    "LEFTWARDS ARROW WITH LOOP"
+  ],
+  [
+    8620,
+    "RIGHTWARDS ARROW WITH LOOP"
+  ],
+  [
+    8621,
+    "LEFT RIGHT WAVE ARROW"
+  ],
+  [
+    8622,
+    "LEFT RIGHT ARROW WITH STROKE"
+  ],
+  [
+    8623,
+    "DOWNWARDS ZIGZAG ARROW"
+  ],
+  [
+    8624,
+    "UPWARDS ARROW WITH TIP LEFTWARDS"
+  ],
+  [
+    8625,
+    "UPWARDS ARROW WITH TIP RIGHTWARDS"
+  ],
+  [
+    8626,
+    "DOWNWARDS ARROW WITH TIP LEFTWARDS"
+  ],
+  [
+    8627,
+    "DOWNWARDS ARROW WITH TIP RIGHTWARDS"
+  ],
+  [
+    8628,
+    "RIGHTWARDS ARROW WITH CORNER DOWNWARDS"
+  ],
+  [
+    8629,
+    "DOWNWARDS ARROW WITH CORNER LEFTWARDS"
+  ],
+  [
+    8630,
+    "ANTICLOCKWISE TOP SEMICIRCLE ARROW"
+  ],
+  [
+    8631,
+    "CLOCKWISE TOP SEMICIRCLE ARROW"
+  ],
+  [
+    8632,
+    "NORTH WEST ARROW TO LONG BAR"
+  ],
+  [
+    8633,
+    "LEFTWARDS ARROW TO BAR OVER RIGHTWARDS ARROW TO BAR"
+  ],
+  [
+    8634,
+    "ANTICLOCKWISE OPEN CIRCLE ARROW"
+  ],
+  [
+    8635,
+    "CLOCKWISE OPEN CIRCLE ARROW"
+  ],
+  [
+    8636,
+    "LEFTWARDS HARPOON WITH BARB UPWARDS"
+  ],
+  [
+    8637,
+    "LEFTWARDS HARPOON WITH BARB DOWNWARDS"
+  ],
+  [
+    8638,
+    "UPWARDS HARPOON WITH BARB RIGHTWARDS"
+  ],
+  [
+    8639,
+    "UPWARDS HARPOON WITH BARB LEFTWARDS"
+  ],
+  [
+    8640,
+    "RIGHTWARDS HARPOON WITH BARB UPWARDS"
+  ],
+  [
+    8641,
+    "RIGHTWARDS HARPOON WITH BARB DOWNWARDS"
+  ],
+  [
+    8642,
+    "DOWNWARDS HARPOON WITH BARB RIGHTWARDS"
+  ],
+  [
+    8643,
+    "DOWNWARDS HARPOON WITH BARB LEFTWARDS"
+  ],
+  [
+    8644,
+    "RIGHTWARDS ARROW OVER LEFTWARDS ARROW"
+  ],
+  [
+    8645,
+    "UPWARDS ARROW LEFTWARDS OF DOWNWARDS ARROW"
+  ],
+  [
+    8646,
+    "LEFTWARDS ARROW OVER RIGHTWARDS ARROW"
+  ],
+  [
+    8647,
+    "LEFTWARDS PAIRED ARROWS"
+  ],
+  [
+    8648,
+    "UPWARDS PAIRED ARROWS"
+  ],
+  [
+    8649,
+    "RIGHTWARDS PAIRED ARROWS"
+  ],
+  [
+    8650,
+    "DOWNWARDS PAIRED ARROWS"
+  ],
+  [
+    8651,
+    "LEFTWARDS HARPOON OVER RIGHTWARDS HARPOON"
+  ],
+  [
+    8652,
+    "RIGHTWARDS HARPOON OVER LEFTWARDS HARPOON"
+  ],
+  [
+    8653,
+    "LEFTWARDS DOUBLE ARROW WITH STROKE"
+  ],
+  [
+    8654,
+    "LEFT RIGHT DOUBLE ARROW WITH STROKE"
+  ],
+  [
+    8655,
+    "RIGHTWARDS DOUBLE ARROW WITH STROKE"
+  ],
+  [
+    8656,
+    "LEFTWARDS DOUBLE ARROW"
+  ],
+  [
+    8657,
+    "UPWARDS DOUBLE ARROW"
+  ],
+  [
+    8658,
+    "RIGHTWARDS DOUBLE ARROW"
+  ],
+  [
+    8659,
+    "DOWNWARDS DOUBLE ARROW"
+  ],
+  [
+    8660,
+    "LEFT RIGHT DOUBLE ARROW"
+  ],
+  [
+    8661,
+    "UP DOWN DOUBLE ARROW"
+  ],
+  [
+    8662,
+    "NORTH WEST DOUBLE ARROW"
+  ],
+  [
+    8663,
+    "NORTH EAST DOUBLE ARROW"
+  ],
+  [
+    8664,
+    "SOUTH EAST DOUBLE ARROW"
+  ],
+  [
+    8665,
+    "SOUTH WEST DOUBLE ARROW"
+  ],
+  [
+    8666,
+    "LEFTWARDS TRIPLE ARROW"
+  ],
+  [
+    8667,
+    "RIGHTWARDS TRIPLE ARROW"
+  ],
+  [
+    8668,
+    "LEFTWARDS SQUIGGLE ARROW"
+  ],
+  [
+    8669,
+    "RIGHTWARDS SQUIGGLE ARROW"
+  ],
+  [
+    8670,
+    "UPWARDS ARROW WITH DOUBLE STROKE"
+  ],
+  [
+    8671,
+    "DOWNWARDS ARROW WITH DOUBLE STROKE"
+  ],
+  [
+    8672,
+    "LEFTWARDS DASHED ARROW"
+  ],
+  [
+    8673,
+    "UPWARDS DASHED ARROW"
+  ],
+  [
+    8674,
+    "RIGHTWARDS DASHED ARROW"
+  ],
+  [
+    8675,
+    "DOWNWARDS DASHED ARROW"
+  ],
+  [
+    8676,
+    "LEFTWARDS ARROW TO BAR"
+  ],
+  [
+    8677,
+    "RIGHTWARDS ARROW TO BAR"
+  ],
+  [
+    8678,
+    "LEFTWARDS WHITE ARROW"
+  ],
+  [
+    8679,
+    "UPWARDS WHITE ARROW"
+  ],
+  [
+    8680,
+    "RIGHTWARDS WHITE ARROW"
+  ],
+  [
+    8681,
+    "DOWNWARDS WHITE ARROW"
+  ],
+  [
+    8682,
+    "UPWARDS WHITE ARROW FROM BAR"
+  ],
+  [
+    8683,
+    "UPWARDS WHITE ARROW ON PEDESTAL"
+  ],
+  [
+    8684,
+    "UPWARDS WHITE ARROW ON PEDESTAL WITH HORIZONTAL BAR"
+  ],
+  [
+    8685,
+    "UPWARDS WHITE ARROW ON PEDESTAL WITH VERTICAL BAR"
+  ],
+  [
+    8686,
+    "UPWARDS WHITE DOUBLE ARROW"
+  ],
+  [
+    8687,
+    "UPWARDS WHITE DOUBLE ARROW ON PEDESTAL"
+  ],
+  [
+    8688,
+    "RIGHTWARDS WHITE ARROW FROM WALL"
+  ],
+  [
+    8689,
+    "NORTH WEST ARROW TO CORNER"
+  ],
+  [
+    8690,
+    "SOUTH EAST ARROW TO CORNER"
+  ],
+  [
+    8691,
+    "UP DOWN WHITE ARROW"
+  ],
+  [
+    8692,
+    "RIGHT ARROW WITH SMALL CIRCLE"
+  ],
+  [
+    8693,
+    "DOWNWARDS ARROW LEFTWARDS OF UPWARDS ARROW"
+  ],
+  [
+    8694,
+    "THREE RIGHTWARDS ARROWS"
+  ],
+  [
+    8695,
+    "LEFTWARDS ARROW WITH VERTICAL STROKE"
+  ],
+  [
+    8696,
+    "RIGHTWARDS ARROW WITH VERTICAL STROKE"
+  ],
+  [
+    8697,
+    "LEFT RIGHT ARROW WITH VERTICAL STROKE"
+  ],
+  [
+    8698,
+    "LEFTWARDS ARROW WITH DOUBLE VERTICAL STROKE"
+  ],
+  [
+    8699,
+    "RIGHTWARDS ARROW WITH DOUBLE VERTICAL STROKE"
+  ],
+  [
+    8700,
+    "LEFT RIGHT ARROW WITH DOUBLE VERTICAL STROKE"
+  ],
+  [
+    8701,
+    "LEFTWARDS OPEN-HEADED ARROW"
+  ],
+  [
+    8702,
+    "RIGHTWARDS OPEN-HEADED ARROW"
+  ],
+  [
+    8703,
+    "LEFT RIGHT OPEN-HEADED ARROW"
+  ],
+  [
+    8704,
+    "FOR ALL"
+  ],
+  [
+    8705,
+    "COMPLEMENT"
+  ],
+  [
+    8706,
+    "PARTIAL DIFFERENTIAL"
+  ],
+  [
+    8707,
+    "THERE EXISTS"
+  ],
+  [
+    8708,
+    "THERE DOES NOT EXIST"
+  ],
+  [
+    8709,
+    "EMPTY SET"
+  ],
+  [
+    8710,
+    "INCREMENT"
+  ],
+  [
+    8711,
+    "NABLA"
+  ],
+  [
+    8712,
+    "ELEMENT OF"
+  ],
+  [
+    8713,
+    "NOT AN ELEMENT OF"
+  ],
+  [
+    8714,
+    "SMALL ELEMENT OF"
+  ],
+  [
+    8715,
+    "CONTAINS AS MEMBER"
+  ],
+  [
+    8716,
+    "DOES NOT CONTAIN AS MEMBER"
+  ],
+  [
+    8717,
+    "SMALL CONTAINS AS MEMBER"
+  ],
+  [
+    8718,
+    "END OF PROOF"
+  ],
+  [
+    8719,
+    "N-ARY PRODUCT"
+  ],
+  [
+    8720,
+    "N-ARY COPRODUCT"
+  ],
+  [
+    8721,
+    "N-ARY SUMMATION"
+  ],
+  [
+    8722,
+    "MINUS SIGN"
+  ],
+  [
+    8723,
+    "MINUS-OR-PLUS SIGN"
+  ],
+  [
+    8724,
+    "DOT PLUS"
+  ],
+  [
+    8725,
+    "DIVISION SLASH"
+  ],
+  [
+    8726,
+    "SET MINUS"
+  ],
+  [
+    8727,
+    "ASTERISK OPERATOR"
+  ],
+  [
+    8728,
+    "RING OPERATOR"
+  ],
+  [
+    8729,
+    "BULLET OPERATOR"
+  ],
+  [
+    8730,
+    "SQUARE ROOT"
+  ],
+  [
+    8731,
+    "CUBE ROOT"
+  ],
+  [
+    8732,
+    "FOURTH ROOT"
+  ],
+  [
+    8733,
+    "PROPORTIONAL TO"
+  ],
+  [
+    8734,
+    "INFINITY"
+  ],
+  [
+    8735,
+    "RIGHT ANGLE"
+  ],
+  [
+    8736,
+    "ANGLE"
+  ],
+  [
+    8737,
+    "MEASURED ANGLE"
+  ],
+  [
+    8738,
+    "SPHERICAL ANGLE"
+  ],
+  [
+    8739,
+    "DIVIDES"
+  ],
+  [
+    8740,
+    "DOES NOT DIVIDE"
+  ],
+  [
+    8741,
+    "PARALLEL TO"
+  ],
+  [
+    8742,
+    "NOT PARALLEL TO"
+  ],
+  [
+    8743,
+    "LOGICAL AND"
+  ],
+  [
+    8744,
+    "LOGICAL OR"
+  ],
+  [
+    8745,
+    "INTERSECTION"
+  ],
+  [
+    8746,
+    "UNION"
+  ],
+  [
+    8747,
+    "INTEGRAL"
+  ],
+  [
+    8748,
+    "DOUBLE INTEGRAL"
+  ],
+  [
+    8749,
+    "TRIPLE INTEGRAL"
+  ],
+  [
+    8750,
+    "CONTOUR INTEGRAL"
+  ],
+  [
+    8751,
+    "SURFACE INTEGRAL"
+  ],
+  [
+    8752,
+    "VOLUME INTEGRAL"
+  ],
+  [
+    8753,
+    "CLOCKWISE INTEGRAL"
+  ],
+  [
+    8754,
+    "CLOCKWISE CONTOUR INTEGRAL"
+  ],
+  [
+    8755,
+    "ANTICLOCKWISE CONTOUR INTEGRAL"
+  ],
+  [
+    8756,
+    "THEREFORE"
+  ],
+  [
+    8757,
+    "BECAUSE"
+  ],
+  [
+    8758,
+    "RATIO"
+  ],
+  [
+    8759,
+    "PROPORTION"
+  ],
+  [
+    8760,
+    "DOT MINUS"
+  ],
+  [
+    8761,
+    "EXCESS"
+  ],
+  [
+    8762,
+    "GEOMETRIC PROPORTION"
+  ],
+  [
+    8763,
+    "HOMOTHETIC"
+  ],
+  [
+    8764,
+    "TILDE OPERATOR"
+  ],
+  [
+    8765,
+    "REVERSED TILDE"
+  ],
+  [
+    8766,
+    "INVERTED LAZY S"
+  ],
+  [
+    8767,
+    "SINE WAVE"
+  ],
+  [
+    8768,
+    "WREATH PRODUCT"
+  ],
+  [
+    8769,
+    "NOT TILDE"
+  ],
+  [
+    8770,
+    "MINUS TILDE"
+  ],
+  [
+    8771,
+    "ASYMPTOTICALLY EQUAL TO"
+  ],
+  [
+    8772,
+    "NOT ASYMPTOTICALLY EQUAL TO"
+  ],
+  [
+    8773,
+    "APPROXIMATELY EQUAL TO"
+  ],
+  [
+    8774,
+    "APPROXIMATELY BUT NOT ACTUALLY EQUAL TO"
+  ],
+  [
+    8775,
+    "NEITHER APPROXIMATELY NOR ACTUALLY EQUAL TO"
+  ],
+  [
+    8776,
+    "ALMOST EQUAL TO"
+  ],
+  [
+    8777,
+    "NOT ALMOST EQUAL TO"
+  ],
+  [
+    8778,
+    "ALMOST EQUAL OR EQUAL TO"
+  ],
+  [
+    8779,
+    "TRIPLE TILDE"
+  ],
+  [
+    8780,
+    "ALL EQUAL TO"
+  ],
+  [
+    8781,
+    "EQUIVALENT TO"
+  ],
+  [
+    8782,
+    "GEOMETRICALLY EQUIVALENT TO"
+  ],
+  [
+    8783,
+    "DIFFERENCE BETWEEN"
+  ],
+  [
+    8784,
+    "APPROACHES THE LIMIT"
+  ],
+  [
+    8785,
+    "GEOMETRICALLY EQUAL TO"
+  ],
+  [
+    8786,
+    "APPROXIMATELY EQUAL TO OR THE IMAGE OF"
+  ],
+  [
+    8787,
+    "IMAGE OF OR APPROXIMATELY EQUAL TO"
+  ],
+  [
+    8788,
+    "COLON EQUALS"
+  ],
+  [
+    8789,
+    "EQUALS COLON"
+  ],
+  [
+    8790,
+    "RING IN EQUAL TO"
+  ],
+  [
+    8791,
+    "RING EQUAL TO"
+  ],
+  [
+    8792,
+    "CORRESPONDS TO"
+  ],
+  [
+    8793,
+    "ESTIMATES"
+  ],
+  [
+    8794,
+    "EQUIANGULAR TO"
+  ],
+  [
+    8795,
+    "STAR EQUALS"
+  ],
+  [
+    8796,
+    "DELTA EQUAL TO"
+  ],
+  [
+    8797,
+    "EQUAL TO BY DEFINITION"
+  ],
+  [
+    8798,
+    "MEASURED BY"
+  ],
+  [
+    8799,
+    "QUESTIONED EQUAL TO"
+  ],
+  [
+    8800,
+    "NOT EQUAL TO"
+  ],
+  [
+    8801,
+    "IDENTICAL TO"
+  ],
+  [
+    8802,
+    "NOT IDENTICAL TO"
+  ],
+  [
+    8803,
+    "STRICTLY EQUIVALENT TO"
+  ],
+  [
+    8804,
+    "LESS-THAN OR EQUAL TO"
+  ],
+  [
+    8805,
+    "GREATER-THAN OR EQUAL TO"
+  ],
+  [
+    8806,
+    "LESS-THAN OVER EQUAL TO"
+  ],
+  [
+    8807,
+    "GREATER-THAN OVER EQUAL TO"
+  ],
+  [
+    8808,
+    "LESS-THAN BUT NOT EQUAL TO"
+  ],
+  [
+    8809,
+    "GREATER-THAN BUT NOT EQUAL TO"
+  ],
+  [
+    8810,
+    "MUCH LESS-THAN"
+  ],
+  [
+    8811,
+    "MUCH GREATER-THAN"
+  ],
+  [
+    8812,
+    "BETWEEN"
+  ],
+  [
+    8813,
+    "NOT EQUIVALENT TO"
+  ],
+  [
+    8814,
+    "NOT LESS-THAN"
+  ],
+  [
+    8815,
+    "NOT GREATER-THAN"
+  ],
+  [
+    8816,
+    "NEITHER LESS-THAN NOR EQUAL TO"
+  ],
+  [
+    8817,
+    "NEITHER GREATER-THAN NOR EQUAL TO"
+  ],
+  [
+    8818,
+    "LESS-THAN OR EQUIVALENT TO"
+  ],
+  [
+    8819,
+    "GREATER-THAN OR EQUIVALENT TO"
+  ],
+  [
+    8820,
+    "NEITHER LESS-THAN NOR EQUIVALENT TO"
+  ],
+  [
+    8821,
+    "NEITHER GREATER-THAN NOR EQUIVALENT TO"
+  ],
+  [
+    8822,
+    "LESS-THAN OR GREATER-THAN"
+  ],
+  [
+    8823,
+    "GREATER-THAN OR LESS-THAN"
+  ],
+  [
+    8824,
+    "NEITHER LESS-THAN NOR GREATER-THAN"
+  ],
+  [
+    8825,
+    "NEITHER GREATER-THAN NOR LESS-THAN"
+  ],
+  [
+    8826,
+    "PRECEDES"
+  ],
+  [
+    8827,
+    "SUCCEEDS"
+  ],
+  [
+    8828,
+    "PRECEDES OR EQUAL TO"
+  ],
+  [
+    8829,
+    "SUCCEEDS OR EQUAL TO"
+  ],
+  [
+    8830,
+    "PRECEDES OR EQUIVALENT TO"
+  ],
+  [
+    8831,
+    "SUCCEEDS OR EQUIVALENT TO"
+  ],
+  [
+    8832,
+    "DOES NOT PRECEDE"
+  ],
+  [
+    8833,
+    "DOES NOT SUCCEED"
+  ],
+  [
+    8834,
+    "SUBSET OF"
+  ],
+  [
+    8835,
+    "SUPERSET OF"
+  ],
+  [
+    8836,
+    "NOT A SUBSET OF"
+  ],
+  [
+    8837,
+    "NOT A SUPERSET OF"
+  ],
+  [
+    8838,
+    "SUBSET OF OR EQUAL TO"
+  ],
+  [
+    8839,
+    "SUPERSET OF OR EQUAL TO"
+  ],
+  [
+    8840,
+    "NEITHER A SUBSET OF NOR EQUAL TO"
+  ],
+  [
+    8841,
+    "NEITHER A SUPERSET OF NOR EQUAL TO"
+  ],
+  [
+    8842,
+    "SUBSET OF WITH NOT EQUAL TO"
+  ],
+  [
+    8843,
+    "SUPERSET OF WITH NOT EQUAL TO"
+  ],
+  [
+    8844,
+    "MULTISET"
+  ],
+  [
+    8845,
+    "MULTISET MULTIPLICATION"
+  ],
+  [
+    8846,
+    "MULTISET UNION"
+  ],
+  [
+    8847,
+    "SQUARE IMAGE OF"
+  ],
+  [
+    8848,
+    "SQUARE ORIGINAL OF"
+  ],
+  [
+    8849,
+    "SQUARE IMAGE OF OR EQUAL TO"
+  ],
+  [
+    8850,
+    "SQUARE ORIGINAL OF OR EQUAL TO"
+  ],
+  [
+    8851,
+    "SQUARE CAP"
+  ],
+  [
+    8852,
+    "SQUARE CUP"
+  ],
+  [
+    8853,
+    "CIRCLED PLUS"
+  ],
+  [
+    8854,
+    "CIRCLED MINUS"
+  ],
+  [
+    8855,
+    "CIRCLED TIMES"
+  ],
+  [
+    8856,
+    "CIRCLED DIVISION SLASH"
+  ],
+  [
+    8857,
+    "CIRCLED DOT OPERATOR"
+  ],
+  [
+    8858,
+    "CIRCLED RING OPERATOR"
+  ],
+  [
+    8859,
+    "CIRCLED ASTERISK OPERATOR"
+  ],
+  [
+    8860,
+    "CIRCLED EQUALS"
+  ],
+  [
+    8861,
+    "CIRCLED DASH"
+  ],
+  [
+    8862,
+    "SQUARED PLUS"
+  ],
+  [
+    8863,
+    "SQUARED MINUS"
+  ],
+  [
+    8864,
+    "SQUARED TIMES"
+  ],
+  [
+    8865,
+    "SQUARED DOT OPERATOR"
+  ],
+  [
+    8866,
+    "RIGHT TACK"
+  ],
+  [
+    8867,
+    "LEFT TACK"
+  ],
+  [
+    8868,
+    "DOWN TACK"
+  ],
+  [
+    8869,
+    "UP TACK"
+  ],
+  [
+    8870,
+    "ASSERTION"
+  ],
+  [
+    8871,
+    "MODELS"
+  ],
+  [
+    8872,
+    "TRUE"
+  ],
+  [
+    8873,
+    "FORCES"
+  ],
+  [
+    8874,
+    "TRIPLE VERTICAL BAR RIGHT TURNSTILE"
+  ],
+  [
+    8875,
+    "DOUBLE VERTICAL BAR DOUBLE RIGHT TURNSTILE"
+  ],
+  [
+    8876,
+    "DOES NOT PROVE"
+  ],
+  [
+    8877,
+    "NOT TRUE"
+  ],
+  [
+    8878,
+    "DOES NOT FORCE"
+  ],
+  [
+    8879,
+    "NEGATED DOUBLE VERTICAL BAR DOUBLE RIGHT TURNSTILE"
+  ],
+  [
+    8880,
+    "PRECEDES UNDER RELATION"
+  ],
+  [
+    8881,
+    "SUCCEEDS UNDER RELATION"
+  ],
+  [
+    8882,
+    "NORMAL SUBGROUP OF"
+  ],
+  [
+    8883,
+    "CONTAINS AS NORMAL SUBGROUP"
+  ],
+  [
+    8884,
+    "NORMAL SUBGROUP OF OR EQUAL TO"
+  ],
+  [
+    8885,
+    "CONTAINS AS NORMAL SUBGROUP OR EQUAL TO"
+  ],
+  [
+    8886,
+    "ORIGINAL OF"
+  ],
+  [
+    8887,
+    "IMAGE OF"
+  ],
+  [
+    8888,
+    "MULTIMAP"
+  ],
+  [
+    8889,
+    "HERMITIAN CONJUGATE MATRIX"
+  ],
+  [
+    8890,
+    "INTERCALATE"
+  ],
+  [
+    8891,
+    "XOR"
+  ],
+  [
+    8892,
+    "NAND"
+  ],
+  [
+    8893,
+    "NOR"
+  ],
+  [
+    8894,
+    "RIGHT ANGLE WITH ARC"
+  ],
+  [
+    8895,
+    "RIGHT TRIANGLE"
+  ],
+  [
+    8896,
+    "N-ARY LOGICAL AND"
+  ],
+  [
+    8897,
+    "N-ARY LOGICAL OR"
+  ],
+  [
+    8898,
+    "N-ARY INTERSECTION"
+  ],
+  [
+    8899,
+    "N-ARY UNION"
+  ],
+  [
+    8900,
+    "DIAMOND OPERATOR"
+  ],
+  [
+    8901,
+    "DOT OPERATOR"
+  ],
+  [
+    8902,
+    "STAR OPERATOR"
+  ],
+  [
+    8903,
+    "DIVISION TIMES"
+  ],
+  [
+    8904,
+    "BOWTIE"
+  ],
+  [
+    8905,
+    "LEFT NORMAL FACTOR SEMIDIRECT PRODUCT"
+  ],
+  [
+    8906,
+    "RIGHT NORMAL FACTOR SEMIDIRECT PRODUCT"
+  ],
+  [
+    8907,
+    "LEFT SEMIDIRECT PRODUCT"
+  ],
+  [
+    8908,
+    "RIGHT SEMIDIRECT PRODUCT"
+  ],
+  [
+    8909,
+    "REVERSED TILDE EQUALS"
+  ],
+  [
+    8910,
+    "CURLY LOGICAL OR"
+  ],
+  [
+    8911,
+    "CURLY LOGICAL AND"
+  ],
+  [
+    8912,
+    "DOUBLE SUBSET"
+  ],
+  [
+    8913,
+    "DOUBLE SUPERSET"
+  ],
+  [
+    8914,
+    "DOUBLE INTERSECTION"
+  ],
+  [
+    8915,
+    "DOUBLE UNION"
+  ],
+  [
+    8916,
+    "PITCHFORK"
+  ],
+  [
+    8917,
+    "EQUAL AND PARALLEL TO"
+  ],
+  [
+    8918,
+    "LESS-THAN WITH DOT"
+  ],
+  [
+    8919,
+    "GREATER-THAN WITH DOT"
+  ],
+  [
+    8920,
+    "VERY MUCH LESS-THAN"
+  ],
+  [
+    8921,
+    "VERY MUCH GREATER-THAN"
+  ],
+  [
+    8922,
+    "LESS-THAN EQUAL TO OR GREATER-THAN"
+  ],
+  [
+    8923,
+    "GREATER-THAN EQUAL TO OR LESS-THAN"
+  ],
+  [
+    8924,
+    "EQUAL TO OR LESS-THAN"
+  ],
+  [
+    8925,
+    "EQUAL TO OR GREATER-THAN"
+  ],
+  [
+    8926,
+    "EQUAL TO OR PRECEDES"
+  ],
+  [
+    8927,
+    "EQUAL TO OR SUCCEEDS"
+  ],
+  [
+    8928,
+    "DOES NOT PRECEDE OR EQUAL"
+  ],
+  [
+    8929,
+    "DOES NOT SUCCEED OR EQUAL"
+  ],
+  [
+    8930,
+    "NOT SQUARE IMAGE OF OR EQUAL TO"
+  ],
+  [
+    8931,
+    "NOT SQUARE ORIGINAL OF OR EQUAL TO"
+  ],
+  [
+    8932,
+    "SQUARE IMAGE OF OR NOT EQUAL TO"
+  ],
+  [
+    8933,
+    "SQUARE ORIGINAL OF OR NOT EQUAL TO"
+  ],
+  [
+    8934,
+    "LESS-THAN BUT NOT EQUIVALENT TO"
+  ],
+  [
+    8935,
+    "GREATER-THAN BUT NOT EQUIVALENT TO"
+  ],
+  [
+    8936,
+    "PRECEDES BUT NOT EQUIVALENT TO"
+  ],
+  [
+    8937,
+    "SUCCEEDS BUT NOT EQUIVALENT TO"
+  ],
+  [
+    8938,
+    "NOT NORMAL SUBGROUP OF"
+  ],
+  [
+    8939,
+    "DOES NOT CONTAIN AS NORMAL SUBGROUP"
+  ],
+  [
+    8940,
+    "NOT NORMAL SUBGROUP OF OR EQUAL TO"
+  ],
+  [
+    8941,
+    "DOES NOT CONTAIN AS NORMAL SUBGROUP OR EQUAL"
+  ],
+  [
+    8942,
+    "VERTICAL ELLIPSIS"
+  ],
+  [
+    8943,
+    "MIDLINE HORIZONTAL ELLIPSIS"
+  ],
+  [
+    8944,
+    "UP RIGHT DIAGONAL ELLIPSIS"
+  ],
+  [
+    8945,
+    "DOWN RIGHT DIAGONAL ELLIPSIS"
+  ],
+  [
+    8946,
+    "ELEMENT OF WITH LONG HORIZONTAL STROKE"
+  ],
+  [
+    8947,
+    "ELEMENT OF WITH VERTICAL BAR AT END OF HORIZONTAL STROKE"
+  ],
+  [
+    8948,
+    "SMALL ELEMENT OF WITH VERTICAL BAR AT END OF HORIZONTAL STROKE"
+  ],
+  [
+    8949,
+    "ELEMENT OF WITH DOT ABOVE"
+  ],
+  [
+    8950,
+    "ELEMENT OF WITH OVERBAR"
+  ],
+  [
+    8951,
+    "SMALL ELEMENT OF WITH OVERBAR"
+  ],
+  [
+    8952,
+    "ELEMENT OF WITH UNDERBAR"
+  ],
+  [
+    8953,
+    "ELEMENT OF WITH TWO HORIZONTAL STROKES"
+  ],
+  [
+    8954,
+    "CONTAINS WITH LONG HORIZONTAL STROKE"
+  ],
+  [
+    8955,
+    "CONTAINS WITH VERTICAL BAR AT END OF HORIZONTAL STROKE"
+  ],
+  [
+    8956,
+    "SMALL CONTAINS WITH VERTICAL BAR AT END OF HORIZONTAL STROKE"
+  ],
+  [
+    8957,
+    "CONTAINS WITH OVERBAR"
+  ],
+  [
+    8958,
+    "SMALL CONTAINS WITH OVERBAR"
+  ],
+  [
+    8959,
+    "Z NOTATION BAG MEMBERSHIP"
+  ],
+  [
+    8960,
+    "DIAMETER SIGN"
+  ],
+  [
+    8961,
+    "ELECTRIC ARROW"
+  ],
+  [
+    8962,
+    "HOUSE"
+  ],
+  [
+    8963,
+    "UP ARROWHEAD"
+  ],
+  [
+    8964,
+    "DOWN ARROWHEAD"
+  ],
+  [
+    8965,
+    "PROJECTIVE"
+  ],
+  [
+    8966,
+    "PERSPECTIVE"
+  ],
+  [
+    8967,
+    "WAVY LINE"
+  ],
+  [
+    8968,
+    "LEFT CEILING"
+  ],
+  [
+    8969,
+    "RIGHT CEILING"
+  ],
+  [
+    8970,
+    "LEFT FLOOR"
+  ],
+  [
+    8971,
+    "RIGHT FLOOR"
+  ],
+  [
+    8972,
+    "BOTTOM RIGHT CROP"
+  ],
+  [
+    8973,
+    "BOTTOM LEFT CROP"
+  ],
+  [
+    8974,
+    "TOP RIGHT CROP"
+  ],
+  [
+    8975,
+    "TOP LEFT CROP"
+  ],
+  [
+    8976,
+    "REVERSED NOT SIGN"
+  ],
+  [
+    8977,
+    "SQUARE LOZENGE"
+  ],
+  [
+    8978,
+    "ARC"
+  ],
+  [
+    8979,
+    "SEGMENT"
+  ],
+  [
+    8980,
+    "SECTOR"
+  ],
+  [
+    8981,
+    "TELEPHONE RECORDER"
+  ],
+  [
+    8982,
+    "POSITION INDICATOR"
+  ],
+  [
+    8983,
+    "VIEWDATA SQUARE"
+  ],
+  [
+    8984,
+    "PLACE OF INTEREST SIGN"
+  ],
+  [
+    8985,
+    "TURNED NOT SIGN"
+  ],
+  [
+    8986,
+    "WATCH"
+  ],
+  [
+    8987,
+    "HOURGLASS"
+  ],
+  [
+    8988,
+    "TOP LEFT CORNER"
+  ],
+  [
+    8989,
+    "TOP RIGHT CORNER"
+  ],
+  [
+    8990,
+    "BOTTOM LEFT CORNER"
+  ],
+  [
+    8991,
+    "BOTTOM RIGHT CORNER"
+  ],
+  [
+    8992,
+    "TOP HALF INTEGRAL"
+  ],
+  [
+    8993,
+    "BOTTOM HALF INTEGRAL"
+  ],
+  [
+    8994,
+    "FROWN"
+  ],
+  [
+    8995,
+    "SMILE"
+  ],
+  [
+    8996,
+    "UP ARROWHEAD BETWEEN TWO HORIZONTAL BARS"
+  ],
+  [
+    8997,
+    "OPTION KEY"
+  ],
+  [
+    8998,
+    "ERASE TO THE RIGHT"
+  ],
+  [
+    8999,
+    "X IN A RECTANGLE BOX"
+  ],
+  [
+    9000,
+    "KEYBOARD"
+  ],
+  [
+    9001,
+    "LEFT-POINTING ANGLE BRACKET"
+  ],
+  [
+    9002,
+    "RIGHT-POINTING ANGLE BRACKET"
+  ],
+  [
+    9003,
+    "ERASE TO THE LEFT"
+  ],
+  [
+    9004,
+    "BENZENE RING"
+  ],
+  [
+    9005,
+    "CYLINDRICITY"
+  ],
+  [
+    9006,
+    "ALL AROUND-PROFILE"
+  ],
+  [
+    9007,
+    "SYMMETRY"
+  ],
+  [
+    9008,
+    "TOTAL RUNOUT"
+  ],
+  [
+    9009,
+    "DIMENSION ORIGIN"
+  ],
+  [
+    9010,
+    "CONICAL TAPER"
+  ],
+  [
+    9011,
+    "SLOPE"
+  ],
+  [
+    9012,
+    "COUNTERBORE"
+  ],
+  [
+    9013,
+    "COUNTERSINK"
+  ],
+  [
+    9014,
+    "APL FUNCTIONAL SYMBOL I-BEAM"
+  ],
+  [
+    9015,
+    "APL FUNCTIONAL SYMBOL SQUISH QUAD"
+  ],
+  [
+    9016,
+    "APL FUNCTIONAL SYMBOL QUAD EQUAL"
+  ],
+  [
+    9017,
+    "APL FUNCTIONAL SYMBOL QUAD DIVIDE"
+  ],
+  [
+    9018,
+    "APL FUNCTIONAL SYMBOL QUAD DIAMOND"
+  ],
+  [
+    9019,
+    "APL FUNCTIONAL SYMBOL QUAD JOT"
+  ],
+  [
+    9020,
+    "APL FUNCTIONAL SYMBOL QUAD CIRCLE"
+  ],
+  [
+    9021,
+    "APL FUNCTIONAL SYMBOL CIRCLE STILE"
+  ],
+  [
+    9022,
+    "APL FUNCTIONAL SYMBOL CIRCLE JOT"
+  ],
+  [
+    9023,
+    "APL FUNCTIONAL SYMBOL SLASH BAR"
+  ],
+  [
+    9024,
+    "APL FUNCTIONAL SYMBOL BACKSLASH BAR"
+  ],
+  [
+    9025,
+    "APL FUNCTIONAL SYMBOL QUAD SLASH"
+  ],
+  [
+    9026,
+    "APL FUNCTIONAL SYMBOL QUAD BACKSLASH"
+  ],
+  [
+    9027,
+    "APL FUNCTIONAL SYMBOL QUAD LESS-THAN"
+  ],
+  [
+    9028,
+    "APL FUNCTIONAL SYMBOL QUAD GREATER-THAN"
+  ],
+  [
+    9029,
+    "APL FUNCTIONAL SYMBOL LEFTWARDS VANE"
+  ],
+  [
+    9030,
+    "APL FUNCTIONAL SYMBOL RIGHTWARDS VANE"
+  ],
+  [
+    9031,
+    "APL FUNCTIONAL SYMBOL QUAD LEFTWARDS ARROW"
+  ],
+  [
+    9032,
+    "APL FUNCTIONAL SYMBOL QUAD RIGHTWARDS ARROW"
+  ],
+  [
+    9033,
+    "APL FUNCTIONAL SYMBOL CIRCLE BACKSLASH"
+  ],
+  [
+    9034,
+    "APL FUNCTIONAL SYMBOL DOWN TACK UNDERBAR"
+  ],
+  [
+    9035,
+    "APL FUNCTIONAL SYMBOL DELTA STILE"
+  ],
+  [
+    9036,
+    "APL FUNCTIONAL SYMBOL QUAD DOWN CARET"
+  ],
+  [
+    9037,
+    "APL FUNCTIONAL SYMBOL QUAD DELTA"
+  ],
+  [
+    9038,
+    "APL FUNCTIONAL SYMBOL DOWN TACK JOT"
+  ],
+  [
+    9039,
+    "APL FUNCTIONAL SYMBOL UPWARDS VANE"
+  ],
+  [
+    9040,
+    "APL FUNCTIONAL SYMBOL QUAD UPWARDS ARROW"
+  ],
+  [
+    9041,
+    "APL FUNCTIONAL SYMBOL UP TACK OVERBAR"
+  ],
+  [
+    9042,
+    "APL FUNCTIONAL SYMBOL DEL STILE"
+  ],
+  [
+    9043,
+    "APL FUNCTIONAL SYMBOL QUAD UP CARET"
+  ],
+  [
+    9044,
+    "APL FUNCTIONAL SYMBOL QUAD DEL"
+  ],
+  [
+    9045,
+    "APL FUNCTIONAL SYMBOL UP TACK JOT"
+  ],
+  [
+    9046,
+    "APL FUNCTIONAL SYMBOL DOWNWARDS VANE"
+  ],
+  [
+    9047,
+    "APL FUNCTIONAL SYMBOL QUAD DOWNWARDS ARROW"
+  ],
+  [
+    9048,
+    "APL FUNCTIONAL SYMBOL QUOTE UNDERBAR"
+  ],
+  [
+    9049,
+    "APL FUNCTIONAL SYMBOL DELTA UNDERBAR"
+  ],
+  [
+    9050,
+    "APL FUNCTIONAL SYMBOL DIAMOND UNDERBAR"
+  ],
+  [
+    9051,
+    "APL FUNCTIONAL SYMBOL JOT UNDERBAR"
+  ],
+  [
+    9052,
+    "APL FUNCTIONAL SYMBOL CIRCLE UNDERBAR"
+  ],
+  [
+    9053,
+    "APL FUNCTIONAL SYMBOL UP SHOE JOT"
+  ],
+  [
+    9054,
+    "APL FUNCTIONAL SYMBOL QUOTE QUAD"
+  ],
+  [
+    9055,
+    "APL FUNCTIONAL SYMBOL CIRCLE STAR"
+  ],
+  [
+    9056,
+    "APL FUNCTIONAL SYMBOL QUAD COLON"
+  ],
+  [
+    9057,
+    "APL FUNCTIONAL SYMBOL UP TACK DIAERESIS"
+  ],
+  [
+    9058,
+    "APL FUNCTIONAL SYMBOL DEL DIAERESIS"
+  ],
+  [
+    9059,
+    "APL FUNCTIONAL SYMBOL STAR DIAERESIS"
+  ],
+  [
+    9060,
+    "APL FUNCTIONAL SYMBOL JOT DIAERESIS"
+  ],
+  [
+    9061,
+    "APL FUNCTIONAL SYMBOL CIRCLE DIAERESIS"
+  ],
+  [
+    9062,
+    "APL FUNCTIONAL SYMBOL DOWN SHOE STILE"
+  ],
+  [
+    9063,
+    "APL FUNCTIONAL SYMBOL LEFT SHOE STILE"
+  ],
+  [
+    9064,
+    "APL FUNCTIONAL SYMBOL TILDE DIAERESIS"
+  ],
+  [
+    9065,
+    "APL FUNCTIONAL SYMBOL GREATER-THAN DIAERESIS"
+  ],
+  [
+    9066,
+    "APL FUNCTIONAL SYMBOL COMMA BAR"
+  ],
+  [
+    9067,
+    "APL FUNCTIONAL SYMBOL DEL TILDE"
+  ],
+  [
+    9068,
+    "APL FUNCTIONAL SYMBOL ZILDE"
+  ],
+  [
+    9069,
+    "APL FUNCTIONAL SYMBOL STILE TILDE"
+  ],
+  [
+    9070,
+    "APL FUNCTIONAL SYMBOL SEMICOLON UNDERBAR"
+  ],
+  [
+    9071,
+    "APL FUNCTIONAL SYMBOL QUAD NOT EQUAL"
+  ],
+  [
+    9072,
+    "APL FUNCTIONAL SYMBOL QUAD QUESTION"
+  ],
+  [
+    9073,
+    "APL FUNCTIONAL SYMBOL DOWN CARET TILDE"
+  ],
+  [
+    9074,
+    "APL FUNCTIONAL SYMBOL UP CARET TILDE"
+  ],
+  [
+    9075,
+    "APL FUNCTIONAL SYMBOL IOTA"
+  ],
+  [
+    9076,
+    "APL FUNCTIONAL SYMBOL RHO"
+  ],
+  [
+    9077,
+    "APL FUNCTIONAL SYMBOL OMEGA"
+  ],
+  [
+    9078,
+    "APL FUNCTIONAL SYMBOL ALPHA UNDERBAR"
+  ],
+  [
+    9079,
+    "APL FUNCTIONAL SYMBOL EPSILON UNDERBAR"
+  ],
+  [
+    9080,
+    "APL FUNCTIONAL SYMBOL IOTA UNDERBAR"
+  ],
+  [
+    9081,
+    "APL FUNCTIONAL SYMBOL OMEGA UNDERBAR"
+  ],
+  [
+    9082,
+    "APL FUNCTIONAL SYMBOL ALPHA"
+  ],
+  [
+    9083,
+    "NOT CHECK MARK"
+  ],
+  [
+    9084,
+    "RIGHT ANGLE WITH DOWNWARDS ZIGZAG ARROW"
+  ],
+  [
+    9085,
+    "SHOULDERED OPEN BOX"
+  ],
+  [
+    9086,
+    "BELL SYMBOL"
+  ],
+  [
+    9087,
+    "VERTICAL LINE WITH MIDDLE DOT"
+  ],
+  [
+    9088,
+    "INSERTION SYMBOL"
+  ],
+  [
+    9089,
+    "CONTINUOUS UNDERLINE SYMBOL"
+  ],
+  [
+    9090,
+    "DISCONTINUOUS UNDERLINE SYMBOL"
+  ],
+  [
+    9091,
+    "EMPHASIS SYMBOL"
+  ],
+  [
+    9092,
+    "COMPOSITION SYMBOL"
+  ],
+  [
+    9093,
+    "WHITE SQUARE WITH CENTRE VERTICAL LINE"
+  ],
+  [
+    9094,
+    "ENTER SYMBOL"
+  ],
+  [
+    9095,
+    "ALTERNATIVE KEY SYMBOL"
+  ],
+  [
+    9096,
+    "HELM SYMBOL"
+  ],
+  [
+    9097,
+    "CIRCLED HORIZONTAL BAR WITH NOTCH"
+  ],
+  [
+    9098,
+    "CIRCLED TRIANGLE DOWN"
+  ],
+  [
+    9099,
+    "BROKEN CIRCLE WITH NORTHWEST ARROW"
+  ],
+  [
+    9100,
+    "UNDO SYMBOL"
+  ],
+  [
+    9101,
+    "MONOSTABLE SYMBOL"
+  ],
+  [
+    9102,
+    "HYSTERESIS SYMBOL"
+  ],
+  [
+    9103,
+    "OPEN-CIRCUIT-OUTPUT H-TYPE SYMBOL"
+  ],
+  [
+    9104,
+    "OPEN-CIRCUIT-OUTPUT L-TYPE SYMBOL"
+  ],
+  [
+    9105,
+    "PASSIVE-PULL-DOWN-OUTPUT SYMBOL"
+  ],
+  [
+    9106,
+    "PASSIVE-PULL-UP-OUTPUT SYMBOL"
+  ],
+  [
+    9107,
+    "DIRECT CURRENT SYMBOL FORM TWO"
+  ],
+  [
+    9108,
+    "SOFTWARE-FUNCTION SYMBOL"
+  ],
+  [
+    9109,
+    "APL FUNCTIONAL SYMBOL QUAD"
+  ],
+  [
+    9110,
+    "DECIMAL SEPARATOR KEY SYMBOL"
+  ],
+  [
+    9111,
+    "PREVIOUS PAGE"
+  ],
+  [
+    9112,
+    "NEXT PAGE"
+  ],
+  [
+    9113,
+    "PRINT SCREEN SYMBOL"
+  ],
+  [
+    9114,
+    "CLEAR SCREEN SYMBOL"
+  ],
+  [
+    9115,
+    "LEFT PARENTHESIS UPPER HOOK"
+  ],
+  [
+    9116,
+    "LEFT PARENTHESIS EXTENSION"
+  ],
+  [
+    9117,
+    "LEFT PARENTHESIS LOWER HOOK"
+  ],
+  [
+    9118,
+    "RIGHT PARENTHESIS UPPER HOOK"
+  ],
+  [
+    9119,
+    "RIGHT PARENTHESIS EXTENSION"
+  ],
+  [
+    9120,
+    "RIGHT PARENTHESIS LOWER HOOK"
+  ],
+  [
+    9121,
+    "LEFT SQUARE BRACKET UPPER CORNER"
+  ],
+  [
+    9122,
+    "LEFT SQUARE BRACKET EXTENSION"
+  ],
+  [
+    9123,
+    "LEFT SQUARE BRACKET LOWER CORNER"
+  ],
+  [
+    9124,
+    "RIGHT SQUARE BRACKET UPPER CORNER"
+  ],
+  [
+    9125,
+    "RIGHT SQUARE BRACKET EXTENSION"
+  ],
+  [
+    9126,
+    "RIGHT SQUARE BRACKET LOWER CORNER"
+  ],
+  [
+    9127,
+    "LEFT CURLY BRACKET UPPER HOOK"
+  ],
+  [
+    9128,
+    "LEFT CURLY BRACKET MIDDLE PIECE"
+  ],
+  [
+    9129,
+    "LEFT CURLY BRACKET LOWER HOOK"
+  ],
+  [
+    9130,
+    "CURLY BRACKET EXTENSION"
+  ],
+  [
+    9131,
+    "RIGHT CURLY BRACKET UPPER HOOK"
+  ],
+  [
+    9132,
+    "RIGHT CURLY BRACKET MIDDLE PIECE"
+  ],
+  [
+    9133,
+    "RIGHT CURLY BRACKET LOWER HOOK"
+  ],
+  [
+    9134,
+    "INTEGRAL EXTENSION"
+  ],
+  [
+    9135,
+    "HORIZONTAL LINE EXTENSION"
+  ],
+  [
+    9136,
+    "UPPER LEFT OR LOWER RIGHT CURLY BRACKET SECTION"
+  ],
+  [
+    9137,
+    "UPPER RIGHT OR LOWER LEFT CURLY BRACKET SECTION"
+  ],
+  [
+    9138,
+    "SUMMATION TOP"
+  ],
+  [
+    9139,
+    "SUMMATION BOTTOM"
+  ],
+  [
+    9140,
+    "TOP SQUARE BRACKET"
+  ],
+  [
+    9141,
+    "BOTTOM SQUARE BRACKET"
+  ],
+  [
+    9142,
+    "BOTTOM SQUARE BRACKET OVER TOP SQUARE BRACKET"
+  ],
+  [
+    9143,
+    "RADICAL SYMBOL BOTTOM"
+  ],
+  [
+    9144,
+    "LEFT VERTICAL BOX LINE"
+  ],
+  [
+    9145,
+    "RIGHT VERTICAL BOX LINE"
+  ],
+  [
+    9146,
+    "HORIZONTAL SCAN LINE-1"
+  ],
+  [
+    9147,
+    "HORIZONTAL SCAN LINE-3"
+  ],
+  [
+    9148,
+    "HORIZONTAL SCAN LINE-7"
+  ],
+  [
+    9149,
+    "HORIZONTAL SCAN LINE-9"
+  ],
+  [
+    9150,
+    "DENTISTRY SYMBOL LIGHT VERTICAL AND TOP RIGHT"
+  ],
+  [
+    9151,
+    "DENTISTRY SYMBOL LIGHT VERTICAL AND BOTTOM RIGHT"
+  ],
+  [
+    9152,
+    "DENTISTRY SYMBOL LIGHT VERTICAL WITH CIRCLE"
+  ],
+  [
+    9153,
+    "DENTISTRY SYMBOL LIGHT DOWN AND HORIZONTAL WITH CIRCLE"
+  ],
+  [
+    9154,
+    "DENTISTRY SYMBOL LIGHT UP AND HORIZONTAL WITH CIRCLE"
+  ],
+  [
+    9155,
+    "DENTISTRY SYMBOL LIGHT VERTICAL WITH TRIANGLE"
+  ],
+  [
+    9156,
+    "DENTISTRY SYMBOL LIGHT DOWN AND HORIZONTAL WITH TRIANGLE"
+  ],
+  [
+    9157,
+    "DENTISTRY SYMBOL LIGHT UP AND HORIZONTAL WITH TRIANGLE"
+  ],
+  [
+    9158,
+    "DENTISTRY SYMBOL LIGHT VERTICAL AND WAVE"
+  ],
+  [
+    9159,
+    "DENTISTRY SYMBOL LIGHT DOWN AND HORIZONTAL WITH WAVE"
+  ],
+  [
+    9160,
+    "DENTISTRY SYMBOL LIGHT UP AND HORIZONTAL WITH WAVE"
+  ],
+  [
+    9161,
+    "DENTISTRY SYMBOL LIGHT DOWN AND HORIZONTAL"
+  ],
+  [
+    9162,
+    "DENTISTRY SYMBOL LIGHT UP AND HORIZONTAL"
+  ],
+  [
+    9163,
+    "DENTISTRY SYMBOL LIGHT VERTICAL AND TOP LEFT"
+  ],
+  [
+    9164,
+    "DENTISTRY SYMBOL LIGHT VERTICAL AND BOTTOM LEFT"
+  ],
+  [
+    9165,
+    "SQUARE FOOT"
+  ],
+  [
+    9166,
+    "RETURN SYMBOL"
+  ],
+  [
+    9167,
+    "EJECT SYMBOL"
+  ],
+  [
+    9168,
+    "VERTICAL LINE EXTENSION"
+  ],
+  [
+    9169,
+    "METRICAL BREVE"
+  ],
+  [
+    9170,
+    "METRICAL LONG OVER SHORT"
+  ],
+  [
+    9171,
+    "METRICAL SHORT OVER LONG"
+  ],
+  [
+    9172,
+    "METRICAL LONG OVER TWO SHORTS"
+  ],
+  [
+    9173,
+    "METRICAL TWO SHORTS OVER LONG"
+  ],
+  [
+    9174,
+    "METRICAL TWO SHORTS JOINED"
+  ],
+  [
+    9175,
+    "METRICAL TRISEME"
+  ],
+  [
+    9176,
+    "METRICAL TETRASEME"
+  ],
+  [
+    9177,
+    "METRICAL PENTASEME"
+  ],
+  [
+    9178,
+    "EARTH GROUND"
+  ],
+  [
+    9179,
+    "FUSE"
+  ],
+  [
+    9180,
+    "TOP PARENTHESIS"
+  ],
+  [
+    9181,
+    "BOTTOM PARENTHESIS"
+  ],
+  [
+    9182,
+    "TOP CURLY BRACKET"
+  ],
+  [
+    9183,
+    "BOTTOM CURLY BRACKET"
+  ],
+  [
+    9184,
+    "TOP TORTOISE SHELL BRACKET"
+  ],
+  [
+    9185,
+    "BOTTOM TORTOISE SHELL BRACKET"
+  ],
+  [
+    9186,
+    "WHITE TRAPEZIUM"
+  ],
+  [
+    9187,
+    "BENZENE RING WITH CIRCLE"
+  ],
+  [
+    9188,
+    "STRAIGHTNESS"
+  ],
+  [
+    9189,
+    "FLATNESS"
+  ],
+  [
+    9190,
+    "AC CURRENT"
+  ],
+  [
+    9191,
+    "ELECTRICAL INTERSECTION"
+  ],
+  [
+    9192,
+    "DECIMAL EXPONENT SYMBOL"
+  ],
+  [
+    9193,
+    "BLACK RIGHT-POINTING DOUBLE TRIANGLE"
+  ],
+  [
+    9194,
+    "BLACK LEFT-POINTING DOUBLE TRIANGLE"
+  ],
+  [
+    9195,
+    "BLACK UP-POINTING DOUBLE TRIANGLE"
+  ],
+  [
+    9196,
+    "BLACK DOWN-POINTING DOUBLE TRIANGLE"
+  ],
+  [
+    9197,
+    "BLACK RIGHT-POINTING DOUBLE TRIANGLE WITH VERTICAL BAR"
+  ],
+  [
+    9198,
+    "BLACK LEFT-POINTING DOUBLE TRIANGLE WITH VERTICAL BAR"
+  ],
+  [
+    9199,
+    "BLACK RIGHT-POINTING TRIANGLE WITH DOUBLE VERTICAL BAR"
+  ],
+  [
+    9200,
+    "ALARM CLOCK"
+  ],
+  [
+    9201,
+    "STOPWATCH"
+  ],
+  [
+    9202,
+    "TIMER CLOCK"
+  ],
+  [
+    9203,
+    "HOURGLASS WITH FLOWING SAND"
+  ],
+  [
+    9204,
+    "BLACK MEDIUM LEFT-POINTING TRIANGLE"
+  ],
+  [
+    9205,
+    "BLACK MEDIUM RIGHT-POINTING TRIANGLE"
+  ],
+  [
+    9206,
+    "BLACK MEDIUM UP-POINTING TRIANGLE"
+  ],
+  [
+    9207,
+    "BLACK MEDIUM DOWN-POINTING TRIANGLE"
+  ],
+  [
+    9208,
+    "DOUBLE VERTICAL BAR"
+  ],
+  [
+    9209,
+    "BLACK SQUARE FOR STOP"
+  ],
+  [
+    9210,
+    "BLACK CIRCLE FOR RECORD"
+  ],
+  [
+    9211,
+    "POWER SYMBOL"
+  ],
+  [
+    9212,
+    "POWER ON-OFF SYMBOL"
+  ],
+  [
+    9213,
+    "POWER ON SYMBOL"
+  ],
+  [
+    9214,
+    "POWER SLEEP SYMBOL"
+  ],
+  [
+    9215,
+    "OBSERVER EYE SYMBOL"
+  ],
+  [
+    9216,
+    "SYMBOL FOR NULL"
+  ],
+  [
+    9217,
+    "SYMBOL FOR START OF HEADING"
+  ],
+  [
+    9218,
+    "SYMBOL FOR START OF TEXT"
+  ],
+  [
+    9219,
+    "SYMBOL FOR END OF TEXT"
+  ],
+  [
+    9220,
+    "SYMBOL FOR END OF TRANSMISSION"
+  ],
+  [
+    9221,
+    "SYMBOL FOR ENQUIRY"
+  ],
+  [
+    9222,
+    "SYMBOL FOR ACKNOWLEDGE"
+  ],
+  [
+    9223,
+    "SYMBOL FOR BELL"
+  ],
+  [
+    9224,
+    "SYMBOL FOR BACKSPACE"
+  ],
+  [
+    9225,
+    "SYMBOL FOR HORIZONTAL TABULATION"
+  ],
+  [
+    9226,
+    "SYMBOL FOR LINE FEED"
+  ],
+  [
+    9227,
+    "SYMBOL FOR VERTICAL TABULATION"
+  ],
+  [
+    9228,
+    "SYMBOL FOR FORM FEED"
+  ],
+  [
+    9229,
+    "SYMBOL FOR CARRIAGE RETURN"
+  ],
+  [
+    9230,
+    "SYMBOL FOR SHIFT OUT"
+  ],
+  [
+    9231,
+    "SYMBOL FOR SHIFT IN"
+  ],
+  [
+    9232,
+    "SYMBOL FOR DATA LINK ESCAPE"
+  ],
+  [
+    9233,
+    "SYMBOL FOR DEVICE CONTROL ONE"
+  ],
+  [
+    9234,
+    "SYMBOL FOR DEVICE CONTROL TWO"
+  ],
+  [
+    9235,
+    "SYMBOL FOR DEVICE CONTROL THREE"
+  ],
+  [
+    9236,
+    "SYMBOL FOR DEVICE CONTROL FOUR"
+  ],
+  [
+    9237,
+    "SYMBOL FOR NEGATIVE ACKNOWLEDGE"
+  ],
+  [
+    9238,
+    "SYMBOL FOR SYNCHRONOUS IDLE"
+  ],
+  [
+    9239,
+    "SYMBOL FOR END OF TRANSMISSION BLOCK"
+  ],
+  [
+    9240,
+    "SYMBOL FOR CANCEL"
+  ],
+  [
+    9241,
+    "SYMBOL FOR END OF MEDIUM"
+  ],
+  [
+    9242,
+    "SYMBOL FOR SUBSTITUTE"
+  ],
+  [
+    9243,
+    "SYMBOL FOR ESCAPE"
+  ],
+  [
+    9244,
+    "SYMBOL FOR FILE SEPARATOR"
+  ],
+  [
+    9245,
+    "SYMBOL FOR GROUP SEPARATOR"
+  ],
+  [
+    9246,
+    "SYMBOL FOR RECORD SEPARATOR"
+  ],
+  [
+    9247,
+    "SYMBOL FOR UNIT SEPARATOR"
+  ],
+  [
+    9248,
+    "SYMBOL FOR SPACE"
+  ],
+  [
+    9249,
+    "SYMBOL FOR DELETE"
+  ],
+  [
+    9250,
+    "BLANK SYMBOL"
+  ],
+  [
+    9251,
+    "OPEN BOX"
+  ],
+  [
+    9252,
+    "SYMBOL FOR NEWLINE"
+  ],
+  [
+    9253,
+    "SYMBOL FOR DELETE FORM TWO"
+  ],
+  [
+    9254,
+    "SYMBOL FOR SUBSTITUTE FORM TWO"
+  ],
+  [
+    9255,
+    "SYMBOL FOR DELETE SQUARE CHECKER BOARD FORM"
+  ],
+  [
+    9256,
+    "SYMBOL FOR DELETE RECTANGULAR CHECKER BOARD FORM"
+  ],
+  [
+    9257,
+    "SYMBOL FOR DELETE MEDIUM SHADE FORM"
+  ],
+  [
+    9312,
+    "CIRCLED DIGIT ONE"
+  ],
+  [
+    9313,
+    "CIRCLED DIGIT TWO"
+  ],
+  [
+    9314,
+    "CIRCLED DIGIT THREE"
+  ],
+  [
+    9315,
+    "CIRCLED DIGIT FOUR"
+  ],
+  [
+    9316,
+    "CIRCLED DIGIT FIVE"
+  ],
+  [
+    9317,
+    "CIRCLED DIGIT SIX"
+  ],
+  [
+    9318,
+    "CIRCLED DIGIT SEVEN"
+  ],
+  [
+    9319,
+    "CIRCLED DIGIT EIGHT"
+  ],
+  [
+    9320,
+    "CIRCLED DIGIT NINE"
+  ],
+  [
+    9321,
+    "CIRCLED NUMBER TEN"
+  ],
+  [
+    9322,
+    "CIRCLED NUMBER ELEVEN"
+  ],
+  [
+    9323,
+    "CIRCLED NUMBER TWELVE"
+  ],
+  [
+    9324,
+    "CIRCLED NUMBER THIRTEEN"
+  ],
+  [
+    9325,
+    "CIRCLED NUMBER FOURTEEN"
+  ],
+  [
+    9326,
+    "CIRCLED NUMBER FIFTEEN"
+  ],
+  [
+    9327,
+    "CIRCLED NUMBER SIXTEEN"
+  ],
+  [
+    9328,
+    "CIRCLED NUMBER SEVENTEEN"
+  ],
+  [
+    9329,
+    "CIRCLED NUMBER EIGHTEEN"
+  ],
+  [
+    9330,
+    "CIRCLED NUMBER NINETEEN"
+  ],
+  [
+    9331,
+    "CIRCLED NUMBER TWENTY"
+  ],
+  [
+    9332,
+    "PARENTHESIZED DIGIT ONE"
+  ],
+  [
+    9333,
+    "PARENTHESIZED DIGIT TWO"
+  ],
+  [
+    9334,
+    "PARENTHESIZED DIGIT THREE"
+  ],
+  [
+    9335,
+    "PARENTHESIZED DIGIT FOUR"
+  ],
+  [
+    9336,
+    "PARENTHESIZED DIGIT FIVE"
+  ],
+  [
+    9337,
+    "PARENTHESIZED DIGIT SIX"
+  ],
+  [
+    9338,
+    "PARENTHESIZED DIGIT SEVEN"
+  ],
+  [
+    9339,
+    "PARENTHESIZED DIGIT EIGHT"
+  ],
+  [
+    9340,
+    "PARENTHESIZED DIGIT NINE"
+  ],
+  [
+    9341,
+    "PARENTHESIZED NUMBER TEN"
+  ],
+  [
+    9342,
+    "PARENTHESIZED NUMBER ELEVEN"
+  ],
+  [
+    9343,
+    "PARENTHESIZED NUMBER TWELVE"
+  ],
+  [
+    9344,
+    "PARENTHESIZED NUMBER THIRTEEN"
+  ],
+  [
+    9345,
+    "PARENTHESIZED NUMBER FOURTEEN"
+  ],
+  [
+    9346,
+    "PARENTHESIZED NUMBER FIFTEEN"
+  ],
+  [
+    9347,
+    "PARENTHESIZED NUMBER SIXTEEN"
+  ],
+  [
+    9348,
+    "PARENTHESIZED NUMBER SEVENTEEN"
+  ],
+  [
+    9349,
+    "PARENTHESIZED NUMBER EIGHTEEN"
+  ],
+  [
+    9350,
+    "PARENTHESIZED NUMBER NINETEEN"
+  ],
+  [
+    9351,
+    "PARENTHESIZED NUMBER TWENTY"
+  ],
+  [
+    9352,
+    "DIGIT ONE FULL STOP"
+  ],
+  [
+    9353,
+    "DIGIT TWO FULL STOP"
+  ],
+  [
+    9354,
+    "DIGIT THREE FULL STOP"
+  ],
+  [
+    9355,
+    "DIGIT FOUR FULL STOP"
+  ],
+  [
+    9356,
+    "DIGIT FIVE FULL STOP"
+  ],
+  [
+    9357,
+    "DIGIT SIX FULL STOP"
+  ],
+  [
+    9358,
+    "DIGIT SEVEN FULL STOP"
+  ],
+  [
+    9359,
+    "DIGIT EIGHT FULL STOP"
+  ],
+  [
+    9360,
+    "DIGIT NINE FULL STOP"
+  ],
+  [
+    9361,
+    "NUMBER TEN FULL STOP"
+  ],
+  [
+    9362,
+    "NUMBER ELEVEN FULL STOP"
+  ],
+  [
+    9363,
+    "NUMBER TWELVE FULL STOP"
+  ],
+  [
+    9364,
+    "NUMBER THIRTEEN FULL STOP"
+  ],
+  [
+    9365,
+    "NUMBER FOURTEEN FULL STOP"
+  ],
+  [
+    9366,
+    "NUMBER FIFTEEN FULL STOP"
+  ],
+  [
+    9367,
+    "NUMBER SIXTEEN FULL STOP"
+  ],
+  [
+    9368,
+    "NUMBER SEVENTEEN FULL STOP"
+  ],
+  [
+    9369,
+    "NUMBER EIGHTEEN FULL STOP"
+  ],
+  [
+    9370,
+    "NUMBER NINETEEN FULL STOP"
+  ],
+  [
+    9371,
+    "NUMBER TWENTY FULL STOP"
+  ],
+  [
+    9372,
+    "PARENTHESIZED LATIN SMALL LETTER A"
+  ],
+  [
+    9373,
+    "PARENTHESIZED LATIN SMALL LETTER B"
+  ],
+  [
+    9374,
+    "PARENTHESIZED LATIN SMALL LETTER C"
+  ],
+  [
+    9375,
+    "PARENTHESIZED LATIN SMALL LETTER D"
+  ],
+  [
+    9376,
+    "PARENTHESIZED LATIN SMALL LETTER E"
+  ],
+  [
+    9377,
+    "PARENTHESIZED LATIN SMALL LETTER F"
+  ],
+  [
+    9378,
+    "PARENTHESIZED LATIN SMALL LETTER G"
+  ],
+  [
+    9379,
+    "PARENTHESIZED LATIN SMALL LETTER H"
+  ],
+  [
+    9380,
+    "PARENTHESIZED LATIN SMALL LETTER I"
+  ],
+  [
+    9381,
+    "PARENTHESIZED LATIN SMALL LETTER J"
+  ],
+  [
+    9382,
+    "PARENTHESIZED LATIN SMALL LETTER K"
+  ],
+  [
+    9383,
+    "PARENTHESIZED LATIN SMALL LETTER L"
+  ],
+  [
+    9384,
+    "PARENTHESIZED LATIN SMALL LETTER M"
+  ],
+  [
+    9385,
+    "PARENTHESIZED LATIN SMALL LETTER N"
+  ],
+  [
+    9386,
+    "PARENTHESIZED LATIN SMALL LETTER O"
+  ],
+  [
+    9387,
+    "PARENTHESIZED LATIN SMALL LETTER P"
+  ],
+  [
+    9388,
+    "PARENTHESIZED LATIN SMALL LETTER Q"
+  ],
+  [
+    9389,
+    "PARENTHESIZED LATIN SMALL LETTER R"
+  ],
+  [
+    9390,
+    "PARENTHESIZED LATIN SMALL LETTER S"
+  ],
+  [
+    9391,
+    "PARENTHESIZED LATIN SMALL LETTER T"
+  ],
+  [
+    9392,
+    "PARENTHESIZED LATIN SMALL LETTER U"
+  ],
+  [
+    9393,
+    "PARENTHESIZED LATIN SMALL LETTER V"
+  ],
+  [
+    9394,
+    "PARENTHESIZED LATIN SMALL LETTER W"
+  ],
+  [
+    9395,
+    "PARENTHESIZED LATIN SMALL LETTER X"
+  ],
+  [
+    9396,
+    "PARENTHESIZED LATIN SMALL LETTER Y"
+  ],
+  [
+    9397,
+    "PARENTHESIZED LATIN SMALL LETTER Z"
+  ],
+  [
+    9398,
+    "CIRCLED LATIN CAPITAL LETTER A"
+  ],
+  [
+    9399,
+    "CIRCLED LATIN CAPITAL LETTER B"
+  ],
+  [
+    9400,
+    "CIRCLED LATIN CAPITAL LETTER C"
+  ],
+  [
+    9401,
+    "CIRCLED LATIN CAPITAL LETTER D"
+  ],
+  [
+    9402,
+    "CIRCLED LATIN CAPITAL LETTER E"
+  ],
+  [
+    9403,
+    "CIRCLED LATIN CAPITAL LETTER F"
+  ],
+  [
+    9404,
+    "CIRCLED LATIN CAPITAL LETTER G"
+  ],
+  [
+    9405,
+    "CIRCLED LATIN CAPITAL LETTER H"
+  ],
+  [
+    9406,
+    "CIRCLED LATIN CAPITAL LETTER I"
+  ],
+  [
+    9407,
+    "CIRCLED LATIN CAPITAL LETTER J"
+  ],
+  [
+    9408,
+    "CIRCLED LATIN CAPITAL LETTER K"
+  ],
+  [
+    9409,
+    "CIRCLED LATIN CAPITAL LETTER L"
+  ],
+  [
+    9410,
+    "CIRCLED LATIN CAPITAL LETTER M"
+  ],
+  [
+    9411,
+    "CIRCLED LATIN CAPITAL LETTER N"
+  ],
+  [
+    9412,
+    "CIRCLED LATIN CAPITAL LETTER O"
+  ],
+  [
+    9413,
+    "CIRCLED LATIN CAPITAL LETTER P"
+  ],
+  [
+    9414,
+    "CIRCLED LATIN CAPITAL LETTER Q"
+  ],
+  [
+    9415,
+    "CIRCLED LATIN CAPITAL LETTER R"
+  ],
+  [
+    9416,
+    "CIRCLED LATIN CAPITAL LETTER S"
+  ],
+  [
+    9417,
+    "CIRCLED LATIN CAPITAL LETTER T"
+  ],
+  [
+    9418,
+    "CIRCLED LATIN CAPITAL LETTER U"
+  ],
+  [
+    9419,
+    "CIRCLED LATIN CAPITAL LETTER V"
+  ],
+  [
+    9420,
+    "CIRCLED LATIN CAPITAL LETTER W"
+  ],
+  [
+    9421,
+    "CIRCLED LATIN CAPITAL LETTER X"
+  ],
+  [
+    9422,
+    "CIRCLED LATIN CAPITAL LETTER Y"
+  ],
+  [
+    9423,
+    "CIRCLED LATIN CAPITAL LETTER Z"
+  ],
+  [
+    9424,
+    "CIRCLED LATIN SMALL LETTER A"
+  ],
+  [
+    9425,
+    "CIRCLED LATIN SMALL LETTER B"
+  ],
+  [
+    9426,
+    "CIRCLED LATIN SMALL LETTER C"
+  ],
+  [
+    9427,
+    "CIRCLED LATIN SMALL LETTER D"
+  ],
+  [
+    9428,
+    "CIRCLED LATIN SMALL LETTER E"
+  ],
+  [
+    9429,
+    "CIRCLED LATIN SMALL LETTER F"
+  ],
+  [
+    9430,
+    "CIRCLED LATIN SMALL LETTER G"
+  ],
+  [
+    9431,
+    "CIRCLED LATIN SMALL LETTER H"
+  ],
+  [
+    9432,
+    "CIRCLED LATIN SMALL LETTER I"
+  ],
+  [
+    9433,
+    "CIRCLED LATIN SMALL LETTER J"
+  ],
+  [
+    9434,
+    "CIRCLED LATIN SMALL LETTER K"
+  ],
+  [
+    9435,
+    "CIRCLED LATIN SMALL LETTER L"
+  ],
+  [
+    9436,
+    "CIRCLED LATIN SMALL LETTER M"
+  ],
+  [
+    9437,
+    "CIRCLED LATIN SMALL LETTER N"
+  ],
+  [
+    9438,
+    "CIRCLED LATIN SMALL LETTER O"
+  ],
+  [
+    9439,
+    "CIRCLED LATIN SMALL LETTER P"
+  ],
+  [
+    9440,
+    "CIRCLED LATIN SMALL LETTER Q"
+  ],
+  [
+    9441,
+    "CIRCLED LATIN SMALL LETTER R"
+  ],
+  [
+    9442,
+    "CIRCLED LATIN SMALL LETTER S"
+  ],
+  [
+    9443,
+    "CIRCLED LATIN SMALL LETTER T"
+  ],
+  [
+    9444,
+    "CIRCLED LATIN SMALL LETTER U"
+  ],
+  [
+    9445,
+    "CIRCLED LATIN SMALL LETTER V"
+  ],
+  [
+    9446,
+    "CIRCLED LATIN SMALL LETTER W"
+  ],
+  [
+    9447,
+    "CIRCLED LATIN SMALL LETTER X"
+  ],
+  [
+    9448,
+    "CIRCLED LATIN SMALL LETTER Y"
+  ],
+  [
+    9449,
+    "CIRCLED LATIN SMALL LETTER Z"
+  ],
+  [
+    9450,
+    "CIRCLED DIGIT ZERO"
+  ],
+  [
+    9451,
+    "NEGATIVE CIRCLED NUMBER ELEVEN"
+  ],
+  [
+    9452,
+    "NEGATIVE CIRCLED NUMBER TWELVE"
+  ],
+  [
+    9453,
+    "NEGATIVE CIRCLED NUMBER THIRTEEN"
+  ],
+  [
+    9454,
+    "NEGATIVE CIRCLED NUMBER FOURTEEN"
+  ],
+  [
+    9455,
+    "NEGATIVE CIRCLED NUMBER FIFTEEN"
+  ],
+  [
+    9456,
+    "NEGATIVE CIRCLED NUMBER SIXTEEN"
+  ],
+  [
+    9457,
+    "NEGATIVE CIRCLED NUMBER SEVENTEEN"
+  ],
+  [
+    9458,
+    "NEGATIVE CIRCLED NUMBER EIGHTEEN"
+  ],
+  [
+    9459,
+    "NEGATIVE CIRCLED NUMBER NINETEEN"
+  ],
+  [
+    9460,
+    "NEGATIVE CIRCLED NUMBER TWENTY"
+  ],
+  [
+    9461,
+    "DOUBLE CIRCLED DIGIT ONE"
+  ],
+  [
+    9462,
+    "DOUBLE CIRCLED DIGIT TWO"
+  ],
+  [
+    9463,
+    "DOUBLE CIRCLED DIGIT THREE"
+  ],
+  [
+    9464,
+    "DOUBLE CIRCLED DIGIT FOUR"
+  ],
+  [
+    9465,
+    "DOUBLE CIRCLED DIGIT FIVE"
+  ],
+  [
+    9466,
+    "DOUBLE CIRCLED DIGIT SIX"
+  ],
+  [
+    9467,
+    "DOUBLE CIRCLED DIGIT SEVEN"
+  ],
+  [
+    9468,
+    "DOUBLE CIRCLED DIGIT EIGHT"
+  ],
+  [
+    9469,
+    "DOUBLE CIRCLED DIGIT NINE"
+  ],
+  [
+    9470,
+    "DOUBLE CIRCLED NUMBER TEN"
+  ],
+  [
+    9471,
+    "NEGATIVE CIRCLED DIGIT ZERO"
+  ],
+  [
+    9472,
+    "BOX DRAWINGS LIGHT HORIZONTAL"
+  ],
+  [
+    9473,
+    "BOX DRAWINGS HEAVY HORIZONTAL"
+  ],
+  [
+    9474,
+    "BOX DRAWINGS LIGHT VERTICAL"
+  ],
+  [
+    9475,
+    "BOX DRAWINGS HEAVY VERTICAL"
+  ],
+  [
+    9476,
+    "BOX DRAWINGS LIGHT TRIPLE DASH HORIZONTAL"
+  ],
+  [
+    9477,
+    "BOX DRAWINGS HEAVY TRIPLE DASH HORIZONTAL"
+  ],
+  [
+    9478,
+    "BOX DRAWINGS LIGHT TRIPLE DASH VERTICAL"
+  ],
+  [
+    9479,
+    "BOX DRAWINGS HEAVY TRIPLE DASH VERTICAL"
+  ],
+  [
+    9480,
+    "BOX DRAWINGS LIGHT QUADRUPLE DASH HORIZONTAL"
+  ],
+  [
+    9481,
+    "BOX DRAWINGS HEAVY QUADRUPLE DASH HORIZONTAL"
+  ],
+  [
+    9482,
+    "BOX DRAWINGS LIGHT QUADRUPLE DASH VERTICAL"
+  ],
+  [
+    9483,
+    "BOX DRAWINGS HEAVY QUADRUPLE DASH VERTICAL"
+  ],
+  [
+    9484,
+    "BOX DRAWINGS LIGHT DOWN AND RIGHT"
+  ],
+  [
+    9485,
+    "BOX DRAWINGS DOWN LIGHT AND RIGHT HEAVY"
+  ],
+  [
+    9486,
+    "BOX DRAWINGS DOWN HEAVY AND RIGHT LIGHT"
+  ],
+  [
+    9487,
+    "BOX DRAWINGS HEAVY DOWN AND RIGHT"
+  ],
+  [
+    9488,
+    "BOX DRAWINGS LIGHT DOWN AND LEFT"
+  ],
+  [
+    9489,
+    "BOX DRAWINGS DOWN LIGHT AND LEFT HEAVY"
+  ],
+  [
+    9490,
+    "BOX DRAWINGS DOWN HEAVY AND LEFT LIGHT"
+  ],
+  [
+    9491,
+    "BOX DRAWINGS HEAVY DOWN AND LEFT"
+  ],
+  [
+    9492,
+    "BOX DRAWINGS LIGHT UP AND RIGHT"
+  ],
+  [
+    9493,
+    "BOX DRAWINGS UP LIGHT AND RIGHT HEAVY"
+  ],
+  [
+    9494,
+    "BOX DRAWINGS UP HEAVY AND RIGHT LIGHT"
+  ],
+  [
+    9495,
+    "BOX DRAWINGS HEAVY UP AND RIGHT"
+  ],
+  [
+    9496,
+    "BOX DRAWINGS LIGHT UP AND LEFT"
+  ],
+  [
+    9497,
+    "BOX DRAWINGS UP LIGHT AND LEFT HEAVY"
+  ],
+  [
+    9498,
+    "BOX DRAWINGS UP HEAVY AND LEFT LIGHT"
+  ],
+  [
+    9499,
+    "BOX DRAWINGS HEAVY UP AND LEFT"
+  ],
+  [
+    9500,
+    "BOX DRAWINGS LIGHT VERTICAL AND RIGHT"
+  ],
+  [
+    9501,
+    "BOX DRAWINGS VERTICAL LIGHT AND RIGHT HEAVY"
+  ],
+  [
+    9502,
+    "BOX DRAWINGS UP HEAVY AND RIGHT DOWN LIGHT"
+  ],
+  [
+    9503,
+    "BOX DRAWINGS DOWN HEAVY AND RIGHT UP LIGHT"
+  ],
+  [
+    9504,
+    "BOX DRAWINGS VERTICAL HEAVY AND RIGHT LIGHT"
+  ],
+  [
+    9505,
+    "BOX DRAWINGS DOWN LIGHT AND RIGHT UP HEAVY"
+  ],
+  [
+    9506,
+    "BOX DRAWINGS UP LIGHT AND RIGHT DOWN HEAVY"
+  ],
+  [
+    9507,
+    "BOX DRAWINGS HEAVY VERTICAL AND RIGHT"
+  ],
+  [
+    9508,
+    "BOX DRAWINGS LIGHT VERTICAL AND LEFT"
+  ],
+  [
+    9509,
+    "BOX DRAWINGS VERTICAL LIGHT AND LEFT HEAVY"
+  ],
+  [
+    9510,
+    "BOX DRAWINGS UP HEAVY AND LEFT DOWN LIGHT"
+  ],
+  [
+    9511,
+    "BOX DRAWINGS DOWN HEAVY AND LEFT UP LIGHT"
+  ],
+  [
+    9512,
+    "BOX DRAWINGS VERTICAL HEAVY AND LEFT LIGHT"
+  ],
+  [
+    9513,
+    "BOX DRAWINGS DOWN LIGHT AND LEFT UP HEAVY"
+  ],
+  [
+    9514,
+    "BOX DRAWINGS UP LIGHT AND LEFT DOWN HEAVY"
+  ],
+  [
+    9515,
+    "BOX DRAWINGS HEAVY VERTICAL AND LEFT"
+  ],
+  [
+    9516,
+    "BOX DRAWINGS LIGHT DOWN AND HORIZONTAL"
+  ],
+  [
+    9517,
+    "BOX DRAWINGS LEFT HEAVY AND RIGHT DOWN LIGHT"
+  ],
+  [
+    9518,
+    "BOX DRAWINGS RIGHT HEAVY AND LEFT DOWN LIGHT"
+  ],
+  [
+    9519,
+    "BOX DRAWINGS DOWN LIGHT AND HORIZONTAL HEAVY"
+  ],
+  [
+    9520,
+    "BOX DRAWINGS DOWN HEAVY AND HORIZONTAL LIGHT"
+  ],
+  [
+    9521,
+    "BOX DRAWINGS RIGHT LIGHT AND LEFT DOWN HEAVY"
+  ],
+  [
+    9522,
+    "BOX DRAWINGS LEFT LIGHT AND RIGHT DOWN HEAVY"
+  ],
+  [
+    9523,
+    "BOX DRAWINGS HEAVY DOWN AND HORIZONTAL"
+  ],
+  [
+    9524,
+    "BOX DRAWINGS LIGHT UP AND HORIZONTAL"
+  ],
+  [
+    9525,
+    "BOX DRAWINGS LEFT HEAVY AND RIGHT UP LIGHT"
+  ],
+  [
+    9526,
+    "BOX DRAWINGS RIGHT HEAVY AND LEFT UP LIGHT"
+  ],
+  [
+    9527,
+    "BOX DRAWINGS UP LIGHT AND HORIZONTAL HEAVY"
+  ],
+  [
+    9528,
+    "BOX DRAWINGS UP HEAVY AND HORIZONTAL LIGHT"
+  ],
+  [
+    9529,
+    "BOX DRAWINGS RIGHT LIGHT AND LEFT UP HEAVY"
+  ],
+  [
+    9530,
+    "BOX DRAWINGS LEFT LIGHT AND RIGHT UP HEAVY"
+  ],
+  [
+    9531,
+    "BOX DRAWINGS HEAVY UP AND HORIZONTAL"
+  ],
+  [
+    9532,
+    "BOX DRAWINGS LIGHT VERTICAL AND HORIZONTAL"
+  ],
+  [
+    9533,
+    "BOX DRAWINGS LEFT HEAVY AND RIGHT VERTICAL LIGHT"
+  ],
+  [
+    9534,
+    "BOX DRAWINGS RIGHT HEAVY AND LEFT VERTICAL LIGHT"
+  ],
+  [
+    9535,
+    "BOX DRAWINGS VERTICAL LIGHT AND HORIZONTAL HEAVY"
+  ],
+  [
+    9536,
+    "BOX DRAWINGS UP HEAVY AND DOWN HORIZONTAL LIGHT"
+  ],
+  [
+    9537,
+    "BOX DRAWINGS DOWN HEAVY AND UP HORIZONTAL LIGHT"
+  ],
+  [
+    9538,
+    "BOX DRAWINGS VERTICAL HEAVY AND HORIZONTAL LIGHT"
+  ],
+  [
+    9539,
+    "BOX DRAWINGS LEFT UP HEAVY AND RIGHT DOWN LIGHT"
+  ],
+  [
+    9540,
+    "BOX DRAWINGS RIGHT UP HEAVY AND LEFT DOWN LIGHT"
+  ],
+  [
+    9541,
+    "BOX DRAWINGS LEFT DOWN HEAVY AND RIGHT UP LIGHT"
+  ],
+  [
+    9542,
+    "BOX DRAWINGS RIGHT DOWN HEAVY AND LEFT UP LIGHT"
+  ],
+  [
+    9543,
+    "BOX DRAWINGS DOWN LIGHT AND UP HORIZONTAL HEAVY"
+  ],
+  [
+    9544,
+    "BOX DRAWINGS UP LIGHT AND DOWN HORIZONTAL HEAVY"
+  ],
+  [
+    9545,
+    "BOX DRAWINGS RIGHT LIGHT AND LEFT VERTICAL HEAVY"
+  ],
+  [
+    9546,
+    "BOX DRAWINGS LEFT LIGHT AND RIGHT VERTICAL HEAVY"
+  ],
+  [
+    9547,
+    "BOX DRAWINGS HEAVY VERTICAL AND HORIZONTAL"
+  ],
+  [
+    9548,
+    "BOX DRAWINGS LIGHT DOUBLE DASH HORIZONTAL"
+  ],
+  [
+    9549,
+    "BOX DRAWINGS HEAVY DOUBLE DASH HORIZONTAL"
+  ],
+  [
+    9550,
+    "BOX DRAWINGS LIGHT DOUBLE DASH VERTICAL"
+  ],
+  [
+    9551,
+    "BOX DRAWINGS HEAVY DOUBLE DASH VERTICAL"
+  ],
+  [
+    9552,
+    "BOX DRAWINGS DOUBLE HORIZONTAL"
+  ],
+  [
+    9553,
+    "BOX DRAWINGS DOUBLE VERTICAL"
+  ],
+  [
+    9554,
+    "BOX DRAWINGS DOWN SINGLE AND RIGHT DOUBLE"
+  ],
+  [
+    9555,
+    "BOX DRAWINGS DOWN DOUBLE AND RIGHT SINGLE"
+  ],
+  [
+    9556,
+    "BOX DRAWINGS DOUBLE DOWN AND RIGHT"
+  ],
+  [
+    9557,
+    "BOX DRAWINGS DOWN SINGLE AND LEFT DOUBLE"
+  ],
+  [
+    9558,
+    "BOX DRAWINGS DOWN DOUBLE AND LEFT SINGLE"
+  ],
+  [
+    9559,
+    "BOX DRAWINGS DOUBLE DOWN AND LEFT"
+  ],
+  [
+    9560,
+    "BOX DRAWINGS UP SINGLE AND RIGHT DOUBLE"
+  ],
+  [
+    9561,
+    "BOX DRAWINGS UP DOUBLE AND RIGHT SINGLE"
+  ],
+  [
+    9562,
+    "BOX DRAWINGS DOUBLE UP AND RIGHT"
+  ],
+  [
+    9563,
+    "BOX DRAWINGS UP SINGLE AND LEFT DOUBLE"
+  ],
+  [
+    9564,
+    "BOX DRAWINGS UP DOUBLE AND LEFT SINGLE"
+  ],
+  [
+    9565,
+    "BOX DRAWINGS DOUBLE UP AND LEFT"
+  ],
+  [
+    9566,
+    "BOX DRAWINGS VERTICAL SINGLE AND RIGHT DOUBLE"
+  ],
+  [
+    9567,
+    "BOX DRAWINGS VERTICAL DOUBLE AND RIGHT SINGLE"
+  ],
+  [
+    9568,
+    "BOX DRAWINGS DOUBLE VERTICAL AND RIGHT"
+  ],
+  [
+    9569,
+    "BOX DRAWINGS VERTICAL SINGLE AND LEFT DOUBLE"
+  ],
+  [
+    9570,
+    "BOX DRAWINGS VERTICAL DOUBLE AND LEFT SINGLE"
+  ],
+  [
+    9571,
+    "BOX DRAWINGS DOUBLE VERTICAL AND LEFT"
+  ],
+  [
+    9572,
+    "BOX DRAWINGS DOWN SINGLE AND HORIZONTAL DOUBLE"
+  ],
+  [
+    9573,
+    "BOX DRAWINGS DOWN DOUBLE AND HORIZONTAL SINGLE"
+  ],
+  [
+    9574,
+    "BOX DRAWINGS DOUBLE DOWN AND HORIZONTAL"
+  ],
+  [
+    9575,
+    "BOX DRAWINGS UP SINGLE AND HORIZONTAL DOUBLE"
+  ],
+  [
+    9576,
+    "BOX DRAWINGS UP DOUBLE AND HORIZONTAL SINGLE"
+  ],
+  [
+    9577,
+    "BOX DRAWINGS DOUBLE UP AND HORIZONTAL"
+  ],
+  [
+    9578,
+    "BOX DRAWINGS VERTICAL SINGLE AND HORIZONTAL DOUBLE"
+  ],
+  [
+    9579,
+    "BOX DRAWINGS VERTICAL DOUBLE AND HORIZONTAL SINGLE"
+  ],
+  [
+    9580,
+    "BOX DRAWINGS DOUBLE VERTICAL AND HORIZONTAL"
+  ],
+  [
+    9581,
+    "BOX DRAWINGS LIGHT ARC DOWN AND RIGHT"
+  ],
+  [
+    9582,
+    "BOX DRAWINGS LIGHT ARC DOWN AND LEFT"
+  ],
+  [
+    9583,
+    "BOX DRAWINGS LIGHT ARC UP AND LEFT"
+  ],
+  [
+    9584,
+    "BOX DRAWINGS LIGHT ARC UP AND RIGHT"
+  ],
+  [
+    9585,
+    "BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO LOWER LEFT"
+  ],
+  [
+    9586,
+    "BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO LOWER RIGHT"
+  ],
+  [
+    9587,
+    "BOX DRAWINGS LIGHT DIAGONAL CROSS"
+  ],
+  [
+    9588,
+    "BOX DRAWINGS LIGHT LEFT"
+  ],
+  [
+    9589,
+    "BOX DRAWINGS LIGHT UP"
+  ],
+  [
+    9590,
+    "BOX DRAWINGS LIGHT RIGHT"
+  ],
+  [
+    9591,
+    "BOX DRAWINGS LIGHT DOWN"
+  ],
+  [
+    9592,
+    "BOX DRAWINGS HEAVY LEFT"
+  ],
+  [
+    9593,
+    "BOX DRAWINGS HEAVY UP"
+  ],
+  [
+    9594,
+    "BOX DRAWINGS HEAVY RIGHT"
+  ],
+  [
+    9595,
+    "BOX DRAWINGS HEAVY DOWN"
+  ],
+  [
+    9596,
+    "BOX DRAWINGS LIGHT LEFT AND HEAVY RIGHT"
+  ],
+  [
+    9597,
+    "BOX DRAWINGS LIGHT UP AND HEAVY DOWN"
+  ],
+  [
+    9598,
+    "BOX DRAWINGS HEAVY LEFT AND LIGHT RIGHT"
+  ],
+  [
+    9599,
+    "BOX DRAWINGS HEAVY UP AND LIGHT DOWN"
+  ],
+  [
+    9600,
+    "UPPER HALF BLOCK"
+  ],
+  [
+    9601,
+    "LOWER ONE EIGHTH BLOCK"
+  ],
+  [
+    9602,
+    "LOWER ONE QUARTER BLOCK"
+  ],
+  [
+    9603,
+    "LOWER THREE EIGHTHS BLOCK"
+  ],
+  [
+    9604,
+    "LOWER HALF BLOCK"
+  ],
+  [
+    9605,
+    "LOWER FIVE EIGHTHS BLOCK"
+  ],
+  [
+    9606,
+    "LOWER THREE QUARTERS BLOCK"
+  ],
+  [
+    9607,
+    "LOWER SEVEN EIGHTHS BLOCK"
+  ],
+  [
+    9608,
+    "FULL BLOCK"
+  ],
+  [
+    9609,
+    "LEFT SEVEN EIGHTHS BLOCK"
+  ],
+  [
+    9610,
+    "LEFT THREE QUARTERS BLOCK"
+  ],
+  [
+    9611,
+    "LEFT FIVE EIGHTHS BLOCK"
+  ],
+  [
+    9612,
+    "LEFT HALF BLOCK"
+  ],
+  [
+    9613,
+    "LEFT THREE EIGHTHS BLOCK"
+  ],
+  [
+    9614,
+    "LEFT ONE QUARTER BLOCK"
+  ],
+  [
+    9615,
+    "LEFT ONE EIGHTH BLOCK"
+  ],
+  [
+    9616,
+    "RIGHT HALF BLOCK"
+  ],
+  [
+    9617,
+    "LIGHT SHADE"
+  ],
+  [
+    9618,
+    "MEDIUM SHADE"
+  ],
+  [
+    9619,
+    "DARK SHADE"
+  ],
+  [
+    9620,
+    "UPPER ONE EIGHTH BLOCK"
+  ],
+  [
+    9621,
+    "RIGHT ONE EIGHTH BLOCK"
+  ],
+  [
+    9622,
+    "QUADRANT LOWER LEFT"
+  ],
+  [
+    9623,
+    "QUADRANT LOWER RIGHT"
+  ],
+  [
+    9624,
+    "QUADRANT UPPER LEFT"
+  ],
+  [
+    9625,
+    "QUADRANT UPPER LEFT AND LOWER LEFT AND LOWER RIGHT"
+  ],
+  [
+    9626,
+    "QUADRANT UPPER LEFT AND LOWER RIGHT"
+  ],
+  [
+    9627,
+    "QUADRANT UPPER LEFT AND UPPER RIGHT AND LOWER LEFT"
+  ],
+  [
+    9628,
+    "QUADRANT UPPER LEFT AND UPPER RIGHT AND LOWER RIGHT"
+  ],
+  [
+    9629,
+    "QUADRANT UPPER RIGHT"
+  ],
+  [
+    9630,
+    "QUADRANT UPPER RIGHT AND LOWER LEFT"
+  ],
+  [
+    9631,
+    "QUADRANT UPPER RIGHT AND LOWER LEFT AND LOWER RIGHT"
+  ],
+  [
+    9632,
+    "BLACK SQUARE"
+  ],
+  [
+    9633,
+    "WHITE SQUARE"
+  ],
+  [
+    9634,
+    "WHITE SQUARE WITH ROUNDED CORNERS"
+  ],
+  [
+    9635,
+    "WHITE SQUARE CONTAINING BLACK SMALL SQUARE"
+  ],
+  [
+    9636,
+    "SQUARE WITH HORIZONTAL FILL"
+  ],
+  [
+    9637,
+    "SQUARE WITH VERTICAL FILL"
+  ],
+  [
+    9638,
+    "SQUARE WITH ORTHOGONAL CROSSHATCH FILL"
+  ],
+  [
+    9639,
+    "SQUARE WITH UPPER LEFT TO LOWER RIGHT FILL"
+  ],
+  [
+    9640,
+    "SQUARE WITH UPPER RIGHT TO LOWER LEFT FILL"
+  ],
+  [
+    9641,
+    "SQUARE WITH DIAGONAL CROSSHATCH FILL"
+  ],
+  [
+    9642,
+    "BLACK SMALL SQUARE"
+  ],
+  [
+    9643,
+    "WHITE SMALL SQUARE"
+  ],
+  [
+    9644,
+    "BLACK RECTANGLE"
+  ],
+  [
+    9645,
+    "WHITE RECTANGLE"
+  ],
+  [
+    9646,
+    "BLACK VERTICAL RECTANGLE"
+  ],
+  [
+    9647,
+    "WHITE VERTICAL RECTANGLE"
+  ],
+  [
+    9648,
+    "BLACK PARALLELOGRAM"
+  ],
+  [
+    9649,
+    "WHITE PARALLELOGRAM"
+  ],
+  [
+    9650,
+    "BLACK UP-POINTING TRIANGLE"
+  ],
+  [
+    9651,
+    "WHITE UP-POINTING TRIANGLE"
+  ],
+  [
+    9652,
+    "BLACK UP-POINTING SMALL TRIANGLE"
+  ],
+  [
+    9653,
+    "WHITE UP-POINTING SMALL TRIANGLE"
+  ],
+  [
+    9654,
+    "BLACK RIGHT-POINTING TRIANGLE"
+  ],
+  [
+    9655,
+    "WHITE RIGHT-POINTING TRIANGLE"
+  ],
+  [
+    9656,
+    "BLACK RIGHT-POINTING SMALL TRIANGLE"
+  ],
+  [
+    9657,
+    "WHITE RIGHT-POINTING SMALL TRIANGLE"
+  ],
+  [
+    9658,
+    "BLACK RIGHT-POINTING POINTER"
+  ],
+  [
+    9659,
+    "WHITE RIGHT-POINTING POINTER"
+  ],
+  [
+    9660,
+    "BLACK DOWN-POINTING TRIANGLE"
+  ],
+  [
+    9661,
+    "WHITE DOWN-POINTING TRIANGLE"
+  ],
+  [
+    9662,
+    "BLACK DOWN-POINTING SMALL TRIANGLE"
+  ],
+  [
+    9663,
+    "WHITE DOWN-POINTING SMALL TRIANGLE"
+  ],
+  [
+    9664,
+    "BLACK LEFT-POINTING TRIANGLE"
+  ],
+  [
+    9665,
+    "WHITE LEFT-POINTING TRIANGLE"
+  ],
+  [
+    9666,
+    "BLACK LEFT-POINTING SMALL TRIANGLE"
+  ],
+  [
+    9667,
+    "WHITE LEFT-POINTING SMALL TRIANGLE"
+  ],
+  [
+    9668,
+    "BLACK LEFT-POINTING POINTER"
+  ],
+  [
+    9669,
+    "WHITE LEFT-POINTING POINTER"
+  ],
+  [
+    9670,
+    "BLACK DIAMOND"
+  ],
+  [
+    9671,
+    "WHITE DIAMOND"
+  ],
+  [
+    9672,
+    "WHITE DIAMOND CONTAINING BLACK SMALL DIAMOND"
+  ],
+  [
+    9673,
+    "FISHEYE"
+  ],
+  [
+    9674,
+    "LOZENGE"
+  ],
+  [
+    9675,
+    "WHITE CIRCLE"
+  ],
+  [
+    9676,
+    "DOTTED CIRCLE"
+  ],
+  [
+    9677,
+    "CIRCLE WITH VERTICAL FILL"
+  ],
+  [
+    9678,
+    "BULLSEYE"
+  ],
+  [
+    9679,
+    "BLACK CIRCLE"
+  ],
+  [
+    9680,
+    "CIRCLE WITH LEFT HALF BLACK"
+  ],
+  [
+    9681,
+    "CIRCLE WITH RIGHT HALF BLACK"
+  ],
+  [
+    9682,
+    "CIRCLE WITH LOWER HALF BLACK"
+  ],
+  [
+    9683,
+    "CIRCLE WITH UPPER HALF BLACK"
+  ],
+  [
+    9684,
+    "CIRCLE WITH UPPER RIGHT QUADRANT BLACK"
+  ],
+  [
+    9685,
+    "CIRCLE WITH ALL BUT UPPER LEFT QUADRANT BLACK"
+  ],
+  [
+    9686,
+    "LEFT HALF BLACK CIRCLE"
+  ],
+  [
+    9687,
+    "RIGHT HALF BLACK CIRCLE"
+  ],
+  [
+    9688,
+    "INVERSE BULLET"
+  ],
+  [
+    9689,
+    "INVERSE WHITE CIRCLE"
+  ],
+  [
+    9690,
+    "UPPER HALF INVERSE WHITE CIRCLE"
+  ],
+  [
+    9691,
+    "LOWER HALF INVERSE WHITE CIRCLE"
+  ],
+  [
+    9692,
+    "UPPER LEFT QUADRANT CIRCULAR ARC"
+  ],
+  [
+    9693,
+    "UPPER RIGHT QUADRANT CIRCULAR ARC"
+  ],
+  [
+    9694,
+    "LOWER RIGHT QUADRANT CIRCULAR ARC"
+  ],
+  [
+    9695,
+    "LOWER LEFT QUADRANT CIRCULAR ARC"
+  ],
+  [
+    9696,
+    "UPPER HALF CIRCLE"
+  ],
+  [
+    9697,
+    "LOWER HALF CIRCLE"
+  ],
+  [
+    9698,
+    "BLACK LOWER RIGHT TRIANGLE"
+  ],
+  [
+    9699,
+    "BLACK LOWER LEFT TRIANGLE"
+  ],
+  [
+    9700,
+    "BLACK UPPER LEFT TRIANGLE"
+  ],
+  [
+    9701,
+    "BLACK UPPER RIGHT TRIANGLE"
+  ],
+  [
+    9702,
+    "WHITE BULLET"
+  ],
+  [
+    9703,
+    "SQUARE WITH LEFT HALF BLACK"
+  ],
+  [
+    9704,
+    "SQUARE WITH RIGHT HALF BLACK"
+  ],
+  [
+    9705,
+    "SQUARE WITH UPPER LEFT DIAGONAL HALF BLACK"
+  ],
+  [
+    9706,
+    "SQUARE WITH LOWER RIGHT DIAGONAL HALF BLACK"
+  ],
+  [
+    9707,
+    "WHITE SQUARE WITH VERTICAL BISECTING LINE"
+  ],
+  [
+    9708,
+    "WHITE UP-POINTING TRIANGLE WITH DOT"
+  ],
+  [
+    9709,
+    "UP-POINTING TRIANGLE WITH LEFT HALF BLACK"
+  ],
+  [
+    9710,
+    "UP-POINTING TRIANGLE WITH RIGHT HALF BLACK"
+  ],
+  [
+    9711,
+    "LARGE CIRCLE"
+  ],
+  [
+    9712,
+    "WHITE SQUARE WITH UPPER LEFT QUADRANT"
+  ],
+  [
+    9713,
+    "WHITE SQUARE WITH LOWER LEFT QUADRANT"
+  ],
+  [
+    9714,
+    "WHITE SQUARE WITH LOWER RIGHT QUADRANT"
+  ],
+  [
+    9715,
+    "WHITE SQUARE WITH UPPER RIGHT QUADRANT"
+  ],
+  [
+    9716,
+    "WHITE CIRCLE WITH UPPER LEFT QUADRANT"
+  ],
+  [
+    9717,
+    "WHITE CIRCLE WITH LOWER LEFT QUADRANT"
+  ],
+  [
+    9718,
+    "WHITE CIRCLE WITH LOWER RIGHT QUADRANT"
+  ],
+  [
+    9719,
+    "WHITE CIRCLE WITH UPPER RIGHT QUADRANT"
+  ],
+  [
+    9720,
+    "UPPER LEFT TRIANGLE"
+  ],
+  [
+    9721,
+    "UPPER RIGHT TRIANGLE"
+  ],
+  [
+    9722,
+    "LOWER LEFT TRIANGLE"
+  ],
+  [
+    9723,
+    "WHITE MEDIUM SQUARE"
+  ],
+  [
+    9724,
+    "BLACK MEDIUM SQUARE"
+  ],
+  [
+    9725,
+    "WHITE MEDIUM SMALL SQUARE"
+  ],
+  [
+    9726,
+    "BLACK MEDIUM SMALL SQUARE"
+  ],
+  [
+    9727,
+    "LOWER RIGHT TRIANGLE"
+  ],
+  [
+    9728,
+    "BLACK SUN WITH RAYS"
+  ],
+  [
+    9729,
+    "CLOUD"
+  ],
+  [
+    9730,
+    "UMBRELLA"
+  ],
+  [
+    9731,
+    "SNOWMAN"
+  ],
+  [
+    9732,
+    "COMET"
+  ],
+  [
+    9733,
+    "BLACK STAR"
+  ],
+  [
+    9734,
+    "WHITE STAR"
+  ],
+  [
+    9735,
+    "LIGHTNING"
+  ],
+  [
+    9736,
+    "THUNDERSTORM"
+  ],
+  [
+    9737,
+    "SUN"
+  ],
+  [
+    9738,
+    "ASCENDING NODE"
+  ],
+  [
+    9739,
+    "DESCENDING NODE"
+  ],
+  [
+    9740,
+    "CONJUNCTION"
+  ],
+  [
+    9741,
+    "OPPOSITION"
+  ],
+  [
+    9742,
+    "BLACK TELEPHONE"
+  ],
+  [
+    9743,
+    "WHITE TELEPHONE"
+  ],
+  [
+    9744,
+    "BALLOT BOX"
+  ],
+  [
+    9745,
+    "BALLOT BOX WITH CHECK"
+  ],
+  [
+    9746,
+    "BALLOT BOX WITH X"
+  ],
+  [
+    9747,
+    "SALTIRE"
+  ],
+  [
+    9748,
+    "UMBRELLA WITH RAIN DROPS"
+  ],
+  [
+    9749,
+    "HOT BEVERAGE"
+  ],
+  [
+    9750,
+    "WHITE SHOGI PIECE"
+  ],
+  [
+    9751,
+    "BLACK SHOGI PIECE"
+  ],
+  [
+    9752,
+    "SHAMROCK"
+  ],
+  [
+    9753,
+    "REVERSED ROTATED FLORAL HEART BULLET"
+  ],
+  [
+    9754,
+    "BLACK LEFT POINTING INDEX"
+  ],
+  [
+    9755,
+    "BLACK RIGHT POINTING INDEX"
+  ],
+  [
+    9756,
+    "WHITE LEFT POINTING INDEX"
+  ],
+  [
+    9757,
+    "WHITE UP POINTING INDEX"
+  ],
+  [
+    9758,
+    "WHITE RIGHT POINTING INDEX"
+  ],
+  [
+    9759,
+    "WHITE DOWN POINTING INDEX"
+  ],
+  [
+    9760,
+    "SKULL AND CROSSBONES"
+  ],
+  [
+    9761,
+    "CAUTION SIGN"
+  ],
+  [
+    9762,
+    "RADIOACTIVE SIGN"
+  ],
+  [
+    9763,
+    "BIOHAZARD SIGN"
+  ],
+  [
+    9764,
+    "CADUCEUS"
+  ],
+  [
+    9765,
+    "ANKH"
+  ],
+  [
+    9766,
+    "ORTHODOX CROSS"
+  ],
+  [
+    9767,
+    "CHI RHO"
+  ],
+  [
+    9768,
+    "CROSS OF LORRAINE"
+  ],
+  [
+    9769,
+    "CROSS OF JERUSALEM"
+  ],
+  [
+    9770,
+    "STAR AND CRESCENT"
+  ],
+  [
+    9771,
+    "FARSI SYMBOL"
+  ],
+  [
+    9772,
+    "ADI SHAKTI"
+  ],
+  [
+    9773,
+    "HAMMER AND SICKLE"
+  ],
+  [
+    9774,
+    "PEACE SYMBOL"
+  ],
+  [
+    9775,
+    "YIN YANG"
+  ],
+  [
+    9776,
+    "TRIGRAM FOR HEAVEN"
+  ],
+  [
+    9777,
+    "TRIGRAM FOR LAKE"
+  ],
+  [
+    9778,
+    "TRIGRAM FOR FIRE"
+  ],
+  [
+    9779,
+    "TRIGRAM FOR THUNDER"
+  ],
+  [
+    9780,
+    "TRIGRAM FOR WIND"
+  ],
+  [
+    9781,
+    "TRIGRAM FOR WATER"
+  ],
+  [
+    9782,
+    "TRIGRAM FOR MOUNTAIN"
+  ],
+  [
+    9783,
+    "TRIGRAM FOR EARTH"
+  ],
+  [
+    9784,
+    "WHEEL OF DHARMA"
+  ],
+  [
+    9785,
+    "WHITE FROWNING FACE"
+  ],
+  [
+    9786,
+    "WHITE SMILING FACE"
+  ],
+  [
+    9787,
+    "BLACK SMILING FACE"
+  ],
+  [
+    9788,
+    "WHITE SUN WITH RAYS"
+  ],
+  [
+    9789,
+    "FIRST QUARTER MOON"
+  ],
+  [
+    9790,
+    "LAST QUARTER MOON"
+  ],
+  [
+    9791,
+    "MERCURY"
+  ],
+  [
+    9792,
+    "FEMALE SIGN"
+  ],
+  [
+    9793,
+    "EARTH"
+  ],
+  [
+    9794,
+    "MALE SIGN"
+  ],
+  [
+    9795,
+    "JUPITER"
+  ],
+  [
+    9796,
+    "SATURN"
+  ],
+  [
+    9797,
+    "URANUS"
+  ],
+  [
+    9798,
+    "NEPTUNE"
+  ],
+  [
+    9799,
+    "PLUTO"
+  ],
+  [
+    9800,
+    "ARIES"
+  ],
+  [
+    9801,
+    "TAURUS"
+  ],
+  [
+    9802,
+    "GEMINI"
+  ],
+  [
+    9803,
+    "CANCER"
+  ],
+  [
+    9804,
+    "LEO"
+  ],
+  [
+    9805,
+    "VIRGO"
+  ],
+  [
+    9806,
+    "LIBRA"
+  ],
+  [
+    9807,
+    "SCORPIUS"
+  ],
+  [
+    9808,
+    "SAGITTARIUS"
+  ],
+  [
+    9809,
+    "CAPRICORN"
+  ],
+  [
+    9810,
+    "AQUARIUS"
+  ],
+  [
+    9811,
+    "PISCES"
+  ],
+  [
+    9812,
+    "WHITE CHESS KING"
+  ],
+  [
+    9813,
+    "WHITE CHESS QUEEN"
+  ],
+  [
+    9814,
+    "WHITE CHESS ROOK"
+  ],
+  [
+    9815,
+    "WHITE CHESS BISHOP"
+  ],
+  [
+    9816,
+    "WHITE CHESS KNIGHT"
+  ],
+  [
+    9817,
+    "WHITE CHESS PAWN"
+  ],
+  [
+    9818,
+    "BLACK CHESS KING"
+  ],
+  [
+    9819,
+    "BLACK CHESS QUEEN"
+  ],
+  [
+    9820,
+    "BLACK CHESS ROOK"
+  ],
+  [
+    9821,
+    "BLACK CHESS BISHOP"
+  ],
+  [
+    9822,
+    "BLACK CHESS KNIGHT"
+  ],
+  [
+    9823,
+    "BLACK CHESS PAWN"
+  ],
+  [
+    9824,
+    "BLACK SPADE SUIT"
+  ],
+  [
+    9825,
+    "WHITE HEART SUIT"
+  ],
+  [
+    9826,
+    "WHITE DIAMOND SUIT"
+  ],
+  [
+    9827,
+    "BLACK CLUB SUIT"
+  ],
+  [
+    9828,
+    "WHITE SPADE SUIT"
+  ],
+  [
+    9829,
+    "BLACK HEART SUIT"
+  ],
+  [
+    9830,
+    "BLACK DIAMOND SUIT"
+  ],
+  [
+    9831,
+    "WHITE CLUB SUIT"
+  ],
+  [
+    9832,
+    "HOT SPRINGS"
+  ],
+  [
+    9833,
+    "QUARTER NOTE"
+  ],
+  [
+    9834,
+    "EIGHTH NOTE"
+  ],
+  [
+    9835,
+    "BEAMED EIGHTH NOTES"
+  ],
+  [
+    9836,
+    "BEAMED SIXTEENTH NOTES"
+  ],
+  [
+    9837,
+    "MUSIC FLAT SIGN"
+  ],
+  [
+    9838,
+    "MUSIC NATURAL SIGN"
+  ],
+  [
+    9839,
+    "MUSIC SHARP SIGN"
+  ],
+  [
+    9840,
+    "WEST SYRIAC CROSS"
+  ],
+  [
+    9841,
+    "EAST SYRIAC CROSS"
+  ],
+  [
+    9842,
+    "UNIVERSAL RECYCLING SYMBOL"
+  ],
+  [
+    9843,
+    "RECYCLING SYMBOL FOR TYPE-1 PLASTICS"
+  ],
+  [
+    9844,
+    "RECYCLING SYMBOL FOR TYPE-2 PLASTICS"
+  ],
+  [
+    9845,
+    "RECYCLING SYMBOL FOR TYPE-3 PLASTICS"
+  ],
+  [
+    9846,
+    "RECYCLING SYMBOL FOR TYPE-4 PLASTICS"
+  ],
+  [
+    9847,
+    "RECYCLING SYMBOL FOR TYPE-5 PLASTICS"
+  ],
+  [
+    9848,
+    "RECYCLING SYMBOL FOR TYPE-6 PLASTICS"
+  ],
+  [
+    9849,
+    "RECYCLING SYMBOL FOR TYPE-7 PLASTICS"
+  ],
+  [
+    9850,
+    "RECYCLING SYMBOL FOR GENERIC MATERIALS"
+  ],
+  [
+    9851,
+    "BLACK UNIVERSAL RECYCLING SYMBOL"
+  ],
+  [
+    9852,
+    "RECYCLED PAPER SYMBOL"
+  ],
+  [
+    9853,
+    "PARTIALLY-RECYCLED PAPER SYMBOL"
+  ],
+  [
+    9854,
+    "PERMANENT PAPER SIGN"
+  ],
+  [
+    9855,
+    "WHEELCHAIR SYMBOL"
+  ],
+  [
+    9856,
+    "DIE FACE-1"
+  ],
+  [
+    9857,
+    "DIE FACE-2"
+  ],
+  [
+    9858,
+    "DIE FACE-3"
+  ],
+  [
+    9859,
+    "DIE FACE-4"
+  ],
+  [
+    9860,
+    "DIE FACE-5"
+  ],
+  [
+    9861,
+    "DIE FACE-6"
+  ],
+  [
+    9862,
+    "WHITE CIRCLE WITH DOT RIGHT"
+  ],
+  [
+    9863,
+    "WHITE CIRCLE WITH TWO DOTS"
+  ],
+  [
+    9864,
+    "BLACK CIRCLE WITH WHITE DOT RIGHT"
+  ],
+  [
+    9865,
+    "BLACK CIRCLE WITH TWO WHITE DOTS"
+  ],
+  [
+    9866,
+    "MONOGRAM FOR YANG"
+  ],
+  [
+    9867,
+    "MONOGRAM FOR YIN"
+  ],
+  [
+    9868,
+    "DIGRAM FOR GREATER YANG"
+  ],
+  [
+    9869,
+    "DIGRAM FOR LESSER YIN"
+  ],
+  [
+    9870,
+    "DIGRAM FOR LESSER YANG"
+  ],
+  [
+    9871,
+    "DIGRAM FOR GREATER YIN"
+  ],
+  [
+    9872,
+    "WHITE FLAG"
+  ],
+  [
+    9873,
+    "BLACK FLAG"
+  ],
+  [
+    9874,
+    "HAMMER AND PICK"
+  ],
+  [
+    9875,
+    "ANCHOR"
+  ],
+  [
+    9876,
+    "CROSSED SWORDS"
+  ],
+  [
+    9877,
+    "STAFF OF AESCULAPIUS"
+  ],
+  [
+    9878,
+    "SCALES"
+  ],
+  [
+    9879,
+    "ALEMBIC"
+  ],
+  [
+    9880,
+    "FLOWER"
+  ],
+  [
+    9881,
+    "GEAR"
+  ],
+  [
+    9882,
+    "STAFF OF HERMES"
+  ],
+  [
+    9883,
+    "ATOM SYMBOL"
+  ],
+  [
+    9884,
+    "FLEUR-DE-LIS"
+  ],
+  [
+    9885,
+    "OUTLINED WHITE STAR"
+  ],
+  [
+    9886,
+    "THREE LINES CONVERGING RIGHT"
+  ],
+  [
+    9887,
+    "THREE LINES CONVERGING LEFT"
+  ],
+  [
+    9888,
+    "WARNING SIGN"
+  ],
+  [
+    9889,
+    "HIGH VOLTAGE SIGN"
+  ],
+  [
+    9890,
+    "DOUBLED FEMALE SIGN"
+  ],
+  [
+    9891,
+    "DOUBLED MALE SIGN"
+  ],
+  [
+    9892,
+    "INTERLOCKED FEMALE AND MALE SIGN"
+  ],
+  [
+    9893,
+    "MALE AND FEMALE SIGN"
+  ],
+  [
+    9894,
+    "MALE WITH STROKE SIGN"
+  ],
+  [
+    9895,
+    "MALE WITH STROKE AND MALE AND FEMALE SIGN"
+  ],
+  [
+    9896,
+    "VERTICAL MALE WITH STROKE SIGN"
+  ],
+  [
+    9897,
+    "HORIZONTAL MALE WITH STROKE SIGN"
+  ],
+  [
+    9898,
+    "MEDIUM WHITE CIRCLE"
+  ],
+  [
+    9899,
+    "MEDIUM BLACK CIRCLE"
+  ],
+  [
+    9900,
+    "MEDIUM SMALL WHITE CIRCLE"
+  ],
+  [
+    9901,
+    "MARRIAGE SYMBOL"
+  ],
+  [
+    9902,
+    "DIVORCE SYMBOL"
+  ],
+  [
+    9903,
+    "UNMARRIED PARTNERSHIP SYMBOL"
+  ],
+  [
+    9904,
+    "COFFIN"
+  ],
+  [
+    9905,
+    "FUNERAL URN"
+  ],
+  [
+    9906,
+    "NEUTER"
+  ],
+  [
+    9907,
+    "CERES"
+  ],
+  [
+    9908,
+    "PALLAS"
+  ],
+  [
+    9909,
+    "JUNO"
+  ],
+  [
+    9910,
+    "VESTA"
+  ],
+  [
+    9911,
+    "CHIRON"
+  ],
+  [
+    9912,
+    "BLACK MOON LILITH"
+  ],
+  [
+    9913,
+    "SEXTILE"
+  ],
+  [
+    9914,
+    "SEMISEXTILE"
+  ],
+  [
+    9915,
+    "QUINCUNX"
+  ],
+  [
+    9916,
+    "SESQUIQUADRATE"
+  ],
+  [
+    9917,
+    "SOCCER BALL"
+  ],
+  [
+    9918,
+    "BASEBALL"
+  ],
+  [
+    9919,
+    "SQUARED KEY"
+  ],
+  [
+    9920,
+    "WHITE DRAUGHTS MAN"
+  ],
+  [
+    9921,
+    "WHITE DRAUGHTS KING"
+  ],
+  [
+    9922,
+    "BLACK DRAUGHTS MAN"
+  ],
+  [
+    9923,
+    "BLACK DRAUGHTS KING"
+  ],
+  [
+    9924,
+    "SNOWMAN WITHOUT SNOW"
+  ],
+  [
+    9925,
+    "SUN BEHIND CLOUD"
+  ],
+  [
+    9926,
+    "RAIN"
+  ],
+  [
+    9927,
+    "BLACK SNOWMAN"
+  ],
+  [
+    9928,
+    "THUNDER CLOUD AND RAIN"
+  ],
+  [
+    9929,
+    "TURNED WHITE SHOGI PIECE"
+  ],
+  [
+    9930,
+    "TURNED BLACK SHOGI PIECE"
+  ],
+  [
+    9931,
+    "WHITE DIAMOND IN SQUARE"
+  ],
+  [
+    9932,
+    "CROSSING LANES"
+  ],
+  [
+    9933,
+    "DISABLED CAR"
+  ],
+  [
+    9934,
+    "OPHIUCHUS"
+  ],
+  [
+    9935,
+    "PICK"
+  ],
+  [
+    9936,
+    "CAR SLIDING"
+  ],
+  [
+    9937,
+    "HELMET WITH WHITE CROSS"
+  ],
+  [
+    9938,
+    "CIRCLED CROSSING LANES"
+  ],
+  [
+    9939,
+    "CHAINS"
+  ],
+  [
+    9940,
+    "NO ENTRY"
+  ],
+  [
+    9941,
+    "ALTERNATE ONE-WAY LEFT WAY TRAFFIC"
+  ],
+  [
+    9942,
+    "BLACK TWO-WAY LEFT WAY TRAFFIC"
+  ],
+  [
+    9943,
+    "WHITE TWO-WAY LEFT WAY TRAFFIC"
+  ],
+  [
+    9944,
+    "BLACK LEFT LANE MERGE"
+  ],
+  [
+    9945,
+    "WHITE LEFT LANE MERGE"
+  ],
+  [
+    9946,
+    "DRIVE SLOW SIGN"
+  ],
+  [
+    9947,
+    "HEAVY WHITE DOWN-POINTING TRIANGLE"
+  ],
+  [
+    9948,
+    "LEFT CLOSED ENTRY"
+  ],
+  [
+    9949,
+    "SQUARED SALTIRE"
+  ],
+  [
+    9950,
+    "FALLING DIAGONAL IN WHITE CIRCLE IN BLACK SQUARE"
+  ],
+  [
+    9951,
+    "BLACK TRUCK"
+  ],
+  [
+    9952,
+    "RESTRICTED LEFT ENTRY-1"
+  ],
+  [
+    9953,
+    "RESTRICTED LEFT ENTRY-2"
+  ],
+  [
+    9954,
+    "ASTRONOMICAL SYMBOL FOR URANUS"
+  ],
+  [
+    9955,
+    "HEAVY CIRCLE WITH STROKE AND TWO DOTS ABOVE"
+  ],
+  [
+    9956,
+    "PENTAGRAM"
+  ],
+  [
+    9957,
+    "RIGHT-HANDED INTERLACED PENTAGRAM"
+  ],
+  [
+    9958,
+    "LEFT-HANDED INTERLACED PENTAGRAM"
+  ],
+  [
+    9959,
+    "INVERTED PENTAGRAM"
+  ],
+  [
+    9960,
+    "BLACK CROSS ON SHIELD"
+  ],
+  [
+    9961,
+    "SHINTO SHRINE"
+  ],
+  [
+    9962,
+    "CHURCH"
+  ],
+  [
+    9963,
+    "CASTLE"
+  ],
+  [
+    9964,
+    "HISTORIC SITE"
+  ],
+  [
+    9965,
+    "GEAR WITHOUT HUB"
+  ],
+  [
+    9966,
+    "GEAR WITH HANDLES"
+  ],
+  [
+    9967,
+    "MAP SYMBOL FOR LIGHTHOUSE"
+  ],
+  [
+    9968,
+    "MOUNTAIN"
+  ],
+  [
+    9969,
+    "UMBRELLA ON GROUND"
+  ],
+  [
+    9970,
+    "FOUNTAIN"
+  ],
+  [
+    9971,
+    "FLAG IN HOLE"
+  ],
+  [
+    9972,
+    "FERRY"
+  ],
+  [
+    9973,
+    "SAILBOAT"
+  ],
+  [
+    9974,
+    "SQUARE FOUR CORNERS"
+  ],
+  [
+    9975,
+    "SKIER"
+  ],
+  [
+    9976,
+    "ICE SKATE"
+  ],
+  [
+    9977,
+    "PERSON WITH BALL"
+  ],
+  [
+    9978,
+    "TENT"
+  ],
+  [
+    9979,
+    "JAPANESE BANK SYMBOL"
+  ],
+  [
+    9980,
+    "HEADSTONE GRAVEYARD SYMBOL"
+  ],
+  [
+    9981,
+    "FUEL PUMP"
+  ],
+  [
+    9982,
+    "CUP ON BLACK SQUARE"
+  ],
+  [
+    9983,
+    "WHITE FLAG WITH HORIZONTAL MIDDLE BLACK STRIPE"
+  ],
+  [
+    9984,
+    "BLACK SAFETY SCISSORS"
+  ],
+  [
+    9985,
+    "UPPER BLADE SCISSORS"
+  ],
+  [
+    9986,
+    "BLACK SCISSORS"
+  ],
+  [
+    9987,
+    "LOWER BLADE SCISSORS"
+  ],
+  [
+    9988,
+    "WHITE SCISSORS"
+  ],
+  [
+    9989,
+    "WHITE HEAVY CHECK MARK"
+  ],
+  [
+    9990,
+    "TELEPHONE LOCATION SIGN"
+  ],
+  [
+    9991,
+    "TAPE DRIVE"
+  ],
+  [
+    9992,
+    "AIRPLANE"
+  ],
+  [
+    9993,
+    "ENVELOPE"
+  ],
+  [
+    9994,
+    "RAISED FIST"
+  ],
+  [
+    9995,
+    "RAISED HAND"
+  ],
+  [
+    9996,
+    "VICTORY HAND"
+  ],
+  [
+    9997,
+    "WRITING HAND"
+  ],
+  [
+    9998,
+    "LOWER RIGHT PENCIL"
+  ],
+  [
+    9999,
+    "PENCIL"
+  ],
+  [
+    10000,
+    "UPPER RIGHT PENCIL"
+  ],
+  [
+    10001,
+    "WHITE NIB"
+  ],
+  [
+    10002,
+    "BLACK NIB"
+  ],
+  [
+    10003,
+    "CHECK MARK"
+  ],
+  [
+    10004,
+    "HEAVY CHECK MARK"
+  ],
+  [
+    10005,
+    "MULTIPLICATION X"
+  ],
+  [
+    10006,
+    "HEAVY MULTIPLICATION X"
+  ],
+  [
+    10007,
+    "BALLOT X"
+  ],
+  [
+    10008,
+    "HEAVY BALLOT X"
+  ],
+  [
+    10009,
+    "OUTLINED GREEK CROSS"
+  ],
+  [
+    10010,
+    "HEAVY GREEK CROSS"
+  ],
+  [
+    10011,
+    "OPEN CENTRE CROSS"
+  ],
+  [
+    10012,
+    "HEAVY OPEN CENTRE CROSS"
+  ],
+  [
+    10013,
+    "LATIN CROSS"
+  ],
+  [
+    10014,
+    "SHADOWED WHITE LATIN CROSS"
+  ],
+  [
+    10015,
+    "OUTLINED LATIN CROSS"
+  ],
+  [
+    10016,
+    "MALTESE CROSS"
+  ],
+  [
+    10017,
+    "STAR OF DAVID"
+  ],
+  [
+    10018,
+    "FOUR TEARDROP-SPOKED ASTERISK"
+  ],
+  [
+    10019,
+    "FOUR BALLOON-SPOKED ASTERISK"
+  ],
+  [
+    10020,
+    "HEAVY FOUR BALLOON-SPOKED ASTERISK"
+  ],
+  [
+    10021,
+    "FOUR CLUB-SPOKED ASTERISK"
+  ],
+  [
+    10022,
+    "BLACK FOUR POINTED STAR"
+  ],
+  [
+    10023,
+    "WHITE FOUR POINTED STAR"
+  ],
+  [
+    10024,
+    "SPARKLES"
+  ],
+  [
+    10025,
+    "STRESS OUTLINED WHITE STAR"
+  ],
+  [
+    10026,
+    "CIRCLED WHITE STAR"
+  ],
+  [
+    10027,
+    "OPEN CENTRE BLACK STAR"
+  ],
+  [
+    10028,
+    "BLACK CENTRE WHITE STAR"
+  ],
+  [
+    10029,
+    "OUTLINED BLACK STAR"
+  ],
+  [
+    10030,
+    "HEAVY OUTLINED BLACK STAR"
+  ],
+  [
+    10031,
+    "PINWHEEL STAR"
+  ],
+  [
+    10032,
+    "SHADOWED WHITE STAR"
+  ],
+  [
+    10033,
+    "HEAVY ASTERISK"
+  ],
+  [
+    10034,
+    "OPEN CENTRE ASTERISK"
+  ],
+  [
+    10035,
+    "EIGHT SPOKED ASTERISK"
+  ],
+  [
+    10036,
+    "EIGHT POINTED BLACK STAR"
+  ],
+  [
+    10037,
+    "EIGHT POINTED PINWHEEL STAR"
+  ],
+  [
+    10038,
+    "SIX POINTED BLACK STAR"
+  ],
+  [
+    10039,
+    "EIGHT POINTED RECTILINEAR BLACK STAR"
+  ],
+  [
+    10040,
+    "HEAVY EIGHT POINTED RECTILINEAR BLACK STAR"
+  ],
+  [
+    10041,
+    "TWELVE POINTED BLACK STAR"
+  ],
+  [
+    10042,
+    "SIXTEEN POINTED ASTERISK"
+  ],
+  [
+    10043,
+    "TEARDROP-SPOKED ASTERISK"
+  ],
+  [
+    10044,
+    "OPEN CENTRE TEARDROP-SPOKED ASTERISK"
+  ],
+  [
+    10045,
+    "HEAVY TEARDROP-SPOKED ASTERISK"
+  ],
+  [
+    10046,
+    "SIX PETALLED BLACK AND WHITE FLORETTE"
+  ],
+  [
+    10047,
+    "BLACK FLORETTE"
+  ],
+  [
+    10048,
+    "WHITE FLORETTE"
+  ],
+  [
+    10049,
+    "EIGHT PETALLED OUTLINED BLACK FLORETTE"
+  ],
+  [
+    10050,
+    "CIRCLED OPEN CENTRE EIGHT POINTED STAR"
+  ],
+  [
+    10051,
+    "HEAVY TEARDROP-SPOKED PINWHEEL ASTERISK"
+  ],
+  [
+    10052,
+    "SNOWFLAKE"
+  ],
+  [
+    10053,
+    "TIGHT TRIFOLIATE SNOWFLAKE"
+  ],
+  [
+    10054,
+    "HEAVY CHEVRON SNOWFLAKE"
+  ],
+  [
+    10055,
+    "SPARKLE"
+  ],
+  [
+    10056,
+    "HEAVY SPARKLE"
+  ],
+  [
+    10057,
+    "BALLOON-SPOKED ASTERISK"
+  ],
+  [
+    10058,
+    "EIGHT TEARDROP-SPOKED PROPELLER ASTERISK"
+  ],
+  [
+    10059,
+    "HEAVY EIGHT TEARDROP-SPOKED PROPELLER ASTERISK"
+  ],
+  [
+    10060,
+    "CROSS MARK"
+  ],
+  [
+    10061,
+    "SHADOWED WHITE CIRCLE"
+  ],
+  [
+    10062,
+    "NEGATIVE SQUARED CROSS MARK"
+  ],
+  [
+    10063,
+    "LOWER RIGHT DROP-SHADOWED WHITE SQUARE"
+  ],
+  [
+    10064,
+    "UPPER RIGHT DROP-SHADOWED WHITE SQUARE"
+  ],
+  [
+    10065,
+    "LOWER RIGHT SHADOWED WHITE SQUARE"
+  ],
+  [
+    10066,
+    "UPPER RIGHT SHADOWED WHITE SQUARE"
+  ],
+  [
+    10067,
+    "BLACK QUESTION MARK ORNAMENT"
+  ],
+  [
+    10068,
+    "WHITE QUESTION MARK ORNAMENT"
+  ],
+  [
+    10069,
+    "WHITE EXCLAMATION MARK ORNAMENT"
+  ],
+  [
+    10070,
+    "BLACK DIAMOND MINUS WHITE X"
+  ],
+  [
+    10071,
+    "HEAVY EXCLAMATION MARK SYMBOL"
+  ],
+  [
+    10072,
+    "LIGHT VERTICAL BAR"
+  ],
+  [
+    10073,
+    "MEDIUM VERTICAL BAR"
+  ],
+  [
+    10074,
+    "HEAVY VERTICAL BAR"
+  ],
+  [
+    10075,
+    "HEAVY SINGLE TURNED COMMA QUOTATION MARK ORNAMENT"
+  ],
+  [
+    10076,
+    "HEAVY SINGLE COMMA QUOTATION MARK ORNAMENT"
+  ],
+  [
+    10077,
+    "HEAVY DOUBLE TURNED COMMA QUOTATION MARK ORNAMENT"
+  ],
+  [
+    10078,
+    "HEAVY DOUBLE COMMA QUOTATION MARK ORNAMENT"
+  ],
+  [
+    10079,
+    "HEAVY LOW SINGLE COMMA QUOTATION MARK ORNAMENT"
+  ],
+  [
+    10080,
+    "HEAVY LOW DOUBLE COMMA QUOTATION MARK ORNAMENT"
+  ],
+  [
+    10081,
+    "CURVED STEM PARAGRAPH SIGN ORNAMENT"
+  ],
+  [
+    10082,
+    "HEAVY EXCLAMATION MARK ORNAMENT"
+  ],
+  [
+    10083,
+    "HEAVY HEART EXCLAMATION MARK ORNAMENT"
+  ],
+  [
+    10084,
+    "HEAVY BLACK HEART"
+  ],
+  [
+    10085,
+    "ROTATED HEAVY BLACK HEART BULLET"
+  ],
+  [
+    10086,
+    "FLORAL HEART"
+  ],
+  [
+    10087,
+    "ROTATED FLORAL HEART BULLET"
+  ],
+  [
+    10088,
+    "MEDIUM LEFT PARENTHESIS ORNAMENT"
+  ],
+  [
+    10089,
+    "MEDIUM RIGHT PARENTHESIS ORNAMENT"
+  ],
+  [
+    10090,
+    "MEDIUM FLATTENED LEFT PARENTHESIS ORNAMENT"
+  ],
+  [
+    10091,
+    "MEDIUM FLATTENED RIGHT PARENTHESIS ORNAMENT"
+  ],
+  [
+    10092,
+    "MEDIUM LEFT-POINTING ANGLE BRACKET ORNAMENT"
+  ],
+  [
+    10093,
+    "MEDIUM RIGHT-POINTING ANGLE BRACKET ORNAMENT"
+  ],
+  [
+    10094,
+    "HEAVY LEFT-POINTING ANGLE QUOTATION MARK ORNAMENT"
+  ],
+  [
+    10095,
+    "HEAVY RIGHT-POINTING ANGLE QUOTATION MARK ORNAMENT"
+  ],
+  [
+    10096,
+    "HEAVY LEFT-POINTING ANGLE BRACKET ORNAMENT"
+  ],
+  [
+    10097,
+    "HEAVY RIGHT-POINTING ANGLE BRACKET ORNAMENT"
+  ],
+  [
+    10098,
+    "LIGHT LEFT TORTOISE SHELL BRACKET ORNAMENT"
+  ],
+  [
+    10099,
+    "LIGHT RIGHT TORTOISE SHELL BRACKET ORNAMENT"
+  ],
+  [
+    10100,
+    "MEDIUM LEFT CURLY BRACKET ORNAMENT"
+  ],
+  [
+    10101,
+    "MEDIUM RIGHT CURLY BRACKET ORNAMENT"
+  ],
+  [
+    10102,
+    "DINGBAT NEGATIVE CIRCLED DIGIT ONE"
+  ],
+  [
+    10103,
+    "DINGBAT NEGATIVE CIRCLED DIGIT TWO"
+  ],
+  [
+    10104,
+    "DINGBAT NEGATIVE CIRCLED DIGIT THREE"
+  ],
+  [
+    10105,
+    "DINGBAT NEGATIVE CIRCLED DIGIT FOUR"
+  ],
+  [
+    10106,
+    "DINGBAT NEGATIVE CIRCLED DIGIT FIVE"
+  ],
+  [
+    10107,
+    "DINGBAT NEGATIVE CIRCLED DIGIT SIX"
+  ],
+  [
+    10108,
+    "DINGBAT NEGATIVE CIRCLED DIGIT SEVEN"
+  ],
+  [
+    10109,
+    "DINGBAT NEGATIVE CIRCLED DIGIT EIGHT"
+  ],
+  [
+    10110,
+    "DINGBAT NEGATIVE CIRCLED DIGIT NINE"
+  ],
+  [
+    10111,
+    "DINGBAT NEGATIVE CIRCLED NUMBER TEN"
+  ],
+  [
+    10112,
+    "DINGBAT CIRCLED SANS-SERIF DIGIT ONE"
+  ],
+  [
+    10113,
+    "DINGBAT CIRCLED SANS-SERIF DIGIT TWO"
+  ],
+  [
+    10114,
+    "DINGBAT CIRCLED SANS-SERIF DIGIT THREE"
+  ],
+  [
+    10115,
+    "DINGBAT CIRCLED SANS-SERIF DIGIT FOUR"
+  ],
+  [
+    10116,
+    "DINGBAT CIRCLED SANS-SERIF DIGIT FIVE"
+  ],
+  [
+    10117,
+    "DINGBAT CIRCLED SANS-SERIF DIGIT SIX"
+  ],
+  [
+    10118,
+    "DINGBAT CIRCLED SANS-SERIF DIGIT SEVEN"
+  ],
+  [
+    10119,
+    "DINGBAT CIRCLED SANS-SERIF DIGIT EIGHT"
+  ],
+  [
+    10120,
+    "DINGBAT CIRCLED SANS-SERIF DIGIT NINE"
+  ],
+  [
+    10121,
+    "DINGBAT CIRCLED SANS-SERIF NUMBER TEN"
+  ],
+  [
+    10122,
+    "DINGBAT NEGATIVE CIRCLED SANS-SERIF DIGIT ONE"
+  ],
+  [
+    10123,
+    "DINGBAT NEGATIVE CIRCLED SANS-SERIF DIGIT TWO"
+  ],
+  [
+    10124,
+    "DINGBAT NEGATIVE CIRCLED SANS-SERIF DIGIT THREE"
+  ],
+  [
+    10125,
+    "DINGBAT NEGATIVE CIRCLED SANS-SERIF DIGIT FOUR"
+  ],
+  [
+    10126,
+    "DINGBAT NEGATIVE CIRCLED SANS-SERIF DIGIT FIVE"
+  ],
+  [
+    10127,
+    "DINGBAT NEGATIVE CIRCLED SANS-SERIF DIGIT SIX"
+  ],
+  [
+    10128,
+    "DINGBAT NEGATIVE CIRCLED SANS-SERIF DIGIT SEVEN"
+  ],
+  [
+    10129,
+    "DINGBAT NEGATIVE CIRCLED SANS-SERIF DIGIT EIGHT"
+  ],
+  [
+    10130,
+    "DINGBAT NEGATIVE CIRCLED SANS-SERIF DIGIT NINE"
+  ],
+  [
+    10131,
+    "DINGBAT NEGATIVE CIRCLED SANS-SERIF NUMBER TEN"
+  ],
+  [
+    10132,
+    "HEAVY WIDE-HEADED RIGHTWARDS ARROW"
+  ],
+  [
+    10133,
+    "HEAVY PLUS SIGN"
+  ],
+  [
+    10134,
+    "HEAVY MINUS SIGN"
+  ],
+  [
+    10135,
+    "HEAVY DIVISION SIGN"
+  ],
+  [
+    10136,
+    "HEAVY SOUTH EAST ARROW"
+  ],
+  [
+    10137,
+    "HEAVY RIGHTWARDS ARROW"
+  ],
+  [
+    10138,
+    "HEAVY NORTH EAST ARROW"
+  ],
+  [
+    10139,
+    "DRAFTING POINT RIGHTWARDS ARROW"
+  ],
+  [
+    10140,
+    "HEAVY ROUND-TIPPED RIGHTWARDS ARROW"
+  ],
+  [
+    10141,
+    "TRIANGLE-HEADED RIGHTWARDS ARROW"
+  ],
+  [
+    10142,
+    "HEAVY TRIANGLE-HEADED RIGHTWARDS ARROW"
+  ],
+  [
+    10143,
+    "DASHED TRIANGLE-HEADED RIGHTWARDS ARROW"
+  ],
+  [
+    10144,
+    "HEAVY DASHED TRIANGLE-HEADED RIGHTWARDS ARROW"
+  ],
+  [
+    10145,
+    "BLACK RIGHTWARDS ARROW"
+  ],
+  [
+    10146,
+    "THREE-D TOP-LIGHTED RIGHTWARDS ARROWHEAD"
+  ],
+  [
+    10147,
+    "THREE-D BOTTOM-LIGHTED RIGHTWARDS ARROWHEAD"
+  ],
+  [
+    10148,
+    "BLACK RIGHTWARDS ARROWHEAD"
+  ],
+  [
+    10149,
+    "HEAVY BLACK CURVED DOWNWARDS AND RIGHTWARDS ARROW"
+  ],
+  [
+    10150,
+    "HEAVY BLACK CURVED UPWARDS AND RIGHTWARDS ARROW"
+  ],
+  [
+    10151,
+    "SQUAT BLACK RIGHTWARDS ARROW"
+  ],
+  [
+    10152,
+    "HEAVY CONCAVE-POINTED BLACK RIGHTWARDS ARROW"
+  ],
+  [
+    10153,
+    "RIGHT-SHADED WHITE RIGHTWARDS ARROW"
+  ],
+  [
+    10154,
+    "LEFT-SHADED WHITE RIGHTWARDS ARROW"
+  ],
+  [
+    10155,
+    "BACK-TILTED SHADOWED WHITE RIGHTWARDS ARROW"
+  ],
+  [
+    10156,
+    "FRONT-TILTED SHADOWED WHITE RIGHTWARDS ARROW"
+  ],
+  [
+    10157,
+    "HEAVY LOWER RIGHT-SHADOWED WHITE RIGHTWARDS ARROW"
+  ],
+  [
+    10158,
+    "HEAVY UPPER RIGHT-SHADOWED WHITE RIGHTWARDS ARROW"
+  ],
+  [
+    10159,
+    "NOTCHED LOWER RIGHT-SHADOWED WHITE RIGHTWARDS ARROW"
+  ],
+  [
+    10160,
+    "CURLY LOOP"
+  ],
+  [
+    10161,
+    "NOTCHED UPPER RIGHT-SHADOWED WHITE RIGHTWARDS ARROW"
+  ],
+  [
+    10162,
+    "CIRCLED HEAVY WHITE RIGHTWARDS ARROW"
+  ],
+  [
+    10163,
+    "WHITE-FEATHERED RIGHTWARDS ARROW"
+  ],
+  [
+    10164,
+    "BLACK-FEATHERED SOUTH EAST ARROW"
+  ],
+  [
+    10165,
+    "BLACK-FEATHERED RIGHTWARDS ARROW"
+  ],
+  [
+    10166,
+    "BLACK-FEATHERED NORTH EAST ARROW"
+  ],
+  [
+    10167,
+    "HEAVY BLACK-FEATHERED SOUTH EAST ARROW"
+  ],
+  [
+    10168,
+    "HEAVY BLACK-FEATHERED RIGHTWARDS ARROW"
+  ],
+  [
+    10169,
+    "HEAVY BLACK-FEATHERED NORTH EAST ARROW"
+  ],
+  [
+    10170,
+    "TEARDROP-BARBED RIGHTWARDS ARROW"
+  ],
+  [
+    10171,
+    "HEAVY TEARDROP-SHANKED RIGHTWARDS ARROW"
+  ],
+  [
+    10172,
+    "WEDGE-TAILED RIGHTWARDS ARROW"
+  ],
+  [
+    10173,
+    "HEAVY WEDGE-TAILED RIGHTWARDS ARROW"
+  ],
+  [
+    10174,
+    "OPEN-OUTLINED RIGHTWARDS ARROW"
+  ],
+  [
+    10175,
+    "DOUBLE CURLY LOOP"
+  ],
+  [
+    10176,
+    "THREE DIMENSIONAL ANGLE"
+  ],
+  [
+    10177,
+    "WHITE TRIANGLE CONTAINING SMALL WHITE TRIANGLE"
+  ],
+  [
+    10178,
+    "PERPENDICULAR"
+  ],
+  [
+    10179,
+    "OPEN SUBSET"
+  ],
+  [
+    10180,
+    "OPEN SUPERSET"
+  ],
+  [
+    10181,
+    "LEFT S-SHAPED BAG DELIMITER"
+  ],
+  [
+    10182,
+    "RIGHT S-SHAPED BAG DELIMITER"
+  ],
+  [
+    10183,
+    "OR WITH DOT INSIDE"
+  ],
+  [
+    10184,
+    "REVERSE SOLIDUS PRECEDING SUBSET"
+  ],
+  [
+    10185,
+    "SUPERSET PRECEDING SOLIDUS"
+  ],
+  [
+    10186,
+    "VERTICAL BAR WITH HORIZONTAL STROKE"
+  ],
+  [
+    10187,
+    "MATHEMATICAL RISING DIAGONAL"
+  ],
+  [
+    10188,
+    "LONG DIVISION"
+  ],
+  [
+    10189,
+    "MATHEMATICAL FALLING DIAGONAL"
+  ],
+  [
+    10190,
+    "SQUARED LOGICAL AND"
+  ],
+  [
+    10191,
+    "SQUARED LOGICAL OR"
+  ],
+  [
+    10192,
+    "WHITE DIAMOND WITH CENTRED DOT"
+  ],
+  [
+    10193,
+    "AND WITH DOT"
+  ],
+  [
+    10194,
+    "ELEMENT OF OPENING UPWARDS"
+  ],
+  [
+    10195,
+    "LOWER RIGHT CORNER WITH DOT"
+  ],
+  [
+    10196,
+    "UPPER LEFT CORNER WITH DOT"
+  ],
+  [
+    10197,
+    "LEFT OUTER JOIN"
+  ],
+  [
+    10198,
+    "RIGHT OUTER JOIN"
+  ],
+  [
+    10199,
+    "FULL OUTER JOIN"
+  ],
+  [
+    10200,
+    "LARGE UP TACK"
+  ],
+  [
+    10201,
+    "LARGE DOWN TACK"
+  ],
+  [
+    10202,
+    "LEFT AND RIGHT DOUBLE TURNSTILE"
+  ],
+  [
+    10203,
+    "LEFT AND RIGHT TACK"
+  ],
+  [
+    10204,
+    "LEFT MULTIMAP"
+  ],
+  [
+    10205,
+    "LONG RIGHT TACK"
+  ],
+  [
+    10206,
+    "LONG LEFT TACK"
+  ],
+  [
+    10207,
+    "UP TACK WITH CIRCLE ABOVE"
+  ],
+  [
+    10208,
+    "LOZENGE DIVIDED BY HORIZONTAL RULE"
+  ],
+  [
+    10209,
+    "WHITE CONCAVE-SIDED DIAMOND"
+  ],
+  [
+    10210,
+    "WHITE CONCAVE-SIDED DIAMOND WITH LEFTWARDS TICK"
+  ],
+  [
+    10211,
+    "WHITE CONCAVE-SIDED DIAMOND WITH RIGHTWARDS TICK"
+  ],
+  [
+    10212,
+    "WHITE SQUARE WITH LEFTWARDS TICK"
+  ],
+  [
+    10213,
+    "WHITE SQUARE WITH RIGHTWARDS TICK"
+  ],
+  [
+    10214,
+    "MATHEMATICAL LEFT WHITE SQUARE BRACKET"
+  ],
+  [
+    10215,
+    "MATHEMATICAL RIGHT WHITE SQUARE BRACKET"
+  ],
+  [
+    10216,
+    "MATHEMATICAL LEFT ANGLE BRACKET"
+  ],
+  [
+    10217,
+    "MATHEMATICAL RIGHT ANGLE BRACKET"
+  ],
+  [
+    10218,
+    "MATHEMATICAL LEFT DOUBLE ANGLE BRACKET"
+  ],
+  [
+    10219,
+    "MATHEMATICAL RIGHT DOUBLE ANGLE BRACKET"
+  ],
+  [
+    10220,
+    "MATHEMATICAL LEFT WHITE TORTOISE SHELL BRACKET"
+  ],
+  [
+    10221,
+    "MATHEMATICAL RIGHT WHITE TORTOISE SHELL BRACKET"
+  ],
+  [
+    10222,
+    "MATHEMATICAL LEFT FLATTENED PARENTHESIS"
+  ],
+  [
+    10223,
+    "MATHEMATICAL RIGHT FLATTENED PARENTHESIS"
+  ],
+  [
+    10224,
+    "UPWARDS QUADRUPLE ARROW"
+  ],
+  [
+    10225,
+    "DOWNWARDS QUADRUPLE ARROW"
+  ],
+  [
+    10226,
+    "ANTICLOCKWISE GAPPED CIRCLE ARROW"
+  ],
+  [
+    10227,
+    "CLOCKWISE GAPPED CIRCLE ARROW"
+  ],
+  [
+    10228,
+    "RIGHT ARROW WITH CIRCLED PLUS"
+  ],
+  [
+    10229,
+    "LONG LEFTWARDS ARROW"
+  ],
+  [
+    10230,
+    "LONG RIGHTWARDS ARROW"
+  ],
+  [
+    10231,
+    "LONG LEFT RIGHT ARROW"
+  ],
+  [
+    10232,
+    "LONG LEFTWARDS DOUBLE ARROW"
+  ],
+  [
+    10233,
+    "LONG RIGHTWARDS DOUBLE ARROW"
+  ],
+  [
+    10234,
+    "LONG LEFT RIGHT DOUBLE ARROW"
+  ],
+  [
+    10235,
+    "LONG LEFTWARDS ARROW FROM BAR"
+  ],
+  [
+    10236,
+    "LONG RIGHTWARDS ARROW FROM BAR"
+  ],
+  [
+    10237,
+    "LONG LEFTWARDS DOUBLE ARROW FROM BAR"
+  ],
+  [
+    10238,
+    "LONG RIGHTWARDS DOUBLE ARROW FROM BAR"
+  ],
+  [
+    10239,
+    "LONG RIGHTWARDS SQUIGGLE ARROW"
+  ],
+  [
+    10240,
+    "BRAILLE PATTERN BLANK"
+  ],
+  [
+    10241,
+    "BRAILLE PATTERN DOTS-1"
+  ],
+  [
+    10242,
+    "BRAILLE PATTERN DOTS-2"
+  ],
+  [
+    10243,
+    "BRAILLE PATTERN DOTS-12"
+  ],
+  [
+    10244,
+    "BRAILLE PATTERN DOTS-3"
+  ],
+  [
+    10245,
+    "BRAILLE PATTERN DOTS-13"
+  ],
+  [
+    10246,
+    "BRAILLE PATTERN DOTS-23"
+  ],
+  [
+    10247,
+    "BRAILLE PATTERN DOTS-123"
+  ],
+  [
+    10248,
+    "BRAILLE PATTERN DOTS-4"
+  ],
+  [
+    10249,
+    "BRAILLE PATTERN DOTS-14"
+  ],
+  [
+    10250,
+    "BRAILLE PATTERN DOTS-24"
+  ],
+  [
+    10251,
+    "BRAILLE PATTERN DOTS-124"
+  ],
+  [
+    10252,
+    "BRAILLE PATTERN DOTS-34"
+  ],
+  [
+    10253,
+    "BRAILLE PATTERN DOTS-134"
+  ],
+  [
+    10254,
+    "BRAILLE PATTERN DOTS-234"
+  ],
+  [
+    10255,
+    "BRAILLE PATTERN DOTS-1234"
+  ],
+  [
+    10256,
+    "BRAILLE PATTERN DOTS-5"
+  ],
+  [
+    10257,
+    "BRAILLE PATTERN DOTS-15"
+  ],
+  [
+    10258,
+    "BRAILLE PATTERN DOTS-25"
+  ],
+  [
+    10259,
+    "BRAILLE PATTERN DOTS-125"
+  ],
+  [
+    10260,
+    "BRAILLE PATTERN DOTS-35"
+  ],
+  [
+    10261,
+    "BRAILLE PATTERN DOTS-135"
+  ],
+  [
+    10262,
+    "BRAILLE PATTERN DOTS-235"
+  ],
+  [
+    10263,
+    "BRAILLE PATTERN DOTS-1235"
+  ],
+  [
+    10264,
+    "BRAILLE PATTERN DOTS-45"
+  ],
+  [
+    10265,
+    "BRAILLE PATTERN DOTS-145"
+  ],
+  [
+    10266,
+    "BRAILLE PATTERN DOTS-245"
+  ],
+  [
+    10267,
+    "BRAILLE PATTERN DOTS-1245"
+  ],
+  [
+    10268,
+    "BRAILLE PATTERN DOTS-345"
+  ],
+  [
+    10269,
+    "BRAILLE PATTERN DOTS-1345"
+  ],
+  [
+    10270,
+    "BRAILLE PATTERN DOTS-2345"
+  ],
+  [
+    10271,
+    "BRAILLE PATTERN DOTS-12345"
+  ],
+  [
+    10272,
+    "BRAILLE PATTERN DOTS-6"
+  ],
+  [
+    10273,
+    "BRAILLE PATTERN DOTS-16"
+  ],
+  [
+    10274,
+    "BRAILLE PATTERN DOTS-26"
+  ],
+  [
+    10275,
+    "BRAILLE PATTERN DOTS-126"
+  ],
+  [
+    10276,
+    "BRAILLE PATTERN DOTS-36"
+  ],
+  [
+    10277,
+    "BRAILLE PATTERN DOTS-136"
+  ],
+  [
+    10278,
+    "BRAILLE PATTERN DOTS-236"
+  ],
+  [
+    10279,
+    "BRAILLE PATTERN DOTS-1236"
+  ],
+  [
+    10280,
+    "BRAILLE PATTERN DOTS-46"
+  ],
+  [
+    10281,
+    "BRAILLE PATTERN DOTS-146"
+  ],
+  [
+    10282,
+    "BRAILLE PATTERN DOTS-246"
+  ],
+  [
+    10283,
+    "BRAILLE PATTERN DOTS-1246"
+  ],
+  [
+    10284,
+    "BRAILLE PATTERN DOTS-346"
+  ],
+  [
+    10285,
+    "BRAILLE PATTERN DOTS-1346"
+  ],
+  [
+    10286,
+    "BRAILLE PATTERN DOTS-2346"
+  ],
+  [
+    10287,
+    "BRAILLE PATTERN DOTS-12346"
+  ],
+  [
+    10288,
+    "BRAILLE PATTERN DOTS-56"
+  ],
+  [
+    10289,
+    "BRAILLE PATTERN DOTS-156"
+  ],
+  [
+    10290,
+    "BRAILLE PATTERN DOTS-256"
+  ],
+  [
+    10291,
+    "BRAILLE PATTERN DOTS-1256"
+  ],
+  [
+    10292,
+    "BRAILLE PATTERN DOTS-356"
+  ],
+  [
+    10293,
+    "BRAILLE PATTERN DOTS-1356"
+  ],
+  [
+    10294,
+    "BRAILLE PATTERN DOTS-2356"
+  ],
+  [
+    10295,
+    "BRAILLE PATTERN DOTS-12356"
+  ],
+  [
+    10296,
+    "BRAILLE PATTERN DOTS-456"
+  ],
+  [
+    10297,
+    "BRAILLE PATTERN DOTS-1456"
+  ],
+  [
+    10298,
+    "BRAILLE PATTERN DOTS-2456"
+  ],
+  [
+    10299,
+    "BRAILLE PATTERN DOTS-12456"
+  ],
+  [
+    10300,
+    "BRAILLE PATTERN DOTS-3456"
+  ],
+  [
+    10301,
+    "BRAILLE PATTERN DOTS-13456"
+  ],
+  [
+    10302,
+    "BRAILLE PATTERN DOTS-23456"
+  ],
+  [
+    10303,
+    "BRAILLE PATTERN DOTS-123456"
+  ],
+  [
+    10304,
+    "BRAILLE PATTERN DOTS-7"
+  ],
+  [
+    10305,
+    "BRAILLE PATTERN DOTS-17"
+  ],
+  [
+    10306,
+    "BRAILLE PATTERN DOTS-27"
+  ],
+  [
+    10307,
+    "BRAILLE PATTERN DOTS-127"
+  ],
+  [
+    10308,
+    "BRAILLE PATTERN DOTS-37"
+  ],
+  [
+    10309,
+    "BRAILLE PATTERN DOTS-137"
+  ],
+  [
+    10310,
+    "BRAILLE PATTERN DOTS-237"
+  ],
+  [
+    10311,
+    "BRAILLE PATTERN DOTS-1237"
+  ],
+  [
+    10312,
+    "BRAILLE PATTERN DOTS-47"
+  ],
+  [
+    10313,
+    "BRAILLE PATTERN DOTS-147"
+  ],
+  [
+    10314,
+    "BRAILLE PATTERN DOTS-247"
+  ],
+  [
+    10315,
+    "BRAILLE PATTERN DOTS-1247"
+  ],
+  [
+    10316,
+    "BRAILLE PATTERN DOTS-347"
+  ],
+  [
+    10317,
+    "BRAILLE PATTERN DOTS-1347"
+  ],
+  [
+    10318,
+    "BRAILLE PATTERN DOTS-2347"
+  ],
+  [
+    10319,
+    "BRAILLE PATTERN DOTS-12347"
+  ],
+  [
+    10320,
+    "BRAILLE PATTERN DOTS-57"
+  ],
+  [
+    10321,
+    "BRAILLE PATTERN DOTS-157"
+  ],
+  [
+    10322,
+    "BRAILLE PATTERN DOTS-257"
+  ],
+  [
+    10323,
+    "BRAILLE PATTERN DOTS-1257"
+  ],
+  [
+    10324,
+    "BRAILLE PATTERN DOTS-357"
+  ],
+  [
+    10325,
+    "BRAILLE PATTERN DOTS-1357"
+  ],
+  [
+    10326,
+    "BRAILLE PATTERN DOTS-2357"
+  ],
+  [
+    10327,
+    "BRAILLE PATTERN DOTS-12357"
+  ],
+  [
+    10328,
+    "BRAILLE PATTERN DOTS-457"
+  ],
+  [
+    10329,
+    "BRAILLE PATTERN DOTS-1457"
+  ],
+  [
+    10330,
+    "BRAILLE PATTERN DOTS-2457"
+  ],
+  [
+    10331,
+    "BRAILLE PATTERN DOTS-12457"
+  ],
+  [
+    10332,
+    "BRAILLE PATTERN DOTS-3457"
+  ],
+  [
+    10333,
+    "BRAILLE PATTERN DOTS-13457"
+  ],
+  [
+    10334,
+    "BRAILLE PATTERN DOTS-23457"
+  ],
+  [
+    10335,
+    "BRAILLE PATTERN DOTS-123457"
+  ],
+  [
+    10336,
+    "BRAILLE PATTERN DOTS-67"
+  ],
+  [
+    10337,
+    "BRAILLE PATTERN DOTS-167"
+  ],
+  [
+    10338,
+    "BRAILLE PATTERN DOTS-267"
+  ],
+  [
+    10339,
+    "BRAILLE PATTERN DOTS-1267"
+  ],
+  [
+    10340,
+    "BRAILLE PATTERN DOTS-367"
+  ],
+  [
+    10341,
+    "BRAILLE PATTERN DOTS-1367"
+  ],
+  [
+    10342,
+    "BRAILLE PATTERN DOTS-2367"
+  ],
+  [
+    10343,
+    "BRAILLE PATTERN DOTS-12367"
+  ],
+  [
+    10344,
+    "BRAILLE PATTERN DOTS-467"
+  ],
+  [
+    10345,
+    "BRAILLE PATTERN DOTS-1467"
+  ],
+  [
+    10346,
+    "BRAILLE PATTERN DOTS-2467"
+  ],
+  [
+    10347,
+    "BRAILLE PATTERN DOTS-12467"
+  ],
+  [
+    10348,
+    "BRAILLE PATTERN DOTS-3467"
+  ],
+  [
+    10349,
+    "BRAILLE PATTERN DOTS-13467"
+  ],
+  [
+    10350,
+    "BRAILLE PATTERN DOTS-23467"
+  ],
+  [
+    10351,
+    "BRAILLE PATTERN DOTS-123467"
+  ],
+  [
+    10352,
+    "BRAILLE PATTERN DOTS-567"
+  ],
+  [
+    10353,
+    "BRAILLE PATTERN DOTS-1567"
+  ],
+  [
+    10354,
+    "BRAILLE PATTERN DOTS-2567"
+  ],
+  [
+    10355,
+    "BRAILLE PATTERN DOTS-12567"
+  ],
+  [
+    10356,
+    "BRAILLE PATTERN DOTS-3567"
+  ],
+  [
+    10357,
+    "BRAILLE PATTERN DOTS-13567"
+  ],
+  [
+    10358,
+    "BRAILLE PATTERN DOTS-23567"
+  ],
+  [
+    10359,
+    "BRAILLE PATTERN DOTS-123567"
+  ],
+  [
+    10360,
+    "BRAILLE PATTERN DOTS-4567"
+  ],
+  [
+    10361,
+    "BRAILLE PATTERN DOTS-14567"
+  ],
+  [
+    10362,
+    "BRAILLE PATTERN DOTS-24567"
+  ],
+  [
+    10363,
+    "BRAILLE PATTERN DOTS-124567"
+  ],
+  [
+    10364,
+    "BRAILLE PATTERN DOTS-34567"
+  ],
+  [
+    10365,
+    "BRAILLE PATTERN DOTS-134567"
+  ],
+  [
+    10366,
+    "BRAILLE PATTERN DOTS-234567"
+  ],
+  [
+    10367,
+    "BRAILLE PATTERN DOTS-1234567"
+  ],
+  [
+    10368,
+    "BRAILLE PATTERN DOTS-8"
+  ],
+  [
+    10369,
+    "BRAILLE PATTERN DOTS-18"
+  ],
+  [
+    10370,
+    "BRAILLE PATTERN DOTS-28"
+  ],
+  [
+    10371,
+    "BRAILLE PATTERN DOTS-128"
+  ],
+  [
+    10372,
+    "BRAILLE PATTERN DOTS-38"
+  ],
+  [
+    10373,
+    "BRAILLE PATTERN DOTS-138"
+  ],
+  [
+    10374,
+    "BRAILLE PATTERN DOTS-238"
+  ],
+  [
+    10375,
+    "BRAILLE PATTERN DOTS-1238"
+  ],
+  [
+    10376,
+    "BRAILLE PATTERN DOTS-48"
+  ],
+  [
+    10377,
+    "BRAILLE PATTERN DOTS-148"
+  ],
+  [
+    10378,
+    "BRAILLE PATTERN DOTS-248"
+  ],
+  [
+    10379,
+    "BRAILLE PATTERN DOTS-1248"
+  ],
+  [
+    10380,
+    "BRAILLE PATTERN DOTS-348"
+  ],
+  [
+    10381,
+    "BRAILLE PATTERN DOTS-1348"
+  ],
+  [
+    10382,
+    "BRAILLE PATTERN DOTS-2348"
+  ],
+  [
+    10383,
+    "BRAILLE PATTERN DOTS-12348"
+  ],
+  [
+    10384,
+    "BRAILLE PATTERN DOTS-58"
+  ],
+  [
+    10385,
+    "BRAILLE PATTERN DOTS-158"
+  ],
+  [
+    10386,
+    "BRAILLE PATTERN DOTS-258"
+  ],
+  [
+    10387,
+    "BRAILLE PATTERN DOTS-1258"
+  ],
+  [
+    10388,
+    "BRAILLE PATTERN DOTS-358"
+  ],
+  [
+    10389,
+    "BRAILLE PATTERN DOTS-1358"
+  ],
+  [
+    10390,
+    "BRAILLE PATTERN DOTS-2358"
+  ],
+  [
+    10391,
+    "BRAILLE PATTERN DOTS-12358"
+  ],
+  [
+    10392,
+    "BRAILLE PATTERN DOTS-458"
+  ],
+  [
+    10393,
+    "BRAILLE PATTERN DOTS-1458"
+  ],
+  [
+    10394,
+    "BRAILLE PATTERN DOTS-2458"
+  ],
+  [
+    10395,
+    "BRAILLE PATTERN DOTS-12458"
+  ],
+  [
+    10396,
+    "BRAILLE PATTERN DOTS-3458"
+  ],
+  [
+    10397,
+    "BRAILLE PATTERN DOTS-13458"
+  ],
+  [
+    10398,
+    "BRAILLE PATTERN DOTS-23458"
+  ],
+  [
+    10399,
+    "BRAILLE PATTERN DOTS-123458"
+  ],
+  [
+    10400,
+    "BRAILLE PATTERN DOTS-68"
+  ],
+  [
+    10401,
+    "BRAILLE PATTERN DOTS-168"
+  ],
+  [
+    10402,
+    "BRAILLE PATTERN DOTS-268"
+  ],
+  [
+    10403,
+    "BRAILLE PATTERN DOTS-1268"
+  ],
+  [
+    10404,
+    "BRAILLE PATTERN DOTS-368"
+  ],
+  [
+    10405,
+    "BRAILLE PATTERN DOTS-1368"
+  ],
+  [
+    10406,
+    "BRAILLE PATTERN DOTS-2368"
+  ],
+  [
+    10407,
+    "BRAILLE PATTERN DOTS-12368"
+  ],
+  [
+    10408,
+    "BRAILLE PATTERN DOTS-468"
+  ],
+  [
+    10409,
+    "BRAILLE PATTERN DOTS-1468"
+  ],
+  [
+    10410,
+    "BRAILLE PATTERN DOTS-2468"
+  ],
+  [
+    10411,
+    "BRAILLE PATTERN DOTS-12468"
+  ],
+  [
+    10412,
+    "BRAILLE PATTERN DOTS-3468"
+  ],
+  [
+    10413,
+    "BRAILLE PATTERN DOTS-13468"
+  ],
+  [
+    10414,
+    "BRAILLE PATTERN DOTS-23468"
+  ],
+  [
+    10415,
+    "BRAILLE PATTERN DOTS-123468"
+  ],
+  [
+    10416,
+    "BRAILLE PATTERN DOTS-568"
+  ],
+  [
+    10417,
+    "BRAILLE PATTERN DOTS-1568"
+  ],
+  [
+    10418,
+    "BRAILLE PATTERN DOTS-2568"
+  ],
+  [
+    10419,
+    "BRAILLE PATTERN DOTS-12568"
+  ],
+  [
+    10420,
+    "BRAILLE PATTERN DOTS-3568"
+  ],
+  [
+    10421,
+    "BRAILLE PATTERN DOTS-13568"
+  ],
+  [
+    10422,
+    "BRAILLE PATTERN DOTS-23568"
+  ],
+  [
+    10423,
+    "BRAILLE PATTERN DOTS-123568"
+  ],
+  [
+    10424,
+    "BRAILLE PATTERN DOTS-4568"
+  ],
+  [
+    10425,
+    "BRAILLE PATTERN DOTS-14568"
+  ],
+  [
+    10426,
+    "BRAILLE PATTERN DOTS-24568"
+  ],
+  [
+    10427,
+    "BRAILLE PATTERN DOTS-124568"
+  ],
+  [
+    10428,
+    "BRAILLE PATTERN DOTS-34568"
+  ],
+  [
+    10429,
+    "BRAILLE PATTERN DOTS-134568"
+  ],
+  [
+    10430,
+    "BRAILLE PATTERN DOTS-234568"
+  ],
+  [
+    10431,
+    "BRAILLE PATTERN DOTS-1234568"
+  ],
+  [
+    10432,
+    "BRAILLE PATTERN DOTS-78"
+  ],
+  [
+    10433,
+    "BRAILLE PATTERN DOTS-178"
+  ],
+  [
+    10434,
+    "BRAILLE PATTERN DOTS-278"
+  ],
+  [
+    10435,
+    "BRAILLE PATTERN DOTS-1278"
+  ],
+  [
+    10436,
+    "BRAILLE PATTERN DOTS-378"
+  ],
+  [
+    10437,
+    "BRAILLE PATTERN DOTS-1378"
+  ],
+  [
+    10438,
+    "BRAILLE PATTERN DOTS-2378"
+  ],
+  [
+    10439,
+    "BRAILLE PATTERN DOTS-12378"
+  ],
+  [
+    10440,
+    "BRAILLE PATTERN DOTS-478"
+  ],
+  [
+    10441,
+    "BRAILLE PATTERN DOTS-1478"
+  ],
+  [
+    10442,
+    "BRAILLE PATTERN DOTS-2478"
+  ],
+  [
+    10443,
+    "BRAILLE PATTERN DOTS-12478"
+  ],
+  [
+    10444,
+    "BRAILLE PATTERN DOTS-3478"
+  ],
+  [
+    10445,
+    "BRAILLE PATTERN DOTS-13478"
+  ],
+  [
+    10446,
+    "BRAILLE PATTERN DOTS-23478"
+  ],
+  [
+    10447,
+    "BRAILLE PATTERN DOTS-123478"
+  ],
+  [
+    10448,
+    "BRAILLE PATTERN DOTS-578"
+  ],
+  [
+    10449,
+    "BRAILLE PATTERN DOTS-1578"
+  ],
+  [
+    10450,
+    "BRAILLE PATTERN DOTS-2578"
+  ],
+  [
+    10451,
+    "BRAILLE PATTERN DOTS-12578"
+  ],
+  [
+    10452,
+    "BRAILLE PATTERN DOTS-3578"
+  ],
+  [
+    10453,
+    "BRAILLE PATTERN DOTS-13578"
+  ],
+  [
+    10454,
+    "BRAILLE PATTERN DOTS-23578"
+  ],
+  [
+    10455,
+    "BRAILLE PATTERN DOTS-123578"
+  ],
+  [
+    10456,
+    "BRAILLE PATTERN DOTS-4578"
+  ],
+  [
+    10457,
+    "BRAILLE PATTERN DOTS-14578"
+  ],
+  [
+    10458,
+    "BRAILLE PATTERN DOTS-24578"
+  ],
+  [
+    10459,
+    "BRAILLE PATTERN DOTS-124578"
+  ],
+  [
+    10460,
+    "BRAILLE PATTERN DOTS-34578"
+  ],
+  [
+    10461,
+    "BRAILLE PATTERN DOTS-134578"
+  ],
+  [
+    10462,
+    "BRAILLE PATTERN DOTS-234578"
+  ],
+  [
+    10463,
+    "BRAILLE PATTERN DOTS-1234578"
+  ],
+  [
+    10464,
+    "BRAILLE PATTERN DOTS-678"
+  ],
+  [
+    10465,
+    "BRAILLE PATTERN DOTS-1678"
+  ],
+  [
+    10466,
+    "BRAILLE PATTERN DOTS-2678"
+  ],
+  [
+    10467,
+    "BRAILLE PATTERN DOTS-12678"
+  ],
+  [
+    10468,
+    "BRAILLE PATTERN DOTS-3678"
+  ],
+  [
+    10469,
+    "BRAILLE PATTERN DOTS-13678"
+  ],
+  [
+    10470,
+    "BRAILLE PATTERN DOTS-23678"
+  ],
+  [
+    10471,
+    "BRAILLE PATTERN DOTS-123678"
+  ],
+  [
+    10472,
+    "BRAILLE PATTERN DOTS-4678"
+  ],
+  [
+    10473,
+    "BRAILLE PATTERN DOTS-14678"
+  ],
+  [
+    10474,
+    "BRAILLE PATTERN DOTS-24678"
+  ],
+  [
+    10475,
+    "BRAILLE PATTERN DOTS-124678"
+  ],
+  [
+    10476,
+    "BRAILLE PATTERN DOTS-34678"
+  ],
+  [
+    10477,
+    "BRAILLE PATTERN DOTS-134678"
+  ],
+  [
+    10478,
+    "BRAILLE PATTERN DOTS-234678"
+  ],
+  [
+    10479,
+    "BRAILLE PATTERN DOTS-1234678"
+  ],
+  [
+    10480,
+    "BRAILLE PATTERN DOTS-5678"
+  ],
+  [
+    10481,
+    "BRAILLE PATTERN DOTS-15678"
+  ],
+  [
+    10482,
+    "BRAILLE PATTERN DOTS-25678"
+  ],
+  [
+    10483,
+    "BRAILLE PATTERN DOTS-125678"
+  ],
+  [
+    10484,
+    "BRAILLE PATTERN DOTS-35678"
+  ],
+  [
+    10485,
+    "BRAILLE PATTERN DOTS-135678"
+  ],
+  [
+    10486,
+    "BRAILLE PATTERN DOTS-235678"
+  ],
+  [
+    10487,
+    "BRAILLE PATTERN DOTS-1235678"
+  ],
+  [
+    10488,
+    "BRAILLE PATTERN DOTS-45678"
+  ],
+  [
+    10489,
+    "BRAILLE PATTERN DOTS-145678"
+  ],
+  [
+    10490,
+    "BRAILLE PATTERN DOTS-245678"
+  ],
+  [
+    10491,
+    "BRAILLE PATTERN DOTS-1245678"
+  ],
+  [
+    10492,
+    "BRAILLE PATTERN DOTS-345678"
+  ],
+  [
+    10493,
+    "BRAILLE PATTERN DOTS-1345678"
+  ],
+  [
+    10494,
+    "BRAILLE PATTERN DOTS-2345678"
+  ],
+  [
+    10495,
+    "BRAILLE PATTERN DOTS-12345678"
+  ],
+  [
+    10496,
+    "RIGHTWARDS TWO-HEADED ARROW WITH VERTICAL STROKE"
+  ],
+  [
+    10497,
+    "RIGHTWARDS TWO-HEADED ARROW WITH DOUBLE VERTICAL STROKE"
+  ],
+  [
+    10498,
+    "LEFTWARDS DOUBLE ARROW WITH VERTICAL STROKE"
+  ],
+  [
+    10499,
+    "RIGHTWARDS DOUBLE ARROW WITH VERTICAL STROKE"
+  ],
+  [
+    10500,
+    "LEFT RIGHT DOUBLE ARROW WITH VERTICAL STROKE"
+  ],
+  [
+    10501,
+    "RIGHTWARDS TWO-HEADED ARROW FROM BAR"
+  ],
+  [
+    10502,
+    "LEFTWARDS DOUBLE ARROW FROM BAR"
+  ],
+  [
+    10503,
+    "RIGHTWARDS DOUBLE ARROW FROM BAR"
+  ],
+  [
+    10504,
+    "DOWNWARDS ARROW WITH HORIZONTAL STROKE"
+  ],
+  [
+    10505,
+    "UPWARDS ARROW WITH HORIZONTAL STROKE"
+  ],
+  [
+    10506,
+    "UPWARDS TRIPLE ARROW"
+  ],
+  [
+    10507,
+    "DOWNWARDS TRIPLE ARROW"
+  ],
+  [
+    10508,
+    "LEFTWARDS DOUBLE DASH ARROW"
+  ],
+  [
+    10509,
+    "RIGHTWARDS DOUBLE DASH ARROW"
+  ],
+  [
+    10510,
+    "LEFTWARDS TRIPLE DASH ARROW"
+  ],
+  [
+    10511,
+    "RIGHTWARDS TRIPLE DASH ARROW"
+  ],
+  [
+    10512,
+    "RIGHTWARDS TWO-HEADED TRIPLE DASH ARROW"
+  ],
+  [
+    10513,
+    "RIGHTWARDS ARROW WITH DOTTED STEM"
+  ],
+  [
+    10514,
+    "UPWARDS ARROW TO BAR"
+  ],
+  [
+    10515,
+    "DOWNWARDS ARROW TO BAR"
+  ],
+  [
+    10516,
+    "RIGHTWARDS ARROW WITH TAIL WITH VERTICAL STROKE"
+  ],
+  [
+    10517,
+    "RIGHTWARDS ARROW WITH TAIL WITH DOUBLE VERTICAL STROKE"
+  ],
+  [
+    10518,
+    "RIGHTWARDS TWO-HEADED ARROW WITH TAIL"
+  ],
+  [
+    10519,
+    "RIGHTWARDS TWO-HEADED ARROW WITH TAIL WITH VERTICAL STROKE"
+  ],
+  [
+    10520,
+    "RIGHTWARDS TWO-HEADED ARROW WITH TAIL WITH DOUBLE VERTICAL STROKE"
+  ],
+  [
+    10521,
+    "LEFTWARDS ARROW-TAIL"
+  ],
+  [
+    10522,
+    "RIGHTWARDS ARROW-TAIL"
+  ],
+  [
+    10523,
+    "LEFTWARDS DOUBLE ARROW-TAIL"
+  ],
+  [
+    10524,
+    "RIGHTWARDS DOUBLE ARROW-TAIL"
+  ],
+  [
+    10525,
+    "LEFTWARDS ARROW TO BLACK DIAMOND"
+  ],
+  [
+    10526,
+    "RIGHTWARDS ARROW TO BLACK DIAMOND"
+  ],
+  [
+    10527,
+    "LEFTWARDS ARROW FROM BAR TO BLACK DIAMOND"
+  ],
+  [
+    10528,
+    "RIGHTWARDS ARROW FROM BAR TO BLACK DIAMOND"
+  ],
+  [
+    10529,
+    "NORTH WEST AND SOUTH EAST ARROW"
+  ],
+  [
+    10530,
+    "NORTH EAST AND SOUTH WEST ARROW"
+  ],
+  [
+    10531,
+    "NORTH WEST ARROW WITH HOOK"
+  ],
+  [
+    10532,
+    "NORTH EAST ARROW WITH HOOK"
+  ],
+  [
+    10533,
+    "SOUTH EAST ARROW WITH HOOK"
+  ],
+  [
+    10534,
+    "SOUTH WEST ARROW WITH HOOK"
+  ],
+  [
+    10535,
+    "NORTH WEST ARROW AND NORTH EAST ARROW"
+  ],
+  [
+    10536,
+    "NORTH EAST ARROW AND SOUTH EAST ARROW"
+  ],
+  [
+    10537,
+    "SOUTH EAST ARROW AND SOUTH WEST ARROW"
+  ],
+  [
+    10538,
+    "SOUTH WEST ARROW AND NORTH WEST ARROW"
+  ],
+  [
+    10539,
+    "RISING DIAGONAL CROSSING FALLING DIAGONAL"
+  ],
+  [
+    10540,
+    "FALLING DIAGONAL CROSSING RISING DIAGONAL"
+  ],
+  [
+    10541,
+    "SOUTH EAST ARROW CROSSING NORTH EAST ARROW"
+  ],
+  [
+    10542,
+    "NORTH EAST ARROW CROSSING SOUTH EAST ARROW"
+  ],
+  [
+    10543,
+    "FALLING DIAGONAL CROSSING NORTH EAST ARROW"
+  ],
+  [
+    10544,
+    "RISING DIAGONAL CROSSING SOUTH EAST ARROW"
+  ],
+  [
+    10545,
+    "NORTH EAST ARROW CROSSING NORTH WEST ARROW"
+  ],
+  [
+    10546,
+    "NORTH WEST ARROW CROSSING NORTH EAST ARROW"
+  ],
+  [
+    10547,
+    "WAVE ARROW POINTING DIRECTLY RIGHT"
+  ],
+  [
+    10548,
+    "ARROW POINTING RIGHTWARDS THEN CURVING UPWARDS"
+  ],
+  [
+    10549,
+    "ARROW POINTING RIGHTWARDS THEN CURVING DOWNWARDS"
+  ],
+  [
+    10550,
+    "ARROW POINTING DOWNWARDS THEN CURVING LEFTWARDS"
+  ],
+  [
+    10551,
+    "ARROW POINTING DOWNWARDS THEN CURVING RIGHTWARDS"
+  ],
+  [
+    10552,
+    "RIGHT-SIDE ARC CLOCKWISE ARROW"
+  ],
+  [
+    10553,
+    "LEFT-SIDE ARC ANTICLOCKWISE ARROW"
+  ],
+  [
+    10554,
+    "TOP ARC ANTICLOCKWISE ARROW"
+  ],
+  [
+    10555,
+    "BOTTOM ARC ANTICLOCKWISE ARROW"
+  ],
+  [
+    10556,
+    "TOP ARC CLOCKWISE ARROW WITH MINUS"
+  ],
+  [
+    10557,
+    "TOP ARC ANTICLOCKWISE ARROW WITH PLUS"
+  ],
+  [
+    10558,
+    "LOWER RIGHT SEMICIRCULAR CLOCKWISE ARROW"
+  ],
+  [
+    10559,
+    "LOWER LEFT SEMICIRCULAR ANTICLOCKWISE ARROW"
+  ],
+  [
+    10560,
+    "ANTICLOCKWISE CLOSED CIRCLE ARROW"
+  ],
+  [
+    10561,
+    "CLOCKWISE CLOSED CIRCLE ARROW"
+  ],
+  [
+    10562,
+    "RIGHTWARDS ARROW ABOVE SHORT LEFTWARDS ARROW"
+  ],
+  [
+    10563,
+    "LEFTWARDS ARROW ABOVE SHORT RIGHTWARDS ARROW"
+  ],
+  [
+    10564,
+    "SHORT RIGHTWARDS ARROW ABOVE LEFTWARDS ARROW"
+  ],
+  [
+    10565,
+    "RIGHTWARDS ARROW WITH PLUS BELOW"
+  ],
+  [
+    10566,
+    "LEFTWARDS ARROW WITH PLUS BELOW"
+  ],
+  [
+    10567,
+    "RIGHTWARDS ARROW THROUGH X"
+  ],
+  [
+    10568,
+    "LEFT RIGHT ARROW THROUGH SMALL CIRCLE"
+  ],
+  [
+    10569,
+    "UPWARDS TWO-HEADED ARROW FROM SMALL CIRCLE"
+  ],
+  [
+    10570,
+    "LEFT BARB UP RIGHT BARB DOWN HARPOON"
+  ],
+  [
+    10571,
+    "LEFT BARB DOWN RIGHT BARB UP HARPOON"
+  ],
+  [
+    10572,
+    "UP BARB RIGHT DOWN BARB LEFT HARPOON"
+  ],
+  [
+    10573,
+    "UP BARB LEFT DOWN BARB RIGHT HARPOON"
+  ],
+  [
+    10574,
+    "LEFT BARB UP RIGHT BARB UP HARPOON"
+  ],
+  [
+    10575,
+    "UP BARB RIGHT DOWN BARB RIGHT HARPOON"
+  ],
+  [
+    10576,
+    "LEFT BARB DOWN RIGHT BARB DOWN HARPOON"
+  ],
+  [
+    10577,
+    "UP BARB LEFT DOWN BARB LEFT HARPOON"
+  ],
+  [
+    10578,
+    "LEFTWARDS HARPOON WITH BARB UP TO BAR"
+  ],
+  [
+    10579,
+    "RIGHTWARDS HARPOON WITH BARB UP TO BAR"
+  ],
+  [
+    10580,
+    "UPWARDS HARPOON WITH BARB RIGHT TO BAR"
+  ],
+  [
+    10581,
+    "DOWNWARDS HARPOON WITH BARB RIGHT TO BAR"
+  ],
+  [
+    10582,
+    "LEFTWARDS HARPOON WITH BARB DOWN TO BAR"
+  ],
+  [
+    10583,
+    "RIGHTWARDS HARPOON WITH BARB DOWN TO BAR"
+  ],
+  [
+    10584,
+    "UPWARDS HARPOON WITH BARB LEFT TO BAR"
+  ],
+  [
+    10585,
+    "DOWNWARDS HARPOON WITH BARB LEFT TO BAR"
+  ],
+  [
+    10586,
+    "LEFTWARDS HARPOON WITH BARB UP FROM BAR"
+  ],
+  [
+    10587,
+    "RIGHTWARDS HARPOON WITH BARB UP FROM BAR"
+  ],
+  [
+    10588,
+    "UPWARDS HARPOON WITH BARB RIGHT FROM BAR"
+  ],
+  [
+    10589,
+    "DOWNWARDS HARPOON WITH BARB RIGHT FROM BAR"
+  ],
+  [
+    10590,
+    "LEFTWARDS HARPOON WITH BARB DOWN FROM BAR"
+  ],
+  [
+    10591,
+    "RIGHTWARDS HARPOON WITH BARB DOWN FROM BAR"
+  ],
+  [
+    10592,
+    "UPWARDS HARPOON WITH BARB LEFT FROM BAR"
+  ],
+  [
+    10593,
+    "DOWNWARDS HARPOON WITH BARB LEFT FROM BAR"
+  ],
+  [
+    10594,
+    "LEFTWARDS HARPOON WITH BARB UP ABOVE LEFTWARDS HARPOON WITH BARB DOWN"
+  ],
+  [
+    10595,
+    "UPWARDS HARPOON WITH BARB LEFT BESIDE UPWARDS HARPOON WITH BARB RIGHT"
+  ],
+  [
+    10596,
+    "RIGHTWARDS HARPOON WITH BARB UP ABOVE RIGHTWARDS HARPOON WITH BARB DOWN"
+  ],
+  [
+    10597,
+    "DOWNWARDS HARPOON WITH BARB LEFT BESIDE DOWNWARDS HARPOON WITH BARB RIGHT"
+  ],
+  [
+    10598,
+    "LEFTWARDS HARPOON WITH BARB UP ABOVE RIGHTWARDS HARPOON WITH BARB UP"
+  ],
+  [
+    10599,
+    "LEFTWARDS HARPOON WITH BARB DOWN ABOVE RIGHTWARDS HARPOON WITH BARB DOWN"
+  ],
+  [
+    10600,
+    "RIGHTWARDS HARPOON WITH BARB UP ABOVE LEFTWARDS HARPOON WITH BARB UP"
+  ],
+  [
+    10601,
+    "RIGHTWARDS HARPOON WITH BARB DOWN ABOVE LEFTWARDS HARPOON WITH BARB DOWN"
+  ],
+  [
+    10602,
+    "LEFTWARDS HARPOON WITH BARB UP ABOVE LONG DASH"
+  ],
+  [
+    10603,
+    "LEFTWARDS HARPOON WITH BARB DOWN BELOW LONG DASH"
+  ],
+  [
+    10604,
+    "RIGHTWARDS HARPOON WITH BARB UP ABOVE LONG DASH"
+  ],
+  [
+    10605,
+    "RIGHTWARDS HARPOON WITH BARB DOWN BELOW LONG DASH"
+  ],
+  [
+    10606,
+    "UPWARDS HARPOON WITH BARB LEFT BESIDE DOWNWARDS HARPOON WITH BARB RIGHT"
+  ],
+  [
+    10607,
+    "DOWNWARDS HARPOON WITH BARB LEFT BESIDE UPWARDS HARPOON WITH BARB RIGHT"
+  ],
+  [
+    10608,
+    "RIGHT DOUBLE ARROW WITH ROUNDED HEAD"
+  ],
+  [
+    10609,
+    "EQUALS SIGN ABOVE RIGHTWARDS ARROW"
+  ],
+  [
+    10610,
+    "TILDE OPERATOR ABOVE RIGHTWARDS ARROW"
+  ],
+  [
+    10611,
+    "LEFTWARDS ARROW ABOVE TILDE OPERATOR"
+  ],
+  [
+    10612,
+    "RIGHTWARDS ARROW ABOVE TILDE OPERATOR"
+  ],
+  [
+    10613,
+    "RIGHTWARDS ARROW ABOVE ALMOST EQUAL TO"
+  ],
+  [
+    10614,
+    "LESS-THAN ABOVE LEFTWARDS ARROW"
+  ],
+  [
+    10615,
+    "LEFTWARDS ARROW THROUGH LESS-THAN"
+  ],
+  [
+    10616,
+    "GREATER-THAN ABOVE RIGHTWARDS ARROW"
+  ],
+  [
+    10617,
+    "SUBSET ABOVE RIGHTWARDS ARROW"
+  ],
+  [
+    10618,
+    "LEFTWARDS ARROW THROUGH SUBSET"
+  ],
+  [
+    10619,
+    "SUPERSET ABOVE LEFTWARDS ARROW"
+  ],
+  [
+    10620,
+    "LEFT FISH TAIL"
+  ],
+  [
+    10621,
+    "RIGHT FISH TAIL"
+  ],
+  [
+    10622,
+    "UP FISH TAIL"
+  ],
+  [
+    10623,
+    "DOWN FISH TAIL"
+  ],
+  [
+    10624,
+    "TRIPLE VERTICAL BAR DELIMITER"
+  ],
+  [
+    10625,
+    "Z NOTATION SPOT"
+  ],
+  [
+    10626,
+    "Z NOTATION TYPE COLON"
+  ],
+  [
+    10627,
+    "LEFT WHITE CURLY BRACKET"
+  ],
+  [
+    10628,
+    "RIGHT WHITE CURLY BRACKET"
+  ],
+  [
+    10629,
+    "LEFT WHITE PARENTHESIS"
+  ],
+  [
+    10630,
+    "RIGHT WHITE PARENTHESIS"
+  ],
+  [
+    10631,
+    "Z NOTATION LEFT IMAGE BRACKET"
+  ],
+  [
+    10632,
+    "Z NOTATION RIGHT IMAGE BRACKET"
+  ],
+  [
+    10633,
+    "Z NOTATION LEFT BINDING BRACKET"
+  ],
+  [
+    10634,
+    "Z NOTATION RIGHT BINDING BRACKET"
+  ],
+  [
+    10635,
+    "LEFT SQUARE BRACKET WITH UNDERBAR"
+  ],
+  [
+    10636,
+    "RIGHT SQUARE BRACKET WITH UNDERBAR"
+  ],
+  [
+    10637,
+    "LEFT SQUARE BRACKET WITH TICK IN TOP CORNER"
+  ],
+  [
+    10638,
+    "RIGHT SQUARE BRACKET WITH TICK IN BOTTOM CORNER"
+  ],
+  [
+    10639,
+    "LEFT SQUARE BRACKET WITH TICK IN BOTTOM CORNER"
+  ],
+  [
+    10640,
+    "RIGHT SQUARE BRACKET WITH TICK IN TOP CORNER"
+  ],
+  [
+    10641,
+    "LEFT ANGLE BRACKET WITH DOT"
+  ],
+  [
+    10642,
+    "RIGHT ANGLE BRACKET WITH DOT"
+  ],
+  [
+    10643,
+    "LEFT ARC LESS-THAN BRACKET"
+  ],
+  [
+    10644,
+    "RIGHT ARC GREATER-THAN BRACKET"
+  ],
+  [
+    10645,
+    "DOUBLE LEFT ARC GREATER-THAN BRACKET"
+  ],
+  [
+    10646,
+    "DOUBLE RIGHT ARC LESS-THAN BRACKET"
+  ],
+  [
+    10647,
+    "LEFT BLACK TORTOISE SHELL BRACKET"
+  ],
+  [
+    10648,
+    "RIGHT BLACK TORTOISE SHELL BRACKET"
+  ],
+  [
+    10649,
+    "DOTTED FENCE"
+  ],
+  [
+    10650,
+    "VERTICAL ZIGZAG LINE"
+  ],
+  [
+    10651,
+    "MEASURED ANGLE OPENING LEFT"
+  ],
+  [
+    10652,
+    "RIGHT ANGLE VARIANT WITH SQUARE"
+  ],
+  [
+    10653,
+    "MEASURED RIGHT ANGLE WITH DOT"
+  ],
+  [
+    10654,
+    "ANGLE WITH S INSIDE"
+  ],
+  [
+    10655,
+    "ACUTE ANGLE"
+  ],
+  [
+    10656,
+    "SPHERICAL ANGLE OPENING LEFT"
+  ],
+  [
+    10657,
+    "SPHERICAL ANGLE OPENING UP"
+  ],
+  [
+    10658,
+    "TURNED ANGLE"
+  ],
+  [
+    10659,
+    "REVERSED ANGLE"
+  ],
+  [
+    10660,
+    "ANGLE WITH UNDERBAR"
+  ],
+  [
+    10661,
+    "REVERSED ANGLE WITH UNDERBAR"
+  ],
+  [
+    10662,
+    "OBLIQUE ANGLE OPENING UP"
+  ],
+  [
+    10663,
+    "OBLIQUE ANGLE OPENING DOWN"
+  ],
+  [
+    10664,
+    "MEASURED ANGLE WITH OPEN ARM ENDING IN ARROW POINTING UP AND RIGHT"
+  ],
+  [
+    10665,
+    "MEASURED ANGLE WITH OPEN ARM ENDING IN ARROW POINTING UP AND LEFT"
+  ],
+  [
+    10666,
+    "MEASURED ANGLE WITH OPEN ARM ENDING IN ARROW POINTING DOWN AND RIGHT"
+  ],
+  [
+    10667,
+    "MEASURED ANGLE WITH OPEN ARM ENDING IN ARROW POINTING DOWN AND LEFT"
+  ],
+  [
+    10668,
+    "MEASURED ANGLE WITH OPEN ARM ENDING IN ARROW POINTING RIGHT AND UP"
+  ],
+  [
+    10669,
+    "MEASURED ANGLE WITH OPEN ARM ENDING IN ARROW POINTING LEFT AND UP"
+  ],
+  [
+    10670,
+    "MEASURED ANGLE WITH OPEN ARM ENDING IN ARROW POINTING RIGHT AND DOWN"
+  ],
+  [
+    10671,
+    "MEASURED ANGLE WITH OPEN ARM ENDING IN ARROW POINTING LEFT AND DOWN"
+  ],
+  [
+    10672,
+    "REVERSED EMPTY SET"
+  ],
+  [
+    10673,
+    "EMPTY SET WITH OVERBAR"
+  ],
+  [
+    10674,
+    "EMPTY SET WITH SMALL CIRCLE ABOVE"
+  ],
+  [
+    10675,
+    "EMPTY SET WITH RIGHT ARROW ABOVE"
+  ],
+  [
+    10676,
+    "EMPTY SET WITH LEFT ARROW ABOVE"
+  ],
+  [
+    10677,
+    "CIRCLE WITH HORIZONTAL BAR"
+  ],
+  [
+    10678,
+    "CIRCLED VERTICAL BAR"
+  ],
+  [
+    10679,
+    "CIRCLED PARALLEL"
+  ],
+  [
+    10680,
+    "CIRCLED REVERSE SOLIDUS"
+  ],
+  [
+    10681,
+    "CIRCLED PERPENDICULAR"
+  ],
+  [
+    10682,
+    "CIRCLE DIVIDED BY HORIZONTAL BAR AND TOP HALF DIVIDED BY VERTICAL BAR"
+  ],
+  [
+    10683,
+    "CIRCLE WITH SUPERIMPOSED X"
+  ],
+  [
+    10684,
+    "CIRCLED ANTICLOCKWISE-ROTATED DIVISION SIGN"
+  ],
+  [
+    10685,
+    "UP ARROW THROUGH CIRCLE"
+  ],
+  [
+    10686,
+    "CIRCLED WHITE BULLET"
+  ],
+  [
+    10687,
+    "CIRCLED BULLET"
+  ],
+  [
+    10688,
+    "CIRCLED LESS-THAN"
+  ],
+  [
+    10689,
+    "CIRCLED GREATER-THAN"
+  ],
+  [
+    10690,
+    "CIRCLE WITH SMALL CIRCLE TO THE RIGHT"
+  ],
+  [
+    10691,
+    "CIRCLE WITH TWO HORIZONTAL STROKES TO THE RIGHT"
+  ],
+  [
+    10692,
+    "SQUARED RISING DIAGONAL SLASH"
+  ],
+  [
+    10693,
+    "SQUARED FALLING DIAGONAL SLASH"
+  ],
+  [
+    10694,
+    "SQUARED ASTERISK"
+  ],
+  [
+    10695,
+    "SQUARED SMALL CIRCLE"
+  ],
+  [
+    10696,
+    "SQUARED SQUARE"
+  ],
+  [
+    10697,
+    "TWO JOINED SQUARES"
+  ],
+  [
+    10698,
+    "TRIANGLE WITH DOT ABOVE"
+  ],
+  [
+    10699,
+    "TRIANGLE WITH UNDERBAR"
+  ],
+  [
+    10700,
+    "S IN TRIANGLE"
+  ],
+  [
+    10701,
+    "TRIANGLE WITH SERIFS AT BOTTOM"
+  ],
+  [
+    10702,
+    "RIGHT TRIANGLE ABOVE LEFT TRIANGLE"
+  ],
+  [
+    10703,
+    "LEFT TRIANGLE BESIDE VERTICAL BAR"
+  ],
+  [
+    10704,
+    "VERTICAL BAR BESIDE RIGHT TRIANGLE"
+  ],
+  [
+    10705,
+    "BOWTIE WITH LEFT HALF BLACK"
+  ],
+  [
+    10706,
+    "BOWTIE WITH RIGHT HALF BLACK"
+  ],
+  [
+    10707,
+    "BLACK BOWTIE"
+  ],
+  [
+    10708,
+    "TIMES WITH LEFT HALF BLACK"
+  ],
+  [
+    10709,
+    "TIMES WITH RIGHT HALF BLACK"
+  ],
+  [
+    10710,
+    "WHITE HOURGLASS"
+  ],
+  [
+    10711,
+    "BLACK HOURGLASS"
+  ],
+  [
+    10712,
+    "LEFT WIGGLY FENCE"
+  ],
+  [
+    10713,
+    "RIGHT WIGGLY FENCE"
+  ],
+  [
+    10714,
+    "LEFT DOUBLE WIGGLY FENCE"
+  ],
+  [
+    10715,
+    "RIGHT DOUBLE WIGGLY FENCE"
+  ],
+  [
+    10716,
+    "INCOMPLETE INFINITY"
+  ],
+  [
+    10717,
+    "TIE OVER INFINITY"
+  ],
+  [
+    10718,
+    "INFINITY NEGATED WITH VERTICAL BAR"
+  ],
+  [
+    10719,
+    "DOUBLE-ENDED MULTIMAP"
+  ],
+  [
+    10720,
+    "SQUARE WITH CONTOURED OUTLINE"
+  ],
+  [
+    10721,
+    "INCREASES AS"
+  ],
+  [
+    10722,
+    "SHUFFLE PRODUCT"
+  ],
+  [
+    10723,
+    "EQUALS SIGN AND SLANTED PARALLEL"
+  ],
+  [
+    10724,
+    "EQUALS SIGN AND SLANTED PARALLEL WITH TILDE ABOVE"
+  ],
+  [
+    10725,
+    "IDENTICAL TO AND SLANTED PARALLEL"
+  ],
+  [
+    10726,
+    "GLEICH STARK"
+  ],
+  [
+    10727,
+    "THERMODYNAMIC"
+  ],
+  [
+    10728,
+    "DOWN-POINTING TRIANGLE WITH LEFT HALF BLACK"
+  ],
+  [
+    10729,
+    "DOWN-POINTING TRIANGLE WITH RIGHT HALF BLACK"
+  ],
+  [
+    10730,
+    "BLACK DIAMOND WITH DOWN ARROW"
+  ],
+  [
+    10731,
+    "BLACK LOZENGE"
+  ],
+  [
+    10732,
+    "WHITE CIRCLE WITH DOWN ARROW"
+  ],
+  [
+    10733,
+    "BLACK CIRCLE WITH DOWN ARROW"
+  ],
+  [
+    10734,
+    "ERROR-BARRED WHITE SQUARE"
+  ],
+  [
+    10735,
+    "ERROR-BARRED BLACK SQUARE"
+  ],
+  [
+    10736,
+    "ERROR-BARRED WHITE DIAMOND"
+  ],
+  [
+    10737,
+    "ERROR-BARRED BLACK DIAMOND"
+  ],
+  [
+    10738,
+    "ERROR-BARRED WHITE CIRCLE"
+  ],
+  [
+    10739,
+    "ERROR-BARRED BLACK CIRCLE"
+  ],
+  [
+    10740,
+    "RULE-DELAYED"
+  ],
+  [
+    10741,
+    "REVERSE SOLIDUS OPERATOR"
+  ],
+  [
+    10742,
+    "SOLIDUS WITH OVERBAR"
+  ],
+  [
+    10743,
+    "REVERSE SOLIDUS WITH HORIZONTAL STROKE"
+  ],
+  [
+    10744,
+    "BIG SOLIDUS"
+  ],
+  [
+    10745,
+    "BIG REVERSE SOLIDUS"
+  ],
+  [
+    10746,
+    "DOUBLE PLUS"
+  ],
+  [
+    10747,
+    "TRIPLE PLUS"
+  ],
+  [
+    10748,
+    "LEFT-POINTING CURVED ANGLE BRACKET"
+  ],
+  [
+    10749,
+    "RIGHT-POINTING CURVED ANGLE BRACKET"
+  ],
+  [
+    10750,
+    "TINY"
+  ],
+  [
+    10751,
+    "MINY"
+  ],
+  [
+    10752,
+    "N-ARY CIRCLED DOT OPERATOR"
+  ],
+  [
+    10753,
+    "N-ARY CIRCLED PLUS OPERATOR"
+  ],
+  [
+    10754,
+    "N-ARY CIRCLED TIMES OPERATOR"
+  ],
+  [
+    10755,
+    "N-ARY UNION OPERATOR WITH DOT"
+  ],
+  [
+    10756,
+    "N-ARY UNION OPERATOR WITH PLUS"
+  ],
+  [
+    10757,
+    "N-ARY SQUARE INTERSECTION OPERATOR"
+  ],
+  [
+    10758,
+    "N-ARY SQUARE UNION OPERATOR"
+  ],
+  [
+    10759,
+    "TWO LOGICAL AND OPERATOR"
+  ],
+  [
+    10760,
+    "TWO LOGICAL OR OPERATOR"
+  ],
+  [
+    10761,
+    "N-ARY TIMES OPERATOR"
+  ],
+  [
+    10762,
+    "MODULO TWO SUM"
+  ],
+  [
+    10763,
+    "SUMMATION WITH INTEGRAL"
+  ],
+  [
+    10764,
+    "QUADRUPLE INTEGRAL OPERATOR"
+  ],
+  [
+    10765,
+    "FINITE PART INTEGRAL"
+  ],
+  [
+    10766,
+    "INTEGRAL WITH DOUBLE STROKE"
+  ],
+  [
+    10767,
+    "INTEGRAL AVERAGE WITH SLASH"
+  ],
+  [
+    10768,
+    "CIRCULATION FUNCTION"
+  ],
+  [
+    10769,
+    "ANTICLOCKWISE INTEGRATION"
+  ],
+  [
+    10770,
+    "LINE INTEGRATION WITH RECTANGULAR PATH AROUND POLE"
+  ],
+  [
+    10771,
+    "LINE INTEGRATION WITH SEMICIRCULAR PATH AROUND POLE"
+  ],
+  [
+    10772,
+    "LINE INTEGRATION NOT INCLUDING THE POLE"
+  ],
+  [
+    10773,
+    "INTEGRAL AROUND A POINT OPERATOR"
+  ],
+  [
+    10774,
+    "QUATERNION INTEGRAL OPERATOR"
+  ],
+  [
+    10775,
+    "INTEGRAL WITH LEFTWARDS ARROW WITH HOOK"
+  ],
+  [
+    10776,
+    "INTEGRAL WITH TIMES SIGN"
+  ],
+  [
+    10777,
+    "INTEGRAL WITH INTERSECTION"
+  ],
+  [
+    10778,
+    "INTEGRAL WITH UNION"
+  ],
+  [
+    10779,
+    "INTEGRAL WITH OVERBAR"
+  ],
+  [
+    10780,
+    "INTEGRAL WITH UNDERBAR"
+  ],
+  [
+    10781,
+    "JOIN"
+  ],
+  [
+    10782,
+    "LARGE LEFT TRIANGLE OPERATOR"
+  ],
+  [
+    10783,
+    "Z NOTATION SCHEMA COMPOSITION"
+  ],
+  [
+    10784,
+    "Z NOTATION SCHEMA PIPING"
+  ],
+  [
+    10785,
+    "Z NOTATION SCHEMA PROJECTION"
+  ],
+  [
+    10786,
+    "PLUS SIGN WITH SMALL CIRCLE ABOVE"
+  ],
+  [
+    10787,
+    "PLUS SIGN WITH CIRCUMFLEX ACCENT ABOVE"
+  ],
+  [
+    10788,
+    "PLUS SIGN WITH TILDE ABOVE"
+  ],
+  [
+    10789,
+    "PLUS SIGN WITH DOT BELOW"
+  ],
+  [
+    10790,
+    "PLUS SIGN WITH TILDE BELOW"
+  ],
+  [
+    10791,
+    "PLUS SIGN WITH SUBSCRIPT TWO"
+  ],
+  [
+    10792,
+    "PLUS SIGN WITH BLACK TRIANGLE"
+  ],
+  [
+    10793,
+    "MINUS SIGN WITH COMMA ABOVE"
+  ],
+  [
+    10794,
+    "MINUS SIGN WITH DOT BELOW"
+  ],
+  [
+    10795,
+    "MINUS SIGN WITH FALLING DOTS"
+  ],
+  [
+    10796,
+    "MINUS SIGN WITH RISING DOTS"
+  ],
+  [
+    10797,
+    "PLUS SIGN IN LEFT HALF CIRCLE"
+  ],
+  [
+    10798,
+    "PLUS SIGN IN RIGHT HALF CIRCLE"
+  ],
+  [
+    10799,
+    "VECTOR OR CROSS PRODUCT"
+  ],
+  [
+    10800,
+    "MULTIPLICATION SIGN WITH DOT ABOVE"
+  ],
+  [
+    10801,
+    "MULTIPLICATION SIGN WITH UNDERBAR"
+  ],
+  [
+    10802,
+    "SEMIDIRECT PRODUCT WITH BOTTOM CLOSED"
+  ],
+  [
+    10803,
+    "SMASH PRODUCT"
+  ],
+  [
+    10804,
+    "MULTIPLICATION SIGN IN LEFT HALF CIRCLE"
+  ],
+  [
+    10805,
+    "MULTIPLICATION SIGN IN RIGHT HALF CIRCLE"
+  ],
+  [
+    10806,
+    "CIRCLED MULTIPLICATION SIGN WITH CIRCUMFLEX ACCENT"
+  ],
+  [
+    10807,
+    "MULTIPLICATION SIGN IN DOUBLE CIRCLE"
+  ],
+  [
+    10808,
+    "CIRCLED DIVISION SIGN"
+  ],
+  [
+    10809,
+    "PLUS SIGN IN TRIANGLE"
+  ],
+  [
+    10810,
+    "MINUS SIGN IN TRIANGLE"
+  ],
+  [
+    10811,
+    "MULTIPLICATION SIGN IN TRIANGLE"
+  ],
+  [
+    10812,
+    "INTERIOR PRODUCT"
+  ],
+  [
+    10813,
+    "RIGHTHAND INTERIOR PRODUCT"
+  ],
+  [
+    10814,
+    "Z NOTATION RELATIONAL COMPOSITION"
+  ],
+  [
+    10815,
+    "AMALGAMATION OR COPRODUCT"
+  ],
+  [
+    10816,
+    "INTERSECTION WITH DOT"
+  ],
+  [
+    10817,
+    "UNION WITH MINUS SIGN"
+  ],
+  [
+    10818,
+    "UNION WITH OVERBAR"
+  ],
+  [
+    10819,
+    "INTERSECTION WITH OVERBAR"
+  ],
+  [
+    10820,
+    "INTERSECTION WITH LOGICAL AND"
+  ],
+  [
+    10821,
+    "UNION WITH LOGICAL OR"
+  ],
+  [
+    10822,
+    "UNION ABOVE INTERSECTION"
+  ],
+  [
+    10823,
+    "INTERSECTION ABOVE UNION"
+  ],
+  [
+    10824,
+    "UNION ABOVE BAR ABOVE INTERSECTION"
+  ],
+  [
+    10825,
+    "INTERSECTION ABOVE BAR ABOVE UNION"
+  ],
+  [
+    10826,
+    "UNION BESIDE AND JOINED WITH UNION"
+  ],
+  [
+    10827,
+    "INTERSECTION BESIDE AND JOINED WITH INTERSECTION"
+  ],
+  [
+    10828,
+    "CLOSED UNION WITH SERIFS"
+  ],
+  [
+    10829,
+    "CLOSED INTERSECTION WITH SERIFS"
+  ],
+  [
+    10830,
+    "DOUBLE SQUARE INTERSECTION"
+  ],
+  [
+    10831,
+    "DOUBLE SQUARE UNION"
+  ],
+  [
+    10832,
+    "CLOSED UNION WITH SERIFS AND SMASH PRODUCT"
+  ],
+  [
+    10833,
+    "LOGICAL AND WITH DOT ABOVE"
+  ],
+  [
+    10834,
+    "LOGICAL OR WITH DOT ABOVE"
+  ],
+  [
+    10835,
+    "DOUBLE LOGICAL AND"
+  ],
+  [
+    10836,
+    "DOUBLE LOGICAL OR"
+  ],
+  [
+    10837,
+    "TWO INTERSECTING LOGICAL AND"
+  ],
+  [
+    10838,
+    "TWO INTERSECTING LOGICAL OR"
+  ],
+  [
+    10839,
+    "SLOPING LARGE OR"
+  ],
+  [
+    10840,
+    "SLOPING LARGE AND"
+  ],
+  [
+    10841,
+    "LOGICAL OR OVERLAPPING LOGICAL AND"
+  ],
+  [
+    10842,
+    "LOGICAL AND WITH MIDDLE STEM"
+  ],
+  [
+    10843,
+    "LOGICAL OR WITH MIDDLE STEM"
+  ],
+  [
+    10844,
+    "LOGICAL AND WITH HORIZONTAL DASH"
+  ],
+  [
+    10845,
+    "LOGICAL OR WITH HORIZONTAL DASH"
+  ],
+  [
+    10846,
+    "LOGICAL AND WITH DOUBLE OVERBAR"
+  ],
+  [
+    10847,
+    "LOGICAL AND WITH UNDERBAR"
+  ],
+  [
+    10848,
+    "LOGICAL AND WITH DOUBLE UNDERBAR"
+  ],
+  [
+    10849,
+    "SMALL VEE WITH UNDERBAR"
+  ],
+  [
+    10850,
+    "LOGICAL OR WITH DOUBLE OVERBAR"
+  ],
+  [
+    10851,
+    "LOGICAL OR WITH DOUBLE UNDERBAR"
+  ],
+  [
+    10852,
+    "Z NOTATION DOMAIN ANTIRESTRICTION"
+  ],
+  [
+    10853,
+    "Z NOTATION RANGE ANTIRESTRICTION"
+  ],
+  [
+    10854,
+    "EQUALS SIGN WITH DOT BELOW"
+  ],
+  [
+    10855,
+    "IDENTICAL WITH DOT ABOVE"
+  ],
+  [
+    10856,
+    "TRIPLE HORIZONTAL BAR WITH DOUBLE VERTICAL STROKE"
+  ],
+  [
+    10857,
+    "TRIPLE HORIZONTAL BAR WITH TRIPLE VERTICAL STROKE"
+  ],
+  [
+    10858,
+    "TILDE OPERATOR WITH DOT ABOVE"
+  ],
+  [
+    10859,
+    "TILDE OPERATOR WITH RISING DOTS"
+  ],
+  [
+    10860,
+    "SIMILAR MINUS SIMILAR"
+  ],
+  [
+    10861,
+    "CONGRUENT WITH DOT ABOVE"
+  ],
+  [
+    10862,
+    "EQUALS WITH ASTERISK"
+  ],
+  [
+    10863,
+    "ALMOST EQUAL TO WITH CIRCUMFLEX ACCENT"
+  ],
+  [
+    10864,
+    "APPROXIMATELY EQUAL OR EQUAL TO"
+  ],
+  [
+    10865,
+    "EQUALS SIGN ABOVE PLUS SIGN"
+  ],
+  [
+    10866,
+    "PLUS SIGN ABOVE EQUALS SIGN"
+  ],
+  [
+    10867,
+    "EQUALS SIGN ABOVE TILDE OPERATOR"
+  ],
+  [
+    10868,
+    "DOUBLE COLON EQUAL"
+  ],
+  [
+    10869,
+    "TWO CONSECUTIVE EQUALS SIGNS"
+  ],
+  [
+    10870,
+    "THREE CONSECUTIVE EQUALS SIGNS"
+  ],
+  [
+    10871,
+    "EQUALS SIGN WITH TWO DOTS ABOVE AND TWO DOTS BELOW"
+  ],
+  [
+    10872,
+    "EQUIVALENT WITH FOUR DOTS ABOVE"
+  ],
+  [
+    10873,
+    "LESS-THAN WITH CIRCLE INSIDE"
+  ],
+  [
+    10874,
+    "GREATER-THAN WITH CIRCLE INSIDE"
+  ],
+  [
+    10875,
+    "LESS-THAN WITH QUESTION MARK ABOVE"
+  ],
+  [
+    10876,
+    "GREATER-THAN WITH QUESTION MARK ABOVE"
+  ],
+  [
+    10877,
+    "LESS-THAN OR SLANTED EQUAL TO"
+  ],
+  [
+    10878,
+    "GREATER-THAN OR SLANTED EQUAL TO"
+  ],
+  [
+    10879,
+    "LESS-THAN OR SLANTED EQUAL TO WITH DOT INSIDE"
+  ],
+  [
+    10880,
+    "GREATER-THAN OR SLANTED EQUAL TO WITH DOT INSIDE"
+  ],
+  [
+    10881,
+    "LESS-THAN OR SLANTED EQUAL TO WITH DOT ABOVE"
+  ],
+  [
+    10882,
+    "GREATER-THAN OR SLANTED EQUAL TO WITH DOT ABOVE"
+  ],
+  [
+    10883,
+    "LESS-THAN OR SLANTED EQUAL TO WITH DOT ABOVE RIGHT"
+  ],
+  [
+    10884,
+    "GREATER-THAN OR SLANTED EQUAL TO WITH DOT ABOVE LEFT"
+  ],
+  [
+    10885,
+    "LESS-THAN OR APPROXIMATE"
+  ],
+  [
+    10886,
+    "GREATER-THAN OR APPROXIMATE"
+  ],
+  [
+    10887,
+    "LESS-THAN AND SINGLE-LINE NOT EQUAL TO"
+  ],
+  [
+    10888,
+    "GREATER-THAN AND SINGLE-LINE NOT EQUAL TO"
+  ],
+  [
+    10889,
+    "LESS-THAN AND NOT APPROXIMATE"
+  ],
+  [
+    10890,
+    "GREATER-THAN AND NOT APPROXIMATE"
+  ],
+  [
+    10891,
+    "LESS-THAN ABOVE DOUBLE-LINE EQUAL ABOVE GREATER-THAN"
+  ],
+  [
+    10892,
+    "GREATER-THAN ABOVE DOUBLE-LINE EQUAL ABOVE LESS-THAN"
+  ],
+  [
+    10893,
+    "LESS-THAN ABOVE SIMILAR OR EQUAL"
+  ],
+  [
+    10894,
+    "GREATER-THAN ABOVE SIMILAR OR EQUAL"
+  ],
+  [
+    10895,
+    "LESS-THAN ABOVE SIMILAR ABOVE GREATER-THAN"
+  ],
+  [
+    10896,
+    "GREATER-THAN ABOVE SIMILAR ABOVE LESS-THAN"
+  ],
+  [
+    10897,
+    "LESS-THAN ABOVE GREATER-THAN ABOVE DOUBLE-LINE EQUAL"
+  ],
+  [
+    10898,
+    "GREATER-THAN ABOVE LESS-THAN ABOVE DOUBLE-LINE EQUAL"
+  ],
+  [
+    10899,
+    "LESS-THAN ABOVE SLANTED EQUAL ABOVE GREATER-THAN ABOVE SLANTED EQUAL"
+  ],
+  [
+    10900,
+    "GREATER-THAN ABOVE SLANTED EQUAL ABOVE LESS-THAN ABOVE SLANTED EQUAL"
+  ],
+  [
+    10901,
+    "SLANTED EQUAL TO OR LESS-THAN"
+  ],
+  [
+    10902,
+    "SLANTED EQUAL TO OR GREATER-THAN"
+  ],
+  [
+    10903,
+    "SLANTED EQUAL TO OR LESS-THAN WITH DOT INSIDE"
+  ],
+  [
+    10904,
+    "SLANTED EQUAL TO OR GREATER-THAN WITH DOT INSIDE"
+  ],
+  [
+    10905,
+    "DOUBLE-LINE EQUAL TO OR LESS-THAN"
+  ],
+  [
+    10906,
+    "DOUBLE-LINE EQUAL TO OR GREATER-THAN"
+  ],
+  [
+    10907,
+    "DOUBLE-LINE SLANTED EQUAL TO OR LESS-THAN"
+  ],
+  [
+    10908,
+    "DOUBLE-LINE SLANTED EQUAL TO OR GREATER-THAN"
+  ],
+  [
+    10909,
+    "SIMILAR OR LESS-THAN"
+  ],
+  [
+    10910,
+    "SIMILAR OR GREATER-THAN"
+  ],
+  [
+    10911,
+    "SIMILAR ABOVE LESS-THAN ABOVE EQUALS SIGN"
+  ],
+  [
+    10912,
+    "SIMILAR ABOVE GREATER-THAN ABOVE EQUALS SIGN"
+  ],
+  [
+    10913,
+    "DOUBLE NESTED LESS-THAN"
+  ],
+  [
+    10914,
+    "DOUBLE NESTED GREATER-THAN"
+  ],
+  [
+    10915,
+    "DOUBLE NESTED LESS-THAN WITH UNDERBAR"
+  ],
+  [
+    10916,
+    "GREATER-THAN OVERLAPPING LESS-THAN"
+  ],
+  [
+    10917,
+    "GREATER-THAN BESIDE LESS-THAN"
+  ],
+  [
+    10918,
+    "LESS-THAN CLOSED BY CURVE"
+  ],
+  [
+    10919,
+    "GREATER-THAN CLOSED BY CURVE"
+  ],
+  [
+    10920,
+    "LESS-THAN CLOSED BY CURVE ABOVE SLANTED EQUAL"
+  ],
+  [
+    10921,
+    "GREATER-THAN CLOSED BY CURVE ABOVE SLANTED EQUAL"
+  ],
+  [
+    10922,
+    "SMALLER THAN"
+  ],
+  [
+    10923,
+    "LARGER THAN"
+  ],
+  [
+    10924,
+    "SMALLER THAN OR EQUAL TO"
+  ],
+  [
+    10925,
+    "LARGER THAN OR EQUAL TO"
+  ],
+  [
+    10926,
+    "EQUALS SIGN WITH BUMPY ABOVE"
+  ],
+  [
+    10927,
+    "PRECEDES ABOVE SINGLE-LINE EQUALS SIGN"
+  ],
+  [
+    10928,
+    "SUCCEEDS ABOVE SINGLE-LINE EQUALS SIGN"
+  ],
+  [
+    10929,
+    "PRECEDES ABOVE SINGLE-LINE NOT EQUAL TO"
+  ],
+  [
+    10930,
+    "SUCCEEDS ABOVE SINGLE-LINE NOT EQUAL TO"
+  ],
+  [
+    10931,
+    "PRECEDES ABOVE EQUALS SIGN"
+  ],
+  [
+    10932,
+    "SUCCEEDS ABOVE EQUALS SIGN"
+  ],
+  [
+    10933,
+    "PRECEDES ABOVE NOT EQUAL TO"
+  ],
+  [
+    10934,
+    "SUCCEEDS ABOVE NOT EQUAL TO"
+  ],
+  [
+    10935,
+    "PRECEDES ABOVE ALMOST EQUAL TO"
+  ],
+  [
+    10936,
+    "SUCCEEDS ABOVE ALMOST EQUAL TO"
+  ],
+  [
+    10937,
+    "PRECEDES ABOVE NOT ALMOST EQUAL TO"
+  ],
+  [
+    10938,
+    "SUCCEEDS ABOVE NOT ALMOST EQUAL TO"
+  ],
+  [
+    10939,
+    "DOUBLE PRECEDES"
+  ],
+  [
+    10940,
+    "DOUBLE SUCCEEDS"
+  ],
+  [
+    10941,
+    "SUBSET WITH DOT"
+  ],
+  [
+    10942,
+    "SUPERSET WITH DOT"
+  ],
+  [
+    10943,
+    "SUBSET WITH PLUS SIGN BELOW"
+  ],
+  [
+    10944,
+    "SUPERSET WITH PLUS SIGN BELOW"
+  ],
+  [
+    10945,
+    "SUBSET WITH MULTIPLICATION SIGN BELOW"
+  ],
+  [
+    10946,
+    "SUPERSET WITH MULTIPLICATION SIGN BELOW"
+  ],
+  [
+    10947,
+    "SUBSET OF OR EQUAL TO WITH DOT ABOVE"
+  ],
+  [
+    10948,
+    "SUPERSET OF OR EQUAL TO WITH DOT ABOVE"
+  ],
+  [
+    10949,
+    "SUBSET OF ABOVE EQUALS SIGN"
+  ],
+  [
+    10950,
+    "SUPERSET OF ABOVE EQUALS SIGN"
+  ],
+  [
+    10951,
+    "SUBSET OF ABOVE TILDE OPERATOR"
+  ],
+  [
+    10952,
+    "SUPERSET OF ABOVE TILDE OPERATOR"
+  ],
+  [
+    10953,
+    "SUBSET OF ABOVE ALMOST EQUAL TO"
+  ],
+  [
+    10954,
+    "SUPERSET OF ABOVE ALMOST EQUAL TO"
+  ],
+  [
+    10955,
+    "SUBSET OF ABOVE NOT EQUAL TO"
+  ],
+  [
+    10956,
+    "SUPERSET OF ABOVE NOT EQUAL TO"
+  ],
+  [
+    10957,
+    "SQUARE LEFT OPEN BOX OPERATOR"
+  ],
+  [
+    10958,
+    "SQUARE RIGHT OPEN BOX OPERATOR"
+  ],
+  [
+    10959,
+    "CLOSED SUBSET"
+  ],
+  [
+    10960,
+    "CLOSED SUPERSET"
+  ],
+  [
+    10961,
+    "CLOSED SUBSET OR EQUAL TO"
+  ],
+  [
+    10962,
+    "CLOSED SUPERSET OR EQUAL TO"
+  ],
+  [
+    10963,
+    "SUBSET ABOVE SUPERSET"
+  ],
+  [
+    10964,
+    "SUPERSET ABOVE SUBSET"
+  ],
+  [
+    10965,
+    "SUBSET ABOVE SUBSET"
+  ],
+  [
+    10966,
+    "SUPERSET ABOVE SUPERSET"
+  ],
+  [
+    10967,
+    "SUPERSET BESIDE SUBSET"
+  ],
+  [
+    10968,
+    "SUPERSET BESIDE AND JOINED BY DASH WITH SUBSET"
+  ],
+  [
+    10969,
+    "ELEMENT OF OPENING DOWNWARDS"
+  ],
+  [
+    10970,
+    "PITCHFORK WITH TEE TOP"
+  ],
+  [
+    10971,
+    "TRANSVERSAL INTERSECTION"
+  ],
+  [
+    10972,
+    "FORKING"
+  ],
+  [
+    10973,
+    "NONFORKING"
+  ],
+  [
+    10974,
+    "SHORT LEFT TACK"
+  ],
+  [
+    10975,
+    "SHORT DOWN TACK"
+  ],
+  [
+    10976,
+    "SHORT UP TACK"
+  ],
+  [
+    10977,
+    "PERPENDICULAR WITH S"
+  ],
+  [
+    10978,
+    "VERTICAL BAR TRIPLE RIGHT TURNSTILE"
+  ],
+  [
+    10979,
+    "DOUBLE VERTICAL BAR LEFT TURNSTILE"
+  ],
+  [
+    10980,
+    "VERTICAL BAR DOUBLE LEFT TURNSTILE"
+  ],
+  [
+    10981,
+    "DOUBLE VERTICAL BAR DOUBLE LEFT TURNSTILE"
+  ],
+  [
+    10982,
+    "LONG DASH FROM LEFT MEMBER OF DOUBLE VERTICAL"
+  ],
+  [
+    10983,
+    "SHORT DOWN TACK WITH OVERBAR"
+  ],
+  [
+    10984,
+    "SHORT UP TACK WITH UNDERBAR"
+  ],
+  [
+    10985,
+    "SHORT UP TACK ABOVE SHORT DOWN TACK"
+  ],
+  [
+    10986,
+    "DOUBLE DOWN TACK"
+  ],
+  [
+    10987,
+    "DOUBLE UP TACK"
+  ],
+  [
+    10988,
+    "DOUBLE STROKE NOT SIGN"
+  ],
+  [
+    10989,
+    "REVERSED DOUBLE STROKE NOT SIGN"
+  ],
+  [
+    10990,
+    "DOES NOT DIVIDE WITH REVERSED NEGATION SLASH"
+  ],
+  [
+    10991,
+    "VERTICAL LINE WITH CIRCLE ABOVE"
+  ],
+  [
+    10992,
+    "VERTICAL LINE WITH CIRCLE BELOW"
+  ],
+  [
+    10993,
+    "DOWN TACK WITH CIRCLE BELOW"
+  ],
+  [
+    10994,
+    "PARALLEL WITH HORIZONTAL STROKE"
+  ],
+  [
+    10995,
+    "PARALLEL WITH TILDE OPERATOR"
+  ],
+  [
+    10996,
+    "TRIPLE VERTICAL BAR BINARY RELATION"
+  ],
+  [
+    10997,
+    "TRIPLE VERTICAL BAR WITH HORIZONTAL STROKE"
+  ],
+  [
+    10998,
+    "TRIPLE COLON OPERATOR"
+  ],
+  [
+    10999,
+    "TRIPLE NESTED LESS-THAN"
+  ],
+  [
+    11000,
+    "TRIPLE NESTED GREATER-THAN"
+  ],
+  [
+    11001,
+    "DOUBLE-LINE SLANTED LESS-THAN OR EQUAL TO"
+  ],
+  [
+    11002,
+    "DOUBLE-LINE SLANTED GREATER-THAN OR EQUAL TO"
+  ],
+  [
+    11003,
+    "TRIPLE SOLIDUS BINARY RELATION"
+  ],
+  [
+    11004,
+    "LARGE TRIPLE VERTICAL BAR OPERATOR"
+  ],
+  [
+    11005,
+    "DOUBLE SOLIDUS OPERATOR"
+  ],
+  [
+    11006,
+    "WHITE VERTICAL BAR"
+  ],
+  [
+    11007,
+    "N-ARY WHITE VERTICAL BAR"
+  ],
+  [
+    11008,
+    "NORTH EAST WHITE ARROW"
+  ],
+  [
+    11009,
+    "NORTH WEST WHITE ARROW"
+  ],
+  [
+    11010,
+    "SOUTH EAST WHITE ARROW"
+  ],
+  [
+    11011,
+    "SOUTH WEST WHITE ARROW"
+  ],
+  [
+    11012,
+    "LEFT RIGHT WHITE ARROW"
+  ],
+  [
+    11013,
+    "LEFTWARDS BLACK ARROW"
+  ],
+  [
+    11014,
+    "UPWARDS BLACK ARROW"
+  ],
+  [
+    11015,
+    "DOWNWARDS BLACK ARROW"
+  ],
+  [
+    11016,
+    "NORTH EAST BLACK ARROW"
+  ],
+  [
+    11017,
+    "NORTH WEST BLACK ARROW"
+  ],
+  [
+    11018,
+    "SOUTH EAST BLACK ARROW"
+  ],
+  [
+    11019,
+    "SOUTH WEST BLACK ARROW"
+  ],
+  [
+    11020,
+    "LEFT RIGHT BLACK ARROW"
+  ],
+  [
+    11021,
+    "UP DOWN BLACK ARROW"
+  ],
+  [
+    11022,
+    "RIGHTWARDS ARROW WITH TIP DOWNWARDS"
+  ],
+  [
+    11023,
+    "RIGHTWARDS ARROW WITH TIP UPWARDS"
+  ],
+  [
+    11024,
+    "LEFTWARDS ARROW WITH TIP DOWNWARDS"
+  ],
+  [
+    11025,
+    "LEFTWARDS ARROW WITH TIP UPWARDS"
+  ],
+  [
+    11026,
+    "SQUARE WITH TOP HALF BLACK"
+  ],
+  [
+    11027,
+    "SQUARE WITH BOTTOM HALF BLACK"
+  ],
+  [
+    11028,
+    "SQUARE WITH UPPER RIGHT DIAGONAL HALF BLACK"
+  ],
+  [
+    11029,
+    "SQUARE WITH LOWER LEFT DIAGONAL HALF BLACK"
+  ],
+  [
+    11030,
+    "DIAMOND WITH LEFT HALF BLACK"
+  ],
+  [
+    11031,
+    "DIAMOND WITH RIGHT HALF BLACK"
+  ],
+  [
+    11032,
+    "DIAMOND WITH TOP HALF BLACK"
+  ],
+  [
+    11033,
+    "DIAMOND WITH BOTTOM HALF BLACK"
+  ],
+  [
+    11034,
+    "DOTTED SQUARE"
+  ],
+  [
+    11035,
+    "BLACK LARGE SQUARE"
+  ],
+  [
+    11036,
+    "WHITE LARGE SQUARE"
+  ],
+  [
+    11037,
+    "BLACK VERY SMALL SQUARE"
+  ],
+  [
+    11038,
+    "WHITE VERY SMALL SQUARE"
+  ],
+  [
+    11039,
+    "BLACK PENTAGON"
+  ],
+  [
+    11040,
+    "WHITE PENTAGON"
+  ],
+  [
+    11041,
+    "WHITE HEXAGON"
+  ],
+  [
+    11042,
+    "BLACK HEXAGON"
+  ],
+  [
+    11043,
+    "HORIZONTAL BLACK HEXAGON"
+  ],
+  [
+    11044,
+    "BLACK LARGE CIRCLE"
+  ],
+  [
+    11045,
+    "BLACK MEDIUM DIAMOND"
+  ],
+  [
+    11046,
+    "WHITE MEDIUM DIAMOND"
+  ],
+  [
+    11047,
+    "BLACK MEDIUM LOZENGE"
+  ],
+  [
+    11048,
+    "WHITE MEDIUM LOZENGE"
+  ],
+  [
+    11049,
+    "BLACK SMALL DIAMOND"
+  ],
+  [
+    11050,
+    "BLACK SMALL LOZENGE"
+  ],
+  [
+    11051,
+    "WHITE SMALL LOZENGE"
+  ],
+  [
+    11052,
+    "BLACK HORIZONTAL ELLIPSE"
+  ],
+  [
+    11053,
+    "WHITE HORIZONTAL ELLIPSE"
+  ],
+  [
+    11054,
+    "BLACK VERTICAL ELLIPSE"
+  ],
+  [
+    11055,
+    "WHITE VERTICAL ELLIPSE"
+  ],
+  [
+    11056,
+    "LEFT ARROW WITH SMALL CIRCLE"
+  ],
+  [
+    11057,
+    "THREE LEFTWARDS ARROWS"
+  ],
+  [
+    11058,
+    "LEFT ARROW WITH CIRCLED PLUS"
+  ],
+  [
+    11059,
+    "LONG LEFTWARDS SQUIGGLE ARROW"
+  ],
+  [
+    11060,
+    "LEFTWARDS TWO-HEADED ARROW WITH VERTICAL STROKE"
+  ],
+  [
+    11061,
+    "LEFTWARDS TWO-HEADED ARROW WITH DOUBLE VERTICAL STROKE"
+  ],
+  [
+    11062,
+    "LEFTWARDS TWO-HEADED ARROW FROM BAR"
+  ],
+  [
+    11063,
+    "LEFTWARDS TWO-HEADED TRIPLE DASH ARROW"
+  ],
+  [
+    11064,
+    "LEFTWARDS ARROW WITH DOTTED STEM"
+  ],
+  [
+    11065,
+    "LEFTWARDS ARROW WITH TAIL WITH VERTICAL STROKE"
+  ],
+  [
+    11066,
+    "LEFTWARDS ARROW WITH TAIL WITH DOUBLE VERTICAL STROKE"
+  ],
+  [
+    11067,
+    "LEFTWARDS TWO-HEADED ARROW WITH TAIL"
+  ],
+  [
+    11068,
+    "LEFTWARDS TWO-HEADED ARROW WITH TAIL WITH VERTICAL STROKE"
+  ],
+  [
+    11069,
+    "LEFTWARDS TWO-HEADED ARROW WITH TAIL WITH DOUBLE VERTICAL STROKE"
+  ],
+  [
+    11070,
+    "LEFTWARDS ARROW THROUGH X"
+  ],
+  [
+    11071,
+    "WAVE ARROW POINTING DIRECTLY LEFT"
+  ],
+  [
+    11072,
+    "EQUALS SIGN ABOVE LEFTWARDS ARROW"
+  ],
+  [
+    11073,
+    "REVERSE TILDE OPERATOR ABOVE LEFTWARDS ARROW"
+  ],
+  [
+    11074,
+    "LEFTWARDS ARROW ABOVE REVERSE ALMOST EQUAL TO"
+  ],
+  [
+    11075,
+    "RIGHTWARDS ARROW THROUGH GREATER-THAN"
+  ],
+  [
+    11076,
+    "RIGHTWARDS ARROW THROUGH SUPERSET"
+  ],
+  [
+    11077,
+    "LEFTWARDS QUADRUPLE ARROW"
+  ],
+  [
+    11078,
+    "RIGHTWARDS QUADRUPLE ARROW"
+  ],
+  [
+    11079,
+    "REVERSE TILDE OPERATOR ABOVE RIGHTWARDS ARROW"
+  ],
+  [
+    11080,
+    "RIGHTWARDS ARROW ABOVE REVERSE ALMOST EQUAL TO"
+  ],
+  [
+    11081,
+    "TILDE OPERATOR ABOVE LEFTWARDS ARROW"
+  ],
+  [
+    11082,
+    "LEFTWARDS ARROW ABOVE ALMOST EQUAL TO"
+  ],
+  [
+    11083,
+    "LEFTWARDS ARROW ABOVE REVERSE TILDE OPERATOR"
+  ],
+  [
+    11084,
+    "RIGHTWARDS ARROW ABOVE REVERSE TILDE OPERATOR"
+  ],
+  [
+    11085,
+    "DOWNWARDS TRIANGLE-HEADED ZIGZAG ARROW"
+  ],
+  [
+    11086,
+    "SHORT SLANTED NORTH ARROW"
+  ],
+  [
+    11087,
+    "SHORT BACKSLANTED SOUTH ARROW"
+  ],
+  [
+    11088,
+    "WHITE MEDIUM STAR"
+  ],
+  [
+    11089,
+    "BLACK SMALL STAR"
+  ],
+  [
+    11090,
+    "WHITE SMALL STAR"
+  ],
+  [
+    11091,
+    "BLACK RIGHT-POINTING PENTAGON"
+  ],
+  [
+    11092,
+    "WHITE RIGHT-POINTING PENTAGON"
+  ],
+  [
+    11093,
+    "HEAVY LARGE CIRCLE"
+  ],
+  [
+    11094,
+    "HEAVY OVAL WITH OVAL INSIDE"
+  ],
+  [
+    11095,
+    "HEAVY CIRCLE WITH CIRCLE INSIDE"
+  ],
+  [
+    11096,
+    "HEAVY CIRCLE"
+  ],
+  [
+    11097,
+    "HEAVY CIRCLED SALTIRE"
+  ],
+  [
+    11098,
+    "SLANTED NORTH ARROW WITH HOOKED HEAD"
+  ],
+  [
+    11099,
+    "BACKSLANTED SOUTH ARROW WITH HOOKED TAIL"
+  ],
+  [
+    11100,
+    "SLANTED NORTH ARROW WITH HORIZONTAL TAIL"
+  ],
+  [
+    11101,
+    "BACKSLANTED SOUTH ARROW WITH HORIZONTAL TAIL"
+  ],
+  [
+    11102,
+    "BENT ARROW POINTING DOWNWARDS THEN NORTH EAST"
+  ],
+  [
+    11103,
+    "SHORT BENT ARROW POINTING DOWNWARDS THEN NORTH EAST"
+  ],
+  [
+    11104,
+    "LEFTWARDS TRIANGLE-HEADED ARROW"
+  ],
+  [
+    11105,
+    "UPWARDS TRIANGLE-HEADED ARROW"
+  ],
+  [
+    11106,
+    "RIGHTWARDS TRIANGLE-HEADED ARROW"
+  ],
+  [
+    11107,
+    "DOWNWARDS TRIANGLE-HEADED ARROW"
+  ],
+  [
+    11108,
+    "LEFT RIGHT TRIANGLE-HEADED ARROW"
+  ],
+  [
+    11109,
+    "UP DOWN TRIANGLE-HEADED ARROW"
+  ],
+  [
+    11110,
+    "NORTH WEST TRIANGLE-HEADED ARROW"
+  ],
+  [
+    11111,
+    "NORTH EAST TRIANGLE-HEADED ARROW"
+  ],
+  [
+    11112,
+    "SOUTH EAST TRIANGLE-HEADED ARROW"
+  ],
+  [
+    11113,
+    "SOUTH WEST TRIANGLE-HEADED ARROW"
+  ],
+  [
+    11114,
+    "LEFTWARDS TRIANGLE-HEADED DASHED ARROW"
+  ],
+  [
+    11115,
+    "UPWARDS TRIANGLE-HEADED DASHED ARROW"
+  ],
+  [
+    11116,
+    "RIGHTWARDS TRIANGLE-HEADED DASHED ARROW"
+  ],
+  [
+    11117,
+    "DOWNWARDS TRIANGLE-HEADED DASHED ARROW"
+  ],
+  [
+    11118,
+    "CLOCKWISE TRIANGLE-HEADED OPEN CIRCLE ARROW"
+  ],
+  [
+    11119,
+    "ANTICLOCKWISE TRIANGLE-HEADED OPEN CIRCLE ARROW"
+  ],
+  [
+    11120,
+    "LEFTWARDS TRIANGLE-HEADED ARROW TO BAR"
+  ],
+  [
+    11121,
+    "UPWARDS TRIANGLE-HEADED ARROW TO BAR"
+  ],
+  [
+    11122,
+    "RIGHTWARDS TRIANGLE-HEADED ARROW TO BAR"
+  ],
+  [
+    11123,
+    "DOWNWARDS TRIANGLE-HEADED ARROW TO BAR"
+  ],
+  [
+    11126,
+    "NORTH WEST TRIANGLE-HEADED ARROW TO BAR"
+  ],
+  [
+    11127,
+    "NORTH EAST TRIANGLE-HEADED ARROW TO BAR"
+  ],
+  [
+    11128,
+    "SOUTH EAST TRIANGLE-HEADED ARROW TO BAR"
+  ],
+  [
+    11129,
+    "SOUTH WEST TRIANGLE-HEADED ARROW TO BAR"
+  ],
+  [
+    11130,
+    "LEFTWARDS TRIANGLE-HEADED ARROW WITH DOUBLE HORIZONTAL STROKE"
+  ],
+  [
+    11131,
+    "UPWARDS TRIANGLE-HEADED ARROW WITH DOUBLE HORIZONTAL STROKE"
+  ],
+  [
+    11132,
+    "RIGHTWARDS TRIANGLE-HEADED ARROW WITH DOUBLE HORIZONTAL STROKE"
+  ],
+  [
+    11133,
+    "DOWNWARDS TRIANGLE-HEADED ARROW WITH DOUBLE HORIZONTAL STROKE"
+  ],
+  [
+    11134,
+    "HORIZONTAL TAB KEY"
+  ],
+  [
+    11135,
+    "VERTICAL TAB KEY"
+  ],
+  [
+    11136,
+    "LEFTWARDS TRIANGLE-HEADED ARROW OVER RIGHTWARDS TRIANGLE-HEADED ARROW"
+  ],
+  [
+    11137,
+    "UPWARDS TRIANGLE-HEADED ARROW LEFTWARDS OF DOWNWARDS TRIANGLE-HEADED ARROW"
+  ],
+  [
+    11138,
+    "RIGHTWARDS TRIANGLE-HEADED ARROW OVER LEFTWARDS TRIANGLE-HEADED ARROW"
+  ],
+  [
+    11139,
+    "DOWNWARDS TRIANGLE-HEADED ARROW LEFTWARDS OF UPWARDS TRIANGLE-HEADED ARROW"
+  ],
+  [
+    11140,
+    "LEFTWARDS TRIANGLE-HEADED PAIRED ARROWS"
+  ],
+  [
+    11141,
+    "UPWARDS TRIANGLE-HEADED PAIRED ARROWS"
+  ],
+  [
+    11142,
+    "RIGHTWARDS TRIANGLE-HEADED PAIRED ARROWS"
+  ],
+  [
+    11143,
+    "DOWNWARDS TRIANGLE-HEADED PAIRED ARROWS"
+  ],
+  [
+    11144,
+    "LEFTWARDS BLACK CIRCLED WHITE ARROW"
+  ],
+  [
+    11145,
+    "UPWARDS BLACK CIRCLED WHITE ARROW"
+  ],
+  [
+    11146,
+    "RIGHTWARDS BLACK CIRCLED WHITE ARROW"
+  ],
+  [
+    11147,
+    "DOWNWARDS BLACK CIRCLED WHITE ARROW"
+  ],
+  [
+    11148,
+    "ANTICLOCKWISE TRIANGLE-HEADED RIGHT U-SHAPED ARROW"
+  ],
+  [
+    11149,
+    "ANTICLOCKWISE TRIANGLE-HEADED BOTTOM U-SHAPED ARROW"
+  ],
+  [
+    11150,
+    "ANTICLOCKWISE TRIANGLE-HEADED LEFT U-SHAPED ARROW"
+  ],
+  [
+    11151,
+    "ANTICLOCKWISE TRIANGLE-HEADED TOP U-SHAPED ARROW"
+  ],
+  [
+    11152,
+    "RETURN LEFT"
+  ],
+  [
+    11153,
+    "RETURN RIGHT"
+  ],
+  [
+    11154,
+    "NEWLINE LEFT"
+  ],
+  [
+    11155,
+    "NEWLINE RIGHT"
+  ],
+  [
+    11156,
+    "FOUR CORNER ARROWS CIRCLING ANTICLOCKWISE"
+  ],
+  [
+    11157,
+    "RIGHTWARDS BLACK ARROW"
+  ],
+  [
+    11158,
+    "EQUALS SIGN WITH INFINITY ABOVE"
+  ],
+  [
+    11159,
+    "SYMBOL FOR TYPE A ELECTRONICS"
+  ],
+  [
+    11160,
+    "THREE-D TOP-LIGHTED LEFTWARDS EQUILATERAL ARROWHEAD"
+  ],
+  [
+    11161,
+    "THREE-D RIGHT-LIGHTED UPWARDS EQUILATERAL ARROWHEAD"
+  ],
+  [
+    11162,
+    "THREE-D TOP-LIGHTED RIGHTWARDS EQUILATERAL ARROWHEAD"
+  ],
+  [
+    11163,
+    "THREE-D LEFT-LIGHTED DOWNWARDS EQUILATERAL ARROWHEAD"
+  ],
+  [
+    11164,
+    "BLACK LEFTWARDS EQUILATERAL ARROWHEAD"
+  ],
+  [
+    11165,
+    "BLACK UPWARDS EQUILATERAL ARROWHEAD"
+  ],
+  [
+    11166,
+    "BLACK RIGHTWARDS EQUILATERAL ARROWHEAD"
+  ],
+  [
+    11167,
+    "BLACK DOWNWARDS EQUILATERAL ARROWHEAD"
+  ],
+  [
+    11168,
+    "DOWNWARDS TRIANGLE-HEADED ARROW WITH LONG TIP LEFTWARDS"
+  ],
+  [
+    11169,
+    "DOWNWARDS TRIANGLE-HEADED ARROW WITH LONG TIP RIGHTWARDS"
+  ],
+  [
+    11170,
+    "UPWARDS TRIANGLE-HEADED ARROW WITH LONG TIP LEFTWARDS"
+  ],
+  [
+    11171,
+    "UPWARDS TRIANGLE-HEADED ARROW WITH LONG TIP RIGHTWARDS"
+  ],
+  [
+    11172,
+    "LEFTWARDS TRIANGLE-HEADED ARROW WITH LONG TIP UPWARDS"
+  ],
+  [
+    11173,
+    "RIGHTWARDS TRIANGLE-HEADED ARROW WITH LONG TIP UPWARDS"
+  ],
+  [
+    11174,
+    "LEFTWARDS TRIANGLE-HEADED ARROW WITH LONG TIP DOWNWARDS"
+  ],
+  [
+    11175,
+    "RIGHTWARDS TRIANGLE-HEADED ARROW WITH LONG TIP DOWNWARDS"
+  ],
+  [
+    11176,
+    "BLACK CURVED DOWNWARDS AND LEFTWARDS ARROW"
+  ],
+  [
+    11177,
+    "BLACK CURVED DOWNWARDS AND RIGHTWARDS ARROW"
+  ],
+  [
+    11178,
+    "BLACK CURVED UPWARDS AND LEFTWARDS ARROW"
+  ],
+  [
+    11179,
+    "BLACK CURVED UPWARDS AND RIGHTWARDS ARROW"
+  ],
+  [
+    11180,
+    "BLACK CURVED LEFTWARDS AND UPWARDS ARROW"
+  ],
+  [
+    11181,
+    "BLACK CURVED RIGHTWARDS AND UPWARDS ARROW"
+  ],
+  [
+    11182,
+    "BLACK CURVED LEFTWARDS AND DOWNWARDS ARROW"
+  ],
+  [
+    11183,
+    "BLACK CURVED RIGHTWARDS AND DOWNWARDS ARROW"
+  ],
+  [
+    11184,
+    "RIBBON ARROW DOWN LEFT"
+  ],
+  [
+    11185,
+    "RIBBON ARROW DOWN RIGHT"
+  ],
+  [
+    11186,
+    "RIBBON ARROW UP LEFT"
+  ],
+  [
+    11187,
+    "RIBBON ARROW UP RIGHT"
+  ],
+  [
+    11188,
+    "RIBBON ARROW LEFT UP"
+  ],
+  [
+    11189,
+    "RIBBON ARROW RIGHT UP"
+  ],
+  [
+    11190,
+    "RIBBON ARROW LEFT DOWN"
+  ],
+  [
+    11191,
+    "RIBBON ARROW RIGHT DOWN"
+  ],
+  [
+    11192,
+    "UPWARDS WHITE ARROW FROM BAR WITH HORIZONTAL BAR"
+  ],
+  [
+    11193,
+    "UP ARROWHEAD IN A RECTANGLE BOX"
+  ],
+  [
+    11194,
+    "OVERLAPPING WHITE SQUARES"
+  ],
+  [
+    11195,
+    "OVERLAPPING WHITE AND BLACK SQUARES"
+  ],
+  [
+    11196,
+    "OVERLAPPING BLACK SQUARES"
+  ],
+  [
+    11197,
+    "BALLOT BOX WITH LIGHT X"
+  ],
+  [
+    11198,
+    "CIRCLED X"
+  ],
+  [
+    11199,
+    "CIRCLED BOLD X"
+  ],
+  [
+    11200,
+    "BLACK SQUARE CENTRED"
+  ],
+  [
+    11201,
+    "BLACK DIAMOND CENTRED"
+  ],
+  [
+    11202,
+    "TURNED BLACK PENTAGON"
+  ],
+  [
+    11203,
+    "HORIZONTAL BLACK OCTAGON"
+  ],
+  [
+    11204,
+    "BLACK OCTAGON"
+  ],
+  [
+    11205,
+    "BLACK MEDIUM UP-POINTING TRIANGLE CENTRED"
+  ],
+  [
+    11206,
+    "BLACK MEDIUM DOWN-POINTING TRIANGLE CENTRED"
+  ],
+  [
+    11207,
+    "BLACK MEDIUM LEFT-POINTING TRIANGLE CENTRED"
+  ],
+  [
+    11208,
+    "BLACK MEDIUM RIGHT-POINTING TRIANGLE CENTRED"
+  ],
+  [
+    11209,
+    "NEPTUNE FORM TWO"
+  ],
+  [
+    11210,
+    "TOP HALF BLACK CIRCLE"
+  ],
+  [
+    11211,
+    "BOTTOM HALF BLACK CIRCLE"
+  ],
+  [
+    11212,
+    "LIGHT FOUR POINTED BLACK CUSP"
+  ],
+  [
+    11213,
+    "ROTATED LIGHT FOUR POINTED BLACK CUSP"
+  ],
+  [
+    11214,
+    "WHITE FOUR POINTED CUSP"
+  ],
+  [
+    11215,
+    "ROTATED WHITE FOUR POINTED CUSP"
+  ],
+  [
+    11216,
+    "SQUARE POSITION INDICATOR"
+  ],
+  [
+    11217,
+    "UNCERTAINTY SIGN"
+  ],
+  [
+    11218,
+    "GROUP MARK"
+  ],
+  [
+    11219,
+    "PLUTO FORM TWO"
+  ],
+  [
+    11220,
+    "PLUTO FORM THREE"
+  ],
+  [
+    11221,
+    "PLUTO FORM FOUR"
+  ],
+  [
+    11222,
+    "PLUTO FORM FIVE"
+  ],
+  [
+    11223,
+    "TRANSPLUTO"
+  ],
+  [
+    11224,
+    "PROSERPINA"
+  ],
+  [
+    11225,
+    "ASTRAEA"
+  ],
+  [
+    11226,
+    "HYGIEA"
+  ],
+  [
+    11227,
+    "PHOLUS"
+  ],
+  [
+    11228,
+    "NESSUS"
+  ],
+  [
+    11229,
+    "WHITE MOON SELENA"
+  ],
+  [
+    11230,
+    "BLACK DIAMOND ON CROSS"
+  ],
+  [
+    11231,
+    "TRUE LIGHT MOON ARTA"
+  ],
+  [
+    11232,
+    "CUPIDO"
+  ],
+  [
+    11233,
+    "HADES"
+  ],
+  [
+    11234,
+    "ZEUS"
+  ],
+  [
+    11235,
+    "KRONOS"
+  ],
+  [
+    11236,
+    "APOLLON"
+  ],
+  [
+    11237,
+    "ADMETOS"
+  ],
+  [
+    11238,
+    "VULCANUS"
+  ],
+  [
+    11239,
+    "POSEIDON"
+  ],
+  [
+    11240,
+    "LEFT HALF BLACK STAR"
+  ],
+  [
+    11241,
+    "RIGHT HALF BLACK STAR"
+  ],
+  [
+    11242,
+    "STAR WITH LEFT HALF BLACK"
+  ],
+  [
+    11243,
+    "STAR WITH RIGHT HALF BLACK"
+  ],
+  [
+    11244,
+    "LEFTWARDS TWO-HEADED ARROW WITH TRIANGLE ARROWHEADS"
+  ],
+  [
+    11245,
+    "UPWARDS TWO-HEADED ARROW WITH TRIANGLE ARROWHEADS"
+  ],
+  [
+    11246,
+    "RIGHTWARDS TWO-HEADED ARROW WITH TRIANGLE ARROWHEADS"
+  ],
+  [
+    11247,
+    "DOWNWARDS TWO-HEADED ARROW WITH TRIANGLE ARROWHEADS"
+  ],
+  [
+    11248,
+    "ERIS FORM ONE"
+  ],
+  [
+    11249,
+    "ERIS FORM TWO"
+  ],
+  [
+    11250,
+    "SEDNA"
+  ],
+  [
+    11251,
+    "RUSSIAN ASTROLOGICAL SYMBOL VIGINTILE"
+  ],
+  [
+    11252,
+    "RUSSIAN ASTROLOGICAL SYMBOL NOVILE"
+  ],
+  [
+    11253,
+    "RUSSIAN ASTROLOGICAL SYMBOL QUINTILE"
+  ],
+  [
+    11254,
+    "RUSSIAN ASTROLOGICAL SYMBOL BINOVILE"
+  ],
+  [
+    11255,
+    "RUSSIAN ASTROLOGICAL SYMBOL SENTAGON"
+  ],
+  [
+    11256,
+    "RUSSIAN ASTROLOGICAL SYMBOL TREDECILE"
+  ],
+  [
+    11257,
+    "EQUALS SIGN WITH INFINITY BELOW"
+  ],
+  [
+    11258,
+    "UNITED SYMBOL"
+  ],
+  [
+    11259,
+    "SEPARATED SYMBOL"
+  ],
+  [
+    11260,
+    "DOUBLED SYMBOL"
+  ],
+  [
+    11261,
+    "PASSED SYMBOL"
+  ],
+  [
+    11262,
+    "REVERSED RIGHT ANGLE"
+  ],
+  [
+    11263,
+    "HELLSCHREIBER PAUSE SYMBOL"
+  ],
+  [
+    11360,
+    "LATIN CAPITAL LETTER L WITH DOUBLE BAR"
+  ],
+  [
+    11361,
+    "LATIN SMALL LETTER L WITH DOUBLE BAR"
+  ],
+  [
+    11362,
+    "LATIN CAPITAL LETTER L WITH MIDDLE TILDE"
+  ],
+  [
+    11363,
+    "LATIN CAPITAL LETTER P WITH STROKE"
+  ],
+  [
+    11364,
+    "LATIN CAPITAL LETTER R WITH TAIL"
+  ],
+  [
+    11365,
+    "LATIN SMALL LETTER A WITH STROKE"
+  ],
+  [
+    11366,
+    "LATIN SMALL LETTER T WITH DIAGONAL STROKE"
+  ],
+  [
+    11367,
+    "LATIN CAPITAL LETTER H WITH DESCENDER"
+  ],
+  [
+    11368,
+    "LATIN SMALL LETTER H WITH DESCENDER"
+  ],
+  [
+    11369,
+    "LATIN CAPITAL LETTER K WITH DESCENDER"
+  ],
+  [
+    11370,
+    "LATIN SMALL LETTER K WITH DESCENDER"
+  ],
+  [
+    11371,
+    "LATIN CAPITAL LETTER Z WITH DESCENDER"
+  ],
+  [
+    11372,
+    "LATIN SMALL LETTER Z WITH DESCENDER"
+  ],
+  [
+    11373,
+    "LATIN CAPITAL LETTER ALPHA"
+  ],
+  [
+    11374,
+    "LATIN CAPITAL LETTER M WITH HOOK"
+  ],
+  [
+    11375,
+    "LATIN CAPITAL LETTER TURNED A"
+  ],
+  [
+    11376,
+    "LATIN CAPITAL LETTER TURNED ALPHA"
+  ],
+  [
+    11377,
+    "LATIN SMALL LETTER V WITH RIGHT HOOK"
+  ],
+  [
+    11378,
+    "LATIN CAPITAL LETTER W WITH HOOK"
+  ],
+  [
+    11379,
+    "LATIN SMALL LETTER W WITH HOOK"
+  ],
+  [
+    11380,
+    "LATIN SMALL LETTER V WITH CURL"
+  ],
+  [
+    11381,
+    "LATIN CAPITAL LETTER HALF H"
+  ],
+  [
+    11382,
+    "LATIN SMALL LETTER HALF H"
+  ],
+  [
+    11383,
+    "LATIN SMALL LETTER TAILLESS PHI"
+  ],
+  [
+    11384,
+    "LATIN SMALL LETTER E WITH NOTCH"
+  ],
+  [
+    11385,
+    "LATIN SMALL LETTER TURNED R WITH TAIL"
+  ],
+  [
+    11386,
+    "LATIN SMALL LETTER O WITH LOW RING INSIDE"
+  ],
+  [
+    11387,
+    "LATIN LETTER SMALL CAPITAL TURNED E"
+  ],
+  [
+    11388,
+    "LATIN SUBSCRIPT SMALL LETTER J"
+  ],
+  [
+    11389,
+    "MODIFIER LETTER CAPITAL V"
+  ],
+  [
+    11390,
+    "LATIN CAPITAL LETTER S WITH SWASH TAIL"
+  ],
+  [
+    11391,
+    "LATIN CAPITAL LETTER Z WITH SWASH TAIL"
+  ],
+  [
+    11744,
+    "COMBINING CYRILLIC LETTER BE"
+  ],
+  [
+    11745,
+    "COMBINING CYRILLIC LETTER VE"
+  ],
+  [
+    11746,
+    "COMBINING CYRILLIC LETTER GHE"
+  ],
+  [
+    11747,
+    "COMBINING CYRILLIC LETTER DE"
+  ],
+  [
+    11748,
+    "COMBINING CYRILLIC LETTER ZHE"
+  ],
+  [
+    11749,
+    "COMBINING CYRILLIC LETTER ZE"
+  ],
+  [
+    11750,
+    "COMBINING CYRILLIC LETTER KA"
+  ],
+  [
+    11751,
+    "COMBINING CYRILLIC LETTER EL"
+  ],
+  [
+    11752,
+    "COMBINING CYRILLIC LETTER EM"
+  ],
+  [
+    11753,
+    "COMBINING CYRILLIC LETTER EN"
+  ],
+  [
+    11754,
+    "COMBINING CYRILLIC LETTER O"
+  ],
+  [
+    11755,
+    "COMBINING CYRILLIC LETTER PE"
+  ],
+  [
+    11756,
+    "COMBINING CYRILLIC LETTER ER"
+  ],
+  [
+    11757,
+    "COMBINING CYRILLIC LETTER ES"
+  ],
+  [
+    11758,
+    "COMBINING CYRILLIC LETTER TE"
+  ],
+  [
+    11759,
+    "COMBINING CYRILLIC LETTER HA"
+  ],
+  [
+    11760,
+    "COMBINING CYRILLIC LETTER TSE"
+  ],
+  [
+    11761,
+    "COMBINING CYRILLIC LETTER CHE"
+  ],
+  [
+    11762,
+    "COMBINING CYRILLIC LETTER SHA"
+  ],
+  [
+    11763,
+    "COMBINING CYRILLIC LETTER SHCHA"
+  ],
+  [
+    11764,
+    "COMBINING CYRILLIC LETTER FITA"
+  ],
+  [
+    11765,
+    "COMBINING CYRILLIC LETTER ES-TE"
+  ],
+  [
+    11766,
+    "COMBINING CYRILLIC LETTER A"
+  ],
+  [
+    11767,
+    "COMBINING CYRILLIC LETTER IE"
+  ],
+  [
+    11768,
+    "COMBINING CYRILLIC LETTER DJERV"
+  ],
+  [
+    11769,
+    "COMBINING CYRILLIC LETTER MONOGRAPH UK"
+  ],
+  [
+    11770,
+    "COMBINING CYRILLIC LETTER YAT"
+  ],
+  [
+    11771,
+    "COMBINING CYRILLIC LETTER YU"
+  ],
+  [
+    11772,
+    "COMBINING CYRILLIC LETTER IOTIFIED A"
+  ],
+  [
+    11773,
+    "COMBINING CYRILLIC LETTER LITTLE YUS"
+  ],
+  [
+    11774,
+    "COMBINING CYRILLIC LETTER BIG YUS"
+  ],
+  [
+    11775,
+    "COMBINING CYRILLIC LETTER IOTIFIED BIG YUS"
+  ],
+  [
+    19904,
+    "HEXAGRAM FOR THE CREATIVE HEAVEN"
+  ],
+  [
+    19905,
+    "HEXAGRAM FOR THE RECEPTIVE EARTH"
+  ],
+  [
+    19906,
+    "HEXAGRAM FOR DIFFICULTY AT THE BEGINNING"
+  ],
+  [
+    19907,
+    "HEXAGRAM FOR YOUTHFUL FOLLY"
+  ],
+  [
+    19908,
+    "HEXAGRAM FOR WAITING"
+  ],
+  [
+    19909,
+    "HEXAGRAM FOR CONFLICT"
+  ],
+  [
+    19910,
+    "HEXAGRAM FOR THE ARMY"
+  ],
+  [
+    19911,
+    "HEXAGRAM FOR HOLDING TOGETHER"
+  ],
+  [
+    19912,
+    "HEXAGRAM FOR SMALL TAMING"
+  ],
+  [
+    19913,
+    "HEXAGRAM FOR TREADING"
+  ],
+  [
+    19914,
+    "HEXAGRAM FOR PEACE"
+  ],
+  [
+    19915,
+    "HEXAGRAM FOR STANDSTILL"
+  ],
+  [
+    19916,
+    "HEXAGRAM FOR FELLOWSHIP"
+  ],
+  [
+    19917,
+    "HEXAGRAM FOR GREAT POSSESSION"
+  ],
+  [
+    19918,
+    "HEXAGRAM FOR MODESTY"
+  ],
+  [
+    19919,
+    "HEXAGRAM FOR ENTHUSIASM"
+  ],
+  [
+    19920,
+    "HEXAGRAM FOR FOLLOWING"
+  ],
+  [
+    19921,
+    "HEXAGRAM FOR WORK ON THE DECAYED"
+  ],
+  [
+    19922,
+    "HEXAGRAM FOR APPROACH"
+  ],
+  [
+    19923,
+    "HEXAGRAM FOR CONTEMPLATION"
+  ],
+  [
+    19924,
+    "HEXAGRAM FOR BITING THROUGH"
+  ],
+  [
+    19925,
+    "HEXAGRAM FOR GRACE"
+  ],
+  [
+    19926,
+    "HEXAGRAM FOR SPLITTING APART"
+  ],
+  [
+    19927,
+    "HEXAGRAM FOR RETURN"
+  ],
+  [
+    19928,
+    "HEXAGRAM FOR INNOCENCE"
+  ],
+  [
+    19929,
+    "HEXAGRAM FOR GREAT TAMING"
+  ],
+  [
+    19930,
+    "HEXAGRAM FOR MOUTH CORNERS"
+  ],
+  [
+    19931,
+    "HEXAGRAM FOR GREAT PREPONDERANCE"
+  ],
+  [
+    19932,
+    "HEXAGRAM FOR THE ABYSMAL WATER"
+  ],
+  [
+    19933,
+    "HEXAGRAM FOR THE CLINGING FIRE"
+  ],
+  [
+    19934,
+    "HEXAGRAM FOR INFLUENCE"
+  ],
+  [
+    19935,
+    "HEXAGRAM FOR DURATION"
+  ],
+  [
+    19936,
+    "HEXAGRAM FOR RETREAT"
+  ],
+  [
+    19937,
+    "HEXAGRAM FOR GREAT POWER"
+  ],
+  [
+    19938,
+    "HEXAGRAM FOR PROGRESS"
+  ],
+  [
+    19939,
+    "HEXAGRAM FOR DARKENING OF THE LIGHT"
+  ],
+  [
+    19940,
+    "HEXAGRAM FOR THE FAMILY"
+  ],
+  [
+    19941,
+    "HEXAGRAM FOR OPPOSITION"
+  ],
+  [
+    19942,
+    "HEXAGRAM FOR OBSTRUCTION"
+  ],
+  [
+    19943,
+    "HEXAGRAM FOR DELIVERANCE"
+  ],
+  [
+    19944,
+    "HEXAGRAM FOR DECREASE"
+  ],
+  [
+    19945,
+    "HEXAGRAM FOR INCREASE"
+  ],
+  [
+    19946,
+    "HEXAGRAM FOR BREAKTHROUGH"
+  ],
+  [
+    19947,
+    "HEXAGRAM FOR COMING TO MEET"
+  ],
+  [
+    19948,
+    "HEXAGRAM FOR GATHERING TOGETHER"
+  ],
+  [
+    19949,
+    "HEXAGRAM FOR PUSHING UPWARD"
+  ],
+  [
+    19950,
+    "HEXAGRAM FOR OPPRESSION"
+  ],
+  [
+    19951,
+    "HEXAGRAM FOR THE WELL"
+  ],
+  [
+    19952,
+    "HEXAGRAM FOR REVOLUTION"
+  ],
+  [
+    19953,
+    "HEXAGRAM FOR THE CAULDRON"
+  ],
+  [
+    19954,
+    "HEXAGRAM FOR THE AROUSING THUNDER"
+  ],
+  [
+    19955,
+    "HEXAGRAM FOR THE KEEPING STILL MOUNTAIN"
+  ],
+  [
+    19956,
+    "HEXAGRAM FOR DEVELOPMENT"
+  ],
+  [
+    19957,
+    "HEXAGRAM FOR THE MARRYING MAIDEN"
+  ],
+  [
+    19958,
+    "HEXAGRAM FOR ABUNDANCE"
+  ],
+  [
+    19959,
+    "HEXAGRAM FOR THE WANDERER"
+  ],
+  [
+    19960,
+    "HEXAGRAM FOR THE GENTLE WIND"
+  ],
+  [
+    19961,
+    "HEXAGRAM FOR THE JOYOUS LAKE"
+  ],
+  [
+    19962,
+    "HEXAGRAM FOR DISPERSION"
+  ],
+  [
+    19963,
+    "HEXAGRAM FOR LIMITATION"
+  ],
+  [
+    19964,
+    "HEXAGRAM FOR INNER TRUTH"
+  ],
+  [
+    19965,
+    "HEXAGRAM FOR SMALL PREPONDERANCE"
+  ],
+  [
+    19966,
+    "HEXAGRAM FOR AFTER COMPLETION"
+  ],
+  [
+    19967,
+    "HEXAGRAM FOR BEFORE COMPLETION"
+  ],
+  [
+    42560,
+    "CYRILLIC CAPITAL LETTER ZEMLYA"
+  ],
+  [
+    42561,
+    "CYRILLIC SMALL LETTER ZEMLYA"
+  ],
+  [
+    42562,
+    "CYRILLIC CAPITAL LETTER DZELO"
+  ],
+  [
+    42563,
+    "CYRILLIC SMALL LETTER DZELO"
+  ],
+  [
+    42564,
+    "CYRILLIC CAPITAL LETTER REVERSED DZE"
+  ],
+  [
+    42565,
+    "CYRILLIC SMALL LETTER REVERSED DZE"
+  ],
+  [
+    42566,
+    "CYRILLIC CAPITAL LETTER IOTA"
+  ],
+  [
+    42567,
+    "CYRILLIC SMALL LETTER IOTA"
+  ],
+  [
+    42568,
+    "CYRILLIC CAPITAL LETTER DJERV"
+  ],
+  [
+    42569,
+    "CYRILLIC SMALL LETTER DJERV"
+  ],
+  [
+    42570,
+    "CYRILLIC CAPITAL LETTER MONOGRAPH UK"
+  ],
+  [
+    42571,
+    "CYRILLIC SMALL LETTER MONOGRAPH UK"
+  ],
+  [
+    42572,
+    "CYRILLIC CAPITAL LETTER BROAD OMEGA"
+  ],
+  [
+    42573,
+    "CYRILLIC SMALL LETTER BROAD OMEGA"
+  ],
+  [
+    42574,
+    "CYRILLIC CAPITAL LETTER NEUTRAL YER"
+  ],
+  [
+    42575,
+    "CYRILLIC SMALL LETTER NEUTRAL YER"
+  ],
+  [
+    42576,
+    "CYRILLIC CAPITAL LETTER YERU WITH BACK YER"
+  ],
+  [
+    42577,
+    "CYRILLIC SMALL LETTER YERU WITH BACK YER"
+  ],
+  [
+    42578,
+    "CYRILLIC CAPITAL LETTER IOTIFIED YAT"
+  ],
+  [
+    42579,
+    "CYRILLIC SMALL LETTER IOTIFIED YAT"
+  ],
+  [
+    42580,
+    "CYRILLIC CAPITAL LETTER REVERSED YU"
+  ],
+  [
+    42581,
+    "CYRILLIC SMALL LETTER REVERSED YU"
+  ],
+  [
+    42582,
+    "CYRILLIC CAPITAL LETTER IOTIFIED A"
+  ],
+  [
+    42583,
+    "CYRILLIC SMALL LETTER IOTIFIED A"
+  ],
+  [
+    42584,
+    "CYRILLIC CAPITAL LETTER CLOSED LITTLE YUS"
+  ],
+  [
+    42585,
+    "CYRILLIC SMALL LETTER CLOSED LITTLE YUS"
+  ],
+  [
+    42586,
+    "CYRILLIC CAPITAL LETTER BLENDED YUS"
+  ],
+  [
+    42587,
+    "CYRILLIC SMALL LETTER BLENDED YUS"
+  ],
+  [
+    42588,
+    "CYRILLIC CAPITAL LETTER IOTIFIED CLOSED LITTLE YUS"
+  ],
+  [
+    42589,
+    "CYRILLIC SMALL LETTER IOTIFIED CLOSED LITTLE YUS"
+  ],
+  [
+    42590,
+    "CYRILLIC CAPITAL LETTER YN"
+  ],
+  [
+    42591,
+    "CYRILLIC SMALL LETTER YN"
+  ],
+  [
+    42592,
+    "CYRILLIC CAPITAL LETTER REVERSED TSE"
+  ],
+  [
+    42593,
+    "CYRILLIC SMALL LETTER REVERSED TSE"
+  ],
+  [
+    42594,
+    "CYRILLIC CAPITAL LETTER SOFT DE"
+  ],
+  [
+    42595,
+    "CYRILLIC SMALL LETTER SOFT DE"
+  ],
+  [
+    42596,
+    "CYRILLIC CAPITAL LETTER SOFT EL"
+  ],
+  [
+    42597,
+    "CYRILLIC SMALL LETTER SOFT EL"
+  ],
+  [
+    42598,
+    "CYRILLIC CAPITAL LETTER SOFT EM"
+  ],
+  [
+    42599,
+    "CYRILLIC SMALL LETTER SOFT EM"
+  ],
+  [
+    42600,
+    "CYRILLIC CAPITAL LETTER MONOCULAR O"
+  ],
+  [
+    42601,
+    "CYRILLIC SMALL LETTER MONOCULAR O"
+  ],
+  [
+    42602,
+    "CYRILLIC CAPITAL LETTER BINOCULAR O"
+  ],
+  [
+    42603,
+    "CYRILLIC SMALL LETTER BINOCULAR O"
+  ],
+  [
+    42604,
+    "CYRILLIC CAPITAL LETTER DOUBLE MONOCULAR O"
+  ],
+  [
+    42605,
+    "CYRILLIC SMALL LETTER DOUBLE MONOCULAR O"
+  ],
+  [
+    42606,
+    "CYRILLIC LETTER MULTIOCULAR O"
+  ],
+  [
+    42607,
+    "COMBINING CYRILLIC VZMET"
+  ],
+  [
+    42608,
+    "COMBINING CYRILLIC TEN MILLIONS SIGN"
+  ],
+  [
+    42609,
+    "COMBINING CYRILLIC HUNDRED MILLIONS SIGN"
+  ],
+  [
+    42610,
+    "COMBINING CYRILLIC THOUSAND MILLIONS SIGN"
+  ],
+  [
+    42611,
+    "SLAVONIC ASTERISK"
+  ],
+  [
+    42612,
+    "COMBINING CYRILLIC LETTER UKRAINIAN IE"
+  ],
+  [
+    42613,
+    "COMBINING CYRILLIC LETTER I"
+  ],
+  [
+    42614,
+    "COMBINING CYRILLIC LETTER YI"
+  ],
+  [
+    42615,
+    "COMBINING CYRILLIC LETTER U"
+  ],
+  [
+    42616,
+    "COMBINING CYRILLIC LETTER HARD SIGN"
+  ],
+  [
+    42617,
+    "COMBINING CYRILLIC LETTER YERU"
+  ],
+  [
+    42618,
+    "COMBINING CYRILLIC LETTER SOFT SIGN"
+  ],
+  [
+    42619,
+    "COMBINING CYRILLIC LETTER OMEGA"
+  ],
+  [
+    42620,
+    "COMBINING CYRILLIC KAVYKA"
+  ],
+  [
+    42621,
+    "COMBINING CYRILLIC PAYEROK"
+  ],
+  [
+    42622,
+    "CYRILLIC KAVYKA"
+  ],
+  [
+    42623,
+    "CYRILLIC PAYEROK"
+  ],
+  [
+    42624,
+    "CYRILLIC CAPITAL LETTER DWE"
+  ],
+  [
+    42625,
+    "CYRILLIC SMALL LETTER DWE"
+  ],
+  [
+    42626,
+    "CYRILLIC CAPITAL LETTER DZWE"
+  ],
+  [
+    42627,
+    "CYRILLIC SMALL LETTER DZWE"
+  ],
+  [
+    42628,
+    "CYRILLIC CAPITAL LETTER ZHWE"
+  ],
+  [
+    42629,
+    "CYRILLIC SMALL LETTER ZHWE"
+  ],
+  [
+    42630,
+    "CYRILLIC CAPITAL LETTER CCHE"
+  ],
+  [
+    42631,
+    "CYRILLIC SMALL LETTER CCHE"
+  ],
+  [
+    42632,
+    "CYRILLIC CAPITAL LETTER DZZE"
+  ],
+  [
+    42633,
+    "CYRILLIC SMALL LETTER DZZE"
+  ],
+  [
+    42634,
+    "CYRILLIC CAPITAL LETTER TE WITH MIDDLE HOOK"
+  ],
+  [
+    42635,
+    "CYRILLIC SMALL LETTER TE WITH MIDDLE HOOK"
+  ],
+  [
+    42636,
+    "CYRILLIC CAPITAL LETTER TWE"
+  ],
+  [
+    42637,
+    "CYRILLIC SMALL LETTER TWE"
+  ],
+  [
+    42638,
+    "CYRILLIC CAPITAL LETTER TSWE"
+  ],
+  [
+    42639,
+    "CYRILLIC SMALL LETTER TSWE"
+  ],
+  [
+    42640,
+    "CYRILLIC CAPITAL LETTER TSSE"
+  ],
+  [
+    42641,
+    "CYRILLIC SMALL LETTER TSSE"
+  ],
+  [
+    42642,
+    "CYRILLIC CAPITAL LETTER TCHE"
+  ],
+  [
+    42643,
+    "CYRILLIC SMALL LETTER TCHE"
+  ],
+  [
+    42644,
+    "CYRILLIC CAPITAL LETTER HWE"
+  ],
+  [
+    42645,
+    "CYRILLIC SMALL LETTER HWE"
+  ],
+  [
+    42646,
+    "CYRILLIC CAPITAL LETTER SHWE"
+  ],
+  [
+    42647,
+    "CYRILLIC SMALL LETTER SHWE"
+  ],
+  [
+    42648,
+    "CYRILLIC CAPITAL LETTER DOUBLE O"
+  ],
+  [
+    42649,
+    "CYRILLIC SMALL LETTER DOUBLE O"
+  ],
+  [
+    42650,
+    "CYRILLIC CAPITAL LETTER CROSSED O"
+  ],
+  [
+    42651,
+    "CYRILLIC SMALL LETTER CROSSED O"
+  ],
+  [
+    42652,
+    "MODIFIER LETTER CYRILLIC HARD SIGN"
+  ],
+  [
+    42653,
+    "MODIFIER LETTER CYRILLIC SOFT SIGN"
+  ],
+  [
+    42654,
+    "COMBINING CYRILLIC LETTER EF"
+  ],
+  [
+    42655,
+    "COMBINING CYRILLIC LETTER IOTIFIED E"
+  ],
+  [
+    42752,
+    "MODIFIER LETTER CHINESE TONE YIN PING"
+  ],
+  [
+    42753,
+    "MODIFIER LETTER CHINESE TONE YANG PING"
+  ],
+  [
+    42754,
+    "MODIFIER LETTER CHINESE TONE YIN SHANG"
+  ],
+  [
+    42755,
+    "MODIFIER LETTER CHINESE TONE YANG SHANG"
+  ],
+  [
+    42756,
+    "MODIFIER LETTER CHINESE TONE YIN QU"
+  ],
+  [
+    42757,
+    "MODIFIER LETTER CHINESE TONE YANG QU"
+  ],
+  [
+    42758,
+    "MODIFIER LETTER CHINESE TONE YIN RU"
+  ],
+  [
+    42759,
+    "MODIFIER LETTER CHINESE TONE YANG RU"
+  ],
+  [
+    42760,
+    "MODIFIER LETTER EXTRA-HIGH DOTTED TONE BAR"
+  ],
+  [
+    42761,
+    "MODIFIER LETTER HIGH DOTTED TONE BAR"
+  ],
+  [
+    42762,
+    "MODIFIER LETTER MID DOTTED TONE BAR"
+  ],
+  [
+    42763,
+    "MODIFIER LETTER LOW DOTTED TONE BAR"
+  ],
+  [
+    42764,
+    "MODIFIER LETTER EXTRA-LOW DOTTED TONE BAR"
+  ],
+  [
+    42765,
+    "MODIFIER LETTER EXTRA-HIGH DOTTED LEFT-STEM TONE BAR"
+  ],
+  [
+    42766,
+    "MODIFIER LETTER HIGH DOTTED LEFT-STEM TONE BAR"
+  ],
+  [
+    42767,
+    "MODIFIER LETTER MID DOTTED LEFT-STEM TONE BAR"
+  ],
+  [
+    42768,
+    "MODIFIER LETTER LOW DOTTED LEFT-STEM TONE BAR"
+  ],
+  [
+    42769,
+    "MODIFIER LETTER EXTRA-LOW DOTTED LEFT-STEM TONE BAR"
+  ],
+  [
+    42770,
+    "MODIFIER LETTER EXTRA-HIGH LEFT-STEM TONE BAR"
+  ],
+  [
+    42771,
+    "MODIFIER LETTER HIGH LEFT-STEM TONE BAR"
+  ],
+  [
+    42772,
+    "MODIFIER LETTER MID LEFT-STEM TONE BAR"
+  ],
+  [
+    42773,
+    "MODIFIER LETTER LOW LEFT-STEM TONE BAR"
+  ],
+  [
+    42774,
+    "MODIFIER LETTER EXTRA-LOW LEFT-STEM TONE BAR"
+  ],
+  [
+    42775,
+    "MODIFIER LETTER DOT VERTICAL BAR"
+  ],
+  [
+    42776,
+    "MODIFIER LETTER DOT SLASH"
+  ],
+  [
+    42777,
+    "MODIFIER LETTER DOT HORIZONTAL BAR"
+  ],
+  [
+    42778,
+    "MODIFIER LETTER LOWER RIGHT CORNER ANGLE"
+  ],
+  [
+    42779,
+    "MODIFIER LETTER RAISED UP ARROW"
+  ],
+  [
+    42780,
+    "MODIFIER LETTER RAISED DOWN ARROW"
+  ],
+  [
+    42781,
+    "MODIFIER LETTER RAISED EXCLAMATION MARK"
+  ],
+  [
+    42782,
+    "MODIFIER LETTER RAISED INVERTED EXCLAMATION MARK"
+  ],
+  [
+    42783,
+    "MODIFIER LETTER LOW INVERTED EXCLAMATION MARK"
+  ],
+  [
+    42784,
+    "MODIFIER LETTER STRESS AND HIGH TONE"
+  ],
+  [
+    42785,
+    "MODIFIER LETTER STRESS AND LOW TONE"
+  ],
+  [
+    42786,
+    "LATIN CAPITAL LETTER EGYPTOLOGICAL ALEF"
+  ],
+  [
+    42787,
+    "LATIN SMALL LETTER EGYPTOLOGICAL ALEF"
+  ],
+  [
+    42788,
+    "LATIN CAPITAL LETTER EGYPTOLOGICAL AIN"
+  ],
+  [
+    42789,
+    "LATIN SMALL LETTER EGYPTOLOGICAL AIN"
+  ],
+  [
+    42790,
+    "LATIN CAPITAL LETTER HENG"
+  ],
+  [
+    42791,
+    "LATIN SMALL LETTER HENG"
+  ],
+  [
+    42792,
+    "LATIN CAPITAL LETTER TZ"
+  ],
+  [
+    42793,
+    "LATIN SMALL LETTER TZ"
+  ],
+  [
+    42794,
+    "LATIN CAPITAL LETTER TRESILLO"
+  ],
+  [
+    42795,
+    "LATIN SMALL LETTER TRESILLO"
+  ],
+  [
+    42796,
+    "LATIN CAPITAL LETTER CUATRILLO"
+  ],
+  [
+    42797,
+    "LATIN SMALL LETTER CUATRILLO"
+  ],
+  [
+    42798,
+    "LATIN CAPITAL LETTER CUATRILLO WITH COMMA"
+  ],
+  [
+    42799,
+    "LATIN SMALL LETTER CUATRILLO WITH COMMA"
+  ],
+  [
+    42800,
+    "LATIN LETTER SMALL CAPITAL F"
+  ],
+  [
+    42801,
+    "LATIN LETTER SMALL CAPITAL S"
+  ],
+  [
+    42802,
+    "LATIN CAPITAL LETTER AA"
+  ],
+  [
+    42803,
+    "LATIN SMALL LETTER AA"
+  ],
+  [
+    42804,
+    "LATIN CAPITAL LETTER AO"
+  ],
+  [
+    42805,
+    "LATIN SMALL LETTER AO"
+  ],
+  [
+    42806,
+    "LATIN CAPITAL LETTER AU"
+  ],
+  [
+    42807,
+    "LATIN SMALL LETTER AU"
+  ],
+  [
+    42808,
+    "LATIN CAPITAL LETTER AV"
+  ],
+  [
+    42809,
+    "LATIN SMALL LETTER AV"
+  ],
+  [
+    42810,
+    "LATIN CAPITAL LETTER AV WITH HORIZONTAL BAR"
+  ],
+  [
+    42811,
+    "LATIN SMALL LETTER AV WITH HORIZONTAL BAR"
+  ],
+  [
+    42812,
+    "LATIN CAPITAL LETTER AY"
+  ],
+  [
+    42813,
+    "LATIN SMALL LETTER AY"
+  ],
+  [
+    42814,
+    "LATIN CAPITAL LETTER REVERSED C WITH DOT"
+  ],
+  [
+    42815,
+    "LATIN SMALL LETTER REVERSED C WITH DOT"
+  ],
+  [
+    42816,
+    "LATIN CAPITAL LETTER K WITH STROKE"
+  ],
+  [
+    42817,
+    "LATIN SMALL LETTER K WITH STROKE"
+  ],
+  [
+    42818,
+    "LATIN CAPITAL LETTER K WITH DIAGONAL STROKE"
+  ],
+  [
+    42819,
+    "LATIN SMALL LETTER K WITH DIAGONAL STROKE"
+  ],
+  [
+    42820,
+    "LATIN CAPITAL LETTER K WITH STROKE AND DIAGONAL STROKE"
+  ],
+  [
+    42821,
+    "LATIN SMALL LETTER K WITH STROKE AND DIAGONAL STROKE"
+  ],
+  [
+    42822,
+    "LATIN CAPITAL LETTER BROKEN L"
+  ],
+  [
+    42823,
+    "LATIN SMALL LETTER BROKEN L"
+  ],
+  [
+    42824,
+    "LATIN CAPITAL LETTER L WITH HIGH STROKE"
+  ],
+  [
+    42825,
+    "LATIN SMALL LETTER L WITH HIGH STROKE"
+  ],
+  [
+    42826,
+    "LATIN CAPITAL LETTER O WITH LONG STROKE OVERLAY"
+  ],
+  [
+    42827,
+    "LATIN SMALL LETTER O WITH LONG STROKE OVERLAY"
+  ],
+  [
+    42828,
+    "LATIN CAPITAL LETTER O WITH LOOP"
+  ],
+  [
+    42829,
+    "LATIN SMALL LETTER O WITH LOOP"
+  ],
+  [
+    42830,
+    "LATIN CAPITAL LETTER OO"
+  ],
+  [
+    42831,
+    "LATIN SMALL LETTER OO"
+  ],
+  [
+    42832,
+    "LATIN CAPITAL LETTER P WITH STROKE THROUGH DESCENDER"
+  ],
+  [
+    42833,
+    "LATIN SMALL LETTER P WITH STROKE THROUGH DESCENDER"
+  ],
+  [
+    42834,
+    "LATIN CAPITAL LETTER P WITH FLOURISH"
+  ],
+  [
+    42835,
+    "LATIN SMALL LETTER P WITH FLOURISH"
+  ],
+  [
+    42836,
+    "LATIN CAPITAL LETTER P WITH SQUIRREL TAIL"
+  ],
+  [
+    42837,
+    "LATIN SMALL LETTER P WITH SQUIRREL TAIL"
+  ],
+  [
+    42838,
+    "LATIN CAPITAL LETTER Q WITH STROKE THROUGH DESCENDER"
+  ],
+  [
+    42839,
+    "LATIN SMALL LETTER Q WITH STROKE THROUGH DESCENDER"
+  ],
+  [
+    42840,
+    "LATIN CAPITAL LETTER Q WITH DIAGONAL STROKE"
+  ],
+  [
+    42841,
+    "LATIN SMALL LETTER Q WITH DIAGONAL STROKE"
+  ],
+  [
+    42842,
+    "LATIN CAPITAL LETTER R ROTUNDA"
+  ],
+  [
+    42843,
+    "LATIN SMALL LETTER R ROTUNDA"
+  ],
+  [
+    42844,
+    "LATIN CAPITAL LETTER RUM ROTUNDA"
+  ],
+  [
+    42845,
+    "LATIN SMALL LETTER RUM ROTUNDA"
+  ],
+  [
+    42846,
+    "LATIN CAPITAL LETTER V WITH DIAGONAL STROKE"
+  ],
+  [
+    42847,
+    "LATIN SMALL LETTER V WITH DIAGONAL STROKE"
+  ],
+  [
+    42848,
+    "LATIN CAPITAL LETTER VY"
+  ],
+  [
+    42849,
+    "LATIN SMALL LETTER VY"
+  ],
+  [
+    42850,
+    "LATIN CAPITAL LETTER VISIGOTHIC Z"
+  ],
+  [
+    42851,
+    "LATIN SMALL LETTER VISIGOTHIC Z"
+  ],
+  [
+    42852,
+    "LATIN CAPITAL LETTER THORN WITH STROKE"
+  ],
+  [
+    42853,
+    "LATIN SMALL LETTER THORN WITH STROKE"
+  ],
+  [
+    42854,
+    "LATIN CAPITAL LETTER THORN WITH STROKE THROUGH DESCENDER"
+  ],
+  [
+    42855,
+    "LATIN SMALL LETTER THORN WITH STROKE THROUGH DESCENDER"
+  ],
+  [
+    42856,
+    "LATIN CAPITAL LETTER VEND"
+  ],
+  [
+    42857,
+    "LATIN SMALL LETTER VEND"
+  ],
+  [
+    42858,
+    "LATIN CAPITAL LETTER ET"
+  ],
+  [
+    42859,
+    "LATIN SMALL LETTER ET"
+  ],
+  [
+    42860,
+    "LATIN CAPITAL LETTER IS"
+  ],
+  [
+    42861,
+    "LATIN SMALL LETTER IS"
+  ],
+  [
+    42862,
+    "LATIN CAPITAL LETTER CON"
+  ],
+  [
+    42863,
+    "LATIN SMALL LETTER CON"
+  ],
+  [
+    42864,
+    "MODIFIER LETTER US"
+  ],
+  [
+    42865,
+    "LATIN SMALL LETTER DUM"
+  ],
+  [
+    42866,
+    "LATIN SMALL LETTER LUM"
+  ],
+  [
+    42867,
+    "LATIN SMALL LETTER MUM"
+  ],
+  [
+    42868,
+    "LATIN SMALL LETTER NUM"
+  ],
+  [
+    42869,
+    "LATIN SMALL LETTER RUM"
+  ],
+  [
+    42870,
+    "LATIN LETTER SMALL CAPITAL RUM"
+  ],
+  [
+    42871,
+    "LATIN SMALL LETTER TUM"
+  ],
+  [
+    42872,
+    "LATIN SMALL LETTER UM"
+  ],
+  [
+    42873,
+    "LATIN CAPITAL LETTER INSULAR D"
+  ],
+  [
+    42874,
+    "LATIN SMALL LETTER INSULAR D"
+  ],
+  [
+    42875,
+    "LATIN CAPITAL LETTER INSULAR F"
+  ],
+  [
+    42876,
+    "LATIN SMALL LETTER INSULAR F"
+  ],
+  [
+    42877,
+    "LATIN CAPITAL LETTER INSULAR G"
+  ],
+  [
+    42878,
+    "LATIN CAPITAL LETTER TURNED INSULAR G"
+  ],
+  [
+    42879,
+    "LATIN SMALL LETTER TURNED INSULAR G"
+  ],
+  [
+    42880,
+    "LATIN CAPITAL LETTER TURNED L"
+  ],
+  [
+    42881,
+    "LATIN SMALL LETTER TURNED L"
+  ],
+  [
+    42882,
+    "LATIN CAPITAL LETTER INSULAR R"
+  ],
+  [
+    42883,
+    "LATIN SMALL LETTER INSULAR R"
+  ],
+  [
+    42884,
+    "LATIN CAPITAL LETTER INSULAR S"
+  ],
+  [
+    42885,
+    "LATIN SMALL LETTER INSULAR S"
+  ],
+  [
+    42886,
+    "LATIN CAPITAL LETTER INSULAR T"
+  ],
+  [
+    42887,
+    "LATIN SMALL LETTER INSULAR T"
+  ],
+  [
+    42888,
+    "MODIFIER LETTER LOW CIRCUMFLEX ACCENT"
+  ],
+  [
+    42889,
+    "MODIFIER LETTER COLON"
+  ],
+  [
+    42890,
+    "MODIFIER LETTER SHORT EQUALS SIGN"
+  ],
+  [
+    42891,
+    "LATIN CAPITAL LETTER SALTILLO"
+  ],
+  [
+    42892,
+    "LATIN SMALL LETTER SALTILLO"
+  ],
+  [
+    42893,
+    "LATIN CAPITAL LETTER TURNED H"
+  ],
+  [
+    42894,
+    "LATIN SMALL LETTER L WITH RETROFLEX HOOK AND BELT"
+  ],
+  [
+    42895,
+    "LATIN LETTER SINOLOGICAL DOT"
+  ],
+  [
+    42896,
+    "LATIN CAPITAL LETTER N WITH DESCENDER"
+  ],
+  [
+    42897,
+    "LATIN SMALL LETTER N WITH DESCENDER"
+  ],
+  [
+    42898,
+    "LATIN CAPITAL LETTER C WITH BAR"
+  ],
+  [
+    42899,
+    "LATIN SMALL LETTER C WITH BAR"
+  ],
+  [
+    42900,
+    "LATIN SMALL LETTER C WITH PALATAL HOOK"
+  ],
+  [
+    42901,
+    "LATIN SMALL LETTER H WITH PALATAL HOOK"
+  ],
+  [
+    42902,
+    "LATIN CAPITAL LETTER B WITH FLOURISH"
+  ],
+  [
+    42903,
+    "LATIN SMALL LETTER B WITH FLOURISH"
+  ],
+  [
+    42904,
+    "LATIN CAPITAL LETTER F WITH STROKE"
+  ],
+  [
+    42905,
+    "LATIN SMALL LETTER F WITH STROKE"
+  ],
+  [
+    42906,
+    "LATIN CAPITAL LETTER VOLAPUK AE"
+  ],
+  [
+    42907,
+    "LATIN SMALL LETTER VOLAPUK AE"
+  ],
+  [
+    42908,
+    "LATIN CAPITAL LETTER VOLAPUK OE"
+  ],
+  [
+    42909,
+    "LATIN SMALL LETTER VOLAPUK OE"
+  ],
+  [
+    42910,
+    "LATIN CAPITAL LETTER VOLAPUK UE"
+  ],
+  [
+    42911,
+    "LATIN SMALL LETTER VOLAPUK UE"
+  ],
+  [
+    42912,
+    "LATIN CAPITAL LETTER G WITH OBLIQUE STROKE"
+  ],
+  [
+    42913,
+    "LATIN SMALL LETTER G WITH OBLIQUE STROKE"
+  ],
+  [
+    42914,
+    "LATIN CAPITAL LETTER K WITH OBLIQUE STROKE"
+  ],
+  [
+    42915,
+    "LATIN SMALL LETTER K WITH OBLIQUE STROKE"
+  ],
+  [
+    42916,
+    "LATIN CAPITAL LETTER N WITH OBLIQUE STROKE"
+  ],
+  [
+    42917,
+    "LATIN SMALL LETTER N WITH OBLIQUE STROKE"
+  ],
+  [
+    42918,
+    "LATIN CAPITAL LETTER R WITH OBLIQUE STROKE"
+  ],
+  [
+    42919,
+    "LATIN SMALL LETTER R WITH OBLIQUE STROKE"
+  ],
+  [
+    42920,
+    "LATIN CAPITAL LETTER S WITH OBLIQUE STROKE"
+  ],
+  [
+    42921,
+    "LATIN SMALL LETTER S WITH OBLIQUE STROKE"
+  ],
+  [
+    42922,
+    "LATIN CAPITAL LETTER H WITH HOOK"
+  ],
+  [
+    42923,
+    "LATIN CAPITAL LETTER REVERSED OPEN E"
+  ],
+  [
+    42924,
+    "LATIN CAPITAL LETTER SCRIPT G"
+  ],
+  [
+    42925,
+    "LATIN CAPITAL LETTER L WITH BELT"
+  ],
+  [
+    42926,
+    "LATIN CAPITAL LETTER SMALL CAPITAL I"
+  ],
+  [
+    42927,
+    "LATIN LETTER SMALL CAPITAL Q"
+  ],
+  [
+    42928,
+    "LATIN CAPITAL LETTER TURNED K"
+  ],
+  [
+    42929,
+    "LATIN CAPITAL LETTER TURNED T"
+  ],
+  [
+    42930,
+    "LATIN CAPITAL LETTER J WITH CROSSED-TAIL"
+  ],
+  [
+    42931,
+    "LATIN CAPITAL LETTER CHI"
+  ],
+  [
+    42932,
+    "LATIN CAPITAL LETTER BETA"
+  ],
+  [
+    42933,
+    "LATIN SMALL LETTER BETA"
+  ],
+  [
+    42934,
+    "LATIN CAPITAL LETTER OMEGA"
+  ],
+  [
+    42935,
+    "LATIN SMALL LETTER OMEGA"
+  ],
+  [
+    42936,
+    "LATIN CAPITAL LETTER U WITH STROKE"
+  ],
+  [
+    42937,
+    "LATIN SMALL LETTER U WITH STROKE"
+  ],
+  [
+    42938,
+    "LATIN CAPITAL LETTER GLOTTAL A"
+  ],
+  [
+    42939,
+    "LATIN SMALL LETTER GLOTTAL A"
+  ],
+  [
+    42940,
+    "LATIN CAPITAL LETTER GLOTTAL I"
+  ],
+  [
+    42941,
+    "LATIN SMALL LETTER GLOTTAL I"
+  ],
+  [
+    42942,
+    "LATIN CAPITAL LETTER GLOTTAL U"
+  ],
+  [
+    42943,
+    "LATIN SMALL LETTER GLOTTAL U"
+  ],
+  [
+    42944,
+    "LATIN CAPITAL LETTER OLD POLISH O"
+  ],
+  [
+    42945,
+    "LATIN SMALL LETTER OLD POLISH O"
+  ],
+  [
+    42946,
+    "LATIN CAPITAL LETTER ANGLICANA W"
+  ],
+  [
+    42947,
+    "LATIN SMALL LETTER ANGLICANA W"
+  ],
+  [
+    42948,
+    "LATIN CAPITAL LETTER C WITH PALATAL HOOK"
+  ],
+  [
+    42949,
+    "LATIN CAPITAL LETTER S WITH HOOK"
+  ],
+  [
+    42950,
+    "LATIN CAPITAL LETTER Z WITH PALATAL HOOK"
+  ],
+  [
+    42951,
+    "LATIN CAPITAL LETTER D WITH SHORT STROKE OVERLAY"
+  ],
+  [
+    42952,
+    "LATIN SMALL LETTER D WITH SHORT STROKE OVERLAY"
+  ],
+  [
+    42953,
+    "LATIN CAPITAL LETTER S WITH SHORT STROKE OVERLAY"
+  ],
+  [
+    42954,
+    "LATIN SMALL LETTER S WITH SHORT STROKE OVERLAY"
+  ],
+  [
+    42955,
+    "LATIN CAPITAL LETTER RAMS HORN"
+  ],
+  [
+    42956,
+    "LATIN CAPITAL LETTER S WITH DIAGONAL STROKE"
+  ],
+  [
+    42957,
+    "LATIN SMALL LETTER S WITH DIAGONAL STROKE"
+  ],
+  [
+    42958,
+    "LATIN CAPITAL LETTER PHARYNGEAL VOICED FRICATIVE"
+  ],
+  [
+    42959,
+    "LATIN SMALL LETTER PHARYNGEAL VOICED FRICATIVE"
+  ],
+  [
+    42960,
+    "LATIN CAPITAL LETTER CLOSED INSULAR G"
+  ],
+  [
+    42961,
+    "LATIN SMALL LETTER CLOSED INSULAR G"
+  ],
+  [
+    42962,
+    "LATIN CAPITAL LETTER DOUBLE THORN"
+  ],
+  [
+    42963,
+    "LATIN SMALL LETTER DOUBLE THORN"
+  ],
+  [
+    42964,
+    "LATIN CAPITAL LETTER DOUBLE WYNN"
+  ],
+  [
+    42965,
+    "LATIN SMALL LETTER DOUBLE WYNN"
+  ],
+  [
+    42966,
+    "LATIN CAPITAL LETTER MIDDLE SCOTS S"
+  ],
+  [
+    42967,
+    "LATIN SMALL LETTER MIDDLE SCOTS S"
+  ],
+  [
+    42968,
+    "LATIN CAPITAL LETTER SIGMOID S"
+  ],
+  [
+    42969,
+    "LATIN SMALL LETTER SIGMOID S"
+  ],
+  [
+    42970,
+    "LATIN CAPITAL LETTER LAMBDA"
+  ],
+  [
+    42971,
+    "LATIN SMALL LETTER LAMBDA"
+  ],
+  [
+    42972,
+    "LATIN CAPITAL LETTER LAMBDA WITH STROKE"
+  ],
+  [
+    42993,
+    "MODIFIER LETTER CAPITAL S"
+  ],
+  [
+    42994,
+    "MODIFIER LETTER CAPITAL C"
+  ],
+  [
+    42995,
+    "MODIFIER LETTER CAPITAL F"
+  ],
+  [
+    42996,
+    "MODIFIER LETTER CAPITAL Q"
+  ],
+  [
+    42997,
+    "LATIN CAPITAL LETTER REVERSED HALF H"
+  ],
+  [
+    42998,
+    "LATIN SMALL LETTER REVERSED HALF H"
+  ],
+  [
+    42999,
+    "LATIN EPIGRAPHIC LETTER SIDEWAYS I"
+  ],
+  [
+    43000,
+    "MODIFIER LETTER CAPITAL H WITH STROKE"
+  ],
+  [
+    43001,
+    "MODIFIER LETTER SMALL LIGATURE OE"
+  ],
+  [
+    43002,
+    "LATIN LETTER SMALL CAPITAL TURNED M"
+  ],
+  [
+    43003,
+    "LATIN EPIGRAPHIC LETTER REVERSED F"
+  ],
+  [
+    43004,
+    "LATIN EPIGRAPHIC LETTER REVERSED P"
+  ],
+  [
+    43005,
+    "LATIN EPIGRAPHIC LETTER INVERTED M"
+  ],
+  [
+    43006,
+    "LATIN EPIGRAPHIC LETTER I LONGA"
+  ],
+  [
+    43007,
+    "LATIN EPIGRAPHIC LETTER ARCHAIC M"
+  ],
+  [
+    43824,
+    "LATIN SMALL LETTER BARRED ALPHA"
+  ],
+  [
+    43825,
+    "LATIN SMALL LETTER A REVERSED-SCHWA"
+  ],
+  [
+    43826,
+    "LATIN SMALL LETTER BLACKLETTER E"
+  ],
+  [
+    43827,
+    "LATIN SMALL LETTER BARRED E"
+  ],
+  [
+    43828,
+    "LATIN SMALL LETTER E WITH FLOURISH"
+  ],
+  [
+    43829,
+    "LATIN SMALL LETTER LENIS F"
+  ],
+  [
+    43830,
+    "LATIN SMALL LETTER SCRIPT G WITH CROSSED-TAIL"
+  ],
+  [
+    43831,
+    "LATIN SMALL LETTER L WITH INVERTED LAZY S"
+  ],
+  [
+    43832,
+    "LATIN SMALL LETTER L WITH DOUBLE MIDDLE TILDE"
+  ],
+  [
+    43833,
+    "LATIN SMALL LETTER L WITH MIDDLE RING"
+  ],
+  [
+    43834,
+    "LATIN SMALL LETTER M WITH CROSSED-TAIL"
+  ],
+  [
+    43835,
+    "LATIN SMALL LETTER N WITH CROSSED-TAIL"
+  ],
+  [
+    43836,
+    "LATIN SMALL LETTER ENG WITH CROSSED-TAIL"
+  ],
+  [
+    43837,
+    "LATIN SMALL LETTER BLACKLETTER O"
+  ],
+  [
+    43838,
+    "LATIN SMALL LETTER BLACKLETTER O WITH STROKE"
+  ],
+  [
+    43839,
+    "LATIN SMALL LETTER OPEN O WITH STROKE"
+  ],
+  [
+    43840,
+    "LATIN SMALL LETTER INVERTED OE"
+  ],
+  [
+    43841,
+    "LATIN SMALL LETTER TURNED OE WITH STROKE"
+  ],
+  [
+    43842,
+    "LATIN SMALL LETTER TURNED OE WITH HORIZONTAL STROKE"
+  ],
+  [
+    43843,
+    "LATIN SMALL LETTER TURNED O OPEN-O"
+  ],
+  [
+    43844,
+    "LATIN SMALL LETTER TURNED O OPEN-O WITH STROKE"
+  ],
+  [
+    43845,
+    "LATIN SMALL LETTER STIRRUP R"
+  ],
+  [
+    43846,
+    "LATIN LETTER SMALL CAPITAL R WITH RIGHT LEG"
+  ],
+  [
+    43847,
+    "LATIN SMALL LETTER R WITHOUT HANDLE"
+  ],
+  [
+    43848,
+    "LATIN SMALL LETTER DOUBLE R"
+  ],
+  [
+    43849,
+    "LATIN SMALL LETTER R WITH CROSSED-TAIL"
+  ],
+  [
+    43850,
+    "LATIN SMALL LETTER DOUBLE R WITH CROSSED-TAIL"
+  ],
+  [
+    43851,
+    "LATIN SMALL LETTER SCRIPT R"
+  ],
+  [
+    43852,
+    "LATIN SMALL LETTER SCRIPT R WITH RING"
+  ],
+  [
+    43853,
+    "LATIN SMALL LETTER BASELINE ESH"
+  ],
+  [
+    43854,
+    "LATIN SMALL LETTER U WITH SHORT RIGHT LEG"
+  ],
+  [
+    43855,
+    "LATIN SMALL LETTER U BAR WITH SHORT RIGHT LEG"
+  ],
+  [
+    43856,
+    "LATIN SMALL LETTER UI"
+  ],
+  [
+    43857,
+    "LATIN SMALL LETTER TURNED UI"
+  ],
+  [
+    43858,
+    "LATIN SMALL LETTER U WITH LEFT HOOK"
+  ],
+  [
+    43859,
+    "LATIN SMALL LETTER CHI"
+  ],
+  [
+    43860,
+    "LATIN SMALL LETTER CHI WITH LOW RIGHT RING"
+  ],
+  [
+    43861,
+    "LATIN SMALL LETTER CHI WITH LOW LEFT SERIF"
+  ],
+  [
+    43862,
+    "LATIN SMALL LETTER X WITH LOW RIGHT RING"
+  ],
+  [
+    43863,
+    "LATIN SMALL LETTER X WITH LONG LEFT LEG"
+  ],
+  [
+    43864,
+    "LATIN SMALL LETTER X WITH LONG LEFT LEG AND LOW RIGHT RING"
+  ],
+  [
+    43865,
+    "LATIN SMALL LETTER X WITH LONG LEFT LEG WITH SERIF"
+  ],
+  [
+    43866,
+    "LATIN SMALL LETTER Y WITH SHORT RIGHT LEG"
+  ],
+  [
+    43867,
+    "MODIFIER BREVE WITH INVERTED BREVE"
+  ],
+  [
+    43868,
+    "MODIFIER LETTER SMALL HENG"
+  ],
+  [
+    43869,
+    "MODIFIER LETTER SMALL L WITH INVERTED LAZY S"
+  ],
+  [
+    43870,
+    "MODIFIER LETTER SMALL L WITH MIDDLE TILDE"
+  ],
+  [
+    43871,
+    "MODIFIER LETTER SMALL U WITH LEFT HOOK"
+  ],
+  [
+    43872,
+    "LATIN SMALL LETTER SAKHA YAT"
+  ],
+  [
+    43873,
+    "LATIN SMALL LETTER IOTIFIED E"
+  ],
+  [
+    43874,
+    "LATIN SMALL LETTER OPEN OE"
+  ],
+  [
+    43875,
+    "LATIN SMALL LETTER UO"
+  ],
+  [
+    43876,
+    "LATIN SMALL LETTER INVERTED ALPHA"
+  ],
+  [
+    43877,
+    "GREEK LETTER SMALL CAPITAL OMEGA"
+  ],
+  [
+    43878,
+    "LATIN SMALL LETTER DZ DIGRAPH WITH RETROFLEX HOOK"
+  ],
+  [
+    43879,
+    "LATIN SMALL LETTER TS DIGRAPH WITH RETROFLEX HOOK"
+  ],
+  [
+    43880,
+    "LATIN SMALL LETTER TURNED R WITH MIDDLE TILDE"
+  ],
+  [
+    43881,
+    "MODIFIER LETTER SMALL TURNED W"
+  ],
+  [
+    43882,
+    "MODIFIER LETTER LEFT TACK"
+  ],
+  [
+    43883,
+    "MODIFIER LETTER RIGHT TACK"
+  ],
+  [
+    64256,
+    "LATIN SMALL LIGATURE FF"
+  ],
+  [
+    64257,
+    "LATIN SMALL LIGATURE FI"
+  ],
+  [
+    64258,
+    "LATIN SMALL LIGATURE FL"
+  ],
+  [
+    64259,
+    "LATIN SMALL LIGATURE FFI"
+  ],
+  [
+    64260,
+    "LATIN SMALL LIGATURE FFL"
+  ],
+  [
+    64261,
+    "LATIN SMALL LIGATURE LONG S T"
+  ],
+  [
+    64262,
+    "LATIN SMALL LIGATURE ST"
+  ],
+  [
+    64275,
+    "ARMENIAN SMALL LIGATURE MEN NOW"
+  ],
+  [
+    64276,
+    "ARMENIAN SMALL LIGATURE MEN ECH"
+  ],
+  [
+    64277,
+    "ARMENIAN SMALL LIGATURE MEN INI"
+  ],
+  [
+    64278,
+    "ARMENIAN SMALL LIGATURE VEW NOW"
+  ],
+  [
+    64279,
+    "ARMENIAN SMALL LIGATURE MEN XEH"
+  ],
+  [
+    64285,
+    "HEBREW LETTER YOD WITH HIRIQ"
+  ],
+  [
+    64286,
+    "HEBREW POINT JUDEO-SPANISH VARIKA"
+  ],
+  [
+    64287,
+    "HEBREW LIGATURE YIDDISH YOD YOD PATAH"
+  ],
+  [
+    64288,
+    "HEBREW LETTER ALTERNATIVE AYIN"
+  ],
+  [
+    64289,
+    "HEBREW LETTER WIDE ALEF"
+  ],
+  [
+    64290,
+    "HEBREW LETTER WIDE DALET"
+  ],
+  [
+    64291,
+    "HEBREW LETTER WIDE HE"
+  ],
+  [
+    64292,
+    "HEBREW LETTER WIDE KAF"
+  ],
+  [
+    64293,
+    "HEBREW LETTER WIDE LAMED"
+  ],
+  [
+    64294,
+    "HEBREW LETTER WIDE FINAL MEM"
+  ],
+  [
+    64295,
+    "HEBREW LETTER WIDE RESH"
+  ],
+  [
+    64296,
+    "HEBREW LETTER WIDE TAV"
+  ],
+  [
+    64297,
+    "HEBREW LETTER ALTERNATIVE PLUS SIGN"
+  ],
+  [
+    64298,
+    "HEBREW LETTER SHIN WITH SHIN DOT"
+  ],
+  [
+    64299,
+    "HEBREW LETTER SHIN WITH SIN DOT"
+  ],
+  [
+    64300,
+    "HEBREW LETTER SHIN WITH DAGESH AND SHIN DOT"
+  ],
+  [
+    64301,
+    "HEBREW LETTER SHIN WITH DAGESH AND SIN DOT"
+  ],
+  [
+    64302,
+    "HEBREW LETTER ALEF WITH PATAH"
+  ],
+  [
+    64303,
+    "HEBREW LETTER ALEF WITH QAMATS"
+  ],
+  [
+    64304,
+    "HEBREW LETTER ALEF WITH MAPIQ"
+  ],
+  [
+    64305,
+    "HEBREW LETTER BET WITH DAGESH"
+  ],
+  [
+    64306,
+    "HEBREW LETTER GIMEL WITH DAGESH"
+  ],
+  [
+    64307,
+    "HEBREW LETTER DALET WITH DAGESH"
+  ],
+  [
+    64308,
+    "HEBREW LETTER HE WITH MAPIQ"
+  ],
+  [
+    64309,
+    "HEBREW LETTER VAV WITH DAGESH"
+  ],
+  [
+    64310,
+    "HEBREW LETTER ZAYIN WITH DAGESH"
+  ],
+  [
+    64312,
+    "HEBREW LETTER TET WITH DAGESH"
+  ],
+  [
+    64313,
+    "HEBREW LETTER YOD WITH DAGESH"
+  ],
+  [
+    64314,
+    "HEBREW LETTER FINAL KAF WITH DAGESH"
+  ],
+  [
+    64315,
+    "HEBREW LETTER KAF WITH DAGESH"
+  ],
+  [
+    64316,
+    "HEBREW LETTER LAMED WITH DAGESH"
+  ],
+  [
+    64318,
+    "HEBREW LETTER MEM WITH DAGESH"
+  ],
+  [
+    64320,
+    "HEBREW LETTER NUN WITH DAGESH"
+  ],
+  [
+    64321,
+    "HEBREW LETTER SAMEKH WITH DAGESH"
+  ],
+  [
+    64323,
+    "HEBREW LETTER FINAL PE WITH DAGESH"
+  ],
+  [
+    64324,
+    "HEBREW LETTER PE WITH DAGESH"
+  ],
+  [
+    64326,
+    "HEBREW LETTER TSADI WITH DAGESH"
+  ],
+  [
+    64327,
+    "HEBREW LETTER QOF WITH DAGESH"
+  ],
+  [
+    64328,
+    "HEBREW LETTER RESH WITH DAGESH"
+  ],
+  [
+    64329,
+    "HEBREW LETTER SHIN WITH DAGESH"
+  ],
+  [
+    64330,
+    "HEBREW LETTER TAV WITH DAGESH"
+  ],
+  [
+    64331,
+    "HEBREW LETTER VAV WITH HOLAM"
+  ],
+  [
+    64332,
+    "HEBREW LETTER BET WITH RAFE"
+  ],
+  [
+    64333,
+    "HEBREW LETTER KAF WITH RAFE"
+  ],
+  [
+    64334,
+    "HEBREW LETTER PE WITH RAFE"
+  ],
+  [
+    64335,
+    "HEBREW LIGATURE ALEF LAMED"
+  ],
+  [
+    65056,
+    "COMBINING LIGATURE LEFT HALF"
+  ],
+  [
+    65057,
+    "COMBINING LIGATURE RIGHT HALF"
+  ],
+  [
+    65058,
+    "COMBINING DOUBLE TILDE LEFT HALF"
+  ],
+  [
+    65059,
+    "COMBINING DOUBLE TILDE RIGHT HALF"
+  ],
+  [
+    65060,
+    "COMBINING MACRON LEFT HALF"
+  ],
+  [
+    65061,
+    "COMBINING MACRON RIGHT HALF"
+  ],
+  [
+    65062,
+    "COMBINING CONJOINING MACRON"
+  ],
+  [
+    65063,
+    "COMBINING LIGATURE LEFT HALF BELOW"
+  ],
+  [
+    65064,
+    "COMBINING LIGATURE RIGHT HALF BELOW"
+  ],
+  [
+    65065,
+    "COMBINING TILDE LEFT HALF BELOW"
+  ],
+  [
+    65066,
+    "COMBINING TILDE RIGHT HALF BELOW"
+  ],
+  [
+    65067,
+    "COMBINING MACRON LEFT HALF BELOW"
+  ],
+  [
+    65068,
+    "COMBINING MACRON RIGHT HALF BELOW"
+  ],
+  [
+    65069,
+    "COMBINING CONJOINING MACRON BELOW"
+  ],
+  [
+    65070,
+    "COMBINING CYRILLIC TITLO LEFT HALF"
+  ],
+  [
+    65071,
+    "COMBINING CYRILLIC TITLO RIGHT HALF"
+  ],
+  [
+    65281,
+    "FULLWIDTH EXCLAMATION MARK"
+  ],
+  [
+    65282,
+    "FULLWIDTH QUOTATION MARK"
+  ],
+  [
+    65283,
+    "FULLWIDTH NUMBER SIGN"
+  ],
+  [
+    65284,
+    "FULLWIDTH DOLLAR SIGN"
+  ],
+  [
+    65285,
+    "FULLWIDTH PERCENT SIGN"
+  ],
+  [
+    65286,
+    "FULLWIDTH AMPERSAND"
+  ],
+  [
+    65287,
+    "FULLWIDTH APOSTROPHE"
+  ],
+  [
+    65288,
+    "FULLWIDTH LEFT PARENTHESIS"
+  ],
+  [
+    65289,
+    "FULLWIDTH RIGHT PARENTHESIS"
+  ],
+  [
+    65290,
+    "FULLWIDTH ASTERISK"
+  ],
+  [
+    65291,
+    "FULLWIDTH PLUS SIGN"
+  ],
+  [
+    65292,
+    "FULLWIDTH COMMA"
+  ],
+  [
+    65293,
+    "FULLWIDTH HYPHEN-MINUS"
+  ],
+  [
+    65294,
+    "FULLWIDTH FULL STOP"
+  ],
+  [
+    65295,
+    "FULLWIDTH SOLIDUS"
+  ],
+  [
+    65296,
+    "FULLWIDTH DIGIT ZERO"
+  ],
+  [
+    65297,
+    "FULLWIDTH DIGIT ONE"
+  ],
+  [
+    65298,
+    "FULLWIDTH DIGIT TWO"
+  ],
+  [
+    65299,
+    "FULLWIDTH DIGIT THREE"
+  ],
+  [
+    65300,
+    "FULLWIDTH DIGIT FOUR"
+  ],
+  [
+    65301,
+    "FULLWIDTH DIGIT FIVE"
+  ],
+  [
+    65302,
+    "FULLWIDTH DIGIT SIX"
+  ],
+  [
+    65303,
+    "FULLWIDTH DIGIT SEVEN"
+  ],
+  [
+    65304,
+    "FULLWIDTH DIGIT EIGHT"
+  ],
+  [
+    65305,
+    "FULLWIDTH DIGIT NINE"
+  ],
+  [
+    65306,
+    "FULLWIDTH COLON"
+  ],
+  [
+    65307,
+    "FULLWIDTH SEMICOLON"
+  ],
+  [
+    65308,
+    "FULLWIDTH LESS-THAN SIGN"
+  ],
+  [
+    65309,
+    "FULLWIDTH EQUALS SIGN"
+  ],
+  [
+    65310,
+    "FULLWIDTH GREATER-THAN SIGN"
+  ],
+  [
+    65311,
+    "FULLWIDTH QUESTION MARK"
+  ],
+  [
+    65312,
+    "FULLWIDTH COMMERCIAL AT"
+  ],
+  [
+    65313,
+    "FULLWIDTH LATIN CAPITAL LETTER A"
+  ],
+  [
+    65314,
+    "FULLWIDTH LATIN CAPITAL LETTER B"
+  ],
+  [
+    65315,
+    "FULLWIDTH LATIN CAPITAL LETTER C"
+  ],
+  [
+    65316,
+    "FULLWIDTH LATIN CAPITAL LETTER D"
+  ],
+  [
+    65317,
+    "FULLWIDTH LATIN CAPITAL LETTER E"
+  ],
+  [
+    65318,
+    "FULLWIDTH LATIN CAPITAL LETTER F"
+  ],
+  [
+    65319,
+    "FULLWIDTH LATIN CAPITAL LETTER G"
+  ],
+  [
+    65320,
+    "FULLWIDTH LATIN CAPITAL LETTER H"
+  ],
+  [
+    65321,
+    "FULLWIDTH LATIN CAPITAL LETTER I"
+  ],
+  [
+    65322,
+    "FULLWIDTH LATIN CAPITAL LETTER J"
+  ],
+  [
+    65323,
+    "FULLWIDTH LATIN CAPITAL LETTER K"
+  ],
+  [
+    65324,
+    "FULLWIDTH LATIN CAPITAL LETTER L"
+  ],
+  [
+    65325,
+    "FULLWIDTH LATIN CAPITAL LETTER M"
+  ],
+  [
+    65326,
+    "FULLWIDTH LATIN CAPITAL LETTER N"
+  ],
+  [
+    65327,
+    "FULLWIDTH LATIN CAPITAL LETTER O"
+  ],
+  [
+    65328,
+    "FULLWIDTH LATIN CAPITAL LETTER P"
+  ],
+  [
+    65329,
+    "FULLWIDTH LATIN CAPITAL LETTER Q"
+  ],
+  [
+    65330,
+    "FULLWIDTH LATIN CAPITAL LETTER R"
+  ],
+  [
+    65331,
+    "FULLWIDTH LATIN CAPITAL LETTER S"
+  ],
+  [
+    65332,
+    "FULLWIDTH LATIN CAPITAL LETTER T"
+  ],
+  [
+    65333,
+    "FULLWIDTH LATIN CAPITAL LETTER U"
+  ],
+  [
+    65334,
+    "FULLWIDTH LATIN CAPITAL LETTER V"
+  ],
+  [
+    65335,
+    "FULLWIDTH LATIN CAPITAL LETTER W"
+  ],
+  [
+    65336,
+    "FULLWIDTH LATIN CAPITAL LETTER X"
+  ],
+  [
+    65337,
+    "FULLWIDTH LATIN CAPITAL LETTER Y"
+  ],
+  [
+    65338,
+    "FULLWIDTH LATIN CAPITAL LETTER Z"
+  ],
+  [
+    65339,
+    "FULLWIDTH LEFT SQUARE BRACKET"
+  ],
+  [
+    65340,
+    "FULLWIDTH REVERSE SOLIDUS"
+  ],
+  [
+    65341,
+    "FULLWIDTH RIGHT SQUARE BRACKET"
+  ],
+  [
+    65342,
+    "FULLWIDTH CIRCUMFLEX ACCENT"
+  ],
+  [
+    65343,
+    "FULLWIDTH LOW LINE"
+  ],
+  [
+    65344,
+    "FULLWIDTH GRAVE ACCENT"
+  ],
+  [
+    65345,
+    "FULLWIDTH LATIN SMALL LETTER A"
+  ],
+  [
+    65346,
+    "FULLWIDTH LATIN SMALL LETTER B"
+  ],
+  [
+    65347,
+    "FULLWIDTH LATIN SMALL LETTER C"
+  ],
+  [
+    65348,
+    "FULLWIDTH LATIN SMALL LETTER D"
+  ],
+  [
+    65349,
+    "FULLWIDTH LATIN SMALL LETTER E"
+  ],
+  [
+    65350,
+    "FULLWIDTH LATIN SMALL LETTER F"
+  ],
+  [
+    65351,
+    "FULLWIDTH LATIN SMALL LETTER G"
+  ],
+  [
+    65352,
+    "FULLWIDTH LATIN SMALL LETTER H"
+  ],
+  [
+    65353,
+    "FULLWIDTH LATIN SMALL LETTER I"
+  ],
+  [
+    65354,
+    "FULLWIDTH LATIN SMALL LETTER J"
+  ],
+  [
+    65355,
+    "FULLWIDTH LATIN SMALL LETTER K"
+  ],
+  [
+    65356,
+    "FULLWIDTH LATIN SMALL LETTER L"
+  ],
+  [
+    65357,
+    "FULLWIDTH LATIN SMALL LETTER M"
+  ],
+  [
+    65358,
+    "FULLWIDTH LATIN SMALL LETTER N"
+  ],
+  [
+    65359,
+    "FULLWIDTH LATIN SMALL LETTER O"
+  ],
+  [
+    65360,
+    "FULLWIDTH LATIN SMALL LETTER P"
+  ],
+  [
+    65361,
+    "FULLWIDTH LATIN SMALL LETTER Q"
+  ],
+  [
+    65362,
+    "FULLWIDTH LATIN SMALL LETTER R"
+  ],
+  [
+    65363,
+    "FULLWIDTH LATIN SMALL LETTER S"
+  ],
+  [
+    65364,
+    "FULLWIDTH LATIN SMALL LETTER T"
+  ],
+  [
+    65365,
+    "FULLWIDTH LATIN SMALL LETTER U"
+  ],
+  [
+    65366,
+    "FULLWIDTH LATIN SMALL LETTER V"
+  ],
+  [
+    65367,
+    "FULLWIDTH LATIN SMALL LETTER W"
+  ],
+  [
+    65368,
+    "FULLWIDTH LATIN SMALL LETTER X"
+  ],
+  [
+    65369,
+    "FULLWIDTH LATIN SMALL LETTER Y"
+  ],
+  [
+    65370,
+    "FULLWIDTH LATIN SMALL LETTER Z"
+  ],
+  [
+    65371,
+    "FULLWIDTH LEFT CURLY BRACKET"
+  ],
+  [
+    65372,
+    "FULLWIDTH VERTICAL LINE"
+  ],
+  [
+    65373,
+    "FULLWIDTH RIGHT CURLY BRACKET"
+  ],
+  [
+    65374,
+    "FULLWIDTH TILDE"
+  ],
+  [
+    65375,
+    "FULLWIDTH LEFT WHITE PARENTHESIS"
+  ],
+  [
+    65376,
+    "FULLWIDTH RIGHT WHITE PARENTHESIS"
+  ],
+  [
+    65377,
+    "HALFWIDTH IDEOGRAPHIC FULL STOP"
+  ],
+  [
+    65378,
+    "HALFWIDTH LEFT CORNER BRACKET"
+  ],
+  [
+    65379,
+    "HALFWIDTH RIGHT CORNER BRACKET"
+  ],
+  [
+    65380,
+    "HALFWIDTH IDEOGRAPHIC COMMA"
+  ],
+  [
+    65381,
+    "HALFWIDTH KATAKANA MIDDLE DOT"
+  ],
+  [
+    65382,
+    "HALFWIDTH KATAKANA LETTER WO"
+  ],
+  [
+    65383,
+    "HALFWIDTH KATAKANA LETTER SMALL A"
+  ],
+  [
+    65384,
+    "HALFWIDTH KATAKANA LETTER SMALL I"
+  ],
+  [
+    65385,
+    "HALFWIDTH KATAKANA LETTER SMALL U"
+  ],
+  [
+    65386,
+    "HALFWIDTH KATAKANA LETTER SMALL E"
+  ],
+  [
+    65387,
+    "HALFWIDTH KATAKANA LETTER SMALL O"
+  ],
+  [
+    65388,
+    "HALFWIDTH KATAKANA LETTER SMALL YA"
+  ],
+  [
+    65389,
+    "HALFWIDTH KATAKANA LETTER SMALL YU"
+  ],
+  [
+    65390,
+    "HALFWIDTH KATAKANA LETTER SMALL YO"
+  ],
+  [
+    65391,
+    "HALFWIDTH KATAKANA LETTER SMALL TU"
+  ],
+  [
+    65392,
+    "HALFWIDTH KATAKANA-HIRAGANA PROLONGED SOUND MARK"
+  ],
+  [
+    65393,
+    "HALFWIDTH KATAKANA LETTER A"
+  ],
+  [
+    65394,
+    "HALFWIDTH KATAKANA LETTER I"
+  ],
+  [
+    65395,
+    "HALFWIDTH KATAKANA LETTER U"
+  ],
+  [
+    65396,
+    "HALFWIDTH KATAKANA LETTER E"
+  ],
+  [
+    65397,
+    "HALFWIDTH KATAKANA LETTER O"
+  ],
+  [
+    65398,
+    "HALFWIDTH KATAKANA LETTER KA"
+  ],
+  [
+    65399,
+    "HALFWIDTH KATAKANA LETTER KI"
+  ],
+  [
+    65400,
+    "HALFWIDTH KATAKANA LETTER KU"
+  ],
+  [
+    65401,
+    "HALFWIDTH KATAKANA LETTER KE"
+  ],
+  [
+    65402,
+    "HALFWIDTH KATAKANA LETTER KO"
+  ],
+  [
+    65403,
+    "HALFWIDTH KATAKANA LETTER SA"
+  ],
+  [
+    65404,
+    "HALFWIDTH KATAKANA LETTER SI"
+  ],
+  [
+    65405,
+    "HALFWIDTH KATAKANA LETTER SU"
+  ],
+  [
+    65406,
+    "HALFWIDTH KATAKANA LETTER SE"
+  ],
+  [
+    65407,
+    "HALFWIDTH KATAKANA LETTER SO"
+  ],
+  [
+    65408,
+    "HALFWIDTH KATAKANA LETTER TA"
+  ],
+  [
+    65409,
+    "HALFWIDTH KATAKANA LETTER TI"
+  ],
+  [
+    65410,
+    "HALFWIDTH KATAKANA LETTER TU"
+  ],
+  [
+    65411,
+    "HALFWIDTH KATAKANA LETTER TE"
+  ],
+  [
+    65412,
+    "HALFWIDTH KATAKANA LETTER TO"
+  ],
+  [
+    65413,
+    "HALFWIDTH KATAKANA LETTER NA"
+  ],
+  [
+    65414,
+    "HALFWIDTH KATAKANA LETTER NI"
+  ],
+  [
+    65415,
+    "HALFWIDTH KATAKANA LETTER NU"
+  ],
+  [
+    65416,
+    "HALFWIDTH KATAKANA LETTER NE"
+  ],
+  [
+    65417,
+    "HALFWIDTH KATAKANA LETTER NO"
+  ],
+  [
+    65418,
+    "HALFWIDTH KATAKANA LETTER HA"
+  ],
+  [
+    65419,
+    "HALFWIDTH KATAKANA LETTER HI"
+  ],
+  [
+    65420,
+    "HALFWIDTH KATAKANA LETTER HU"
+  ],
+  [
+    65421,
+    "HALFWIDTH KATAKANA LETTER HE"
+  ],
+  [
+    65422,
+    "HALFWIDTH KATAKANA LETTER HO"
+  ],
+  [
+    65423,
+    "HALFWIDTH KATAKANA LETTER MA"
+  ],
+  [
+    65424,
+    "HALFWIDTH KATAKANA LETTER MI"
+  ],
+  [
+    65425,
+    "HALFWIDTH KATAKANA LETTER MU"
+  ],
+  [
+    65426,
+    "HALFWIDTH KATAKANA LETTER ME"
+  ],
+  [
+    65427,
+    "HALFWIDTH KATAKANA LETTER MO"
+  ],
+  [
+    65428,
+    "HALFWIDTH KATAKANA LETTER YA"
+  ],
+  [
+    65429,
+    "HALFWIDTH KATAKANA LETTER YU"
+  ],
+  [
+    65430,
+    "HALFWIDTH KATAKANA LETTER YO"
+  ],
+  [
+    65431,
+    "HALFWIDTH KATAKANA LETTER RA"
+  ],
+  [
+    65432,
+    "HALFWIDTH KATAKANA LETTER RI"
+  ],
+  [
+    65433,
+    "HALFWIDTH KATAKANA LETTER RU"
+  ],
+  [
+    65434,
+    "HALFWIDTH KATAKANA LETTER RE"
+  ],
+  [
+    65435,
+    "HALFWIDTH KATAKANA LETTER RO"
+  ],
+  [
+    65436,
+    "HALFWIDTH KATAKANA LETTER WA"
+  ],
+  [
+    65437,
+    "HALFWIDTH KATAKANA LETTER N"
+  ],
+  [
+    65438,
+    "HALFWIDTH KATAKANA VOICED SOUND MARK"
+  ],
+  [
+    65439,
+    "HALFWIDTH KATAKANA SEMI-VOICED SOUND MARK"
+  ],
+  [
+    65440,
+    "HALFWIDTH HANGUL FILLER"
+  ],
+  [
+    65441,
+    "HALFWIDTH HANGUL LETTER KIYEOK"
+  ],
+  [
+    65442,
+    "HALFWIDTH HANGUL LETTER SSANGKIYEOK"
+  ],
+  [
+    65443,
+    "HALFWIDTH HANGUL LETTER KIYEOK-SIOS"
+  ],
+  [
+    65444,
+    "HALFWIDTH HANGUL LETTER NIEUN"
+  ],
+  [
+    65445,
+    "HALFWIDTH HANGUL LETTER NIEUN-CIEUC"
+  ],
+  [
+    65446,
+    "HALFWIDTH HANGUL LETTER NIEUN-HIEUH"
+  ],
+  [
+    65447,
+    "HALFWIDTH HANGUL LETTER TIKEUT"
+  ],
+  [
+    65448,
+    "HALFWIDTH HANGUL LETTER SSANGTIKEUT"
+  ],
+  [
+    65449,
+    "HALFWIDTH HANGUL LETTER RIEUL"
+  ],
+  [
+    65450,
+    "HALFWIDTH HANGUL LETTER RIEUL-KIYEOK"
+  ],
+  [
+    65451,
+    "HALFWIDTH HANGUL LETTER RIEUL-MIEUM"
+  ],
+  [
+    65452,
+    "HALFWIDTH HANGUL LETTER RIEUL-PIEUP"
+  ],
+  [
+    65453,
+    "HALFWIDTH HANGUL LETTER RIEUL-SIOS"
+  ],
+  [
+    65454,
+    "HALFWIDTH HANGUL LETTER RIEUL-THIEUTH"
+  ],
+  [
+    65455,
+    "HALFWIDTH HANGUL LETTER RIEUL-PHIEUPH"
+  ],
+  [
+    65456,
+    "HALFWIDTH HANGUL LETTER RIEUL-HIEUH"
+  ],
+  [
+    65457,
+    "HALFWIDTH HANGUL LETTER MIEUM"
+  ],
+  [
+    65458,
+    "HALFWIDTH HANGUL LETTER PIEUP"
+  ],
+  [
+    65459,
+    "HALFWIDTH HANGUL LETTER SSANGPIEUP"
+  ],
+  [
+    65460,
+    "HALFWIDTH HANGUL LETTER PIEUP-SIOS"
+  ],
+  [
+    65461,
+    "HALFWIDTH HANGUL LETTER SIOS"
+  ],
+  [
+    65462,
+    "HALFWIDTH HANGUL LETTER SSANGSIOS"
+  ],
+  [
+    65463,
+    "HALFWIDTH HANGUL LETTER IEUNG"
+  ],
+  [
+    65464,
+    "HALFWIDTH HANGUL LETTER CIEUC"
+  ],
+  [
+    65465,
+    "HALFWIDTH HANGUL LETTER SSANGCIEUC"
+  ],
+  [
+    65466,
+    "HALFWIDTH HANGUL LETTER CHIEUCH"
+  ],
+  [
+    65467,
+    "HALFWIDTH HANGUL LETTER KHIEUKH"
+  ],
+  [
+    65468,
+    "HALFWIDTH HANGUL LETTER THIEUTH"
+  ],
+  [
+    65469,
+    "HALFWIDTH HANGUL LETTER PHIEUPH"
+  ],
+  [
+    65470,
+    "HALFWIDTH HANGUL LETTER HIEUH"
+  ],
+  [
+    65474,
+    "HALFWIDTH HANGUL LETTER A"
+  ],
+  [
+    65475,
+    "HALFWIDTH HANGUL LETTER AE"
+  ],
+  [
+    65476,
+    "HALFWIDTH HANGUL LETTER YA"
+  ],
+  [
+    65477,
+    "HALFWIDTH HANGUL LETTER YAE"
+  ],
+  [
+    65478,
+    "HALFWIDTH HANGUL LETTER EO"
+  ],
+  [
+    65479,
+    "HALFWIDTH HANGUL LETTER E"
+  ],
+  [
+    65482,
+    "HALFWIDTH HANGUL LETTER YEO"
+  ],
+  [
+    65483,
+    "HALFWIDTH HANGUL LETTER YE"
+  ],
+  [
+    65484,
+    "HALFWIDTH HANGUL LETTER O"
+  ],
+  [
+    65485,
+    "HALFWIDTH HANGUL LETTER WA"
+  ],
+  [
+    65486,
+    "HALFWIDTH HANGUL LETTER WAE"
+  ],
+  [
+    65487,
+    "HALFWIDTH HANGUL LETTER OE"
+  ],
+  [
+    65490,
+    "HALFWIDTH HANGUL LETTER YO"
+  ],
+  [
+    65491,
+    "HALFWIDTH HANGUL LETTER U"
+  ],
+  [
+    65492,
+    "HALFWIDTH HANGUL LETTER WEO"
+  ],
+  [
+    65493,
+    "HALFWIDTH HANGUL LETTER WE"
+  ],
+  [
+    65494,
+    "HALFWIDTH HANGUL LETTER WI"
+  ],
+  [
+    65495,
+    "HALFWIDTH HANGUL LETTER YU"
+  ],
+  [
+    65498,
+    "HALFWIDTH HANGUL LETTER EU"
+  ],
+  [
+    65499,
+    "HALFWIDTH HANGUL LETTER YI"
+  ],
+  [
+    65500,
+    "HALFWIDTH HANGUL LETTER I"
+  ],
+  [
+    65504,
+    "FULLWIDTH CENT SIGN"
+  ],
+  [
+    65505,
+    "FULLWIDTH POUND SIGN"
+  ],
+  [
+    65506,
+    "FULLWIDTH NOT SIGN"
+  ],
+  [
+    65507,
+    "FULLWIDTH MACRON"
+  ],
+  [
+    65508,
+    "FULLWIDTH BROKEN BAR"
+  ],
+  [
+    65509,
+    "FULLWIDTH YEN SIGN"
+  ],
+  [
+    65510,
+    "FULLWIDTH WON SIGN"
+  ],
+  [
+    65512,
+    "HALFWIDTH FORMS LIGHT VERTICAL"
+  ],
+  [
+    65513,
+    "HALFWIDTH LEFTWARDS ARROW"
+  ],
+  [
+    65514,
+    "HALFWIDTH UPWARDS ARROW"
+  ],
+  [
+    65515,
+    "HALFWIDTH RIGHTWARDS ARROW"
+  ],
+  [
+    65516,
+    "HALFWIDTH DOWNWARDS ARROW"
+  ],
+  [
+    65517,
+    "HALFWIDTH BLACK SQUARE"
+  ],
+  [
+    65518,
+    "HALFWIDTH WHITE CIRCLE"
+  ],
+  [
+    65529,
+    "INTERLINEAR ANNOTATION ANCHOR"
+  ],
+  [
+    65530,
+    "INTERLINEAR ANNOTATION SEPARATOR"
+  ],
+  [
+    65531,
+    "INTERLINEAR ANNOTATION TERMINATOR"
+  ],
+  [
+    65532,
+    "OBJECT REPLACEMENT CHARACTER"
+  ],
+  [
+    65533,
+    "REPLACEMENT CHARACTER"
+  ],
+  [
+    65936,
+    "ROMAN SEXTANS SIGN"
+  ],
+  [
+    65937,
+    "ROMAN UNCIA SIGN"
+  ],
+  [
+    65938,
+    "ROMAN SEMUNCIA SIGN"
+  ],
+  [
+    65939,
+    "ROMAN SEXTULA SIGN"
+  ],
+  [
+    65940,
+    "ROMAN DIMIDIA SEXTULA SIGN"
+  ],
+  [
+    65941,
+    "ROMAN SILIQUA SIGN"
+  ],
+  [
+    65942,
+    "ROMAN DENARIUS SIGN"
+  ],
+  [
+    65943,
+    "ROMAN QUINARIUS SIGN"
+  ],
+  [
+    65944,
+    "ROMAN SESTERTIUS SIGN"
+  ],
+  [
+    65945,
+    "ROMAN DUPONDIUS SIGN"
+  ],
+  [
+    65946,
+    "ROMAN AS SIGN"
+  ],
+  [
+    65947,
+    "ROMAN CENTURIAL SIGN"
+  ],
+  [
+    65948,
+    "ASCIA SYMBOL"
+  ],
+  [
+    65952,
+    "GREEK SYMBOL TAU RHO"
+  ],
+  [
+    67456,
+    "MODIFIER LETTER SMALL CAPITAL AA"
+  ],
+  [
+    67457,
+    "MODIFIER LETTER SUPERSCRIPT TRIANGULAR COLON"
+  ],
+  [
+    67458,
+    "MODIFIER LETTER SUPERSCRIPT HALF TRIANGULAR COLON"
+  ],
+  [
+    67459,
+    "MODIFIER LETTER SMALL AE"
+  ],
+  [
+    67460,
+    "MODIFIER LETTER SMALL CAPITAL B"
+  ],
+  [
+    67461,
+    "MODIFIER LETTER SMALL B WITH HOOK"
+  ],
+  [
+    67463,
+    "MODIFIER LETTER SMALL DZ DIGRAPH"
+  ],
+  [
+    67464,
+    "MODIFIER LETTER SMALL DZ DIGRAPH WITH RETROFLEX HOOK"
+  ],
+  [
+    67465,
+    "MODIFIER LETTER SMALL DZ DIGRAPH WITH CURL"
+  ],
+  [
+    67466,
+    "MODIFIER LETTER SMALL DEZH DIGRAPH"
+  ],
+  [
+    67467,
+    "MODIFIER LETTER SMALL D WITH TAIL"
+  ],
+  [
+    67468,
+    "MODIFIER LETTER SMALL D WITH HOOK"
+  ],
+  [
+    67469,
+    "MODIFIER LETTER SMALL D WITH HOOK AND TAIL"
+  ],
+  [
+    67470,
+    "MODIFIER LETTER SMALL REVERSED E"
+  ],
+  [
+    67471,
+    "MODIFIER LETTER SMALL CLOSED REVERSED OPEN E"
+  ],
+  [
+    67472,
+    "MODIFIER LETTER SMALL FENG DIGRAPH"
+  ],
+  [
+    67473,
+    "MODIFIER LETTER SMALL RAMS HORN"
+  ],
+  [
+    67474,
+    "MODIFIER LETTER SMALL CAPITAL G"
+  ],
+  [
+    67475,
+    "MODIFIER LETTER SMALL G WITH HOOK"
+  ],
+  [
+    67476,
+    "MODIFIER LETTER SMALL CAPITAL G WITH HOOK"
+  ],
+  [
+    67477,
+    "MODIFIER LETTER SMALL H WITH STROKE"
+  ],
+  [
+    67478,
+    "MODIFIER LETTER SMALL CAPITAL H"
+  ],
+  [
+    67479,
+    "MODIFIER LETTER SMALL HENG WITH HOOK"
+  ],
+  [
+    67480,
+    "MODIFIER LETTER SMALL DOTLESS J WITH STROKE AND HOOK"
+  ],
+  [
+    67481,
+    "MODIFIER LETTER SMALL LS DIGRAPH"
+  ],
+  [
+    67482,
+    "MODIFIER LETTER SMALL LZ DIGRAPH"
+  ],
+  [
+    67483,
+    "MODIFIER LETTER SMALL L WITH BELT"
+  ],
+  [
+    67484,
+    "MODIFIER LETTER SMALL CAPITAL L WITH BELT"
+  ],
+  [
+    67485,
+    "MODIFIER LETTER SMALL L WITH RETROFLEX HOOK AND BELT"
+  ],
+  [
+    67486,
+    "MODIFIER LETTER SMALL LEZH"
+  ],
+  [
+    67487,
+    "MODIFIER LETTER SMALL LEZH WITH RETROFLEX HOOK"
+  ],
+  [
+    67488,
+    "MODIFIER LETTER SMALL TURNED Y"
+  ],
+  [
+    67489,
+    "MODIFIER LETTER SMALL TURNED Y WITH BELT"
+  ],
+  [
+    67490,
+    "MODIFIER LETTER SMALL O WITH STROKE"
+  ],
+  [
+    67491,
+    "MODIFIER LETTER SMALL CAPITAL OE"
+  ],
+  [
+    67492,
+    "MODIFIER LETTER SMALL CLOSED OMEGA"
+  ],
+  [
+    67493,
+    "MODIFIER LETTER SMALL Q"
+  ],
+  [
+    67494,
+    "MODIFIER LETTER SMALL TURNED R WITH LONG LEG"
+  ],
+  [
+    67495,
+    "MODIFIER LETTER SMALL TURNED R WITH LONG LEG AND RETROFLEX HOOK"
+  ],
+  [
+    67496,
+    "MODIFIER LETTER SMALL R WITH TAIL"
+  ],
+  [
+    67497,
+    "MODIFIER LETTER SMALL R WITH FISHHOOK"
+  ],
+  [
+    67498,
+    "MODIFIER LETTER SMALL CAPITAL R"
+  ],
+  [
+    67499,
+    "MODIFIER LETTER SMALL TC DIGRAPH WITH CURL"
+  ],
+  [
+    67500,
+    "MODIFIER LETTER SMALL TS DIGRAPH"
+  ],
+  [
+    67501,
+    "MODIFIER LETTER SMALL TS DIGRAPH WITH RETROFLEX HOOK"
+  ],
+  [
+    67502,
+    "MODIFIER LETTER SMALL TESH DIGRAPH"
+  ],
+  [
+    67503,
+    "MODIFIER LETTER SMALL T WITH RETROFLEX HOOK"
+  ],
+  [
+    67504,
+    "MODIFIER LETTER SMALL V WITH RIGHT HOOK"
+  ],
+  [
+    67506,
+    "MODIFIER LETTER SMALL CAPITAL Y"
+  ],
+  [
+    67507,
+    "MODIFIER LETTER GLOTTAL STOP WITH STROKE"
+  ],
+  [
+    67508,
+    "MODIFIER LETTER REVERSED GLOTTAL STOP WITH STROKE"
+  ],
+  [
+    67509,
+    "MODIFIER LETTER BILABIAL CLICK"
+  ],
+  [
+    67510,
+    "MODIFIER LETTER DENTAL CLICK"
+  ],
+  [
+    67511,
+    "MODIFIER LETTER LATERAL CLICK"
+  ],
+  [
+    67512,
+    "MODIFIER LETTER ALVEOLAR CLICK"
+  ],
+  [
+    67513,
+    "MODIFIER LETTER RETROFLEX CLICK WITH RETROFLEX HOOK"
+  ],
+  [
+    67514,
+    "MODIFIER LETTER SMALL S WITH CURL"
+  ],
+  [
+    117760,
+    "UP-POINTING GO-KART"
+  ],
+  [
+    117761,
+    "RIGHT-POINTING GO-KART"
+  ],
+  [
+    117762,
+    "LEFT-POINTING STICK FIGURE"
+  ],
+  [
+    117763,
+    "RIGHT-POINTING STICK FIGURE"
+  ],
+  [
+    117764,
+    "DOWN-POINTING STICK FIGURE"
+  ],
+  [
+    117765,
+    "LOWER HORIZONTAL RULER SEGMENT"
+  ],
+  [
+    117766,
+    "RIGHT VERTICAL RULER SEGMENT"
+  ],
+  [
+    117767,
+    "LOWER RIGHT RULER SEGMENT"
+  ],
+  [
+    117768,
+    "ANTENNA"
+  ],
+  [
+    117769,
+    "HORIZONTAL RESISTOR SEGMENT"
+  ],
+  [
+    117770,
+    "VERTICAL RESISTOR SEGMENT"
+  ],
+  [
+    117771,
+    "LEFT THIRD INDUCTOR"
+  ],
+  [
+    117772,
+    "MIDDLE THIRD INDUCTOR"
+  ],
+  [
+    117773,
+    "RIGHT THIRD INDUCTOR"
+  ],
+  [
+    117774,
+    "LEFT-POINTING DIODE"
+  ],
+  [
+    117775,
+    "RIGHT-POINTING DIODE"
+  ],
+  [
+    117776,
+    "NPN TRANSISTOR"
+  ],
+  [
+    117777,
+    "PNP TRANSISTOR"
+  ],
+  [
+    117778,
+    "RECEPTACLE"
+  ],
+  [
+    117779,
+    "HORIZONTAL CAPACITOR"
+  ],
+  [
+    117780,
+    "VERTICAL CAPACITOR"
+  ],
+  [
+    117781,
+    "LOGIC GATE OR"
+  ],
+  [
+    117782,
+    "LOGIC GATE AND"
+  ],
+  [
+    117783,
+    "LOGIC GATE INVERTED INPUTS"
+  ],
+  [
+    117784,
+    "LOGIC GATE INVERTED OUTPUT"
+  ],
+  [
+    117785,
+    "LOGIC GATE BUFFER"
+  ],
+  [
+    117786,
+    "LOGIC GATE BUFFER WITH INVERTED INPUT"
+  ],
+  [
+    117787,
+    "BOX DRAWINGS LIGHT HORIZONTAL AND UPPER RIGHT"
+  ],
+  [
+    117788,
+    "BOX DRAWINGS LIGHT HORIZONTAL AND LOWER RIGHT"
+  ],
+  [
+    117789,
+    "BOX DRAWINGS LIGHT TOP AND UPPER LEFT"
+  ],
+  [
+    117790,
+    "BOX DRAWINGS LIGHT BOTTOM AND LOWER LEFT"
+  ],
+  [
+    117791,
+    "BOX DRAWINGS DOUBLE DIAGONAL UPPER RIGHT TO LOWER LEFT"
+  ],
+  [
+    117792,
+    "BOX DRAWINGS DOUBLE DIAGONAL UPPER LEFT TO LOWER RIGHT"
+  ],
+  [
+    117793,
+    "SEPARATED BLOCK QUADRANT-1"
+  ],
+  [
+    117794,
+    "SEPARATED BLOCK QUADRANT-2"
+  ],
+  [
+    117795,
+    "SEPARATED BLOCK QUADRANT-12"
+  ],
+  [
+    117796,
+    "SEPARATED BLOCK QUADRANT-3"
+  ],
+  [
+    117797,
+    "SEPARATED BLOCK QUADRANT-13"
+  ],
+  [
+    117798,
+    "SEPARATED BLOCK QUADRANT-23"
+  ],
+  [
+    117799,
+    "SEPARATED BLOCK QUADRANT-123"
+  ],
+  [
+    117800,
+    "SEPARATED BLOCK QUADRANT-4"
+  ],
+  [
+    117801,
+    "SEPARATED BLOCK QUADRANT-14"
+  ],
+  [
+    117802,
+    "SEPARATED BLOCK QUADRANT-24"
+  ],
+  [
+    117803,
+    "SEPARATED BLOCK QUADRANT-124"
+  ],
+  [
+    117804,
+    "SEPARATED BLOCK QUADRANT-34"
+  ],
+  [
+    117805,
+    "SEPARATED BLOCK QUADRANT-134"
+  ],
+  [
+    117806,
+    "SEPARATED BLOCK QUADRANT-234"
+  ],
+  [
+    117807,
+    "SEPARATED BLOCK QUADRANT-1234"
+  ],
+  [
+    117808,
+    "UPPER LEFT TWELFTH CIRCLE"
+  ],
+  [
+    117809,
+    "UPPER CENTRE LEFT TWELFTH CIRCLE"
+  ],
+  [
+    117810,
+    "UPPER CENTRE RIGHT TWELFTH CIRCLE"
+  ],
+  [
+    117811,
+    "UPPER RIGHT TWELFTH CIRCLE"
+  ],
+  [
+    117812,
+    "UPPER MIDDLE LEFT TWELFTH CIRCLE"
+  ],
+  [
+    117813,
+    "UPPER LEFT QUARTER CIRCLE"
+  ],
+  [
+    117814,
+    "UPPER RIGHT QUARTER CIRCLE"
+  ],
+  [
+    117815,
+    "UPPER MIDDLE RIGHT TWELFTH CIRCLE"
+  ],
+  [
+    117816,
+    "LOWER MIDDLE LEFT TWELFTH CIRCLE"
+  ],
+  [
+    117817,
+    "LOWER LEFT QUARTER CIRCLE"
+  ],
+  [
+    117818,
+    "LOWER RIGHT QUARTER CIRCLE"
+  ],
+  [
+    117819,
+    "LOWER MIDDLE RIGHT TWELFTH CIRCLE"
+  ],
+  [
+    117820,
+    "LOWER LEFT TWELFTH CIRCLE"
+  ],
+  [
+    117821,
+    "LOWER CENTRE LEFT TWELFTH CIRCLE"
+  ],
+  [
+    117822,
+    "LOWER CENTRE RIGHT TWELFTH CIRCLE"
+  ],
+  [
+    117823,
+    "LOWER RIGHT TWELFTH CIRCLE"
+  ],
+  [
+    117824,
+    "SPARSE HORIZONTAL FILL"
+  ],
+  [
+    117825,
+    "SPARSE VERTICAL FILL"
+  ],
+  [
+    117826,
+    "ORTHOGONAL CROSSHATCH FILL"
+  ],
+  [
+    117827,
+    "DIAGONAL CROSSHATCH FILL"
+  ],
+  [
+    117828,
+    "DENSE VERTICAL FILL"
+  ],
+  [
+    117829,
+    "DENSE HORIZONTAL FILL"
+  ],
+  [
+    117830,
+    "SPECKLE FILL FRAME-1"
+  ],
+  [
+    117831,
+    "SPECKLE FILL FRAME-2"
+  ],
+  [
+    117832,
+    "LEFT-FACING BASSINET"
+  ],
+  [
+    117833,
+    "RIGHT-FACING BASSINET"
+  ],
+  [
+    117834,
+    "FLYING SAUCER WITH BEAMS"
+  ],
+  [
+    117835,
+    "FLYING SAUCER WITHOUT BEAMS"
+  ],
+  [
+    117836,
+    "ALIEN MONSTER OPEN JAWS"
+  ],
+  [
+    117837,
+    "ALIEN MONSTER CLOSED JAWS"
+  ],
+  [
+    117838,
+    "ALIEN SQUID OPEN TENTACLES"
+  ],
+  [
+    117839,
+    "ALIEN SQUID CLOSED TENTACLES"
+  ],
+  [
+    117840,
+    "ALIEN CRAB STEPPING RIGHT"
+  ],
+  [
+    117841,
+    "ALIEN CRAB STEPPING LEFT"
+  ],
+  [
+    117842,
+    "ALIEN SPIDER CROUCHING"
+  ],
+  [
+    117843,
+    "ALIEN SPIDER SPREAD"
+  ],
+  [
+    117844,
+    "ALIEN MONSTER STEP-1"
+  ],
+  [
+    117845,
+    "ALIEN MONSTER STEP-2"
+  ],
+  [
+    117846,
+    "LEFT-POINTING ROCKET SHIP"
+  ],
+  [
+    117847,
+    "UP-POINTING ROCKET SHIP"
+  ],
+  [
+    117848,
+    "RIGHT-POINTING ROCKET SHIP"
+  ],
+  [
+    117849,
+    "DOWN-POINTING ROCKET SHIP"
+  ],
+  [
+    117850,
+    "TOP HALF LEFT-FACING ROBOT"
+  ],
+  [
+    117851,
+    "TOP HALF FORWARD-FACING ROBOT"
+  ],
+  [
+    117852,
+    "TOP HALF RIGHT-FACING ROBOT"
+  ],
+  [
+    117853,
+    "BOTTOM HALF LEFT-FACING ROBOT"
+  ],
+  [
+    117854,
+    "BOTTOM HALF FORWARD-FACING ROBOT"
+  ],
+  [
+    117855,
+    "BOTTOM HALF RIGHT-FACING ROBOT"
+  ],
+  [
+    117856,
+    "LEFT-POINTING ATOMIC BOMB"
+  ],
+  [
+    117857,
+    "UP-POINTING ATOMIC BOMB"
+  ],
+  [
+    117858,
+    "RIGHT-POINTING ATOMIC BOMB"
+  ],
+  [
+    117859,
+    "DOWN-POINTING ATOMIC BOMB"
+  ],
+  [
+    117860,
+    "MUSHROOM CLOUD"
+  ],
+  [
+    117861,
+    "LEFT-POINTING RIFLE"
+  ],
+  [
+    117862,
+    "UP-POINTING RIFLE"
+  ],
+  [
+    117863,
+    "RIGHT-POINTING RIFLE"
+  ],
+  [
+    117864,
+    "DOWN-POINTING RIFLE"
+  ],
+  [
+    117865,
+    "EIGHT RAYS INWARD"
+  ],
+  [
+    117866,
+    "EIGHT RAYS OUTWARD"
+  ],
+  [
+    117867,
+    "BLACK LARGE CIRCLE MINUS LEFT QUARTER SECTION"
+  ],
+  [
+    117868,
+    "BLACK LARGE CIRCLE MINUS UPPER QUARTER SECTION"
+  ],
+  [
+    117869,
+    "BLACK LARGE CIRCLE MINUS RIGHT QUARTER SECTION"
+  ],
+  [
+    117870,
+    "BLACK LARGE CIRCLE MINUS LOWER QUARTER SECTION"
+  ],
+  [
+    117871,
+    "BLACK NEUTRAL FACE"
+  ],
+  [
+    117872,
+    "LEFT-FACING SNAKE HEAD WITH OPEN MOUTH"
+  ],
+  [
+    117873,
+    "UP-FACING SNAKE HEAD WITH OPEN MOUTH"
+  ],
+  [
+    117874,
+    "RIGHT-FACING SNAKE HEAD WITH OPEN MOUTH"
+  ],
+  [
+    117875,
+    "DOWN-FACING SNAKE HEAD WITH OPEN MOUTH"
+  ],
+  [
+    117876,
+    "LEFT-FACING SNAKE HEAD WITH CLOSED MOUTH"
+  ],
+  [
+    117877,
+    "UP-FACING SNAKE HEAD WITH CLOSED MOUTH"
+  ],
+  [
+    117878,
+    "RIGHT-FACING SNAKE HEAD WITH CLOSED MOUTH"
+  ],
+  [
+    117879,
+    "DOWN-FACING SNAKE HEAD WITH CLOSED MOUTH"
+  ],
+  [
+    117880,
+    "LEFT-POINTING ENERGY WAVE"
+  ],
+  [
+    117881,
+    "UP-POINTING ENERGY WAVE"
+  ],
+  [
+    117882,
+    "RIGHT-POINTING ENERGY WAVE"
+  ],
+  [
+    117883,
+    "DOWN-POINTING ENERGY WAVE"
+  ],
+  [
+    117884,
+    "SQUARE SPIRAL FROM TOP LEFT"
+  ],
+  [
+    117885,
+    "SQUARE SPIRAL FROM TOP RIGHT"
+  ],
+  [
+    117886,
+    "SQUARE SPIRAL FROM BOTTOM RIGHT"
+  ],
+  [
+    117887,
+    "SQUARE SPIRAL FROM BOTTOM LEFT"
+  ],
+  [
+    117888,
+    "STRIPED LEFT-POINTING TRIANGLE"
+  ],
+  [
+    117889,
+    "STRIPED UP-POINTING TRIANGLE"
+  ],
+  [
+    117890,
+    "STRIPED RIGHT-POINTING TRIANGLE"
+  ],
+  [
+    117891,
+    "STRIPED DOWN-POINTING TRIANGLE"
+  ],
+  [
+    117892,
+    "VERTICAL LADDER"
+  ],
+  [
+    117893,
+    "HORIZONTAL LADDER"
+  ],
+  [
+    117894,
+    "WHITE LOWER LEFT POINTER"
+  ],
+  [
+    117895,
+    "WHITE LOWER RIGHT POINTER"
+  ],
+  [
+    117896,
+    "TWO RINGS ALIGNED HORIZONTALLY"
+  ],
+  [
+    117897,
+    "SQUARE FOUR CORNER SALTIRES"
+  ],
+  [
+    117898,
+    "SQUARE FOUR CORNER DIAGONALS"
+  ],
+  [
+    117899,
+    "SQUARE FOUR CORNER BLACK TRIANGLES"
+  ],
+  [
+    117900,
+    "SQUARE APERTURE"
+  ],
+  [
+    117901,
+    "INVERSE BLACK DIAMOND"
+  ],
+  [
+    117902,
+    "LEFT AND UPPER ONE EIGHTH BLOCK CONTAINING BLACK SMALL SQUARE"
+  ],
+  [
+    117903,
+    "INVERSE BLACK SMALL SQUARE"
+  ],
+  [
+    117904,
+    "VERTICAL LINE WITH FOUR TICK MARKS"
+  ],
+  [
+    117905,
+    "HORIZONTAL LINE WITH FOUR TICK MARKS"
+  ],
+  [
+    117906,
+    "LEFT-FACING FISH"
+  ],
+  [
+    117907,
+    "RIGHT-FACING FISH"
+  ],
+  [
+    117908,
+    "LEFT-FACING FISH WITH OPEN MOUTH"
+  ],
+  [
+    117909,
+    "RIGHT-FACING FISH WITH OPEN MOUTH"
+  ],
+  [
+    117910,
+    "FLAPPING BIRD"
+  ],
+  [
+    117911,
+    "LEFT-POINTING RACING CAR"
+  ],
+  [
+    117912,
+    "UP-POINTING RACING CAR"
+  ],
+  [
+    117913,
+    "RIGHT-POINTING RACING CAR"
+  ],
+  [
+    117914,
+    "DOWN-POINTING RACING CAR"
+  ],
+  [
+    117915,
+    "HORIZONTAL RACING CAR"
+  ],
+  [
+    117916,
+    "VERTICAL RACING CAR"
+  ],
+  [
+    117917,
+    "VERTICAL GO-KART"
+  ],
+  [
+    117918,
+    "LEFT-POINTING TANK"
+  ],
+  [
+    117919,
+    "RIGHT-POINTING TANK"
+  ],
+  [
+    117920,
+    "LEFT-POINTING ROCKET BOOSTER"
+  ],
+  [
+    117921,
+    "RIGHT-POINTING ROCKET BOOSTER"
+  ],
+  [
+    117922,
+    "LEFT-POINTING ROLLER COASTER CAR"
+  ],
+  [
+    117923,
+    "RIGHT-POINTING ROLLER COASTER CAR"
+  ],
+  [
+    117924,
+    "LEFT HALF FLYING SAUCER"
+  ],
+  [
+    117925,
+    "RIGHT HALF FLYING SAUCER"
+  ],
+  [
+    117926,
+    "UPPER LEFT QUADRANT FACE WITH OPEN EYES"
+  ],
+  [
+    117927,
+    "UPPER RIGHT QUADRANT FACE WITH OPEN EYES"
+  ],
+  [
+    117928,
+    "UPPER LEFT QUADRANT FACE WITH CLOSED EYES"
+  ],
+  [
+    117929,
+    "UPPER RIGHT QUADRANT FACE WITH CLOSED EYES"
+  ],
+  [
+    117930,
+    "LOWER LEFT QUADRANT SMILING FACE"
+  ],
+  [
+    117931,
+    "LOWER RIGHT QUADRANT SMILING FACE"
+  ],
+  [
+    117932,
+    "LOWER LEFT QUADRANT NEUTRAL FACE"
+  ],
+  [
+    117933,
+    "LOWER RIGHT QUADRANT NEUTRAL FACE"
+  ],
+  [
+    117934,
+    "LOWER LEFT QUADRANT FACE WITH OPEN MOUTH"
+  ],
+  [
+    117935,
+    "LOWER RIGHT QUADRANT FACE WITH OPEN MOUTH"
+  ],
+  [
+    117936,
+    "LOWER LEFT QUADRANT FROWNING FACE"
+  ],
+  [
+    117937,
+    "LOWER RIGHT QUADRANT FROWNING FACE"
+  ],
+  [
+    117938,
+    "UPPER LEFT QUADRANT TELEVISION"
+  ],
+  [
+    117939,
+    "UPPER RIGHT QUADRANT TELEVISION"
+  ],
+  [
+    117940,
+    "LOWER LEFT QUADRANT TELEVISION"
+  ],
+  [
+    117941,
+    "LOWER RIGHT QUADRANT TELEVISION"
+  ],
+  [
+    117942,
+    "UPPER LEFT QUADRANT MICROCOMPUTER"
+  ],
+  [
+    117943,
+    "UPPER RIGHT QUADRANT MICROCOMPUTER"
+  ],
+  [
+    117944,
+    "LOWER LEFT QUADRANT MICROCOMPUTER"
+  ],
+  [
+    117945,
+    "LOWER RIGHT QUADRANT MICROCOMPUTER"
+  ],
+  [
+    117946,
+    "UPPER LEFT QUADRANT CHESS KING"
+  ],
+  [
+    117947,
+    "UPPER RIGHT QUADRANT CHESS KING"
+  ],
+  [
+    117948,
+    "LOWER LEFT QUADRANT CHESS KING"
+  ],
+  [
+    117949,
+    "LOWER RIGHT QUADRANT CHESS KING"
+  ],
+  [
+    117950,
+    "UPPER LEFT QUADRANT CHESS QUEEN"
+  ],
+  [
+    117951,
+    "UPPER RIGHT QUADRANT CHESS QUEEN"
+  ],
+  [
+    117952,
+    "LOWER LEFT QUADRANT CHESS QUEEN"
+  ],
+  [
+    117953,
+    "LOWER RIGHT QUADRANT CHESS QUEEN"
+  ],
+  [
+    117954,
+    "UPPER LEFT QUADRANT CHESS ROOK"
+  ],
+  [
+    117955,
+    "UPPER RIGHT QUADRANT CHESS ROOK"
+  ],
+  [
+    117956,
+    "LOWER LEFT QUADRANT CHESS ROOK"
+  ],
+  [
+    117957,
+    "LOWER RIGHT QUADRANT CHESS ROOK"
+  ],
+  [
+    117958,
+    "UPPER LEFT QUADRANT CHESS BISHOP"
+  ],
+  [
+    117959,
+    "UPPER RIGHT QUADRANT CHESS BISHOP"
+  ],
+  [
+    117960,
+    "LOWER LEFT QUADRANT CHESS BISHOP"
+  ],
+  [
+    117961,
+    "LOWER RIGHT QUADRANT CHESS BISHOP"
+  ],
+  [
+    117962,
+    "UPPER LEFT QUADRANT CHESS KNIGHT"
+  ],
+  [
+    117963,
+    "UPPER RIGHT QUADRANT CHESS KNIGHT"
+  ],
+  [
+    117964,
+    "LOWER LEFT QUADRANT CHESS KNIGHT"
+  ],
+  [
+    117965,
+    "LOWER RIGHT QUADRANT CHESS KNIGHT"
+  ],
+  [
+    117966,
+    "UPPER LEFT QUADRANT CHESS PAWN"
+  ],
+  [
+    117967,
+    "UPPER RIGHT QUADRANT CHESS PAWN"
+  ],
+  [
+    117968,
+    "LOWER LEFT QUADRANT CHESS PAWN"
+  ],
+  [
+    117969,
+    "LOWER RIGHT QUADRANT CHESS PAWN"
+  ],
+  [
+    117970,
+    "UPPER LEFT QUADRANT STANDING KNIGHT"
+  ],
+  [
+    117971,
+    "UPPER RIGHT QUADRANT STANDING KNIGHT"
+  ],
+  [
+    117972,
+    "LOWER LEFT QUADRANT STANDING KNIGHT"
+  ],
+  [
+    117973,
+    "LOWER RIGHT QUADRANT STANDING KNIGHT"
+  ],
+  [
+    117974,
+    "OUTLINED LATIN CAPITAL LETTER A"
+  ],
+  [
+    117975,
+    "OUTLINED LATIN CAPITAL LETTER B"
+  ],
+  [
+    117976,
+    "OUTLINED LATIN CAPITAL LETTER C"
+  ],
+  [
+    117977,
+    "OUTLINED LATIN CAPITAL LETTER D"
+  ],
+  [
+    117978,
+    "OUTLINED LATIN CAPITAL LETTER E"
+  ],
+  [
+    117979,
+    "OUTLINED LATIN CAPITAL LETTER F"
+  ],
+  [
+    117980,
+    "OUTLINED LATIN CAPITAL LETTER G"
+  ],
+  [
+    117981,
+    "OUTLINED LATIN CAPITAL LETTER H"
+  ],
+  [
+    117982,
+    "OUTLINED LATIN CAPITAL LETTER I"
+  ],
+  [
+    117983,
+    "OUTLINED LATIN CAPITAL LETTER J"
+  ],
+  [
+    117984,
+    "OUTLINED LATIN CAPITAL LETTER K"
+  ],
+  [
+    117985,
+    "OUTLINED LATIN CAPITAL LETTER L"
+  ],
+  [
+    117986,
+    "OUTLINED LATIN CAPITAL LETTER M"
+  ],
+  [
+    117987,
+    "OUTLINED LATIN CAPITAL LETTER N"
+  ],
+  [
+    117988,
+    "OUTLINED LATIN CAPITAL LETTER O"
+  ],
+  [
+    117989,
+    "OUTLINED LATIN CAPITAL LETTER P"
+  ],
+  [
+    117990,
+    "OUTLINED LATIN CAPITAL LETTER Q"
+  ],
+  [
+    117991,
+    "OUTLINED LATIN CAPITAL LETTER R"
+  ],
+  [
+    117992,
+    "OUTLINED LATIN CAPITAL LETTER S"
+  ],
+  [
+    117993,
+    "OUTLINED LATIN CAPITAL LETTER T"
+  ],
+  [
+    117994,
+    "OUTLINED LATIN CAPITAL LETTER U"
+  ],
+  [
+    117995,
+    "OUTLINED LATIN CAPITAL LETTER V"
+  ],
+  [
+    117996,
+    "OUTLINED LATIN CAPITAL LETTER W"
+  ],
+  [
+    117997,
+    "OUTLINED LATIN CAPITAL LETTER X"
+  ],
+  [
+    117998,
+    "OUTLINED LATIN CAPITAL LETTER Y"
+  ],
+  [
+    117999,
+    "OUTLINED LATIN CAPITAL LETTER Z"
+  ],
+  [
+    118000,
+    "OUTLINED DIGIT ZERO"
+  ],
+  [
+    118001,
+    "OUTLINED DIGIT ONE"
+  ],
+  [
+    118002,
+    "OUTLINED DIGIT TWO"
+  ],
+  [
+    118003,
+    "OUTLINED DIGIT THREE"
+  ],
+  [
+    118004,
+    "OUTLINED DIGIT FOUR"
+  ],
+  [
+    118005,
+    "OUTLINED DIGIT FIVE"
+  ],
+  [
+    118006,
+    "OUTLINED DIGIT SIX"
+  ],
+  [
+    118007,
+    "OUTLINED DIGIT SEVEN"
+  ],
+  [
+    118008,
+    "OUTLINED DIGIT EIGHT"
+  ],
+  [
+    118009,
+    "OUTLINED DIGIT NINE"
+  ],
+  [
+    118010,
+    "SNAKE SYMBOL"
+  ],
+  [
+    118011,
+    "FLYING SAUCER SYMBOL"
+  ],
+  [
+    118012,
+    "NOSE SYMBOL"
+  ],
+  [
+    118016,
+    "BLOCK OCTANT-3"
+  ],
+  [
+    118017,
+    "BLOCK OCTANT-23"
+  ],
+  [
+    118018,
+    "BLOCK OCTANT-123"
+  ],
+  [
+    118019,
+    "BLOCK OCTANT-4"
+  ],
+  [
+    118020,
+    "BLOCK OCTANT-14"
+  ],
+  [
+    118021,
+    "BLOCK OCTANT-124"
+  ],
+  [
+    118022,
+    "BLOCK OCTANT-34"
+  ],
+  [
+    118023,
+    "BLOCK OCTANT-134"
+  ],
+  [
+    118024,
+    "BLOCK OCTANT-234"
+  ],
+  [
+    118025,
+    "BLOCK OCTANT-5"
+  ],
+  [
+    118026,
+    "BLOCK OCTANT-15"
+  ],
+  [
+    118027,
+    "BLOCK OCTANT-25"
+  ],
+  [
+    118028,
+    "BLOCK OCTANT-125"
+  ],
+  [
+    118029,
+    "BLOCK OCTANT-135"
+  ],
+  [
+    118030,
+    "BLOCK OCTANT-235"
+  ],
+  [
+    118031,
+    "BLOCK OCTANT-1235"
+  ],
+  [
+    118032,
+    "BLOCK OCTANT-45"
+  ],
+  [
+    118033,
+    "BLOCK OCTANT-145"
+  ],
+  [
+    118034,
+    "BLOCK OCTANT-245"
+  ],
+  [
+    118035,
+    "BLOCK OCTANT-1245"
+  ],
+  [
+    118036,
+    "BLOCK OCTANT-345"
+  ],
+  [
+    118037,
+    "BLOCK OCTANT-1345"
+  ],
+  [
+    118038,
+    "BLOCK OCTANT-2345"
+  ],
+  [
+    118039,
+    "BLOCK OCTANT-12345"
+  ],
+  [
+    118040,
+    "BLOCK OCTANT-6"
+  ],
+  [
+    118041,
+    "BLOCK OCTANT-16"
+  ],
+  [
+    118042,
+    "BLOCK OCTANT-26"
+  ],
+  [
+    118043,
+    "BLOCK OCTANT-126"
+  ],
+  [
+    118044,
+    "BLOCK OCTANT-36"
+  ],
+  [
+    118045,
+    "BLOCK OCTANT-136"
+  ],
+  [
+    118046,
+    "BLOCK OCTANT-236"
+  ],
+  [
+    118047,
+    "BLOCK OCTANT-1236"
+  ],
+  [
+    118048,
+    "BLOCK OCTANT-146"
+  ],
+  [
+    118049,
+    "BLOCK OCTANT-246"
+  ],
+  [
+    118050,
+    "BLOCK OCTANT-1246"
+  ],
+  [
+    118051,
+    "BLOCK OCTANT-346"
+  ],
+  [
+    118052,
+    "BLOCK OCTANT-1346"
+  ],
+  [
+    118053,
+    "BLOCK OCTANT-2346"
+  ],
+  [
+    118054,
+    "BLOCK OCTANT-12346"
+  ],
+  [
+    118055,
+    "BLOCK OCTANT-56"
+  ],
+  [
+    118056,
+    "BLOCK OCTANT-156"
+  ],
+  [
+    118057,
+    "BLOCK OCTANT-256"
+  ],
+  [
+    118058,
+    "BLOCK OCTANT-1256"
+  ],
+  [
+    118059,
+    "BLOCK OCTANT-356"
+  ],
+  [
+    118060,
+    "BLOCK OCTANT-1356"
+  ],
+  [
+    118061,
+    "BLOCK OCTANT-2356"
+  ],
+  [
+    118062,
+    "BLOCK OCTANT-12356"
+  ],
+  [
+    118063,
+    "BLOCK OCTANT-456"
+  ],
+  [
+    118064,
+    "BLOCK OCTANT-1456"
+  ],
+  [
+    118065,
+    "BLOCK OCTANT-2456"
+  ],
+  [
+    118066,
+    "BLOCK OCTANT-12456"
+  ],
+  [
+    118067,
+    "BLOCK OCTANT-3456"
+  ],
+  [
+    118068,
+    "BLOCK OCTANT-13456"
+  ],
+  [
+    118069,
+    "BLOCK OCTANT-23456"
+  ],
+  [
+    118070,
+    "BLOCK OCTANT-17"
+  ],
+  [
+    118071,
+    "BLOCK OCTANT-27"
+  ],
+  [
+    118072,
+    "BLOCK OCTANT-127"
+  ],
+  [
+    118073,
+    "BLOCK OCTANT-37"
+  ],
+  [
+    118074,
+    "BLOCK OCTANT-137"
+  ],
+  [
+    118075,
+    "BLOCK OCTANT-237"
+  ],
+  [
+    118076,
+    "BLOCK OCTANT-1237"
+  ],
+  [
+    118077,
+    "BLOCK OCTANT-47"
+  ],
+  [
+    118078,
+    "BLOCK OCTANT-147"
+  ],
+  [
+    118079,
+    "BLOCK OCTANT-247"
+  ],
+  [
+    118080,
+    "BLOCK OCTANT-1247"
+  ],
+  [
+    118081,
+    "BLOCK OCTANT-347"
+  ],
+  [
+    118082,
+    "BLOCK OCTANT-1347"
+  ],
+  [
+    118083,
+    "BLOCK OCTANT-2347"
+  ],
+  [
+    118084,
+    "BLOCK OCTANT-12347"
+  ],
+  [
+    118085,
+    "BLOCK OCTANT-157"
+  ],
+  [
+    118086,
+    "BLOCK OCTANT-257"
+  ],
+  [
+    118087,
+    "BLOCK OCTANT-1257"
+  ],
+  [
+    118088,
+    "BLOCK OCTANT-357"
+  ],
+  [
+    118089,
+    "BLOCK OCTANT-2357"
+  ],
+  [
+    118090,
+    "BLOCK OCTANT-12357"
+  ],
+  [
+    118091,
+    "BLOCK OCTANT-457"
+  ],
+  [
+    118092,
+    "BLOCK OCTANT-1457"
+  ],
+  [
+    118093,
+    "BLOCK OCTANT-12457"
+  ],
+  [
+    118094,
+    "BLOCK OCTANT-3457"
+  ],
+  [
+    118095,
+    "BLOCK OCTANT-13457"
+  ],
+  [
+    118096,
+    "BLOCK OCTANT-23457"
+  ],
+  [
+    118097,
+    "BLOCK OCTANT-67"
+  ],
+  [
+    118098,
+    "BLOCK OCTANT-167"
+  ],
+  [
+    118099,
+    "BLOCK OCTANT-267"
+  ],
+  [
+    118100,
+    "BLOCK OCTANT-1267"
+  ],
+  [
+    118101,
+    "BLOCK OCTANT-367"
+  ],
+  [
+    118102,
+    "BLOCK OCTANT-1367"
+  ],
+  [
+    118103,
+    "BLOCK OCTANT-2367"
+  ],
+  [
+    118104,
+    "BLOCK OCTANT-12367"
+  ],
+  [
+    118105,
+    "BLOCK OCTANT-467"
+  ],
+  [
+    118106,
+    "BLOCK OCTANT-1467"
+  ],
+  [
+    118107,
+    "BLOCK OCTANT-2467"
+  ],
+  [
+    118108,
+    "BLOCK OCTANT-12467"
+  ],
+  [
+    118109,
+    "BLOCK OCTANT-3467"
+  ],
+  [
+    118110,
+    "BLOCK OCTANT-13467"
+  ],
+  [
+    118111,
+    "BLOCK OCTANT-23467"
+  ],
+  [
+    118112,
+    "BLOCK OCTANT-123467"
+  ],
+  [
+    118113,
+    "BLOCK OCTANT-567"
+  ],
+  [
+    118114,
+    "BLOCK OCTANT-1567"
+  ],
+  [
+    118115,
+    "BLOCK OCTANT-2567"
+  ],
+  [
+    118116,
+    "BLOCK OCTANT-12567"
+  ],
+  [
+    118117,
+    "BLOCK OCTANT-3567"
+  ],
+  [
+    118118,
+    "BLOCK OCTANT-13567"
+  ],
+  [
+    118119,
+    "BLOCK OCTANT-23567"
+  ],
+  [
+    118120,
+    "BLOCK OCTANT-123567"
+  ],
+  [
+    118121,
+    "BLOCK OCTANT-4567"
+  ],
+  [
+    118122,
+    "BLOCK OCTANT-14567"
+  ],
+  [
+    118123,
+    "BLOCK OCTANT-24567"
+  ],
+  [
+    118124,
+    "BLOCK OCTANT-124567"
+  ],
+  [
+    118125,
+    "BLOCK OCTANT-34567"
+  ],
+  [
+    118126,
+    "BLOCK OCTANT-134567"
+  ],
+  [
+    118127,
+    "BLOCK OCTANT-234567"
+  ],
+  [
+    118128,
+    "BLOCK OCTANT-1234567"
+  ],
+  [
+    118129,
+    "BLOCK OCTANT-18"
+  ],
+  [
+    118130,
+    "BLOCK OCTANT-28"
+  ],
+  [
+    118131,
+    "BLOCK OCTANT-128"
+  ],
+  [
+    118132,
+    "BLOCK OCTANT-38"
+  ],
+  [
+    118133,
+    "BLOCK OCTANT-138"
+  ],
+  [
+    118134,
+    "BLOCK OCTANT-238"
+  ],
+  [
+    118135,
+    "BLOCK OCTANT-1238"
+  ],
+  [
+    118136,
+    "BLOCK OCTANT-48"
+  ],
+  [
+    118137,
+    "BLOCK OCTANT-148"
+  ],
+  [
+    118138,
+    "BLOCK OCTANT-248"
+  ],
+  [
+    118139,
+    "BLOCK OCTANT-1248"
+  ],
+  [
+    118140,
+    "BLOCK OCTANT-348"
+  ],
+  [
+    118141,
+    "BLOCK OCTANT-1348"
+  ],
+  [
+    118142,
+    "BLOCK OCTANT-2348"
+  ],
+  [
+    118143,
+    "BLOCK OCTANT-12348"
+  ],
+  [
+    118144,
+    "BLOCK OCTANT-58"
+  ],
+  [
+    118145,
+    "BLOCK OCTANT-158"
+  ],
+  [
+    118146,
+    "BLOCK OCTANT-258"
+  ],
+  [
+    118147,
+    "BLOCK OCTANT-1258"
+  ],
+  [
+    118148,
+    "BLOCK OCTANT-358"
+  ],
+  [
+    118149,
+    "BLOCK OCTANT-1358"
+  ],
+  [
+    118150,
+    "BLOCK OCTANT-2358"
+  ],
+  [
+    118151,
+    "BLOCK OCTANT-12358"
+  ],
+  [
+    118152,
+    "BLOCK OCTANT-458"
+  ],
+  [
+    118153,
+    "BLOCK OCTANT-1458"
+  ],
+  [
+    118154,
+    "BLOCK OCTANT-2458"
+  ],
+  [
+    118155,
+    "BLOCK OCTANT-12458"
+  ],
+  [
+    118156,
+    "BLOCK OCTANT-3458"
+  ],
+  [
+    118157,
+    "BLOCK OCTANT-13458"
+  ],
+  [
+    118158,
+    "BLOCK OCTANT-23458"
+  ],
+  [
+    118159,
+    "BLOCK OCTANT-123458"
+  ],
+  [
+    118160,
+    "BLOCK OCTANT-168"
+  ],
+  [
+    118161,
+    "BLOCK OCTANT-268"
+  ],
+  [
+    118162,
+    "BLOCK OCTANT-1268"
+  ],
+  [
+    118163,
+    "BLOCK OCTANT-368"
+  ],
+  [
+    118164,
+    "BLOCK OCTANT-2368"
+  ],
+  [
+    118165,
+    "BLOCK OCTANT-12368"
+  ],
+  [
+    118166,
+    "BLOCK OCTANT-468"
+  ],
+  [
+    118167,
+    "BLOCK OCTANT-1468"
+  ],
+  [
+    118168,
+    "BLOCK OCTANT-12468"
+  ],
+  [
+    118169,
+    "BLOCK OCTANT-3468"
+  ],
+  [
+    118170,
+    "BLOCK OCTANT-13468"
+  ],
+  [
+    118171,
+    "BLOCK OCTANT-23468"
+  ],
+  [
+    118172,
+    "BLOCK OCTANT-568"
+  ],
+  [
+    118173,
+    "BLOCK OCTANT-1568"
+  ],
+  [
+    118174,
+    "BLOCK OCTANT-2568"
+  ],
+  [
+    118175,
+    "BLOCK OCTANT-12568"
+  ],
+  [
+    118176,
+    "BLOCK OCTANT-3568"
+  ],
+  [
+    118177,
+    "BLOCK OCTANT-13568"
+  ],
+  [
+    118178,
+    "BLOCK OCTANT-23568"
+  ],
+  [
+    118179,
+    "BLOCK OCTANT-123568"
+  ],
+  [
+    118180,
+    "BLOCK OCTANT-4568"
+  ],
+  [
+    118181,
+    "BLOCK OCTANT-14568"
+  ],
+  [
+    118182,
+    "BLOCK OCTANT-24568"
+  ],
+  [
+    118183,
+    "BLOCK OCTANT-124568"
+  ],
+  [
+    118184,
+    "BLOCK OCTANT-34568"
+  ],
+  [
+    118185,
+    "BLOCK OCTANT-134568"
+  ],
+  [
+    118186,
+    "BLOCK OCTANT-234568"
+  ],
+  [
+    118187,
+    "BLOCK OCTANT-1234568"
+  ],
+  [
+    118188,
+    "BLOCK OCTANT-178"
+  ],
+  [
+    118189,
+    "BLOCK OCTANT-278"
+  ],
+  [
+    118190,
+    "BLOCK OCTANT-1278"
+  ],
+  [
+    118191,
+    "BLOCK OCTANT-378"
+  ],
+  [
+    118192,
+    "BLOCK OCTANT-1378"
+  ],
+  [
+    118193,
+    "BLOCK OCTANT-2378"
+  ],
+  [
+    118194,
+    "BLOCK OCTANT-12378"
+  ],
+  [
+    118195,
+    "BLOCK OCTANT-478"
+  ],
+  [
+    118196,
+    "BLOCK OCTANT-1478"
+  ],
+  [
+    118197,
+    "BLOCK OCTANT-2478"
+  ],
+  [
+    118198,
+    "BLOCK OCTANT-12478"
+  ],
+  [
+    118199,
+    "BLOCK OCTANT-3478"
+  ],
+  [
+    118200,
+    "BLOCK OCTANT-13478"
+  ],
+  [
+    118201,
+    "BLOCK OCTANT-23478"
+  ],
+  [
+    118202,
+    "BLOCK OCTANT-123478"
+  ],
+  [
+    118203,
+    "BLOCK OCTANT-578"
+  ],
+  [
+    118204,
+    "BLOCK OCTANT-1578"
+  ],
+  [
+    118205,
+    "BLOCK OCTANT-2578"
+  ],
+  [
+    118206,
+    "BLOCK OCTANT-12578"
+  ],
+  [
+    118207,
+    "BLOCK OCTANT-3578"
+  ],
+  [
+    118208,
+    "BLOCK OCTANT-13578"
+  ],
+  [
+    118209,
+    "BLOCK OCTANT-23578"
+  ],
+  [
+    118210,
+    "BLOCK OCTANT-123578"
+  ],
+  [
+    118211,
+    "BLOCK OCTANT-4578"
+  ],
+  [
+    118212,
+    "BLOCK OCTANT-14578"
+  ],
+  [
+    118213,
+    "BLOCK OCTANT-24578"
+  ],
+  [
+    118214,
+    "BLOCK OCTANT-124578"
+  ],
+  [
+    118215,
+    "BLOCK OCTANT-34578"
+  ],
+  [
+    118216,
+    "BLOCK OCTANT-134578"
+  ],
+  [
+    118217,
+    "BLOCK OCTANT-234578"
+  ],
+  [
+    118218,
+    "BLOCK OCTANT-1234578"
+  ],
+  [
+    118219,
+    "BLOCK OCTANT-678"
+  ],
+  [
+    118220,
+    "BLOCK OCTANT-1678"
+  ],
+  [
+    118221,
+    "BLOCK OCTANT-2678"
+  ],
+  [
+    118222,
+    "BLOCK OCTANT-12678"
+  ],
+  [
+    118223,
+    "BLOCK OCTANT-3678"
+  ],
+  [
+    118224,
+    "BLOCK OCTANT-13678"
+  ],
+  [
+    118225,
+    "BLOCK OCTANT-23678"
+  ],
+  [
+    118226,
+    "BLOCK OCTANT-123678"
+  ],
+  [
+    118227,
+    "BLOCK OCTANT-4678"
+  ],
+  [
+    118228,
+    "BLOCK OCTANT-14678"
+  ],
+  [
+    118229,
+    "BLOCK OCTANT-24678"
+  ],
+  [
+    118230,
+    "BLOCK OCTANT-124678"
+  ],
+  [
+    118231,
+    "BLOCK OCTANT-34678"
+  ],
+  [
+    118232,
+    "BLOCK OCTANT-134678"
+  ],
+  [
+    118233,
+    "BLOCK OCTANT-234678"
+  ],
+  [
+    118234,
+    "BLOCK OCTANT-1234678"
+  ],
+  [
+    118235,
+    "BLOCK OCTANT-15678"
+  ],
+  [
+    118236,
+    "BLOCK OCTANT-25678"
+  ],
+  [
+    118237,
+    "BLOCK OCTANT-125678"
+  ],
+  [
+    118238,
+    "BLOCK OCTANT-35678"
+  ],
+  [
+    118239,
+    "BLOCK OCTANT-235678"
+  ],
+  [
+    118240,
+    "BLOCK OCTANT-1235678"
+  ],
+  [
+    118241,
+    "BLOCK OCTANT-45678"
+  ],
+  [
+    118242,
+    "BLOCK OCTANT-145678"
+  ],
+  [
+    118243,
+    "BLOCK OCTANT-1245678"
+  ],
+  [
+    118244,
+    "BLOCK OCTANT-1345678"
+  ],
+  [
+    118245,
+    "BLOCK OCTANT-2345678"
+  ],
+  [
+    118246,
+    "TOP HALF STANDING PERSON"
+  ],
+  [
+    118247,
+    "BOTTOM HALF STANDING PERSON"
+  ],
+  [
+    118248,
+    "TOP HALF RIGHT-FACING RUNNER FRAME-1"
+  ],
+  [
+    118249,
+    "BOTTOM HALF RIGHT-FACING RUNNER FRAME-1"
+  ],
+  [
+    118250,
+    "TOP HALF RIGHT-FACING RUNNER FRAME-2"
+  ],
+  [
+    118251,
+    "BOTTOM HALF RIGHT-FACING RUNNER FRAME-2"
+  ],
+  [
+    118252,
+    "TOP HALF LEFT-FACING RUNNER FRAME-1"
+  ],
+  [
+    118253,
+    "BOTTOM HALF LEFT-FACING RUNNER FRAME-1"
+  ],
+  [
+    118254,
+    "TOP HALF LEFT-FACING RUNNER FRAME-2"
+  ],
+  [
+    118255,
+    "BOTTOM HALF LEFT-FACING RUNNER FRAME-2"
+  ],
+  [
+    118256,
+    "TOP HALF FORWARD-FACING RUNNER"
+  ],
+  [
+    118257,
+    "BOTTOM HALF FORWARD-FACING RUNNER FRAME-1"
+  ],
+  [
+    118258,
+    "BOTTOM HALF FORWARD-FACING RUNNER FRAME-2"
+  ],
+  [
+    118259,
+    "BOTTOM HALF FORWARD-FACING RUNNER FRAME-3"
+  ],
+  [
+    118260,
+    "BOTTOM HALF FORWARD-FACING RUNNER FRAME-4"
+  ],
+  [
+    118261,
+    "MOON LANDER"
+  ],
+  [
+    118262,
+    "TOP HALF FLAILING ROBOT FRAME-1"
+  ],
+  [
+    118263,
+    "TOP HALF FLAILING ROBOT FRAME-2"
+  ],
+  [
+    118264,
+    "DOWN-POINTING AIRPLANE"
+  ],
+  [
+    118265,
+    "LEFT-POINTING AIRPLANE"
+  ],
+  [
+    118266,
+    "SMALL UP-POINTING AIRPLANE"
+  ],
+  [
+    118267,
+    "UP-POINTING FROG"
+  ],
+  [
+    118268,
+    "DOWN-POINTING FROG"
+  ],
+  [
+    118269,
+    "EXPLOSION FRAME-1"
+  ],
+  [
+    118270,
+    "EXPLOSION FRAME-2"
+  ],
+  [
+    118271,
+    "EXPLOSION FRAME-3"
+  ],
+  [
+    118272,
+    "RIGHT HALF AND LEFT HALF WHITE CIRCLE"
+  ],
+  [
+    118273,
+    "LOWER HALF AND UPPER HALF WHITE CIRCLE"
+  ],
+  [
+    118274,
+    "EXPLOSION AT HORIZON"
+  ],
+  [
+    118275,
+    "UPPER HALF HEAVY WHITE SQUARE"
+  ],
+  [
+    118276,
+    "LOWER HALF HEAVY WHITE SQUARE"
+  ],
+  [
+    118277,
+    "HEAVY WHITE SQUARE CONTAINING BLACK VERY SMALL SQUARE"
+  ],
+  [
+    118278,
+    "WHITE VERTICAL RECTANGLE WITH HORIZONTAL BAR"
+  ],
+  [
+    118279,
+    "TOP LEFT BLACK LEFT-POINTING SMALL TRIANGLE"
+  ],
+  [
+    118280,
+    "FUNNEL"
+  ],
+  [
+    118281,
+    "BOX DRAWINGS DOUBLE DIAGONAL LOWER LEFT TO MIDDLE CENTRE TO LOWER RIGHT"
+  ],
+  [
+    118282,
+    "BOX DRAWINGS DOUBLE DIAGONAL UPPER LEFT TO MIDDLE CENTRE TO UPPER RIGHT"
+  ],
+  [
+    118283,
+    "LEFT HALF WHITE ELLIPSE"
+  ],
+  [
+    118284,
+    "RIGHT HALF WHITE ELLIPSE"
+  ],
+  [
+    118285,
+    "LEFT HALF TRIPLE DASH HORIZONTAL"
+  ],
+  [
+    118286,
+    "RIGHT HALF TRIPLE DASH HORIZONTAL"
+  ],
+  [
+    118287,
+    "HORIZONTAL LINE WITH TICK MARK"
+  ],
+  [
+    118288,
+    "LEFT HALF HORIZONTAL LINE WITH THREE TICK MARKS"
+  ],
+  [
+    118289,
+    "RIGHT HALF HORIZONTAL LINE WITH THREE TICK MARKS"
+  ],
+  [
+    118290,
+    "HORIZONTAL LINE WITH THREE TICK MARKS"
+  ],
+  [
+    118291,
+    "LOWER HALF VERTICAL LINE WITH THREE TICK MARKS"
+  ],
+  [
+    118292,
+    "UPPER HALF VERTICAL LINE WITH THREE TICK MARKS"
+  ],
+  [
+    118293,
+    "VERTICAL LINE WITH THREE TICK MARKS"
+  ],
+  [
+    118294,
+    "BOX DRAWINGS LIGHT VERTICAL AND TOP RIGHT"
+  ],
+  [
+    118295,
+    "BOX DRAWINGS LIGHT VERTICAL AND BOTTOM RIGHT"
+  ],
+  [
+    118296,
+    "BOX DRAWINGS LIGHT VERTICAL AND TOP LEFT"
+  ],
+  [
+    118297,
+    "BOX DRAWINGS LIGHT VERTICAL AND BOTTOM LEFT"
+  ],
+  [
+    118298,
+    "LARGE TYPE PIECE UPPER LEFT ARC"
+  ],
+  [
+    118299,
+    "LARGE TYPE PIECE UPPER LEFT CORNER"
+  ],
+  [
+    118300,
+    "LARGE TYPE PIECE UPPER TERMINAL"
+  ],
+  [
+    118301,
+    "LARGE TYPE PIECE UPPER LEFT CROTCH"
+  ],
+  [
+    118302,
+    "LARGE TYPE PIECE LEFT ARM"
+  ],
+  [
+    118303,
+    "LARGE TYPE PIECE CROSSBAR"
+  ],
+  [
+    118304,
+    "LARGE TYPE PIECE CROSSBAR WITH LOWER STEM"
+  ],
+  [
+    118305,
+    "LARGE TYPE PIECE UPPER HALF VERTEX OF M"
+  ],
+  [
+    118306,
+    "LARGE TYPE PIECE DIAGONAL LOWER LEFT"
+  ],
+  [
+    118307,
+    "LARGE TYPE PIECE SHORT UPPER TERMINAL"
+  ],
+  [
+    118308,
+    "LARGE TYPE PIECE UPPER RIGHT ARC"
+  ],
+  [
+    118309,
+    "LARGE TYPE PIECE RIGHT ARM"
+  ],
+  [
+    118310,
+    "LARGE TYPE PIECE UPPER RIGHT CROTCH"
+  ],
+  [
+    118311,
+    "LARGE TYPE PIECE UPPER RIGHT CORNER"
+  ],
+  [
+    118312,
+    "LARGE TYPE PIECE STEM WITH RIGHT CROSSBAR"
+  ],
+  [
+    118313,
+    "LARGE TYPE PIECE STEM"
+  ],
+  [
+    118314,
+    "LARGE TYPE PIECE DIAGONAL UPPER RIGHT AND LOWER RIGHT"
+  ],
+  [
+    118315,
+    "LARGE TYPE PIECE DIAGONAL UPPER RIGHT"
+  ],
+  [
+    118316,
+    "LARGE TYPE PIECE DIAGONAL LOWER RIGHT"
+  ],
+  [
+    118317,
+    "LARGE TYPE PIECE SHORT LOWER TERMINAL"
+  ],
+  [
+    118318,
+    "LARGE TYPE PIECE LOWER LEFT AND UPPER LEFT ARC"
+  ],
+  [
+    118319,
+    "LARGE TYPE PIECE CENTRE OF K"
+  ],
+  [
+    118320,
+    "LARGE TYPE PIECE LOWER HALF VERTEX OF M"
+  ],
+  [
+    118321,
+    "LARGE TYPE PIECE UPPER HALF VERTEX OF W"
+  ],
+  [
+    118322,
+    "LARGE TYPE PIECE CENTRE OF X"
+  ],
+  [
+    118323,
+    "LARGE TYPE PIECE CENTRE OF Y"
+  ],
+  [
+    118324,
+    "LARGE TYPE PIECE CENTRE OF Z WITH CROSSBAR"
+  ],
+  [
+    118325,
+    "LARGE TYPE PIECE RAISED UPPER LEFT ARC"
+  ],
+  [
+    118326,
+    "LARGE TYPE PIECE STEM WITH LEFT CROSSBAR"
+  ],
+  [
+    118327,
+    "LARGE TYPE PIECE LOWER RIGHT AND UPPER RIGHT ARC"
+  ],
+  [
+    118328,
+    "LARGE TYPE PIECE DIAGONAL UPPER LEFT AND LOWER LEFT"
+  ],
+  [
+    118329,
+    "LARGE TYPE PIECE STEM WITH LEFT JOINT"
+  ],
+  [
+    118330,
+    "LARGE TYPE PIECE STEM WITH CROSSBAR"
+  ],
+  [
+    118331,
+    "LARGE TYPE PIECE DIAGONAL UPPER LEFT"
+  ],
+  [
+    118332,
+    "LARGE TYPE PIECE LOWER TERMINAL"
+  ],
+  [
+    118333,
+    "LARGE TYPE PIECE LOWER LEFT CORNER"
+  ],
+  [
+    118334,
+    "LARGE TYPE PIECE LOWER LEFT ARC"
+  ],
+  [
+    118335,
+    "LARGE TYPE PIECE LOWER LEFT CROTCH"
+  ],
+  [
+    118336,
+    "LARGE TYPE PIECE CROSSBAR WITH UPPER STEM"
+  ],
+  [
+    118337,
+    "LARGE TYPE PIECE VERTEX OF V"
+  ],
+  [
+    118338,
+    "LARGE TYPE PIECE LOWER HALF VERTEX OF W"
+  ],
+  [
+    118339,
+    "LARGE TYPE PIECE LOWER RIGHT ARC"
+  ],
+  [
+    118340,
+    "LARGE TYPE PIECE LOWER RIGHT CORNER"
+  ],
+  [
+    118341,
+    "LARGE TYPE PIECE LOWER RIGHT ARC WITH TAIL"
+  ],
+  [
+    118342,
+    "LARGE TYPE PIECE LOWER RIGHT CROTCH"
+  ],
+  [
+    118343,
+    "LARGE TYPE PIECE STEM-45"
+  ],
+  [
+    118344,
+    "LARGE TYPE PIECE STEM-2345"
+  ],
+  [
+    118345,
+    "LARGE TYPE PIECE STEM-4"
+  ],
+  [
+    118346,
+    "LARGE TYPE PIECE STEM-34"
+  ],
+  [
+    118347,
+    "LARGE TYPE PIECE STEM-234"
+  ],
+  [
+    118348,
+    "LARGE TYPE PIECE STEM-1234"
+  ],
+  [
+    118349,
+    "LARGE TYPE PIECE STEM-3"
+  ],
+  [
+    118350,
+    "LARGE TYPE PIECE STEM-23"
+  ],
+  [
+    118351,
+    "LARGE TYPE PIECE STEM-2"
+  ],
+  [
+    118352,
+    "LARGE TYPE PIECE STEM-12"
+  ],
+  [
+    118353,
+    "SEPARATED BLOCK SEXTANT-1"
+  ],
+  [
+    118354,
+    "SEPARATED BLOCK SEXTANT-2"
+  ],
+  [
+    118355,
+    "SEPARATED BLOCK SEXTANT-12"
+  ],
+  [
+    118356,
+    "SEPARATED BLOCK SEXTANT-3"
+  ],
+  [
+    118357,
+    "SEPARATED BLOCK SEXTANT-13"
+  ],
+  [
+    118358,
+    "SEPARATED BLOCK SEXTANT-23"
+  ],
+  [
+    118359,
+    "SEPARATED BLOCK SEXTANT-123"
+  ],
+  [
+    118360,
+    "SEPARATED BLOCK SEXTANT-4"
+  ],
+  [
+    118361,
+    "SEPARATED BLOCK SEXTANT-14"
+  ],
+  [
+    118362,
+    "SEPARATED BLOCK SEXTANT-24"
+  ],
+  [
+    118363,
+    "SEPARATED BLOCK SEXTANT-124"
+  ],
+  [
+    118364,
+    "SEPARATED BLOCK SEXTANT-34"
+  ],
+  [
+    118365,
+    "SEPARATED BLOCK SEXTANT-134"
+  ],
+  [
+    118366,
+    "SEPARATED BLOCK SEXTANT-234"
+  ],
+  [
+    118367,
+    "SEPARATED BLOCK SEXTANT-1234"
+  ],
+  [
+    118368,
+    "SEPARATED BLOCK SEXTANT-5"
+  ],
+  [
+    118369,
+    "SEPARATED BLOCK SEXTANT-15"
+  ],
+  [
+    118370,
+    "SEPARATED BLOCK SEXTANT-25"
+  ],
+  [
+    118371,
+    "SEPARATED BLOCK SEXTANT-125"
+  ],
+  [
+    118372,
+    "SEPARATED BLOCK SEXTANT-35"
+  ],
+  [
+    118373,
+    "SEPARATED BLOCK SEXTANT-135"
+  ],
+  [
+    118374,
+    "SEPARATED BLOCK SEXTANT-235"
+  ],
+  [
+    118375,
+    "SEPARATED BLOCK SEXTANT-1235"
+  ],
+  [
+    118376,
+    "SEPARATED BLOCK SEXTANT-45"
+  ],
+  [
+    118377,
+    "SEPARATED BLOCK SEXTANT-145"
+  ],
+  [
+    118378,
+    "SEPARATED BLOCK SEXTANT-245"
+  ],
+  [
+    118379,
+    "SEPARATED BLOCK SEXTANT-1245"
+  ],
+  [
+    118380,
+    "SEPARATED BLOCK SEXTANT-345"
+  ],
+  [
+    118381,
+    "SEPARATED BLOCK SEXTANT-1345"
+  ],
+  [
+    118382,
+    "SEPARATED BLOCK SEXTANT-2345"
+  ],
+  [
+    118383,
+    "SEPARATED BLOCK SEXTANT-12345"
+  ],
+  [
+    118384,
+    "SEPARATED BLOCK SEXTANT-6"
+  ],
+  [
+    118385,
+    "SEPARATED BLOCK SEXTANT-16"
+  ],
+  [
+    118386,
+    "SEPARATED BLOCK SEXTANT-26"
+  ],
+  [
+    118387,
+    "SEPARATED BLOCK SEXTANT-126"
+  ],
+  [
+    118388,
+    "SEPARATED BLOCK SEXTANT-36"
+  ],
+  [
+    118389,
+    "SEPARATED BLOCK SEXTANT-136"
+  ],
+  [
+    118390,
+    "SEPARATED BLOCK SEXTANT-236"
+  ],
+  [
+    118391,
+    "SEPARATED BLOCK SEXTANT-1236"
+  ],
+  [
+    118392,
+    "SEPARATED BLOCK SEXTANT-46"
+  ],
+  [
+    118393,
+    "SEPARATED BLOCK SEXTANT-146"
+  ],
+  [
+    118394,
+    "SEPARATED BLOCK SEXTANT-246"
+  ],
+  [
+    118395,
+    "SEPARATED BLOCK SEXTANT-1246"
+  ],
+  [
+    118396,
+    "SEPARATED BLOCK SEXTANT-346"
+  ],
+  [
+    118397,
+    "SEPARATED BLOCK SEXTANT-1346"
+  ],
+  [
+    118398,
+    "SEPARATED BLOCK SEXTANT-2346"
+  ],
+  [
+    118399,
+    "SEPARATED BLOCK SEXTANT-12346"
+  ],
+  [
+    118400,
+    "SEPARATED BLOCK SEXTANT-56"
+  ],
+  [
+    118401,
+    "SEPARATED BLOCK SEXTANT-156"
+  ],
+  [
+    118402,
+    "SEPARATED BLOCK SEXTANT-256"
+  ],
+  [
+    118403,
+    "SEPARATED BLOCK SEXTANT-1256"
+  ],
+  [
+    118404,
+    "SEPARATED BLOCK SEXTANT-356"
+  ],
+  [
+    118405,
+    "SEPARATED BLOCK SEXTANT-1356"
+  ],
+  [
+    118406,
+    "SEPARATED BLOCK SEXTANT-2356"
+  ],
+  [
+    118407,
+    "SEPARATED BLOCK SEXTANT-12356"
+  ],
+  [
+    118408,
+    "SEPARATED BLOCK SEXTANT-456"
+  ],
+  [
+    118409,
+    "SEPARATED BLOCK SEXTANT-1456"
+  ],
+  [
+    118410,
+    "SEPARATED BLOCK SEXTANT-2456"
+  ],
+  [
+    118411,
+    "SEPARATED BLOCK SEXTANT-12456"
+  ],
+  [
+    118412,
+    "SEPARATED BLOCK SEXTANT-3456"
+  ],
+  [
+    118413,
+    "SEPARATED BLOCK SEXTANT-13456"
+  ],
+  [
+    118414,
+    "SEPARATED BLOCK SEXTANT-23456"
+  ],
+  [
+    118415,
+    "SEPARATED BLOCK SEXTANT-123456"
+  ],
+  [
+    118416,
+    "UPPER LEFT ONE SIXTEENTH BLOCK"
+  ],
+  [
+    118417,
+    "UPPER CENTRE LEFT ONE SIXTEENTH BLOCK"
+  ],
+  [
+    118418,
+    "UPPER CENTRE RIGHT ONE SIXTEENTH BLOCK"
+  ],
+  [
+    118419,
+    "UPPER RIGHT ONE SIXTEENTH BLOCK"
+  ],
+  [
+    118420,
+    "UPPER MIDDLE LEFT ONE SIXTEENTH BLOCK"
+  ],
+  [
+    118421,
+    "UPPER MIDDLE CENTRE LEFT ONE SIXTEENTH BLOCK"
+  ],
+  [
+    118422,
+    "UPPER MIDDLE CENTRE RIGHT ONE SIXTEENTH BLOCK"
+  ],
+  [
+    118423,
+    "UPPER MIDDLE RIGHT ONE SIXTEENTH BLOCK"
+  ],
+  [
+    118424,
+    "LOWER MIDDLE LEFT ONE SIXTEENTH BLOCK"
+  ],
+  [
+    118425,
+    "LOWER MIDDLE CENTRE LEFT ONE SIXTEENTH BLOCK"
+  ],
+  [
+    118426,
+    "LOWER MIDDLE CENTRE RIGHT ONE SIXTEENTH BLOCK"
+  ],
+  [
+    118427,
+    "LOWER MIDDLE RIGHT ONE SIXTEENTH BLOCK"
+  ],
+  [
+    118428,
+    "LOWER LEFT ONE SIXTEENTH BLOCK"
+  ],
+  [
+    118429,
+    "LOWER CENTRE LEFT ONE SIXTEENTH BLOCK"
+  ],
+  [
+    118430,
+    "LOWER CENTRE RIGHT ONE SIXTEENTH BLOCK"
+  ],
+  [
+    118431,
+    "LOWER RIGHT ONE SIXTEENTH BLOCK"
+  ],
+  [
+    118432,
+    "RIGHT HALF LOWER ONE QUARTER BLOCK"
+  ],
+  [
+    118433,
+    "RIGHT THREE QUARTERS LOWER ONE QUARTER BLOCK"
+  ],
+  [
+    118434,
+    "LEFT THREE QUARTERS LOWER ONE QUARTER BLOCK"
+  ],
+  [
+    118435,
+    "LEFT HALF LOWER ONE QUARTER BLOCK"
+  ],
+  [
+    118436,
+    "LOWER HALF LEFT ONE QUARTER BLOCK"
+  ],
+  [
+    118437,
+    "LOWER THREE QUARTERS LEFT ONE QUARTER BLOCK"
+  ],
+  [
+    118438,
+    "UPPER THREE QUARTERS LEFT ONE QUARTER BLOCK"
+  ],
+  [
+    118439,
+    "UPPER HALF LEFT ONE QUARTER BLOCK"
+  ],
+  [
+    118440,
+    "LEFT HALF UPPER ONE QUARTER BLOCK"
+  ],
+  [
+    118441,
+    "LEFT THREE QUARTERS UPPER ONE QUARTER BLOCK"
+  ],
+  [
+    118442,
+    "RIGHT THREE QUARTERS UPPER ONE QUARTER BLOCK"
+  ],
+  [
+    118443,
+    "RIGHT HALF UPPER ONE QUARTER BLOCK"
+  ],
+  [
+    118444,
+    "UPPER HALF RIGHT ONE QUARTER BLOCK"
+  ],
+  [
+    118445,
+    "UPPER THREE QUARTERS RIGHT ONE QUARTER BLOCK"
+  ],
+  [
+    118446,
+    "LOWER THREE QUARTERS RIGHT ONE QUARTER BLOCK"
+  ],
+  [
+    118447,
+    "LOWER HALF RIGHT ONE QUARTER BLOCK"
+  ],
+  [
+    118448,
+    "HORIZONTAL ZIGZAG LINE"
+  ],
+  [
+    118449,
+    "KEYHOLE"
+  ],
+  [
+    118450,
+    "OLD PERSONAL COMPUTER WITH MONITOR IN PORTRAIT ORIENTATION"
+  ],
+  [
+    118451,
+    "BLACK RIGHT TRIANGLE CARET"
+  ],
+  [
+    118458,
+    "FRAGILE SYMBOL"
+  ],
+  [
+    118459,
+    "OFFICE BUILDING SYMBOL"
+  ],
+  [
+    118460,
+    "TREE SYMBOL"
+  ],
+  [
+    118461,
+    "APPLE SYMBOL"
+  ],
+  [
+    118462,
+    "CHERRY SYMBOL"
+  ],
+  [
+    118463,
+    "STRAWBERRY SYMBOL"
+  ],
+  [
+    119040,
+    "MUSICAL SYMBOL SINGLE BARLINE"
+  ],
+  [
+    119041,
+    "MUSICAL SYMBOL DOUBLE BARLINE"
+  ],
+  [
+    119042,
+    "MUSICAL SYMBOL FINAL BARLINE"
+  ],
+  [
+    119043,
+    "MUSICAL SYMBOL REVERSE FINAL BARLINE"
+  ],
+  [
+    119044,
+    "MUSICAL SYMBOL DASHED BARLINE"
+  ],
+  [
+    119045,
+    "MUSICAL SYMBOL SHORT BARLINE"
+  ],
+  [
+    119046,
+    "MUSICAL SYMBOL LEFT REPEAT SIGN"
+  ],
+  [
+    119047,
+    "MUSICAL SYMBOL RIGHT REPEAT SIGN"
+  ],
+  [
+    119048,
+    "MUSICAL SYMBOL REPEAT DOTS"
+  ],
+  [
+    119049,
+    "MUSICAL SYMBOL DAL SEGNO"
+  ],
+  [
+    119050,
+    "MUSICAL SYMBOL DA CAPO"
+  ],
+  [
+    119051,
+    "MUSICAL SYMBOL SEGNO"
+  ],
+  [
+    119052,
+    "MUSICAL SYMBOL CODA"
+  ],
+  [
+    119053,
+    "MUSICAL SYMBOL REPEATED FIGURE-1"
+  ],
+  [
+    119054,
+    "MUSICAL SYMBOL REPEATED FIGURE-2"
+  ],
+  [
+    119055,
+    "MUSICAL SYMBOL REPEATED FIGURE-3"
+  ],
+  [
+    119056,
+    "MUSICAL SYMBOL FERMATA"
+  ],
+  [
+    119057,
+    "MUSICAL SYMBOL FERMATA BELOW"
+  ],
+  [
+    119058,
+    "MUSICAL SYMBOL BREATH MARK"
+  ],
+  [
+    119059,
+    "MUSICAL SYMBOL CAESURA"
+  ],
+  [
+    119060,
+    "MUSICAL SYMBOL BRACE"
+  ],
+  [
+    119061,
+    "MUSICAL SYMBOL BRACKET"
+  ],
+  [
+    119062,
+    "MUSICAL SYMBOL ONE-LINE STAFF"
+  ],
+  [
+    119063,
+    "MUSICAL SYMBOL TWO-LINE STAFF"
+  ],
+  [
+    119064,
+    "MUSICAL SYMBOL THREE-LINE STAFF"
+  ],
+  [
+    119065,
+    "MUSICAL SYMBOL FOUR-LINE STAFF"
+  ],
+  [
+    119066,
+    "MUSICAL SYMBOL FIVE-LINE STAFF"
+  ],
+  [
+    119067,
+    "MUSICAL SYMBOL SIX-LINE STAFF"
+  ],
+  [
+    119068,
+    "MUSICAL SYMBOL SIX-STRING FRETBOARD"
+  ],
+  [
+    119069,
+    "MUSICAL SYMBOL FOUR-STRING FRETBOARD"
+  ],
+  [
+    119070,
+    "MUSICAL SYMBOL G CLEF"
+  ],
+  [
+    119071,
+    "MUSICAL SYMBOL G CLEF OTTAVA ALTA"
+  ],
+  [
+    119072,
+    "MUSICAL SYMBOL G CLEF OTTAVA BASSA"
+  ],
+  [
+    119073,
+    "MUSICAL SYMBOL C CLEF"
+  ],
+  [
+    119074,
+    "MUSICAL SYMBOL F CLEF"
+  ],
+  [
+    119075,
+    "MUSICAL SYMBOL F CLEF OTTAVA ALTA"
+  ],
+  [
+    119076,
+    "MUSICAL SYMBOL F CLEF OTTAVA BASSA"
+  ],
+  [
+    119077,
+    "MUSICAL SYMBOL DRUM CLEF-1"
+  ],
+  [
+    119078,
+    "MUSICAL SYMBOL DRUM CLEF-2"
+  ],
+  [
+    119081,
+    "MUSICAL SYMBOL MULTIPLE MEASURE REST"
+  ],
+  [
+    119082,
+    "MUSICAL SYMBOL DOUBLE SHARP"
+  ],
+  [
+    119083,
+    "MUSICAL SYMBOL DOUBLE FLAT"
+  ],
+  [
+    119084,
+    "MUSICAL SYMBOL FLAT UP"
+  ],
+  [
+    119085,
+    "MUSICAL SYMBOL FLAT DOWN"
+  ],
+  [
+    119086,
+    "MUSICAL SYMBOL NATURAL UP"
+  ],
+  [
+    119087,
+    "MUSICAL SYMBOL NATURAL DOWN"
+  ],
+  [
+    119088,
+    "MUSICAL SYMBOL SHARP UP"
+  ],
+  [
+    119089,
+    "MUSICAL SYMBOL SHARP DOWN"
+  ],
+  [
+    119090,
+    "MUSICAL SYMBOL QUARTER TONE SHARP"
+  ],
+  [
+    119091,
+    "MUSICAL SYMBOL QUARTER TONE FLAT"
+  ],
+  [
+    119092,
+    "MUSICAL SYMBOL COMMON TIME"
+  ],
+  [
+    119093,
+    "MUSICAL SYMBOL CUT TIME"
+  ],
+  [
+    119094,
+    "MUSICAL SYMBOL OTTAVA ALTA"
+  ],
+  [
+    119095,
+    "MUSICAL SYMBOL OTTAVA BASSA"
+  ],
+  [
+    119096,
+    "MUSICAL SYMBOL QUINDICESIMA ALTA"
+  ],
+  [
+    119097,
+    "MUSICAL SYMBOL QUINDICESIMA BASSA"
+  ],
+  [
+    119098,
+    "MUSICAL SYMBOL MULTI REST"
+  ],
+  [
+    119099,
+    "MUSICAL SYMBOL WHOLE REST"
+  ],
+  [
+    119100,
+    "MUSICAL SYMBOL HALF REST"
+  ],
+  [
+    119101,
+    "MUSICAL SYMBOL QUARTER REST"
+  ],
+  [
+    119102,
+    "MUSICAL SYMBOL EIGHTH REST"
+  ],
+  [
+    119103,
+    "MUSICAL SYMBOL SIXTEENTH REST"
+  ],
+  [
+    119104,
+    "MUSICAL SYMBOL THIRTY-SECOND REST"
+  ],
+  [
+    119105,
+    "MUSICAL SYMBOL SIXTY-FOURTH REST"
+  ],
+  [
+    119106,
+    "MUSICAL SYMBOL ONE HUNDRED TWENTY-EIGHTH REST"
+  ],
+  [
+    119107,
+    "MUSICAL SYMBOL X NOTEHEAD"
+  ],
+  [
+    119108,
+    "MUSICAL SYMBOL PLUS NOTEHEAD"
+  ],
+  [
+    119109,
+    "MUSICAL SYMBOL CIRCLE X NOTEHEAD"
+  ],
+  [
+    119110,
+    "MUSICAL SYMBOL SQUARE NOTEHEAD WHITE"
+  ],
+  [
+    119111,
+    "MUSICAL SYMBOL SQUARE NOTEHEAD BLACK"
+  ],
+  [
+    119112,
+    "MUSICAL SYMBOL TRIANGLE NOTEHEAD UP WHITE"
+  ],
+  [
+    119113,
+    "MUSICAL SYMBOL TRIANGLE NOTEHEAD UP BLACK"
+  ],
+  [
+    119114,
+    "MUSICAL SYMBOL TRIANGLE NOTEHEAD LEFT WHITE"
+  ],
+  [
+    119115,
+    "MUSICAL SYMBOL TRIANGLE NOTEHEAD LEFT BLACK"
+  ],
+  [
+    119116,
+    "MUSICAL SYMBOL TRIANGLE NOTEHEAD RIGHT WHITE"
+  ],
+  [
+    119117,
+    "MUSICAL SYMBOL TRIANGLE NOTEHEAD RIGHT BLACK"
+  ],
+  [
+    119118,
+    "MUSICAL SYMBOL TRIANGLE NOTEHEAD DOWN WHITE"
+  ],
+  [
+    119119,
+    "MUSICAL SYMBOL TRIANGLE NOTEHEAD DOWN BLACK"
+  ],
+  [
+    119120,
+    "MUSICAL SYMBOL TRIANGLE NOTEHEAD UP RIGHT WHITE"
+  ],
+  [
+    119121,
+    "MUSICAL SYMBOL TRIANGLE NOTEHEAD UP RIGHT BLACK"
+  ],
+  [
+    119122,
+    "MUSICAL SYMBOL MOON NOTEHEAD WHITE"
+  ],
+  [
+    119123,
+    "MUSICAL SYMBOL MOON NOTEHEAD BLACK"
+  ],
+  [
+    119124,
+    "MUSICAL SYMBOL TRIANGLE-ROUND NOTEHEAD DOWN WHITE"
+  ],
+  [
+    119125,
+    "MUSICAL SYMBOL TRIANGLE-ROUND NOTEHEAD DOWN BLACK"
+  ],
+  [
+    119126,
+    "MUSICAL SYMBOL PARENTHESIS NOTEHEAD"
+  ],
+  [
+    119127,
+    "MUSICAL SYMBOL VOID NOTEHEAD"
+  ],
+  [
+    119128,
+    "MUSICAL SYMBOL NOTEHEAD BLACK"
+  ],
+  [
+    119129,
+    "MUSICAL SYMBOL NULL NOTEHEAD"
+  ],
+  [
+    119130,
+    "MUSICAL SYMBOL CLUSTER NOTEHEAD WHITE"
+  ],
+  [
+    119131,
+    "MUSICAL SYMBOL CLUSTER NOTEHEAD BLACK"
+  ],
+  [
+    119132,
+    "MUSICAL SYMBOL BREVE"
+  ],
+  [
+    119133,
+    "MUSICAL SYMBOL WHOLE NOTE"
+  ],
+  [
+    119134,
+    "MUSICAL SYMBOL HALF NOTE"
+  ],
+  [
+    119135,
+    "MUSICAL SYMBOL QUARTER NOTE"
+  ],
+  [
+    119136,
+    "MUSICAL SYMBOL EIGHTH NOTE"
+  ],
+  [
+    119137,
+    "MUSICAL SYMBOL SIXTEENTH NOTE"
+  ],
+  [
+    119138,
+    "MUSICAL SYMBOL THIRTY-SECOND NOTE"
+  ],
+  [
+    119139,
+    "MUSICAL SYMBOL SIXTY-FOURTH NOTE"
+  ],
+  [
+    119140,
+    "MUSICAL SYMBOL ONE HUNDRED TWENTY-EIGHTH NOTE"
+  ],
+  [
+    119141,
+    "MUSICAL SYMBOL COMBINING STEM"
+  ],
+  [
+    119142,
+    "MUSICAL SYMBOL COMBINING SPRECHGESANG STEM"
+  ],
+  [
+    119143,
+    "MUSICAL SYMBOL COMBINING TREMOLO-1"
+  ],
+  [
+    119144,
+    "MUSICAL SYMBOL COMBINING TREMOLO-2"
+  ],
+  [
+    119145,
+    "MUSICAL SYMBOL COMBINING TREMOLO-3"
+  ],
+  [
+    119146,
+    "MUSICAL SYMBOL FINGERED TREMOLO-1"
+  ],
+  [
+    119147,
+    "MUSICAL SYMBOL FINGERED TREMOLO-2"
+  ],
+  [
+    119148,
+    "MUSICAL SYMBOL FINGERED TREMOLO-3"
+  ],
+  [
+    119149,
+    "MUSICAL SYMBOL COMBINING AUGMENTATION DOT"
+  ],
+  [
+    119150,
+    "MUSICAL SYMBOL COMBINING FLAG-1"
+  ],
+  [
+    119151,
+    "MUSICAL SYMBOL COMBINING FLAG-2"
+  ],
+  [
+    119152,
+    "MUSICAL SYMBOL COMBINING FLAG-3"
+  ],
+  [
+    119153,
+    "MUSICAL SYMBOL COMBINING FLAG-4"
+  ],
+  [
+    119154,
+    "MUSICAL SYMBOL COMBINING FLAG-5"
+  ],
+  [
+    119155,
+    "MUSICAL SYMBOL BEGIN BEAM"
+  ],
+  [
+    119156,
+    "MUSICAL SYMBOL END BEAM"
+  ],
+  [
+    119157,
+    "MUSICAL SYMBOL BEGIN TIE"
+  ],
+  [
+    119158,
+    "MUSICAL SYMBOL END TIE"
+  ],
+  [
+    119159,
+    "MUSICAL SYMBOL BEGIN SLUR"
+  ],
+  [
+    119160,
+    "MUSICAL SYMBOL END SLUR"
+  ],
+  [
+    119161,
+    "MUSICAL SYMBOL BEGIN PHRASE"
+  ],
+  [
+    119162,
+    "MUSICAL SYMBOL END PHRASE"
+  ],
+  [
+    119163,
+    "MUSICAL SYMBOL COMBINING ACCENT"
+  ],
+  [
+    119164,
+    "MUSICAL SYMBOL COMBINING STACCATO"
+  ],
+  [
+    119165,
+    "MUSICAL SYMBOL COMBINING TENUTO"
+  ],
+  [
+    119166,
+    "MUSICAL SYMBOL COMBINING STACCATISSIMO"
+  ],
+  [
+    119167,
+    "MUSICAL SYMBOL COMBINING MARCATO"
+  ],
+  [
+    119168,
+    "MUSICAL SYMBOL COMBINING MARCATO-STACCATO"
+  ],
+  [
+    119169,
+    "MUSICAL SYMBOL COMBINING ACCENT-STACCATO"
+  ],
+  [
+    119170,
+    "MUSICAL SYMBOL COMBINING LOURE"
+  ],
+  [
+    119171,
+    "MUSICAL SYMBOL ARPEGGIATO UP"
+  ],
+  [
+    119172,
+    "MUSICAL SYMBOL ARPEGGIATO DOWN"
+  ],
+  [
+    119173,
+    "MUSICAL SYMBOL COMBINING DOIT"
+  ],
+  [
+    119174,
+    "MUSICAL SYMBOL COMBINING RIP"
+  ],
+  [
+    119175,
+    "MUSICAL SYMBOL COMBINING FLIP"
+  ],
+  [
+    119176,
+    "MUSICAL SYMBOL COMBINING SMEAR"
+  ],
+  [
+    119177,
+    "MUSICAL SYMBOL COMBINING BEND"
+  ],
+  [
+    119178,
+    "MUSICAL SYMBOL COMBINING DOUBLE TONGUE"
+  ],
+  [
+    119179,
+    "MUSICAL SYMBOL COMBINING TRIPLE TONGUE"
+  ],
+  [
+    119180,
+    "MUSICAL SYMBOL RINFORZANDO"
+  ],
+  [
+    119181,
+    "MUSICAL SYMBOL SUBITO"
+  ],
+  [
+    119182,
+    "MUSICAL SYMBOL Z"
+  ],
+  [
+    119183,
+    "MUSICAL SYMBOL PIANO"
+  ],
+  [
+    119184,
+    "MUSICAL SYMBOL MEZZO"
+  ],
+  [
+    119185,
+    "MUSICAL SYMBOL FORTE"
+  ],
+  [
+    119186,
+    "MUSICAL SYMBOL CRESCENDO"
+  ],
+  [
+    119187,
+    "MUSICAL SYMBOL DECRESCENDO"
+  ],
+  [
+    119188,
+    "MUSICAL SYMBOL GRACE NOTE SLASH"
+  ],
+  [
+    119189,
+    "MUSICAL SYMBOL GRACE NOTE NO SLASH"
+  ],
+  [
+    119190,
+    "MUSICAL SYMBOL TR"
+  ],
+  [
+    119191,
+    "MUSICAL SYMBOL TURN"
+  ],
+  [
+    119192,
+    "MUSICAL SYMBOL INVERTED TURN"
+  ],
+  [
+    119193,
+    "MUSICAL SYMBOL TURN SLASH"
+  ],
+  [
+    119194,
+    "MUSICAL SYMBOL TURN UP"
+  ],
+  [
+    119195,
+    "MUSICAL SYMBOL ORNAMENT STROKE-1"
+  ],
+  [
+    119196,
+    "MUSICAL SYMBOL ORNAMENT STROKE-2"
+  ],
+  [
+    119197,
+    "MUSICAL SYMBOL ORNAMENT STROKE-3"
+  ],
+  [
+    119198,
+    "MUSICAL SYMBOL ORNAMENT STROKE-4"
+  ],
+  [
+    119199,
+    "MUSICAL SYMBOL ORNAMENT STROKE-5"
+  ],
+  [
+    119200,
+    "MUSICAL SYMBOL ORNAMENT STROKE-6"
+  ],
+  [
+    119201,
+    "MUSICAL SYMBOL ORNAMENT STROKE-7"
+  ],
+  [
+    119202,
+    "MUSICAL SYMBOL ORNAMENT STROKE-8"
+  ],
+  [
+    119203,
+    "MUSICAL SYMBOL ORNAMENT STROKE-9"
+  ],
+  [
+    119204,
+    "MUSICAL SYMBOL ORNAMENT STROKE-10"
+  ],
+  [
+    119205,
+    "MUSICAL SYMBOL ORNAMENT STROKE-11"
+  ],
+  [
+    119206,
+    "MUSICAL SYMBOL HAUPTSTIMME"
+  ],
+  [
+    119207,
+    "MUSICAL SYMBOL NEBENSTIMME"
+  ],
+  [
+    119208,
+    "MUSICAL SYMBOL END OF STIMME"
+  ],
+  [
+    119209,
+    "MUSICAL SYMBOL DEGREE SLASH"
+  ],
+  [
+    119210,
+    "MUSICAL SYMBOL COMBINING DOWN BOW"
+  ],
+  [
+    119211,
+    "MUSICAL SYMBOL COMBINING UP BOW"
+  ],
+  [
+    119212,
+    "MUSICAL SYMBOL COMBINING HARMONIC"
+  ],
+  [
+    119213,
+    "MUSICAL SYMBOL COMBINING SNAP PIZZICATO"
+  ],
+  [
+    119214,
+    "MUSICAL SYMBOL PEDAL MARK"
+  ],
+  [
+    119215,
+    "MUSICAL SYMBOL PEDAL UP MARK"
+  ],
+  [
+    119216,
+    "MUSICAL SYMBOL HALF PEDAL MARK"
+  ],
+  [
+    119217,
+    "MUSICAL SYMBOL GLISSANDO UP"
+  ],
+  [
+    119218,
+    "MUSICAL SYMBOL GLISSANDO DOWN"
+  ],
+  [
+    119219,
+    "MUSICAL SYMBOL WITH FINGERNAILS"
+  ],
+  [
+    119220,
+    "MUSICAL SYMBOL DAMP"
+  ],
+  [
+    119221,
+    "MUSICAL SYMBOL DAMP ALL"
+  ],
+  [
+    119222,
+    "MUSICAL SYMBOL MAXIMA"
+  ],
+  [
+    119223,
+    "MUSICAL SYMBOL LONGA"
+  ],
+  [
+    119224,
+    "MUSICAL SYMBOL BREVIS"
+  ],
+  [
+    119225,
+    "MUSICAL SYMBOL SEMIBREVIS WHITE"
+  ],
+  [
+    119226,
+    "MUSICAL SYMBOL SEMIBREVIS BLACK"
+  ],
+  [
+    119227,
+    "MUSICAL SYMBOL MINIMA"
+  ],
+  [
+    119228,
+    "MUSICAL SYMBOL MINIMA BLACK"
+  ],
+  [
+    119229,
+    "MUSICAL SYMBOL SEMIMINIMA WHITE"
+  ],
+  [
+    119230,
+    "MUSICAL SYMBOL SEMIMINIMA BLACK"
+  ],
+  [
+    119231,
+    "MUSICAL SYMBOL FUSA WHITE"
+  ],
+  [
+    119232,
+    "MUSICAL SYMBOL FUSA BLACK"
+  ],
+  [
+    119233,
+    "MUSICAL SYMBOL LONGA PERFECTA REST"
+  ],
+  [
+    119234,
+    "MUSICAL SYMBOL LONGA IMPERFECTA REST"
+  ],
+  [
+    119235,
+    "MUSICAL SYMBOL BREVIS REST"
+  ],
+  [
+    119236,
+    "MUSICAL SYMBOL SEMIBREVIS REST"
+  ],
+  [
+    119237,
+    "MUSICAL SYMBOL MINIMA REST"
+  ],
+  [
+    119238,
+    "MUSICAL SYMBOL SEMIMINIMA REST"
+  ],
+  [
+    119239,
+    "MUSICAL SYMBOL TEMPUS PERFECTUM CUM PROLATIONE PERFECTA"
+  ],
+  [
+    119240,
+    "MUSICAL SYMBOL TEMPUS PERFECTUM CUM PROLATIONE IMPERFECTA"
+  ],
+  [
+    119241,
+    "MUSICAL SYMBOL TEMPUS PERFECTUM CUM PROLATIONE PERFECTA DIMINUTION-1"
+  ],
+  [
+    119242,
+    "MUSICAL SYMBOL TEMPUS IMPERFECTUM CUM PROLATIONE PERFECTA"
+  ],
+  [
+    119243,
+    "MUSICAL SYMBOL TEMPUS IMPERFECTUM CUM PROLATIONE IMPERFECTA"
+  ],
+  [
+    119244,
+    "MUSICAL SYMBOL TEMPUS IMPERFECTUM CUM PROLATIONE IMPERFECTA DIMINUTION-1"
+  ],
+  [
+    119245,
+    "MUSICAL SYMBOL TEMPUS IMPERFECTUM CUM PROLATIONE IMPERFECTA DIMINUTION-2"
+  ],
+  [
+    119246,
+    "MUSICAL SYMBOL TEMPUS IMPERFECTUM CUM PROLATIONE IMPERFECTA DIMINUTION-3"
+  ],
+  [
+    119247,
+    "MUSICAL SYMBOL CROIX"
+  ],
+  [
+    119248,
+    "MUSICAL SYMBOL GREGORIAN C CLEF"
+  ],
+  [
+    119249,
+    "MUSICAL SYMBOL GREGORIAN F CLEF"
+  ],
+  [
+    119250,
+    "MUSICAL SYMBOL SQUARE B"
+  ],
+  [
+    119251,
+    "MUSICAL SYMBOL VIRGA"
+  ],
+  [
+    119252,
+    "MUSICAL SYMBOL PODATUS"
+  ],
+  [
+    119253,
+    "MUSICAL SYMBOL CLIVIS"
+  ],
+  [
+    119254,
+    "MUSICAL SYMBOL SCANDICUS"
+  ],
+  [
+    119255,
+    "MUSICAL SYMBOL CLIMACUS"
+  ],
+  [
+    119256,
+    "MUSICAL SYMBOL TORCULUS"
+  ],
+  [
+    119257,
+    "MUSICAL SYMBOL PORRECTUS"
+  ],
+  [
+    119258,
+    "MUSICAL SYMBOL PORRECTUS FLEXUS"
+  ],
+  [
+    119259,
+    "MUSICAL SYMBOL SCANDICUS FLEXUS"
+  ],
+  [
+    119260,
+    "MUSICAL SYMBOL TORCULUS RESUPINUS"
+  ],
+  [
+    119261,
+    "MUSICAL SYMBOL PES SUBPUNCTIS"
+  ],
+  [
+    119262,
+    "MUSICAL SYMBOL KIEVAN C CLEF"
+  ],
+  [
+    119263,
+    "MUSICAL SYMBOL KIEVAN END OF PIECE"
+  ],
+  [
+    119264,
+    "MUSICAL SYMBOL KIEVAN FINAL NOTE"
+  ],
+  [
+    119265,
+    "MUSICAL SYMBOL KIEVAN RECITATIVE MARK"
+  ],
+  [
+    119266,
+    "MUSICAL SYMBOL KIEVAN WHOLE NOTE"
+  ],
+  [
+    119267,
+    "MUSICAL SYMBOL KIEVAN HALF NOTE"
+  ],
+  [
+    119268,
+    "MUSICAL SYMBOL KIEVAN QUARTER NOTE STEM DOWN"
+  ],
+  [
+    119269,
+    "MUSICAL SYMBOL KIEVAN QUARTER NOTE STEM UP"
+  ],
+  [
+    119270,
+    "MUSICAL SYMBOL KIEVAN EIGHTH NOTE STEM DOWN"
+  ],
+  [
+    119271,
+    "MUSICAL SYMBOL KIEVAN EIGHTH NOTE STEM UP"
+  ],
+  [
+    119272,
+    "MUSICAL SYMBOL KIEVAN FLAT SIGN"
+  ],
+  [
+    119273,
+    "MUSICAL SYMBOL SORI"
+  ],
+  [
+    119274,
+    "MUSICAL SYMBOL KORON"
+  ],
+  [
+    119552,
+    "MONOGRAM FOR EARTH"
+  ],
+  [
+    119553,
+    "DIGRAM FOR HEAVENLY EARTH"
+  ],
+  [
+    119554,
+    "DIGRAM FOR HUMAN EARTH"
+  ],
+  [
+    119555,
+    "DIGRAM FOR EARTHLY HEAVEN"
+  ],
+  [
+    119556,
+    "DIGRAM FOR EARTHLY HUMAN"
+  ],
+  [
+    119557,
+    "DIGRAM FOR EARTH"
+  ],
+  [
+    119558,
+    "TETRAGRAM FOR CENTRE"
+  ],
+  [
+    119559,
+    "TETRAGRAM FOR FULL CIRCLE"
+  ],
+  [
+    119560,
+    "TETRAGRAM FOR MIRED"
+  ],
+  [
+    119561,
+    "TETRAGRAM FOR BARRIER"
+  ],
+  [
+    119562,
+    "TETRAGRAM FOR KEEPING SMALL"
+  ],
+  [
+    119563,
+    "TETRAGRAM FOR CONTRARIETY"
+  ],
+  [
+    119564,
+    "TETRAGRAM FOR ASCENT"
+  ],
+  [
+    119565,
+    "TETRAGRAM FOR OPPOSITION"
+  ],
+  [
+    119566,
+    "TETRAGRAM FOR BRANCHING OUT"
+  ],
+  [
+    119567,
+    "TETRAGRAM FOR DEFECTIVENESS OR DISTORTION"
+  ],
+  [
+    119568,
+    "TETRAGRAM FOR DIVERGENCE"
+  ],
+  [
+    119569,
+    "TETRAGRAM FOR YOUTHFULNESS"
+  ],
+  [
+    119570,
+    "TETRAGRAM FOR INCREASE"
+  ],
+  [
+    119571,
+    "TETRAGRAM FOR PENETRATION"
+  ],
+  [
+    119572,
+    "TETRAGRAM FOR REACH"
+  ],
+  [
+    119573,
+    "TETRAGRAM FOR CONTACT"
+  ],
+  [
+    119574,
+    "TETRAGRAM FOR HOLDING BACK"
+  ],
+  [
+    119575,
+    "TETRAGRAM FOR WAITING"
+  ],
+  [
+    119576,
+    "TETRAGRAM FOR FOLLOWING"
+  ],
+  [
+    119577,
+    "TETRAGRAM FOR ADVANCE"
+  ],
+  [
+    119578,
+    "TETRAGRAM FOR RELEASE"
+  ],
+  [
+    119579,
+    "TETRAGRAM FOR RESISTANCE"
+  ],
+  [
+    119580,
+    "TETRAGRAM FOR EASE"
+  ],
+  [
+    119581,
+    "TETRAGRAM FOR JOY"
+  ],
+  [
+    119582,
+    "TETRAGRAM FOR CONTENTION"
+  ],
+  [
+    119583,
+    "TETRAGRAM FOR ENDEAVOUR"
+  ],
+  [
+    119584,
+    "TETRAGRAM FOR DUTIES"
+  ],
+  [
+    119585,
+    "TETRAGRAM FOR CHANGE"
+  ],
+  [
+    119586,
+    "TETRAGRAM FOR DECISIVENESS"
+  ],
+  [
+    119587,
+    "TETRAGRAM FOR BOLD RESOLUTION"
+  ],
+  [
+    119588,
+    "TETRAGRAM FOR PACKING"
+  ],
+  [
+    119589,
+    "TETRAGRAM FOR LEGION"
+  ],
+  [
+    119590,
+    "TETRAGRAM FOR CLOSENESS"
+  ],
+  [
+    119591,
+    "TETRAGRAM FOR KINSHIP"
+  ],
+  [
+    119592,
+    "TETRAGRAM FOR GATHERING"
+  ],
+  [
+    119593,
+    "TETRAGRAM FOR STRENGTH"
+  ],
+  [
+    119594,
+    "TETRAGRAM FOR PURITY"
+  ],
+  [
+    119595,
+    "TETRAGRAM FOR FULLNESS"
+  ],
+  [
+    119596,
+    "TETRAGRAM FOR RESIDENCE"
+  ],
+  [
+    119597,
+    "TETRAGRAM FOR LAW OR MODEL"
+  ],
+  [
+    119598,
+    "TETRAGRAM FOR RESPONSE"
+  ],
+  [
+    119599,
+    "TETRAGRAM FOR GOING TO MEET"
+  ],
+  [
+    119600,
+    "TETRAGRAM FOR ENCOUNTERS"
+  ],
+  [
+    119601,
+    "TETRAGRAM FOR STOVE"
+  ],
+  [
+    119602,
+    "TETRAGRAM FOR GREATNESS"
+  ],
+  [
+    119603,
+    "TETRAGRAM FOR ENLARGEMENT"
+  ],
+  [
+    119604,
+    "TETRAGRAM FOR PATTERN"
+  ],
+  [
+    119605,
+    "TETRAGRAM FOR RITUAL"
+  ],
+  [
+    119606,
+    "TETRAGRAM FOR FLIGHT"
+  ],
+  [
+    119607,
+    "TETRAGRAM FOR VASTNESS OR WASTING"
+  ],
+  [
+    119608,
+    "TETRAGRAM FOR CONSTANCY"
+  ],
+  [
+    119609,
+    "TETRAGRAM FOR MEASURE"
+  ],
+  [
+    119610,
+    "TETRAGRAM FOR ETERNITY"
+  ],
+  [
+    119611,
+    "TETRAGRAM FOR UNITY"
+  ],
+  [
+    119612,
+    "TETRAGRAM FOR DIMINISHMENT"
+  ],
+  [
+    119613,
+    "TETRAGRAM FOR CLOSED MOUTH"
+  ],
+  [
+    119614,
+    "TETRAGRAM FOR GUARDEDNESS"
+  ],
+  [
+    119615,
+    "TETRAGRAM FOR GATHERING IN"
+  ],
+  [
+    119616,
+    "TETRAGRAM FOR MASSING"
+  ],
+  [
+    119617,
+    "TETRAGRAM FOR ACCUMULATION"
+  ],
+  [
+    119618,
+    "TETRAGRAM FOR EMBELLISHMENT"
+  ],
+  [
+    119619,
+    "TETRAGRAM FOR DOUBT"
+  ],
+  [
+    119620,
+    "TETRAGRAM FOR WATCH"
+  ],
+  [
+    119621,
+    "TETRAGRAM FOR SINKING"
+  ],
+  [
+    119622,
+    "TETRAGRAM FOR INNER"
+  ],
+  [
+    119623,
+    "TETRAGRAM FOR DEPARTURE"
+  ],
+  [
+    119624,
+    "TETRAGRAM FOR DARKENING"
+  ],
+  [
+    119625,
+    "TETRAGRAM FOR DIMMING"
+  ],
+  [
+    119626,
+    "TETRAGRAM FOR EXHAUSTION"
+  ],
+  [
+    119627,
+    "TETRAGRAM FOR SEVERANCE"
+  ],
+  [
+    119628,
+    "TETRAGRAM FOR STOPPAGE"
+  ],
+  [
+    119629,
+    "TETRAGRAM FOR HARDNESS"
+  ],
+  [
+    119630,
+    "TETRAGRAM FOR COMPLETION"
+  ],
+  [
+    119631,
+    "TETRAGRAM FOR CLOSURE"
+  ],
+  [
+    119632,
+    "TETRAGRAM FOR FAILURE"
+  ],
+  [
+    119633,
+    "TETRAGRAM FOR AGGRAVATION"
+  ],
+  [
+    119634,
+    "TETRAGRAM FOR COMPLIANCE"
+  ],
+  [
+    119635,
+    "TETRAGRAM FOR ON THE VERGE"
+  ],
+  [
+    119636,
+    "TETRAGRAM FOR DIFFICULTIES"
+  ],
+  [
+    119637,
+    "TETRAGRAM FOR LABOURING"
+  ],
+  [
+    119638,
+    "TETRAGRAM FOR FOSTERING"
+  ],
+  [
+    119648,
+    "COUNTING ROD UNIT DIGIT ONE"
+  ],
+  [
+    119649,
+    "COUNTING ROD UNIT DIGIT TWO"
+  ],
+  [
+    119650,
+    "COUNTING ROD UNIT DIGIT THREE"
+  ],
+  [
+    119651,
+    "COUNTING ROD UNIT DIGIT FOUR"
+  ],
+  [
+    119652,
+    "COUNTING ROD UNIT DIGIT FIVE"
+  ],
+  [
+    119653,
+    "COUNTING ROD UNIT DIGIT SIX"
+  ],
+  [
+    119654,
+    "COUNTING ROD UNIT DIGIT SEVEN"
+  ],
+  [
+    119655,
+    "COUNTING ROD UNIT DIGIT EIGHT"
+  ],
+  [
+    119656,
+    "COUNTING ROD UNIT DIGIT NINE"
+  ],
+  [
+    119657,
+    "COUNTING ROD TENS DIGIT ONE"
+  ],
+  [
+    119658,
+    "COUNTING ROD TENS DIGIT TWO"
+  ],
+  [
+    119659,
+    "COUNTING ROD TENS DIGIT THREE"
+  ],
+  [
+    119660,
+    "COUNTING ROD TENS DIGIT FOUR"
+  ],
+  [
+    119661,
+    "COUNTING ROD TENS DIGIT FIVE"
+  ],
+  [
+    119662,
+    "COUNTING ROD TENS DIGIT SIX"
+  ],
+  [
+    119663,
+    "COUNTING ROD TENS DIGIT SEVEN"
+  ],
+  [
+    119664,
+    "COUNTING ROD TENS DIGIT EIGHT"
+  ],
+  [
+    119665,
+    "COUNTING ROD TENS DIGIT NINE"
+  ],
+  [
+    119666,
+    "IDEOGRAPHIC TALLY MARK ONE"
+  ],
+  [
+    119667,
+    "IDEOGRAPHIC TALLY MARK TWO"
+  ],
+  [
+    119668,
+    "IDEOGRAPHIC TALLY MARK THREE"
+  ],
+  [
+    119669,
+    "IDEOGRAPHIC TALLY MARK FOUR"
+  ],
+  [
+    119670,
+    "IDEOGRAPHIC TALLY MARK FIVE"
+  ],
+  [
+    119671,
+    "TALLY MARK ONE"
+  ],
+  [
+    119672,
+    "TALLY MARK FIVE"
+  ],
+  [
+    122624,
+    "LATIN SMALL LETTER FENG DIGRAPH WITH TRILL"
+  ],
+  [
+    122625,
+    "LATIN SMALL LETTER REVERSED SCRIPT G"
+  ],
+  [
+    122626,
+    "LATIN LETTER SMALL CAPITAL TURNED G"
+  ],
+  [
+    122627,
+    "LATIN SMALL LETTER REVERSED K"
+  ],
+  [
+    122628,
+    "LATIN LETTER SMALL CAPITAL L WITH BELT"
+  ],
+  [
+    122629,
+    "LATIN SMALL LETTER LEZH WITH RETROFLEX HOOK"
+  ],
+  [
+    122630,
+    "LATIN SMALL LETTER TURNED Y WITH BELT"
+  ],
+  [
+    122631,
+    "LATIN SMALL LETTER REVERSED ENG"
+  ],
+  [
+    122632,
+    "LATIN SMALL LETTER TURNED R WITH LONG LEG AND RETROFLEX HOOK"
+  ],
+  [
+    122633,
+    "LATIN SMALL LETTER T WITH HOOK AND RETROFLEX HOOK"
+  ],
+  [
+    122634,
+    "LATIN LETTER RETROFLEX CLICK WITH RETROFLEX HOOK"
+  ],
+  [
+    122635,
+    "LATIN SMALL LETTER ESH WITH DOUBLE BAR"
+  ],
+  [
+    122636,
+    "LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL"
+  ],
+  [
+    122637,
+    "LATIN SMALL LETTER TURNED T WITH CURL"
+  ],
+  [
+    122638,
+    "LATIN LETTER INVERTED GLOTTAL STOP WITH CURL"
+  ],
+  [
+    122639,
+    "LATIN LETTER STRETCHED C WITH CURL"
+  ],
+  [
+    122640,
+    "LATIN LETTER SMALL CAPITAL TURNED K"
+  ],
+  [
+    122641,
+    "LATIN SMALL LETTER L WITH FISHHOOK"
+  ],
+  [
+    122642,
+    "LATIN SMALL LETTER DEZH DIGRAPH WITH PALATAL HOOK"
+  ],
+  [
+    122643,
+    "LATIN SMALL LETTER L WITH BELT AND PALATAL HOOK"
+  ],
+  [
+    122644,
+    "LATIN SMALL LETTER ENG WITH PALATAL HOOK"
+  ],
+  [
+    122645,
+    "LATIN SMALL LETTER TURNED R WITH PALATAL HOOK"
+  ],
+  [
+    122646,
+    "LATIN SMALL LETTER R WITH FISHHOOK AND PALATAL HOOK"
+  ],
+  [
+    122647,
+    "LATIN SMALL LETTER TESH DIGRAPH WITH PALATAL HOOK"
+  ],
+  [
+    122648,
+    "LATIN SMALL LETTER EZH WITH PALATAL HOOK"
+  ],
+  [
+    122649,
+    "LATIN SMALL LETTER DEZH DIGRAPH WITH RETROFLEX HOOK"
+  ],
+  [
+    122650,
+    "LATIN SMALL LETTER I WITH STROKE AND RETROFLEX HOOK"
+  ],
+  [
+    122651,
+    "LATIN SMALL LETTER O WITH RETROFLEX HOOK"
+  ],
+  [
+    122652,
+    "LATIN SMALL LETTER TESH DIGRAPH WITH RETROFLEX HOOK"
+  ],
+  [
+    122653,
+    "LATIN SMALL LETTER C WITH RETROFLEX HOOK"
+  ],
+  [
+    122654,
+    "LATIN SMALL LETTER S WITH CURL"
+  ],
+  [
+    122661,
+    "LATIN SMALL LETTER D WITH MID-HEIGHT LEFT HOOK"
+  ],
+  [
+    122662,
+    "LATIN SMALL LETTER L WITH MID-HEIGHT LEFT HOOK"
+  ],
+  [
+    122663,
+    "LATIN SMALL LETTER N WITH MID-HEIGHT LEFT HOOK"
+  ],
+  [
+    122664,
+    "LATIN SMALL LETTER R WITH MID-HEIGHT LEFT HOOK"
+  ],
+  [
+    122665,
+    "LATIN SMALL LETTER S WITH MID-HEIGHT LEFT HOOK"
+  ],
+  [
+    122666,
+    "LATIN SMALL LETTER T WITH MID-HEIGHT LEFT HOOK"
+  ],
+  [
+    122928,
+    "MODIFIER LETTER CYRILLIC SMALL A"
+  ],
+  [
+    122929,
+    "MODIFIER LETTER CYRILLIC SMALL BE"
+  ],
+  [
+    122930,
+    "MODIFIER LETTER CYRILLIC SMALL VE"
+  ],
+  [
+    122931,
+    "MODIFIER LETTER CYRILLIC SMALL GHE"
+  ],
+  [
+    122932,
+    "MODIFIER LETTER CYRILLIC SMALL DE"
+  ],
+  [
+    122933,
+    "MODIFIER LETTER CYRILLIC SMALL IE"
+  ],
+  [
+    122934,
+    "MODIFIER LETTER CYRILLIC SMALL ZHE"
+  ],
+  [
+    122935,
+    "MODIFIER LETTER CYRILLIC SMALL ZE"
+  ],
+  [
+    122936,
+    "MODIFIER LETTER CYRILLIC SMALL I"
+  ],
+  [
+    122937,
+    "MODIFIER LETTER CYRILLIC SMALL KA"
+  ],
+  [
+    122938,
+    "MODIFIER LETTER CYRILLIC SMALL EL"
+  ],
+  [
+    122939,
+    "MODIFIER LETTER CYRILLIC SMALL EM"
+  ],
+  [
+    122940,
+    "MODIFIER LETTER CYRILLIC SMALL O"
+  ],
+  [
+    122941,
+    "MODIFIER LETTER CYRILLIC SMALL PE"
+  ],
+  [
+    122942,
+    "MODIFIER LETTER CYRILLIC SMALL ER"
+  ],
+  [
+    122943,
+    "MODIFIER LETTER CYRILLIC SMALL ES"
+  ],
+  [
+    122944,
+    "MODIFIER LETTER CYRILLIC SMALL TE"
+  ],
+  [
+    122945,
+    "MODIFIER LETTER CYRILLIC SMALL U"
+  ],
+  [
+    122946,
+    "MODIFIER LETTER CYRILLIC SMALL EF"
+  ],
+  [
+    122947,
+    "MODIFIER LETTER CYRILLIC SMALL HA"
+  ],
+  [
+    122948,
+    "MODIFIER LETTER CYRILLIC SMALL TSE"
+  ],
+  [
+    122949,
+    "MODIFIER LETTER CYRILLIC SMALL CHE"
+  ],
+  [
+    122950,
+    "MODIFIER LETTER CYRILLIC SMALL SHA"
+  ],
+  [
+    122951,
+    "MODIFIER LETTER CYRILLIC SMALL YERU"
+  ],
+  [
+    122952,
+    "MODIFIER LETTER CYRILLIC SMALL E"
+  ],
+  [
+    122953,
+    "MODIFIER LETTER CYRILLIC SMALL YU"
+  ],
+  [
+    122954,
+    "MODIFIER LETTER CYRILLIC SMALL DZZE"
+  ],
+  [
+    122955,
+    "MODIFIER LETTER CYRILLIC SMALL SCHWA"
+  ],
+  [
+    122956,
+    "MODIFIER LETTER CYRILLIC SMALL BYELORUSSIAN-UKRAINIAN I"
+  ],
+  [
+    122957,
+    "MODIFIER LETTER CYRILLIC SMALL JE"
+  ],
+  [
+    122958,
+    "MODIFIER LETTER CYRILLIC SMALL BARRED O"
+  ],
+  [
+    122959,
+    "MODIFIER LETTER CYRILLIC SMALL STRAIGHT U"
+  ],
+  [
+    122960,
+    "MODIFIER LETTER CYRILLIC SMALL PALOCHKA"
+  ],
+  [
+    122961,
+    "CYRILLIC SUBSCRIPT SMALL LETTER A"
+  ],
+  [
+    122962,
+    "CYRILLIC SUBSCRIPT SMALL LETTER BE"
+  ],
+  [
+    122963,
+    "CYRILLIC SUBSCRIPT SMALL LETTER VE"
+  ],
+  [
+    122964,
+    "CYRILLIC SUBSCRIPT SMALL LETTER GHE"
+  ],
+  [
+    122965,
+    "CYRILLIC SUBSCRIPT SMALL LETTER DE"
+  ],
+  [
+    122966,
+    "CYRILLIC SUBSCRIPT SMALL LETTER IE"
+  ],
+  [
+    122967,
+    "CYRILLIC SUBSCRIPT SMALL LETTER ZHE"
+  ],
+  [
+    122968,
+    "CYRILLIC SUBSCRIPT SMALL LETTER ZE"
+  ],
+  [
+    122969,
+    "CYRILLIC SUBSCRIPT SMALL LETTER I"
+  ],
+  [
+    122970,
+    "CYRILLIC SUBSCRIPT SMALL LETTER KA"
+  ],
+  [
+    122971,
+    "CYRILLIC SUBSCRIPT SMALL LETTER EL"
+  ],
+  [
+    122972,
+    "CYRILLIC SUBSCRIPT SMALL LETTER O"
+  ],
+  [
+    122973,
+    "CYRILLIC SUBSCRIPT SMALL LETTER PE"
+  ],
+  [
+    122974,
+    "CYRILLIC SUBSCRIPT SMALL LETTER ES"
+  ],
+  [
+    122975,
+    "CYRILLIC SUBSCRIPT SMALL LETTER U"
+  ],
+  [
+    122976,
+    "CYRILLIC SUBSCRIPT SMALL LETTER EF"
+  ],
+  [
+    122977,
+    "CYRILLIC SUBSCRIPT SMALL LETTER HA"
+  ],
+  [
+    122978,
+    "CYRILLIC SUBSCRIPT SMALL LETTER TSE"
+  ],
+  [
+    122979,
+    "CYRILLIC SUBSCRIPT SMALL LETTER CHE"
+  ],
+  [
+    122980,
+    "CYRILLIC SUBSCRIPT SMALL LETTER SHA"
+  ],
+  [
+    122981,
+    "CYRILLIC SUBSCRIPT SMALL LETTER HARD SIGN"
+  ],
+  [
+    122982,
+    "CYRILLIC SUBSCRIPT SMALL LETTER YERU"
+  ],
+  [
+    122983,
+    "CYRILLIC SUBSCRIPT SMALL LETTER GHE WITH UPTURN"
+  ],
+  [
+    122984,
+    "CYRILLIC SUBSCRIPT SMALL LETTER BYELORUSSIAN-UKRAINIAN I"
+  ],
+  [
+    122985,
+    "CYRILLIC SUBSCRIPT SMALL LETTER DZE"
+  ],
+  [
+    122986,
+    "CYRILLIC SUBSCRIPT SMALL LETTER DZHE"
+  ],
+  [
+    122987,
+    "MODIFIER LETTER CYRILLIC SMALL ES WITH DESCENDER"
+  ],
+  [
+    122988,
+    "MODIFIER LETTER CYRILLIC SMALL YERU WITH BACK YER"
+  ],
+  [
+    122989,
+    "MODIFIER LETTER CYRILLIC SMALL STRAIGHT U WITH STROKE"
+  ],
+  [
+    123023,
+    "COMBINING CYRILLIC SMALL LETTER BYELORUSSIAN-UKRAINIAN I"
+  ],
+  [
+    126976,
+    "MAHJONG TILE EAST WIND"
+  ],
+  [
+    126977,
+    "MAHJONG TILE SOUTH WIND"
+  ],
+  [
+    126978,
+    "MAHJONG TILE WEST WIND"
+  ],
+  [
+    126979,
+    "MAHJONG TILE NORTH WIND"
+  ],
+  [
+    126980,
+    "MAHJONG TILE RED DRAGON"
+  ],
+  [
+    126981,
+    "MAHJONG TILE GREEN DRAGON"
+  ],
+  [
+    126982,
+    "MAHJONG TILE WHITE DRAGON"
+  ],
+  [
+    126983,
+    "MAHJONG TILE ONE OF CHARACTERS"
+  ],
+  [
+    126984,
+    "MAHJONG TILE TWO OF CHARACTERS"
+  ],
+  [
+    126985,
+    "MAHJONG TILE THREE OF CHARACTERS"
+  ],
+  [
+    126986,
+    "MAHJONG TILE FOUR OF CHARACTERS"
+  ],
+  [
+    126987,
+    "MAHJONG TILE FIVE OF CHARACTERS"
+  ],
+  [
+    126988,
+    "MAHJONG TILE SIX OF CHARACTERS"
+  ],
+  [
+    126989,
+    "MAHJONG TILE SEVEN OF CHARACTERS"
+  ],
+  [
+    126990,
+    "MAHJONG TILE EIGHT OF CHARACTERS"
+  ],
+  [
+    126991,
+    "MAHJONG TILE NINE OF CHARACTERS"
+  ],
+  [
+    126992,
+    "MAHJONG TILE ONE OF BAMBOOS"
+  ],
+  [
+    126993,
+    "MAHJONG TILE TWO OF BAMBOOS"
+  ],
+  [
+    126994,
+    "MAHJONG TILE THREE OF BAMBOOS"
+  ],
+  [
+    126995,
+    "MAHJONG TILE FOUR OF BAMBOOS"
+  ],
+  [
+    126996,
+    "MAHJONG TILE FIVE OF BAMBOOS"
+  ],
+  [
+    126997,
+    "MAHJONG TILE SIX OF BAMBOOS"
+  ],
+  [
+    126998,
+    "MAHJONG TILE SEVEN OF BAMBOOS"
+  ],
+  [
+    126999,
+    "MAHJONG TILE EIGHT OF BAMBOOS"
+  ],
+  [
+    127000,
+    "MAHJONG TILE NINE OF BAMBOOS"
+  ],
+  [
+    127001,
+    "MAHJONG TILE ONE OF CIRCLES"
+  ],
+  [
+    127002,
+    "MAHJONG TILE TWO OF CIRCLES"
+  ],
+  [
+    127003,
+    "MAHJONG TILE THREE OF CIRCLES"
+  ],
+  [
+    127004,
+    "MAHJONG TILE FOUR OF CIRCLES"
+  ],
+  [
+    127005,
+    "MAHJONG TILE FIVE OF CIRCLES"
+  ],
+  [
+    127006,
+    "MAHJONG TILE SIX OF CIRCLES"
+  ],
+  [
+    127007,
+    "MAHJONG TILE SEVEN OF CIRCLES"
+  ],
+  [
+    127008,
+    "MAHJONG TILE EIGHT OF CIRCLES"
+  ],
+  [
+    127009,
+    "MAHJONG TILE NINE OF CIRCLES"
+  ],
+  [
+    127010,
+    "MAHJONG TILE PLUM"
+  ],
+  [
+    127011,
+    "MAHJONG TILE ORCHID"
+  ],
+  [
+    127012,
+    "MAHJONG TILE BAMBOO"
+  ],
+  [
+    127013,
+    "MAHJONG TILE CHRYSANTHEMUM"
+  ],
+  [
+    127014,
+    "MAHJONG TILE SPRING"
+  ],
+  [
+    127015,
+    "MAHJONG TILE SUMMER"
+  ],
+  [
+    127016,
+    "MAHJONG TILE AUTUMN"
+  ],
+  [
+    127017,
+    "MAHJONG TILE WINTER"
+  ],
+  [
+    127018,
+    "MAHJONG TILE JOKER"
+  ],
+  [
+    127019,
+    "MAHJONG TILE BACK"
+  ],
+  [
+    127024,
+    "DOMINO TILE HORIZONTAL BACK"
+  ],
+  [
+    127025,
+    "DOMINO TILE HORIZONTAL-00-00"
+  ],
+  [
+    127026,
+    "DOMINO TILE HORIZONTAL-00-01"
+  ],
+  [
+    127027,
+    "DOMINO TILE HORIZONTAL-00-02"
+  ],
+  [
+    127028,
+    "DOMINO TILE HORIZONTAL-00-03"
+  ],
+  [
+    127029,
+    "DOMINO TILE HORIZONTAL-00-04"
+  ],
+  [
+    127030,
+    "DOMINO TILE HORIZONTAL-00-05"
+  ],
+  [
+    127031,
+    "DOMINO TILE HORIZONTAL-00-06"
+  ],
+  [
+    127032,
+    "DOMINO TILE HORIZONTAL-01-00"
+  ],
+  [
+    127033,
+    "DOMINO TILE HORIZONTAL-01-01"
+  ],
+  [
+    127034,
+    "DOMINO TILE HORIZONTAL-01-02"
+  ],
+  [
+    127035,
+    "DOMINO TILE HORIZONTAL-01-03"
+  ],
+  [
+    127036,
+    "DOMINO TILE HORIZONTAL-01-04"
+  ],
+  [
+    127037,
+    "DOMINO TILE HORIZONTAL-01-05"
+  ],
+  [
+    127038,
+    "DOMINO TILE HORIZONTAL-01-06"
+  ],
+  [
+    127039,
+    "DOMINO TILE HORIZONTAL-02-00"
+  ],
+  [
+    127040,
+    "DOMINO TILE HORIZONTAL-02-01"
+  ],
+  [
+    127041,
+    "DOMINO TILE HORIZONTAL-02-02"
+  ],
+  [
+    127042,
+    "DOMINO TILE HORIZONTAL-02-03"
+  ],
+  [
+    127043,
+    "DOMINO TILE HORIZONTAL-02-04"
+  ],
+  [
+    127044,
+    "DOMINO TILE HORIZONTAL-02-05"
+  ],
+  [
+    127045,
+    "DOMINO TILE HORIZONTAL-02-06"
+  ],
+  [
+    127046,
+    "DOMINO TILE HORIZONTAL-03-00"
+  ],
+  [
+    127047,
+    "DOMINO TILE HORIZONTAL-03-01"
+  ],
+  [
+    127048,
+    "DOMINO TILE HORIZONTAL-03-02"
+  ],
+  [
+    127049,
+    "DOMINO TILE HORIZONTAL-03-03"
+  ],
+  [
+    127050,
+    "DOMINO TILE HORIZONTAL-03-04"
+  ],
+  [
+    127051,
+    "DOMINO TILE HORIZONTAL-03-05"
+  ],
+  [
+    127052,
+    "DOMINO TILE HORIZONTAL-03-06"
+  ],
+  [
+    127053,
+    "DOMINO TILE HORIZONTAL-04-00"
+  ],
+  [
+    127054,
+    "DOMINO TILE HORIZONTAL-04-01"
+  ],
+  [
+    127055,
+    "DOMINO TILE HORIZONTAL-04-02"
+  ],
+  [
+    127056,
+    "DOMINO TILE HORIZONTAL-04-03"
+  ],
+  [
+    127057,
+    "DOMINO TILE HORIZONTAL-04-04"
+  ],
+  [
+    127058,
+    "DOMINO TILE HORIZONTAL-04-05"
+  ],
+  [
+    127059,
+    "DOMINO TILE HORIZONTAL-04-06"
+  ],
+  [
+    127060,
+    "DOMINO TILE HORIZONTAL-05-00"
+  ],
+  [
+    127061,
+    "DOMINO TILE HORIZONTAL-05-01"
+  ],
+  [
+    127062,
+    "DOMINO TILE HORIZONTAL-05-02"
+  ],
+  [
+    127063,
+    "DOMINO TILE HORIZONTAL-05-03"
+  ],
+  [
+    127064,
+    "DOMINO TILE HORIZONTAL-05-04"
+  ],
+  [
+    127065,
+    "DOMINO TILE HORIZONTAL-05-05"
+  ],
+  [
+    127066,
+    "DOMINO TILE HORIZONTAL-05-06"
+  ],
+  [
+    127067,
+    "DOMINO TILE HORIZONTAL-06-00"
+  ],
+  [
+    127068,
+    "DOMINO TILE HORIZONTAL-06-01"
+  ],
+  [
+    127069,
+    "DOMINO TILE HORIZONTAL-06-02"
+  ],
+  [
+    127070,
+    "DOMINO TILE HORIZONTAL-06-03"
+  ],
+  [
+    127071,
+    "DOMINO TILE HORIZONTAL-06-04"
+  ],
+  [
+    127072,
+    "DOMINO TILE HORIZONTAL-06-05"
+  ],
+  [
+    127073,
+    "DOMINO TILE HORIZONTAL-06-06"
+  ],
+  [
+    127074,
+    "DOMINO TILE VERTICAL BACK"
+  ],
+  [
+    127075,
+    "DOMINO TILE VERTICAL-00-00"
+  ],
+  [
+    127076,
+    "DOMINO TILE VERTICAL-00-01"
+  ],
+  [
+    127077,
+    "DOMINO TILE VERTICAL-00-02"
+  ],
+  [
+    127078,
+    "DOMINO TILE VERTICAL-00-03"
+  ],
+  [
+    127079,
+    "DOMINO TILE VERTICAL-00-04"
+  ],
+  [
+    127080,
+    "DOMINO TILE VERTICAL-00-05"
+  ],
+  [
+    127081,
+    "DOMINO TILE VERTICAL-00-06"
+  ],
+  [
+    127082,
+    "DOMINO TILE VERTICAL-01-00"
+  ],
+  [
+    127083,
+    "DOMINO TILE VERTICAL-01-01"
+  ],
+  [
+    127084,
+    "DOMINO TILE VERTICAL-01-02"
+  ],
+  [
+    127085,
+    "DOMINO TILE VERTICAL-01-03"
+  ],
+  [
+    127086,
+    "DOMINO TILE VERTICAL-01-04"
+  ],
+  [
+    127087,
+    "DOMINO TILE VERTICAL-01-05"
+  ],
+  [
+    127088,
+    "DOMINO TILE VERTICAL-01-06"
+  ],
+  [
+    127089,
+    "DOMINO TILE VERTICAL-02-00"
+  ],
+  [
+    127090,
+    "DOMINO TILE VERTICAL-02-01"
+  ],
+  [
+    127091,
+    "DOMINO TILE VERTICAL-02-02"
+  ],
+  [
+    127092,
+    "DOMINO TILE VERTICAL-02-03"
+  ],
+  [
+    127093,
+    "DOMINO TILE VERTICAL-02-04"
+  ],
+  [
+    127094,
+    "DOMINO TILE VERTICAL-02-05"
+  ],
+  [
+    127095,
+    "DOMINO TILE VERTICAL-02-06"
+  ],
+  [
+    127096,
+    "DOMINO TILE VERTICAL-03-00"
+  ],
+  [
+    127097,
+    "DOMINO TILE VERTICAL-03-01"
+  ],
+  [
+    127098,
+    "DOMINO TILE VERTICAL-03-02"
+  ],
+  [
+    127099,
+    "DOMINO TILE VERTICAL-03-03"
+  ],
+  [
+    127100,
+    "DOMINO TILE VERTICAL-03-04"
+  ],
+  [
+    127101,
+    "DOMINO TILE VERTICAL-03-05"
+  ],
+  [
+    127102,
+    "DOMINO TILE VERTICAL-03-06"
+  ],
+  [
+    127103,
+    "DOMINO TILE VERTICAL-04-00"
+  ],
+  [
+    127104,
+    "DOMINO TILE VERTICAL-04-01"
+  ],
+  [
+    127105,
+    "DOMINO TILE VERTICAL-04-02"
+  ],
+  [
+    127106,
+    "DOMINO TILE VERTICAL-04-03"
+  ],
+  [
+    127107,
+    "DOMINO TILE VERTICAL-04-04"
+  ],
+  [
+    127108,
+    "DOMINO TILE VERTICAL-04-05"
+  ],
+  [
+    127109,
+    "DOMINO TILE VERTICAL-04-06"
+  ],
+  [
+    127110,
+    "DOMINO TILE VERTICAL-05-00"
+  ],
+  [
+    127111,
+    "DOMINO TILE VERTICAL-05-01"
+  ],
+  [
+    127112,
+    "DOMINO TILE VERTICAL-05-02"
+  ],
+  [
+    127113,
+    "DOMINO TILE VERTICAL-05-03"
+  ],
+  [
+    127114,
+    "DOMINO TILE VERTICAL-05-04"
+  ],
+  [
+    127115,
+    "DOMINO TILE VERTICAL-05-05"
+  ],
+  [
+    127116,
+    "DOMINO TILE VERTICAL-05-06"
+  ],
+  [
+    127117,
+    "DOMINO TILE VERTICAL-06-00"
+  ],
+  [
+    127118,
+    "DOMINO TILE VERTICAL-06-01"
+  ],
+  [
+    127119,
+    "DOMINO TILE VERTICAL-06-02"
+  ],
+  [
+    127120,
+    "DOMINO TILE VERTICAL-06-03"
+  ],
+  [
+    127121,
+    "DOMINO TILE VERTICAL-06-04"
+  ],
+  [
+    127122,
+    "DOMINO TILE VERTICAL-06-05"
+  ],
+  [
+    127123,
+    "DOMINO TILE VERTICAL-06-06"
+  ],
+  [
+    127136,
+    "PLAYING CARD BACK"
+  ],
+  [
+    127137,
+    "PLAYING CARD ACE OF SPADES"
+  ],
+  [
+    127138,
+    "PLAYING CARD TWO OF SPADES"
+  ],
+  [
+    127139,
+    "PLAYING CARD THREE OF SPADES"
+  ],
+  [
+    127140,
+    "PLAYING CARD FOUR OF SPADES"
+  ],
+  [
+    127141,
+    "PLAYING CARD FIVE OF SPADES"
+  ],
+  [
+    127142,
+    "PLAYING CARD SIX OF SPADES"
+  ],
+  [
+    127143,
+    "PLAYING CARD SEVEN OF SPADES"
+  ],
+  [
+    127144,
+    "PLAYING CARD EIGHT OF SPADES"
+  ],
+  [
+    127145,
+    "PLAYING CARD NINE OF SPADES"
+  ],
+  [
+    127146,
+    "PLAYING CARD TEN OF SPADES"
+  ],
+  [
+    127147,
+    "PLAYING CARD JACK OF SPADES"
+  ],
+  [
+    127148,
+    "PLAYING CARD KNIGHT OF SPADES"
+  ],
+  [
+    127149,
+    "PLAYING CARD QUEEN OF SPADES"
+  ],
+  [
+    127150,
+    "PLAYING CARD KING OF SPADES"
+  ],
+  [
+    127153,
+    "PLAYING CARD ACE OF HEARTS"
+  ],
+  [
+    127154,
+    "PLAYING CARD TWO OF HEARTS"
+  ],
+  [
+    127155,
+    "PLAYING CARD THREE OF HEARTS"
+  ],
+  [
+    127156,
+    "PLAYING CARD FOUR OF HEARTS"
+  ],
+  [
+    127157,
+    "PLAYING CARD FIVE OF HEARTS"
+  ],
+  [
+    127158,
+    "PLAYING CARD SIX OF HEARTS"
+  ],
+  [
+    127159,
+    "PLAYING CARD SEVEN OF HEARTS"
+  ],
+  [
+    127160,
+    "PLAYING CARD EIGHT OF HEARTS"
+  ],
+  [
+    127161,
+    "PLAYING CARD NINE OF HEARTS"
+  ],
+  [
+    127162,
+    "PLAYING CARD TEN OF HEARTS"
+  ],
+  [
+    127163,
+    "PLAYING CARD JACK OF HEARTS"
+  ],
+  [
+    127164,
+    "PLAYING CARD KNIGHT OF HEARTS"
+  ],
+  [
+    127165,
+    "PLAYING CARD QUEEN OF HEARTS"
+  ],
+  [
+    127166,
+    "PLAYING CARD KING OF HEARTS"
+  ],
+  [
+    127167,
+    "PLAYING CARD RED JOKER"
+  ],
+  [
+    127169,
+    "PLAYING CARD ACE OF DIAMONDS"
+  ],
+  [
+    127170,
+    "PLAYING CARD TWO OF DIAMONDS"
+  ],
+  [
+    127171,
+    "PLAYING CARD THREE OF DIAMONDS"
+  ],
+  [
+    127172,
+    "PLAYING CARD FOUR OF DIAMONDS"
+  ],
+  [
+    127173,
+    "PLAYING CARD FIVE OF DIAMONDS"
+  ],
+  [
+    127174,
+    "PLAYING CARD SIX OF DIAMONDS"
+  ],
+  [
+    127175,
+    "PLAYING CARD SEVEN OF DIAMONDS"
+  ],
+  [
+    127176,
+    "PLAYING CARD EIGHT OF DIAMONDS"
+  ],
+  [
+    127177,
+    "PLAYING CARD NINE OF DIAMONDS"
+  ],
+  [
+    127178,
+    "PLAYING CARD TEN OF DIAMONDS"
+  ],
+  [
+    127179,
+    "PLAYING CARD JACK OF DIAMONDS"
+  ],
+  [
+    127180,
+    "PLAYING CARD KNIGHT OF DIAMONDS"
+  ],
+  [
+    127181,
+    "PLAYING CARD QUEEN OF DIAMONDS"
+  ],
+  [
+    127182,
+    "PLAYING CARD KING OF DIAMONDS"
+  ],
+  [
+    127183,
+    "PLAYING CARD BLACK JOKER"
+  ],
+  [
+    127185,
+    "PLAYING CARD ACE OF CLUBS"
+  ],
+  [
+    127186,
+    "PLAYING CARD TWO OF CLUBS"
+  ],
+  [
+    127187,
+    "PLAYING CARD THREE OF CLUBS"
+  ],
+  [
+    127188,
+    "PLAYING CARD FOUR OF CLUBS"
+  ],
+  [
+    127189,
+    "PLAYING CARD FIVE OF CLUBS"
+  ],
+  [
+    127190,
+    "PLAYING CARD SIX OF CLUBS"
+  ],
+  [
+    127191,
+    "PLAYING CARD SEVEN OF CLUBS"
+  ],
+  [
+    127192,
+    "PLAYING CARD EIGHT OF CLUBS"
+  ],
+  [
+    127193,
+    "PLAYING CARD NINE OF CLUBS"
+  ],
+  [
+    127194,
+    "PLAYING CARD TEN OF CLUBS"
+  ],
+  [
+    127195,
+    "PLAYING CARD JACK OF CLUBS"
+  ],
+  [
+    127196,
+    "PLAYING CARD KNIGHT OF CLUBS"
+  ],
+  [
+    127197,
+    "PLAYING CARD QUEEN OF CLUBS"
+  ],
+  [
+    127198,
+    "PLAYING CARD KING OF CLUBS"
+  ],
+  [
+    127199,
+    "PLAYING CARD WHITE JOKER"
+  ],
+  [
+    127200,
+    "PLAYING CARD FOOL"
+  ],
+  [
+    127201,
+    "PLAYING CARD TRUMP-1"
+  ],
+  [
+    127202,
+    "PLAYING CARD TRUMP-2"
+  ],
+  [
+    127203,
+    "PLAYING CARD TRUMP-3"
+  ],
+  [
+    127204,
+    "PLAYING CARD TRUMP-4"
+  ],
+  [
+    127205,
+    "PLAYING CARD TRUMP-5"
+  ],
+  [
+    127206,
+    "PLAYING CARD TRUMP-6"
+  ],
+  [
+    127207,
+    "PLAYING CARD TRUMP-7"
+  ],
+  [
+    127208,
+    "PLAYING CARD TRUMP-8"
+  ],
+  [
+    127209,
+    "PLAYING CARD TRUMP-9"
+  ],
+  [
+    127210,
+    "PLAYING CARD TRUMP-10"
+  ],
+  [
+    127211,
+    "PLAYING CARD TRUMP-11"
+  ],
+  [
+    127212,
+    "PLAYING CARD TRUMP-12"
+  ],
+  [
+    127213,
+    "PLAYING CARD TRUMP-13"
+  ],
+  [
+    127214,
+    "PLAYING CARD TRUMP-14"
+  ],
+  [
+    127215,
+    "PLAYING CARD TRUMP-15"
+  ],
+  [
+    127216,
+    "PLAYING CARD TRUMP-16"
+  ],
+  [
+    127217,
+    "PLAYING CARD TRUMP-17"
+  ],
+  [
+    127218,
+    "PLAYING CARD TRUMP-18"
+  ],
+  [
+    127219,
+    "PLAYING CARD TRUMP-19"
+  ],
+  [
+    127220,
+    "PLAYING CARD TRUMP-20"
+  ],
+  [
+    127221,
+    "PLAYING CARD TRUMP-21"
+  ],
+  [
+    127232,
+    "DIGIT ZERO FULL STOP"
+  ],
+  [
+    127233,
+    "DIGIT ZERO COMMA"
+  ],
+  [
+    127234,
+    "DIGIT ONE COMMA"
+  ],
+  [
+    127235,
+    "DIGIT TWO COMMA"
+  ],
+  [
+    127236,
+    "DIGIT THREE COMMA"
+  ],
+  [
+    127237,
+    "DIGIT FOUR COMMA"
+  ],
+  [
+    127238,
+    "DIGIT FIVE COMMA"
+  ],
+  [
+    127239,
+    "DIGIT SIX COMMA"
+  ],
+  [
+    127240,
+    "DIGIT SEVEN COMMA"
+  ],
+  [
+    127241,
+    "DIGIT EIGHT COMMA"
+  ],
+  [
+    127242,
+    "DIGIT NINE COMMA"
+  ],
+  [
+    127243,
+    "DINGBAT CIRCLED SANS-SERIF DIGIT ZERO"
+  ],
+  [
+    127244,
+    "DINGBAT NEGATIVE CIRCLED SANS-SERIF DIGIT ZERO"
+  ],
+  [
+    127245,
+    "CIRCLED ZERO WITH SLASH"
+  ],
+  [
+    127246,
+    "CIRCLED ANTICLOCKWISE ARROW"
+  ],
+  [
+    127247,
+    "CIRCLED DOLLAR SIGN WITH OVERLAID BACKSLASH"
+  ],
+  [
+    127248,
+    "PARENTHESIZED LATIN CAPITAL LETTER A"
+  ],
+  [
+    127249,
+    "PARENTHESIZED LATIN CAPITAL LETTER B"
+  ],
+  [
+    127250,
+    "PARENTHESIZED LATIN CAPITAL LETTER C"
+  ],
+  [
+    127251,
+    "PARENTHESIZED LATIN CAPITAL LETTER D"
+  ],
+  [
+    127252,
+    "PARENTHESIZED LATIN CAPITAL LETTER E"
+  ],
+  [
+    127253,
+    "PARENTHESIZED LATIN CAPITAL LETTER F"
+  ],
+  [
+    127254,
+    "PARENTHESIZED LATIN CAPITAL LETTER G"
+  ],
+  [
+    127255,
+    "PARENTHESIZED LATIN CAPITAL LETTER H"
+  ],
+  [
+    127256,
+    "PARENTHESIZED LATIN CAPITAL LETTER I"
+  ],
+  [
+    127257,
+    "PARENTHESIZED LATIN CAPITAL LETTER J"
+  ],
+  [
+    127258,
+    "PARENTHESIZED LATIN CAPITAL LETTER K"
+  ],
+  [
+    127259,
+    "PARENTHESIZED LATIN CAPITAL LETTER L"
+  ],
+  [
+    127260,
+    "PARENTHESIZED LATIN CAPITAL LETTER M"
+  ],
+  [
+    127261,
+    "PARENTHESIZED LATIN CAPITAL LETTER N"
+  ],
+  [
+    127262,
+    "PARENTHESIZED LATIN CAPITAL LETTER O"
+  ],
+  [
+    127263,
+    "PARENTHESIZED LATIN CAPITAL LETTER P"
+  ],
+  [
+    127264,
+    "PARENTHESIZED LATIN CAPITAL LETTER Q"
+  ],
+  [
+    127265,
+    "PARENTHESIZED LATIN CAPITAL LETTER R"
+  ],
+  [
+    127266,
+    "PARENTHESIZED LATIN CAPITAL LETTER S"
+  ],
+  [
+    127267,
+    "PARENTHESIZED LATIN CAPITAL LETTER T"
+  ],
+  [
+    127268,
+    "PARENTHESIZED LATIN CAPITAL LETTER U"
+  ],
+  [
+    127269,
+    "PARENTHESIZED LATIN CAPITAL LETTER V"
+  ],
+  [
+    127270,
+    "PARENTHESIZED LATIN CAPITAL LETTER W"
+  ],
+  [
+    127271,
+    "PARENTHESIZED LATIN CAPITAL LETTER X"
+  ],
+  [
+    127272,
+    "PARENTHESIZED LATIN CAPITAL LETTER Y"
+  ],
+  [
+    127273,
+    "PARENTHESIZED LATIN CAPITAL LETTER Z"
+  ],
+  [
+    127274,
+    "TORTOISE SHELL BRACKETED LATIN CAPITAL LETTER S"
+  ],
+  [
+    127275,
+    "CIRCLED ITALIC LATIN CAPITAL LETTER C"
+  ],
+  [
+    127276,
+    "CIRCLED ITALIC LATIN CAPITAL LETTER R"
+  ],
+  [
+    127277,
+    "CIRCLED CD"
+  ],
+  [
+    127278,
+    "CIRCLED WZ"
+  ],
+  [
+    127279,
+    "COPYLEFT SYMBOL"
+  ],
+  [
+    127280,
+    "SQUARED LATIN CAPITAL LETTER A"
+  ],
+  [
+    127281,
+    "SQUARED LATIN CAPITAL LETTER B"
+  ],
+  [
+    127282,
+    "SQUARED LATIN CAPITAL LETTER C"
+  ],
+  [
+    127283,
+    "SQUARED LATIN CAPITAL LETTER D"
+  ],
+  [
+    127284,
+    "SQUARED LATIN CAPITAL LETTER E"
+  ],
+  [
+    127285,
+    "SQUARED LATIN CAPITAL LETTER F"
+  ],
+  [
+    127286,
+    "SQUARED LATIN CAPITAL LETTER G"
+  ],
+  [
+    127287,
+    "SQUARED LATIN CAPITAL LETTER H"
+  ],
+  [
+    127288,
+    "SQUARED LATIN CAPITAL LETTER I"
+  ],
+  [
+    127289,
+    "SQUARED LATIN CAPITAL LETTER J"
+  ],
+  [
+    127290,
+    "SQUARED LATIN CAPITAL LETTER K"
+  ],
+  [
+    127291,
+    "SQUARED LATIN CAPITAL LETTER L"
+  ],
+  [
+    127292,
+    "SQUARED LATIN CAPITAL LETTER M"
+  ],
+  [
+    127293,
+    "SQUARED LATIN CAPITAL LETTER N"
+  ],
+  [
+    127294,
+    "SQUARED LATIN CAPITAL LETTER O"
+  ],
+  [
+    127295,
+    "SQUARED LATIN CAPITAL LETTER P"
+  ],
+  [
+    127296,
+    "SQUARED LATIN CAPITAL LETTER Q"
+  ],
+  [
+    127297,
+    "SQUARED LATIN CAPITAL LETTER R"
+  ],
+  [
+    127298,
+    "SQUARED LATIN CAPITAL LETTER S"
+  ],
+  [
+    127299,
+    "SQUARED LATIN CAPITAL LETTER T"
+  ],
+  [
+    127300,
+    "SQUARED LATIN CAPITAL LETTER U"
+  ],
+  [
+    127301,
+    "SQUARED LATIN CAPITAL LETTER V"
+  ],
+  [
+    127302,
+    "SQUARED LATIN CAPITAL LETTER W"
+  ],
+  [
+    127303,
+    "SQUARED LATIN CAPITAL LETTER X"
+  ],
+  [
+    127304,
+    "SQUARED LATIN CAPITAL LETTER Y"
+  ],
+  [
+    127305,
+    "SQUARED LATIN CAPITAL LETTER Z"
+  ],
+  [
+    127306,
+    "SQUARED HV"
+  ],
+  [
+    127307,
+    "SQUARED MV"
+  ],
+  [
+    127308,
+    "SQUARED SD"
+  ],
+  [
+    127309,
+    "SQUARED SS"
+  ],
+  [
+    127310,
+    "SQUARED PPV"
+  ],
+  [
+    127311,
+    "SQUARED WC"
+  ],
+  [
+    127312,
+    "NEGATIVE CIRCLED LATIN CAPITAL LETTER A"
+  ],
+  [
+    127313,
+    "NEGATIVE CIRCLED LATIN CAPITAL LETTER B"
+  ],
+  [
+    127314,
+    "NEGATIVE CIRCLED LATIN CAPITAL LETTER C"
+  ],
+  [
+    127315,
+    "NEGATIVE CIRCLED LATIN CAPITAL LETTER D"
+  ],
+  [
+    127316,
+    "NEGATIVE CIRCLED LATIN CAPITAL LETTER E"
+  ],
+  [
+    127317,
+    "NEGATIVE CIRCLED LATIN CAPITAL LETTER F"
+  ],
+  [
+    127318,
+    "NEGATIVE CIRCLED LATIN CAPITAL LETTER G"
+  ],
+  [
+    127319,
+    "NEGATIVE CIRCLED LATIN CAPITAL LETTER H"
+  ],
+  [
+    127320,
+    "NEGATIVE CIRCLED LATIN CAPITAL LETTER I"
+  ],
+  [
+    127321,
+    "NEGATIVE CIRCLED LATIN CAPITAL LETTER J"
+  ],
+  [
+    127322,
+    "NEGATIVE CIRCLED LATIN CAPITAL LETTER K"
+  ],
+  [
+    127323,
+    "NEGATIVE CIRCLED LATIN CAPITAL LETTER L"
+  ],
+  [
+    127324,
+    "NEGATIVE CIRCLED LATIN CAPITAL LETTER M"
+  ],
+  [
+    127325,
+    "NEGATIVE CIRCLED LATIN CAPITAL LETTER N"
+  ],
+  [
+    127326,
+    "NEGATIVE CIRCLED LATIN CAPITAL LETTER O"
+  ],
+  [
+    127327,
+    "NEGATIVE CIRCLED LATIN CAPITAL LETTER P"
+  ],
+  [
+    127328,
+    "NEGATIVE CIRCLED LATIN CAPITAL LETTER Q"
+  ],
+  [
+    127329,
+    "NEGATIVE CIRCLED LATIN CAPITAL LETTER R"
+  ],
+  [
+    127330,
+    "NEGATIVE CIRCLED LATIN CAPITAL LETTER S"
+  ],
+  [
+    127331,
+    "NEGATIVE CIRCLED LATIN CAPITAL LETTER T"
+  ],
+  [
+    127332,
+    "NEGATIVE CIRCLED LATIN CAPITAL LETTER U"
+  ],
+  [
+    127333,
+    "NEGATIVE CIRCLED LATIN CAPITAL LETTER V"
+  ],
+  [
+    127334,
+    "NEGATIVE CIRCLED LATIN CAPITAL LETTER W"
+  ],
+  [
+    127335,
+    "NEGATIVE CIRCLED LATIN CAPITAL LETTER X"
+  ],
+  [
+    127336,
+    "NEGATIVE CIRCLED LATIN CAPITAL LETTER Y"
+  ],
+  [
+    127337,
+    "NEGATIVE CIRCLED LATIN CAPITAL LETTER Z"
+  ],
+  [
+    127338,
+    "RAISED MC SIGN"
+  ],
+  [
+    127339,
+    "RAISED MD SIGN"
+  ],
+  [
+    127340,
+    "RAISED MR SIGN"
+  ],
+  [
+    127341,
+    "CIRCLED CC"
+  ],
+  [
+    127342,
+    "CIRCLED C WITH OVERLAID BACKSLASH"
+  ],
+  [
+    127343,
+    "CIRCLED HUMAN FIGURE"
+  ],
+  [
+    127344,
+    "NEGATIVE SQUARED LATIN CAPITAL LETTER A"
+  ],
+  [
+    127345,
+    "NEGATIVE SQUARED LATIN CAPITAL LETTER B"
+  ],
+  [
+    127346,
+    "NEGATIVE SQUARED LATIN CAPITAL LETTER C"
+  ],
+  [
+    127347,
+    "NEGATIVE SQUARED LATIN CAPITAL LETTER D"
+  ],
+  [
+    127348,
+    "NEGATIVE SQUARED LATIN CAPITAL LETTER E"
+  ],
+  [
+    127349,
+    "NEGATIVE SQUARED LATIN CAPITAL LETTER F"
+  ],
+  [
+    127350,
+    "NEGATIVE SQUARED LATIN CAPITAL LETTER G"
+  ],
+  [
+    127351,
+    "NEGATIVE SQUARED LATIN CAPITAL LETTER H"
+  ],
+  [
+    127352,
+    "NEGATIVE SQUARED LATIN CAPITAL LETTER I"
+  ],
+  [
+    127353,
+    "NEGATIVE SQUARED LATIN CAPITAL LETTER J"
+  ],
+  [
+    127354,
+    "NEGATIVE SQUARED LATIN CAPITAL LETTER K"
+  ],
+  [
+    127355,
+    "NEGATIVE SQUARED LATIN CAPITAL LETTER L"
+  ],
+  [
+    127356,
+    "NEGATIVE SQUARED LATIN CAPITAL LETTER M"
+  ],
+  [
+    127357,
+    "NEGATIVE SQUARED LATIN CAPITAL LETTER N"
+  ],
+  [
+    127358,
+    "NEGATIVE SQUARED LATIN CAPITAL LETTER O"
+  ],
+  [
+    127359,
+    "NEGATIVE SQUARED LATIN CAPITAL LETTER P"
+  ],
+  [
+    127360,
+    "NEGATIVE SQUARED LATIN CAPITAL LETTER Q"
+  ],
+  [
+    127361,
+    "NEGATIVE SQUARED LATIN CAPITAL LETTER R"
+  ],
+  [
+    127362,
+    "NEGATIVE SQUARED LATIN CAPITAL LETTER S"
+  ],
+  [
+    127363,
+    "NEGATIVE SQUARED LATIN CAPITAL LETTER T"
+  ],
+  [
+    127364,
+    "NEGATIVE SQUARED LATIN CAPITAL LETTER U"
+  ],
+  [
+    127365,
+    "NEGATIVE SQUARED LATIN CAPITAL LETTER V"
+  ],
+  [
+    127366,
+    "NEGATIVE SQUARED LATIN CAPITAL LETTER W"
+  ],
+  [
+    127367,
+    "NEGATIVE SQUARED LATIN CAPITAL LETTER X"
+  ],
+  [
+    127368,
+    "NEGATIVE SQUARED LATIN CAPITAL LETTER Y"
+  ],
+  [
+    127369,
+    "NEGATIVE SQUARED LATIN CAPITAL LETTER Z"
+  ],
+  [
+    127370,
+    "CROSSED NEGATIVE SQUARED LATIN CAPITAL LETTER P"
+  ],
+  [
+    127371,
+    "NEGATIVE SQUARED IC"
+  ],
+  [
+    127372,
+    "NEGATIVE SQUARED PA"
+  ],
+  [
+    127373,
+    "NEGATIVE SQUARED SA"
+  ],
+  [
+    127374,
+    "NEGATIVE SQUARED AB"
+  ],
+  [
+    127375,
+    "NEGATIVE SQUARED WC"
+  ],
+  [
+    127376,
+    "SQUARE DJ"
+  ],
+  [
+    127377,
+    "SQUARED CL"
+  ],
+  [
+    127378,
+    "SQUARED COOL"
+  ],
+  [
+    127379,
+    "SQUARED FREE"
+  ],
+  [
+    127380,
+    "SQUARED ID"
+  ],
+  [
+    127381,
+    "SQUARED NEW"
+  ],
+  [
+    127382,
+    "SQUARED NG"
+  ],
+  [
+    127383,
+    "SQUARED OK"
+  ],
+  [
+    127384,
+    "SQUARED SOS"
+  ],
+  [
+    127385,
+    "SQUARED UP WITH EXCLAMATION MARK"
+  ],
+  [
+    127386,
+    "SQUARED VS"
+  ],
+  [
+    127387,
+    "SQUARED THREE D"
+  ],
+  [
+    127388,
+    "SQUARED SECOND SCREEN"
+  ],
+  [
+    127389,
+    "SQUARED TWO K"
+  ],
+  [
+    127390,
+    "SQUARED FOUR K"
+  ],
+  [
+    127391,
+    "SQUARED EIGHT K"
+  ],
+  [
+    127392,
+    "SQUARED FIVE POINT ONE"
+  ],
+  [
+    127393,
+    "SQUARED SEVEN POINT ONE"
+  ],
+  [
+    127394,
+    "SQUARED TWENTY-TWO POINT TWO"
+  ],
+  [
+    127395,
+    "SQUARED SIXTY P"
+  ],
+  [
+    127396,
+    "SQUARED ONE HUNDRED TWENTY P"
+  ],
+  [
+    127397,
+    "SQUARED LATIN SMALL LETTER D"
+  ],
+  [
+    127398,
+    "SQUARED HC"
+  ],
+  [
+    127399,
+    "SQUARED HDR"
+  ],
+  [
+    127400,
+    "SQUARED HI-RES"
+  ],
+  [
+    127401,
+    "SQUARED LOSSLESS"
+  ],
+  [
+    127402,
+    "SQUARED SHV"
+  ],
+  [
+    127403,
+    "SQUARED UHD"
+  ],
+  [
+    127404,
+    "SQUARED VOD"
+  ],
+  [
+    127405,
+    "MASK WORK SYMBOL"
+  ],
+  [
+    127462,
+    "REGIONAL INDICATOR SYMBOL LETTER A"
+  ],
+  [
+    127463,
+    "REGIONAL INDICATOR SYMBOL LETTER B"
+  ],
+  [
+    127464,
+    "REGIONAL INDICATOR SYMBOL LETTER C"
+  ],
+  [
+    127465,
+    "REGIONAL INDICATOR SYMBOL LETTER D"
+  ],
+  [
+    127466,
+    "REGIONAL INDICATOR SYMBOL LETTER E"
+  ],
+  [
+    127467,
+    "REGIONAL INDICATOR SYMBOL LETTER F"
+  ],
+  [
+    127468,
+    "REGIONAL INDICATOR SYMBOL LETTER G"
+  ],
+  [
+    127469,
+    "REGIONAL INDICATOR SYMBOL LETTER H"
+  ],
+  [
+    127470,
+    "REGIONAL INDICATOR SYMBOL LETTER I"
+  ],
+  [
+    127471,
+    "REGIONAL INDICATOR SYMBOL LETTER J"
+  ],
+  [
+    127472,
+    "REGIONAL INDICATOR SYMBOL LETTER K"
+  ],
+  [
+    127473,
+    "REGIONAL INDICATOR SYMBOL LETTER L"
+  ],
+  [
+    127474,
+    "REGIONAL INDICATOR SYMBOL LETTER M"
+  ],
+  [
+    127475,
+    "REGIONAL INDICATOR SYMBOL LETTER N"
+  ],
+  [
+    127476,
+    "REGIONAL INDICATOR SYMBOL LETTER O"
+  ],
+  [
+    127477,
+    "REGIONAL INDICATOR SYMBOL LETTER P"
+  ],
+  [
+    127478,
+    "REGIONAL INDICATOR SYMBOL LETTER Q"
+  ],
+  [
+    127479,
+    "REGIONAL INDICATOR SYMBOL LETTER R"
+  ],
+  [
+    127480,
+    "REGIONAL INDICATOR SYMBOL LETTER S"
+  ],
+  [
+    127481,
+    "REGIONAL INDICATOR SYMBOL LETTER T"
+  ],
+  [
+    127482,
+    "REGIONAL INDICATOR SYMBOL LETTER U"
+  ],
+  [
+    127483,
+    "REGIONAL INDICATOR SYMBOL LETTER V"
+  ],
+  [
+    127484,
+    "REGIONAL INDICATOR SYMBOL LETTER W"
+  ],
+  [
+    127485,
+    "REGIONAL INDICATOR SYMBOL LETTER X"
+  ],
+  [
+    127486,
+    "REGIONAL INDICATOR SYMBOL LETTER Y"
+  ],
+  [
+    127487,
+    "REGIONAL INDICATOR SYMBOL LETTER Z"
+  ],
+  [
+    127488,
+    "SQUARE HIRAGANA HOKA"
+  ],
+  [
+    127489,
+    "SQUARED KATAKANA KOKO"
+  ],
+  [
+    127490,
+    "SQUARED KATAKANA SA"
+  ],
+  [
+    127504,
+    "SQUARED CJK UNIFIED IDEOGRAPH-624B"
+  ],
+  [
+    127505,
+    "SQUARED CJK UNIFIED IDEOGRAPH-5B57"
+  ],
+  [
+    127506,
+    "SQUARED CJK UNIFIED IDEOGRAPH-53CC"
+  ],
+  [
+    127507,
+    "SQUARED KATAKANA DE"
+  ],
+  [
+    127508,
+    "SQUARED CJK UNIFIED IDEOGRAPH-4E8C"
+  ],
+  [
+    127509,
+    "SQUARED CJK UNIFIED IDEOGRAPH-591A"
+  ],
+  [
+    127510,
+    "SQUARED CJK UNIFIED IDEOGRAPH-89E3"
+  ],
+  [
+    127511,
+    "SQUARED CJK UNIFIED IDEOGRAPH-5929"
+  ],
+  [
+    127512,
+    "SQUARED CJK UNIFIED IDEOGRAPH-4EA4"
+  ],
+  [
+    127513,
+    "SQUARED CJK UNIFIED IDEOGRAPH-6620"
+  ],
+  [
+    127514,
+    "SQUARED CJK UNIFIED IDEOGRAPH-7121"
+  ],
+  [
+    127515,
+    "SQUARED CJK UNIFIED IDEOGRAPH-6599"
+  ],
+  [
+    127516,
+    "SQUARED CJK UNIFIED IDEOGRAPH-524D"
+  ],
+  [
+    127517,
+    "SQUARED CJK UNIFIED IDEOGRAPH-5F8C"
+  ],
+  [
+    127518,
+    "SQUARED CJK UNIFIED IDEOGRAPH-518D"
+  ],
+  [
+    127519,
+    "SQUARED CJK UNIFIED IDEOGRAPH-65B0"
+  ],
+  [
+    127520,
+    "SQUARED CJK UNIFIED IDEOGRAPH-521D"
+  ],
+  [
+    127521,
+    "SQUARED CJK UNIFIED IDEOGRAPH-7D42"
+  ],
+  [
+    127522,
+    "SQUARED CJK UNIFIED IDEOGRAPH-751F"
+  ],
+  [
+    127523,
+    "SQUARED CJK UNIFIED IDEOGRAPH-8CA9"
+  ],
+  [
+    127524,
+    "SQUARED CJK UNIFIED IDEOGRAPH-58F0"
+  ],
+  [
+    127525,
+    "SQUARED CJK UNIFIED IDEOGRAPH-5439"
+  ],
+  [
+    127526,
+    "SQUARED CJK UNIFIED IDEOGRAPH-6F14"
+  ],
+  [
+    127527,
+    "SQUARED CJK UNIFIED IDEOGRAPH-6295"
+  ],
+  [
+    127528,
+    "SQUARED CJK UNIFIED IDEOGRAPH-6355"
+  ],
+  [
+    127529,
+    "SQUARED CJK UNIFIED IDEOGRAPH-4E00"
+  ],
+  [
+    127530,
+    "SQUARED CJK UNIFIED IDEOGRAPH-4E09"
+  ],
+  [
+    127531,
+    "SQUARED CJK UNIFIED IDEOGRAPH-904A"
+  ],
+  [
+    127532,
+    "SQUARED CJK UNIFIED IDEOGRAPH-5DE6"
+  ],
+  [
+    127533,
+    "SQUARED CJK UNIFIED IDEOGRAPH-4E2D"
+  ],
+  [
+    127534,
+    "SQUARED CJK UNIFIED IDEOGRAPH-53F3"
+  ],
+  [
+    127535,
+    "SQUARED CJK UNIFIED IDEOGRAPH-6307"
+  ],
+  [
+    127536,
+    "SQUARED CJK UNIFIED IDEOGRAPH-8D70"
+  ],
+  [
+    127537,
+    "SQUARED CJK UNIFIED IDEOGRAPH-6253"
+  ],
+  [
+    127538,
+    "SQUARED CJK UNIFIED IDEOGRAPH-7981"
+  ],
+  [
+    127539,
+    "SQUARED CJK UNIFIED IDEOGRAPH-7A7A"
+  ],
+  [
+    127540,
+    "SQUARED CJK UNIFIED IDEOGRAPH-5408"
+  ],
+  [
+    127541,
+    "SQUARED CJK UNIFIED IDEOGRAPH-6E80"
+  ],
+  [
+    127542,
+    "SQUARED CJK UNIFIED IDEOGRAPH-6709"
+  ],
+  [
+    127543,
+    "SQUARED CJK UNIFIED IDEOGRAPH-6708"
+  ],
+  [
+    127544,
+    "SQUARED CJK UNIFIED IDEOGRAPH-7533"
+  ],
+  [
+    127545,
+    "SQUARED CJK UNIFIED IDEOGRAPH-5272"
+  ],
+  [
+    127546,
+    "SQUARED CJK UNIFIED IDEOGRAPH-55B6"
+  ],
+  [
+    127547,
+    "SQUARED CJK UNIFIED IDEOGRAPH-914D"
+  ],
+  [
+    127552,
+    "TORTOISE SHELL BRACKETED CJK UNIFIED IDEOGRAPH-672C"
+  ],
+  [
+    127553,
+    "TORTOISE SHELL BRACKETED CJK UNIFIED IDEOGRAPH-4E09"
+  ],
+  [
+    127554,
+    "TORTOISE SHELL BRACKETED CJK UNIFIED IDEOGRAPH-4E8C"
+  ],
+  [
+    127555,
+    "TORTOISE SHELL BRACKETED CJK UNIFIED IDEOGRAPH-5B89"
+  ],
+  [
+    127556,
+    "TORTOISE SHELL BRACKETED CJK UNIFIED IDEOGRAPH-70B9"
+  ],
+  [
+    127557,
+    "TORTOISE SHELL BRACKETED CJK UNIFIED IDEOGRAPH-6253"
+  ],
+  [
+    127558,
+    "TORTOISE SHELL BRACKETED CJK UNIFIED IDEOGRAPH-76D7"
+  ],
+  [
+    127559,
+    "TORTOISE SHELL BRACKETED CJK UNIFIED IDEOGRAPH-52DD"
+  ],
+  [
+    127560,
+    "TORTOISE SHELL BRACKETED CJK UNIFIED IDEOGRAPH-6557"
+  ],
+  [
+    127568,
+    "CIRCLED IDEOGRAPH ADVANTAGE"
+  ],
+  [
+    127569,
+    "CIRCLED IDEOGRAPH ACCEPT"
+  ],
+  [
+    127584,
+    "ROUNDED SYMBOL FOR FU"
+  ],
+  [
+    127585,
+    "ROUNDED SYMBOL FOR LU"
+  ],
+  [
+    127586,
+    "ROUNDED SYMBOL FOR SHOU"
+  ],
+  [
+    127587,
+    "ROUNDED SYMBOL FOR XI"
+  ],
+  [
+    127588,
+    "ROUNDED SYMBOL FOR SHUANGXI"
+  ],
+  [
+    127589,
+    "ROUNDED SYMBOL FOR CAI"
+  ],
+  [
+    127744,
+    "CYCLONE"
+  ],
+  [
+    127745,
+    "FOGGY"
+  ],
+  [
+    127746,
+    "CLOSED UMBRELLA"
+  ],
+  [
+    127747,
+    "NIGHT WITH STARS"
+  ],
+  [
+    127748,
+    "SUNRISE OVER MOUNTAINS"
+  ],
+  [
+    127749,
+    "SUNRISE"
+  ],
+  [
+    127750,
+    "CITYSCAPE AT DUSK"
+  ],
+  [
+    127751,
+    "SUNSET OVER BUILDINGS"
+  ],
+  [
+    127752,
+    "RAINBOW"
+  ],
+  [
+    127753,
+    "BRIDGE AT NIGHT"
+  ],
+  [
+    127754,
+    "WATER WAVE"
+  ],
+  [
+    127755,
+    "VOLCANO"
+  ],
+  [
+    127756,
+    "MILKY WAY"
+  ],
+  [
+    127757,
+    "EARTH GLOBE EUROPE-AFRICA"
+  ],
+  [
+    127758,
+    "EARTH GLOBE AMERICAS"
+  ],
+  [
+    127759,
+    "EARTH GLOBE ASIA-AUSTRALIA"
+  ],
+  [
+    127760,
+    "GLOBE WITH MERIDIANS"
+  ],
+  [
+    127761,
+    "NEW MOON SYMBOL"
+  ],
+  [
+    127762,
+    "WAXING CRESCENT MOON SYMBOL"
+  ],
+  [
+    127763,
+    "FIRST QUARTER MOON SYMBOL"
+  ],
+  [
+    127764,
+    "WAXING GIBBOUS MOON SYMBOL"
+  ],
+  [
+    127765,
+    "FULL MOON SYMBOL"
+  ],
+  [
+    127766,
+    "WANING GIBBOUS MOON SYMBOL"
+  ],
+  [
+    127767,
+    "LAST QUARTER MOON SYMBOL"
+  ],
+  [
+    127768,
+    "WANING CRESCENT MOON SYMBOL"
+  ],
+  [
+    127769,
+    "CRESCENT MOON"
+  ],
+  [
+    127770,
+    "NEW MOON WITH FACE"
+  ],
+  [
+    127771,
+    "FIRST QUARTER MOON WITH FACE"
+  ],
+  [
+    127772,
+    "LAST QUARTER MOON WITH FACE"
+  ],
+  [
+    127773,
+    "FULL MOON WITH FACE"
+  ],
+  [
+    127774,
+    "SUN WITH FACE"
+  ],
+  [
+    127775,
+    "GLOWING STAR"
+  ],
+  [
+    127776,
+    "SHOOTING STAR"
+  ],
+  [
+    127777,
+    "THERMOMETER"
+  ],
+  [
+    127778,
+    "BLACK DROPLET"
+  ],
+  [
+    127779,
+    "WHITE SUN"
+  ],
+  [
+    127780,
+    "WHITE SUN WITH SMALL CLOUD"
+  ],
+  [
+    127781,
+    "WHITE SUN BEHIND CLOUD"
+  ],
+  [
+    127782,
+    "WHITE SUN BEHIND CLOUD WITH RAIN"
+  ],
+  [
+    127783,
+    "CLOUD WITH RAIN"
+  ],
+  [
+    127784,
+    "CLOUD WITH SNOW"
+  ],
+  [
+    127785,
+    "CLOUD WITH LIGHTNING"
+  ],
+  [
+    127786,
+    "CLOUD WITH TORNADO"
+  ],
+  [
+    127787,
+    "FOG"
+  ],
+  [
+    127788,
+    "WIND BLOWING FACE"
+  ],
+  [
+    127789,
+    "HOT DOG"
+  ],
+  [
+    127790,
+    "TACO"
+  ],
+  [
+    127791,
+    "BURRITO"
+  ],
+  [
+    127792,
+    "CHESTNUT"
+  ],
+  [
+    127793,
+    "SEEDLING"
+  ],
+  [
+    127794,
+    "EVERGREEN TREE"
+  ],
+  [
+    127795,
+    "DECIDUOUS TREE"
+  ],
+  [
+    127796,
+    "PALM TREE"
+  ],
+  [
+    127797,
+    "CACTUS"
+  ],
+  [
+    127798,
+    "HOT PEPPER"
+  ],
+  [
+    127799,
+    "TULIP"
+  ],
+  [
+    127800,
+    "CHERRY BLOSSOM"
+  ],
+  [
+    127801,
+    "ROSE"
+  ],
+  [
+    127802,
+    "HIBISCUS"
+  ],
+  [
+    127803,
+    "SUNFLOWER"
+  ],
+  [
+    127804,
+    "BLOSSOM"
+  ],
+  [
+    127805,
+    "EAR OF MAIZE"
+  ],
+  [
+    127806,
+    "EAR OF RICE"
+  ],
+  [
+    127807,
+    "HERB"
+  ],
+  [
+    127808,
+    "FOUR LEAF CLOVER"
+  ],
+  [
+    127809,
+    "MAPLE LEAF"
+  ],
+  [
+    127810,
+    "FALLEN LEAF"
+  ],
+  [
+    127811,
+    "LEAF FLUTTERING IN WIND"
+  ],
+  [
+    127812,
+    "MUSHROOM"
+  ],
+  [
+    127813,
+    "TOMATO"
+  ],
+  [
+    127814,
+    "AUBERGINE"
+  ],
+  [
+    127815,
+    "GRAPES"
+  ],
+  [
+    127816,
+    "MELON"
+  ],
+  [
+    127817,
+    "WATERMELON"
+  ],
+  [
+    127818,
+    "TANGERINE"
+  ],
+  [
+    127819,
+    "LEMON"
+  ],
+  [
+    127820,
+    "BANANA"
+  ],
+  [
+    127821,
+    "PINEAPPLE"
+  ],
+  [
+    127822,
+    "RED APPLE"
+  ],
+  [
+    127823,
+    "GREEN APPLE"
+  ],
+  [
+    127824,
+    "PEAR"
+  ],
+  [
+    127825,
+    "PEACH"
+  ],
+  [
+    127826,
+    "CHERRIES"
+  ],
+  [
+    127827,
+    "STRAWBERRY"
+  ],
+  [
+    127828,
+    "HAMBURGER"
+  ],
+  [
+    127829,
+    "SLICE OF PIZZA"
+  ],
+  [
+    127830,
+    "MEAT ON BONE"
+  ],
+  [
+    127831,
+    "POULTRY LEG"
+  ],
+  [
+    127832,
+    "RICE CRACKER"
+  ],
+  [
+    127833,
+    "RICE BALL"
+  ],
+  [
+    127834,
+    "COOKED RICE"
+  ],
+  [
+    127835,
+    "CURRY AND RICE"
+  ],
+  [
+    127836,
+    "STEAMING BOWL"
+  ],
+  [
+    127837,
+    "SPAGHETTI"
+  ],
+  [
+    127838,
+    "BREAD"
+  ],
+  [
+    127839,
+    "FRENCH FRIES"
+  ],
+  [
+    127840,
+    "ROASTED SWEET POTATO"
+  ],
+  [
+    127841,
+    "DANGO"
+  ],
+  [
+    127842,
+    "ODEN"
+  ],
+  [
+    127843,
+    "SUSHI"
+  ],
+  [
+    127844,
+    "FRIED SHRIMP"
+  ],
+  [
+    127845,
+    "FISH CAKE WITH SWIRL DESIGN"
+  ],
+  [
+    127846,
+    "SOFT ICE CREAM"
+  ],
+  [
+    127847,
+    "SHAVED ICE"
+  ],
+  [
+    127848,
+    "ICE CREAM"
+  ],
+  [
+    127849,
+    "DOUGHNUT"
+  ],
+  [
+    127850,
+    "COOKIE"
+  ],
+  [
+    127851,
+    "CHOCOLATE BAR"
+  ],
+  [
+    127852,
+    "CANDY"
+  ],
+  [
+    127853,
+    "LOLLIPOP"
+  ],
+  [
+    127854,
+    "CUSTARD"
+  ],
+  [
+    127855,
+    "HONEY POT"
+  ],
+  [
+    127856,
+    "SHORTCAKE"
+  ],
+  [
+    127857,
+    "BENTO BOX"
+  ],
+  [
+    127858,
+    "POT OF FOOD"
+  ],
+  [
+    127859,
+    "COOKING"
+  ],
+  [
+    127860,
+    "FORK AND KNIFE"
+  ],
+  [
+    127861,
+    "TEACUP WITHOUT HANDLE"
+  ],
+  [
+    127862,
+    "SAKE BOTTLE AND CUP"
+  ],
+  [
+    127863,
+    "WINE GLASS"
+  ],
+  [
+    127864,
+    "COCKTAIL GLASS"
+  ],
+  [
+    127865,
+    "TROPICAL DRINK"
+  ],
+  [
+    127866,
+    "BEER MUG"
+  ],
+  [
+    127867,
+    "CLINKING BEER MUGS"
+  ],
+  [
+    127868,
+    "BABY BOTTLE"
+  ],
+  [
+    127869,
+    "FORK AND KNIFE WITH PLATE"
+  ],
+  [
+    127870,
+    "BOTTLE WITH POPPING CORK"
+  ],
+  [
+    127871,
+    "POPCORN"
+  ],
+  [
+    127872,
+    "RIBBON"
+  ],
+  [
+    127873,
+    "WRAPPED PRESENT"
+  ],
+  [
+    127874,
+    "BIRTHDAY CAKE"
+  ],
+  [
+    127875,
+    "JACK-O-LANTERN"
+  ],
+  [
+    127876,
+    "CHRISTMAS TREE"
+  ],
+  [
+    127877,
+    "FATHER CHRISTMAS"
+  ],
+  [
+    127878,
+    "FIREWORKS"
+  ],
+  [
+    127879,
+    "FIREWORK SPARKLER"
+  ],
+  [
+    127880,
+    "BALLOON"
+  ],
+  [
+    127881,
+    "PARTY POPPER"
+  ],
+  [
+    127882,
+    "CONFETTI BALL"
+  ],
+  [
+    127883,
+    "TANABATA TREE"
+  ],
+  [
+    127884,
+    "CROSSED FLAGS"
+  ],
+  [
+    127885,
+    "PINE DECORATION"
+  ],
+  [
+    127886,
+    "JAPANESE DOLLS"
+  ],
+  [
+    127887,
+    "CARP STREAMER"
+  ],
+  [
+    127888,
+    "WIND CHIME"
+  ],
+  [
+    127889,
+    "MOON VIEWING CEREMONY"
+  ],
+  [
+    127890,
+    "SCHOOL SATCHEL"
+  ],
+  [
+    127891,
+    "GRADUATION CAP"
+  ],
+  [
+    127892,
+    "HEART WITH TIP ON THE LEFT"
+  ],
+  [
+    127893,
+    "BOUQUET OF FLOWERS"
+  ],
+  [
+    127894,
+    "MILITARY MEDAL"
+  ],
+  [
+    127895,
+    "REMINDER RIBBON"
+  ],
+  [
+    127896,
+    "MUSICAL KEYBOARD WITH JACKS"
+  ],
+  [
+    127897,
+    "STUDIO MICROPHONE"
+  ],
+  [
+    127898,
+    "LEVEL SLIDER"
+  ],
+  [
+    127899,
+    "CONTROL KNOBS"
+  ],
+  [
+    127900,
+    "BEAMED ASCENDING MUSICAL NOTES"
+  ],
+  [
+    127901,
+    "BEAMED DESCENDING MUSICAL NOTES"
+  ],
+  [
+    127902,
+    "FILM FRAMES"
+  ],
+  [
+    127903,
+    "ADMISSION TICKETS"
+  ],
+  [
+    127904,
+    "CAROUSEL HORSE"
+  ],
+  [
+    127905,
+    "FERRIS WHEEL"
+  ],
+  [
+    127906,
+    "ROLLER COASTER"
+  ],
+  [
+    127907,
+    "FISHING POLE AND FISH"
+  ],
+  [
+    127908,
+    "MICROPHONE"
+  ],
+  [
+    127909,
+    "MOVIE CAMERA"
+  ],
+  [
+    127910,
+    "CINEMA"
+  ],
+  [
+    127911,
+    "HEADPHONE"
+  ],
+  [
+    127912,
+    "ARTIST PALETTE"
+  ],
+  [
+    127913,
+    "TOP HAT"
+  ],
+  [
+    127914,
+    "CIRCUS TENT"
+  ],
+  [
+    127915,
+    "TICKET"
+  ],
+  [
+    127916,
+    "CLAPPER BOARD"
+  ],
+  [
+    127917,
+    "PERFORMING ARTS"
+  ],
+  [
+    127918,
+    "VIDEO GAME"
+  ],
+  [
+    127919,
+    "DIRECT HIT"
+  ],
+  [
+    127920,
+    "SLOT MACHINE"
+  ],
+  [
+    127921,
+    "BILLIARDS"
+  ],
+  [
+    127922,
+    "GAME DIE"
+  ],
+  [
+    127923,
+    "BOWLING"
+  ],
+  [
+    127924,
+    "FLOWER PLAYING CARDS"
+  ],
+  [
+    127925,
+    "MUSICAL NOTE"
+  ],
+  [
+    127926,
+    "MULTIPLE MUSICAL NOTES"
+  ],
+  [
+    127927,
+    "SAXOPHONE"
+  ],
+  [
+    127928,
+    "GUITAR"
+  ],
+  [
+    127929,
+    "MUSICAL KEYBOARD"
+  ],
+  [
+    127930,
+    "TRUMPET"
+  ],
+  [
+    127931,
+    "VIOLIN"
+  ],
+  [
+    127932,
+    "MUSICAL SCORE"
+  ],
+  [
+    127933,
+    "RUNNING SHIRT WITH SASH"
+  ],
+  [
+    127934,
+    "TENNIS RACQUET AND BALL"
+  ],
+  [
+    127935,
+    "SKI AND SKI BOOT"
+  ],
+  [
+    127936,
+    "BASKETBALL AND HOOP"
+  ],
+  [
+    127937,
+    "CHEQUERED FLAG"
+  ],
+  [
+    127938,
+    "SNOWBOARDER"
+  ],
+  [
+    127939,
+    "RUNNER"
+  ],
+  [
+    127940,
+    "SURFER"
+  ],
+  [
+    127941,
+    "SPORTS MEDAL"
+  ],
+  [
+    127942,
+    "TROPHY"
+  ],
+  [
+    127943,
+    "HORSE RACING"
+  ],
+  [
+    127944,
+    "AMERICAN FOOTBALL"
+  ],
+  [
+    127945,
+    "RUGBY FOOTBALL"
+  ],
+  [
+    127946,
+    "SWIMMER"
+  ],
+  [
+    127947,
+    "WEIGHT LIFTER"
+  ],
+  [
+    127948,
+    "GOLFER"
+  ],
+  [
+    127949,
+    "RACING MOTORCYCLE"
+  ],
+  [
+    127950,
+    "RACING CAR"
+  ],
+  [
+    127951,
+    "CRICKET BAT AND BALL"
+  ],
+  [
+    127952,
+    "VOLLEYBALL"
+  ],
+  [
+    127953,
+    "FIELD HOCKEY STICK AND BALL"
+  ],
+  [
+    127954,
+    "ICE HOCKEY STICK AND PUCK"
+  ],
+  [
+    127955,
+    "TABLE TENNIS PADDLE AND BALL"
+  ],
+  [
+    127956,
+    "SNOW CAPPED MOUNTAIN"
+  ],
+  [
+    127957,
+    "CAMPING"
+  ],
+  [
+    127958,
+    "BEACH WITH UMBRELLA"
+  ],
+  [
+    127959,
+    "BUILDING CONSTRUCTION"
+  ],
+  [
+    127960,
+    "HOUSE BUILDINGS"
+  ],
+  [
+    127961,
+    "CITYSCAPE"
+  ],
+  [
+    127962,
+    "DERELICT HOUSE BUILDING"
+  ],
+  [
+    127963,
+    "CLASSICAL BUILDING"
+  ],
+  [
+    127964,
+    "DESERT"
+  ],
+  [
+    127965,
+    "DESERT ISLAND"
+  ],
+  [
+    127966,
+    "NATIONAL PARK"
+  ],
+  [
+    127967,
+    "STADIUM"
+  ],
+  [
+    127968,
+    "HOUSE BUILDING"
+  ],
+  [
+    127969,
+    "HOUSE WITH GARDEN"
+  ],
+  [
+    127970,
+    "OFFICE BUILDING"
+  ],
+  [
+    127971,
+    "JAPANESE POST OFFICE"
+  ],
+  [
+    127972,
+    "EUROPEAN POST OFFICE"
+  ],
+  [
+    127973,
+    "HOSPITAL"
+  ],
+  [
+    127974,
+    "BANK"
+  ],
+  [
+    127975,
+    "AUTOMATED TELLER MACHINE"
+  ],
+  [
+    127976,
+    "HOTEL"
+  ],
+  [
+    127977,
+    "LOVE HOTEL"
+  ],
+  [
+    127978,
+    "CONVENIENCE STORE"
+  ],
+  [
+    127979,
+    "SCHOOL"
+  ],
+  [
+    127980,
+    "DEPARTMENT STORE"
+  ],
+  [
+    127981,
+    "FACTORY"
+  ],
+  [
+    127982,
+    "IZAKAYA LANTERN"
+  ],
+  [
+    127983,
+    "JAPANESE CASTLE"
+  ],
+  [
+    127984,
+    "EUROPEAN CASTLE"
+  ],
+  [
+    127985,
+    "WHITE PENNANT"
+  ],
+  [
+    127986,
+    "BLACK PENNANT"
+  ],
+  [
+    127987,
+    "WAVING WHITE FLAG"
+  ],
+  [
+    127988,
+    "WAVING BLACK FLAG"
+  ],
+  [
+    127989,
+    "ROSETTE"
+  ],
+  [
+    127990,
+    "BLACK ROSETTE"
+  ],
+  [
+    127991,
+    "LABEL"
+  ],
+  [
+    127992,
+    "BADMINTON RACQUET AND SHUTTLECOCK"
+  ],
+  [
+    127993,
+    "BOW AND ARROW"
+  ],
+  [
+    127994,
+    "AMPHORA"
+  ],
+  [
+    127995,
+    "EMOJI MODIFIER FITZPATRICK TYPE-1-2"
+  ],
+  [
+    127996,
+    "EMOJI MODIFIER FITZPATRICK TYPE-3"
+  ],
+  [
+    127997,
+    "EMOJI MODIFIER FITZPATRICK TYPE-4"
+  ],
+  [
+    127998,
+    "EMOJI MODIFIER FITZPATRICK TYPE-5"
+  ],
+  [
+    127999,
+    "EMOJI MODIFIER FITZPATRICK TYPE-6"
+  ],
+  [
+    128000,
+    "RAT"
+  ],
+  [
+    128001,
+    "MOUSE"
+  ],
+  [
+    128002,
+    "OX"
+  ],
+  [
+    128003,
+    "WATER BUFFALO"
+  ],
+  [
+    128004,
+    "COW"
+  ],
+  [
+    128005,
+    "TIGER"
+  ],
+  [
+    128006,
+    "LEOPARD"
+  ],
+  [
+    128007,
+    "RABBIT"
+  ],
+  [
+    128008,
+    "CAT"
+  ],
+  [
+    128009,
+    "DRAGON"
+  ],
+  [
+    128010,
+    "CROCODILE"
+  ],
+  [
+    128011,
+    "WHALE"
+  ],
+  [
+    128012,
+    "SNAIL"
+  ],
+  [
+    128013,
+    "SNAKE"
+  ],
+  [
+    128014,
+    "HORSE"
+  ],
+  [
+    128015,
+    "RAM"
+  ],
+  [
+    128016,
+    "GOAT"
+  ],
+  [
+    128017,
+    "SHEEP"
+  ],
+  [
+    128018,
+    "MONKEY"
+  ],
+  [
+    128019,
+    "ROOSTER"
+  ],
+  [
+    128020,
+    "CHICKEN"
+  ],
+  [
+    128021,
+    "DOG"
+  ],
+  [
+    128022,
+    "PIG"
+  ],
+  [
+    128023,
+    "BOAR"
+  ],
+  [
+    128024,
+    "ELEPHANT"
+  ],
+  [
+    128025,
+    "OCTOPUS"
+  ],
+  [
+    128026,
+    "SPIRAL SHELL"
+  ],
+  [
+    128027,
+    "BUG"
+  ],
+  [
+    128028,
+    "ANT"
+  ],
+  [
+    128029,
+    "HONEYBEE"
+  ],
+  [
+    128030,
+    "LADY BEETLE"
+  ],
+  [
+    128031,
+    "FISH"
+  ],
+  [
+    128032,
+    "TROPICAL FISH"
+  ],
+  [
+    128033,
+    "BLOWFISH"
+  ],
+  [
+    128034,
+    "TURTLE"
+  ],
+  [
+    128035,
+    "HATCHING CHICK"
+  ],
+  [
+    128036,
+    "BABY CHICK"
+  ],
+  [
+    128037,
+    "FRONT-FACING BABY CHICK"
+  ],
+  [
+    128038,
+    "BIRD"
+  ],
+  [
+    128039,
+    "PENGUIN"
+  ],
+  [
+    128040,
+    "KOALA"
+  ],
+  [
+    128041,
+    "POODLE"
+  ],
+  [
+    128042,
+    "DROMEDARY CAMEL"
+  ],
+  [
+    128043,
+    "BACTRIAN CAMEL"
+  ],
+  [
+    128044,
+    "DOLPHIN"
+  ],
+  [
+    128045,
+    "MOUSE FACE"
+  ],
+  [
+    128046,
+    "COW FACE"
+  ],
+  [
+    128047,
+    "TIGER FACE"
+  ],
+  [
+    128048,
+    "RABBIT FACE"
+  ],
+  [
+    128049,
+    "CAT FACE"
+  ],
+  [
+    128050,
+    "DRAGON FACE"
+  ],
+  [
+    128051,
+    "SPOUTING WHALE"
+  ],
+  [
+    128052,
+    "HORSE FACE"
+  ],
+  [
+    128053,
+    "MONKEY FACE"
+  ],
+  [
+    128054,
+    "DOG FACE"
+  ],
+  [
+    128055,
+    "PIG FACE"
+  ],
+  [
+    128056,
+    "FROG FACE"
+  ],
+  [
+    128057,
+    "HAMSTER FACE"
+  ],
+  [
+    128058,
+    "WOLF FACE"
+  ],
+  [
+    128059,
+    "BEAR FACE"
+  ],
+  [
+    128060,
+    "PANDA FACE"
+  ],
+  [
+    128061,
+    "PIG NOSE"
+  ],
+  [
+    128062,
+    "PAW PRINTS"
+  ],
+  [
+    128063,
+    "CHIPMUNK"
+  ],
+  [
+    128064,
+    "EYES"
+  ],
+  [
+    128065,
+    "EYE"
+  ],
+  [
+    128066,
+    "EAR"
+  ],
+  [
+    128067,
+    "NOSE"
+  ],
+  [
+    128068,
+    "MOUTH"
+  ],
+  [
+    128069,
+    "TONGUE"
+  ],
+  [
+    128070,
+    "WHITE UP POINTING BACKHAND INDEX"
+  ],
+  [
+    128071,
+    "WHITE DOWN POINTING BACKHAND INDEX"
+  ],
+  [
+    128072,
+    "WHITE LEFT POINTING BACKHAND INDEX"
+  ],
+  [
+    128073,
+    "WHITE RIGHT POINTING BACKHAND INDEX"
+  ],
+  [
+    128074,
+    "FISTED HAND SIGN"
+  ],
+  [
+    128075,
+    "WAVING HAND SIGN"
+  ],
+  [
+    128076,
+    "OK HAND SIGN"
+  ],
+  [
+    128077,
+    "THUMBS UP SIGN"
+  ],
+  [
+    128078,
+    "THUMBS DOWN SIGN"
+  ],
+  [
+    128079,
+    "CLAPPING HANDS SIGN"
+  ],
+  [
+    128080,
+    "OPEN HANDS SIGN"
+  ],
+  [
+    128081,
+    "CROWN"
+  ],
+  [
+    128082,
+    "WOMANS HAT"
+  ],
+  [
+    128083,
+    "EYEGLASSES"
+  ],
+  [
+    128084,
+    "NECKTIE"
+  ],
+  [
+    128085,
+    "T-SHIRT"
+  ],
+  [
+    128086,
+    "JEANS"
+  ],
+  [
+    128087,
+    "DRESS"
+  ],
+  [
+    128088,
+    "KIMONO"
+  ],
+  [
+    128089,
+    "BIKINI"
+  ],
+  [
+    128090,
+    "WOMANS CLOTHES"
+  ],
+  [
+    128091,
+    "PURSE"
+  ],
+  [
+    128092,
+    "HANDBAG"
+  ],
+  [
+    128093,
+    "POUCH"
+  ],
+  [
+    128094,
+    "MANS SHOE"
+  ],
+  [
+    128095,
+    "ATHLETIC SHOE"
+  ],
+  [
+    128096,
+    "HIGH-HEELED SHOE"
+  ],
+  [
+    128097,
+    "WOMANS SANDAL"
+  ],
+  [
+    128098,
+    "WOMANS BOOTS"
+  ],
+  [
+    128099,
+    "FOOTPRINTS"
+  ],
+  [
+    128100,
+    "BUST IN SILHOUETTE"
+  ],
+  [
+    128101,
+    "BUSTS IN SILHOUETTE"
+  ],
+  [
+    128102,
+    "BOY"
+  ],
+  [
+    128103,
+    "GIRL"
+  ],
+  [
+    128104,
+    "MAN"
+  ],
+  [
+    128105,
+    "WOMAN"
+  ],
+  [
+    128106,
+    "FAMILY"
+  ],
+  [
+    128107,
+    "MAN AND WOMAN HOLDING HANDS"
+  ],
+  [
+    128108,
+    "TWO MEN HOLDING HANDS"
+  ],
+  [
+    128109,
+    "TWO WOMEN HOLDING HANDS"
+  ],
+  [
+    128110,
+    "POLICE OFFICER"
+  ],
+  [
+    128111,
+    "WOMAN WITH BUNNY EARS"
+  ],
+  [
+    128112,
+    "BRIDE WITH VEIL"
+  ],
+  [
+    128113,
+    "PERSON WITH BLOND HAIR"
+  ],
+  [
+    128114,
+    "MAN WITH GUA PI MAO"
+  ],
+  [
+    128115,
+    "MAN WITH TURBAN"
+  ],
+  [
+    128116,
+    "OLDER MAN"
+  ],
+  [
+    128117,
+    "OLDER WOMAN"
+  ],
+  [
+    128118,
+    "BABY"
+  ],
+  [
+    128119,
+    "CONSTRUCTION WORKER"
+  ],
+  [
+    128120,
+    "PRINCESS"
+  ],
+  [
+    128121,
+    "JAPANESE OGRE"
+  ],
+  [
+    128122,
+    "JAPANESE GOBLIN"
+  ],
+  [
+    128123,
+    "GHOST"
+  ],
+  [
+    128124,
+    "BABY ANGEL"
+  ],
+  [
+    128125,
+    "EXTRATERRESTRIAL ALIEN"
+  ],
+  [
+    128126,
+    "ALIEN MONSTER"
+  ],
+  [
+    128127,
+    "IMP"
+  ],
+  [
+    128128,
+    "SKULL"
+  ],
+  [
+    128129,
+    "INFORMATION DESK PERSON"
+  ],
+  [
+    128130,
+    "GUARDSMAN"
+  ],
+  [
+    128131,
+    "DANCER"
+  ],
+  [
+    128132,
+    "LIPSTICK"
+  ],
+  [
+    128133,
+    "NAIL POLISH"
+  ],
+  [
+    128134,
+    "FACE MASSAGE"
+  ],
+  [
+    128135,
+    "HAIRCUT"
+  ],
+  [
+    128136,
+    "BARBER POLE"
+  ],
+  [
+    128137,
+    "SYRINGE"
+  ],
+  [
+    128138,
+    "PILL"
+  ],
+  [
+    128139,
+    "KISS MARK"
+  ],
+  [
+    128140,
+    "LOVE LETTER"
+  ],
+  [
+    128141,
+    "RING"
+  ],
+  [
+    128142,
+    "GEM STONE"
+  ],
+  [
+    128143,
+    "KISS"
+  ],
+  [
+    128144,
+    "BOUQUET"
+  ],
+  [
+    128145,
+    "COUPLE WITH HEART"
+  ],
+  [
+    128146,
+    "WEDDING"
+  ],
+  [
+    128147,
+    "BEATING HEART"
+  ],
+  [
+    128148,
+    "BROKEN HEART"
+  ],
+  [
+    128149,
+    "TWO HEARTS"
+  ],
+  [
+    128150,
+    "SPARKLING HEART"
+  ],
+  [
+    128151,
+    "GROWING HEART"
+  ],
+  [
+    128152,
+    "HEART WITH ARROW"
+  ],
+  [
+    128153,
+    "BLUE HEART"
+  ],
+  [
+    128154,
+    "GREEN HEART"
+  ],
+  [
+    128155,
+    "YELLOW HEART"
+  ],
+  [
+    128156,
+    "PURPLE HEART"
+  ],
+  [
+    128157,
+    "HEART WITH RIBBON"
+  ],
+  [
+    128158,
+    "REVOLVING HEARTS"
+  ],
+  [
+    128159,
+    "HEART DECORATION"
+  ],
+  [
+    128160,
+    "DIAMOND SHAPE WITH A DOT INSIDE"
+  ],
+  [
+    128161,
+    "ELECTRIC LIGHT BULB"
+  ],
+  [
+    128162,
+    "ANGER SYMBOL"
+  ],
+  [
+    128163,
+    "BOMB"
+  ],
+  [
+    128164,
+    "SLEEPING SYMBOL"
+  ],
+  [
+    128165,
+    "COLLISION SYMBOL"
+  ],
+  [
+    128166,
+    "SPLASHING SWEAT SYMBOL"
+  ],
+  [
+    128167,
+    "DROPLET"
+  ],
+  [
+    128168,
+    "DASH SYMBOL"
+  ],
+  [
+    128169,
+    "PILE OF POO"
+  ],
+  [
+    128170,
+    "FLEXED BICEPS"
+  ],
+  [
+    128171,
+    "DIZZY SYMBOL"
+  ],
+  [
+    128172,
+    "SPEECH BALLOON"
+  ],
+  [
+    128173,
+    "THOUGHT BALLOON"
+  ],
+  [
+    128174,
+    "WHITE FLOWER"
+  ],
+  [
+    128175,
+    "HUNDRED POINTS SYMBOL"
+  ],
+  [
+    128176,
+    "MONEY BAG"
+  ],
+  [
+    128177,
+    "CURRENCY EXCHANGE"
+  ],
+  [
+    128178,
+    "HEAVY DOLLAR SIGN"
+  ],
+  [
+    128179,
+    "CREDIT CARD"
+  ],
+  [
+    128180,
+    "BANKNOTE WITH YEN SIGN"
+  ],
+  [
+    128181,
+    "BANKNOTE WITH DOLLAR SIGN"
+  ],
+  [
+    128182,
+    "BANKNOTE WITH EURO SIGN"
+  ],
+  [
+    128183,
+    "BANKNOTE WITH POUND SIGN"
+  ],
+  [
+    128184,
+    "MONEY WITH WINGS"
+  ],
+  [
+    128185,
+    "CHART WITH UPWARDS TREND AND YEN SIGN"
+  ],
+  [
+    128186,
+    "SEAT"
+  ],
+  [
+    128187,
+    "PERSONAL COMPUTER"
+  ],
+  [
+    128188,
+    "BRIEFCASE"
+  ],
+  [
+    128189,
+    "MINIDISC"
+  ],
+  [
+    128190,
+    "FLOPPY DISK"
+  ],
+  [
+    128191,
+    "OPTICAL DISC"
+  ],
+  [
+    128192,
+    "DVD"
+  ],
+  [
+    128193,
+    "FILE FOLDER"
+  ],
+  [
+    128194,
+    "OPEN FILE FOLDER"
+  ],
+  [
+    128195,
+    "PAGE WITH CURL"
+  ],
+  [
+    128196,
+    "PAGE FACING UP"
+  ],
+  [
+    128197,
+    "CALENDAR"
+  ],
+  [
+    128198,
+    "TEAR-OFF CALENDAR"
+  ],
+  [
+    128199,
+    "CARD INDEX"
+  ],
+  [
+    128200,
+    "CHART WITH UPWARDS TREND"
+  ],
+  [
+    128201,
+    "CHART WITH DOWNWARDS TREND"
+  ],
+  [
+    128202,
+    "BAR CHART"
+  ],
+  [
+    128203,
+    "CLIPBOARD"
+  ],
+  [
+    128204,
+    "PUSHPIN"
+  ],
+  [
+    128205,
+    "ROUND PUSHPIN"
+  ],
+  [
+    128206,
+    "PAPERCLIP"
+  ],
+  [
+    128207,
+    "STRAIGHT RULER"
+  ],
+  [
+    128208,
+    "TRIANGULAR RULER"
+  ],
+  [
+    128209,
+    "BOOKMARK TABS"
+  ],
+  [
+    128210,
+    "LEDGER"
+  ],
+  [
+    128211,
+    "NOTEBOOK"
+  ],
+  [
+    128212,
+    "NOTEBOOK WITH DECORATIVE COVER"
+  ],
+  [
+    128213,
+    "CLOSED BOOK"
+  ],
+  [
+    128214,
+    "OPEN BOOK"
+  ],
+  [
+    128215,
+    "GREEN BOOK"
+  ],
+  [
+    128216,
+    "BLUE BOOK"
+  ],
+  [
+    128217,
+    "ORANGE BOOK"
+  ],
+  [
+    128218,
+    "BOOKS"
+  ],
+  [
+    128219,
+    "NAME BADGE"
+  ],
+  [
+    128220,
+    "SCROLL"
+  ],
+  [
+    128221,
+    "MEMO"
+  ],
+  [
+    128222,
+    "TELEPHONE RECEIVER"
+  ],
+  [
+    128223,
+    "PAGER"
+  ],
+  [
+    128224,
+    "FAX MACHINE"
+  ],
+  [
+    128225,
+    "SATELLITE ANTENNA"
+  ],
+  [
+    128226,
+    "PUBLIC ADDRESS LOUDSPEAKER"
+  ],
+  [
+    128227,
+    "CHEERING MEGAPHONE"
+  ],
+  [
+    128228,
+    "OUTBOX TRAY"
+  ],
+  [
+    128229,
+    "INBOX TRAY"
+  ],
+  [
+    128230,
+    "PACKAGE"
+  ],
+  [
+    128231,
+    "E-MAIL SYMBOL"
+  ],
+  [
+    128232,
+    "INCOMING ENVELOPE"
+  ],
+  [
+    128233,
+    "ENVELOPE WITH DOWNWARDS ARROW ABOVE"
+  ],
+  [
+    128234,
+    "CLOSED MAILBOX WITH LOWERED FLAG"
+  ],
+  [
+    128235,
+    "CLOSED MAILBOX WITH RAISED FLAG"
+  ],
+  [
+    128236,
+    "OPEN MAILBOX WITH RAISED FLAG"
+  ],
+  [
+    128237,
+    "OPEN MAILBOX WITH LOWERED FLAG"
+  ],
+  [
+    128238,
+    "POSTBOX"
+  ],
+  [
+    128239,
+    "POSTAL HORN"
+  ],
+  [
+    128240,
+    "NEWSPAPER"
+  ],
+  [
+    128241,
+    "MOBILE PHONE"
+  ],
+  [
+    128242,
+    "MOBILE PHONE WITH RIGHTWARDS ARROW AT LEFT"
+  ],
+  [
+    128243,
+    "VIBRATION MODE"
+  ],
+  [
+    128244,
+    "MOBILE PHONE OFF"
+  ],
+  [
+    128245,
+    "NO MOBILE PHONES"
+  ],
+  [
+    128246,
+    "ANTENNA WITH BARS"
+  ],
+  [
+    128247,
+    "CAMERA"
+  ],
+  [
+    128248,
+    "CAMERA WITH FLASH"
+  ],
+  [
+    128249,
+    "VIDEO CAMERA"
+  ],
+  [
+    128250,
+    "TELEVISION"
+  ],
+  [
+    128251,
+    "RADIO"
+  ],
+  [
+    128252,
+    "VIDEOCASSETTE"
+  ],
+  [
+    128253,
+    "FILM PROJECTOR"
+  ],
+  [
+    128254,
+    "PORTABLE STEREO"
+  ],
+  [
+    128255,
+    "PRAYER BEADS"
+  ],
+  [
+    128256,
+    "TWISTED RIGHTWARDS ARROWS"
+  ],
+  [
+    128257,
+    "CLOCKWISE RIGHTWARDS AND LEFTWARDS OPEN CIRCLE ARROWS"
+  ],
+  [
+    128258,
+    "CLOCKWISE RIGHTWARDS AND LEFTWARDS OPEN CIRCLE ARROWS WITH CIRCLED ONE OVERLAY"
+  ],
+  [
+    128259,
+    "CLOCKWISE DOWNWARDS AND UPWARDS OPEN CIRCLE ARROWS"
+  ],
+  [
+    128260,
+    "ANTICLOCKWISE DOWNWARDS AND UPWARDS OPEN CIRCLE ARROWS"
+  ],
+  [
+    128261,
+    "LOW BRIGHTNESS SYMBOL"
+  ],
+  [
+    128262,
+    "HIGH BRIGHTNESS SYMBOL"
+  ],
+  [
+    128263,
+    "SPEAKER WITH CANCELLATION STROKE"
+  ],
+  [
+    128264,
+    "SPEAKER"
+  ],
+  [
+    128265,
+    "SPEAKER WITH ONE SOUND WAVE"
+  ],
+  [
+    128266,
+    "SPEAKER WITH THREE SOUND WAVES"
+  ],
+  [
+    128267,
+    "BATTERY"
+  ],
+  [
+    128268,
+    "ELECTRIC PLUG"
+  ],
+  [
+    128269,
+    "LEFT-POINTING MAGNIFYING GLASS"
+  ],
+  [
+    128270,
+    "RIGHT-POINTING MAGNIFYING GLASS"
+  ],
+  [
+    128271,
+    "LOCK WITH INK PEN"
+  ],
+  [
+    128272,
+    "CLOSED LOCK WITH KEY"
+  ],
+  [
+    128273,
+    "KEY"
+  ],
+  [
+    128274,
+    "LOCK"
+  ],
+  [
+    128275,
+    "OPEN LOCK"
+  ],
+  [
+    128276,
+    "BELL"
+  ],
+  [
+    128277,
+    "BELL WITH CANCELLATION STROKE"
+  ],
+  [
+    128278,
+    "BOOKMARK"
+  ],
+  [
+    128279,
+    "LINK SYMBOL"
+  ],
+  [
+    128280,
+    "RADIO BUTTON"
+  ],
+  [
+    128281,
+    "BACK WITH LEFTWARDS ARROW ABOVE"
+  ],
+  [
+    128282,
+    "END WITH LEFTWARDS ARROW ABOVE"
+  ],
+  [
+    128283,
+    "ON WITH EXCLAMATION MARK WITH LEFT RIGHT ARROW ABOVE"
+  ],
+  [
+    128284,
+    "SOON WITH RIGHTWARDS ARROW ABOVE"
+  ],
+  [
+    128285,
+    "TOP WITH UPWARDS ARROW ABOVE"
+  ],
+  [
+    128286,
+    "NO ONE UNDER EIGHTEEN SYMBOL"
+  ],
+  [
+    128287,
+    "KEYCAP TEN"
+  ],
+  [
+    128288,
+    "INPUT SYMBOL FOR LATIN CAPITAL LETTERS"
+  ],
+  [
+    128289,
+    "INPUT SYMBOL FOR LATIN SMALL LETTERS"
+  ],
+  [
+    128290,
+    "INPUT SYMBOL FOR NUMBERS"
+  ],
+  [
+    128291,
+    "INPUT SYMBOL FOR SYMBOLS"
+  ],
+  [
+    128292,
+    "INPUT SYMBOL FOR LATIN LETTERS"
+  ],
+  [
+    128293,
+    "FIRE"
+  ],
+  [
+    128294,
+    "ELECTRIC TORCH"
+  ],
+  [
+    128295,
+    "WRENCH"
+  ],
+  [
+    128296,
+    "HAMMER"
+  ],
+  [
+    128297,
+    "NUT AND BOLT"
+  ],
+  [
+    128298,
+    "HOCHO"
+  ],
+  [
+    128299,
+    "PISTOL"
+  ],
+  [
+    128300,
+    "MICROSCOPE"
+  ],
+  [
+    128301,
+    "TELESCOPE"
+  ],
+  [
+    128302,
+    "CRYSTAL BALL"
+  ],
+  [
+    128303,
+    "SIX POINTED STAR WITH MIDDLE DOT"
+  ],
+  [
+    128304,
+    "JAPANESE SYMBOL FOR BEGINNER"
+  ],
+  [
+    128305,
+    "TRIDENT EMBLEM"
+  ],
+  [
+    128306,
+    "BLACK SQUARE BUTTON"
+  ],
+  [
+    128307,
+    "WHITE SQUARE BUTTON"
+  ],
+  [
+    128308,
+    "LARGE RED CIRCLE"
+  ],
+  [
+    128309,
+    "LARGE BLUE CIRCLE"
+  ],
+  [
+    128310,
+    "LARGE ORANGE DIAMOND"
+  ],
+  [
+    128311,
+    "LARGE BLUE DIAMOND"
+  ],
+  [
+    128312,
+    "SMALL ORANGE DIAMOND"
+  ],
+  [
+    128313,
+    "SMALL BLUE DIAMOND"
+  ],
+  [
+    128314,
+    "UP-POINTING RED TRIANGLE"
+  ],
+  [
+    128315,
+    "DOWN-POINTING RED TRIANGLE"
+  ],
+  [
+    128316,
+    "UP-POINTING SMALL RED TRIANGLE"
+  ],
+  [
+    128317,
+    "DOWN-POINTING SMALL RED TRIANGLE"
+  ],
+  [
+    128318,
+    "LOWER RIGHT SHADOWED WHITE CIRCLE"
+  ],
+  [
+    128319,
+    "UPPER RIGHT SHADOWED WHITE CIRCLE"
+  ],
+  [
+    128320,
+    "CIRCLED CROSS POMMEE"
+  ],
+  [
+    128321,
+    "CROSS POMMEE WITH HALF-CIRCLE BELOW"
+  ],
+  [
+    128322,
+    "CROSS POMMEE"
+  ],
+  [
+    128323,
+    "NOTCHED LEFT SEMICIRCLE WITH THREE DOTS"
+  ],
+  [
+    128324,
+    "NOTCHED RIGHT SEMICIRCLE WITH THREE DOTS"
+  ],
+  [
+    128325,
+    "SYMBOL FOR MARKS CHAPTER"
+  ],
+  [
+    128326,
+    "WHITE LATIN CROSS"
+  ],
+  [
+    128327,
+    "HEAVY LATIN CROSS"
+  ],
+  [
+    128328,
+    "CELTIC CROSS"
+  ],
+  [
+    128329,
+    "OM SYMBOL"
+  ],
+  [
+    128330,
+    "DOVE OF PEACE"
+  ],
+  [
+    128331,
+    "KAABA"
+  ],
+  [
+    128332,
+    "MOSQUE"
+  ],
+  [
+    128333,
+    "SYNAGOGUE"
+  ],
+  [
+    128334,
+    "MENORAH WITH NINE BRANCHES"
+  ],
+  [
+    128335,
+    "BOWL OF HYGIEIA"
+  ],
+  [
+    128336,
+    "CLOCK FACE ONE OCLOCK"
+  ],
+  [
+    128337,
+    "CLOCK FACE TWO OCLOCK"
+  ],
+  [
+    128338,
+    "CLOCK FACE THREE OCLOCK"
+  ],
+  [
+    128339,
+    "CLOCK FACE FOUR OCLOCK"
+  ],
+  [
+    128340,
+    "CLOCK FACE FIVE OCLOCK"
+  ],
+  [
+    128341,
+    "CLOCK FACE SIX OCLOCK"
+  ],
+  [
+    128342,
+    "CLOCK FACE SEVEN OCLOCK"
+  ],
+  [
+    128343,
+    "CLOCK FACE EIGHT OCLOCK"
+  ],
+  [
+    128344,
+    "CLOCK FACE NINE OCLOCK"
+  ],
+  [
+    128345,
+    "CLOCK FACE TEN OCLOCK"
+  ],
+  [
+    128346,
+    "CLOCK FACE ELEVEN OCLOCK"
+  ],
+  [
+    128347,
+    "CLOCK FACE TWELVE OCLOCK"
+  ],
+  [
+    128348,
+    "CLOCK FACE ONE-THIRTY"
+  ],
+  [
+    128349,
+    "CLOCK FACE TWO-THIRTY"
+  ],
+  [
+    128350,
+    "CLOCK FACE THREE-THIRTY"
+  ],
+  [
+    128351,
+    "CLOCK FACE FOUR-THIRTY"
+  ],
+  [
+    128352,
+    "CLOCK FACE FIVE-THIRTY"
+  ],
+  [
+    128353,
+    "CLOCK FACE SIX-THIRTY"
+  ],
+  [
+    128354,
+    "CLOCK FACE SEVEN-THIRTY"
+  ],
+  [
+    128355,
+    "CLOCK FACE EIGHT-THIRTY"
+  ],
+  [
+    128356,
+    "CLOCK FACE NINE-THIRTY"
+  ],
+  [
+    128357,
+    "CLOCK FACE TEN-THIRTY"
+  ],
+  [
+    128358,
+    "CLOCK FACE ELEVEN-THIRTY"
+  ],
+  [
+    128359,
+    "CLOCK FACE TWELVE-THIRTY"
+  ],
+  [
+    128360,
+    "RIGHT SPEAKER"
+  ],
+  [
+    128361,
+    "RIGHT SPEAKER WITH ONE SOUND WAVE"
+  ],
+  [
+    128362,
+    "RIGHT SPEAKER WITH THREE SOUND WAVES"
+  ],
+  [
+    128363,
+    "BULLHORN"
+  ],
+  [
+    128364,
+    "BULLHORN WITH SOUND WAVES"
+  ],
+  [
+    128365,
+    "RINGING BELL"
+  ],
+  [
+    128366,
+    "BOOK"
+  ],
+  [
+    128367,
+    "CANDLE"
+  ],
+  [
+    128368,
+    "MANTELPIECE CLOCK"
+  ],
+  [
+    128369,
+    "BLACK SKULL AND CROSSBONES"
+  ],
+  [
+    128370,
+    "NO PIRACY"
+  ],
+  [
+    128371,
+    "HOLE"
+  ],
+  [
+    128372,
+    "MAN IN BUSINESS SUIT LEVITATING"
+  ],
+  [
+    128373,
+    "SLEUTH OR SPY"
+  ],
+  [
+    128374,
+    "DARK SUNGLASSES"
+  ],
+  [
+    128375,
+    "SPIDER"
+  ],
+  [
+    128376,
+    "SPIDER WEB"
+  ],
+  [
+    128377,
+    "JOYSTICK"
+  ],
+  [
+    128378,
+    "MAN DANCING"
+  ],
+  [
+    128379,
+    "LEFT HAND TELEPHONE RECEIVER"
+  ],
+  [
+    128380,
+    "TELEPHONE RECEIVER WITH PAGE"
+  ],
+  [
+    128381,
+    "RIGHT HAND TELEPHONE RECEIVER"
+  ],
+  [
+    128382,
+    "WHITE TOUCHTONE TELEPHONE"
+  ],
+  [
+    128383,
+    "BLACK TOUCHTONE TELEPHONE"
+  ],
+  [
+    128384,
+    "TELEPHONE ON TOP OF MODEM"
+  ],
+  [
+    128385,
+    "CLAMSHELL MOBILE PHONE"
+  ],
+  [
+    128386,
+    "BACK OF ENVELOPE"
+  ],
+  [
+    128387,
+    "STAMPED ENVELOPE"
+  ],
+  [
+    128388,
+    "ENVELOPE WITH LIGHTNING"
+  ],
+  [
+    128389,
+    "FLYING ENVELOPE"
+  ],
+  [
+    128390,
+    "PEN OVER STAMPED ENVELOPE"
+  ],
+  [
+    128391,
+    "LINKED PAPERCLIPS"
+  ],
+  [
+    128392,
+    "BLACK PUSHPIN"
+  ],
+  [
+    128393,
+    "LOWER LEFT PENCIL"
+  ],
+  [
+    128394,
+    "LOWER LEFT BALLPOINT PEN"
+  ],
+  [
+    128395,
+    "LOWER LEFT FOUNTAIN PEN"
+  ],
+  [
+    128396,
+    "LOWER LEFT PAINTBRUSH"
+  ],
+  [
+    128397,
+    "LOWER LEFT CRAYON"
+  ],
+  [
+    128398,
+    "LEFT WRITING HAND"
+  ],
+  [
+    128399,
+    "TURNED OK HAND SIGN"
+  ],
+  [
+    128400,
+    "RAISED HAND WITH FINGERS SPLAYED"
+  ],
+  [
+    128401,
+    "REVERSED RAISED HAND WITH FINGERS SPLAYED"
+  ],
+  [
+    128402,
+    "REVERSED THUMBS UP SIGN"
+  ],
+  [
+    128403,
+    "REVERSED THUMBS DOWN SIGN"
+  ],
+  [
+    128404,
+    "REVERSED VICTORY HAND"
+  ],
+  [
+    128405,
+    "REVERSED HAND WITH MIDDLE FINGER EXTENDED"
+  ],
+  [
+    128406,
+    "RAISED HAND WITH PART BETWEEN MIDDLE AND RING FINGERS"
+  ],
+  [
+    128407,
+    "WHITE DOWN POINTING LEFT HAND INDEX"
+  ],
+  [
+    128408,
+    "SIDEWAYS WHITE LEFT POINTING INDEX"
+  ],
+  [
+    128409,
+    "SIDEWAYS WHITE RIGHT POINTING INDEX"
+  ],
+  [
+    128410,
+    "SIDEWAYS BLACK LEFT POINTING INDEX"
+  ],
+  [
+    128411,
+    "SIDEWAYS BLACK RIGHT POINTING INDEX"
+  ],
+  [
+    128412,
+    "BLACK LEFT POINTING BACKHAND INDEX"
+  ],
+  [
+    128413,
+    "BLACK RIGHT POINTING BACKHAND INDEX"
+  ],
+  [
+    128414,
+    "SIDEWAYS WHITE UP POINTING INDEX"
+  ],
+  [
+    128415,
+    "SIDEWAYS WHITE DOWN POINTING INDEX"
+  ],
+  [
+    128416,
+    "SIDEWAYS BLACK UP POINTING INDEX"
+  ],
+  [
+    128417,
+    "SIDEWAYS BLACK DOWN POINTING INDEX"
+  ],
+  [
+    128418,
+    "BLACK UP POINTING BACKHAND INDEX"
+  ],
+  [
+    128419,
+    "BLACK DOWN POINTING BACKHAND INDEX"
+  ],
+  [
+    128420,
+    "BLACK HEART"
+  ],
+  [
+    128421,
+    "DESKTOP COMPUTER"
+  ],
+  [
+    128422,
+    "KEYBOARD AND MOUSE"
+  ],
+  [
+    128423,
+    "THREE NETWORKED COMPUTERS"
+  ],
+  [
+    128424,
+    "PRINTER"
+  ],
+  [
+    128425,
+    "POCKET CALCULATOR"
+  ],
+  [
+    128426,
+    "BLACK HARD SHELL FLOPPY DISK"
+  ],
+  [
+    128427,
+    "WHITE HARD SHELL FLOPPY DISK"
+  ],
+  [
+    128428,
+    "SOFT SHELL FLOPPY DISK"
+  ],
+  [
+    128429,
+    "TAPE CARTRIDGE"
+  ],
+  [
+    128430,
+    "WIRED KEYBOARD"
+  ],
+  [
+    128431,
+    "ONE BUTTON MOUSE"
+  ],
+  [
+    128432,
+    "TWO BUTTON MOUSE"
+  ],
+  [
+    128433,
+    "THREE BUTTON MOUSE"
+  ],
+  [
+    128434,
+    "TRACKBALL"
+  ],
+  [
+    128435,
+    "OLD PERSONAL COMPUTER"
+  ],
+  [
+    128436,
+    "HARD DISK"
+  ],
+  [
+    128437,
+    "SCREEN"
+  ],
+  [
+    128438,
+    "PRINTER ICON"
+  ],
+  [
+    128439,
+    "FAX ICON"
+  ],
+  [
+    128440,
+    "OPTICAL DISC ICON"
+  ],
+  [
+    128441,
+    "DOCUMENT WITH TEXT"
+  ],
+  [
+    128442,
+    "DOCUMENT WITH TEXT AND PICTURE"
+  ],
+  [
+    128443,
+    "DOCUMENT WITH PICTURE"
+  ],
+  [
+    128444,
+    "FRAME WITH PICTURE"
+  ],
+  [
+    128445,
+    "FRAME WITH TILES"
+  ],
+  [
+    128446,
+    "FRAME WITH AN X"
+  ],
+  [
+    128447,
+    "BLACK FOLDER"
+  ],
+  [
+    128448,
+    "FOLDER"
+  ],
+  [
+    128449,
+    "OPEN FOLDER"
+  ],
+  [
+    128450,
+    "CARD INDEX DIVIDERS"
+  ],
+  [
+    128451,
+    "CARD FILE BOX"
+  ],
+  [
+    128452,
+    "FILE CABINET"
+  ],
+  [
+    128453,
+    "EMPTY NOTE"
+  ],
+  [
+    128454,
+    "EMPTY NOTE PAGE"
+  ],
+  [
+    128455,
+    "EMPTY NOTE PAD"
+  ],
+  [
+    128456,
+    "NOTE"
+  ],
+  [
+    128457,
+    "NOTE PAGE"
+  ],
+  [
+    128458,
+    "NOTE PAD"
+  ],
+  [
+    128459,
+    "EMPTY DOCUMENT"
+  ],
+  [
+    128460,
+    "EMPTY PAGE"
+  ],
+  [
+    128461,
+    "EMPTY PAGES"
+  ],
+  [
+    128462,
+    "DOCUMENT"
+  ],
+  [
+    128463,
+    "PAGE"
+  ],
+  [
+    128464,
+    "PAGES"
+  ],
+  [
+    128465,
+    "WASTEBASKET"
+  ],
+  [
+    128466,
+    "SPIRAL NOTE PAD"
+  ],
+  [
+    128467,
+    "SPIRAL CALENDAR PAD"
+  ],
+  [
+    128468,
+    "DESKTOP WINDOW"
+  ],
+  [
+    128469,
+    "MINIMIZE"
+  ],
+  [
+    128470,
+    "MAXIMIZE"
+  ],
+  [
+    128471,
+    "OVERLAP"
+  ],
+  [
+    128472,
+    "CLOCKWISE RIGHT AND LEFT SEMICIRCLE ARROWS"
+  ],
+  [
+    128473,
+    "CANCELLATION X"
+  ],
+  [
+    128474,
+    "INCREASE FONT SIZE SYMBOL"
+  ],
+  [
+    128475,
+    "DECREASE FONT SIZE SYMBOL"
+  ],
+  [
+    128476,
+    "COMPRESSION"
+  ],
+  [
+    128477,
+    "OLD KEY"
+  ],
+  [
+    128478,
+    "ROLLED-UP NEWSPAPER"
+  ],
+  [
+    128479,
+    "PAGE WITH CIRCLED TEXT"
+  ],
+  [
+    128480,
+    "STOCK CHART"
+  ],
+  [
+    128481,
+    "DAGGER KNIFE"
+  ],
+  [
+    128482,
+    "LIPS"
+  ],
+  [
+    128483,
+    "SPEAKING HEAD IN SILHOUETTE"
+  ],
+  [
+    128484,
+    "THREE RAYS ABOVE"
+  ],
+  [
+    128485,
+    "THREE RAYS BELOW"
+  ],
+  [
+    128486,
+    "THREE RAYS LEFT"
+  ],
+  [
+    128487,
+    "THREE RAYS RIGHT"
+  ],
+  [
+    128488,
+    "LEFT SPEECH BUBBLE"
+  ],
+  [
+    128489,
+    "RIGHT SPEECH BUBBLE"
+  ],
+  [
+    128490,
+    "TWO SPEECH BUBBLES"
+  ],
+  [
+    128491,
+    "THREE SPEECH BUBBLES"
+  ],
+  [
+    128492,
+    "LEFT THOUGHT BUBBLE"
+  ],
+  [
+    128493,
+    "RIGHT THOUGHT BUBBLE"
+  ],
+  [
+    128494,
+    "LEFT ANGER BUBBLE"
+  ],
+  [
+    128495,
+    "RIGHT ANGER BUBBLE"
+  ],
+  [
+    128496,
+    "MOOD BUBBLE"
+  ],
+  [
+    128497,
+    "LIGHTNING MOOD BUBBLE"
+  ],
+  [
+    128498,
+    "LIGHTNING MOOD"
+  ],
+  [
+    128499,
+    "BALLOT BOX WITH BALLOT"
+  ],
+  [
+    128500,
+    "BALLOT SCRIPT X"
+  ],
+  [
+    128501,
+    "BALLOT BOX WITH SCRIPT X"
+  ],
+  [
+    128502,
+    "BALLOT BOLD SCRIPT X"
+  ],
+  [
+    128503,
+    "BALLOT BOX WITH BOLD SCRIPT X"
+  ],
+  [
+    128504,
+    "LIGHT CHECK MARK"
+  ],
+  [
+    128505,
+    "BALLOT BOX WITH BOLD CHECK"
+  ],
+  [
+    128506,
+    "WORLD MAP"
+  ],
+  [
+    128507,
+    "MOUNT FUJI"
+  ],
+  [
+    128508,
+    "TOKYO TOWER"
+  ],
+  [
+    128509,
+    "STATUE OF LIBERTY"
+  ],
+  [
+    128510,
+    "SILHOUETTE OF JAPAN"
+  ],
+  [
+    128511,
+    "MOYAI"
+  ],
+  [
+    128512,
+    "GRINNING FACE"
+  ],
+  [
+    128513,
+    "GRINNING FACE WITH SMILING EYES"
+  ],
+  [
+    128514,
+    "FACE WITH TEARS OF JOY"
+  ],
+  [
+    128515,
+    "SMILING FACE WITH OPEN MOUTH"
+  ],
+  [
+    128516,
+    "SMILING FACE WITH OPEN MOUTH AND SMILING EYES"
+  ],
+  [
+    128517,
+    "SMILING FACE WITH OPEN MOUTH AND COLD SWEAT"
+  ],
+  [
+    128518,
+    "SMILING FACE WITH OPEN MOUTH AND TIGHTLY-CLOSED EYES"
+  ],
+  [
+    128519,
+    "SMILING FACE WITH HALO"
+  ],
+  [
+    128520,
+    "SMILING FACE WITH HORNS"
+  ],
+  [
+    128521,
+    "WINKING FACE"
+  ],
+  [
+    128522,
+    "SMILING FACE WITH SMILING EYES"
+  ],
+  [
+    128523,
+    "FACE SAVOURING DELICIOUS FOOD"
+  ],
+  [
+    128524,
+    "RELIEVED FACE"
+  ],
+  [
+    128525,
+    "SMILING FACE WITH HEART-SHAPED EYES"
+  ],
+  [
+    128526,
+    "SMILING FACE WITH SUNGLASSES"
+  ],
+  [
+    128527,
+    "SMIRKING FACE"
+  ],
+  [
+    128528,
+    "NEUTRAL FACE"
+  ],
+  [
+    128529,
+    "EXPRESSIONLESS FACE"
+  ],
+  [
+    128530,
+    "UNAMUSED FACE"
+  ],
+  [
+    128531,
+    "FACE WITH COLD SWEAT"
+  ],
+  [
+    128532,
+    "PENSIVE FACE"
+  ],
+  [
+    128533,
+    "CONFUSED FACE"
+  ],
+  [
+    128534,
+    "CONFOUNDED FACE"
+  ],
+  [
+    128535,
+    "KISSING FACE"
+  ],
+  [
+    128536,
+    "FACE THROWING A KISS"
+  ],
+  [
+    128537,
+    "KISSING FACE WITH SMILING EYES"
+  ],
+  [
+    128538,
+    "KISSING FACE WITH CLOSED EYES"
+  ],
+  [
+    128539,
+    "FACE WITH STUCK-OUT TONGUE"
+  ],
+  [
+    128540,
+    "FACE WITH STUCK-OUT TONGUE AND WINKING EYE"
+  ],
+  [
+    128541,
+    "FACE WITH STUCK-OUT TONGUE AND TIGHTLY-CLOSED EYES"
+  ],
+  [
+    128542,
+    "DISAPPOINTED FACE"
+  ],
+  [
+    128543,
+    "WORRIED FACE"
+  ],
+  [
+    128544,
+    "ANGRY FACE"
+  ],
+  [
+    128545,
+    "POUTING FACE"
+  ],
+  [
+    128546,
+    "CRYING FACE"
+  ],
+  [
+    128547,
+    "PERSEVERING FACE"
+  ],
+  [
+    128548,
+    "FACE WITH LOOK OF TRIUMPH"
+  ],
+  [
+    128549,
+    "DISAPPOINTED BUT RELIEVED FACE"
+  ],
+  [
+    128550,
+    "FROWNING FACE WITH OPEN MOUTH"
+  ],
+  [
+    128551,
+    "ANGUISHED FACE"
+  ],
+  [
+    128552,
+    "FEARFUL FACE"
+  ],
+  [
+    128553,
+    "WEARY FACE"
+  ],
+  [
+    128554,
+    "SLEEPY FACE"
+  ],
+  [
+    128555,
+    "TIRED FACE"
+  ],
+  [
+    128556,
+    "GRIMACING FACE"
+  ],
+  [
+    128557,
+    "LOUDLY CRYING FACE"
+  ],
+  [
+    128558,
+    "FACE WITH OPEN MOUTH"
+  ],
+  [
+    128559,
+    "HUSHED FACE"
+  ],
+  [
+    128560,
+    "FACE WITH OPEN MOUTH AND COLD SWEAT"
+  ],
+  [
+    128561,
+    "FACE SCREAMING IN FEAR"
+  ],
+  [
+    128562,
+    "ASTONISHED FACE"
+  ],
+  [
+    128563,
+    "FLUSHED FACE"
+  ],
+  [
+    128564,
+    "SLEEPING FACE"
+  ],
+  [
+    128565,
+    "DIZZY FACE"
+  ],
+  [
+    128566,
+    "FACE WITHOUT MOUTH"
+  ],
+  [
+    128567,
+    "FACE WITH MEDICAL MASK"
+  ],
+  [
+    128568,
+    "GRINNING CAT FACE WITH SMILING EYES"
+  ],
+  [
+    128569,
+    "CAT FACE WITH TEARS OF JOY"
+  ],
+  [
+    128570,
+    "SMILING CAT FACE WITH OPEN MOUTH"
+  ],
+  [
+    128571,
+    "SMILING CAT FACE WITH HEART-SHAPED EYES"
+  ],
+  [
+    128572,
+    "CAT FACE WITH WRY SMILE"
+  ],
+  [
+    128573,
+    "KISSING CAT FACE WITH CLOSED EYES"
+  ],
+  [
+    128574,
+    "POUTING CAT FACE"
+  ],
+  [
+    128575,
+    "CRYING CAT FACE"
+  ],
+  [
+    128576,
+    "WEARY CAT FACE"
+  ],
+  [
+    128577,
+    "SLIGHTLY FROWNING FACE"
+  ],
+  [
+    128578,
+    "SLIGHTLY SMILING FACE"
+  ],
+  [
+    128579,
+    "UPSIDE-DOWN FACE"
+  ],
+  [
+    128580,
+    "FACE WITH ROLLING EYES"
+  ],
+  [
+    128581,
+    "FACE WITH NO GOOD GESTURE"
+  ],
+  [
+    128582,
+    "FACE WITH OK GESTURE"
+  ],
+  [
+    128583,
+    "PERSON BOWING DEEPLY"
+  ],
+  [
+    128584,
+    "SEE-NO-EVIL MONKEY"
+  ],
+  [
+    128585,
+    "HEAR-NO-EVIL MONKEY"
+  ],
+  [
+    128586,
+    "SPEAK-NO-EVIL MONKEY"
+  ],
+  [
+    128587,
+    "HAPPY PERSON RAISING ONE HAND"
+  ],
+  [
+    128588,
+    "PERSON RAISING BOTH HANDS IN CELEBRATION"
+  ],
+  [
+    128589,
+    "PERSON FROWNING"
+  ],
+  [
+    128590,
+    "PERSON WITH POUTING FACE"
+  ],
+  [
+    128591,
+    "PERSON WITH FOLDED HANDS"
+  ],
+  [
+    128640,
+    "ROCKET"
+  ],
+  [
+    128641,
+    "HELICOPTER"
+  ],
+  [
+    128642,
+    "STEAM LOCOMOTIVE"
+  ],
+  [
+    128643,
+    "RAILWAY CAR"
+  ],
+  [
+    128644,
+    "HIGH-SPEED TRAIN"
+  ],
+  [
+    128645,
+    "HIGH-SPEED TRAIN WITH BULLET NOSE"
+  ],
+  [
+    128646,
+    "TRAIN"
+  ],
+  [
+    128647,
+    "METRO"
+  ],
+  [
+    128648,
+    "LIGHT RAIL"
+  ],
+  [
+    128649,
+    "STATION"
+  ],
+  [
+    128650,
+    "TRAM"
+  ],
+  [
+    128651,
+    "TRAM CAR"
+  ],
+  [
+    128652,
+    "BUS"
+  ],
+  [
+    128653,
+    "ONCOMING BUS"
+  ],
+  [
+    128654,
+    "TROLLEYBUS"
+  ],
+  [
+    128655,
+    "BUS STOP"
+  ],
+  [
+    128656,
+    "MINIBUS"
+  ],
+  [
+    128657,
+    "AMBULANCE"
+  ],
+  [
+    128658,
+    "FIRE ENGINE"
+  ],
+  [
+    128659,
+    "POLICE CAR"
+  ],
+  [
+    128660,
+    "ONCOMING POLICE CAR"
+  ],
+  [
+    128661,
+    "TAXI"
+  ],
+  [
+    128662,
+    "ONCOMING TAXI"
+  ],
+  [
+    128663,
+    "AUTOMOBILE"
+  ],
+  [
+    128664,
+    "ONCOMING AUTOMOBILE"
+  ],
+  [
+    128665,
+    "RECREATIONAL VEHICLE"
+  ],
+  [
+    128666,
+    "DELIVERY TRUCK"
+  ],
+  [
+    128667,
+    "ARTICULATED LORRY"
+  ],
+  [
+    128668,
+    "TRACTOR"
+  ],
+  [
+    128669,
+    "MONORAIL"
+  ],
+  [
+    128670,
+    "MOUNTAIN RAILWAY"
+  ],
+  [
+    128671,
+    "SUSPENSION RAILWAY"
+  ],
+  [
+    128672,
+    "MOUNTAIN CABLEWAY"
+  ],
+  [
+    128673,
+    "AERIAL TRAMWAY"
+  ],
+  [
+    128674,
+    "SHIP"
+  ],
+  [
+    128675,
+    "ROWBOAT"
+  ],
+  [
+    128676,
+    "SPEEDBOAT"
+  ],
+  [
+    128677,
+    "HORIZONTAL TRAFFIC LIGHT"
+  ],
+  [
+    128678,
+    "VERTICAL TRAFFIC LIGHT"
+  ],
+  [
+    128679,
+    "CONSTRUCTION SIGN"
+  ],
+  [
+    128680,
+    "POLICE CARS REVOLVING LIGHT"
+  ],
+  [
+    128681,
+    "TRIANGULAR FLAG ON POST"
+  ],
+  [
+    128682,
+    "DOOR"
+  ],
+  [
+    128683,
+    "NO ENTRY SIGN"
+  ],
+  [
+    128684,
+    "SMOKING SYMBOL"
+  ],
+  [
+    128685,
+    "NO SMOKING SYMBOL"
+  ],
+  [
+    128686,
+    "PUT LITTER IN ITS PLACE SYMBOL"
+  ],
+  [
+    128687,
+    "DO NOT LITTER SYMBOL"
+  ],
+  [
+    128688,
+    "POTABLE WATER SYMBOL"
+  ],
+  [
+    128689,
+    "NON-POTABLE WATER SYMBOL"
+  ],
+  [
+    128690,
+    "BICYCLE"
+  ],
+  [
+    128691,
+    "NO BICYCLES"
+  ],
+  [
+    128692,
+    "BICYCLIST"
+  ],
+  [
+    128693,
+    "MOUNTAIN BICYCLIST"
+  ],
+  [
+    128694,
+    "PEDESTRIAN"
+  ],
+  [
+    128695,
+    "NO PEDESTRIANS"
+  ],
+  [
+    128696,
+    "CHILDREN CROSSING"
+  ],
+  [
+    128697,
+    "MENS SYMBOL"
+  ],
+  [
+    128698,
+    "WOMENS SYMBOL"
+  ],
+  [
+    128699,
+    "RESTROOM"
+  ],
+  [
+    128700,
+    "BABY SYMBOL"
+  ],
+  [
+    128701,
+    "TOILET"
+  ],
+  [
+    128702,
+    "WATER CLOSET"
+  ],
+  [
+    128703,
+    "SHOWER"
+  ],
+  [
+    128704,
+    "BATH"
+  ],
+  [
+    128705,
+    "BATHTUB"
+  ],
+  [
+    128706,
+    "PASSPORT CONTROL"
+  ],
+  [
+    128707,
+    "CUSTOMS"
+  ],
+  [
+    128708,
+    "BAGGAGE CLAIM"
+  ],
+  [
+    128709,
+    "LEFT LUGGAGE"
+  ],
+  [
+    128710,
+    "TRIANGLE WITH ROUNDED CORNERS"
+  ],
+  [
+    128711,
+    "PROHIBITED SIGN"
+  ],
+  [
+    128712,
+    "CIRCLED INFORMATION SOURCE"
+  ],
+  [
+    128713,
+    "BOYS SYMBOL"
+  ],
+  [
+    128714,
+    "GIRLS SYMBOL"
+  ],
+  [
+    128715,
+    "COUCH AND LAMP"
+  ],
+  [
+    128716,
+    "SLEEPING ACCOMMODATION"
+  ],
+  [
+    128717,
+    "SHOPPING BAGS"
+  ],
+  [
+    128718,
+    "BELLHOP BELL"
+  ],
+  [
+    128719,
+    "BED"
+  ],
+  [
+    128720,
+    "PLACE OF WORSHIP"
+  ],
+  [
+    128721,
+    "OCTAGONAL SIGN"
+  ],
+  [
+    128722,
+    "SHOPPING TROLLEY"
+  ],
+  [
+    128723,
+    "STUPA"
+  ],
+  [
+    128724,
+    "PAGODA"
+  ],
+  [
+    128725,
+    "HINDU TEMPLE"
+  ],
+  [
+    128726,
+    "HUT"
+  ],
+  [
+    128727,
+    "ELEVATOR"
+  ],
+  [
+    128728,
+    "LANDSLIDE"
+  ],
+  [
+    128732,
+    "WIRELESS"
+  ],
+  [
+    128733,
+    "PLAYGROUND SLIDE"
+  ],
+  [
+    128734,
+    "WHEEL"
+  ],
+  [
+    128735,
+    "RING BUOY"
+  ],
+  [
+    128736,
+    "HAMMER AND WRENCH"
+  ],
+  [
+    128737,
+    "SHIELD"
+  ],
+  [
+    128738,
+    "OIL DRUM"
+  ],
+  [
+    128739,
+    "MOTORWAY"
+  ],
+  [
+    128740,
+    "RAILWAY TRACK"
+  ],
+  [
+    128741,
+    "MOTOR BOAT"
+  ],
+  [
+    128742,
+    "UP-POINTING MILITARY AIRPLANE"
+  ],
+  [
+    128743,
+    "UP-POINTING AIRPLANE"
+  ],
+  [
+    128744,
+    "UP-POINTING SMALL AIRPLANE"
+  ],
+  [
+    128745,
+    "SMALL AIRPLANE"
+  ],
+  [
+    128746,
+    "NORTHEAST-POINTING AIRPLANE"
+  ],
+  [
+    128747,
+    "AIRPLANE DEPARTURE"
+  ],
+  [
+    128748,
+    "AIRPLANE ARRIVING"
+  ],
+  [
+    128752,
+    "SATELLITE"
+  ],
+  [
+    128753,
+    "ONCOMING FIRE ENGINE"
+  ],
+  [
+    128754,
+    "DIESEL LOCOMOTIVE"
+  ],
+  [
+    128755,
+    "PASSENGER SHIP"
+  ],
+  [
+    128756,
+    "SCOOTER"
+  ],
+  [
+    128757,
+    "MOTOR SCOOTER"
+  ],
+  [
+    128758,
+    "CANOE"
+  ],
+  [
+    128759,
+    "SLED"
+  ],
+  [
+    128760,
+    "FLYING SAUCER"
+  ],
+  [
+    128761,
+    "SKATEBOARD"
+  ],
+  [
+    128762,
+    "AUTO RICKSHAW"
+  ],
+  [
+    128763,
+    "PICKUP TRUCK"
+  ],
+  [
+    128764,
+    "ROLLER SKATE"
+  ],
+  [
+    128768,
+    "ALCHEMICAL SYMBOL FOR QUINTESSENCE"
+  ],
+  [
+    128769,
+    "ALCHEMICAL SYMBOL FOR AIR"
+  ],
+  [
+    128770,
+    "ALCHEMICAL SYMBOL FOR FIRE"
+  ],
+  [
+    128771,
+    "ALCHEMICAL SYMBOL FOR EARTH"
+  ],
+  [
+    128772,
+    "ALCHEMICAL SYMBOL FOR WATER"
+  ],
+  [
+    128773,
+    "ALCHEMICAL SYMBOL FOR AQUAFORTIS"
+  ],
+  [
+    128774,
+    "ALCHEMICAL SYMBOL FOR AQUA REGIA"
+  ],
+  [
+    128775,
+    "ALCHEMICAL SYMBOL FOR AQUA REGIA-2"
+  ],
+  [
+    128776,
+    "ALCHEMICAL SYMBOL FOR AQUA VITAE"
+  ],
+  [
+    128777,
+    "ALCHEMICAL SYMBOL FOR AQUA VITAE-2"
+  ],
+  [
+    128778,
+    "ALCHEMICAL SYMBOL FOR VINEGAR"
+  ],
+  [
+    128779,
+    "ALCHEMICAL SYMBOL FOR VINEGAR-2"
+  ],
+  [
+    128780,
+    "ALCHEMICAL SYMBOL FOR VINEGAR-3"
+  ],
+  [
+    128781,
+    "ALCHEMICAL SYMBOL FOR SULFUR"
+  ],
+  [
+    128782,
+    "ALCHEMICAL SYMBOL FOR PHILOSOPHERS SULFUR"
+  ],
+  [
+    128783,
+    "ALCHEMICAL SYMBOL FOR BLACK SULFUR"
+  ],
+  [
+    128784,
+    "ALCHEMICAL SYMBOL FOR MERCURY SUBLIMATE"
+  ],
+  [
+    128785,
+    "ALCHEMICAL SYMBOL FOR MERCURY SUBLIMATE-2"
+  ],
+  [
+    128786,
+    "ALCHEMICAL SYMBOL FOR MERCURY SUBLIMATE-3"
+  ],
+  [
+    128787,
+    "ALCHEMICAL SYMBOL FOR CINNABAR"
+  ],
+  [
+    128788,
+    "ALCHEMICAL SYMBOL FOR SALT"
+  ],
+  [
+    128789,
+    "ALCHEMICAL SYMBOL FOR NITRE"
+  ],
+  [
+    128790,
+    "ALCHEMICAL SYMBOL FOR VITRIOL"
+  ],
+  [
+    128791,
+    "ALCHEMICAL SYMBOL FOR VITRIOL-2"
+  ],
+  [
+    128792,
+    "ALCHEMICAL SYMBOL FOR ROCK SALT"
+  ],
+  [
+    128793,
+    "ALCHEMICAL SYMBOL FOR ROCK SALT-2"
+  ],
+  [
+    128794,
+    "ALCHEMICAL SYMBOL FOR GOLD"
+  ],
+  [
+    128795,
+    "ALCHEMICAL SYMBOL FOR SILVER"
+  ],
+  [
+    128796,
+    "ALCHEMICAL SYMBOL FOR IRON ORE"
+  ],
+  [
+    128797,
+    "ALCHEMICAL SYMBOL FOR IRON ORE-2"
+  ],
+  [
+    128798,
+    "ALCHEMICAL SYMBOL FOR CROCUS OF IRON"
+  ],
+  [
+    128799,
+    "ALCHEMICAL SYMBOL FOR REGULUS OF IRON"
+  ],
+  [
+    128800,
+    "ALCHEMICAL SYMBOL FOR COPPER ORE"
+  ],
+  [
+    128801,
+    "ALCHEMICAL SYMBOL FOR IRON-COPPER ORE"
+  ],
+  [
+    128802,
+    "ALCHEMICAL SYMBOL FOR SUBLIMATE OF COPPER"
+  ],
+  [
+    128803,
+    "ALCHEMICAL SYMBOL FOR CROCUS OF COPPER"
+  ],
+  [
+    128804,
+    "ALCHEMICAL SYMBOL FOR CROCUS OF COPPER-2"
+  ],
+  [
+    128805,
+    "ALCHEMICAL SYMBOL FOR COPPER ANTIMONIATE"
+  ],
+  [
+    128806,
+    "ALCHEMICAL SYMBOL FOR SALT OF COPPER ANTIMONIATE"
+  ],
+  [
+    128807,
+    "ALCHEMICAL SYMBOL FOR SUBLIMATE OF SALT OF COPPER"
+  ],
+  [
+    128808,
+    "ALCHEMICAL SYMBOL FOR VERDIGRIS"
+  ],
+  [
+    128809,
+    "ALCHEMICAL SYMBOL FOR TIN ORE"
+  ],
+  [
+    128810,
+    "ALCHEMICAL SYMBOL FOR LEAD ORE"
+  ],
+  [
+    128811,
+    "ALCHEMICAL SYMBOL FOR ANTIMONY ORE"
+  ],
+  [
+    128812,
+    "ALCHEMICAL SYMBOL FOR SUBLIMATE OF ANTIMONY"
+  ],
+  [
+    128813,
+    "ALCHEMICAL SYMBOL FOR SALT OF ANTIMONY"
+  ],
+  [
+    128814,
+    "ALCHEMICAL SYMBOL FOR SUBLIMATE OF SALT OF ANTIMONY"
+  ],
+  [
+    128815,
+    "ALCHEMICAL SYMBOL FOR VINEGAR OF ANTIMONY"
+  ],
+  [
+    128816,
+    "ALCHEMICAL SYMBOL FOR REGULUS OF ANTIMONY"
+  ],
+  [
+    128817,
+    "ALCHEMICAL SYMBOL FOR REGULUS OF ANTIMONY-2"
+  ],
+  [
+    128818,
+    "ALCHEMICAL SYMBOL FOR REGULUS"
+  ],
+  [
+    128819,
+    "ALCHEMICAL SYMBOL FOR REGULUS-2"
+  ],
+  [
+    128820,
+    "ALCHEMICAL SYMBOL FOR REGULUS-3"
+  ],
+  [
+    128821,
+    "ALCHEMICAL SYMBOL FOR REGULUS-4"
+  ],
+  [
+    128822,
+    "ALCHEMICAL SYMBOL FOR ALKALI"
+  ],
+  [
+    128823,
+    "ALCHEMICAL SYMBOL FOR ALKALI-2"
+  ],
+  [
+    128824,
+    "ALCHEMICAL SYMBOL FOR MARCASITE"
+  ],
+  [
+    128825,
+    "ALCHEMICAL SYMBOL FOR SAL-AMMONIAC"
+  ],
+  [
+    128826,
+    "ALCHEMICAL SYMBOL FOR ARSENIC"
+  ],
+  [
+    128827,
+    "ALCHEMICAL SYMBOL FOR REALGAR"
+  ],
+  [
+    128828,
+    "ALCHEMICAL SYMBOL FOR REALGAR-2"
+  ],
+  [
+    128829,
+    "ALCHEMICAL SYMBOL FOR AURIPIGMENT"
+  ],
+  [
+    128830,
+    "ALCHEMICAL SYMBOL FOR BISMUTH ORE"
+  ],
+  [
+    128831,
+    "ALCHEMICAL SYMBOL FOR TARTAR"
+  ],
+  [
+    128832,
+    "ALCHEMICAL SYMBOL FOR TARTAR-2"
+  ],
+  [
+    128833,
+    "ALCHEMICAL SYMBOL FOR QUICK LIME"
+  ],
+  [
+    128834,
+    "ALCHEMICAL SYMBOL FOR BORAX"
+  ],
+  [
+    128835,
+    "ALCHEMICAL SYMBOL FOR BORAX-2"
+  ],
+  [
+    128836,
+    "ALCHEMICAL SYMBOL FOR BORAX-3"
+  ],
+  [
+    128837,
+    "ALCHEMICAL SYMBOL FOR ALUM"
+  ],
+  [
+    128838,
+    "ALCHEMICAL SYMBOL FOR OIL"
+  ],
+  [
+    128839,
+    "ALCHEMICAL SYMBOL FOR SPIRIT"
+  ],
+  [
+    128840,
+    "ALCHEMICAL SYMBOL FOR TINCTURE"
+  ],
+  [
+    128841,
+    "ALCHEMICAL SYMBOL FOR GUM"
+  ],
+  [
+    128842,
+    "ALCHEMICAL SYMBOL FOR WAX"
+  ],
+  [
+    128843,
+    "ALCHEMICAL SYMBOL FOR POWDER"
+  ],
+  [
+    128844,
+    "ALCHEMICAL SYMBOL FOR CALX"
+  ],
+  [
+    128845,
+    "ALCHEMICAL SYMBOL FOR TUTTY"
+  ],
+  [
+    128846,
+    "ALCHEMICAL SYMBOL FOR CAPUT MORTUUM"
+  ],
+  [
+    128847,
+    "ALCHEMICAL SYMBOL FOR SCEPTER OF JOVE"
+  ],
+  [
+    128848,
+    "ALCHEMICAL SYMBOL FOR CADUCEUS"
+  ],
+  [
+    128849,
+    "ALCHEMICAL SYMBOL FOR TRIDENT"
+  ],
+  [
+    128850,
+    "ALCHEMICAL SYMBOL FOR STARRED TRIDENT"
+  ],
+  [
+    128851,
+    "ALCHEMICAL SYMBOL FOR LODESTONE"
+  ],
+  [
+    128852,
+    "ALCHEMICAL SYMBOL FOR SOAP"
+  ],
+  [
+    128853,
+    "ALCHEMICAL SYMBOL FOR URINE"
+  ],
+  [
+    128854,
+    "ALCHEMICAL SYMBOL FOR HORSE DUNG"
+  ],
+  [
+    128855,
+    "ALCHEMICAL SYMBOL FOR ASHES"
+  ],
+  [
+    128856,
+    "ALCHEMICAL SYMBOL FOR POT ASHES"
+  ],
+  [
+    128857,
+    "ALCHEMICAL SYMBOL FOR BRICK"
+  ],
+  [
+    128858,
+    "ALCHEMICAL SYMBOL FOR POWDERED BRICK"
+  ],
+  [
+    128859,
+    "ALCHEMICAL SYMBOL FOR AMALGAM"
+  ],
+  [
+    128860,
+    "ALCHEMICAL SYMBOL FOR STRATUM SUPER STRATUM"
+  ],
+  [
+    128861,
+    "ALCHEMICAL SYMBOL FOR STRATUM SUPER STRATUM-2"
+  ],
+  [
+    128862,
+    "ALCHEMICAL SYMBOL FOR SUBLIMATION"
+  ],
+  [
+    128863,
+    "ALCHEMICAL SYMBOL FOR PRECIPITATE"
+  ],
+  [
+    128864,
+    "ALCHEMICAL SYMBOL FOR DISTILL"
+  ],
+  [
+    128865,
+    "ALCHEMICAL SYMBOL FOR DISSOLVE"
+  ],
+  [
+    128866,
+    "ALCHEMICAL SYMBOL FOR DISSOLVE-2"
+  ],
+  [
+    128867,
+    "ALCHEMICAL SYMBOL FOR PURIFY"
+  ],
+  [
+    128868,
+    "ALCHEMICAL SYMBOL FOR PUTREFACTION"
+  ],
+  [
+    128869,
+    "ALCHEMICAL SYMBOL FOR CRUCIBLE"
+  ],
+  [
+    128870,
+    "ALCHEMICAL SYMBOL FOR CRUCIBLE-2"
+  ],
+  [
+    128871,
+    "ALCHEMICAL SYMBOL FOR CRUCIBLE-3"
+  ],
+  [
+    128872,
+    "ALCHEMICAL SYMBOL FOR CRUCIBLE-4"
+  ],
+  [
+    128873,
+    "ALCHEMICAL SYMBOL FOR CRUCIBLE-5"
+  ],
+  [
+    128874,
+    "ALCHEMICAL SYMBOL FOR ALEMBIC"
+  ],
+  [
+    128875,
+    "ALCHEMICAL SYMBOL FOR BATH OF MARY"
+  ],
+  [
+    128876,
+    "ALCHEMICAL SYMBOL FOR BATH OF VAPOURS"
+  ],
+  [
+    128877,
+    "ALCHEMICAL SYMBOL FOR RETORT"
+  ],
+  [
+    128878,
+    "ALCHEMICAL SYMBOL FOR HOUR"
+  ],
+  [
+    128879,
+    "ALCHEMICAL SYMBOL FOR NIGHT"
+  ],
+  [
+    128880,
+    "ALCHEMICAL SYMBOL FOR DAY-NIGHT"
+  ],
+  [
+    128881,
+    "ALCHEMICAL SYMBOL FOR MONTH"
+  ],
+  [
+    128882,
+    "ALCHEMICAL SYMBOL FOR HALF DRAM"
+  ],
+  [
+    128883,
+    "ALCHEMICAL SYMBOL FOR HALF OUNCE"
+  ],
+  [
+    128884,
+    "LOT OF FORTUNE"
+  ],
+  [
+    128885,
+    "OCCULTATION"
+  ],
+  [
+    128886,
+    "LUNAR ECLIPSE"
+  ],
+  [
+    128887,
+    "VESTA FORM TWO"
+  ],
+  [
+    128888,
+    "ASTRAEA FORM TWO"
+  ],
+  [
+    128889,
+    "HYGIEA FORM TWO"
+  ],
+  [
+    128890,
+    "PARTHENOPE FORM TWO"
+  ],
+  [
+    128891,
+    "HAUMEA"
+  ],
+  [
+    128892,
+    "MAKEMAKE"
+  ],
+  [
+    128893,
+    "GONGGONG"
+  ],
+  [
+    128894,
+    "QUAOAR"
+  ],
+  [
+    128895,
+    "ORCUS"
+  ],
+  [
+    128896,
+    "BLACK LEFT-POINTING ISOSCELES RIGHT TRIANGLE"
+  ],
+  [
+    128897,
+    "BLACK UP-POINTING ISOSCELES RIGHT TRIANGLE"
+  ],
+  [
+    128898,
+    "BLACK RIGHT-POINTING ISOSCELES RIGHT TRIANGLE"
+  ],
+  [
+    128899,
+    "BLACK DOWN-POINTING ISOSCELES RIGHT TRIANGLE"
+  ],
+  [
+    128900,
+    "BLACK SLIGHTLY SMALL CIRCLE"
+  ],
+  [
+    128901,
+    "MEDIUM BOLD WHITE CIRCLE"
+  ],
+  [
+    128902,
+    "BOLD WHITE CIRCLE"
+  ],
+  [
+    128903,
+    "HEAVY WHITE CIRCLE"
+  ],
+  [
+    128904,
+    "VERY HEAVY WHITE CIRCLE"
+  ],
+  [
+    128905,
+    "EXTREMELY HEAVY WHITE CIRCLE"
+  ],
+  [
+    128906,
+    "WHITE CIRCLE CONTAINING BLACK SMALL CIRCLE"
+  ],
+  [
+    128907,
+    "ROUND TARGET"
+  ],
+  [
+    128908,
+    "BLACK TINY SQUARE"
+  ],
+  [
+    128909,
+    "BLACK SLIGHTLY SMALL SQUARE"
+  ],
+  [
+    128910,
+    "LIGHT WHITE SQUARE"
+  ],
+  [
+    128911,
+    "MEDIUM WHITE SQUARE"
+  ],
+  [
+    128912,
+    "BOLD WHITE SQUARE"
+  ],
+  [
+    128913,
+    "HEAVY WHITE SQUARE"
+  ],
+  [
+    128914,
+    "VERY HEAVY WHITE SQUARE"
+  ],
+  [
+    128915,
+    "EXTREMELY HEAVY WHITE SQUARE"
+  ],
+  [
+    128916,
+    "WHITE SQUARE CONTAINING BLACK VERY SMALL SQUARE"
+  ],
+  [
+    128917,
+    "WHITE SQUARE CONTAINING BLACK MEDIUM SQUARE"
+  ],
+  [
+    128918,
+    "SQUARE TARGET"
+  ],
+  [
+    128919,
+    "BLACK TINY DIAMOND"
+  ],
+  [
+    128920,
+    "BLACK VERY SMALL DIAMOND"
+  ],
+  [
+    128921,
+    "BLACK MEDIUM SMALL DIAMOND"
+  ],
+  [
+    128922,
+    "WHITE DIAMOND CONTAINING BLACK VERY SMALL DIAMOND"
+  ],
+  [
+    128923,
+    "WHITE DIAMOND CONTAINING BLACK MEDIUM DIAMOND"
+  ],
+  [
+    128924,
+    "DIAMOND TARGET"
+  ],
+  [
+    128925,
+    "BLACK TINY LOZENGE"
+  ],
+  [
+    128926,
+    "BLACK VERY SMALL LOZENGE"
+  ],
+  [
+    128927,
+    "BLACK MEDIUM SMALL LOZENGE"
+  ],
+  [
+    128928,
+    "WHITE LOZENGE CONTAINING BLACK SMALL LOZENGE"
+  ],
+  [
+    128929,
+    "THIN GREEK CROSS"
+  ],
+  [
+    128930,
+    "LIGHT GREEK CROSS"
+  ],
+  [
+    128931,
+    "MEDIUM GREEK CROSS"
+  ],
+  [
+    128932,
+    "BOLD GREEK CROSS"
+  ],
+  [
+    128933,
+    "VERY BOLD GREEK CROSS"
+  ],
+  [
+    128934,
+    "VERY HEAVY GREEK CROSS"
+  ],
+  [
+    128935,
+    "EXTREMELY HEAVY GREEK CROSS"
+  ],
+  [
+    128936,
+    "THIN SALTIRE"
+  ],
+  [
+    128937,
+    "LIGHT SALTIRE"
+  ],
+  [
+    128938,
+    "MEDIUM SALTIRE"
+  ],
+  [
+    128939,
+    "BOLD SALTIRE"
+  ],
+  [
+    128940,
+    "HEAVY SALTIRE"
+  ],
+  [
+    128941,
+    "VERY HEAVY SALTIRE"
+  ],
+  [
+    128942,
+    "EXTREMELY HEAVY SALTIRE"
+  ],
+  [
+    128943,
+    "LIGHT FIVE SPOKED ASTERISK"
+  ],
+  [
+    128944,
+    "MEDIUM FIVE SPOKED ASTERISK"
+  ],
+  [
+    128945,
+    "BOLD FIVE SPOKED ASTERISK"
+  ],
+  [
+    128946,
+    "HEAVY FIVE SPOKED ASTERISK"
+  ],
+  [
+    128947,
+    "VERY HEAVY FIVE SPOKED ASTERISK"
+  ],
+  [
+    128948,
+    "EXTREMELY HEAVY FIVE SPOKED ASTERISK"
+  ],
+  [
+    128949,
+    "LIGHT SIX SPOKED ASTERISK"
+  ],
+  [
+    128950,
+    "MEDIUM SIX SPOKED ASTERISK"
+  ],
+  [
+    128951,
+    "BOLD SIX SPOKED ASTERISK"
+  ],
+  [
+    128952,
+    "HEAVY SIX SPOKED ASTERISK"
+  ],
+  [
+    128953,
+    "VERY HEAVY SIX SPOKED ASTERISK"
+  ],
+  [
+    128954,
+    "EXTREMELY HEAVY SIX SPOKED ASTERISK"
+  ],
+  [
+    128955,
+    "LIGHT EIGHT SPOKED ASTERISK"
+  ],
+  [
+    128956,
+    "MEDIUM EIGHT SPOKED ASTERISK"
+  ],
+  [
+    128957,
+    "BOLD EIGHT SPOKED ASTERISK"
+  ],
+  [
+    128958,
+    "HEAVY EIGHT SPOKED ASTERISK"
+  ],
+  [
+    128959,
+    "VERY HEAVY EIGHT SPOKED ASTERISK"
+  ],
+  [
+    128960,
+    "LIGHT THREE POINTED BLACK STAR"
+  ],
+  [
+    128961,
+    "MEDIUM THREE POINTED BLACK STAR"
+  ],
+  [
+    128962,
+    "THREE POINTED BLACK STAR"
+  ],
+  [
+    128963,
+    "MEDIUM THREE POINTED PINWHEEL STAR"
+  ],
+  [
+    128964,
+    "LIGHT FOUR POINTED BLACK STAR"
+  ],
+  [
+    128965,
+    "MEDIUM FOUR POINTED BLACK STAR"
+  ],
+  [
+    128966,
+    "FOUR POINTED BLACK STAR"
+  ],
+  [
+    128967,
+    "MEDIUM FOUR POINTED PINWHEEL STAR"
+  ],
+  [
+    128968,
+    "REVERSE LIGHT FOUR POINTED PINWHEEL STAR"
+  ],
+  [
+    128969,
+    "LIGHT FIVE POINTED BLACK STAR"
+  ],
+  [
+    128970,
+    "HEAVY FIVE POINTED BLACK STAR"
+  ],
+  [
+    128971,
+    "MEDIUM SIX POINTED BLACK STAR"
+  ],
+  [
+    128972,
+    "HEAVY SIX POINTED BLACK STAR"
+  ],
+  [
+    128973,
+    "SIX POINTED PINWHEEL STAR"
+  ],
+  [
+    128974,
+    "MEDIUM EIGHT POINTED BLACK STAR"
+  ],
+  [
+    128975,
+    "HEAVY EIGHT POINTED BLACK STAR"
+  ],
+  [
+    128976,
+    "VERY HEAVY EIGHT POINTED BLACK STAR"
+  ],
+  [
+    128977,
+    "HEAVY EIGHT POINTED PINWHEEL STAR"
+  ],
+  [
+    128978,
+    "LIGHT TWELVE POINTED BLACK STAR"
+  ],
+  [
+    128979,
+    "HEAVY TWELVE POINTED BLACK STAR"
+  ],
+  [
+    128980,
+    "HEAVY TWELVE POINTED PINWHEEL STAR"
+  ],
+  [
+    128981,
+    "CIRCLED TRIANGLE"
+  ],
+  [
+    128982,
+    "NEGATIVE CIRCLED TRIANGLE"
+  ],
+  [
+    128983,
+    "CIRCLED SQUARE"
+  ],
+  [
+    128984,
+    "NEGATIVE CIRCLED SQUARE"
+  ],
+  [
+    128985,
+    "NINE POINTED WHITE STAR"
+  ],
+  [
+    128992,
+    "LARGE ORANGE CIRCLE"
+  ],
+  [
+    128993,
+    "LARGE YELLOW CIRCLE"
+  ],
+  [
+    128994,
+    "LARGE GREEN CIRCLE"
+  ],
+  [
+    128995,
+    "LARGE PURPLE CIRCLE"
+  ],
+  [
+    128996,
+    "LARGE BROWN CIRCLE"
+  ],
+  [
+    128997,
+    "LARGE RED SQUARE"
+  ],
+  [
+    128998,
+    "LARGE BLUE SQUARE"
+  ],
+  [
+    128999,
+    "LARGE ORANGE SQUARE"
+  ],
+  [
+    129000,
+    "LARGE YELLOW SQUARE"
+  ],
+  [
+    129001,
+    "LARGE GREEN SQUARE"
+  ],
+  [
+    129002,
+    "LARGE PURPLE SQUARE"
+  ],
+  [
+    129003,
+    "LARGE BROWN SQUARE"
+  ],
+  [
+    129008,
+    "HEAVY EQUALS SIGN"
+  ],
+  [
+    129024,
+    "LEFTWARDS ARROW WITH SMALL TRIANGLE ARROWHEAD"
+  ],
+  [
+    129025,
+    "UPWARDS ARROW WITH SMALL TRIANGLE ARROWHEAD"
+  ],
+  [
+    129026,
+    "RIGHTWARDS ARROW WITH SMALL TRIANGLE ARROWHEAD"
+  ],
+  [
+    129027,
+    "DOWNWARDS ARROW WITH SMALL TRIANGLE ARROWHEAD"
+  ],
+  [
+    129028,
+    "LEFTWARDS ARROW WITH MEDIUM TRIANGLE ARROWHEAD"
+  ],
+  [
+    129029,
+    "UPWARDS ARROW WITH MEDIUM TRIANGLE ARROWHEAD"
+  ],
+  [
+    129030,
+    "RIGHTWARDS ARROW WITH MEDIUM TRIANGLE ARROWHEAD"
+  ],
+  [
+    129031,
+    "DOWNWARDS ARROW WITH MEDIUM TRIANGLE ARROWHEAD"
+  ],
+  [
+    129032,
+    "LEFTWARDS ARROW WITH LARGE TRIANGLE ARROWHEAD"
+  ],
+  [
+    129033,
+    "UPWARDS ARROW WITH LARGE TRIANGLE ARROWHEAD"
+  ],
+  [
+    129034,
+    "RIGHTWARDS ARROW WITH LARGE TRIANGLE ARROWHEAD"
+  ],
+  [
+    129035,
+    "DOWNWARDS ARROW WITH LARGE TRIANGLE ARROWHEAD"
+  ],
+  [
+    129040,
+    "LEFTWARDS ARROW WITH SMALL EQUILATERAL ARROWHEAD"
+  ],
+  [
+    129041,
+    "UPWARDS ARROW WITH SMALL EQUILATERAL ARROWHEAD"
+  ],
+  [
+    129042,
+    "RIGHTWARDS ARROW WITH SMALL EQUILATERAL ARROWHEAD"
+  ],
+  [
+    129043,
+    "DOWNWARDS ARROW WITH SMALL EQUILATERAL ARROWHEAD"
+  ],
+  [
+    129044,
+    "LEFTWARDS ARROW WITH EQUILATERAL ARROWHEAD"
+  ],
+  [
+    129045,
+    "UPWARDS ARROW WITH EQUILATERAL ARROWHEAD"
+  ],
+  [
+    129046,
+    "RIGHTWARDS ARROW WITH EQUILATERAL ARROWHEAD"
+  ],
+  [
+    129047,
+    "DOWNWARDS ARROW WITH EQUILATERAL ARROWHEAD"
+  ],
+  [
+    129048,
+    "HEAVY LEFTWARDS ARROW WITH EQUILATERAL ARROWHEAD"
+  ],
+  [
+    129049,
+    "HEAVY UPWARDS ARROW WITH EQUILATERAL ARROWHEAD"
+  ],
+  [
+    129050,
+    "HEAVY RIGHTWARDS ARROW WITH EQUILATERAL ARROWHEAD"
+  ],
+  [
+    129051,
+    "HEAVY DOWNWARDS ARROW WITH EQUILATERAL ARROWHEAD"
+  ],
+  [
+    129052,
+    "HEAVY LEFTWARDS ARROW WITH LARGE EQUILATERAL ARROWHEAD"
+  ],
+  [
+    129053,
+    "HEAVY UPWARDS ARROW WITH LARGE EQUILATERAL ARROWHEAD"
+  ],
+  [
+    129054,
+    "HEAVY RIGHTWARDS ARROW WITH LARGE EQUILATERAL ARROWHEAD"
+  ],
+  [
+    129055,
+    "HEAVY DOWNWARDS ARROW WITH LARGE EQUILATERAL ARROWHEAD"
+  ],
+  [
+    129056,
+    "LEFTWARDS TRIANGLE-HEADED ARROW WITH NARROW SHAFT"
+  ],
+  [
+    129057,
+    "UPWARDS TRIANGLE-HEADED ARROW WITH NARROW SHAFT"
+  ],
+  [
+    129058,
+    "RIGHTWARDS TRIANGLE-HEADED ARROW WITH NARROW SHAFT"
+  ],
+  [
+    129059,
+    "DOWNWARDS TRIANGLE-HEADED ARROW WITH NARROW SHAFT"
+  ],
+  [
+    129060,
+    "LEFTWARDS TRIANGLE-HEADED ARROW WITH MEDIUM SHAFT"
+  ],
+  [
+    129061,
+    "UPWARDS TRIANGLE-HEADED ARROW WITH MEDIUM SHAFT"
+  ],
+  [
+    129062,
+    "RIGHTWARDS TRIANGLE-HEADED ARROW WITH MEDIUM SHAFT"
+  ],
+  [
+    129063,
+    "DOWNWARDS TRIANGLE-HEADED ARROW WITH MEDIUM SHAFT"
+  ],
+  [
+    129064,
+    "LEFTWARDS TRIANGLE-HEADED ARROW WITH BOLD SHAFT"
+  ],
+  [
+    129065,
+    "UPWARDS TRIANGLE-HEADED ARROW WITH BOLD SHAFT"
+  ],
+  [
+    129066,
+    "RIGHTWARDS TRIANGLE-HEADED ARROW WITH BOLD SHAFT"
+  ],
+  [
+    129067,
+    "DOWNWARDS TRIANGLE-HEADED ARROW WITH BOLD SHAFT"
+  ],
+  [
+    129068,
+    "LEFTWARDS TRIANGLE-HEADED ARROW WITH HEAVY SHAFT"
+  ],
+  [
+    129069,
+    "UPWARDS TRIANGLE-HEADED ARROW WITH HEAVY SHAFT"
+  ],
+  [
+    129070,
+    "RIGHTWARDS TRIANGLE-HEADED ARROW WITH HEAVY SHAFT"
+  ],
+  [
+    129071,
+    "DOWNWARDS TRIANGLE-HEADED ARROW WITH HEAVY SHAFT"
+  ],
+  [
+    129072,
+    "LEFTWARDS TRIANGLE-HEADED ARROW WITH VERY HEAVY SHAFT"
+  ],
+  [
+    129073,
+    "UPWARDS TRIANGLE-HEADED ARROW WITH VERY HEAVY SHAFT"
+  ],
+  [
+    129074,
+    "RIGHTWARDS TRIANGLE-HEADED ARROW WITH VERY HEAVY SHAFT"
+  ],
+  [
+    129075,
+    "DOWNWARDS TRIANGLE-HEADED ARROW WITH VERY HEAVY SHAFT"
+  ],
+  [
+    129076,
+    "LEFTWARDS FINGER-POST ARROW"
+  ],
+  [
+    129077,
+    "UPWARDS FINGER-POST ARROW"
+  ],
+  [
+    129078,
+    "RIGHTWARDS FINGER-POST ARROW"
+  ],
+  [
+    129079,
+    "DOWNWARDS FINGER-POST ARROW"
+  ],
+  [
+    129080,
+    "LEFTWARDS SQUARED ARROW"
+  ],
+  [
+    129081,
+    "UPWARDS SQUARED ARROW"
+  ],
+  [
+    129082,
+    "RIGHTWARDS SQUARED ARROW"
+  ],
+  [
+    129083,
+    "DOWNWARDS SQUARED ARROW"
+  ],
+  [
+    129084,
+    "LEFTWARDS COMPRESSED ARROW"
+  ],
+  [
+    129085,
+    "UPWARDS COMPRESSED ARROW"
+  ],
+  [
+    129086,
+    "RIGHTWARDS COMPRESSED ARROW"
+  ],
+  [
+    129087,
+    "DOWNWARDS COMPRESSED ARROW"
+  ],
+  [
+    129088,
+    "LEFTWARDS HEAVY COMPRESSED ARROW"
+  ],
+  [
+    129089,
+    "UPWARDS HEAVY COMPRESSED ARROW"
+  ],
+  [
+    129090,
+    "RIGHTWARDS HEAVY COMPRESSED ARROW"
+  ],
+  [
+    129091,
+    "DOWNWARDS HEAVY COMPRESSED ARROW"
+  ],
+  [
+    129092,
+    "LEFTWARDS HEAVY ARROW"
+  ],
+  [
+    129093,
+    "UPWARDS HEAVY ARROW"
+  ],
+  [
+    129094,
+    "RIGHTWARDS HEAVY ARROW"
+  ],
+  [
+    129095,
+    "DOWNWARDS HEAVY ARROW"
+  ],
+  [
+    129104,
+    "LEFTWARDS SANS-SERIF ARROW"
+  ],
+  [
+    129105,
+    "UPWARDS SANS-SERIF ARROW"
+  ],
+  [
+    129106,
+    "RIGHTWARDS SANS-SERIF ARROW"
+  ],
+  [
+    129107,
+    "DOWNWARDS SANS-SERIF ARROW"
+  ],
+  [
+    129108,
+    "NORTH WEST SANS-SERIF ARROW"
+  ],
+  [
+    129109,
+    "NORTH EAST SANS-SERIF ARROW"
+  ],
+  [
+    129110,
+    "SOUTH EAST SANS-SERIF ARROW"
+  ],
+  [
+    129111,
+    "SOUTH WEST SANS-SERIF ARROW"
+  ],
+  [
+    129112,
+    "LEFT RIGHT SANS-SERIF ARROW"
+  ],
+  [
+    129113,
+    "UP DOWN SANS-SERIF ARROW"
+  ],
+  [
+    129120,
+    "WIDE-HEADED LEFTWARDS LIGHT BARB ARROW"
+  ],
+  [
+    129121,
+    "WIDE-HEADED UPWARDS LIGHT BARB ARROW"
+  ],
+  [
+    129122,
+    "WIDE-HEADED RIGHTWARDS LIGHT BARB ARROW"
+  ],
+  [
+    129123,
+    "WIDE-HEADED DOWNWARDS LIGHT BARB ARROW"
+  ],
+  [
+    129124,
+    "WIDE-HEADED NORTH WEST LIGHT BARB ARROW"
+  ],
+  [
+    129125,
+    "WIDE-HEADED NORTH EAST LIGHT BARB ARROW"
+  ],
+  [
+    129126,
+    "WIDE-HEADED SOUTH EAST LIGHT BARB ARROW"
+  ],
+  [
+    129127,
+    "WIDE-HEADED SOUTH WEST LIGHT BARB ARROW"
+  ],
+  [
+    129128,
+    "WIDE-HEADED LEFTWARDS BARB ARROW"
+  ],
+  [
+    129129,
+    "WIDE-HEADED UPWARDS BARB ARROW"
+  ],
+  [
+    129130,
+    "WIDE-HEADED RIGHTWARDS BARB ARROW"
+  ],
+  [
+    129131,
+    "WIDE-HEADED DOWNWARDS BARB ARROW"
+  ],
+  [
+    129132,
+    "WIDE-HEADED NORTH WEST BARB ARROW"
+  ],
+  [
+    129133,
+    "WIDE-HEADED NORTH EAST BARB ARROW"
+  ],
+  [
+    129134,
+    "WIDE-HEADED SOUTH EAST BARB ARROW"
+  ],
+  [
+    129135,
+    "WIDE-HEADED SOUTH WEST BARB ARROW"
+  ],
+  [
+    129136,
+    "WIDE-HEADED LEFTWARDS MEDIUM BARB ARROW"
+  ],
+  [
+    129137,
+    "WIDE-HEADED UPWARDS MEDIUM BARB ARROW"
+  ],
+  [
+    129138,
+    "WIDE-HEADED RIGHTWARDS MEDIUM BARB ARROW"
+  ],
+  [
+    129139,
+    "WIDE-HEADED DOWNWARDS MEDIUM BARB ARROW"
+  ],
+  [
+    129140,
+    "WIDE-HEADED NORTH WEST MEDIUM BARB ARROW"
+  ],
+  [
+    129141,
+    "WIDE-HEADED NORTH EAST MEDIUM BARB ARROW"
+  ],
+  [
+    129142,
+    "WIDE-HEADED SOUTH EAST MEDIUM BARB ARROW"
+  ],
+  [
+    129143,
+    "WIDE-HEADED SOUTH WEST MEDIUM BARB ARROW"
+  ],
+  [
+    129144,
+    "WIDE-HEADED LEFTWARDS HEAVY BARB ARROW"
+  ],
+  [
+    129145,
+    "WIDE-HEADED UPWARDS HEAVY BARB ARROW"
+  ],
+  [
+    129146,
+    "WIDE-HEADED RIGHTWARDS HEAVY BARB ARROW"
+  ],
+  [
+    129147,
+    "WIDE-HEADED DOWNWARDS HEAVY BARB ARROW"
+  ],
+  [
+    129148,
+    "WIDE-HEADED NORTH WEST HEAVY BARB ARROW"
+  ],
+  [
+    129149,
+    "WIDE-HEADED NORTH EAST HEAVY BARB ARROW"
+  ],
+  [
+    129150,
+    "WIDE-HEADED SOUTH EAST HEAVY BARB ARROW"
+  ],
+  [
+    129151,
+    "WIDE-HEADED SOUTH WEST HEAVY BARB ARROW"
+  ],
+  [
+    129152,
+    "WIDE-HEADED LEFTWARDS VERY HEAVY BARB ARROW"
+  ],
+  [
+    129153,
+    "WIDE-HEADED UPWARDS VERY HEAVY BARB ARROW"
+  ],
+  [
+    129154,
+    "WIDE-HEADED RIGHTWARDS VERY HEAVY BARB ARROW"
+  ],
+  [
+    129155,
+    "WIDE-HEADED DOWNWARDS VERY HEAVY BARB ARROW"
+  ],
+  [
+    129156,
+    "WIDE-HEADED NORTH WEST VERY HEAVY BARB ARROW"
+  ],
+  [
+    129157,
+    "WIDE-HEADED NORTH EAST VERY HEAVY BARB ARROW"
+  ],
+  [
+    129158,
+    "WIDE-HEADED SOUTH EAST VERY HEAVY BARB ARROW"
+  ],
+  [
+    129159,
+    "WIDE-HEADED SOUTH WEST VERY HEAVY BARB ARROW"
+  ],
+  [
+    129168,
+    "LEFTWARDS TRIANGLE ARROWHEAD"
+  ],
+  [
+    129169,
+    "UPWARDS TRIANGLE ARROWHEAD"
+  ],
+  [
+    129170,
+    "RIGHTWARDS TRIANGLE ARROWHEAD"
+  ],
+  [
+    129171,
+    "DOWNWARDS TRIANGLE ARROWHEAD"
+  ],
+  [
+    129172,
+    "LEFTWARDS WHITE ARROW WITHIN TRIANGLE ARROWHEAD"
+  ],
+  [
+    129173,
+    "UPWARDS WHITE ARROW WITHIN TRIANGLE ARROWHEAD"
+  ],
+  [
+    129174,
+    "RIGHTWARDS WHITE ARROW WITHIN TRIANGLE ARROWHEAD"
+  ],
+  [
+    129175,
+    "DOWNWARDS WHITE ARROW WITHIN TRIANGLE ARROWHEAD"
+  ],
+  [
+    129176,
+    "LEFTWARDS ARROW WITH NOTCHED TAIL"
+  ],
+  [
+    129177,
+    "UPWARDS ARROW WITH NOTCHED TAIL"
+  ],
+  [
+    129178,
+    "RIGHTWARDS ARROW WITH NOTCHED TAIL"
+  ],
+  [
+    129179,
+    "DOWNWARDS ARROW WITH NOTCHED TAIL"
+  ],
+  [
+    129180,
+    "HEAVY ARROW SHAFT WIDTH ONE"
+  ],
+  [
+    129181,
+    "HEAVY ARROW SHAFT WIDTH TWO THIRDS"
+  ],
+  [
+    129182,
+    "HEAVY ARROW SHAFT WIDTH ONE HALF"
+  ],
+  [
+    129183,
+    "HEAVY ARROW SHAFT WIDTH ONE THIRD"
+  ],
+  [
+    129184,
+    "LEFTWARDS BOTTOM-SHADED WHITE ARROW"
+  ],
+  [
+    129185,
+    "RIGHTWARDS BOTTOM SHADED WHITE ARROW"
+  ],
+  [
+    129186,
+    "LEFTWARDS TOP SHADED WHITE ARROW"
+  ],
+  [
+    129187,
+    "RIGHTWARDS TOP SHADED WHITE ARROW"
+  ],
+  [
+    129188,
+    "LEFTWARDS LEFT-SHADED WHITE ARROW"
+  ],
+  [
+    129189,
+    "RIGHTWARDS RIGHT-SHADED WHITE ARROW"
+  ],
+  [
+    129190,
+    "LEFTWARDS RIGHT-SHADED WHITE ARROW"
+  ],
+  [
+    129191,
+    "RIGHTWARDS LEFT-SHADED WHITE ARROW"
+  ],
+  [
+    129192,
+    "LEFTWARDS BACK-TILTED SHADOWED WHITE ARROW"
+  ],
+  [
+    129193,
+    "RIGHTWARDS BACK-TILTED SHADOWED WHITE ARROW"
+  ],
+  [
+    129194,
+    "LEFTWARDS FRONT-TILTED SHADOWED WHITE ARROW"
+  ],
+  [
+    129195,
+    "RIGHTWARDS FRONT-TILTED SHADOWED WHITE ARROW"
+  ],
+  [
+    129196,
+    "WHITE ARROW SHAFT WIDTH ONE"
+  ],
+  [
+    129197,
+    "WHITE ARROW SHAFT WIDTH TWO THIRDS"
+  ],
+  [
+    129200,
+    "ARROW POINTING UPWARDS THEN NORTH WEST"
+  ],
+  [
+    129201,
+    "ARROW POINTING RIGHTWARDS THEN CURVING SOUTH WEST"
+  ],
+  [
+    129202,
+    "RIGHTWARDS ARROW WITH LOWER HOOK"
+  ],
+  [
+    129203,
+    "DOWNWARDS BLACK ARROW TO BAR"
+  ],
+  [
+    129204,
+    "NEGATIVE SQUARED LEFTWARDS ARROW"
+  ],
+  [
+    129205,
+    "NEGATIVE SQUARED UPWARDS ARROW"
+  ],
+  [
+    129206,
+    "NEGATIVE SQUARED RIGHTWARDS ARROW"
+  ],
+  [
+    129207,
+    "NEGATIVE SQUARED DOWNWARDS ARROW"
+  ],
+  [
+    129208,
+    "NORTH WEST ARROW FROM BAR"
+  ],
+  [
+    129209,
+    "NORTH EAST ARROW FROM BAR"
+  ],
+  [
+    129210,
+    "SOUTH EAST ARROW FROM BAR"
+  ],
+  [
+    129211,
+    "SOUTH WEST ARROW FROM BAR"
+  ],
+  [
+    129216,
+    "LEFTWARDS ARROW FROM DOWNWARDS ARROW"
+  ],
+  [
+    129217,
+    "RIGHTWARDS ARROW FROM DOWNWARDS ARROW"
+  ],
+  [
+    129232,
+    "LONG RIGHTWARDS ARROW OVER LONG LEFTWARDS ARROW"
+  ],
+  [
+    129233,
+    "LONG RIGHTWARDS HARPOON OVER LONG LEFTWARDS HARPOON"
+  ],
+  [
+    129234,
+    "LONG RIGHTWARDS HARPOON ABOVE SHORT LEFTWARDS HARPOON"
+  ],
+  [
+    129235,
+    "SHORT RIGHTWARDS HARPOON ABOVE LONG LEFTWARDS HARPOON"
+  ],
+  [
+    129236,
+    "LONG LEFTWARDS HARPOON ABOVE SHORT RIGHTWARDS HARPOON"
+  ],
+  [
+    129237,
+    "SHORT LEFTWARDS HARPOON ABOVE LONG RIGHTWARDS HARPOON"
+  ],
+  [
+    129238,
+    "LONG RIGHTWARDS ARROW THROUGH X"
+  ],
+  [
+    129239,
+    "LONG RIGHTWARDS ARROW WITH DOUBLE SLASH"
+  ],
+  [
+    129240,
+    "LONG LEFT RIGHT ARROW WITH DEPENDENT LOBE"
+  ],
+  [
+    129280,
+    "CIRCLED CROSS FORMEE WITH FOUR DOTS"
+  ],
+  [
+    129281,
+    "CIRCLED CROSS FORMEE WITH TWO DOTS"
+  ],
+  [
+    129282,
+    "CIRCLED CROSS FORMEE"
+  ],
+  [
+    129283,
+    "LEFT HALF CIRCLE WITH FOUR DOTS"
+  ],
+  [
+    129284,
+    "LEFT HALF CIRCLE WITH THREE DOTS"
+  ],
+  [
+    129285,
+    "LEFT HALF CIRCLE WITH TWO DOTS"
+  ],
+  [
+    129286,
+    "LEFT HALF CIRCLE WITH DOT"
+  ],
+  [
+    129287,
+    "LEFT HALF CIRCLE"
+  ],
+  [
+    129288,
+    "DOWNWARD FACING HOOK"
+  ],
+  [
+    129289,
+    "DOWNWARD FACING NOTCHED HOOK"
+  ],
+  [
+    129290,
+    "DOWNWARD FACING HOOK WITH DOT"
+  ],
+  [
+    129291,
+    "DOWNWARD FACING NOTCHED HOOK WITH DOT"
+  ],
+  [
+    129292,
+    "PINCHED FINGERS"
+  ],
+  [
+    129293,
+    "WHITE HEART"
+  ],
+  [
+    129294,
+    "BROWN HEART"
+  ],
+  [
+    129295,
+    "PINCHING HAND"
+  ],
+  [
+    129296,
+    "ZIPPER-MOUTH FACE"
+  ],
+  [
+    129297,
+    "MONEY-MOUTH FACE"
+  ],
+  [
+    129298,
+    "FACE WITH THERMOMETER"
+  ],
+  [
+    129299,
+    "NERD FACE"
+  ],
+  [
+    129300,
+    "THINKING FACE"
+  ],
+  [
+    129301,
+    "FACE WITH HEAD-BANDAGE"
+  ],
+  [
+    129302,
+    "ROBOT FACE"
+  ],
+  [
+    129303,
+    "HUGGING FACE"
+  ],
+  [
+    129304,
+    "SIGN OF THE HORNS"
+  ],
+  [
+    129305,
+    "CALL ME HAND"
+  ],
+  [
+    129306,
+    "RAISED BACK OF HAND"
+  ],
+  [
+    129307,
+    "LEFT-FACING FIST"
+  ],
+  [
+    129308,
+    "RIGHT-FACING FIST"
+  ],
+  [
+    129309,
+    "HANDSHAKE"
+  ],
+  [
+    129310,
+    "HAND WITH INDEX AND MIDDLE FINGERS CROSSED"
+  ],
+  [
+    129311,
+    "I LOVE YOU HAND SIGN"
+  ],
+  [
+    129312,
+    "FACE WITH COWBOY HAT"
+  ],
+  [
+    129313,
+    "CLOWN FACE"
+  ],
+  [
+    129314,
+    "NAUSEATED FACE"
+  ],
+  [
+    129315,
+    "ROLLING ON THE FLOOR LAUGHING"
+  ],
+  [
+    129316,
+    "DROOLING FACE"
+  ],
+  [
+    129317,
+    "LYING FACE"
+  ],
+  [
+    129318,
+    "FACE PALM"
+  ],
+  [
+    129319,
+    "SNEEZING FACE"
+  ],
+  [
+    129320,
+    "FACE WITH ONE EYEBROW RAISED"
+  ],
+  [
+    129321,
+    "GRINNING FACE WITH STAR EYES"
+  ],
+  [
+    129322,
+    "GRINNING FACE WITH ONE LARGE AND ONE SMALL EYE"
+  ],
+  [
+    129323,
+    "FACE WITH FINGER COVERING CLOSED LIPS"
+  ],
+  [
+    129324,
+    "SERIOUS FACE WITH SYMBOLS COVERING MOUTH"
+  ],
+  [
+    129325,
+    "SMILING FACE WITH SMILING EYES AND HAND COVERING MOUTH"
+  ],
+  [
+    129326,
+    "FACE WITH OPEN MOUTH VOMITING"
+  ],
+  [
+    129327,
+    "SHOCKED FACE WITH EXPLODING HEAD"
+  ],
+  [
+    129328,
+    "PREGNANT WOMAN"
+  ],
+  [
+    129329,
+    "BREAST-FEEDING"
+  ],
+  [
+    129330,
+    "PALMS UP TOGETHER"
+  ],
+  [
+    129331,
+    "SELFIE"
+  ],
+  [
+    129332,
+    "PRINCE"
+  ],
+  [
+    129333,
+    "MAN IN TUXEDO"
+  ],
+  [
+    129334,
+    "MOTHER CHRISTMAS"
+  ],
+  [
+    129335,
+    "SHRUG"
+  ],
+  [
+    129336,
+    "PERSON DOING CARTWHEEL"
+  ],
+  [
+    129337,
+    "JUGGLING"
+  ],
+  [
+    129338,
+    "FENCER"
+  ],
+  [
+    129339,
+    "MODERN PENTATHLON"
+  ],
+  [
+    129340,
+    "WRESTLERS"
+  ],
+  [
+    129341,
+    "WATER POLO"
+  ],
+  [
+    129342,
+    "HANDBALL"
+  ],
+  [
+    129343,
+    "DIVING MASK"
+  ],
+  [
+    129344,
+    "WILTED FLOWER"
+  ],
+  [
+    129345,
+    "DRUM WITH DRUMSTICKS"
+  ],
+  [
+    129346,
+    "CLINKING GLASSES"
+  ],
+  [
+    129347,
+    "TUMBLER GLASS"
+  ],
+  [
+    129348,
+    "SPOON"
+  ],
+  [
+    129349,
+    "GOAL NET"
+  ],
+  [
+    129350,
+    "RIFLE"
+  ],
+  [
+    129351,
+    "FIRST PLACE MEDAL"
+  ],
+  [
+    129352,
+    "SECOND PLACE MEDAL"
+  ],
+  [
+    129353,
+    "THIRD PLACE MEDAL"
+  ],
+  [
+    129354,
+    "BOXING GLOVE"
+  ],
+  [
+    129355,
+    "MARTIAL ARTS UNIFORM"
+  ],
+  [
+    129356,
+    "CURLING STONE"
+  ],
+  [
+    129357,
+    "LACROSSE STICK AND BALL"
+  ],
+  [
+    129358,
+    "SOFTBALL"
+  ],
+  [
+    129359,
+    "FLYING DISC"
+  ],
+  [
+    129360,
+    "CROISSANT"
+  ],
+  [
+    129361,
+    "AVOCADO"
+  ],
+  [
+    129362,
+    "CUCUMBER"
+  ],
+  [
+    129363,
+    "BACON"
+  ],
+  [
+    129364,
+    "POTATO"
+  ],
+  [
+    129365,
+    "CARROT"
+  ],
+  [
+    129366,
+    "BAGUETTE BREAD"
+  ],
+  [
+    129367,
+    "GREEN SALAD"
+  ],
+  [
+    129368,
+    "SHALLOW PAN OF FOOD"
+  ],
+  [
+    129369,
+    "STUFFED FLATBREAD"
+  ],
+  [
+    129370,
+    "EGG"
+  ],
+  [
+    129371,
+    "GLASS OF MILK"
+  ],
+  [
+    129372,
+    "PEANUTS"
+  ],
+  [
+    129373,
+    "KIWIFRUIT"
+  ],
+  [
+    129374,
+    "PANCAKES"
+  ],
+  [
+    129375,
+    "DUMPLING"
+  ],
+  [
+    129376,
+    "FORTUNE COOKIE"
+  ],
+  [
+    129377,
+    "TAKEOUT BOX"
+  ],
+  [
+    129378,
+    "CHOPSTICKS"
+  ],
+  [
+    129379,
+    "BOWL WITH SPOON"
+  ],
+  [
+    129380,
+    "CUP WITH STRAW"
+  ],
+  [
+    129381,
+    "COCONUT"
+  ],
+  [
+    129382,
+    "BROCCOLI"
+  ],
+  [
+    129383,
+    "PIE"
+  ],
+  [
+    129384,
+    "PRETZEL"
+  ],
+  [
+    129385,
+    "CUT OF MEAT"
+  ],
+  [
+    129386,
+    "SANDWICH"
+  ],
+  [
+    129387,
+    "CANNED FOOD"
+  ],
+  [
+    129388,
+    "LEAFY GREEN"
+  ],
+  [
+    129389,
+    "MANGO"
+  ],
+  [
+    129390,
+    "MOON CAKE"
+  ],
+  [
+    129391,
+    "BAGEL"
+  ],
+  [
+    129392,
+    "SMILING FACE WITH SMILING EYES AND THREE HEARTS"
+  ],
+  [
+    129393,
+    "YAWNING FACE"
+  ],
+  [
+    129394,
+    "SMILING FACE WITH TEAR"
+  ],
+  [
+    129395,
+    "FACE WITH PARTY HORN AND PARTY HAT"
+  ],
+  [
+    129396,
+    "FACE WITH UNEVEN EYES AND WAVY MOUTH"
+  ],
+  [
+    129397,
+    "OVERHEATED FACE"
+  ],
+  [
+    129398,
+    "FREEZING FACE"
+  ],
+  [
+    129399,
+    "NINJA"
+  ],
+  [
+    129400,
+    "DISGUISED FACE"
+  ],
+  [
+    129401,
+    "FACE HOLDING BACK TEARS"
+  ],
+  [
+    129402,
+    "FACE WITH PLEADING EYES"
+  ],
+  [
+    129403,
+    "SARI"
+  ],
+  [
+    129404,
+    "LAB COAT"
+  ],
+  [
+    129405,
+    "GOGGLES"
+  ],
+  [
+    129406,
+    "HIKING BOOT"
+  ],
+  [
+    129407,
+    "FLAT SHOE"
+  ],
+  [
+    129408,
+    "CRAB"
+  ],
+  [
+    129409,
+    "LION FACE"
+  ],
+  [
+    129410,
+    "SCORPION"
+  ],
+  [
+    129411,
+    "TURKEY"
+  ],
+  [
+    129412,
+    "UNICORN FACE"
+  ],
+  [
+    129413,
+    "EAGLE"
+  ],
+  [
+    129414,
+    "DUCK"
+  ],
+  [
+    129415,
+    "BAT"
+  ],
+  [
+    129416,
+    "SHARK"
+  ],
+  [
+    129417,
+    "OWL"
+  ],
+  [
+    129418,
+    "FOX FACE"
+  ],
+  [
+    129419,
+    "BUTTERFLY"
+  ],
+  [
+    129420,
+    "DEER"
+  ],
+  [
+    129421,
+    "GORILLA"
+  ],
+  [
+    129422,
+    "LIZARD"
+  ],
+  [
+    129423,
+    "RHINOCEROS"
+  ],
+  [
+    129424,
+    "SHRIMP"
+  ],
+  [
+    129425,
+    "SQUID"
+  ],
+  [
+    129426,
+    "GIRAFFE FACE"
+  ],
+  [
+    129427,
+    "ZEBRA FACE"
+  ],
+  [
+    129428,
+    "HEDGEHOG"
+  ],
+  [
+    129429,
+    "SAUROPOD"
+  ],
+  [
+    129430,
+    "T-REX"
+  ],
+  [
+    129431,
+    "CRICKET"
+  ],
+  [
+    129432,
+    "KANGAROO"
+  ],
+  [
+    129433,
+    "LLAMA"
+  ],
+  [
+    129434,
+    "PEACOCK"
+  ],
+  [
+    129435,
+    "HIPPOPOTAMUS"
+  ],
+  [
+    129436,
+    "PARROT"
+  ],
+  [
+    129437,
+    "RACCOON"
+  ],
+  [
+    129438,
+    "LOBSTER"
+  ],
+  [
+    129439,
+    "MOSQUITO"
+  ],
+  [
+    129440,
+    "MICROBE"
+  ],
+  [
+    129441,
+    "BADGER"
+  ],
+  [
+    129442,
+    "SWAN"
+  ],
+  [
+    129443,
+    "MAMMOTH"
+  ],
+  [
+    129444,
+    "DODO"
+  ],
+  [
+    129445,
+    "SLOTH"
+  ],
+  [
+    129446,
+    "OTTER"
+  ],
+  [
+    129447,
+    "ORANGUTAN"
+  ],
+  [
+    129448,
+    "SKUNK"
+  ],
+  [
+    129449,
+    "FLAMINGO"
+  ],
+  [
+    129450,
+    "OYSTER"
+  ],
+  [
+    129451,
+    "BEAVER"
+  ],
+  [
+    129452,
+    "BISON"
+  ],
+  [
+    129453,
+    "SEAL"
+  ],
+  [
+    129454,
+    "GUIDE DOG"
+  ],
+  [
+    129455,
+    "PROBING CANE"
+  ],
+  [
+    129456,
+    "EMOJI COMPONENT RED HAIR"
+  ],
+  [
+    129457,
+    "EMOJI COMPONENT CURLY HAIR"
+  ],
+  [
+    129458,
+    "EMOJI COMPONENT BALD"
+  ],
+  [
+    129459,
+    "EMOJI COMPONENT WHITE HAIR"
+  ],
+  [
+    129460,
+    "BONE"
+  ],
+  [
+    129461,
+    "LEG"
+  ],
+  [
+    129462,
+    "FOOT"
+  ],
+  [
+    129463,
+    "TOOTH"
+  ],
+  [
+    129464,
+    "SUPERHERO"
+  ],
+  [
+    129465,
+    "SUPERVILLAIN"
+  ],
+  [
+    129466,
+    "SAFETY VEST"
+  ],
+  [
+    129467,
+    "EAR WITH HEARING AID"
+  ],
+  [
+    129468,
+    "MOTORIZED WHEELCHAIR"
+  ],
+  [
+    129469,
+    "MANUAL WHEELCHAIR"
+  ],
+  [
+    129470,
+    "MECHANICAL ARM"
+  ],
+  [
+    129471,
+    "MECHANICAL LEG"
+  ],
+  [
+    129472,
+    "CHEESE WEDGE"
+  ],
+  [
+    129473,
+    "CUPCAKE"
+  ],
+  [
+    129474,
+    "SALT SHAKER"
+  ],
+  [
+    129475,
+    "BEVERAGE BOX"
+  ],
+  [
+    129476,
+    "GARLIC"
+  ],
+  [
+    129477,
+    "ONION"
+  ],
+  [
+    129478,
+    "FALAFEL"
+  ],
+  [
+    129479,
+    "WAFFLE"
+  ],
+  [
+    129480,
+    "BUTTER"
+  ],
+  [
+    129481,
+    "MATE DRINK"
+  ],
+  [
+    129482,
+    "ICE CUBE"
+  ],
+  [
+    129483,
+    "BUBBLE TEA"
+  ],
+  [
+    129484,
+    "TROLL"
+  ],
+  [
+    129485,
+    "STANDING PERSON"
+  ],
+  [
+    129486,
+    "KNEELING PERSON"
+  ],
+  [
+    129487,
+    "DEAF PERSON"
+  ],
+  [
+    129488,
+    "FACE WITH MONOCLE"
+  ],
+  [
+    129489,
+    "ADULT"
+  ],
+  [
+    129490,
+    "CHILD"
+  ],
+  [
+    129491,
+    "OLDER ADULT"
+  ],
+  [
+    129492,
+    "BEARDED PERSON"
+  ],
+  [
+    129493,
+    "PERSON WITH HEADSCARF"
+  ],
+  [
+    129494,
+    "PERSON IN STEAMY ROOM"
+  ],
+  [
+    129495,
+    "PERSON CLIMBING"
+  ],
+  [
+    129496,
+    "PERSON IN LOTUS POSITION"
+  ],
+  [
+    129497,
+    "MAGE"
+  ],
+  [
+    129498,
+    "FAIRY"
+  ],
+  [
+    129499,
+    "VAMPIRE"
+  ],
+  [
+    129500,
+    "MERPERSON"
+  ],
+  [
+    129501,
+    "ELF"
+  ],
+  [
+    129502,
+    "GENIE"
+  ],
+  [
+    129503,
+    "ZOMBIE"
+  ],
+  [
+    129504,
+    "BRAIN"
+  ],
+  [
+    129505,
+    "ORANGE HEART"
+  ],
+  [
+    129506,
+    "BILLED CAP"
+  ],
+  [
+    129507,
+    "SCARF"
+  ],
+  [
+    129508,
+    "GLOVES"
+  ],
+  [
+    129509,
+    "COAT"
+  ],
+  [
+    129510,
+    "SOCKS"
+  ],
+  [
+    129511,
+    "RED GIFT ENVELOPE"
+  ],
+  [
+    129512,
+    "FIRECRACKER"
+  ],
+  [
+    129513,
+    "JIGSAW PUZZLE PIECE"
+  ],
+  [
+    129514,
+    "TEST TUBE"
+  ],
+  [
+    129515,
+    "PETRI DISH"
+  ],
+  [
+    129516,
+    "DNA DOUBLE HELIX"
+  ],
+  [
+    129517,
+    "COMPASS"
+  ],
+  [
+    129518,
+    "ABACUS"
+  ],
+  [
+    129519,
+    "FIRE EXTINGUISHER"
+  ],
+  [
+    129520,
+    "TOOLBOX"
+  ],
+  [
+    129521,
+    "BRICK"
+  ],
+  [
+    129522,
+    "MAGNET"
+  ],
+  [
+    129523,
+    "LUGGAGE"
+  ],
+  [
+    129524,
+    "LOTION BOTTLE"
+  ],
+  [
+    129525,
+    "SPOOL OF THREAD"
+  ],
+  [
+    129526,
+    "BALL OF YARN"
+  ],
+  [
+    129527,
+    "SAFETY PIN"
+  ],
+  [
+    129528,
+    "TEDDY BEAR"
+  ],
+  [
+    129529,
+    "BROOM"
+  ],
+  [
+    129530,
+    "BASKET"
+  ],
+  [
+    129531,
+    "ROLL OF PAPER"
+  ],
+  [
+    129532,
+    "BAR OF SOAP"
+  ],
+  [
+    129533,
+    "SPONGE"
+  ],
+  [
+    129534,
+    "RECEIPT"
+  ],
+  [
+    129535,
+    "NAZAR AMULET"
+  ],
+  [
+    129536,
+    "NEUTRAL CHESS KING"
+  ],
+  [
+    129537,
+    "NEUTRAL CHESS QUEEN"
+  ],
+  [
+    129538,
+    "NEUTRAL CHESS ROOK"
+  ],
+  [
+    129539,
+    "NEUTRAL CHESS BISHOP"
+  ],
+  [
+    129540,
+    "NEUTRAL CHESS KNIGHT"
+  ],
+  [
+    129541,
+    "NEUTRAL CHESS PAWN"
+  ],
+  [
+    129542,
+    "WHITE CHESS KNIGHT ROTATED FORTY-FIVE DEGREES"
+  ],
+  [
+    129543,
+    "BLACK CHESS KNIGHT ROTATED FORTY-FIVE DEGREES"
+  ],
+  [
+    129544,
+    "NEUTRAL CHESS KNIGHT ROTATED FORTY-FIVE DEGREES"
+  ],
+  [
+    129545,
+    "WHITE CHESS KING ROTATED NINETY DEGREES"
+  ],
+  [
+    129546,
+    "WHITE CHESS QUEEN ROTATED NINETY DEGREES"
+  ],
+  [
+    129547,
+    "WHITE CHESS ROOK ROTATED NINETY DEGREES"
+  ],
+  [
+    129548,
+    "WHITE CHESS BISHOP ROTATED NINETY DEGREES"
+  ],
+  [
+    129549,
+    "WHITE CHESS KNIGHT ROTATED NINETY DEGREES"
+  ],
+  [
+    129550,
+    "WHITE CHESS PAWN ROTATED NINETY DEGREES"
+  ],
+  [
+    129551,
+    "BLACK CHESS KING ROTATED NINETY DEGREES"
+  ],
+  [
+    129552,
+    "BLACK CHESS QUEEN ROTATED NINETY DEGREES"
+  ],
+  [
+    129553,
+    "BLACK CHESS ROOK ROTATED NINETY DEGREES"
+  ],
+  [
+    129554,
+    "BLACK CHESS BISHOP ROTATED NINETY DEGREES"
+  ],
+  [
+    129555,
+    "BLACK CHESS KNIGHT ROTATED NINETY DEGREES"
+  ],
+  [
+    129556,
+    "BLACK CHESS PAWN ROTATED NINETY DEGREES"
+  ],
+  [
+    129557,
+    "NEUTRAL CHESS KING ROTATED NINETY DEGREES"
+  ],
+  [
+    129558,
+    "NEUTRAL CHESS QUEEN ROTATED NINETY DEGREES"
+  ],
+  [
+    129559,
+    "NEUTRAL CHESS ROOK ROTATED NINETY DEGREES"
+  ],
+  [
+    129560,
+    "NEUTRAL CHESS BISHOP ROTATED NINETY DEGREES"
+  ],
+  [
+    129561,
+    "NEUTRAL CHESS KNIGHT ROTATED NINETY DEGREES"
+  ],
+  [
+    129562,
+    "NEUTRAL CHESS PAWN ROTATED NINETY DEGREES"
+  ],
+  [
+    129563,
+    "WHITE CHESS KNIGHT ROTATED ONE HUNDRED THIRTY-FIVE DEGREES"
+  ],
+  [
+    129564,
+    "BLACK CHESS KNIGHT ROTATED ONE HUNDRED THIRTY-FIVE DEGREES"
+  ],
+  [
+    129565,
+    "NEUTRAL CHESS KNIGHT ROTATED ONE HUNDRED THIRTY-FIVE DEGREES"
+  ],
+  [
+    129566,
+    "WHITE CHESS TURNED KING"
+  ],
+  [
+    129567,
+    "WHITE CHESS TURNED QUEEN"
+  ],
+  [
+    129568,
+    "WHITE CHESS TURNED ROOK"
+  ],
+  [
+    129569,
+    "WHITE CHESS TURNED BISHOP"
+  ],
+  [
+    129570,
+    "WHITE CHESS TURNED KNIGHT"
+  ],
+  [
+    129571,
+    "WHITE CHESS TURNED PAWN"
+  ],
+  [
+    129572,
+    "BLACK CHESS TURNED KING"
+  ],
+  [
+    129573,
+    "BLACK CHESS TURNED QUEEN"
+  ],
+  [
+    129574,
+    "BLACK CHESS TURNED ROOK"
+  ],
+  [
+    129575,
+    "BLACK CHESS TURNED BISHOP"
+  ],
+  [
+    129576,
+    "BLACK CHESS TURNED KNIGHT"
+  ],
+  [
+    129577,
+    "BLACK CHESS TURNED PAWN"
+  ],
+  [
+    129578,
+    "NEUTRAL CHESS TURNED KING"
+  ],
+  [
+    129579,
+    "NEUTRAL CHESS TURNED QUEEN"
+  ],
+  [
+    129580,
+    "NEUTRAL CHESS TURNED ROOK"
+  ],
+  [
+    129581,
+    "NEUTRAL CHESS TURNED BISHOP"
+  ],
+  [
+    129582,
+    "NEUTRAL CHESS TURNED KNIGHT"
+  ],
+  [
+    129583,
+    "NEUTRAL CHESS TURNED PAWN"
+  ],
+  [
+    129584,
+    "WHITE CHESS KNIGHT ROTATED TWO HUNDRED TWENTY-FIVE DEGREES"
+  ],
+  [
+    129585,
+    "BLACK CHESS KNIGHT ROTATED TWO HUNDRED TWENTY-FIVE DEGREES"
+  ],
+  [
+    129586,
+    "NEUTRAL CHESS KNIGHT ROTATED TWO HUNDRED TWENTY-FIVE DEGREES"
+  ],
+  [
+    129587,
+    "WHITE CHESS KING ROTATED TWO HUNDRED SEVENTY DEGREES"
+  ],
+  [
+    129588,
+    "WHITE CHESS QUEEN ROTATED TWO HUNDRED SEVENTY DEGREES"
+  ],
+  [
+    129589,
+    "WHITE CHESS ROOK ROTATED TWO HUNDRED SEVENTY DEGREES"
+  ],
+  [
+    129590,
+    "WHITE CHESS BISHOP ROTATED TWO HUNDRED SEVENTY DEGREES"
+  ],
+  [
+    129591,
+    "WHITE CHESS KNIGHT ROTATED TWO HUNDRED SEVENTY DEGREES"
+  ],
+  [
+    129592,
+    "WHITE CHESS PAWN ROTATED TWO HUNDRED SEVENTY DEGREES"
+  ],
+  [
+    129593,
+    "BLACK CHESS KING ROTATED TWO HUNDRED SEVENTY DEGREES"
+  ],
+  [
+    129594,
+    "BLACK CHESS QUEEN ROTATED TWO HUNDRED SEVENTY DEGREES"
+  ],
+  [
+    129595,
+    "BLACK CHESS ROOK ROTATED TWO HUNDRED SEVENTY DEGREES"
+  ],
+  [
+    129596,
+    "BLACK CHESS BISHOP ROTATED TWO HUNDRED SEVENTY DEGREES"
+  ],
+  [
+    129597,
+    "BLACK CHESS KNIGHT ROTATED TWO HUNDRED SEVENTY DEGREES"
+  ],
+  [
+    129598,
+    "BLACK CHESS PAWN ROTATED TWO HUNDRED SEVENTY DEGREES"
+  ],
+  [
+    129599,
+    "NEUTRAL CHESS KING ROTATED TWO HUNDRED SEVENTY DEGREES"
+  ],
+  [
+    129600,
+    "NEUTRAL CHESS QUEEN ROTATED TWO HUNDRED SEVENTY DEGREES"
+  ],
+  [
+    129601,
+    "NEUTRAL CHESS ROOK ROTATED TWO HUNDRED SEVENTY DEGREES"
+  ],
+  [
+    129602,
+    "NEUTRAL CHESS BISHOP ROTATED TWO HUNDRED SEVENTY DEGREES"
+  ],
+  [
+    129603,
+    "NEUTRAL CHESS KNIGHT ROTATED TWO HUNDRED SEVENTY DEGREES"
+  ],
+  [
+    129604,
+    "NEUTRAL CHESS PAWN ROTATED TWO HUNDRED SEVENTY DEGREES"
+  ],
+  [
+    129605,
+    "WHITE CHESS KNIGHT ROTATED THREE HUNDRED FIFTEEN DEGREES"
+  ],
+  [
+    129606,
+    "BLACK CHESS KNIGHT ROTATED THREE HUNDRED FIFTEEN DEGREES"
+  ],
+  [
+    129607,
+    "NEUTRAL CHESS KNIGHT ROTATED THREE HUNDRED FIFTEEN DEGREES"
+  ],
+  [
+    129608,
+    "WHITE CHESS EQUIHOPPER"
+  ],
+  [
+    129609,
+    "BLACK CHESS EQUIHOPPER"
+  ],
+  [
+    129610,
+    "NEUTRAL CHESS EQUIHOPPER"
+  ],
+  [
+    129611,
+    "WHITE CHESS EQUIHOPPER ROTATED NINETY DEGREES"
+  ],
+  [
+    129612,
+    "BLACK CHESS EQUIHOPPER ROTATED NINETY DEGREES"
+  ],
+  [
+    129613,
+    "NEUTRAL CHESS EQUIHOPPER ROTATED NINETY DEGREES"
+  ],
+  [
+    129614,
+    "WHITE CHESS KNIGHT-QUEEN"
+  ],
+  [
+    129615,
+    "WHITE CHESS KNIGHT-ROOK"
+  ],
+  [
+    129616,
+    "WHITE CHESS KNIGHT-BISHOP"
+  ],
+  [
+    129617,
+    "BLACK CHESS KNIGHT-QUEEN"
+  ],
+  [
+    129618,
+    "BLACK CHESS KNIGHT-ROOK"
+  ],
+  [
+    129619,
+    "BLACK CHESS KNIGHT-BISHOP"
+  ],
+  [
+    129620,
+    "WHITE CHESS FERZ"
+  ],
+  [
+    129621,
+    "WHITE CHESS ALFIL"
+  ],
+  [
+    129622,
+    "BLACK CHESS FERZ"
+  ],
+  [
+    129623,
+    "BLACK CHESS ALFIL"
+  ],
+  [
+    129632,
+    "XIANGQI RED GENERAL"
+  ],
+  [
+    129633,
+    "XIANGQI RED MANDARIN"
+  ],
+  [
+    129634,
+    "XIANGQI RED ELEPHANT"
+  ],
+  [
+    129635,
+    "XIANGQI RED HORSE"
+  ],
+  [
+    129636,
+    "XIANGQI RED CHARIOT"
+  ],
+  [
+    129637,
+    "XIANGQI RED CANNON"
+  ],
+  [
+    129638,
+    "XIANGQI RED SOLDIER"
+  ],
+  [
+    129639,
+    "XIANGQI BLACK GENERAL"
+  ],
+  [
+    129640,
+    "XIANGQI BLACK MANDARIN"
+  ],
+  [
+    129641,
+    "XIANGQI BLACK ELEPHANT"
+  ],
+  [
+    129642,
+    "XIANGQI BLACK HORSE"
+  ],
+  [
+    129643,
+    "XIANGQI BLACK CHARIOT"
+  ],
+  [
+    129644,
+    "XIANGQI BLACK CANNON"
+  ],
+  [
+    129645,
+    "XIANGQI BLACK SOLDIER"
+  ],
+  [
+    129648,
+    "BALLET SHOES"
+  ],
+  [
+    129649,
+    "ONE-PIECE SWIMSUIT"
+  ],
+  [
+    129650,
+    "BRIEFS"
+  ],
+  [
+    129651,
+    "SHORTS"
+  ],
+  [
+    129652,
+    "THONG SANDAL"
+  ],
+  [
+    129653,
+    "LIGHT BLUE HEART"
+  ],
+  [
+    129654,
+    "GREY HEART"
+  ],
+  [
+    129655,
+    "PINK HEART"
+  ],
+  [
+    129656,
+    "DROP OF BLOOD"
+  ],
+  [
+    129657,
+    "ADHESIVE BANDAGE"
+  ],
+  [
+    129658,
+    "STETHOSCOPE"
+  ],
+  [
+    129659,
+    "X-RAY"
+  ],
+  [
+    129660,
+    "CRUTCH"
+  ],
+  [
+    129664,
+    "YO-YO"
+  ],
+  [
+    129665,
+    "KITE"
+  ],
+  [
+    129666,
+    "PARACHUTE"
+  ],
+  [
+    129667,
+    "BOOMERANG"
+  ],
+  [
+    129668,
+    "MAGIC WAND"
+  ],
+  [
+    129669,
+    "PINATA"
+  ],
+  [
+    129670,
+    "NESTING DOLLS"
+  ],
+  [
+    129671,
+    "MARACAS"
+  ],
+  [
+    129672,
+    "FLUTE"
+  ],
+  [
+    129673,
+    "HARP"
+  ],
+  [
+    129674,
+    "TROMBONE"
+  ],
+  [
+    129678,
+    "TREASURE CHEST"
+  ],
+  [
+    129679,
+    "SHOVEL"
+  ],
+  [
+    129680,
+    "RINGED PLANET"
+  ],
+  [
+    129681,
+    "CHAIR"
+  ],
+  [
+    129682,
+    "RAZOR"
+  ],
+  [
+    129683,
+    "AXE"
+  ],
+  [
+    129684,
+    "DIYA LAMP"
+  ],
+  [
+    129685,
+    "BANJO"
+  ],
+  [
+    129686,
+    "MILITARY HELMET"
+  ],
+  [
+    129687,
+    "ACCORDION"
+  ],
+  [
+    129688,
+    "LONG DRUM"
+  ],
+  [
+    129689,
+    "COIN"
+  ],
+  [
+    129690,
+    "CARPENTRY SAW"
+  ],
+  [
+    129691,
+    "SCREWDRIVER"
+  ],
+  [
+    129692,
+    "LADDER"
+  ],
+  [
+    129693,
+    "HOOK"
+  ],
+  [
+    129694,
+    "MIRROR"
+  ],
+  [
+    129695,
+    "WINDOW"
+  ],
+  [
+    129696,
+    "PLUNGER"
+  ],
+  [
+    129697,
+    "SEWING NEEDLE"
+  ],
+  [
+    129698,
+    "KNOT"
+  ],
+  [
+    129699,
+    "BUCKET"
+  ],
+  [
+    129700,
+    "MOUSE TRAP"
+  ],
+  [
+    129701,
+    "TOOTHBRUSH"
+  ],
+  [
+    129702,
+    "HEADSTONE"
+  ],
+  [
+    129703,
+    "PLACARD"
+  ],
+  [
+    129704,
+    "ROCK"
+  ],
+  [
+    129705,
+    "MIRROR BALL"
+  ],
+  [
+    129706,
+    "IDENTIFICATION CARD"
+  ],
+  [
+    129707,
+    "LOW BATTERY"
+  ],
+  [
+    129708,
+    "HAMSA"
+  ],
+  [
+    129709,
+    "FOLDING HAND FAN"
+  ],
+  [
+    129710,
+    "HAIR PICK"
+  ],
+  [
+    129711,
+    "KHANDA"
+  ],
+  [
+    129712,
+    "FLY"
+  ],
+  [
+    129713,
+    "WORM"
+  ],
+  [
+    129714,
+    "BEETLE"
+  ],
+  [
+    129715,
+    "COCKROACH"
+  ],
+  [
+    129716,
+    "POTTED PLANT"
+  ],
+  [
+    129717,
+    "WOOD"
+  ],
+  [
+    129718,
+    "FEATHER"
+  ],
+  [
+    129719,
+    "LOTUS"
+  ],
+  [
+    129720,
+    "CORAL"
+  ],
+  [
+    129721,
+    "EMPTY NEST"
+  ],
+  [
+    129722,
+    "NEST WITH EGGS"
+  ],
+  [
+    129723,
+    "HYACINTH"
+  ],
+  [
+    129724,
+    "JELLYFISH"
+  ],
+  [
+    129725,
+    "WING"
+  ],
+  [
+    129726,
+    "LEAFLESS TREE"
+  ],
+  [
+    129727,
+    "GOOSE"
+  ],
+  [
+    129728,
+    "ANATOMICAL HEART"
+  ],
+  [
+    129729,
+    "LUNGS"
+  ],
+  [
+    129730,
+    "PEOPLE HUGGING"
+  ],
+  [
+    129731,
+    "PREGNANT MAN"
+  ],
+  [
+    129732,
+    "PREGNANT PERSON"
+  ],
+  [
+    129733,
+    "PERSON WITH CROWN"
+  ],
+  [
+    129734,
+    "FINGERPRINT"
+  ],
+  [
+    129736,
+    "HAIRY CREATURE"
+  ],
+  [
+    129741,
+    "ORCA"
+  ],
+  [
+    129742,
+    "MOOSE"
+  ],
+  [
+    129743,
+    "DONKEY"
+  ],
+  [
+    129744,
+    "BLUEBERRIES"
+  ],
+  [
+    129745,
+    "BELL PEPPER"
+  ],
+  [
+    129746,
+    "OLIVE"
+  ],
+  [
+    129747,
+    "FLATBREAD"
+  ],
+  [
+    129748,
+    "TAMALE"
+  ],
+  [
+    129749,
+    "FONDUE"
+  ],
+  [
+    129750,
+    "TEAPOT"
+  ],
+  [
+    129751,
+    "POURING LIQUID"
+  ],
+  [
+    129752,
+    "BEANS"
+  ],
+  [
+    129753,
+    "JAR"
+  ],
+  [
+    129754,
+    "GINGER ROOT"
+  ],
+  [
+    129755,
+    "PEA POD"
+  ],
+  [
+    129756,
+    "ROOT VEGETABLE"
+  ],
+  [
+    129759,
+    "SPLATTER"
+  ],
+  [
+    129760,
+    "MELTING FACE"
+  ],
+  [
+    129761,
+    "SALUTING FACE"
+  ],
+  [
+    129762,
+    "FACE WITH OPEN EYES AND HAND OVER MOUTH"
+  ],
+  [
+    129763,
+    "FACE WITH PEEKING EYE"
+  ],
+  [
+    129764,
+    "FACE WITH DIAGONAL MOUTH"
+  ],
+  [
+    129765,
+    "DOTTED LINE FACE"
+  ],
+  [
+    129766,
+    "BITING LIP"
+  ],
+  [
+    129767,
+    "BUBBLES"
+  ],
+  [
+    129768,
+    "SHAKING FACE"
+  ],
+  [
+    129769,
+    "FACE WITH BAGS UNDER EYES"
+  ],
+  [
+    129770,
+    "DISTORTED FACE"
+  ],
+  [
+    129775,
+    "FIGHT CLOUD"
+  ],
+  [
+    129776,
+    "HAND WITH INDEX FINGER AND THUMB CROSSED"
+  ],
+  [
+    129777,
+    "RIGHTWARDS HAND"
+  ],
+  [
+    129778,
+    "LEFTWARDS HAND"
+  ],
+  [
+    129779,
+    "PALM DOWN HAND"
+  ],
+  [
+    129780,
+    "PALM UP HAND"
+  ],
+  [
+    129781,
+    "INDEX POINTING AT THE VIEWER"
+  ],
+  [
+    129782,
+    "HEART HANDS"
+  ],
+  [
+    129783,
+    "LEFTWARDS PUSHING HAND"
+  ],
+  [
+    129784,
+    "RIGHTWARDS PUSHING HAND"
+  ],
+  [
+    129792,
+    "BLOCK SEXTANT-1"
+  ],
+  [
+    129793,
+    "BLOCK SEXTANT-2"
+  ],
+  [
+    129794,
+    "BLOCK SEXTANT-12"
+  ],
+  [
+    129795,
+    "BLOCK SEXTANT-3"
+  ],
+  [
+    129796,
+    "BLOCK SEXTANT-13"
+  ],
+  [
+    129797,
+    "BLOCK SEXTANT-23"
+  ],
+  [
+    129798,
+    "BLOCK SEXTANT-123"
+  ],
+  [
+    129799,
+    "BLOCK SEXTANT-4"
+  ],
+  [
+    129800,
+    "BLOCK SEXTANT-14"
+  ],
+  [
+    129801,
+    "BLOCK SEXTANT-24"
+  ],
+  [
+    129802,
+    "BLOCK SEXTANT-124"
+  ],
+  [
+    129803,
+    "BLOCK SEXTANT-34"
+  ],
+  [
+    129804,
+    "BLOCK SEXTANT-134"
+  ],
+  [
+    129805,
+    "BLOCK SEXTANT-234"
+  ],
+  [
+    129806,
+    "BLOCK SEXTANT-1234"
+  ],
+  [
+    129807,
+    "BLOCK SEXTANT-5"
+  ],
+  [
+    129808,
+    "BLOCK SEXTANT-15"
+  ],
+  [
+    129809,
+    "BLOCK SEXTANT-25"
+  ],
+  [
+    129810,
+    "BLOCK SEXTANT-125"
+  ],
+  [
+    129811,
+    "BLOCK SEXTANT-35"
+  ],
+  [
+    129812,
+    "BLOCK SEXTANT-235"
+  ],
+  [
+    129813,
+    "BLOCK SEXTANT-1235"
+  ],
+  [
+    129814,
+    "BLOCK SEXTANT-45"
+  ],
+  [
+    129815,
+    "BLOCK SEXTANT-145"
+  ],
+  [
+    129816,
+    "BLOCK SEXTANT-245"
+  ],
+  [
+    129817,
+    "BLOCK SEXTANT-1245"
+  ],
+  [
+    129818,
+    "BLOCK SEXTANT-345"
+  ],
+  [
+    129819,
+    "BLOCK SEXTANT-1345"
+  ],
+  [
+    129820,
+    "BLOCK SEXTANT-2345"
+  ],
+  [
+    129821,
+    "BLOCK SEXTANT-12345"
+  ],
+  [
+    129822,
+    "BLOCK SEXTANT-6"
+  ],
+  [
+    129823,
+    "BLOCK SEXTANT-16"
+  ],
+  [
+    129824,
+    "BLOCK SEXTANT-26"
+  ],
+  [
+    129825,
+    "BLOCK SEXTANT-126"
+  ],
+  [
+    129826,
+    "BLOCK SEXTANT-36"
+  ],
+  [
+    129827,
+    "BLOCK SEXTANT-136"
+  ],
+  [
+    129828,
+    "BLOCK SEXTANT-236"
+  ],
+  [
+    129829,
+    "BLOCK SEXTANT-1236"
+  ],
+  [
+    129830,
+    "BLOCK SEXTANT-46"
+  ],
+  [
+    129831,
+    "BLOCK SEXTANT-146"
+  ],
+  [
+    129832,
+    "BLOCK SEXTANT-1246"
+  ],
+  [
+    129833,
+    "BLOCK SEXTANT-346"
+  ],
+  [
+    129834,
+    "BLOCK SEXTANT-1346"
+  ],
+  [
+    129835,
+    "BLOCK SEXTANT-2346"
+  ],
+  [
+    129836,
+    "BLOCK SEXTANT-12346"
+  ],
+  [
+    129837,
+    "BLOCK SEXTANT-56"
+  ],
+  [
+    129838,
+    "BLOCK SEXTANT-156"
+  ],
+  [
+    129839,
+    "BLOCK SEXTANT-256"
+  ],
+  [
+    129840,
+    "BLOCK SEXTANT-1256"
+  ],
+  [
+    129841,
+    "BLOCK SEXTANT-356"
+  ],
+  [
+    129842,
+    "BLOCK SEXTANT-1356"
+  ],
+  [
+    129843,
+    "BLOCK SEXTANT-2356"
+  ],
+  [
+    129844,
+    "BLOCK SEXTANT-12356"
+  ],
+  [
+    129845,
+    "BLOCK SEXTANT-456"
+  ],
+  [
+    129846,
+    "BLOCK SEXTANT-1456"
+  ],
+  [
+    129847,
+    "BLOCK SEXTANT-2456"
+  ],
+  [
+    129848,
+    "BLOCK SEXTANT-12456"
+  ],
+  [
+    129849,
+    "BLOCK SEXTANT-3456"
+  ],
+  [
+    129850,
+    "BLOCK SEXTANT-13456"
+  ],
+  [
+    129851,
+    "BLOCK SEXTANT-23456"
+  ],
+  [
+    129852,
+    "LOWER LEFT BLOCK DIAGONAL LOWER MIDDLE LEFT TO LOWER CENTRE"
+  ],
+  [
+    129853,
+    "LOWER LEFT BLOCK DIAGONAL LOWER MIDDLE LEFT TO LOWER RIGHT"
+  ],
+  [
+    129854,
+    "LOWER LEFT BLOCK DIAGONAL UPPER MIDDLE LEFT TO LOWER CENTRE"
+  ],
+  [
+    129855,
+    "LOWER LEFT BLOCK DIAGONAL UPPER MIDDLE LEFT TO LOWER RIGHT"
+  ],
+  [
+    129856,
+    "LOWER LEFT BLOCK DIAGONAL UPPER LEFT TO LOWER CENTRE"
+  ],
+  [
+    129857,
+    "LOWER RIGHT BLOCK DIAGONAL UPPER MIDDLE LEFT TO UPPER CENTRE"
+  ],
+  [
+    129858,
+    "LOWER RIGHT BLOCK DIAGONAL UPPER MIDDLE LEFT TO UPPER RIGHT"
+  ],
+  [
+    129859,
+    "LOWER RIGHT BLOCK DIAGONAL LOWER MIDDLE LEFT TO UPPER CENTRE"
+  ],
+  [
+    129860,
+    "LOWER RIGHT BLOCK DIAGONAL LOWER MIDDLE LEFT TO UPPER RIGHT"
+  ],
+  [
+    129861,
+    "LOWER RIGHT BLOCK DIAGONAL LOWER LEFT TO UPPER CENTRE"
+  ],
+  [
+    129862,
+    "LOWER RIGHT BLOCK DIAGONAL LOWER MIDDLE LEFT TO UPPER MIDDLE RIGHT"
+  ],
+  [
+    129863,
+    "LOWER RIGHT BLOCK DIAGONAL LOWER CENTRE TO LOWER MIDDLE RIGHT"
+  ],
+  [
+    129864,
+    "LOWER RIGHT BLOCK DIAGONAL LOWER LEFT TO LOWER MIDDLE RIGHT"
+  ],
+  [
+    129865,
+    "LOWER RIGHT BLOCK DIAGONAL LOWER CENTRE TO UPPER MIDDLE RIGHT"
+  ],
+  [
+    129866,
+    "LOWER RIGHT BLOCK DIAGONAL LOWER LEFT TO UPPER MIDDLE RIGHT"
+  ],
+  [
+    129867,
+    "LOWER RIGHT BLOCK DIAGONAL LOWER CENTRE TO UPPER RIGHT"
+  ],
+  [
+    129868,
+    "LOWER LEFT BLOCK DIAGONAL UPPER CENTRE TO UPPER MIDDLE RIGHT"
+  ],
+  [
+    129869,
+    "LOWER LEFT BLOCK DIAGONAL UPPER LEFT TO UPPER MIDDLE RIGHT"
+  ],
+  [
+    129870,
+    "LOWER LEFT BLOCK DIAGONAL UPPER CENTRE TO LOWER MIDDLE RIGHT"
+  ],
+  [
+    129871,
+    "LOWER LEFT BLOCK DIAGONAL UPPER LEFT TO LOWER MIDDLE RIGHT"
+  ],
+  [
+    129872,
+    "LOWER LEFT BLOCK DIAGONAL UPPER CENTRE TO LOWER RIGHT"
+  ],
+  [
+    129873,
+    "LOWER LEFT BLOCK DIAGONAL UPPER MIDDLE LEFT TO LOWER MIDDLE RIGHT"
+  ],
+  [
+    129874,
+    "UPPER RIGHT BLOCK DIAGONAL LOWER MIDDLE LEFT TO LOWER CENTRE"
+  ],
+  [
+    129875,
+    "UPPER RIGHT BLOCK DIAGONAL LOWER MIDDLE LEFT TO LOWER RIGHT"
+  ],
+  [
+    129876,
+    "UPPER RIGHT BLOCK DIAGONAL UPPER MIDDLE LEFT TO LOWER CENTRE"
+  ],
+  [
+    129877,
+    "UPPER RIGHT BLOCK DIAGONAL UPPER MIDDLE LEFT TO LOWER RIGHT"
+  ],
+  [
+    129878,
+    "UPPER RIGHT BLOCK DIAGONAL UPPER LEFT TO LOWER CENTRE"
+  ],
+  [
+    129879,
+    "UPPER LEFT BLOCK DIAGONAL UPPER MIDDLE LEFT TO UPPER CENTRE"
+  ],
+  [
+    129880,
+    "UPPER LEFT BLOCK DIAGONAL UPPER MIDDLE LEFT TO UPPER RIGHT"
+  ],
+  [
+    129881,
+    "UPPER LEFT BLOCK DIAGONAL LOWER MIDDLE LEFT TO UPPER CENTRE"
+  ],
+  [
+    129882,
+    "UPPER LEFT BLOCK DIAGONAL LOWER MIDDLE LEFT TO UPPER RIGHT"
+  ],
+  [
+    129883,
+    "UPPER LEFT BLOCK DIAGONAL LOWER LEFT TO UPPER CENTRE"
+  ],
+  [
+    129884,
+    "UPPER LEFT BLOCK DIAGONAL LOWER MIDDLE LEFT TO UPPER MIDDLE RIGHT"
+  ],
+  [
+    129885,
+    "UPPER LEFT BLOCK DIAGONAL LOWER CENTRE TO LOWER MIDDLE RIGHT"
+  ],
+  [
+    129886,
+    "UPPER LEFT BLOCK DIAGONAL LOWER LEFT TO LOWER MIDDLE RIGHT"
+  ],
+  [
+    129887,
+    "UPPER LEFT BLOCK DIAGONAL LOWER CENTRE TO UPPER MIDDLE RIGHT"
+  ],
+  [
+    129888,
+    "UPPER LEFT BLOCK DIAGONAL LOWER LEFT TO UPPER MIDDLE RIGHT"
+  ],
+  [
+    129889,
+    "UPPER LEFT BLOCK DIAGONAL LOWER CENTRE TO UPPER RIGHT"
+  ],
+  [
+    129890,
+    "UPPER RIGHT BLOCK DIAGONAL UPPER CENTRE TO UPPER MIDDLE RIGHT"
+  ],
+  [
+    129891,
+    "UPPER RIGHT BLOCK DIAGONAL UPPER LEFT TO UPPER MIDDLE RIGHT"
+  ],
+  [
+    129892,
+    "UPPER RIGHT BLOCK DIAGONAL UPPER CENTRE TO LOWER MIDDLE RIGHT"
+  ],
+  [
+    129893,
+    "UPPER RIGHT BLOCK DIAGONAL UPPER LEFT TO LOWER MIDDLE RIGHT"
+  ],
+  [
+    129894,
+    "UPPER RIGHT BLOCK DIAGONAL UPPER CENTRE TO LOWER RIGHT"
+  ],
+  [
+    129895,
+    "UPPER RIGHT BLOCK DIAGONAL UPPER MIDDLE LEFT TO LOWER MIDDLE RIGHT"
+  ],
+  [
+    129896,
+    "UPPER AND RIGHT AND LOWER TRIANGULAR THREE QUARTERS BLOCK"
+  ],
+  [
+    129897,
+    "LEFT AND LOWER AND RIGHT TRIANGULAR THREE QUARTERS BLOCK"
+  ],
+  [
+    129898,
+    "UPPER AND LEFT AND LOWER TRIANGULAR THREE QUARTERS BLOCK"
+  ],
+  [
+    129899,
+    "LEFT AND UPPER AND RIGHT TRIANGULAR THREE QUARTERS BLOCK"
+  ],
+  [
+    129900,
+    "LEFT TRIANGULAR ONE QUARTER BLOCK"
+  ],
+  [
+    129901,
+    "UPPER TRIANGULAR ONE QUARTER BLOCK"
+  ],
+  [
+    129902,
+    "RIGHT TRIANGULAR ONE QUARTER BLOCK"
+  ],
+  [
+    129903,
+    "LOWER TRIANGULAR ONE QUARTER BLOCK"
+  ],
+  [
+    129904,
+    "VERTICAL ONE EIGHTH BLOCK-2"
+  ],
+  [
+    129905,
+    "VERTICAL ONE EIGHTH BLOCK-3"
+  ],
+  [
+    129906,
+    "VERTICAL ONE EIGHTH BLOCK-4"
+  ],
+  [
+    129907,
+    "VERTICAL ONE EIGHTH BLOCK-5"
+  ],
+  [
+    129908,
+    "VERTICAL ONE EIGHTH BLOCK-6"
+  ],
+  [
+    129909,
+    "VERTICAL ONE EIGHTH BLOCK-7"
+  ],
+  [
+    129910,
+    "HORIZONTAL ONE EIGHTH BLOCK-2"
+  ],
+  [
+    129911,
+    "HORIZONTAL ONE EIGHTH BLOCK-3"
+  ],
+  [
+    129912,
+    "HORIZONTAL ONE EIGHTH BLOCK-4"
+  ],
+  [
+    129913,
+    "HORIZONTAL ONE EIGHTH BLOCK-5"
+  ],
+  [
+    129914,
+    "HORIZONTAL ONE EIGHTH BLOCK-6"
+  ],
+  [
+    129915,
+    "HORIZONTAL ONE EIGHTH BLOCK-7"
+  ],
+  [
+    129916,
+    "LEFT AND LOWER ONE EIGHTH BLOCK"
+  ],
+  [
+    129917,
+    "LEFT AND UPPER ONE EIGHTH BLOCK"
+  ],
+  [
+    129918,
+    "RIGHT AND UPPER ONE EIGHTH BLOCK"
+  ],
+  [
+    129919,
+    "RIGHT AND LOWER ONE EIGHTH BLOCK"
+  ],
+  [
+    129920,
+    "UPPER AND LOWER ONE EIGHTH BLOCK"
+  ],
+  [
+    129921,
+    "HORIZONTAL ONE EIGHTH BLOCK-1358"
+  ],
+  [
+    129922,
+    "UPPER ONE QUARTER BLOCK"
+  ],
+  [
+    129923,
+    "UPPER THREE EIGHTHS BLOCK"
+  ],
+  [
+    129924,
+    "UPPER FIVE EIGHTHS BLOCK"
+  ],
+  [
+    129925,
+    "UPPER THREE QUARTERS BLOCK"
+  ],
+  [
+    129926,
+    "UPPER SEVEN EIGHTHS BLOCK"
+  ],
+  [
+    129927,
+    "RIGHT ONE QUARTER BLOCK"
+  ],
+  [
+    129928,
+    "RIGHT THREE EIGHTHS BLOCK"
+  ],
+  [
+    129929,
+    "RIGHT FIVE EIGHTHS BLOCK"
+  ],
+  [
+    129930,
+    "RIGHT THREE QUARTERS BLOCK"
+  ],
+  [
+    129931,
+    "RIGHT SEVEN EIGHTHS BLOCK"
+  ],
+  [
+    129932,
+    "LEFT HALF MEDIUM SHADE"
+  ],
+  [
+    129933,
+    "RIGHT HALF MEDIUM SHADE"
+  ],
+  [
+    129934,
+    "UPPER HALF MEDIUM SHADE"
+  ],
+  [
+    129935,
+    "LOWER HALF MEDIUM SHADE"
+  ],
+  [
+    129936,
+    "INVERSE MEDIUM SHADE"
+  ],
+  [
+    129937,
+    "UPPER HALF BLOCK AND LOWER HALF INVERSE MEDIUM SHADE"
+  ],
+  [
+    129938,
+    "UPPER HALF INVERSE MEDIUM SHADE AND LOWER HALF BLOCK"
+  ],
+  [
+    129940,
+    "LEFT HALF INVERSE MEDIUM SHADE AND RIGHT HALF BLOCK"
+  ],
+  [
+    129941,
+    "CHECKER BOARD FILL"
+  ],
+  [
+    129942,
+    "INVERSE CHECKER BOARD FILL"
+  ],
+  [
+    129943,
+    "HEAVY HORIZONTAL FILL"
+  ],
+  [
+    129944,
+    "UPPER LEFT TO LOWER RIGHT FILL"
+  ],
+  [
+    129945,
+    "UPPER RIGHT TO LOWER LEFT FILL"
+  ],
+  [
+    129946,
+    "UPPER AND LOWER TRIANGULAR HALF BLOCK"
+  ],
+  [
+    129947,
+    "LEFT AND RIGHT TRIANGULAR HALF BLOCK"
+  ],
+  [
+    129948,
+    "UPPER LEFT TRIANGULAR MEDIUM SHADE"
+  ],
+  [
+    129949,
+    "UPPER RIGHT TRIANGULAR MEDIUM SHADE"
+  ],
+  [
+    129950,
+    "LOWER RIGHT TRIANGULAR MEDIUM SHADE"
+  ],
+  [
+    129951,
+    "LOWER LEFT TRIANGULAR MEDIUM SHADE"
+  ],
+  [
+    129952,
+    "BOX DRAWINGS LIGHT DIAGONAL UPPER CENTRE TO MIDDLE LEFT"
+  ],
+  [
+    129953,
+    "BOX DRAWINGS LIGHT DIAGONAL UPPER CENTRE TO MIDDLE RIGHT"
+  ],
+  [
+    129954,
+    "BOX DRAWINGS LIGHT DIAGONAL MIDDLE LEFT TO LOWER CENTRE"
+  ],
+  [
+    129955,
+    "BOX DRAWINGS LIGHT DIAGONAL MIDDLE RIGHT TO LOWER CENTRE"
+  ],
+  [
+    129956,
+    "BOX DRAWINGS LIGHT DIAGONAL UPPER CENTRE TO MIDDLE LEFT TO LOWER CENTRE"
+  ],
+  [
+    129957,
+    "BOX DRAWINGS LIGHT DIAGONAL UPPER CENTRE TO MIDDLE RIGHT TO LOWER CENTRE"
+  ],
+  [
+    129958,
+    "BOX DRAWINGS LIGHT DIAGONAL MIDDLE LEFT TO LOWER CENTRE TO MIDDLE RIGHT"
+  ],
+  [
+    129959,
+    "BOX DRAWINGS LIGHT DIAGONAL MIDDLE LEFT TO UPPER CENTRE TO MIDDLE RIGHT"
+  ],
+  [
+    129960,
+    "BOX DRAWINGS LIGHT DIAGONAL UPPER CENTRE TO MIDDLE LEFT AND MIDDLE RIGHT TO LOWER CENTRE"
+  ],
+  [
+    129961,
+    "BOX DRAWINGS LIGHT DIAGONAL UPPER CENTRE TO MIDDLE RIGHT AND MIDDLE LEFT TO LOWER CENTRE"
+  ],
+  [
+    129962,
+    "BOX DRAWINGS LIGHT DIAGONAL UPPER CENTRE TO MIDDLE RIGHT TO LOWER CENTRE TO MIDDLE LEFT"
+  ],
+  [
+    129963,
+    "BOX DRAWINGS LIGHT DIAGONAL UPPER CENTRE TO MIDDLE LEFT TO LOWER CENTRE TO MIDDLE RIGHT"
+  ],
+  [
+    129964,
+    "BOX DRAWINGS LIGHT DIAGONAL MIDDLE LEFT TO UPPER CENTRE TO MIDDLE RIGHT TO LOWER CENTRE"
+  ],
+  [
+    129965,
+    "BOX DRAWINGS LIGHT DIAGONAL MIDDLE RIGHT TO UPPER CENTRE TO MIDDLE LEFT TO LOWER CENTRE"
+  ],
+  [
+    129966,
+    "BOX DRAWINGS LIGHT DIAGONAL DIAMOND"
+  ],
+  [
+    129967,
+    "BOX DRAWINGS LIGHT HORIZONTAL WITH VERTICAL STROKE"
+  ],
+  [
+    129968,
+    "ARROWHEAD-SHAPED POINTER"
+  ],
+  [
+    129969,
+    "INVERSE CHECK MARK"
+  ],
+  [
+    129970,
+    "LEFT HALF RUNNING MAN"
+  ],
+  [
+    129971,
+    "RIGHT HALF RUNNING MAN"
+  ],
+  [
+    129972,
+    "INVERSE DOWNWARDS ARROW WITH TIP LEFTWARDS"
+  ],
+  [
+    129973,
+    "LEFTWARDS ARROW AND UPPER AND LOWER ONE EIGHTH BLOCK"
+  ],
+  [
+    129974,
+    "RIGHTWARDS ARROW AND UPPER AND LOWER ONE EIGHTH BLOCK"
+  ],
+  [
+    129975,
+    "DOWNWARDS ARROW AND RIGHT ONE EIGHTH BLOCK"
+  ],
+  [
+    129976,
+    "UPWARDS ARROW AND RIGHT ONE EIGHTH BLOCK"
+  ],
+  [
+    129977,
+    "LEFT HALF FOLDER"
+  ],
+  [
+    129978,
+    "RIGHT HALF FOLDER"
+  ],
+  [
+    129979,
+    "VOIDED GREEK CROSS"
+  ],
+  [
+    129980,
+    "RIGHT OPEN SQUARED DOT"
+  ],
+  [
+    129981,
+    "NEGATIVE DIAGONAL CROSS"
+  ],
+  [
+    129982,
+    "NEGATIVE DIAGONAL MIDDLE RIGHT TO LOWER CENTRE"
+  ],
+  [
+    129983,
+    "NEGATIVE DIAGONAL DIAMOND"
+  ],
+  [
+    129984,
+    "WHITE HEAVY SALTIRE WITH ROUNDED CORNERS"
+  ],
+  [
+    129985,
+    "LEFT THIRD WHITE RIGHT POINTING INDEX"
+  ],
+  [
+    129986,
+    "MIDDLE THIRD WHITE RIGHT POINTING INDEX"
+  ],
+  [
+    129987,
+    "RIGHT THIRD WHITE RIGHT POINTING INDEX"
+  ],
+  [
+    129988,
+    "NEGATIVE SQUARED QUESTION MARK"
+  ],
+  [
+    129989,
+    "STICK FIGURE"
+  ],
+  [
+    129990,
+    "STICK FIGURE WITH ARMS RAISED"
+  ],
+  [
+    129991,
+    "STICK FIGURE LEANING LEFT"
+  ],
+  [
+    129992,
+    "STICK FIGURE LEANING RIGHT"
+  ],
+  [
+    129993,
+    "STICK FIGURE WITH DRESS"
+  ],
+  [
+    129994,
+    "WHITE UP-POINTING CHEVRON"
+  ],
+  [
+    129995,
+    "WHITE CROSS MARK"
+  ],
+  [
+    129996,
+    "RAISED SMALL LEFT SQUARE BRACKET"
+  ],
+  [
+    129997,
+    "BLACK SMALL UP-POINTING CHEVRON"
+  ],
+  [
+    129998,
+    "LEFT TWO THIRDS BLOCK"
+  ],
+  [
+    129999,
+    "LEFT ONE THIRD BLOCK"
+  ],
+  [
+    130000,
+    "BOX DRAWINGS LIGHT DIAGONAL MIDDLE RIGHT TO LOWER LEFT"
+  ],
+  [
+    130001,
+    "BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO MIDDLE LEFT"
+  ],
+  [
+    130002,
+    "BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO MIDDLE RIGHT"
+  ],
+  [
+    130003,
+    "BOX DRAWINGS LIGHT DIAGONAL MIDDLE LEFT TO LOWER RIGHT"
+  ],
+  [
+    130004,
+    "BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO LOWER CENTRE"
+  ],
+  [
+    130005,
+    "BOX DRAWINGS LIGHT DIAGONAL UPPER CENTRE TO LOWER RIGHT"
+  ],
+  [
+    130006,
+    "BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO LOWER CENTRE"
+  ],
+  [
+    130007,
+    "BOX DRAWINGS LIGHT DIAGONAL UPPER CENTRE TO LOWER LEFT"
+  ],
+  [
+    130008,
+    "BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO MIDDLE CENTRE TO UPPER RIGHT"
+  ],
+  [
+    130009,
+    "BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO MIDDLE CENTRE TO LOWER RIGHT"
+  ],
+  [
+    130010,
+    "BOX DRAWINGS LIGHT DIAGONAL LOWER LEFT TO MIDDLE CENTRE TO LOWER RIGHT"
+  ],
+  [
+    130011,
+    "BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO MIDDLE CENTRE TO LOWER LEFT"
+  ],
+  [
+    130012,
+    "BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO LOWER CENTRE TO UPPER RIGHT"
+  ],
+  [
+    130013,
+    "BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO MIDDLE LEFT TO LOWER RIGHT"
+  ],
+  [
+    130014,
+    "BOX DRAWINGS LIGHT DIAGONAL LOWER LEFT TO UPPER CENTRE TO LOWER RIGHT"
+  ],
+  [
+    130015,
+    "BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO MIDDLE RIGHT TO LOWER LEFT"
+  ],
+  [
+    130016,
+    "TOP JUSTIFIED LOWER HALF WHITE CIRCLE"
+  ],
+  [
+    130017,
+    "RIGHT JUSTIFIED LEFT HALF WHITE CIRCLE"
+  ],
+  [
+    130018,
+    "BOTTOM JUSTIFIED UPPER HALF WHITE CIRCLE"
+  ],
+  [
+    130019,
+    "LEFT JUSTIFIED RIGHT HALF WHITE CIRCLE"
+  ],
+  [
+    130020,
+    "UPPER CENTRE ONE QUARTER BLOCK"
+  ],
+  [
+    130021,
+    "LOWER CENTRE ONE QUARTER BLOCK"
+  ],
+  [
+    130022,
+    "MIDDLE LEFT ONE QUARTER BLOCK"
+  ],
+  [
+    130023,
+    "MIDDLE RIGHT ONE QUARTER BLOCK"
+  ],
+  [
+    130024,
+    "TOP JUSTIFIED LOWER HALF BLACK CIRCLE"
+  ],
+  [
+    130025,
+    "RIGHT JUSTIFIED LEFT HALF BLACK CIRCLE"
+  ],
+  [
+    130026,
+    "BOTTOM JUSTIFIED UPPER HALF BLACK CIRCLE"
+  ],
+  [
+    130027,
+    "LEFT JUSTIFIED RIGHT HALF BLACK CIRCLE"
+  ],
+  [
+    130028,
+    "TOP RIGHT JUSTIFIED LOWER LEFT QUARTER BLACK CIRCLE"
+  ],
+  [
+    130029,
+    "BOTTOM LEFT JUSTIFIED UPPER RIGHT QUARTER BLACK CIRCLE"
+  ],
+  [
+    130030,
+    "BOTTOM RIGHT JUSTIFIED UPPER LEFT QUARTER BLACK CIRCLE"
+  ],
+  [
+    130031,
+    "TOP LEFT JUSTIFIED LOWER RIGHT QUARTER BLACK CIRCLE"
+  ],
+  [
+    130032,
+    "SEGMENTED DIGIT ZERO"
+  ],
+  [
+    130033,
+    "SEGMENTED DIGIT ONE"
+  ],
+  [
+    130034,
+    "SEGMENTED DIGIT TWO"
+  ],
+  [
+    130035,
+    "SEGMENTED DIGIT THREE"
+  ],
+  [
+    130036,
+    "SEGMENTED DIGIT FOUR"
+  ],
+  [
+    130037,
+    "SEGMENTED DIGIT FIVE"
+  ],
+  [
+    130038,
+    "SEGMENTED DIGIT SIX"
+  ],
+  [
+    130039,
+    "SEGMENTED DIGIT SEVEN"
+  ],
+  [
+    130040,
+    "SEGMENTED DIGIT EIGHT"
+  ],
+  [
+    130041,
+    "SEGMENTED DIGIT NINE"
+  ],
+  [
+    130042,
+    "ALARM BELL SYMBOL"
+  ]
+];

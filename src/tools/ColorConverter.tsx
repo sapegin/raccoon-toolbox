@@ -133,7 +133,7 @@ export function ColorConverter() {
           <Input
             id="input"
             label="Input"
-            placeholder={`${defaultColorHex}, ${defaultColorRgb}…`}
+            placeholder={`Try “${defaultColorHex}” or “${defaultColorRgb}”`}
             type="text"
             value={input}
             onChange={(e) => handleInputChange(e.target.value)}
