@@ -50,8 +50,67 @@ const theme = EditorView.theme({
     backgroundColor: 'transparent',
     borderColor: 'transparent',
   },
-  '.cm-regexp-match': {
-    backgroundColor: 'var(--colors-match-background)',
+  '.cm-searchMatch': {
+    backgroundColor: 'var(--colors-secondary-match-background)',
+  },
+  '.cm-searchMatch-selected': {
+    outline: '2px solid var(--colors-match-background)',
+  },
+  '.cm-textfield': {
+    padding: ' var(--spacing-xs)',
+    fontSize: 'var(--font-sizes-s)',
+    color: 'var(--colors-text-foreground)',
+    backgroundColor: 'var(--colors-text-background)',
+    border: '1px solid var(--colors-light-border)',
+    outline: 0,
+  },
+  '.cm-textfield:focus': {
+    borderColor: 'var(--colors-active-border)',
+  },
+  '.cm-panel': {
+    color: 'var(--colors-text-foreground)',
+    backgroundColor: 'var(--colors-ui-background)',
+  },
+  '.cm-panels-bottom': {
+    borderColor: 'var(--colors-light-border)',
+  },
+  '.cm-panel.cm-search [name="close"]': {
+    cursor: 'pointer',
+    color: 'var(--colors-icon)',
+  },
+  '.cm-panel.cm-search [name="close"]:hover': {
+    color: 'var(--colors-active-icon)',
+  },
+  '.cm-panel.cm-search [name="close"]:focus-visible': {
+    outline: '2px solid var(--colors-accent)',
+    borderRadius: 'var(--radii-button)',
+  },
+  '.cm-button': {
+    cursor: 'pointer',
+    paddingBlock: ' var(--spacing-xs)',
+    paddingInline: ' var(--spacing-s)',
+    fontSize: 'var(--font-sizes-s)',
+    color: 'var(--colors-secondary-button-foreground)',
+    backgroundImage: 'none',
+    backgroundColor: 'var(--colors-secondary-button-background)',
+    border: '1px solid var(--colors-secondary-button-background)',
+    borderRadius: 'var(--radii-button)',
+    outline: 0,
+  },
+  '.cm-button:hover': {
+    backgroundColor: 'var(--colors-secondary-button-hover-background)',
+  },
+  '.cm-button:focus-visible': {
+    outline: '2px solid var(--colors-accent)',
+    outlineOffset: '2px',
+  },
+  '.cm-panel.cm-search label': {
+    display: 'inline-flex',
+  },
+  '.cm-panel.cm-search input[type="checkbox"]:focus-visible': {
+    outline: '2px solid var(--colors-accent)',
+    outlineOffset: '2px',
+    borderRadius: 'var(--radii-button)',
   },
 });
 
@@ -82,7 +141,8 @@ function getMatchHighlighter(regExp: RegExp) {
       public constructor(view: EditorView) {
         this.decorator = new MatchDecorator({
           regexp: regExp,
-          decoration: () => Decoration.mark({ class: 'cm-regexp-match' }),
+          // Reuse existing search match class for highlighting
+          decoration: () => Decoration.mark({ class: 'cm-searchMatch' }),
         });
         this.decorations = this.decorator.createDeco(view);
       }
