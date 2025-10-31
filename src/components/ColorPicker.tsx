@@ -47,28 +47,28 @@ function DragHandle({
 }
 
 export function ColorPicker({ color, onChange }: ColorPickerProps) {
-  const saturationLightnessRef = useRef<HTMLDivElement>(null);
+  const saturationValueRef = useRef<HTMLDivElement>(null);
   const hueRef = useRef<HTMLDivElement>(null);
   const alphaRef = useRef<HTMLDivElement>(null);
-  const [isDraggingSaturationLightness, setIsDraggingSaturationLightness] =
+  const [isDraggingSaturationValue, setIsDraggingSaturationValue] =
     useState(false);
   const [isDraggingHue, setIsDraggingHue] = useState(false);
   const [isDraggingAlpha, setIsDraggingAlpha] = useState(false);
 
-  const hsl = color.toHsl();
-  const { h, s, l, a = 1 } = hsl;
+  const hsv = color.toHsv();
+  const { h, s, v, a = 1 } = hsv;
 
-  const updateSaturationLightness = useCallback(
+  const updateSaturationValue = useCallback(
     (clientX: number, clientY: number) => {
-      if (saturationLightnessRef.current === null) {
+      if (saturationValueRef.current === null) {
         return;
       }
-      const rect = saturationLightnessRef.current.getBoundingClientRect();
+      const rect = saturationValueRef.current.getBoundingClientRect();
       const x = Math.max(0, Math.min(clientX - rect.left, rect.width));
       const y = Math.max(0, Math.min(clientY - rect.top, rect.height));
       const nextSaturation = (x / rect.width) * 100;
-      const nextLightness = 100 - (y / rect.height) * 100;
-      onChange(colord({ h, s: nextSaturation, l: nextLightness, a }));
+      const nextValue = 100 - (y / rect.height) * 100;
+      onChange(colord({ h, s: nextSaturation, v: nextValue, a }));
     },
     [h, a, onChange]
   );
@@ -81,9 +81,9 @@ export function ColorPicker({ color, onChange }: ColorPickerProps) {
       const rect = hueRef.current.getBoundingClientRect();
       const y = Math.max(0, Math.min(clientY - rect.top, rect.height));
       const nextHue = (y / rect.height) * 360;
-      onChange(colord({ h: nextHue, s, l, a }));
+      onChange(colord({ h: nextHue, s, v, a }));
     },
-    [s, l, a, onChange]
+    [s, v, a, onChange]
   );
 
   const updateAlpha = useCallback(
@@ -94,15 +94,15 @@ export function ColorPicker({ color, onChange }: ColorPickerProps) {
       const rect = alphaRef.current.getBoundingClientRect();
       const y = Math.max(0, Math.min(clientY - rect.top, rect.height));
       const nextAlpha = 1 - y / rect.height;
-      onChange(colord({ h, s, l, a: nextAlpha }));
+      onChange(colord({ h, s, v, a: nextAlpha }));
     },
-    [h, s, l, onChange]
+    [h, s, v, onChange]
   );
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      if (isDraggingSaturationLightness) {
-        updateSaturationLightness(e.clientX, e.clientY);
+      if (isDraggingSaturationValue) {
+        updateSaturationValue(e.clientX, e.clientY);
       }
       if (isDraggingHue) {
         updateHue(e.clientY);
@@ -113,12 +113,12 @@ export function ColorPicker({ color, onChange }: ColorPickerProps) {
     };
 
     const handleMouseUp = () => {
-      setIsDraggingSaturationLightness(false);
+      setIsDraggingSaturationValue(false);
       setIsDraggingHue(false);
       setIsDraggingAlpha(false);
     };
 
-    if (isDraggingSaturationLightness || isDraggingHue || isDraggingAlpha) {
+    if (isDraggingSaturationValue || isDraggingHue || isDraggingAlpha) {
       document.addEventListener('mousemove', handleMouseMove);
       document.addEventListener('mouseup', handleMouseUp);
       return () => {
@@ -127,10 +127,10 @@ export function ColorPicker({ color, onChange }: ColorPickerProps) {
       };
     }
   }, [
-    isDraggingSaturationLightness,
+    isDraggingSaturationValue,
     isDraggingHue,
     isDraggingAlpha,
-    updateSaturationLightness,
+    updateSaturationValue,
     updateHue,
     updateAlpha,
   ]);
@@ -140,14 +140,14 @@ export function ColorPicker({ color, onChange }: ColorPickerProps) {
   return (
     <Grid gridTemplateColumns="1fr 2rem 2rem" gap="m" height="100%">
       <Box
-        ref={saturationLightnessRef}
+        ref={saturationValueRef}
         position="relative"
         cursor="crosshair"
         border="1px solid"
         borderColor="lightBorder"
         onMouseDown={(e) => {
-          setIsDraggingSaturationLightness(true);
-          updateSaturationLightness(e.clientX, e.clientY);
+          setIsDraggingSaturationValue(true);
+          updateSaturationValue(e.clientX, e.clientY);
         }}
         style={{
           background: `linear-gradient(to top, #000, transparent), linear-gradient(to right, #fff, ${baseHue})`,
@@ -155,7 +155,7 @@ export function ColorPicker({ color, onChange }: ColorPickerProps) {
       >
         <DragHandle
           variant="circle"
-          style={{ left: `${s}%`, top: `${100 - l}%` }}
+          style={{ left: `${s}%`, top: `${100 - v}%` }}
         />
       </Box>
       <Box
