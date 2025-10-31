@@ -84,6 +84,8 @@ export function ColorConverter() {
     const parsed = parseColorInput(input);
     return parsed ?? colord(defaultColorHex);
   });
+  const [baseColor, setBaseColor] = useState<Colord>(color);
+
   const [errorMessage, setErrorMessage] = useState('');
 
   useEffect(() => {
@@ -97,6 +99,7 @@ export function ColorConverter() {
     const parsed = parseColorInput(value);
     if (parsed) {
       setColor(parsed);
+      setBaseColor(parsed);
       setErrorMessage('');
     } else if (value.trim() === '') {
       setErrorMessage('');
@@ -159,7 +162,14 @@ export function ColorConverter() {
         </Stack>
         <Stack gap="s">
           <VisuallyHidden as="h3">Color picker</VisuallyHidden>
-          <ColorSwatch color={hex} />
+          <Grid
+            gridTemplateColumns="1fr 1fr"
+            border="1px solid"
+            borderColor="lightBorder"
+          >
+            <ColorSwatch color={baseColor.toHex()} />
+            <ColorSwatch color={hex} />
+          </Grid>
           <ColorPicker color={color} onChange={handleColorPickerChange} />
         </Stack>
       </Grid>
