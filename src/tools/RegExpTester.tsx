@@ -8,6 +8,9 @@ import { Panel } from '../components/Panel';
 import { CopyButton } from '../components/CopyButton';
 import { Input } from '../components/Input';
 
+// TODO: Add a button to show cheat sheet
+// TODO: Add a button to show docs
+
 const defaultFormatter = String.raw`$0\n`;
 
 export function RegExpTester() {
