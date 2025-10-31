@@ -34,4 +34,13 @@ export const tools: Tool[] = [
       }))
     ),
   },
+  {
+    id: 'url-encoder',
+    name: 'URL Encoder/Decoder',
+    component: lazy(() =>
+      import('./tools/UrlEncoder').then((m) => ({
+        default: m.UrlEncoder,
+      }))
+    ),
+  },
 ];

@@ -123,6 +123,7 @@ export function TextDiff() {
         </Grid>
         <Panel label="Result">
           <Box
+            as="pre"
             overflow="auto"
             height="100%"
             fontFamily="code"

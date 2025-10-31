@@ -10,9 +10,9 @@ import { CopyButton } from '../components/CopyButton';
 
 type Mode = 'encode' | 'decode';
 
-export function Base64() {
-  const [input, setInput] = usePersistentState('base64.input', '');
-  const [mode, setMode] = usePersistentState<Mode>('base64.mode', 'encode');
+export function UrlEncoder() {
+  const [input, setInput] = usePersistentState('urlEncoder.input', '');
+  const [mode, setMode] = usePersistentState<Mode>('urlEncoder.mode', 'encode');
   const [output, setOutput] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
@@ -27,11 +27,11 @@ export function Base64() {
       setInput(value);
       try {
         if (mode === 'encode') {
-          const encoded = btoa(value);
+          const encoded = encodeURIComponent(value);
           setOutput(encoded);
           setErrorMessage('');
         } else {
-          const decoded = atob(value);
+          const decoded = decodeURIComponent(value);
           setOutput(decoded);
           setErrorMessage('');
         }
@@ -61,7 +61,7 @@ export function Base64() {
 
   return (
     <>
-      <VisuallyHidden as="h2">Base64 Encoder/Decoder</VisuallyHidden>
+      <VisuallyHidden as="h2">URL Encoder/Decoder</VisuallyHidden>
       <Grid gridTemplateColumns="1fr 1fr" gap="m" height="100vh" padding="s">
         <Panel
           label="Input"

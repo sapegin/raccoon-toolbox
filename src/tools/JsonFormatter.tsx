@@ -8,12 +8,12 @@ import { Button } from '../components/Button';
 import { VisuallyHidden } from '../../styled-system/jsx';
 import { usePersistentState } from '../hooks/usePersistentState';
 import { Panel } from '../components/Panel';
+import { CopyButton } from '../components/CopyButton';
 
 export function JsonFormatter() {
   const [input, setInput] = usePersistentState('jsonFormatter.input', '');
   const [output, setOutput] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
-  const [isCopied, setIsCopied] = useState(false);
 
   useEffect(() => {
     if (input !== '') {
@@ -42,15 +42,6 @@ export function JsonFormatter() {
     void formatJson();
   }, []);
 
-  const handleCopy = useCallback(() => {
-    const copyOutput = async () => {
-      setIsCopied(true);
-      setTimeout(() => setIsCopied(false), 2000);
-      await navigator.clipboard.writeText(output);
-    };
-    void copyOutput();
-  }, [output]);
-
   const handleClear = useCallback(() => {
     setInput('');
     setOutput('');
@@ -74,11 +65,7 @@ export function JsonFormatter() {
         <Panel
           label="Output"
           errorMessage={errorMessage}
-          actions={
-            <Button onClick={handleCopy} disabled={output === ''}>
-              {isCopied ? 'Copied!' : 'Copy'}
-            </Button>
-          }
+          actions={<CopyButton value={output} />}
         >
           <Editor value={output} language="json" editable={false} />
         </Panel>
