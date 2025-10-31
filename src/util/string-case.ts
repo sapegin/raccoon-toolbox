@@ -1,3 +1,5 @@
+// TODO: Add tests
+
 export type CaseType =
   | 'lower'
   | 'upper'
@@ -101,13 +103,27 @@ function convertCaseSingle(text: string, caseType: CaseType): string {
       return words.map(toTitleCase).join('-');
     }
 
+    // Inspired by https://dev.to/caseconverter/building-a-true-spongebob-case-converter-fk7
     case 'spongebob': {
       let result = '';
-      let shouldBeUpper = false;
+      let consecutiveCount = 0;
+      let lastWasUpper = false;
+
       for (const char of text) {
         if (/[a-zA-Z]/.test(char)) {
+          const shouldBeUpper: boolean =
+            consecutiveCount >= 2
+              ? lastWasUpper === false
+              : Math.random() < 0.5;
+
           result += shouldBeUpper ? char.toUpperCase() : char.toLowerCase();
-          shouldBeUpper = shouldBeUpper === false;
+
+          if (shouldBeUpper === lastWasUpper) {
+            consecutiveCount++;
+          } else {
+            consecutiveCount = 1;
+            lastWasUpper = shouldBeUpper;
+          }
         } else {
           result += char;
         }
