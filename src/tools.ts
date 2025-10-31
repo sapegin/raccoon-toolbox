@@ -53,6 +53,15 @@ export const tools: Tool[] = [
     ),
   },
   {
+    id: 'text-stats',
+    name: 'Text stats',
+    component: lazy(() =>
+      import('./tools/TextStats').then((m) => ({
+        default: m.TextStats,
+      }))
+    ),
+  },
+  {
     id: 'unicode-lookup',
     name: 'Unicode lookup',
     component: lazy(() =>
