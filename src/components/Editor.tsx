@@ -104,9 +104,6 @@ const theme = EditorView.theme({
     outline: '2px solid var(--colors-accent)',
     outlineOffset: '2px',
   },
-  '.cm-panel.cm-search label': {
-    display: 'inline-flex',
-  },
   '.cm-panel.cm-search input[type="checkbox"]:focus-visible': {
     outline: '2px solid var(--colors-accent)',
     outlineOffset: '2px',
