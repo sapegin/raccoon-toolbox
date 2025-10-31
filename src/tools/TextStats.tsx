@@ -66,6 +66,7 @@ export function TextStats() {
       <VisuallyHidden as="h2">Text stats</VisuallyHidden>
       <Grid gridTemplateColumns="1fr 12rem" gap="m" height="100vh" padding="s">
         <Panel
+          fullHeight
           label="Text"
           actions={
             <Button onClick={handleClear} disabled={text === ''}>
@@ -75,8 +76,8 @@ export function TextStats() {
         >
           <Editor value={text} onChange={handleTextChange} />
         </Panel>
-        <Panel label="Statistics">
-          <Stack as="dl" gap="m">
+        <Panel fullHeight label="Statistics">
+          <Stack as="dl" gap="m" overflow="auto" height="100%">
             <StatItem label="Characters" value={stats.characters} />
             <StatItem
               label="Non-space characters"

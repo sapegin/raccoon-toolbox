@@ -84,6 +84,7 @@ export function UrlParser() {
       <VisuallyHidden as="h2">URL parser</VisuallyHidden>
       <Grid gridTemplateColumns="1fr 1fr" gap="m" height="100vh" padding="s">
         <Panel
+          fullHeight
           label="Input"
           actions={
             <Button onClick={handleClear} disabled={input === ''}>
@@ -118,7 +119,7 @@ export function UrlParser() {
               </Table>
             )}
           </Panel>
-          <Panel label="Query Parameters (JSON)">
+          <Panel fullHeight label="Query parameters">
             <Editor value={queryJson} language="json" editable={false} />
           </Panel>
         </Stack>

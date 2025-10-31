@@ -67,6 +67,7 @@ export function Base64Encoder() {
       <VisuallyHidden as="h2">Base64 encoder/decoder</VisuallyHidden>
       <Grid gridTemplateColumns="1fr 1fr" gap="m" height="100vh" padding="s">
         <Panel
+          fullHeight
           label="Input"
           actions={
             <Button onClick={handleClear} disabled={input === ''}>
@@ -77,6 +78,7 @@ export function Base64Encoder() {
           <Editor value={input} onChange={handleChange} />
         </Panel>
         <Panel
+          fullHeight
           label="Output"
           errorMessage={errorMessage}
           actions={

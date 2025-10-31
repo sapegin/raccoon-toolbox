@@ -119,7 +119,7 @@ export function RegExpTester() {
     <>
       <VisuallyHidden as="h2">RegExp tester</VisuallyHidden>
       <Grid gridTemplateRows="1fr 1fr" gap="m" height="100vh" padding="s">
-        <Stack gap="m">
+        <Stack gap="m" minHeight={0} height="100%">
           <Input
             id="regexp-input"
             label="Regular expression"
@@ -133,7 +133,7 @@ export function RegExpTester() {
               </Button>
             }
           />
-          <Panel label="Text">
+          <Panel fullHeight label="Text">
             <Editor
               value={textInput}
               onChange={setTextInput}
@@ -141,7 +141,7 @@ export function RegExpTester() {
             />
           </Panel>
         </Stack>
-        <Stack gap="m">
+        <Stack gap="m" minHeight={0} height="100%">
           <Input
             id="formatter"
             label="Match formatter"
@@ -149,7 +149,11 @@ export function RegExpTester() {
             onChange={(e) => setFormatter(e.target.value)}
             placeholder={defaultFormatter}
           />
-          <Panel label="Matches" actions={<CopyButton value={output} />}>
+          <Panel
+            fullHeight
+            label="Matches"
+            actions={<CopyButton value={output} />}
+          >
             <Editor value={output} editable={false} />
           </Panel>
         </Stack>

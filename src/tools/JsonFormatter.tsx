@@ -53,6 +53,7 @@ export function JsonFormatter() {
       <VisuallyHidden as="h2">JSON formatter</VisuallyHidden>
       <Grid gridTemplateColumns="1fr 1fr" gap="m" height="100vh" padding="s">
         <Panel
+          fullHeight
           label="Input"
           actions={
             <Button onClick={handleClear} disabled={input === ''}>
@@ -63,6 +64,7 @@ export function JsonFormatter() {
           <Editor value={input} language="json" onChange={handleChange} />
         </Panel>
         <Panel
+          fullHeight
           label="Output"
           errorMessage={errorMessage}
           actions={<CopyButton value={output} />}

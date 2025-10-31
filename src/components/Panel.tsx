@@ -9,6 +9,7 @@ export function Panel({
   label,
   actions,
   errorMessage,
+  fullHeight,
   children,
 }: {
   label: ReactNode;
@@ -16,10 +17,12 @@ export function Panel({
   actions?: ReactNode;
   /** Show an error message overlay instead of the panel content. */
   errorMessage?: string;
+  fullHeight?: boolean;
   children: ReactNode;
 }) {
+  // TODO: Make minHeight={0} height="100%" stuff optional
   return (
-    <Stack gap="xs" minHeight={0} height="100%">
+    <Stack gap="xs" css={fullHeight ? { minHeight: 0, height: '100%' } : {}}>
       <Flex justifyContent="space-between" alignItems="center">
         <Text as="h3">{label}</Text>
         {actions && (

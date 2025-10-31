@@ -121,7 +121,7 @@ export function TextDiff() {
             <Editor value={textB} onChange={handleTextBChange} />
           </Panel>
         </Grid>
-        <Panel label="Result">
+        <Panel fullHeight label="Result">
           <Box
             as="pre"
             overflow="auto"

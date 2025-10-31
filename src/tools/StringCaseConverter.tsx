@@ -52,6 +52,7 @@ export function StringCaseConverter() {
       <VisuallyHidden as="h2">String case converter</VisuallyHidden>
       <Grid gridTemplateColumns="1fr 1fr" gap="m" height="100vh" padding="s">
         <Panel
+          fullHeight
           label="Input"
           actions={
             <Button onClick={handleClear} disabled={input === ''}>
@@ -62,6 +63,7 @@ export function StringCaseConverter() {
           <Editor value={input} onChange={handleChange} />
         </Panel>
         <Panel
+          fullHeight
           label="Output"
           actions={
             <>

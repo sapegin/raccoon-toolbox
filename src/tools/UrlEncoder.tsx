@@ -64,6 +64,7 @@ export function UrlEncoder() {
       <VisuallyHidden as="h2">URL encoder/decoder</VisuallyHidden>
       <Grid gridTemplateColumns="1fr 1fr" gap="m" height="100vh" padding="s">
         <Panel
+          fullHeight
           label="Input"
           actions={
             <Button onClick={handleClear} disabled={input === ''}>
@@ -74,6 +75,7 @@ export function UrlEncoder() {
           <Editor value={input} onChange={handleChange} />
         </Panel>
         <Panel
+          fullHeight
           label="Output"
           errorMessage={errorMessage}
           actions={
