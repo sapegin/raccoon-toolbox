@@ -20,6 +20,10 @@ A collection of developer utilities built with React and Tauri.
 - **Unicode lookup** — Look up Unicode characters
 - **URL encoder/decoder** — Encode and decode URLs
 
+## Motivation
+
+There are many similar apps already, such as [DevUtils](https://devutils.com/) or [DevToys](https://devtoys.app/) but they are often expensive, have poor UX or don’t have the tools I need. Also, I wanted to have a tool that I can use as a Mac app and a web app.
+
 ## Development
 
 ```bash
