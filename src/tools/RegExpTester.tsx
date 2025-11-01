@@ -1,16 +1,15 @@
 import { useState, useCallback, useEffect } from 'react';
 import { Editor } from '../components/Editor';
 import { Button } from '../components/Button';
-import { Stack } from '../../styled-system/jsx';
+import { Stack, Grid } from '../../styled-system/jsx';
 import { usePersistentState } from '../hooks/usePersistentState';
 import { Panel } from '../components/Panel';
 import { CopyButton } from '../components/CopyButton';
 import { Input } from '../components/Input';
 import { Screen } from '../components/Screen';
+import { RegExpCheatSheet } from '../components/RegExpCheatSheet';
 
-// TODO: Add a button to show cheat sheet
 // TODO: Add a button to show docs
-// TODO: Add a button to show help for the formatter input
 
 const defaultFormatter = String.raw`$0\n`;
 
@@ -139,22 +138,25 @@ export function RegExpTester() {
           />
         </Panel>
       </Stack>
-      <Stack gap="m" minHeight={0} height="100%">
-        <Input
-          id="formatter"
-          label="Match formatter"
-          value={formatter}
-          onChange={(e) => setFormatter(e.target.value)}
-          placeholder={defaultFormatter}
-        />
-        <Panel
-          fullHeight
-          label="Matches"
-          actions={<CopyButton value={output} />}
-        >
-          <Editor value={output} editable={false} />
-        </Panel>
-      </Stack>
+      <Grid gridTemplateColumns="1fr 1fr" gap="m" minHeight={0} height="100%">
+        <Stack gap="m" minHeight={0} height="100%">
+          <Input
+            id="formatter"
+            label="Match formatter"
+            value={formatter}
+            onChange={(e) => setFormatter(e.target.value)}
+            placeholder={defaultFormatter}
+          />
+          <Panel
+            fullHeight
+            label="Matches"
+            actions={<CopyButton value={output} />}
+          >
+            <Editor value={output} editable={false} />
+          </Panel>
+        </Stack>
+        <RegExpCheatSheet />
+      </Grid>
     </Screen>
   );
 }

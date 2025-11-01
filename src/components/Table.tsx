@@ -1,7 +1,13 @@
 import type { ReactNode } from 'react';
 import { css } from '../../styled-system/css';
 
-export function Table({ children }: { children: ReactNode }) {
+export function Table({
+  variant = 'spacious',
+  children,
+}: {
+  variant?: 'spacious' | 'dense';
+  children: ReactNode;
+}) {
   return (
     <table
       className={css({
@@ -9,13 +15,13 @@ export function Table({ children }: { children: ReactNode }) {
         borderCollapse: 'collapse',
         '& th': {
           textAlign: 'left',
-          paddingBlock: 's',
-          paddingInline: 'm',
+          paddingBlock: variant === 'spacious' ? 's' : 'xs',
+          paddingInline: variant === 'spacious' ? 'm' : 's',
           borderBottom: '1px solid',
           borderColor: 'lightBorder',
           color: 'textForeground',
           fontSize: 's',
-          fontWeight: 'normal',
+          fontWeight: 'bold',
         },
         '& th:first-child': {
           paddingLeft: 0,
@@ -24,8 +30,8 @@ export function Table({ children }: { children: ReactNode }) {
           paddingRight: 0,
         },
         '& td': {
-          paddingBlock: 's',
-          paddingInline: 'm',
+          paddingBlock: variant === 'spacious' ? 's' : 'xs',
+          paddingInline: variant === 'spacious' ? 'm' : 's',
           borderBottom: '1px solid',
           borderColor: 'lightBorder',
         },
