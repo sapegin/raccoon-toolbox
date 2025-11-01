@@ -1,8 +1,10 @@
 import { Suspense, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import * as app from '@tauri-apps/api';
+import { isTauri } from '@tauri-apps/api/core';
 import { Flex, VisuallyHidden } from '../styled-system/jsx';
 import { usePersistentState } from './hooks/usePersistentState';
+import { useHotkey } from './hooks/useHotkey';
 import { Box } from './components/Box';
 import { Grid } from './components/Grid';
 import { Router } from './components/Router';
@@ -18,8 +20,6 @@ declare global {
   }
 }
 
-export const isTauri = '__TAURI__' in window;
-
 export function App() {
   const [isSidebarOpen, setIsSidebarOpen] = usePersistentState(
     'app.sidebarOpen',
@@ -32,7 +32,7 @@ export function App() {
 
   // Set the selected tool name to the app title
   useEffect(() => {
-    if (isTauri && currentTool) {
+    if (isTauri() && currentTool) {
       void window.__TAURI__.window
         .getCurrentWindow()
         .setTitle(currentTool.name);
@@ -41,12 +41,20 @@ export function App() {
 
   // Listen to the toggle sidebar menu item events
   useEffect(() => {
-    if (isTauri) {
+    if (isTauri()) {
       void window.__TAURI__.event.listen('toggle-sidebar', () => {
         setIsSidebarOpen((prev) => prev === false);
       });
     }
   }, [setIsSidebarOpen]);
+
+  // Handle keyboard shortcut for toggling sidebar
+  useHotkey(() => setIsSidebarOpen((prev) => prev === false), {
+    enabled: isTauri() === false,
+    key: '/',
+    metaKey: true,
+    ctrlKey: false,
+  });
 
   return (
     <>
@@ -58,7 +66,7 @@ export function App() {
         height="100vh"
       >
         {isSidebarOpen && <Sidebar onClose={() => setIsSidebarOpen(false)} />}
-        {isSidebarOpen === false && isTauri === false ? (
+        {isSidebarOpen === false && isTauri() === false ? (
           <Header
             title={currentToolName}
             onOpen={() => setIsSidebarOpen(true)}

@@ -10,7 +10,8 @@ export function Sidebar({ onClose }: { onClose: () => void }) {
     <Stack
       gap="xs"
       padding="s"
-      borderRight="1px solid"
+      borderStyle="solid"
+      borderWidth="0 1px 0 0"
       borderColor="lightBorder"
       overflowY="auto"
       backgroundColor="uiBackground"
@@ -18,8 +19,8 @@ export function Sidebar({ onClose }: { onClose: () => void }) {
       <Flex justifyContent="flex-end" mb="xs">
         <IconButton
           onClick={onClose}
-          title="Close sidebar"
-          aria-label="Close sidebar"
+          title="Close sidebar (Cmd+/)"
+          aria-label="Close sidebar (Cmd+/)"
         >
           <Icon icon="menu" />
         </IconButton>

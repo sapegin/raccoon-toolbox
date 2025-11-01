@@ -16,14 +16,14 @@ export function Header({
       gap="m"
       p="xs"
       borderStyle="solid"
-      borderBottomWidth="1px"
+      borderWidth="0 0 1px 0"
       borderColor="lightBorder"
       backgroundColor="uiBackground"
     >
       <IconButton
         onClick={onOpen}
-        title="Open sidebar"
-        aria-label="Open sidebar"
+        title="Open sidebar (Cmd+/)"
+        aria-label="Open sidebar (Cmd+/)"
       >
         <Icon icon="menu" />
       </IconButton>
