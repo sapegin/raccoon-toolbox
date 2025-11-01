@@ -9,6 +9,19 @@ import { Screen } from '../components/Screen';
 
 type Mode = 'encode' | 'decode';
 
+// HACK: New API. These types should be available in TypeScript 6
+declare global {
+  interface Uint8Array {
+    toBase64(options?: {
+      alphabet?: 'base64' | 'base64url';
+      omitPadding?: boolean;
+    }): string;
+  }
+  interface Uint8ArrayConstructor {
+    fromBase64(base64: string): Uint8Array;
+  }
+}
+
 export function Base64Encoder() {
   const [input, setInput] = usePersistentState('base64Encoder.input', '');
   const [mode, setMode] = usePersistentState<Mode>(
@@ -29,11 +42,15 @@ export function Base64Encoder() {
       setInput(value);
       try {
         if (mode === 'encode') {
-          const encoded = btoa(value);
+          const encoder = new TextEncoder();
+          const uint8Array = encoder.encode(value);
+          const encoded = uint8Array.toBase64();
           setOutput(encoded);
           setErrorMessage('');
         } else {
-          const decoded = atob(value);
+          const uint8Array = Uint8Array.fromBase64(value);
+          const decoder = new TextDecoder();
+          const decoded = decoder.decode(uint8Array);
           setOutput(decoded);
           setErrorMessage('');
         }
