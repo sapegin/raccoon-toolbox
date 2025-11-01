@@ -1,8 +1,8 @@
 import { Suspense, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { getCurrentWindow } from '@tauri-apps/api/window';
 import { listen } from '@tauri-apps/api/event';
-import { isTauri } from '@tauri-apps/api/core';
+import { invoke, isTauri } from '@tauri-apps/api/core';
 import { Flex, VisuallyHidden } from '../styled-system/jsx';
 import { usePersistentState } from './hooks/usePersistentState';
 import { useHotkey } from './hooks/useHotkey';
@@ -21,6 +21,7 @@ export function App() {
     true
   );
   const location = useLocation();
+  const navigate = useNavigate();
   const currentToolId = location.pathname.slice(1);
   const currentTool = tools.find((tool) => tool.id === currentToolId);
   const currentToolName = currentTool?.name ?? 'Loading…';
@@ -45,6 +46,25 @@ export function App() {
       };
     }
   }, [setIsSidebarOpen]);
+
+  // Listen to the select tool menu item events
+  useEffect(() => {
+    if (isTauri()) {
+      const unlisten = listen<string>('select-tool', (event) => {
+        void navigate(`/${event.payload}`);
+      });
+      return () => {
+        void unlisten.then((fn) => fn());
+      };
+    }
+  }, [navigate]);
+
+  // Update selected tool in the app menu
+  useEffect(() => {
+    if (isTauri() && currentToolId) {
+      void invoke('set_selected_tool', { toolId: currentToolId });
+    }
+  }, [currentToolId]);
 
   // Handle keyboard shortcut for toggling sidebar
   useHotkey(() => setIsSidebarOpen((prev) => prev === false), {

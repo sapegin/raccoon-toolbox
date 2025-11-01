@@ -6,6 +6,7 @@ export interface Tool {
   component: ComponentType;
 }
 
+// This list should be in sync with the on in lib.rs
 export const tools: Tool[] = [
   {
     id: 'base64-encoder',
