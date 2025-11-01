@@ -47,18 +47,7 @@ export function UrlParser() {
         search: url.search,
       });
 
-      const params: Record<string, string | string[]> = {};
-      for (const [key, val] of url.searchParams.entries()) {
-        if (params[key]) {
-          if (Array.isArray(params[key])) {
-            params[key].push(val);
-          } else {
-            params[key] = [params[key], val];
-          }
-        } else {
-          params[key] = val;
-        }
-      }
+      const params = Object.fromEntries(url.searchParams);
 
       setQueryJson(JSON.stringify(params, null, 2));
       setErrorMessage('');
