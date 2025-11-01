@@ -1,6 +1,7 @@
 import { Suspense, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import * as app from '@tauri-apps/api';
+import { getCurrentWindow } from '@tauri-apps/api/window';
+import { listen } from '@tauri-apps/api/event';
 import { isTauri } from '@tauri-apps/api/core';
 import { Flex, VisuallyHidden } from '../styled-system/jsx';
 import { usePersistentState } from './hooks/usePersistentState';
@@ -13,12 +14,6 @@ import { Sidebar } from './components/Sidebar';
 import { Header } from './components/Header';
 import { tools } from './tools';
 import './styles.css';
-
-declare global {
-  interface Window {
-    __TAURI__: typeof app;
-  }
-}
 
 export function App() {
   const [isSidebarOpen, setIsSidebarOpen] = usePersistentState(
@@ -33,16 +28,14 @@ export function App() {
   // Set the selected tool name to the app title
   useEffect(() => {
     if (isTauri() && currentTool) {
-      void window.__TAURI__.window
-        .getCurrentWindow()
-        .setTitle(currentTool.name);
+      void getCurrentWindow().setTitle(currentTool.name);
     }
   }, [currentTool]);
 
   // Listen to the toggle sidebar menu item events
   useEffect(() => {
     if (isTauri()) {
-      void window.__TAURI__.event.listen('toggle-sidebar', () => {
+      void listen('toggle-sidebar', () => {
         setIsSidebarOpen((prev) => prev === false);
       });
     }
