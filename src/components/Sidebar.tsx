@@ -22,7 +22,7 @@ export function Sidebar({ onClose }: { onClose: () => void }) {
           title="Close sidebar (Cmd+/)"
           aria-label="Close sidebar (Cmd+/)"
         >
-          <Icon icon="menu" />
+          <Icon icon="sidebar" />
         </IconButton>
       </Flex>
       <Stack as="ul" gap="xs">

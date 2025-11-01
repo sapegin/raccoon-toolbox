@@ -32,7 +32,6 @@ export function IconBase({
   viewBox,
   display = 'inline-block',
   verticalAlign = 'middle',
-  fill = 'currentColor',
   children,
   ...props
 }: BaseIconProps) {
@@ -44,8 +43,8 @@ export function IconBase({
         verticalAlign,
       })}
       viewBox={`0 0 ${viewBox.width} ${viewBox.height}`}
-      fill={fill}
       preserveAspectRatio="xMidYMid meet"
+      fill="none"
       aria-hidden="true"
     >
       {children}

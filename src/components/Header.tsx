@@ -25,7 +25,7 @@ export function Header({
         title="Open sidebar (Cmd+/)"
         aria-label="Open sidebar (Cmd+/)"
       >
-        <Icon icon="menu" />
+        <Icon icon="sidebar" />
       </IconButton>
       <Text as="h2" textAlign="center">
         {title}
