@@ -15,6 +15,7 @@ import {
   MatchDecorator,
 } from '@codemirror/view';
 import { EditorState } from '@codemirror/state';
+import { insertNewlineAndIndent } from '@codemirror/commands';
 import { useRef, useEffect } from 'react';
 import { Box } from './Box';
 
@@ -192,6 +193,14 @@ export function Editor({
         highlightWhitespace(),
         search(),
         keymap.of(searchKeymap),
+        // HACK: Allow adding multiple empty lines at the end of the document
+        keymap.of([
+          {
+            key: 'Enter',
+            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+            run: insertNewlineAndIndent,
+          },
+        ]),
         EditorView.lineWrapping,
         EditorView.editable.of(editable),
         squirrelsongHighlighting,
