@@ -55,6 +55,9 @@ const ICONS: Record<string, IconInfo> = {
       </>
     ),
   },
+  menu: {
+    path: 'M18 4H2v2h16V4Zm0 5H2v2h16V9Zm0 5H2v2h16v-2Z',
+  },
 };
 
 export type IconName = keyof typeof ICONS;

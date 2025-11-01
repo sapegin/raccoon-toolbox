@@ -1,14 +1,13 @@
 import { useState, useCallback, useEffect } from 'react';
-import { Grid } from '../components/Grid';
 import prettier from 'prettier/standalone';
 import prettierPluginEstree from 'prettier/plugins/estree';
 import prettierPluginBabel from 'prettier/plugins/babel';
 import { Editor } from '../components/Editor';
 import { Button } from '../components/Button';
-import { VisuallyHidden } from '../../styled-system/jsx';
 import { usePersistentState } from '../hooks/usePersistentState';
 import { Panel } from '../components/Panel';
 import { CopyButton } from '../components/CopyButton';
+import { Screen } from '../components/Screen';
 
 export function JsonFormatter() {
   const [input, setInput] = usePersistentState('jsonFormatter.input', '');
@@ -49,29 +48,26 @@ export function JsonFormatter() {
   }, []);
 
   return (
-    <>
-      <VisuallyHidden as="h2">JSON formatter</VisuallyHidden>
-      <Grid gridTemplateColumns="1fr 1fr" gap="m" height="100vh" padding="s">
-        <Panel
-          fullHeight
-          label="Input"
-          actions={
-            <Button onClick={handleClear} disabled={input === ''}>
-              Clear
-            </Button>
-          }
-        >
-          <Editor value={input} language="json" onChange={handleChange} />
-        </Panel>
-        <Panel
-          fullHeight
-          label="Output"
-          errorMessage={errorMessage}
-          actions={<CopyButton value={output} />}
-        >
-          <Editor value={output} language="json" editable={false} />
-        </Panel>
-      </Grid>
-    </>
+    <Screen gridTemplateColumns="1fr 1fr">
+      <Panel
+        fullHeight
+        label="Input"
+        actions={
+          <Button onClick={handleClear} disabled={input === ''}>
+            Clear
+          </Button>
+        }
+      >
+        <Editor value={input} language="json" onChange={handleChange} />
+      </Panel>
+      <Panel
+        fullHeight
+        label="Output"
+        errorMessage={errorMessage}
+        actions={<CopyButton value={output} />}
+      >
+        <Editor value={output} language="json" editable={false} />
+      </Panel>
+    </Screen>
   );
 }

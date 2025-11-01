@@ -3,12 +3,12 @@ import {
   unicodeCharacters,
   type UnicodeCharacter,
 } from '../data/unicode-characters';
-import { Stack } from '../components/Stack';
 import { Input } from '../components/Input';
 import { css } from '../../styled-system/css';
-import { Box, Link, VisuallyHidden } from '../../styled-system/jsx';
+import { Box, Link } from '../../styled-system/jsx';
 import { Table } from '../components/Table';
 import { Text } from '../components/Text';
+import { Screen } from '../components/Screen';
 
 function ResultsTable({ characters }: { characters: UnicodeCharacter[] }) {
   return (
@@ -90,25 +90,22 @@ export function UnicodeLookup() {
   }, [searchQuery]);
 
   return (
-    <>
-      <VisuallyHidden as="h2">Unicode lookup</VisuallyHidden>
-      <Stack gap="m" height="100vh" padding="s">
-        <Input
-          id="search"
-          label="Search by name or code"
-          placeholder="Try “smile” or “U+1F600”"
-          value={searchQuery}
-          onChange={(event) => setSearchQuery(event.target.value)}
-        />
-        {filteredCharacters.length > 0 && (
-          <Box overflow="auto">
-            <ResultsTable characters={filteredCharacters} />
-          </Box>
-        )}
-        {searchQuery.trim() && filteredCharacters.length === 0 && (
-          <Text>No characters found</Text>
-        )}
-      </Stack>
-    </>
+    <Screen>
+      <Input
+        id="search"
+        label="Search by name or code"
+        placeholder="Try “smile” or “U+1F600”"
+        value={searchQuery}
+        onChange={(event) => setSearchQuery(event.target.value)}
+      />
+      {filteredCharacters.length > 0 && (
+        <Box overflow="auto">
+          <ResultsTable characters={filteredCharacters} />
+        </Box>
+      )}
+      {searchQuery.trim() && filteredCharacters.length === 0 && (
+        <Text>No characters found</Text>
+      )}
+    </Screen>
   );
 }

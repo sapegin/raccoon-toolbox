@@ -1,13 +1,12 @@
 import { useState, useCallback, useEffect } from 'react';
-import { Grid } from '../components/Grid';
 import { Editor } from '../components/Editor';
 import { Button } from '../components/Button';
-import { VisuallyHidden } from '../../styled-system/jsx';
 import { usePersistentState } from '../hooks/usePersistentState';
 import { Panel } from '../components/Panel';
 import { CopyButton } from '../components/CopyButton';
 import { Select } from '../components/Select';
 import { convertCase, caseOptions, type CaseType } from '../util/string-case';
+import { Screen } from '../components/Screen';
 
 export function StringCaseConverter() {
   const [input, setInput] = usePersistentState('stringCaseConverter.input', '');
@@ -48,39 +47,36 @@ export function StringCaseConverter() {
   );
 
   return (
-    <>
-      <VisuallyHidden as="h2">String case converter</VisuallyHidden>
-      <Grid gridTemplateColumns="1fr 1fr" gap="m" height="100vh" padding="s">
-        <Panel
-          fullHeight
-          label="Input"
-          actions={
-            <Button onClick={handleClear} disabled={input === ''}>
-              Clear
-            </Button>
-          }
-        >
-          <Editor value={input} onChange={handleChange} />
-        </Panel>
-        <Panel
-          fullHeight
-          label="Output"
-          actions={
-            <>
-              <Select
-                accessibleLabel="Case type"
-                id="case-type"
-                options={caseOptions}
-                value={caseType}
-                onChange={handleCaseTypeChange}
-              />
-              <CopyButton value={output} />
-            </>
-          }
-        >
-          <Editor value={output} editable={false} />
-        </Panel>
-      </Grid>
-    </>
+    <Screen gridTemplateColumns="1fr 1fr">
+      <Panel
+        fullHeight
+        label="Input"
+        actions={
+          <Button onClick={handleClear} disabled={input === ''}>
+            Clear
+          </Button>
+        }
+      >
+        <Editor value={input} onChange={handleChange} />
+      </Panel>
+      <Panel
+        fullHeight
+        label="Output"
+        actions={
+          <>
+            <Select
+              accessibleLabel="Case type"
+              id="case-type"
+              options={caseOptions}
+              value={caseType}
+              onChange={handleCaseTypeChange}
+            />
+            <CopyButton value={output} />
+          </>
+        }
+      >
+        <Editor value={output} editable={false} />
+      </Panel>
+    </Screen>
   );
 }

@@ -3,12 +3,12 @@ import { diffChars, diffLines } from 'diff';
 import { Grid } from '../components/Grid';
 import { Editor } from '../components/Editor';
 import { Button } from '../components/Button';
-import { VisuallyHidden } from '../../styled-system/jsx';
 import { usePersistentState } from '../hooks/usePersistentState';
 import { Panel } from '../components/Panel';
-import { Box } from '../components/Box';
 import { css } from '../../styled-system/css';
 import { escapeHtml } from '../util/escapeHtml';
+import { Box } from '../../styled-system/jsx';
+import { Screen } from '../components/Screen';
 
 const addedClass = css({
   backgroundColor: 'successBackground',
@@ -96,45 +96,42 @@ export function TextDiff() {
   }, []);
 
   return (
-    <>
-      <VisuallyHidden as="h2">Text diff</VisuallyHidden>
-      <Grid gridTemplateRows="1fr 1fr" gap="m" height="100vh" padding="s">
-        <Grid gridTemplateColumns="1fr 1fr" gap="m">
-          <Panel
-            label="Text A"
-            actions={
-              <Button onClick={handleAClear} disabled={textA === ''}>
-                Clear
-              </Button>
-            }
-          >
-            <Editor value={textA} onChange={handleTextAChange} />
-          </Panel>
-          <Panel
-            label="Text B"
-            actions={
-              <Button onClick={handleBClear} disabled={textB === ''}>
-                Clear
-              </Button>
-            }
-          >
-            <Editor value={textB} onChange={handleTextBChange} />
-          </Panel>
-        </Grid>
-        <Panel fullHeight label="Result">
-          <Box
-            as="pre"
-            overflow="auto"
-            height="100%"
-            fontFamily="code"
-            padding="s"
-            whiteSpace="pre-wrap"
-            border="1px solid"
-            borderColor="lightBorder"
-            dangerouslySetInnerHTML={{ __html: result }}
-          />
+    <Screen gridTemplateRows="1fr 1fr">
+      <Grid gridTemplateColumns="1fr 1fr" gap="m">
+        <Panel
+          label="Text A"
+          actions={
+            <Button onClick={handleAClear} disabled={textA === ''}>
+              Clear
+            </Button>
+          }
+        >
+          <Editor value={textA} onChange={handleTextAChange} />
+        </Panel>
+        <Panel
+          label="Text B"
+          actions={
+            <Button onClick={handleBClear} disabled={textB === ''}>
+              Clear
+            </Button>
+          }
+        >
+          <Editor value={textB} onChange={handleTextBChange} />
         </Panel>
       </Grid>
-    </>
+      <Panel fullHeight label="Result">
+        <Box
+          as="pre"
+          overflow="auto"
+          height="100%"
+          fontFamily="code"
+          padding="s"
+          whiteSpace="pre-wrap"
+          border="1px solid"
+          borderColor="lightBorder"
+          dangerouslySetInnerHTML={{ __html: result }}
+        />
+      </Panel>
+    </Screen>
   );
 }

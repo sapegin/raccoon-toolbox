@@ -1,12 +1,12 @@
 import { useState, useCallback, useEffect } from 'react';
-import { Grid } from '../components/Grid';
 import { Editor } from '../components/Editor';
 import { Button } from '../components/Button';
-import { VisuallyHidden, Stack } from '../../styled-system/jsx';
+import { Stack } from '../../styled-system/jsx';
 import { usePersistentState } from '../hooks/usePersistentState';
 import { Panel } from '../components/Panel';
 import { CopyButton } from '../components/CopyButton';
 import { Input } from '../components/Input';
+import { Screen } from '../components/Screen';
 
 // TODO: Add a button to show cheat sheet
 // TODO: Add a button to show docs
@@ -116,48 +116,45 @@ export function RegExpTester() {
   }, []);
 
   return (
-    <>
-      <VisuallyHidden as="h2">RegExp tester</VisuallyHidden>
-      <Grid gridTemplateRows="1fr 1fr" gap="m" height="100vh" padding="s">
-        <Stack gap="m" minHeight={0} height="100%">
-          <Input
-            id="regexp-input"
-            label="Regular expression"
-            placeholder="[0-9a-f]+ or /[0-9a-f]+/g"
-            value={regexpInput}
-            onChange={(e) => setRegexpInput(e.target.value)}
-            errorMessage={errorMessage}
-            actions={
-              <Button onClick={handleClear} disabled={regexpInput === ''}>
-                Clear
-              </Button>
-            }
+    <Screen gridTemplateRows="1fr 1fr">
+      <Stack gap="m" minHeight={0} height="100%">
+        <Input
+          id="regexp-input"
+          label="Regular expression"
+          placeholder="[0-9a-f]+ or /[0-9a-f]+/g"
+          value={regexpInput}
+          onChange={(e) => setRegexpInput(e.target.value)}
+          errorMessage={errorMessage}
+          actions={
+            <Button onClick={handleClear} disabled={regexpInput === ''}>
+              Clear
+            </Button>
+          }
+        />
+        <Panel fullHeight label="Text">
+          <Editor
+            value={textInput}
+            onChange={setTextInput}
+            highlightRegexp={highlightRegexp}
           />
-          <Panel fullHeight label="Text">
-            <Editor
-              value={textInput}
-              onChange={setTextInput}
-              highlightRegexp={highlightRegexp}
-            />
-          </Panel>
-        </Stack>
-        <Stack gap="m" minHeight={0} height="100%">
-          <Input
-            id="formatter"
-            label="Match formatter"
-            value={formatter}
-            onChange={(e) => setFormatter(e.target.value)}
-            placeholder={defaultFormatter}
-          />
-          <Panel
-            fullHeight
-            label="Matches"
-            actions={<CopyButton value={output} />}
-          >
-            <Editor value={output} editable={false} />
-          </Panel>
-        </Stack>
-      </Grid>
-    </>
+        </Panel>
+      </Stack>
+      <Stack gap="m" minHeight={0} height="100%">
+        <Input
+          id="formatter"
+          label="Match formatter"
+          value={formatter}
+          onChange={(e) => setFormatter(e.target.value)}
+          placeholder={defaultFormatter}
+        />
+        <Panel
+          fullHeight
+          label="Matches"
+          actions={<CopyButton value={output} />}
+        >
+          <Editor value={output} editable={false} />
+        </Panel>
+      </Stack>
+    </Screen>
   );
 }

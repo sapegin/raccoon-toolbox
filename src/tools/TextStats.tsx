@@ -1,13 +1,12 @@
 import { useCallback, useEffect, useState } from 'react';
-import { Grid } from '../components/Grid';
 import { Editor } from '../components/Editor';
 import { Button } from '../components/Button';
-import { VisuallyHidden } from '../../styled-system/jsx';
 import { usePersistentState } from '../hooks/usePersistentState';
 import { Panel } from '../components/Panel';
 import { Stack } from '../components/Stack';
 import { Text } from '../components/Text';
 import { calculateTextStats, type TextStats } from '../util/text-stats';
+import { Screen } from '../components/Screen';
 
 function StatItem({ label, value }: { label: string; value: string | number }) {
   return (
@@ -62,38 +61,35 @@ export function TextStats() {
   }, [setText]);
 
   return (
-    <>
-      <VisuallyHidden as="h2">Text stats</VisuallyHidden>
-      <Grid gridTemplateColumns="1fr 12rem" gap="m" height="100vh" padding="s">
-        <Panel
-          fullHeight
-          label="Text"
-          actions={
-            <Button onClick={handleClear} disabled={text === ''}>
-              Clear
-            </Button>
-          }
-        >
-          <Editor value={text} onChange={handleTextChange} />
-        </Panel>
-        <Panel fullHeight label="Statistics">
-          <Stack as="dl" gap="m" overflow="auto" height="100%">
-            <StatItem label="Characters" value={stats.characters} />
-            <StatItem
-              label="Non-space characters"
-              value={stats.charactersWithoutWhitespace}
-            />
-            <StatItem label="Lines" value={stats.lines} />
-            <StatItem label="Words" value={stats.words} />
-            <StatItem label="Paragraphs" value={stats.paragraphs} />
-            <StatItem label="Sentences" value={stats.sentences} />
-            <StatItem
-              label="Reading time"
-              value={`${stats.readingTimeMinutes} min`}
-            />
-          </Stack>
-        </Panel>
-      </Grid>
-    </>
+    <Screen gridTemplateColumns="1fr 12rem">
+      <Panel
+        fullHeight
+        label="Text"
+        actions={
+          <Button onClick={handleClear} disabled={text === ''}>
+            Clear
+          </Button>
+        }
+      >
+        <Editor value={text} onChange={handleTextChange} />
+      </Panel>
+      <Panel fullHeight label="Statistics">
+        <Stack as="dl" gap="m" overflow="auto" height="100%">
+          <StatItem label="Characters" value={stats.characters} />
+          <StatItem
+            label="Non-space characters"
+            value={stats.charactersWithoutWhitespace}
+          />
+          <StatItem label="Lines" value={stats.lines} />
+          <StatItem label="Words" value={stats.words} />
+          <StatItem label="Paragraphs" value={stats.paragraphs} />
+          <StatItem label="Sentences" value={stats.sentences} />
+          <StatItem
+            label="Reading time"
+            value={`${stats.readingTimeMinutes} min`}
+          />
+        </Stack>
+      </Panel>
+    </Screen>
   );
 }

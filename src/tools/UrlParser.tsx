@@ -1,12 +1,11 @@
 import { useState, useCallback, useEffect } from 'react';
-import { Grid } from '../components/Grid';
 import { Stack } from '../components/Stack';
 import { Editor } from '../components/Editor';
 import { Button } from '../components/Button';
-import { VisuallyHidden } from '../../styled-system/jsx';
 import { usePersistentState } from '../hooks/usePersistentState';
 import { Panel } from '../components/Panel';
 import { Table } from '../components/Table';
+import { Screen } from '../components/Screen';
 
 export function UrlParser() {
   const [input, setInput] = usePersistentState('urlParser.input', '');
@@ -80,50 +79,47 @@ export function UrlParser() {
   }, []);
 
   return (
-    <>
-      <VisuallyHidden as="h2">URL parser</VisuallyHidden>
-      <Grid gridTemplateColumns="1fr 1fr" gap="m" height="100vh" padding="s">
-        <Panel
-          fullHeight
-          label="Input"
-          actions={
-            <Button onClick={handleClear} disabled={input === ''}>
-              Clear
-            </Button>
-          }
-        >
-          <Editor value={input} onChange={handleChange} />
+    <Screen gridTemplateColumns="1fr 1fr">
+      <Panel
+        fullHeight
+        label="Input"
+        actions={
+          <Button onClick={handleClear} disabled={input === ''}>
+            Clear
+          </Button>
+        }
+      >
+        <Editor value={input} onChange={handleChange} />
+      </Panel>
+      <Stack gap="m">
+        <Panel label="URL Components" errorMessage={errorMessage}>
+          {parsedData && (
+            <Table>
+              <tbody>
+                <tr>
+                  <th>Protocol</th>
+                  <td>{parsedData.protocol}</td>
+                </tr>
+                <tr>
+                  <th>Host</th>
+                  <td>{parsedData.host}</td>
+                </tr>
+                <tr>
+                  <th>Path</th>
+                  <td>{parsedData.pathname}</td>
+                </tr>
+                <tr>
+                  <th>Query string</th>
+                  <td>{parsedData.search}</td>
+                </tr>
+              </tbody>
+            </Table>
+          )}
         </Panel>
-        <Stack gap="m">
-          <Panel label="URL Components" errorMessage={errorMessage}>
-            {parsedData && (
-              <Table>
-                <tbody>
-                  <tr>
-                    <th>Protocol</th>
-                    <td>{parsedData.protocol}</td>
-                  </tr>
-                  <tr>
-                    <th>Host</th>
-                    <td>{parsedData.host}</td>
-                  </tr>
-                  <tr>
-                    <th>Path</th>
-                    <td>{parsedData.pathname}</td>
-                  </tr>
-                  <tr>
-                    <th>Query string</th>
-                    <td>{parsedData.search}</td>
-                  </tr>
-                </tbody>
-              </Table>
-            )}
-          </Panel>
-          <Panel fullHeight label="Query parameters">
-            <Editor value={queryJson} language="json" editable={false} />
-          </Panel>
-        </Stack>
-      </Grid>
-    </>
+        <Panel fullHeight label="Query parameters">
+          <Editor value={queryJson} language="json" editable={false} />
+        </Panel>
+      </Stack>
+    </Screen>
   );
 }
