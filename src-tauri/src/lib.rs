@@ -90,6 +90,11 @@ pub fn run() {
                     .accelerator("CmdOrCtrl+/")
                     .build(app)?;
 
+                let toggle_command_palette =
+                    MenuItemBuilder::with_id("toggle-command-palette", "Command Palette…")
+                        .accelerator("CmdOrCtrl+K")
+                        .build(app)?;
+
                 let mut tools_menu = SubmenuBuilder::new(app, "Tools").id("tools-menu");
                 for tool in TOOLS {
                     let item = CheckMenuItemBuilder::with_id(tool.id, tool.name).build(app)?;
@@ -98,6 +103,7 @@ pub fn run() {
                 let tools_menu = tools_menu.build()?;
 
                 let view_menu = SubmenuBuilder::new(app, "View")
+                    .item(&toggle_command_palette)
                     .item(&toggle_sidebar)
                     .build()?;
 
@@ -140,6 +146,8 @@ pub fn run() {
                     let event_id = event.id().as_ref();
                     if event_id == "toggle-sidebar" {
                         let _ = app.emit("toggle-sidebar", ());
+                    } else if event_id == "toggle-command-palette" {
+                        let _ = app.emit("toggle-command-palette", ());
                     } else if TOOLS.iter().any(|tool| tool.id == event_id) {
                         let _ = app.emit("select-tool", event_id);
                     }

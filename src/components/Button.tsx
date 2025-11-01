@@ -3,6 +3,7 @@ import { styled } from '../../styled-system/jsx';
 export const Button = styled('button', {
   base: {
     display: 'inline-block',
+    fontFamily: 'body',
     borderWidth: 0,
     borderRadius: 'button',
     lineHeight: '1rem',

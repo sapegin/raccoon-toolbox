@@ -29,10 +29,10 @@ export function NavigationButton({
         },
         '&.active': {
           color: 'buttonForeground',
-          backgroundColor: 'activeBackground',
+          backgroundColor: 'accentBackground',
           _hover: {
             color: 'buttonForeground',
-            backgroundColor: 'activeBackground',
+            backgroundColor: 'accentBackground',
           },
         },
       })}

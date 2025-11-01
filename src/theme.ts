@@ -55,7 +55,8 @@ export const colors = {
   primary: lightTheme.blueContrast,
   accent: lightTheme.magenta,
 
-  activeBackground: lightTheme.magenta,
+  accentBackground: lightTheme.magenta,
+  activeBackground: lightTheme.gray150,
   activeBorder: lightTheme.gray060,
   activeForeground: lightTheme.gray060,
   activeIcon: lightTheme.gray060,
@@ -96,7 +97,8 @@ const colorsDark = {
   primary: lightTheme.blue,
   accent: darkTheme.brightPink,
 
-  activeBackground: darkTheme.brightPink,
+  accentBackground: darkTheme.brightPink,
+  activeBackground: darkTheme.gray150,
   activeBorder: darkTheme.gray060,
   activeForeground: darkTheme.gray060,
   activeIcon: darkTheme.gray060,
@@ -189,6 +191,7 @@ export const theme = {
           // TODO: default -> base
           default: { value: '2px' },
           large: { value: '3px' },
+          xlarge: { value: '5px' },
         },
         easings: {
           fade: { value: 'ease-out' },

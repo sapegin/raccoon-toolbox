@@ -1,4 +1,4 @@
-import { Suspense, useEffect } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { getCurrentWindow } from '@tauri-apps/api/window';
 import { listen } from '@tauri-apps/api/event';
@@ -12,6 +12,7 @@ import { Router } from './components/Router';
 import { Spinner } from './components/Spinner';
 import { Sidebar } from './components/Sidebar';
 import { Header } from './components/Header';
+import { CommandPalette } from './components/CommandPalette';
 import { tools } from './tools';
 import './styles.css';
 
@@ -20,6 +21,7 @@ export function App() {
     'app.sidebarOpen',
     true
   );
+  const [isCommandPaletteOpen, setIsCommandPaletteOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
   const currentToolId = location.pathname.slice(1);
@@ -46,6 +48,18 @@ export function App() {
       };
     }
   }, [setIsSidebarOpen]);
+
+  // Listen to the toggle command palette menu item events
+  useEffect(() => {
+    if (isTauri()) {
+      const unlisten = listen('toggle-command-palette', () => {
+        setIsCommandPaletteOpen((prev) => prev === false);
+      });
+      return () => {
+        void unlisten.then((fn) => fn());
+      };
+    }
+  }, []);
 
   // Listen to the select tool menu item events
   useEffect(() => {
@@ -74,9 +88,20 @@ export function App() {
     ctrlKey: false,
   });
 
+  // Handle keyboard shortcut for toggling command palette
+  useHotkey(() => setIsCommandPaletteOpen((prev) => prev === false), {
+    key: 'k',
+    metaKey: true,
+    ctrlKey: false,
+  });
+
   return (
     <>
       <VisuallyHidden as="h1">Raccoon Toolbox</VisuallyHidden>
+      <CommandPalette
+        isOpen={isCommandPaletteOpen}
+        onClose={() => setIsCommandPaletteOpen(false)}
+      />
       <Grid
         gridTemplateColumns={isSidebarOpen ? '16rem auto' : 'auto'}
         gridTemplateRows={isHeaderVisible ? '2.3rem auto' : 'auto'}
