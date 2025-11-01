@@ -21,6 +21,10 @@ const TOOLS: &[Tool] = &[
         name: "Color converter",
     },
     Tool {
+        id: "html-entity-encoder",
+        name: "HTML entity encoder/decoder",
+    },
+    Tool {
         id: "json-formatter",
         name: "JSON formatter",
     },

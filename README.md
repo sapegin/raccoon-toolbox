@@ -14,11 +14,14 @@ A collection of developer utilities built with React and Tauri.
 
 - **Base64 encoder/decoder** — Encode and decode Base64 strings
 - **Color converter** — Convert colors between different formats (hex, RGB, HSL, etc.)
+- **HTML entity encoder/decoder** — Encode and decode HTML entities
 - **JSON formatter** — Format and validate JSON data
 - **RegExp tester** — Test regular expressions against sample text
 - **Text diff** — Compare two text blocks and see the differences
+- **Text stats** — Number of characters, words, and so on in a text
 - **Unicode lookup** — Look up Unicode characters
 - **URL encoder/decoder** — Encode and decode URLs
+- **URL parser** — Parse URL to its individual parts – host, path, query string, and so on
 
 ## Motivation
 

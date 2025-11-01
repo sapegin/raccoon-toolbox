@@ -27,6 +27,15 @@ export const tools: Tool[] = [
     ),
   },
   {
+    id: 'html-entity-encoder',
+    name: 'HTML entity encoder/decoder',
+    component: lazy(() =>
+      import('./tools/HtmlEntityEncoder').then((m) => ({
+        default: m.HtmlEntityEncoder,
+      }))
+    ),
+  },
+  {
     id: 'json-formatter',
     name: 'JSON formatter',
     component: lazy(() =>
