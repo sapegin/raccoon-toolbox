@@ -1,4 +1,9 @@
-use tauri::{AppHandle, Emitter, menu::{CheckMenuItemBuilder, MenuBuilder, MenuItemBuilder, PredefinedMenuItem, SubmenuBuilder}};
+use tauri::{
+    menu::{
+        CheckMenuItemBuilder, MenuBuilder, MenuItemBuilder, PredefinedMenuItem, SubmenuBuilder,
+    },
+    AppHandle, Emitter,
+};
 
 struct Tool {
     id: &'static str,
@@ -7,23 +12,55 @@ struct Tool {
 
 // This list should be in sync with the on in tools.ts
 const TOOLS: &[Tool] = &[
-    Tool { id: "base64-encoder", name: "Base64 encoder/decoder" },
-    Tool { id: "color-converter", name: "Color converter" },
-    Tool { id: "json-formatter", name: "JSON formatter" },
-    Tool { id: "regexp-tester", name: "RegExp tester" },
-    Tool { id: "string-case-converter", name: "String case converter" },
-    Tool { id: "text-diff", name: "Text diff" },
-    Tool { id: "text-stats", name: "Text stats" },
-    Tool { id: "unicode-lookup", name: "Unicode lookup" },
-    Tool { id: "url-encoder", name: "URL encoder/decoder" },
-    Tool { id: "url-parser", name: "URL parser" },
+    Tool {
+        id: "base64-encoder",
+        name: "Base64 encoder/decoder",
+    },
+    Tool {
+        id: "color-converter",
+        name: "Color converter",
+    },
+    Tool {
+        id: "json-formatter",
+        name: "JSON formatter",
+    },
+    Tool {
+        id: "regexp-tester",
+        name: "RegExp tester",
+    },
+    Tool {
+        id: "string-case-converter",
+        name: "String case converter",
+    },
+    Tool {
+        id: "text-diff",
+        name: "Text diff",
+    },
+    Tool {
+        id: "text-stats",
+        name: "Text stats",
+    },
+    Tool {
+        id: "unicode-lookup",
+        name: "Unicode lookup",
+    },
+    Tool {
+        id: "url-encoder",
+        name: "URL encoder/decoder",
+    },
+    Tool {
+        id: "url-parser",
+        name: "URL parser",
+    },
 ];
 
 #[tauri::command]
 fn set_selected_tool(app: AppHandle, tool_id: &str) -> Result<(), String> {
     let menu = app.menu().ok_or("Menu not found")?;
     let tools_menu_item = menu.get("tools-menu").ok_or("Tools menu not found")?;
-    let tools_menu = tools_menu_item.as_submenu().ok_or("Tools menu is not a submenu")?;
+    let tools_menu = tools_menu_item
+        .as_submenu()
+        .ok_or("Tools menu is not a submenu")?;
 
     for tool in TOOLS {
         if let Some(item) = tools_menu.get(tool.id) {

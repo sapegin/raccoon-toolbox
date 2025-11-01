@@ -1,5 +1,5 @@
 dist/
 styled-system/
-src-tauri/
+src-tauri/target/
 samples/
 src/data/unicode-characters.ts
