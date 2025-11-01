@@ -35,9 +35,12 @@ export function App() {
   // Listen to the toggle sidebar menu item events
   useEffect(() => {
     if (isTauri()) {
-      void listen('toggle-sidebar', () => {
+      const unlisten = listen('toggle-sidebar', () => {
         setIsSidebarOpen((prev) => prev === false);
       });
+      return () => {
+        void unlisten.then((fn) => fn());
+      };
     }
   }, [setIsSidebarOpen]);
 
