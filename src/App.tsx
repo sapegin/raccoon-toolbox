@@ -25,6 +25,8 @@ export function App() {
   const currentTool = tools.find((tool) => tool.id === currentToolId);
   const currentToolName = currentTool?.name ?? 'Loading…';
 
+  const isHeaderVisible = isSidebarOpen === false && isTauri() === false;
+
   // Set the selected tool name to the app title
   useEffect(() => {
     if (isTauri() && currentTool) {
@@ -57,12 +59,12 @@ export function App() {
       <VisuallyHidden as="h1">Raccoon Toolbox</VisuallyHidden>
       <Grid
         gridTemplateColumns={isSidebarOpen ? '16rem auto' : 'auto'}
-        gridTemplateRows={isSidebarOpen ? 'auto' : '2.3rem auto'}
+        gridTemplateRows={isHeaderVisible ? '2.3rem auto' : 'auto'}
         gap="m"
         height="100vh"
       >
         {isSidebarOpen && <Sidebar onClose={() => setIsSidebarOpen(false)} />}
-        {isSidebarOpen === false && isTauri() === false ? (
+        {isHeaderVisible ? (
           <Header
             title={currentToolName}
             onOpen={() => setIsSidebarOpen(true)}
