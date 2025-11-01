@@ -15,8 +15,8 @@ function ResultsTable({ characters }: { characters: UnicodeCharacter[] }) {
     <Table>
       <thead>
         <tr>
-          <th>Character</th>
-          <th>Code</th>
+          <th className={css({ width: '3rem' })}>Character</th>
+          <th className={css({ width: '6rem' })}>Code</th>
           <th>Name</th>
         </tr>
       </thead>
