@@ -27,7 +27,11 @@ export function App() {
   const currentTool = tools.find((tool) => tool.id === currentToolId);
   const currentToolName = currentTool?.name ?? 'Loading…';
 
+  console.log('🍔 isSidebarOpen', isSidebarOpen);
+
   const isHeaderVisible = isSidebarOpen === false && isTauri() === false;
+
+  const toggleSidebar = () => setIsSidebarOpen((prev) => prev === false);
 
   // Set the selected tool name to the window title
   useEffect(() => {
@@ -45,14 +49,12 @@ export function App() {
   // Listen to the toggle sidebar menu item events
   useEffect(() => {
     if (isTauri()) {
-      const unlisten = listen('toggle-sidebar', () => {
-        setIsSidebarOpen((prev) => prev === false);
-      });
+      const unlisten = listen('toggle-sidebar', toggleSidebar);
       return () => {
         void unlisten.then((fn) => fn());
       };
     }
-  }, [setIsSidebarOpen]);
+  }, []);
 
   // Listen to the toggle command palette menu item events
   useEffect(() => {
@@ -98,7 +100,7 @@ export function App() {
   }, [currentToolId]);
 
   // Handle keyboard shortcut for toggling sidebar
-  useHotkey(() => setIsSidebarOpen((prev) => prev === false), {
+  useHotkey(toggleSidebar, {
     enabled: isTauri() === false,
     key: '/',
     metaKey: true,
@@ -122,8 +124,8 @@ export function App() {
         title={currentToolName}
         isSidebarOpen={isSidebarOpen}
         isHeaderVisible={isHeaderVisible}
-        onSidebarClose={() => setIsSidebarOpen(false)}
-        onHeaderOpen={() => setIsSidebarOpen(true)}
+        onSidebarClose={toggleSidebar}
+        onHeaderOpen={toggleSidebar}
       >
         <Suspense
           fallback={
