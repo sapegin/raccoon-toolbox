@@ -2,6 +2,18 @@
   "name": "raccoon-toolbox",
   "private": true,
   "version": "0.1.0",
+  "author": {
+    "name": "Artem Sapegin",
+    "url": "https://sapegin.me/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sapegin/raccoon-toolbox.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sapegin/raccoon-toolbox/issues"
+  },
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",
