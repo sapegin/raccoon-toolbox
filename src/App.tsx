@@ -13,6 +13,7 @@ import { CommandPalette } from './components/CommandPalette';
 import { AppLayout } from './components/AppLayout';
 import { tools } from './tools';
 import './styles.css';
+import { APP_NAME } from './constants';
 
 export function App() {
   const [isSidebarOpen, setIsSidebarOpen] = usePersistentState(
@@ -28,10 +29,16 @@ export function App() {
 
   const isHeaderVisible = isSidebarOpen === false && isTauri() === false;
 
-  // Set the selected tool name to the app title
+  // Set the selected tool name to the window title
   useEffect(() => {
-    if (isTauri() && currentTool) {
-      void getCurrentWindow().setTitle(currentTool.name);
+    if (isTauri()) {
+      if (currentTool) {
+        void getCurrentWindow().setTitle(currentTool.name);
+      }
+    } else {
+      document.title = currentTool
+        ? `${currentTool.name} — ${APP_NAME}`
+        : APP_NAME;
     }
   }, [currentTool]);
 

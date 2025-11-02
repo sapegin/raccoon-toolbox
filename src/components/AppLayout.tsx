@@ -4,6 +4,7 @@ import { Box } from './Box';
 import { Grid } from './Grid';
 import { Sidebar } from './Sidebar';
 import { Header } from './Header';
+import { APP_NAME } from '../constants';
 
 interface AppLayoutProps {
   title: string;
@@ -24,7 +25,7 @@ export function AppLayout({
 }: AppLayoutProps) {
   return (
     <>
-      <VisuallyHidden as="h1">Raccoon Toolbox</VisuallyHidden>
+      <VisuallyHidden as="h1">{APP_NAME}</VisuallyHidden>
       <Grid
         gridTemplateColumns={isSidebarOpen ? '16rem auto' : 'auto'}
         gridTemplateRows={isHeaderVisible ? '2.3rem auto' : 'auto'}

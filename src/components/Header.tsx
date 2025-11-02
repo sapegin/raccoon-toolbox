@@ -2,9 +2,10 @@ import { Grid } from './Grid';
 import { Text } from './Text';
 import { Icon } from './Icon';
 import { IconButton } from './IconButton';
+import { APP_NAME } from '../constants';
 
 export function Header({
-  title = 'Raccoon Toolbox',
+  title = APP_NAME,
   onOpen,
 }: {
   title?: string;
