@@ -76,7 +76,9 @@ pub fn run() {
                             app,
                             None,
                             Some(AboutMetadata {
-                                copyright: Some("© 2025 Artem Sapegin. Made with coffee and tacos.".into()),
+                                copyright: Some(
+                                    "© 2025 Artem Sapegin. Made with coffee and tacos.".into(),
+                                ),
                                 ..Default::default()
                             }),
                         )?,
@@ -91,12 +93,12 @@ pub fn run() {
                     ])
                     .build()?;
 
-                let support_project = MenuItemBuilder::with_id("support-project", "Support Project")
-                    .build(app)?;
-                let report_issue = MenuItemBuilder::with_id("report-issue", "Report Issue")
-                    .build(app)?;
-                let source_code = MenuItemBuilder::with_id("source-code", "Source Code")
-                    .build(app)?;
+                let support_project =
+                    MenuItemBuilder::with_id("support-project", "Support Project").build(app)?;
+                let report_issue =
+                    MenuItemBuilder::with_id("report-issue", "Report Issue").build(app)?;
+                let source_code =
+                    MenuItemBuilder::with_id("source-code", "Source Code").build(app)?;
 
                 let help_menu = SubmenuBuilder::new(app, "Help")
                     .items(&[&support_project, &report_issue, &source_code])
@@ -121,7 +123,10 @@ pub fn run() {
                     } else if event_id == "support-project" {
                         let _ = app.emit("open-url", "https://buymeacoffee.com/sapegin");
                     } else if event_id == "report-issue" {
-                        let _ = app.emit("open-url", "https://github.com/sapegin/raccoon-toolbox/issues");
+                        let _ = app.emit(
+                            "open-url",
+                            "https://github.com/sapegin/raccoon-toolbox/issues",
+                        );
                     } else if event_id == "source-code" {
                         let _ = app.emit("open-url", "https://github.com/sapegin/raccoon-toolbox");
                     } else if TOOLS.iter().any(|tool| tool.id == event_id) {
