@@ -96,13 +96,13 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
       setSelectedIndex((prev) => (prev > 0 ? prev - 1 : prev));
     } else if (e.key === 'Enter' && filteredTools[selectedIndex]) {
       e.preventDefault();
-      void navigate(`/${filteredTools[selectedIndex].id}`);
+      void navigate(`/${filteredTools[selectedIndex].id}/`);
       onClose();
     }
   };
 
   const handleToolClick = (toolId: string) => {
-    void navigate(`/${toolId}`);
+    void navigate(`/${toolId}/`);
     onClose();
   };
 

@@ -20,7 +20,7 @@ fs.writeFileSync(toAbsolute('dist/index.html'), homeHtml);
 
 // Prerender each tool page
 for (const toolId of tools) {
-  const url = `/${toolId}`;
+  const url = `/${toolId}/`;
   const appHtml = render(url);
   const html = template.replace('<!--app-html-->', appHtml);
 

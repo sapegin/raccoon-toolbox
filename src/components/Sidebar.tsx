@@ -46,7 +46,7 @@ export function Sidebar({
         <Stack as="ul" gap="xs">
           {tools.map((tool) => (
             <li key={tool.id}>
-              <NavigationButton to={`/${tool.id}`}>
+              <NavigationButton to={`/${tool.id}/`}>
                 {tool.name}
               </NavigationButton>
             </li>

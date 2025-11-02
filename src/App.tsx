@@ -23,7 +23,7 @@ export function App() {
   const [isCommandPaletteOpen, setIsCommandPaletteOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
-  const currentToolId = location.pathname.slice(1);
+  const currentToolId = location.pathname.replaceAll(/[^-a-z]/g, '');
   const currentTool = tools.find((tool) => tool.id === currentToolId);
   const currentToolName = currentTool?.name ?? 'Loading…';
 
@@ -70,7 +70,7 @@ export function App() {
   useEffect(() => {
     if (isTauri()) {
       const unlisten = listen<string>('select-tool', (event) => {
-        void navigate(`/${event.payload}`);
+        void navigate(`/${event.payload}/`);
       });
       return () => {
         void unlisten.then((fn) => fn());

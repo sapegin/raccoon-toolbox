@@ -35,13 +35,13 @@ export function Router() {
         // Client: use Navigate for the home route
         <Route
           path="/"
-          element={<Navigate to={`/${initialRoute}`} replace />}
+          element={<Navigate to={`/${initialRoute}/`} replace />}
         />
       )}
       {tools.map((tool) => (
         <Route
           key={tool.id}
-          path={`/${tool.id}`}
+          path={`/${tool.id}/`}
           element={<tool.component />}
         />
       ))}
