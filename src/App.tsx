@@ -3,16 +3,13 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { getCurrentWindow } from '@tauri-apps/api/window';
 import { listen } from '@tauri-apps/api/event';
 import { invoke, isTauri } from '@tauri-apps/api/core';
-import { Flex, VisuallyHidden } from '../styled-system/jsx';
+import { Flex } from '../styled-system/jsx';
 import { usePersistentState } from './hooks/usePersistentState';
 import { useHotkey } from './hooks/useHotkey';
-import { Box } from './components/Box';
-import { Grid } from './components/Grid';
 import { Router } from './components/Router';
 import { Spinner } from './components/Spinner';
-import { Sidebar } from './components/Sidebar';
-import { Header } from './components/Header';
 import { CommandPalette } from './components/CommandPalette';
+import { AppLayout } from './components/AppLayout';
 import { tools } from './tools';
 import './styles.css';
 
@@ -97,38 +94,27 @@ export function App() {
 
   return (
     <>
-      <VisuallyHidden as="h1">Raccoon Toolbox</VisuallyHidden>
       <CommandPalette
         isOpen={isCommandPaletteOpen}
         onClose={() => setIsCommandPaletteOpen(false)}
       />
-      <Grid
-        gridTemplateColumns={isSidebarOpen ? '16rem auto' : 'auto'}
-        gridTemplateRows={isHeaderVisible ? '2.3rem auto' : 'auto'}
-        gap="m"
-        height="100vh"
+      <AppLayout
+        title={currentToolName}
+        isSidebarOpen={isSidebarOpen}
+        isHeaderVisible={isHeaderVisible}
+        onSidebarClose={() => setIsSidebarOpen(false)}
+        onHeaderOpen={() => setIsSidebarOpen(true)}
       >
-        {isSidebarOpen && <Sidebar onClose={() => setIsSidebarOpen(false)} />}
-        {isHeaderVisible ? (
-          <Header
-            title={currentToolName}
-            onOpen={() => setIsSidebarOpen(true)}
-          />
-        ) : (
-          <VisuallyHidden as="h2">{currentToolName}</VisuallyHidden>
-        )}
-        <Box minHeight={0} height="100%">
-          <Suspense
-            fallback={
-              <Flex height="100%" alignItems="center" justifyContent="center">
-                <Spinner />
-              </Flex>
-            }
-          >
-            <Router />
-          </Suspense>
-        </Box>
-      </Grid>
+        <Suspense
+          fallback={
+            <Flex height="100%" alignItems="center" justifyContent="center">
+              <Spinner />
+            </Flex>
+          }
+        >
+          <Router />
+        </Suspense>
+      </AppLayout>
     </>
   );
 }

@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import { Table } from './Table';
 import { Panel } from './Panel';
 import { Text } from './Text';
@@ -96,8 +97,8 @@ export function RegExpCheatSheet() {
           </thead>
           <tbody>
             {cheatSheetData.map(({ section, items }) => (
-              <>
-                <tr key={section}>
+              <Fragment key={section}>
+                <tr>
                   <th colSpan={2}>
                     <Text mt="m" variant="bold">
                       {section}
@@ -116,7 +117,7 @@ export function RegExpCheatSheet() {
                     </td>
                   </tr>
                 ))}
-              </>
+              </Fragment>
             ))}
           </tbody>
         </Table>

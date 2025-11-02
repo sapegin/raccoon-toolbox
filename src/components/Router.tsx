@@ -17,9 +17,27 @@ export function Router() {
     }
   }, [location.pathname, setLastToolId]);
 
+  // Determine the initial route
+  const isServerSide = typeof window === 'undefined';
+  const initialRoute =
+    location.pathname === '/'
+      ? isServerSide
+        ? tools[0].id
+        : lastToolId
+      : location.pathname.slice(1);
+
   return (
     <Routes>
-      <Route path="/" element={<Navigate to={`/${lastToolId}`} replace />} />
+      {isServerSide ? (
+        // Server: render nothing for home route, client will handle redirect
+        <Route path="/" element={null} />
+      ) : (
+        // Client: use Navigate for the home route
+        <Route
+          path="/"
+          element={<Navigate to={`/${initialRoute}`} replace />}
+        />
+      )}
       {tools.map((tool) => (
         <Route
           key={tool.id}

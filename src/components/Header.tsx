@@ -8,7 +8,7 @@ export function Header({
   onOpen,
 }: {
   title?: string;
-  onOpen: () => void;
+  onOpen?: () => void;
 }) {
   return (
     <Grid

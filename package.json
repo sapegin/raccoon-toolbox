@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "dev:app": "npm run tauri dev",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && vite build --ssr && node --experimental-strip-types scripts/prerender.ts",
     "build:app": "npm run tauri build -- --bundles app",
     "preview": "vite preview",
     "tauri": "tauri",

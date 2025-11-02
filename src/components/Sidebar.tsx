@@ -5,7 +5,7 @@ import { Stack } from './Stack';
 import { tools } from '../tools';
 import { NavigationButton } from './NavigationButton';
 
-export function Sidebar({ onClose }: { onClose: () => void }) {
+export function Sidebar({ onClose }: { onClose?: () => void }) {
   return (
     <Stack
       gap="xs"
