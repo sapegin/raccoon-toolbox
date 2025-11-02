@@ -91,11 +91,23 @@ pub fn run() {
                     ])
                     .build()?;
 
+                let support_project = MenuItemBuilder::with_id("support-project", "Support Project")
+                    .build(app)?;
+                let report_issue = MenuItemBuilder::with_id("report-issue", "Report Issue")
+                    .build(app)?;
+                let source_code = MenuItemBuilder::with_id("source-code", "Source Code")
+                    .build(app)?;
+
+                let help_menu = SubmenuBuilder::new(app, "Help")
+                    .items(&[&support_project, &report_issue, &source_code])
+                    .build()?;
+
                 let menu = MenuBuilder::new(app)
                     .item(&app_menu)
                     .item(&edit_menu)
                     .item(&view_menu)
                     .item(&tools_menu)
+                    .item(&help_menu)
                     .build()?;
 
                 app.set_menu(menu)?;
@@ -106,6 +118,12 @@ pub fn run() {
                         let _ = app.emit("toggle-sidebar", ());
                     } else if event_id == "toggle-command-palette" {
                         let _ = app.emit("toggle-command-palette", ());
+                    } else if event_id == "support-project" {
+                        let _ = app.emit("open-url", "https://buymeacoffee.com/sapegin");
+                    } else if event_id == "report-issue" {
+                        let _ = app.emit("open-url", "https://github.com/sapegin/raccoon-toolbox/issues");
+                    } else if event_id == "source-code" {
+                        let _ = app.emit("open-url", "https://github.com/sapegin/raccoon-toolbox");
                     } else if TOOLS.iter().any(|tool| tool.id == event_id) {
                         let _ = app.emit("select-tool", event_id);
                     }

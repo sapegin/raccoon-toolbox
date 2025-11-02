@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { getCurrentWindow } from '@tauri-apps/api/window';
 import { listen } from '@tauri-apps/api/event';
 import { invoke, isTauri } from '@tauri-apps/api/core';
+import { openUrl } from '@tauri-apps/plugin-opener';
 import { Flex } from '../styled-system/jsx';
 import { usePersistentState } from './hooks/usePersistentState';
 import { useHotkey } from './hooks/useHotkey';
@@ -69,6 +70,18 @@ export function App() {
       };
     }
   }, [navigate]);
+
+  // Listen to the open URL menu item events
+  useEffect(() => {
+    if (isTauri()) {
+      const unlisten = listen<string>('open-url', (event) => {
+        void openUrl(event.payload);
+      });
+      return () => {
+        void unlisten.then((fn) => fn());
+      };
+    }
+  }, []);
 
   // Update selected tool in the app menu
   useEffect(() => {
