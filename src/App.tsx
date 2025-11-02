@@ -4,7 +4,6 @@ import { getCurrentWindow } from '@tauri-apps/api/window';
 import { listen } from '@tauri-apps/api/event';
 import { invoke, isTauri } from '@tauri-apps/api/core';
 import { openUrl } from '@tauri-apps/plugin-opener';
-import { Flex } from '../styled-system/jsx';
 import { usePersistentState } from './hooks/usePersistentState';
 import { useHotkey } from './hooks/useHotkey';
 import { Router } from './components/Router';
@@ -14,6 +13,7 @@ import { AppLayout } from './components/AppLayout';
 import { tools } from './tools';
 import './styles.css';
 import { APP_NAME } from './constants';
+import { Screen } from './components/Screen';
 
 export function App() {
   const [isSidebarOpen, setIsSidebarOpen] = usePersistentState(
@@ -127,9 +127,9 @@ export function App() {
       >
         <Suspense
           fallback={
-            <Flex height="100%" alignItems="center" justifyContent="center">
+            <Screen alignItems="center" justifyContent="center">
               <Spinner />
-            </Flex>
+            </Screen>
           }
         >
           <Router />
