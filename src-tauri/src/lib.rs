@@ -2,7 +2,8 @@ mod tools;
 
 use tauri::{
     menu::{
-        CheckMenuItemBuilder, MenuBuilder, MenuItemBuilder, PredefinedMenuItem, SubmenuBuilder,
+        AboutMetadata, CheckMenuItemBuilder, MenuBuilder, MenuItemBuilder, PredefinedMenuItem,
+        SubmenuBuilder,
     },
     AppHandle, Emitter,
 };
@@ -71,7 +72,14 @@ pub fn run() {
 
                 let app_menu = SubmenuBuilder::new(app, "Raccoon Toolbox")
                     .items(&[
-                        &PredefinedMenuItem::about(app, None, None)?,
+                        &PredefinedMenuItem::about(
+                            app,
+                            None,
+                            Some(AboutMetadata {
+                                copyright: Some("© 2025 Artem Sapegin. Made with coffee and tacos.".into()),
+                                ..Default::default()
+                            }),
+                        )?,
                         &PredefinedMenuItem::separator(app)?,
                         &PredefinedMenuItem::services(app, None)?,
                         &PredefinedMenuItem::separator(app)?,
