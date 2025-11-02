@@ -3,35 +3,46 @@ import { Text } from './Text';
 import { Icon } from './Icon';
 import { IconButton } from './IconButton';
 import { APP_NAME } from '../constants';
+import { Box } from './Box';
 
 export function Header({
   title = APP_NAME,
   onOpen,
+  show,
 }: {
   title?: string;
   onOpen?: () => void;
+  show?: boolean;
 }) {
   return (
-    <Grid
-      gridTemplateColumns="2rem auto 2rem"
-      gap="m"
-      p="xs"
-      borderStyle="solid"
-      borderWidth="0 0 1px 0"
-      borderColor="lightBorder"
-      backgroundColor="uiBackground"
+    <Box
+      overflowY="hidden"
+      transition="height 0.08s ease-in-out"
+      inert={show === false}
+      aria-hidden={show === false}
+      height={show ? '2.3rem' : 0}
     >
-      <IconButton
-        onClick={onOpen}
-        title="Open sidebar (Cmd+/)"
-        aria-label="Open sidebar (Cmd+/)"
+      <Grid
+        gridTemplateColumns="2rem auto 2rem"
+        gap="m"
+        p="xs"
+        borderStyle="solid"
+        borderWidth="0 0 1px 0"
+        borderColor="lightBorder"
+        backgroundColor="uiBackground"
       >
-        <Icon icon="sidebar" />
-      </IconButton>
-      <Text as="h2" textAlign="center">
-        {title}
-      </Text>
-      <div />
-    </Grid>
+        <IconButton
+          onClick={onOpen}
+          title="Open sidebar (Cmd+/)"
+          aria-label="Open sidebar (Cmd+/)"
+        >
+          <Icon icon="sidebar" />
+        </IconButton>
+        <Text as="h2" textAlign="center">
+          {title}
+        </Text>
+        <div />
+      </Grid>
+    </Box>
   );
 }

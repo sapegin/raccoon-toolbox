@@ -27,20 +27,18 @@ export function AppLayout({
     <>
       <VisuallyHidden as="h1">{APP_NAME}</VisuallyHidden>
       <Grid
-        gridTemplateColumns={isSidebarOpen ? '16rem auto' : 'auto'}
-        gridTemplateRows={isHeaderVisible ? '2.3rem auto' : 'auto'}
+        gridTemplateColumns="auto auto"
         gap="s"
+        width="100vw"
         height="100vh"
       >
-        {isSidebarOpen && <Sidebar onClose={onSidebarClose} />}
-        {isHeaderVisible ? (
-          <Header title={title} onOpen={onHeaderOpen} />
-        ) : (
-          <VisuallyHidden as="h2">{title}</VisuallyHidden>
-        )}
-        <Box minHeight={0} height="100%">
-          {children}
-        </Box>
+        <Sidebar show={isSidebarOpen} onClose={onSidebarClose} />
+        <Grid gridTemplateRows="auto auto">
+          <Header title={title} show={isHeaderVisible} onOpen={onHeaderOpen} />
+          <Box minHeight={0} height="100%">
+            {children}
+          </Box>
+        </Grid>
       </Grid>
     </>
   );
