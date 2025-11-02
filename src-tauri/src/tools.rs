@@ -24,6 +24,10 @@ pub const TOOLS: &[Tool] = &[
         name: "JSON formatter",
     },
     Tool {
+        id: "lorem-ipsum",
+        name: "Lorem Ipsum generator",
+    },
+    Tool {
         id: "regexp-tester",
         name: "RegExp tester",
     },

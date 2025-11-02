@@ -20,6 +20,11 @@
     "module": "JsonFormatter"
   },
   {
+    "id": "lorem-ipsum",
+    "name": "Lorem Ipsum generator",
+    "module": "LoremIpsum"
+  },
+  {
     "id": "regexp-tester",
     "name": "RegExp tester",
     "module": "RegExpTester"

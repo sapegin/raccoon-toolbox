@@ -47,6 +47,15 @@ export const tools: Tool[] = [
     ),
   },
   {
+    id: 'lorem-ipsum',
+    name: 'Lorem Ipsum generator',
+    component: lazy(() =>
+      import('./tools/LoremIpsum').then((m) => ({
+        default: m.LoremIpsum,
+      }))
+    ),
+  },
+  {
     id: 'regexp-tester',
     name: 'RegExp tester',
     component: lazy(() =>

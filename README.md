@@ -16,6 +16,7 @@ A collection of developer utilities built with React and Tauri.
 - **Color converter** — Convert colors between different formats (hex, RGB, HSL, etc.)
 - **HTML entity encoder/decoder** — Encode and decode HTML entities
 - **JSON formatter** — Format and validate JSON data
+- **Lorem Ipsum generator** — Generate random sentences and paragraphs of text in different languages
 - **RegExp tester** — Test regular expressions against sample text
 - **Text diff** — Compare two text blocks and see the differences
 - **Text stats** — Number of characters, words, and so on in a text
