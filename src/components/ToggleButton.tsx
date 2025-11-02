@@ -6,10 +6,10 @@ import { styled } from '../../styled-system/jsx';
 const ToggleButtonContainer = styled('div', {
   base: {
     display: 'inline-flex',
-    borderRadius: 'button',
     overflow: 'hidden',
     border: '1px solid',
     borderColor: 'lightBorder',
+    borderRadius: 'button',
   },
 });
 

@@ -188,8 +188,9 @@ export const theme = {
           menu: { value: '0.1ch' },
         },
         radii: {
-          // TODO: default -> base
-          default: { value: '2px' },
+          base: { value: '3px' },
+          input: { value: '3px' },
+          button: { value: '5px' },
           large: { value: '3px' },
           xlarge: { value: '5px' },
         },

@@ -25,7 +25,8 @@ function DragHandle({
     <Box
       position="absolute"
       border="2px solid #fff"
-      boxShadow="0 0 0 1px #0009"
+      outline="1px solid #000"
+      boxShadow="0 0 3px #000c"
       pointerEvents="none"
       {...(variant === 'circle'
         ? {
@@ -34,8 +35,11 @@ function DragHandle({
             borderRadius: '100%',
           }
         : {
-            width: '100%',
-            height: '3px',
+            mx: '-0.2rem',
+            width: 'calc(100% + 0.4rem)',
+            height: '0.3rem',
+            borderRadius: 'base',
+            backgroundColor: '#fff',
           })}
       style={{
         ...style,
@@ -145,6 +149,7 @@ export function ColorPicker({ color, onChange }: ColorPickerProps) {
         cursor="crosshair"
         border="1px solid"
         borderColor="lightBorder"
+        borderRadius="base"
         onMouseDown={(e) => {
           setIsDraggingSaturationValue(true);
           updateSaturationValue(e.clientX, e.clientY);
@@ -164,6 +169,7 @@ export function ColorPicker({ color, onChange }: ColorPickerProps) {
         cursor="ns-resize"
         border="1px solid"
         borderColor="lightBorder"
+        borderRadius="base"
         onMouseDown={(e) => {
           setIsDraggingHue(true);
           updateHue(e.clientY);
@@ -181,6 +187,7 @@ export function ColorPicker({ color, onChange }: ColorPickerProps) {
         cursor="ns-resize"
         border="1px solid"
         borderColor="lightBorder"
+        borderRadius="base"
         onMouseDown={(e) => {
           setIsDraggingAlpha(true);
           updateAlpha(e.clientY);

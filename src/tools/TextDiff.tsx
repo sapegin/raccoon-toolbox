@@ -129,6 +129,7 @@ export function TextDiff() {
           whiteSpace="pre-wrap"
           border="1px solid"
           borderColor="lightBorder"
+          borderRadius="input"
           dangerouslySetInnerHTML={{ __html: result }}
         />
       </Panel>

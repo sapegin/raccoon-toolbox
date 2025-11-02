@@ -165,6 +165,8 @@ export function ColorConverter() {
           gridTemplateColumns="1fr 1fr"
           border="1px solid"
           borderColor="lightBorder"
+          borderRadius="base"
+          overflow="hidden"
         >
           <ColorSwatch color={baseColor.toHex()} />
           <ColorSwatch color={hex} />

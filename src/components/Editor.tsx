@@ -235,6 +235,7 @@ export function Editor({
       minHeight={0}
       border="1px solid"
       borderColor="lightBorder"
+      borderRadius="input"
     />
   );
 }

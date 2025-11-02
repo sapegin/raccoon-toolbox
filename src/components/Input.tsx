@@ -17,7 +17,7 @@ export const InputBox = styled('input', {
     backgroundColor: 'textBackground',
     border: '1px solid',
     borderColor: 'lightBorder',
-    borderRadius: 'default',
+    borderRadius: 'input',
     outline: 0,
     _focusVisible: {
       borderColor: 'activeBorder',
