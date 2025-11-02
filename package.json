@@ -10,14 +10,15 @@
     "build:app": "npm run tauri build -- --bundles app",
     "preview": "vite preview",
     "tauri": "tauri",
-    "lint": "eslint . --cache --fix",
+    "lint": "eslint . --cache --fix && cargo check --manifest-path src-tauri/Cargo.toml",
     "typecheck": "tsc --noEmit",
     "format": "prettier --log-level warn --write \"**/*.{js,cjs,mjs,ts,tsx,astro,css,json,md}\" && cargo fmt --manifest-path src-tauri/Cargo.toml",
     "pretest": "npm run lint",
     "test": "npm run typecheck",
     "posttest": "npm run format",
     "prepare": "husky; panda codegen",
-    "generate:unicode": "node --experimental-strip-types scripts/generate-unicode-data.ts"
+    "generate:unicode": "node --experimental-strip-types scripts/generate-unicode-data.ts",
+    "generate:tools": "node --experimental-strip-types scripts/generate-tools.ts"
   },
   "dependencies": {
     "@codemirror/commands": "6.10.0",

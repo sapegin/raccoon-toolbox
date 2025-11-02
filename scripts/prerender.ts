@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import toolsData from '../tools.json' with { type: 'json' };
 
 const dirname = path.dirname(fileURLToPath(import.meta.url));
 const toAbsolute = (p: string) => path.resolve(dirname, '..', p);
@@ -11,20 +12,7 @@ const { render } = (await import('../dist/server/entry-server.js')) as {
   render: (url: string) => string;
 };
 
-// Tool IDs from tools.ts
-const tools = [
-  'base64-encoder',
-  'color-converter',
-  'html-entity-encoder',
-  'json-formatter',
-  'regexp-tester',
-  'string-case-converter',
-  'text-diff',
-  'text-stats',
-  'unicode-lookup',
-  'url-encoder',
-  'url-parser',
-];
+const tools = toolsData.map((tool) => tool.id);
 
 // Prerender the home page (redirects to first tool)
 const homeHtml = template.replace('<!--app-html-->', render('/'));

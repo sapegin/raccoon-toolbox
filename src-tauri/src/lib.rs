@@ -1,62 +1,12 @@
+mod tools;
+
 use tauri::{
     menu::{
         CheckMenuItemBuilder, MenuBuilder, MenuItemBuilder, PredefinedMenuItem, SubmenuBuilder,
     },
     AppHandle, Emitter,
 };
-
-struct Tool {
-    id: &'static str,
-    name: &'static str,
-}
-
-// This list should be in sync with the on in tools.ts
-const TOOLS: &[Tool] = &[
-    Tool {
-        id: "base64-encoder",
-        name: "Base64 encoder/decoder",
-    },
-    Tool {
-        id: "color-converter",
-        name: "Color converter",
-    },
-    Tool {
-        id: "html-entity-encoder",
-        name: "HTML entity encoder/decoder",
-    },
-    Tool {
-        id: "json-formatter",
-        name: "JSON formatter",
-    },
-    Tool {
-        id: "regexp-tester",
-        name: "RegExp tester",
-    },
-    Tool {
-        id: "string-case-converter",
-        name: "String case converter",
-    },
-    Tool {
-        id: "text-diff",
-        name: "Text diff",
-    },
-    Tool {
-        id: "text-stats",
-        name: "Text stats",
-    },
-    Tool {
-        id: "unicode-lookup",
-        name: "Unicode lookup",
-    },
-    Tool {
-        id: "url-encoder",
-        name: "URL encoder/decoder",
-    },
-    Tool {
-        id: "url-parser",
-        name: "URL parser",
-    },
-];
+use tools::TOOLS;
 
 #[tauri::command]
 fn set_selected_tool(app: AppHandle, tool_id: &str) -> Result<(), String> {

@@ -1,3 +1,6 @@
+// Auto-generated file. Do not edit manually.
+// Generated from tools.json by scripts/generate-tools.ts
+
 import { lazy, ComponentType } from 'react';
 
 export interface Tool {
@@ -6,7 +9,6 @@ export interface Tool {
   component: ComponentType;
 }
 
-// This list should be in sync with the on in lib.rs
 export const tools: Tool[] = [
   {
     id: 'base64-encoder',

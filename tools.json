@@ -1,0 +1,57 @@
+[
+  {
+    "id": "base64-encoder",
+    "name": "Base64 encoder/decoder",
+    "module": "Base64Encoder"
+  },
+  {
+    "id": "color-converter",
+    "name": "Color converter",
+    "module": "ColorConverter"
+  },
+  {
+    "id": "html-entity-encoder",
+    "name": "HTML entity encoder/decoder",
+    "module": "HtmlEntityEncoder"
+  },
+  {
+    "id": "json-formatter",
+    "name": "JSON formatter",
+    "module": "JsonFormatter"
+  },
+  {
+    "id": "regexp-tester",
+    "name": "RegExp tester",
+    "module": "RegExpTester"
+  },
+  {
+    "id": "string-case-converter",
+    "name": "String case converter",
+    "module": "StringCaseConverter"
+  },
+  {
+    "id": "text-diff",
+    "name": "Text diff",
+    "module": "TextDiff"
+  },
+  {
+    "id": "text-stats",
+    "name": "Text stats",
+    "module": "TextStats"
+  },
+  {
+    "id": "unicode-lookup",
+    "name": "Unicode lookup",
+    "module": "UnicodeLookup"
+  },
+  {
+    "id": "url-encoder",
+    "name": "URL encoder/decoder",
+    "module": "UrlEncoder"
+  },
+  {
+    "id": "url-parser",
+    "name": "URL parser",
+    "module": "UrlParser"
+  }
+]
