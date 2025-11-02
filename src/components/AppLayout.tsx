@@ -28,7 +28,7 @@ export function AppLayout({
       <Grid
         gridTemplateColumns={isSidebarOpen ? '16rem auto' : 'auto'}
         gridTemplateRows={isHeaderVisible ? '2.3rem auto' : 'auto'}
-        gap="m"
+        gap="s"
         height="100vh"
       >
         {isSidebarOpen && <Sidebar onClose={onSidebarClose} />}
