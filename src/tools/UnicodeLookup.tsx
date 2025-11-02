@@ -90,11 +90,11 @@ export function UnicodeLookup() {
   }, [searchQuery]);
 
   return (
-    <Screen>
+    <Screen gridTemplateRows="auto 1fr">
       <Input
         id="search"
         label="Search by name or code"
-        placeholder="Try “smile” or “U+1F600”"
+        placeholder="Try “cat” or “U+1F600”"
         value={searchQuery}
         onChange={(event) => setSearchQuery(event.target.value)}
       />
