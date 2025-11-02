@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { tools } from '../tools-server';
+import { tools } from '../tools';
 
 export function Router() {
   // Server renders nothing for home route, client will handle redirect
