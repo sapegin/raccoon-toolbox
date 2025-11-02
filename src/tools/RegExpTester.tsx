@@ -9,9 +9,29 @@ import { Input } from '../components/Input';
 import { Screen } from '../components/Screen';
 import { RegExpCheatSheet } from '../components/RegExpCheatSheet';
 
-// TODO: Add a button to show docs
-
 const defaultFormatter = String.raw`$0\n`;
+
+// TODO: Fix editor losing focus on every edit
+
+function formatMatches(matches: RegExpExecArray[], formatter: string) {
+  return matches
+    .map((match) => {
+      let result = formatter;
+
+      for (const [index, group] of match.entries()) {
+        result = result.replaceAll(
+          new RegExp(String.raw`\$${index}`, 'g'),
+          group || ''
+        );
+      }
+
+      // Replace escaped whitespace with actual whitespace and return
+      return result
+        .replaceAll(String.raw`\n`, '\n')
+        .replaceAll(String.raw`\t`, '\t');
+    })
+    .join('');
+}
 
 export function RegExpTester() {
   const [regexpInput, setRegexpInput] = usePersistentState(
@@ -25,9 +45,8 @@ export function RegExpTester() {
   );
   const [output, setOutput] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
-  const [highlightRegexp, setHighlightRegexp] = useState<RegExp | undefined>(
-    undefined
-  );
+  const [matches, setMatches] = useState<RegExpExecArray[]>([]);
+  const [highlightRegexp, setHighlightRegexp] = useState<RegExp>();
 
   useEffect(() => {
     if (regexpInput !== '' && textInput !== '') {
@@ -35,14 +54,17 @@ export function RegExpTester() {
     }
   }, []);
 
-  const parseRegExp = (input: string): RegExp | null => {
+  const parseRegExp = (input: string): RegExp | undefined => {
     try {
       if (input.startsWith('/')) {
         // Full regexp provided: /[0-9a-f]+/g
         const lastSlash = input.lastIndexOf('/');
         if (lastSlash > 0) {
           const pattern = input.slice(1, lastSlash);
-          const flags = input.slice(lastSlash + 1);
+          const flagsRaw = input.slice(lastSlash + 1);
+          // Automatically add global flag, as it's a requirement of both
+          // matchAll and CodeMirror's MatchDecorator
+          const flags = flagsRaw.includes('g') ? flagsRaw : `${flagsRaw}g`;
           return new RegExp(pattern, flags);
         }
       }
@@ -50,47 +72,34 @@ export function RegExpTester() {
       // Partial regexp provided: [0-9a-f]+, treat it as global
       return new RegExp(input, 'g');
     } catch {
-      return null;
+      return undefined;
     }
   };
 
   const handleMatch = useCallback(() => {
     try {
       const regexp = parseRegExp(regexpInput);
-      if (regexp === null) {
+      if (regexp === undefined) {
         setErrorMessage('Invalid regular expression');
         setOutput('');
         setHighlightRegexp(undefined);
         return;
       }
 
-      setHighlightRegexp(regexp);
+      const matchesRaw = Array.from(textInput.matchAll(regexp));
 
-      const matches = Array.from(textInput.matchAll(regexp));
-      if (matches.length === 0) {
+      // Do nothing if there are no matches or only empty string matches, as we
+      // cannot highlight anything or show a list of matches in such cases. They
+      // also cause infinite loops in the CodeMirror's MatchDecorator
+      if (matchesRaw.every((match) => match[0] === '')) {
         setOutput('');
         setErrorMessage('');
+        setHighlightRegexp(undefined);
         return;
       }
 
-      const formattedMatches = matches
-        .map((match) => {
-          let result = formatter;
-          for (const [index, group] of match.entries()) {
-            result = result.replaceAll(
-              new RegExp(String.raw`\$${index}`, 'g'),
-              group || ''
-            );
-          }
-
-          // Replace escaped whitespace with actual whitespace and return
-          return result
-            .replaceAll(String.raw`\n`, '\n')
-            .replaceAll(String.raw`\t`, '\t');
-        })
-        .join('');
-
-      setOutput(formattedMatches);
+      setHighlightRegexp(regexp);
+      setMatches(matchesRaw);
       setErrorMessage('');
     } catch (error) {
       if (error instanceof Error) {
@@ -98,11 +107,19 @@ export function RegExpTester() {
         setOutput('');
       }
     }
+  }, [regexpInput, textInput]);
+
+  useEffect(() => {
+    handleMatch();
+  }, [regexpInput, textInput, handleMatch]);
+
+  useEffect(() => {
+    setOutput(formatMatches(matches, formatter));
   }, [regexpInput, textInput, formatter]);
 
   useEffect(() => {
     handleMatch();
-  }, [regexpInput, textInput, formatter, handleMatch]);
+  }, [regexpInput, textInput, handleMatch]);
 
   // TODO: This button clears everything which may be confusing
   const handleClear = useCallback(() => {
