@@ -1,6 +1,7 @@
+import type { ComponentProps } from 'react';
 import { styled } from '../../styled-system/jsx';
 
-export const IconButton = styled('button', {
+const IconButtonRaw = styled('button', {
   base: {
     display: 'inline-flex',
     alignItems: 'center',
@@ -31,3 +32,10 @@ export const IconButton = styled('button', {
     },
   },
 });
+
+export function IconButton({
+  label,
+  ...props
+}: { label: string } & ComponentProps<typeof IconButtonRaw>) {
+  return <IconButtonRaw {...props} title={label} aria-label={label} />;
+}

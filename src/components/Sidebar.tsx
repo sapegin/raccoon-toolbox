@@ -5,6 +5,7 @@ import { Stack } from './Stack';
 import { tools } from '../tools';
 import { NavigationButton } from './NavigationButton';
 import { Box } from './Box';
+import { getModifierKey } from '../util/getModifierKey';
 
 export function Sidebar({
   onClose,
@@ -13,6 +14,7 @@ export function Sidebar({
   onClose?: () => void;
   show?: boolean;
 }) {
+  const modifierKey = getModifierKey();
   return (
     <Box
       overflowX="hidden"
@@ -35,9 +37,8 @@ export function Sidebar({
       >
         <Flex justifyContent="flex-end" mb="xs">
           <IconButton
+            label={`Close sidebar (${modifierKey}+/)`}
             onClick={onClose}
-            title="Close sidebar (Cmd+/)"
-            aria-label="Close sidebar (Cmd+/)"
           >
             <Icon icon="sidebar" />
           </IconButton>

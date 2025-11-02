@@ -4,6 +4,7 @@ import { Icon } from './Icon';
 import { IconButton } from './IconButton';
 import { APP_NAME } from '../constants';
 import { Box } from './Box';
+import { getModifierKey } from '../util/getModifierKey';
 
 export function Header({
   title = APP_NAME,
@@ -14,6 +15,7 @@ export function Header({
   onOpen?: () => void;
   show?: boolean;
 }) {
+  const modifierKey = getModifierKey();
   return (
     <Box
       overflowY="hidden"
@@ -31,11 +33,7 @@ export function Header({
         borderColor="lightBorder"
         backgroundColor="uiBackground"
       >
-        <IconButton
-          onClick={onOpen}
-          title="Open sidebar (Cmd+/)"
-          aria-label="Open sidebar (Cmd+/)"
-        >
+        <IconButton label={`Open sidebar (${modifierKey}+/)`} onClick={onOpen}>
           <Icon icon="sidebar" />
         </IconButton>
         <Text as="h2" textAlign="center">
