@@ -1,5 +1,5 @@
 [package]
-name = "toolbox"
+name = "raccoon-toolbox"
 version = "0.1.0"
 description = "A collection of useful tools"
 authors = ["Artem Sapegin"]
