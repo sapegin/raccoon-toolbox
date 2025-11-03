@@ -3,7 +3,7 @@ import { html } from '@codemirror/lang-html';
 import { xml } from '@codemirror/lang-xml';
 import { javascript } from '@codemirror/lang-javascript';
 import { css } from '@codemirror/lang-css';
-import { search, searchKeymap } from '@codemirror/search';
+import { search, searchKeymap, gotoLine } from '@codemirror/search';
 import {
   HighlightStyle,
   syntaxHighlighting,
@@ -93,14 +93,15 @@ const theme = EditorView.theme({
   '.cm-panels-bottom': {
     borderColor: 'var(--colors-light-border)',
   },
-  '.cm-panel.cm-search [name="close"]': {
+  '.cm-panel.cm-panel [name="close"]': {
+    bottom: 'auto',
     cursor: 'pointer',
     color: 'var(--colors-icon)',
   },
-  '.cm-panel.cm-search [name="close"]:hover': {
+  '.cm-panel.cm-panel [name="close"]:hover': {
     color: 'var(--colors-active-icon)',
   },
-  '.cm-panel.cm-search [name="close"]:focus-visible': {
+  '.cm-panel.cm-panel [name="close"]:focus-visible': {
     outline: '2px solid var(--colors-accent)',
     borderRadius: 'var(--radii-button)',
   },
@@ -218,6 +219,7 @@ export function Editor({
         highlightActiveLine(),
         highlightWhitespace(),
         search(),
+        keymap.of([{ key: 'Mod-g', run: gotoLine }]),
         keymap.of(defaultKeymap),
         keymap.of(searchKeymap),
         EditorView.lineWrapping,
