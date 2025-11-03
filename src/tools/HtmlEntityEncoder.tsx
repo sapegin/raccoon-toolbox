@@ -86,7 +86,11 @@ export function HtmlEntityEncoder() {
           </Button>
         }
       >
-        <Editor value={input} onChange={handleChange} />
+        <Editor
+          value={input}
+          language={mode === 'encode' ? 'html' : undefined}
+          onChange={handleChange}
+        />
       </Panel>
       <Panel
         fullHeight
@@ -107,7 +111,10 @@ export function HtmlEntityEncoder() {
           </>
         }
       >
-        <Editor value={output} editable={false} />
+        <Editor
+          value={output}
+          language={mode === 'decode' ? 'html' : undefined}
+        />
       </Panel>
     </Screen>
   );

@@ -1,6 +1,14 @@
 import { json } from '@codemirror/lang-json';
+import { html } from '@codemirror/lang-html';
+import { xml } from '@codemirror/lang-xml';
+import { javascript } from '@codemirror/lang-javascript';
+import { css } from '@codemirror/lang-css';
 import { search, searchKeymap } from '@codemirror/search';
-import { HighlightStyle, syntaxHighlighting } from '@codemirror/language';
+import {
+  HighlightStyle,
+  syntaxHighlighting,
+  type LanguageSupport,
+} from '@codemirror/language';
 import { tags } from '@lezer/highlight';
 import {
   EditorView,
@@ -19,9 +27,19 @@ import { defaultKeymap } from '@codemirror/commands';
 import { useRef, useEffect } from 'react';
 import { Box } from './Box';
 
+const languageExtensions = {
+  css,
+  html,
+  javascript,
+  json,
+  xml,
+} satisfies Record<string, () => LanguageSupport>;
+
+type Language = keyof typeof languageExtensions;
+
 interface EditorProps {
   value?: string;
-  language?: 'json';
+  language?: Language;
   editable?: boolean;
   onChange?: (value: string) => void;
   /** Highlight matches in the editor. */
@@ -116,6 +134,12 @@ const theme = EditorView.theme({
 // https://lezer.codemirror.net/docs/ref/#highlight.tags
 const squirrelsongHighlighting = syntaxHighlighting(
   HighlightStyle.define([
+    {
+      tag: tags.tagName,
+      color: 'var(--colors-code-keyword)',
+      fontWeight: 'bold',
+    },
+    { tag: tags.angleBracket, color: 'var(--colors-code-keyword)' },
     { tag: tags.keyword, color: 'var(--colors-code-keyword)' },
     { tag: tags.comment, color: 'var(--colors-code-comment)' },
     { tag: tags.variableName, color: 'var(--colors-code-variable)' },
@@ -170,7 +194,9 @@ export function Editor({
       return;
     }
 
-    const languageExtension = language === 'json' ? json() : undefined;
+    const languageExtension = language
+      ? languageExtensions[language]()
+      : undefined;
 
     const updateListener = EditorView.updateListener.of((update) => {
       if (update.docChanged && onChange) {
