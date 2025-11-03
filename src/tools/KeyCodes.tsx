@@ -41,19 +41,17 @@ const getDisplayName = (event: globalThis.KeyboardEvent) => {
   const isModifierKey = MODIFIER_KEYS.includes(event.key);
 
   // Add name of the modifier key if it's not the only key pressed
-  if (isModifierKey === false) {
-    if (event.shiftKey) {
-      parts.push('Shift');
-    }
-    if (event.ctrlKey) {
-      parts.push('Ctrl');
-    }
-    if (event.metaKey) {
-      parts.push('Meta');
-    }
-    if (event.altKey) {
-      parts.push('Alt');
-    }
+  if (event.shiftKey && event.key !== 'Shift') {
+    parts.push('Shift');
+  }
+  if (event.ctrlKey && event.key !== 'Control') {
+    parts.push('Ctrl');
+  }
+  if (event.metaKey && event.key !== 'Meta') {
+    parts.push('Meta');
+  }
+  if (event.altKey && event.key !== 'Alt') {
+    parts.push('Alt');
   }
 
   const key = event.key;
@@ -61,8 +59,15 @@ const getDisplayName = (event: globalThis.KeyboardEvent) => {
     parts.push('Space');
   } else if (key === 'Control') {
     parts.push('Ctrl');
-  } else if (key.length === 1) {
-    parts.push(key.toUpperCase());
+  } else if (isModifierKey === false && key.length === 1) {
+    const digitMatch = event.code.match(/^Digit(\d)$/);
+    if (digitMatch) {
+      // When Shift+digit is pressed, shown a digit, not an actual key (Shift+2
+      // instead of Shift+@)
+      parts.push(digitMatch[1]);
+    } else {
+      parts.push(key.toUpperCase());
+    }
   } else {
     parts.push(key);
   }
@@ -96,7 +101,7 @@ export function KeyCodes() {
       <Stack gap="xl" alignItems="center" justifyContent="center" height="100%">
         <Stack gap="m" alignItems="center">
           {keyInfo ? (
-            <Text variant="large" color="activeForeground">
+            <Text variant="large" fontSize="xxxl" color="activeForeground">
               {keyInfo.displayName}
             </Text>
           ) : (
