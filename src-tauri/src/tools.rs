@@ -20,6 +20,10 @@ pub const TOOLS: &[Tool] = &[
         name: "HTML entity encoder/decoder",
     },
     Tool {
+        id: "html-formatter",
+        name: "HTML formatter",
+    },
+    Tool {
         id: "json-formatter",
         name: "JSON formatter",
     },

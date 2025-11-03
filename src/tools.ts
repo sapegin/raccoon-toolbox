@@ -38,6 +38,15 @@ export const tools: Tool[] = [
     ),
   },
   {
+    id: 'html-formatter',
+    name: 'HTML formatter',
+    component: lazy(() =>
+      import('./tools/HtmlFormatter').then((m) => ({
+        default: m.HtmlFormatter,
+      }))
+    ),
+  },
+  {
     id: 'json-formatter',
     name: 'JSON formatter',
     component: lazy(() =>
