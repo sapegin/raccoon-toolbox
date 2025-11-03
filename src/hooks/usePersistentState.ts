@@ -4,28 +4,17 @@ export function usePersistentState<T>(
   key: string,
   initialValue: T
 ): [T, React.Dispatch<React.SetStateAction<T>>] {
-  const [state, setState] = useState<T>(initialValue);
-  const [isInitialized, setIsInitialized] = useState(false);
-
-  // Sync from localStorage after mount
-  useEffect(() => {
+  const [state, setState] = useState<T>(() => {
     try {
       const item = localStorage.getItem(key);
-      if (item !== null) {
-        setState(JSON.parse(item) as T);
-      }
+      return item ? (JSON.parse(item) as T) : initialValue;
     } catch {
-      // Ignore errors
+      return initialValue;
     }
-    setIsInitialized(true);
-  }, [key]);
+  });
 
-  // Persist to localStorage on changes (but not initial mount)
+  // Debounce writing to localStorage
   useEffect(() => {
-    if (isInitialized === false) {
-      return;
-    }
-
     const timeoutId = setTimeout(() => {
       try {
         localStorage.setItem(key, JSON.stringify(state));
@@ -35,7 +24,7 @@ export function usePersistentState<T>(
     }, 200);
 
     return () => clearTimeout(timeoutId);
-  }, [key, state, isInitialized]);
+  }, [key, state]);
 
   return [state, setState];
 }
