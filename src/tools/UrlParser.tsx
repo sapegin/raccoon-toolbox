@@ -9,15 +9,7 @@ import { Screen } from '../components/Screen';
 
 export function UrlParser() {
   const [input, setInput] = usePersistentState('urlParser.input', '');
-  const [parsedData, setParsedData] = useState<
-    | {
-        protocol: string;
-        host: string;
-        pathname: string;
-        search: string;
-      }
-    | undefined
-  >(undefined);
+  const [parsedData, setParsedData] = useState<URL>();
   const [queryJson, setQueryJson] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
@@ -39,16 +31,9 @@ export function UrlParser() {
 
     try {
       const url = new URL(value);
-
-      setParsedData({
-        protocol: url.protocol,
-        host: url.host,
-        pathname: url.pathname,
-        search: url.search,
-      });
-
       const params = Object.fromEntries(url.searchParams);
 
+      setParsedData(url);
       setQueryJson(JSON.stringify(params, null, 2));
       setErrorMessage('');
     } catch (error) {
