@@ -23,11 +23,9 @@ export function App() {
   const [isCommandPaletteOpen, setIsCommandPaletteOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
-  const currentToolId = location.pathname.replaceAll(/[^-a-z]/g, '');
+  const currentToolId = location.pathname.replaceAll(/[^-\w]/g, '');
   const currentTool = tools.find((tool) => tool.id === currentToolId);
   const currentToolName = currentTool?.name ?? 'Loading…';
-
-  console.log('🍔 isSidebarOpen', isSidebarOpen);
 
   const isHeaderVisible = isSidebarOpen === false && isTauri() === false;
 
