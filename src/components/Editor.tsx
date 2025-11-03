@@ -49,9 +49,12 @@ interface EditorProps {
 const theme = EditorView.theme({
   '&': {
     height: '100%',
+    border: '1px solid var(--colors-light-border)',
+    borderRadius: 'var(--radii-input)',
   },
   '&.cm-focused': {
-    outline: '1px solid var(--colors-active-border)',
+    outline: 0,
+    border: '1px solid var(--colors-active-border)',
   },
   '.cm-scroller': {
     overflow: 'auto',
@@ -256,14 +259,5 @@ export function Editor({
     }
   }, [value]);
 
-  return (
-    <Box
-      ref={editorRef}
-      height="100%"
-      minHeight={0}
-      border="1px solid"
-      borderColor="lightBorder"
-      borderRadius="input"
-    />
-  );
+  return <Box ref={editorRef} height="100%" minHeight={0} />;
 }
