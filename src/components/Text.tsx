@@ -35,6 +35,13 @@ export const text = cva({
         lineHeight: 'heading',
         letterSpacing: 'base',
       },
+      xlarge: {
+        fontFamily: 'body',
+        fontSize: 'xxxl',
+        fontWeight: 'medium',
+        lineHeight: 'heading',
+        letterSpacing: 'base',
+      },
       code: {
         fontFamily: 'code',
         fontSize: 's',

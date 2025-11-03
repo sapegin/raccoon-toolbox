@@ -101,7 +101,7 @@ export function KeyCodes() {
       <Stack gap="xl" alignItems="center" justifyContent="center" height="100%">
         <Stack gap="m" alignItems="center">
           {keyInfo ? (
-            <Text variant="large" fontSize="xxxl" color="activeForeground">
+            <Text variant="xlarge" color="activeForeground">
               {keyInfo.displayName}
             </Text>
           ) : (
