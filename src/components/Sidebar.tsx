@@ -14,15 +14,13 @@ export function Sidebar({
   onClose?: () => void;
   show?: boolean;
 }) {
-  console.log('🍪 Sidebar:show', show);
-
   const modifierKey = getModifierKey();
   return (
     <Box
       overflowX="hidden"
       transition="width 0.08s ease-in-out"
       height="100%"
-      style={{ width: show ? '16rem' : 0 }}
+      width={show ? '16rem' : 0}
       inert={show === false}
       aria-hidden={show === false}
     >

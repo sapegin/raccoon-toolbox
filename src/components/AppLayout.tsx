@@ -26,7 +26,12 @@ export function AppLayout({
   return (
     <>
       <VisuallyHidden as="h1">{APP_NAME}</VisuallyHidden>
-      <Grid gridTemplateColumns="auto 1fr" gap="s" width="100vw" height="100vh">
+      <Grid
+        gridTemplateColumns="auto 1fr"
+        gap={isSidebarOpen ? 's' : 0}
+        width="100vw"
+        height="100vh"
+      >
         <Sidebar show={isSidebarOpen} onClose={onSidebarClose} />
         <Grid gridTemplateRows="auto 1fr" height="100vh">
           <Header title={title} show={isHeaderVisible} onOpen={onHeaderOpen} />
