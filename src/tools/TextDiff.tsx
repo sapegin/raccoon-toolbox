@@ -12,6 +12,7 @@ import { Screen } from '../components/Screen';
 
 const addedClass = css({
   backgroundColor: 'successBackground',
+  textDecoration: 'underline',
 });
 
 const removedClass = css({
@@ -47,9 +48,9 @@ export function TextDiff() {
         for (const char of charDiff) {
           const charSafe = escapeHtml(char.value);
           if (char.added) {
-            resultHtml += `<span class="${addedClass}">${charSafe}</span>`;
+            resultHtml += `<ins class="${addedClass}">${charSafe}</ins>`;
           } else if (char.removed) {
-            resultHtml += `<span class="${removedClass}">${charSafe}</span>`;
+            resultHtml += `<del class="${removedClass}">${charSafe}</del>`;
           } else {
             resultHtml += charSafe;
           }
@@ -57,10 +58,10 @@ export function TextDiff() {
         // Skip both the removed and added parts
         index += 2;
       } else if (part.added) {
-        resultHtml += `<span class="${addedClass}">${escapeHtml(part.value)}</span>`;
+        resultHtml += `<ins class="${addedClass}">${escapeHtml(part.value)}</ins>`;
         index++;
       } else if (part.removed) {
-        resultHtml += `<span class="${removedClass}">${escapeHtml(part.value)}</span>`;
+        resultHtml += `<del class="${removedClass}">${escapeHtml(part.value)}</del>`;
         index++;
       } else {
         resultHtml += escapeHtml(part.value);
@@ -106,7 +107,7 @@ export function TextDiff() {
             </Button>
           }
         >
-          <Editor value={textA} onChange={handleTextAChange} />
+          <Editor label="Text A" value={textA} onChange={handleTextAChange} />
         </Panel>
         <Panel
           label="Text B"
@@ -116,22 +117,24 @@ export function TextDiff() {
             </Button>
           }
         >
-          <Editor value={textB} onChange={handleTextBChange} />
+          <Editor label="Text B" value={textB} onChange={handleTextBChange} />
         </Panel>
       </Grid>
-      <Panel fullHeight label="Result">
-        <Box
-          as="pre"
-          overflow="auto"
-          height="100%"
-          fontFamily="code"
-          padding="s"
-          whiteSpace="pre-wrap"
-          border="1px solid"
-          borderColor="lightBorder"
-          borderRadius="input"
-          dangerouslySetInnerHTML={{ __html: result }}
-        />
+      <Panel fullHeight label="Difference">
+        <output htmlFor="text-a text-b">
+          <Box
+            display="block"
+            overflow="auto"
+            height="100%"
+            fontFamily="code"
+            padding="s"
+            whiteSpace="pre-wrap"
+            border="1px solid"
+            borderColor="lightBorder"
+            borderRadius="input"
+            dangerouslySetInnerHTML={{ __html: result }}
+          />
+        </output>
       </Panel>
     </Screen>
   );

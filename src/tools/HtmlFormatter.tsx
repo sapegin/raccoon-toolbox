@@ -57,7 +57,12 @@ export function HtmlFormatter() {
           </Button>
         }
       >
-        <Editor value={input} language="html" onChange={handleChange} />
+        <Editor
+          label="Input"
+          value={input}
+          language="html"
+          onChange={handleChange}
+        />
       </Panel>
       <Panel
         fullHeight
@@ -65,7 +70,7 @@ export function HtmlFormatter() {
         errorMessage={errorMessage}
         actions={<CopyButton value={output} />}
       >
-        <Editor value={output} language="html" />
+        <Editor label="Output" value={output} language="html" />
       </Panel>
     </Screen>
   );

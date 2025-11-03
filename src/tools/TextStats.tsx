@@ -58,24 +58,26 @@ export function TextStats() {
           </Button>
         }
       >
-        <Editor value={text} onChange={handleTextChange} />
+        <Editor label="Text" value={text} onChange={handleTextChange} />
       </Panel>
       <Panel fullHeight accessibleLabel="Statistics">
-        <Stack as="dl" gap="m" overflow="auto" height="100%">
-          <LargeValue label="Characters" value={stats.characters} />
-          <LargeValue
-            label="Non-space characters"
-            value={stats.charactersWithoutWhitespace}
-          />
-          <LargeValue label="Lines" value={stats.lines} />
-          <LargeValue label="Words" value={stats.words} />
-          <LargeValue label="Paragraphs" value={stats.paragraphs} />
-          <LargeValue label="Sentences" value={stats.sentences} />
-          <LargeValue
-            label="Reading time"
-            value={`${stats.readingTimeMinutes} min`}
-          />
-        </Stack>
+        <output htmlFor="text">
+          <Stack as="dl" gap="m" overflow="auto" height="100%">
+            <LargeValue label="Characters" value={stats.characters} />
+            <LargeValue
+              label="Non-space characters"
+              value={stats.charactersWithoutWhitespace}
+            />
+            <LargeValue label="Lines" value={stats.lines} />
+            <LargeValue label="Words" value={stats.words} />
+            <LargeValue label="Paragraphs" value={stats.paragraphs} />
+            <LargeValue label="Sentences" value={stats.sentences} />
+            <LargeValue
+              label="Reading time"
+              value={`${stats.readingTimeMinutes} min`}
+            />
+          </Stack>
+        </output>
       </Panel>
     </Screen>
   );

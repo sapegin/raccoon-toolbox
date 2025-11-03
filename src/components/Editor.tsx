@@ -38,6 +38,10 @@ const languageExtensions = {
 type Language = keyof typeof languageExtensions;
 
 interface EditorProps {
+  /** ID of the editor textarea. */
+  id?: string;
+  /** Accessible label of the editor textarea. */
+  label: string;
   value?: string;
   language?: Language;
   editable?: boolean;
@@ -184,6 +188,8 @@ function getMatchHighlighter(regExp: RegExp) {
 }
 
 export function Editor({
+  id,
+  label,
   value = '',
   language,
   editable = true,
@@ -227,6 +233,10 @@ export function Editor({
         keymap.of(searchKeymap),
         EditorView.lineWrapping,
         EditorView.editable.of(editable),
+        EditorView.contentAttributes.of({
+          id: id ?? label.replaceAll(' ', '-').toLowerCase(),
+          'aria-label': label,
+        }),
         squirrelsongHighlighting,
         theme,
       ].filter((x) => x !== undefined),

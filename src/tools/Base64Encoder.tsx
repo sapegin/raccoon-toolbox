@@ -89,7 +89,7 @@ export function Base64Encoder() {
           </Button>
         }
       >
-        <Editor value={input} onChange={handleChange} />
+        <Editor label="Input" value={input} onChange={handleChange} />
       </Panel>
       <Panel
         fullHeight
@@ -110,7 +110,7 @@ export function Base64Encoder() {
           </>
         }
       >
-        <Editor value={output} editable={false} />
+        <Editor label="Output" value={output} editable={false} />
       </Panel>
     </Screen>
   );

@@ -87,6 +87,7 @@ export function HtmlEntityEncoder() {
         }
       >
         <Editor
+          label="Input"
           value={input}
           language={mode === 'encode' ? 'html' : undefined}
           onChange={handleChange}
@@ -112,6 +113,7 @@ export function HtmlEntityEncoder() {
         }
       >
         <Editor
+          label="Output"
           value={output}
           language={mode === 'decode' ? 'html' : undefined}
         />

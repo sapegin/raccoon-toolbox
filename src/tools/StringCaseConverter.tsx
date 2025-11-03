@@ -57,7 +57,7 @@ export function StringCaseConverter() {
           </Button>
         }
       >
-        <Editor value={input} onChange={handleChange} />
+        <Editor label="Input" value={input} onChange={handleChange} />
       </Panel>
       <Panel
         fullHeight
@@ -75,7 +75,7 @@ export function StringCaseConverter() {
           </>
         }
       >
-        <Editor value={output} editable={false} />
+        <Editor label="Output" value={output} editable={false} />
       </Panel>
     </Screen>
   );

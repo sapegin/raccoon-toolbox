@@ -80,7 +80,7 @@ export function LoremIpsum() {
           </>
         }
       >
-        <Editor value={output} />
+        <Editor label="Output" value={output} />
       </Panel>
     </Screen>
   );

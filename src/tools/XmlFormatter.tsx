@@ -57,7 +57,12 @@ export function XmlFormatter() {
           </Button>
         }
       >
-        <Editor value={input} language="xml" onChange={handleChange} />
+        <Editor
+          label="Input"
+          value={input}
+          language="xml"
+          onChange={handleChange}
+        />
       </Panel>
       <Panel
         fullHeight
@@ -65,7 +70,7 @@ export function XmlFormatter() {
         errorMessage={errorMessage}
         actions={<CopyButton value={output} />}
       >
-        <Editor value={output} language="xml" />
+        <Editor label="Output" value={output} language="xml" />
       </Panel>
     </Screen>
   );

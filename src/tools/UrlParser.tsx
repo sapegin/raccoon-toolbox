@@ -78,7 +78,7 @@ export function UrlParser() {
           </Button>
         }
       >
-        <Editor value={input} onChange={handleChange} />
+        <Editor label="Input" value={input} onChange={handleChange} />
       </Panel>
       <Stack gap="m">
         <Panel label="URL Components" errorMessage={errorMessage}>
@@ -106,7 +106,7 @@ export function UrlParser() {
           )}
         </Panel>
         <Panel fullHeight label="Query parameters">
-          <Editor value={queryJson} language="json" editable={false} />
+          <Editor label="Query parameters" value={queryJson} language="json" />
         </Panel>
       </Stack>
     </Screen>

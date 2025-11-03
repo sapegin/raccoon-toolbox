@@ -149,6 +149,7 @@ export function RegExpTester() {
         />
         <Panel fullHeight label="Text">
           <Editor
+            label="Text"
             value={textInput}
             onChange={setTextInput}
             highlightRegexp={highlightRegexp}
@@ -169,7 +170,7 @@ export function RegExpTester() {
             label="Matches"
             actions={<CopyButton value={output} />}
           >
-            <Editor value={output} editable={false} />
+            <Editor label="Matches" value={output} editable={false} />
           </Panel>
         </Stack>
         <RegExpCheatSheet />

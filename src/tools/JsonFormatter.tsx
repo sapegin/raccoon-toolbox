@@ -58,7 +58,12 @@ export function JsonFormatter() {
           </Button>
         }
       >
-        <Editor value={input} language="json" onChange={handleChange} />
+        <Editor
+          label="Input"
+          value={input}
+          language="json"
+          onChange={handleChange}
+        />
       </Panel>
       <Panel
         fullHeight
@@ -66,7 +71,7 @@ export function JsonFormatter() {
         errorMessage={errorMessage}
         actions={<CopyButton value={output} />}
       >
-        <Editor value={output} language="json" />
+        <Editor label="Output" value={output} language="json" />
       </Panel>
     </Screen>
   );
