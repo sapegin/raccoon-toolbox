@@ -1,4 +1,4 @@
-import { useEffect, useState, type ReactNode } from 'react';
+import { useEffect, useState } from 'react';
 import { Stack } from '../components/Stack';
 import { Screen } from '../components/Screen';
 import { LargeValue } from '../components/LargeValue';
@@ -18,17 +18,20 @@ interface KeyInfo {
 }
 
 function MetaKey({
+  label,
+  pictogram,
   enabled,
-  children,
 }: {
+  label: string;
+  pictogram: string;
   enabled: boolean;
-  children: ReactNode;
 }) {
   return (
     <Text color={enabled ? 'activeForeground' : 'disabledForeground'}>
-      {children}
-      <VisuallyHidden>
-        {enabled ? ' (pressed)' : ' (not pressed)'}
+      <span aria-hidden>{pictogram}</span>
+      {` ${label} `}
+      <VisuallyHidden as="span">
+        {enabled ? '(pressed)' : '(not pressed)'}
       </VisuallyHidden>
     </Text>
   );
@@ -125,10 +128,22 @@ export function KeyCodes() {
                   columnGap="m"
                   rowGap="xs"
                 >
-                  <MetaKey enabled={keyInfo.shiftKey}>⇧ Shift</MetaKey>
-                  <MetaKey enabled={keyInfo.ctrlKey}>⌃ Ctrl</MetaKey>
-                  <MetaKey enabled={keyInfo.metaKey}>⌘ Meta</MetaKey>
-                  <MetaKey enabled={keyInfo.altKey}>⌥ Alt</MetaKey>
+                  <MetaKey
+                    enabled={keyInfo.shiftKey}
+                    label="Shift"
+                    pictogram="⇧"
+                  />
+                  <MetaKey
+                    enabled={keyInfo.ctrlKey}
+                    label="Ctrl"
+                    pictogram="⌃"
+                  />
+                  <MetaKey
+                    enabled={keyInfo.metaKey}
+                    label="Meta"
+                    pictogram="⌘"
+                  />
+                  <MetaKey enabled={keyInfo.altKey} label="Alt" pictogram="⌥" />
                 </Grid>
               </Stack>
             </Grid>
