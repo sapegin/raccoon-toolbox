@@ -43,7 +43,6 @@ export function Panel({
             position="absolute"
             inset={0}
             zIndex={99}
-            p="m"
             overflow="auto"
           >
             {errorMessage}

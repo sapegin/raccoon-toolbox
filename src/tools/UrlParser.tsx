@@ -66,7 +66,7 @@ export function UrlParser() {
         <Editor label="Input" value={input} onChange={handleChange} />
       </Panel>
       <Stack gap="m">
-        <Panel label="URL Components" errorMessage={errorMessage}>
+        <Panel label="URL Components">
           {parsedData && (
             <Table>
               <tbody>
@@ -90,7 +90,7 @@ export function UrlParser() {
             </Table>
           )}
         </Panel>
-        <Panel fullHeight label="Query parameters">
+        <Panel fullHeight label="Query parameters" errorMessage={errorMessage}>
           <Editor label="Query parameters" value={queryJson} language="json" />
         </Panel>
       </Stack>
