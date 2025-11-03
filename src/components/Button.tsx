@@ -13,9 +13,7 @@ export const Button = styled('button', {
     transitionDuration: 'hover',
     transitionTimingFunction: 'hover',
     transitionProperty: 'all',
-    _hover: {
-      cursor: 'pointer',
-    },
+    cursor: 'pointer',
     _active: {
       transform: 'translateY(1px)',
     },

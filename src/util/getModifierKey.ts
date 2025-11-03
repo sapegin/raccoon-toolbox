@@ -1,6 +1,9 @@
-let cachedModifierKey: string | undefined;
+type ModifierKey = '⌘' | 'Ctrl';
 
-export function getModifierKey(): string {
+let cachedModifierKey: ModifierKey | undefined;
+
+/** Returns platform-specific modifier key for keyboard shortcuts. */
+export function getModifierKey(): ModifierKey {
   if (cachedModifierKey) {
     return cachedModifierKey;
   }
@@ -14,6 +17,6 @@ export function getModifierKey(): string {
     navigator.platform.toUpperCase().includes('MAC') ||
     navigator.userAgent.toUpperCase().includes('MAC');
 
-  cachedModifierKey = isMac ? 'Cmd' : 'Ctrl';
+  cachedModifierKey = isMac ? '⌘' : 'Ctrl';
   return cachedModifierKey;
 }

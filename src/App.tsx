@@ -1,4 +1,4 @@
-import { Suspense, useEffect, useState } from 'react';
+import { Suspense, useCallback, useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { getCurrentWindow } from '@tauri-apps/api/window';
 import { listen } from '@tauri-apps/api/event';
@@ -29,7 +29,15 @@ export function App() {
 
   const isHeaderVisible = isSidebarOpen === false && isTauri() === false;
 
-  const toggleSidebar = () => setIsSidebarOpen((prev) => prev === false);
+  const toggleSidebar = useCallback(
+    () => setIsSidebarOpen((prev) => prev === false),
+    [setIsSidebarOpen]
+  );
+
+  const toggleCommandPalette = useCallback(
+    () => setIsCommandPaletteOpen((prev) => prev === false),
+    [setIsCommandPaletteOpen]
+  );
 
   // Set the selected tool name to the window title
   useEffect(() => {
@@ -57,9 +65,7 @@ export function App() {
   // Listen to the toggle command palette menu item events
   useEffect(() => {
     if (isTauri()) {
-      const unlisten = listen('toggle-command-palette', () => {
-        setIsCommandPaletteOpen((prev) => prev === false);
-      });
+      const unlisten = listen('toggle-command-palette', toggleCommandPalette);
       return () => {
         void unlisten.then((fn) => fn());
       };
@@ -106,7 +112,7 @@ export function App() {
   });
 
   // Handle keyboard shortcut for toggling command palette
-  useHotkey(() => setIsCommandPaletteOpen((prev) => prev === false), {
+  useHotkey(toggleCommandPalette, {
     key: 'k',
     metaKey: true,
     ctrlKey: false,
@@ -116,7 +122,7 @@ export function App() {
     <>
       <CommandPalette
         isOpen={isCommandPaletteOpen}
-        onClose={() => setIsCommandPaletteOpen(false)}
+        onClose={toggleCommandPalette}
       />
       <AppLayout
         title={currentToolName}
@@ -124,6 +130,7 @@ export function App() {
         isHeaderVisible={isHeaderVisible}
         onSidebarClose={toggleSidebar}
         onHeaderOpen={toggleSidebar}
+        onSearchOpen={() => setIsCommandPaletteOpen(true)}
       >
         <Suspense
           fallback={

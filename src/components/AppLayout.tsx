@@ -13,6 +13,7 @@ interface AppLayoutProps {
   isHeaderVisible: boolean;
   onSidebarClose?: () => void;
   onHeaderOpen?: () => void;
+  onSearchOpen?: () => void;
 }
 
 export function AppLayout({
@@ -22,6 +23,7 @@ export function AppLayout({
   isHeaderVisible,
   onSidebarClose,
   onHeaderOpen,
+  onSearchOpen,
 }: AppLayoutProps) {
   return (
     <>
@@ -32,7 +34,11 @@ export function AppLayout({
         width="100vw"
         height="100vh"
       >
-        <Sidebar show={isSidebarOpen} onClose={onSidebarClose} />
+        <Sidebar
+          show={isSidebarOpen}
+          onClose={onSidebarClose}
+          onSearchOpen={onSearchOpen}
+        />
         <Grid gridTemplateRows="auto 1fr" height="100vh">
           <Header title={title} show={isHeaderVisible} onOpen={onHeaderOpen} />
           <Box minHeight={0} height="100%">

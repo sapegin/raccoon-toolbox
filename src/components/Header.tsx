@@ -4,7 +4,7 @@ import { Icon } from './Icon';
 import { IconButton } from './IconButton';
 import { APP_NAME } from '../constants';
 import { Box } from './Box';
-import { getModifierKey } from '../util/getModifierKey';
+import { getShortcut } from '../util/getShortcut';
 
 export function Header({
   title = APP_NAME,
@@ -15,7 +15,6 @@ export function Header({
   onOpen?: () => void;
   show?: boolean;
 }) {
-  const modifierKey = getModifierKey();
   return (
     <Box
       overflowY="hidden"
@@ -33,7 +32,10 @@ export function Header({
         borderColor="lightBorder"
         backgroundColor="uiBackground"
       >
-        <IconButton label={`Open sidebar (${modifierKey}+/)`} onClick={onOpen}>
+        <IconButton
+          label={`Open sidebar (${getShortcut('/')})`}
+          onClick={onOpen}
+        >
           <Icon icon="sidebar" />
         </IconButton>
         <Text as="h2" textAlign="center">

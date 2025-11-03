@@ -5,16 +5,51 @@ import { Stack } from './Stack';
 import { tools } from '../tools';
 import { NavigationButton } from './NavigationButton';
 import { Box } from './Box';
-import { getModifierKey } from '../util/getModifierKey';
+import { styled, VisuallyHidden } from '../../styled-system/jsx';
+import { getShortcut } from '../util/getShortcut';
+
+const SearchButton = styled('button', {
+  base: {
+    display: 'flex',
+    width: '100%',
+    alignItems: 'center',
+    gap: 's',
+    p: 's',
+    fontSize: 's',
+    color: 'secondaryTextForeground',
+    backgroundColor: 'textBackground',
+    borderWidth: '1px',
+    borderStyle: 'solid',
+    borderColor: 'lightBorder',
+    borderRadius: 'button',
+    cursor: 'pointer',
+    outline: 0,
+    transitionDuration: 'hover',
+    transitionTimingFunction: 'hover',
+    transitionProperty: 'all',
+    _hover: {
+      color: 'activeForeground',
+      borderColor: 'activeBorder',
+    },
+    _active: {
+      transform: 'translateY(1px)',
+    },
+    _focusVisible: {
+      outline: 'focus',
+      outlineOffset: 'token(borderWidths.focusOutlineOffset)',
+    },
+  },
+});
 
 export function Sidebar({
   onClose,
+  onSearchOpen,
   show,
 }: {
   onClose?: () => void;
+  onSearchOpen?: () => void;
   show?: boolean;
 }) {
-  const modifierKey = getModifierKey();
   return (
     <Box
       overflowX="hidden"
@@ -24,10 +59,11 @@ export function Sidebar({
       inert={show === false}
       aria-hidden={show === false}
     >
+      <VisuallyHidden as="h2">Tools</VisuallyHidden>
       <Stack
         width="16rem"
         height="100%"
-        gap="xs"
+        gap="m"
         padding="s"
         borderStyle="solid"
         borderWidth="0 1px 0 0"
@@ -35,9 +71,16 @@ export function Sidebar({
         overflowY="auto"
         backgroundColor="uiBackground"
       >
-        <Flex justifyContent="flex-end" mb="xs">
+        <Flex justifyContent="space-between" gap="s">
+          <SearchButton type="button" onClick={onSearchOpen}>
+            <Icon icon="search" size={18} />
+            Search
+            <Box as="kbd" ml="auto" fontSize="xs" color="disabledForeground">
+              {getShortcut('K')}
+            </Box>
+          </SearchButton>
           <IconButton
-            label={`Close sidebar (${modifierKey}+/)`}
+            label={`Close sidebar (${getShortcut('/')})`}
             onClick={onClose}
           >
             <Icon icon="sidebar" />
