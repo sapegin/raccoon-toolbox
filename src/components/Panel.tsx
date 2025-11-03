@@ -39,7 +39,13 @@ export function Panel({
       )}
       <Box position="relative" height="100%" minHeight={0}>
         {errorMessage && (
-          <ErrorMessage position="absolute" inset={0} zIndex={99} p="m">
+          <ErrorMessage
+            position="absolute"
+            inset={0}
+            zIndex={99}
+            p="m"
+            overflow="auto"
+          >
             {errorMessage}
           </ErrorMessage>
         )}

@@ -63,5 +63,10 @@
     "id": "url-parser",
     "name": "URL parser",
     "module": "UrlParser"
+  },
+  {
+    "id": "xml-formatter",
+    "name": "XML formatter",
+    "module": "XmlFormatter"
   }
 ]

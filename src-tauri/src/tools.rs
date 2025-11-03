@@ -59,4 +59,8 @@ pub const TOOLS: &[Tool] = &[
         id: "url-parser",
         name: "URL parser",
     },
+    Tool {
+        id: "xml-formatter",
+        name: "XML formatter",
+    },
 ];

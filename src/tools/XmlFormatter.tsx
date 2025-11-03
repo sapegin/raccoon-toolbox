@@ -1,7 +1,6 @@
 import { useState, useCallback, useEffect } from 'react';
 import prettier from 'prettier/standalone';
-import prettierPluginEstree from 'prettier/plugins/estree';
-import prettierPluginBabel from 'prettier/plugins/babel';
+import prettierPluginXml from '@prettier/plugin-xml';
 import { Editor } from '../components/Editor';
 import { Button } from '../components/Button';
 import { usePersistentState } from '../hooks/usePersistentState';
@@ -9,8 +8,8 @@ import { Panel } from '../components/Panel';
 import { CopyButton } from '../components/CopyButton';
 import { Screen } from '../components/Screen';
 
-export function JsonFormatter() {
-  const [input, setInput] = usePersistentState('jsonFormatter.input', '');
+export function XmlFormatter() {
+  const [input, setInput] = usePersistentState('xmlFormatter.input', '');
   const [output, setOutput] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
@@ -22,11 +21,11 @@ export function JsonFormatter() {
 
   const handleChange = useCallback((value: string) => {
     setInput(value);
-    const formatJson = async () => {
+    const formatXml = async () => {
       try {
         const formatted = await prettier.format(value, {
-          parser: 'json',
-          plugins: [prettierPluginEstree, prettierPluginBabel],
+          parser: 'xml',
+          plugins: [prettierPluginXml],
         });
         setErrorMessage('');
         setOutput(formatted);
@@ -38,7 +37,7 @@ export function JsonFormatter() {
       }
     };
 
-    void formatJson();
+    void formatXml();
   }, []);
 
   const handleClear = useCallback(() => {
@@ -58,7 +57,7 @@ export function JsonFormatter() {
           </Button>
         }
       >
-        <Editor value={input} language="json" onChange={handleChange} />
+        <Editor value={input} language="xml" onChange={handleChange} />
       </Panel>
       <Panel
         fullHeight
@@ -66,7 +65,7 @@ export function JsonFormatter() {
         errorMessage={errorMessage}
         actions={<CopyButton value={output} />}
       >
-        <Editor value={output} language="json" />
+        <Editor value={output} language="xml" />
       </Panel>
     </Screen>
   );

@@ -127,4 +127,13 @@ export const tools: Tool[] = [
       }))
     ),
   },
+  {
+    id: 'xml-formatter',
+    name: 'XML formatter',
+    component: lazy(() =>
+      import('./tools/XmlFormatter').then((m) => ({
+        default: m.XmlFormatter,
+      }))
+    ),
+  },
 ];
