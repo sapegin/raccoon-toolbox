@@ -6,6 +6,7 @@ import { lazy, ComponentType } from 'react';
 export interface Tool {
   id: string;
   name: string;
+  keywords: string[];
   component: ComponentType;
 }
 
@@ -13,6 +14,7 @@ export const tools: Tool[] = [
   {
     id: 'base64-encoder',
     name: 'Base64 encoder/decoder',
+    keywords: ['binary', 'data', 'image'],
     component: lazy(() =>
       import('./tools/Base64Encoder').then((m) => ({
         default: m.Base64Encoder,
@@ -22,6 +24,7 @@ export const tools: Tool[] = [
   {
     id: 'color-converter',
     name: 'Color converter',
+    keywords: ['hex', 'rgb', 'hsl', 'css', 'palette'],
     component: lazy(() =>
       import('./tools/ColorConverter').then((m) => ({
         default: m.ColorConverter,
@@ -31,6 +34,7 @@ export const tools: Tool[] = [
   {
     id: 'html-entity-encoder',
     name: 'HTML entity encoder/decoder',
+    keywords: ['escape', 'unescape', 'entities', 'special characters'],
     component: lazy(() =>
       import('./tools/HtmlEntityEncoder').then((m) => ({
         default: m.HtmlEntityEncoder,
@@ -40,6 +44,7 @@ export const tools: Tool[] = [
   {
     id: 'html-formatter',
     name: 'HTML formatter',
+    keywords: ['beautify', 'pretty', 'prettier', 'indent'],
     component: lazy(() =>
       import('./tools/HtmlFormatter').then((m) => ({
         default: m.HtmlFormatter,
@@ -49,6 +54,7 @@ export const tools: Tool[] = [
   {
     id: 'json-formatter',
     name: 'JSON formatter',
+    keywords: ['beautify', 'pretty', 'prettier', 'indent'],
     component: lazy(() =>
       import('./tools/JsonFormatter').then((m) => ({
         default: m.JsonFormatter,
@@ -58,6 +64,7 @@ export const tools: Tool[] = [
   {
     id: 'key-codes',
     name: 'Key code lookup',
+    keywords: ['keyboard', 'events', 'keycodes', 'keypress'],
     component: lazy(() =>
       import('./tools/KeyCodes').then((m) => ({
         default: m.KeyCodes,
@@ -67,6 +74,7 @@ export const tools: Tool[] = [
   {
     id: 'lorem-ipsum',
     name: 'Lorem Ipsum generator',
+    keywords: ['placeholders', 'dummy', 'texts', 'fillers', 'content', 'fish'],
     component: lazy(() =>
       import('./tools/LoremIpsum').then((m) => ({
         default: m.LoremIpsum,
@@ -76,6 +84,7 @@ export const tools: Tool[] = [
   {
     id: 'regexp-tester',
     name: 'RegExp tester',
+    keywords: ['regexps', 'regexes', 'regular expressions', 'patterns', 'matches', 'search'],
     component: lazy(() =>
       import('./tools/RegExpTester').then((m) => ({
         default: m.RegExpTester,
@@ -85,6 +94,7 @@ export const tools: Tool[] = [
   {
     id: 'string-case-converter',
     name: 'String case converter',
+    keywords: ['camelcase', 'snake_case', 'kebab-case', 'pascalcase', 'uppercase', 'lowercase'],
     component: lazy(() =>
       import('./tools/StringCaseConverter').then((m) => ({
         default: m.StringCaseConverter,
@@ -94,6 +104,7 @@ export const tools: Tool[] = [
   {
     id: 'text-diff',
     name: 'Text diff',
+    keywords: ['strings', 'compare', 'difference', 'changes'],
     component: lazy(() =>
       import('./tools/TextDiff').then((m) => ({
         default: m.TextDiff,
@@ -103,6 +114,7 @@ export const tools: Tool[] = [
   {
     id: 'text-stats',
     name: 'Text stats',
+    keywords: ['strings', 'count', 'words', 'characters', 'lines', 'statistics'],
     component: lazy(() =>
       import('./tools/TextStats').then((m) => ({
         default: m.TextStats,
@@ -112,6 +124,7 @@ export const tools: Tool[] = [
   {
     id: 'unicode-lookup',
     name: 'Unicode lookup',
+    keywords: ['characters', 'emojis', 'symbols', 'codepoints', 'utf'],
     component: lazy(() =>
       import('./tools/UnicodeLookup').then((m) => ({
         default: m.UnicodeLookup,
@@ -121,6 +134,7 @@ export const tools: Tool[] = [
   {
     id: 'url-encoder',
     name: 'URL encoder/decoder',
+    keywords: ['escape', 'unescape', 'uri', 'percent'],
     component: lazy(() =>
       import('./tools/UrlEncoder').then((m) => ({
         default: m.UrlEncoder,
@@ -130,6 +144,7 @@ export const tools: Tool[] = [
   {
     id: 'url-parser',
     name: 'URL parser',
+    keywords: ['uri', 'query string', 'search string', 'params', 'parameters', 'links'],
     component: lazy(() =>
       import('./tools/UrlParser').then((m) => ({
         default: m.UrlParser,
@@ -139,6 +154,7 @@ export const tools: Tool[] = [
   {
     id: 'xml-formatter',
     name: 'XML formatter',
+    keywords: ['beautify', 'pretty', 'prettier', 'indent', 'svg'],
     component: lazy(() =>
       import('./tools/XmlFormatter').then((m) => ({
         default: m.XmlFormatter,

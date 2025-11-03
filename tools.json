@@ -2,76 +2,119 @@
   {
     "id": "base64-encoder",
     "name": "Base64 encoder/decoder",
-    "module": "Base64Encoder"
+    "module": "Base64Encoder",
+    "keywords": ["binary", "data", "image"]
   },
   {
     "id": "color-converter",
     "name": "Color converter",
-    "module": "ColorConverter"
+    "module": "ColorConverter",
+    "keywords": ["hex", "rgb", "hsl", "css", "palette"]
   },
   {
     "id": "html-entity-encoder",
     "name": "HTML entity encoder/decoder",
-    "module": "HtmlEntityEncoder"
+    "module": "HtmlEntityEncoder",
+    "keywords": ["escape", "unescape", "entities", "special characters"]
   },
   {
     "id": "html-formatter",
     "name": "HTML formatter",
-    "module": "HtmlFormatter"
+    "module": "HtmlFormatter",
+    "keywords": ["beautify", "pretty", "prettier", "indent"]
   },
   {
     "id": "json-formatter",
     "name": "JSON formatter",
-    "module": "JsonFormatter"
+    "module": "JsonFormatter",
+    "keywords": ["beautify", "pretty", "prettier", "indent"]
   },
   {
     "id": "key-codes",
     "name": "Key code lookup",
-    "module": "KeyCodes"
+    "module": "KeyCodes",
+    "keywords": ["keyboard", "events", "keycodes", "keypress"]
   },
   {
     "id": "lorem-ipsum",
     "name": "Lorem Ipsum generator",
-    "module": "LoremIpsum"
+    "module": "LoremIpsum",
+    "keywords": ["placeholders", "dummy", "texts", "fillers", "content", "fish"]
   },
   {
     "id": "regexp-tester",
     "name": "RegExp tester",
-    "module": "RegExpTester"
+    "module": "RegExpTester",
+    "keywords": [
+      "regexps",
+      "regexes",
+      "regular expressions",
+      "patterns",
+      "matches",
+      "search"
+    ]
   },
   {
     "id": "string-case-converter",
     "name": "String case converter",
-    "module": "StringCaseConverter"
+    "module": "StringCaseConverter",
+    "keywords": [
+      "camelcase",
+      "snake_case",
+      "kebab-case",
+      "pascalcase",
+      "uppercase",
+      "lowercase"
+    ]
   },
   {
     "id": "text-diff",
     "name": "Text diff",
-    "module": "TextDiff"
+    "module": "TextDiff",
+    "keywords": ["strings", "compare", "difference", "changes"]
   },
   {
     "id": "text-stats",
     "name": "Text stats",
-    "module": "TextStats"
+    "module": "TextStats",
+    "keywords": [
+      "strings",
+      "count",
+      "words",
+      "characters",
+      "lines",
+      "statistics"
+    ]
   },
   {
     "id": "unicode-lookup",
     "name": "Unicode lookup",
-    "module": "UnicodeLookup"
+    "module": "UnicodeLookup",
+    "keywords": ["characters", "emojis", "symbols", "codepoints", "utf"]
   },
   {
     "id": "url-encoder",
     "name": "URL encoder/decoder",
-    "module": "UrlEncoder"
+    "module": "UrlEncoder",
+    "keywords": ["escape", "unescape", "uri", "percent"]
   },
   {
     "id": "url-parser",
     "name": "URL parser",
-    "module": "UrlParser"
+    "module": "UrlParser",
+    "keywords": [
+      "uri",
+      "query string",
+      "search string",
+      "params",
+      "parameters",
+      "links"
+    ]
   },
   {
     "id": "xml-formatter",
     "name": "XML formatter",
-    "module": "XmlFormatter"
+    "module": "XmlFormatter",
+    "keywords": ["beautify", "pretty", "prettier", "indent", "svg"]
   }
 ]

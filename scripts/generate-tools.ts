@@ -4,6 +4,7 @@ interface ToolDefinition {
   id: string;
   name: string;
   module: string;
+  keywords: string[];
 }
 
 const tools = JSON.parse(
@@ -19,6 +20,7 @@ import { lazy, ComponentType } from 'react';
 export interface Tool {
   id: string;
   name: string;
+  keywords: string[];
   component: ComponentType;
 }
 
@@ -28,6 +30,7 @@ ${tools
     (tool) => `  {
     id: '${tool.id}',
     name: '${tool.name}',
+    keywords: ['${tool.keywords.join("', '")}'],
     component: lazy(() =>
       import('./tools/${tool.module}').then((m) => ({
         default: m.${tool.module},

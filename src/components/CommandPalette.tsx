@@ -55,9 +55,15 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
   const listRef = useRef<HTMLUListElement>(null);
   const navigate = useNavigate();
 
-  const filteredTools = tools.filter((tool) =>
-    tool.name.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  const filteredTools = tools.filter((tool) => {
+    const query = searchQuery.toLowerCase();
+    return (
+      tool.name.toLowerCase().includes(query) ||
+      tool.keywords.some((keyword: string) =>
+        keyword.toLowerCase().includes(query)
+      )
+    );
+  });
 
   useEffect(() => {
     if (isOpen) {
