@@ -4,22 +4,9 @@ import { Button } from '../components/Button';
 import { usePersistentState } from '../hooks/usePersistentState';
 import { Panel } from '../components/Panel';
 import { Stack } from '../components/Stack';
-import { Text } from '../components/Text';
 import { calculateTextStats, type TextStats } from '../util/text-stats';
 import { Screen } from '../components/Screen';
-
-function StatItem({ label, value }: { label: string; value: string | number }) {
-  return (
-    <Stack>
-      <Text as="dt" variant="small">
-        {label}
-      </Text>
-      <Text as="dd" variant="large">
-        {value}
-      </Text>
-    </Stack>
-  );
-}
+import { LargeValue } from '../components/LargeValue';
 
 export function TextStats() {
   const [text, setText] = usePersistentState('textStats.text', '');
@@ -73,18 +60,18 @@ export function TextStats() {
       >
         <Editor value={text} onChange={handleTextChange} />
       </Panel>
-      <Panel fullHeight label="Statistics">
+      <Panel fullHeight accessibleLabel="Statistics">
         <Stack as="dl" gap="m" overflow="auto" height="100%">
-          <StatItem label="Characters" value={stats.characters} />
-          <StatItem
+          <LargeValue label="Characters" value={stats.characters} />
+          <LargeValue
             label="Non-space characters"
             value={stats.charactersWithoutWhitespace}
           />
-          <StatItem label="Lines" value={stats.lines} />
-          <StatItem label="Words" value={stats.words} />
-          <StatItem label="Paragraphs" value={stats.paragraphs} />
-          <StatItem label="Sentences" value={stats.sentences} />
-          <StatItem
+          <LargeValue label="Lines" value={stats.lines} />
+          <LargeValue label="Words" value={stats.words} />
+          <LargeValue label="Paragraphs" value={stats.paragraphs} />
+          <LargeValue label="Sentences" value={stats.sentences} />
+          <LargeValue
             label="Reading time"
             value={`${stats.readingTimeMinutes} min`}
           />

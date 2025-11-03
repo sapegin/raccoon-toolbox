@@ -24,6 +24,10 @@ pub const TOOLS: &[Tool] = &[
         name: "JSON formatter",
     },
     Tool {
+        id: "key-codes",
+        name: "Key code lookup",
+    },
+    Tool {
         id: "lorem-ipsum",
         name: "Lorem Ipsum generator",
     },

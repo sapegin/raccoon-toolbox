@@ -20,6 +20,11 @@
     "module": "JsonFormatter"
   },
   {
+    "id": "key-codes",
+    "name": "Key code lookup",
+    "module": "KeyCodes"
+  },
+  {
     "id": "lorem-ipsum",
     "name": "Lorem Ipsum generator",
     "module": "LoremIpsum"

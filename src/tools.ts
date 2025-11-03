@@ -47,6 +47,15 @@ export const tools: Tool[] = [
     ),
   },
   {
+    id: 'key-codes',
+    name: 'Key code lookup',
+    component: lazy(() =>
+      import('./tools/KeyCodes').then((m) => ({
+        default: m.KeyCodes,
+      }))
+    ),
+  },
+  {
     id: 'lorem-ipsum',
     name: 'Lorem Ipsum generator',
     component: lazy(() =>
