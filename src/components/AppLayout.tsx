@@ -33,6 +33,7 @@ export function AppLayout({
         gap={isSidebarOpen ? 's' : 0}
         width="100vw"
         height="100vh"
+        suppressHydrationWarning
       >
         <Sidebar
           show={isSidebarOpen}

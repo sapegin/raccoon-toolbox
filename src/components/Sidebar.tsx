@@ -58,6 +58,7 @@ export function Sidebar({
       width={show ? '16rem' : 0}
       inert={show === false}
       aria-hidden={show === false}
+      suppressHydrationWarning
     >
       <VisuallyHidden as="h2">Tools</VisuallyHidden>
       <Stack

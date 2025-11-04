@@ -22,6 +22,7 @@ export function Header({
       inert={show === false}
       aria-hidden={show === false}
       height={show ? '2.3rem' : 0}
+      suppressHydrationWarning
     >
       <Grid
         gridTemplateColumns="2rem auto 2rem"
