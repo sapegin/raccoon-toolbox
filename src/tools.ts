@@ -32,6 +32,16 @@ export const tools: Tool[] = [
     ),
   },
   {
+    id: 'color-contrast',
+    name: 'Color contrast checker',
+    keywords: ['wcag', 'accessibility', 'a11y', 'contrast ratio', 'compliance'],
+    component: lazy(() =>
+      import('./tools/ColorContrast').then((m) => ({
+        default: m.ColorContrast,
+      }))
+    ),
+  },
+  {
     id: 'html-entity-encoder',
     name: 'HTML entity encoder/decoder',
     keywords: ['escape', 'unescape', 'entities', 'special characters'],

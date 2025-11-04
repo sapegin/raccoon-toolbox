@@ -12,6 +12,12 @@
     "keywords": ["hex", "rgb", "hsl", "css", "palette"]
   },
   {
+    "id": "color-contrast",
+    "name": "Color contrast checker",
+    "module": "ColorContrast",
+    "keywords": ["wcag", "accessibility", "a11y", "contrast ratio"]
+  },
+  {
     "id": "html-entity-encoder",
     "name": "HTML entity encoder/decoder",
     "module": "HtmlEntityEncoder",

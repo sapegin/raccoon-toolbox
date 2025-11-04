@@ -1,7 +1,6 @@
 import { IconBase } from './IconBase';
 
 interface IconInfo {
-  path?: string;
   children?: React.ReactElement;
   size?: number;
 }
@@ -51,6 +50,55 @@ const ICONS: Record<string, IconInfo> = {
       </>
     ),
   },
+  check: {
+    children: (
+      <path
+        d="M5 13L9 17L19 7"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    ),
+  },
+  xmark: {
+    children: (
+      <path
+        d="M6.75827 17.2426L12.0009 12M17.2435 6.75736L12.0009 12M12.0009 12L6.75827 6.75736M12.0009 12L17.2435 17.2426"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    ),
+  },
+  fish: {
+    children: (
+      <>
+        <path
+          d="M10.5 9C10.5 9 10.5 7 9.5 5C13.5 5 16 7.49997 16 7.49997C16 7.49997 19.5 7 22 12C21 17.5 16 18 16 18L12 20.5C12 20.5 12 19.5 12 17.5C9.5 16.5 6.99998 14 7 12.5C7.00001 11 10.5 9 10.5 9ZM10.5 9C10.5 9 11.5 8.5 12.5 8.5"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M2 9.5L3 12.5L2 15.5C2 15.5 7 15.5 7 12.5C7 9.5 2 9.5 2 9.5Z"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M17 12.01L17.01 11.9989"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </>
+    ),
+  },
 };
 
 export type IconName = keyof typeof ICONS;
@@ -61,7 +109,7 @@ interface Props {
 }
 
 export function Icon({ icon, size = DEFAULT_SIZE }: Props) {
-  const { path, size: baseSize, children } = ICONS[icon];
+  const { size: baseSize, children } = ICONS[icon];
   return (
     <IconBase
       viewBox={{
@@ -71,7 +119,6 @@ export function Icon({ icon, size = DEFAULT_SIZE }: Props) {
       width={size}
       height={size}
     >
-      {path && <path d={path} />}
       {children}
     </IconBase>
   );

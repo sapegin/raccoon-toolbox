@@ -6,6 +6,8 @@ import { Grid } from './Grid';
 import { Stack } from './Stack';
 import type { ReactNode } from 'react';
 
+// TODO: Click on the base color swatch should set this color
+
 /** Color picker with a preview swatches of the current and base colors. */
 export function ColorPickerWithPreview({
   label,
@@ -19,7 +21,7 @@ export function ColorPickerWithPreview({
   onChange: (color: Colord) => void;
 }) {
   return (
-    <Stack gap="s">
+    <Stack gap="s" height="100%">
       <VisuallyHidden as="h3">{label}</VisuallyHidden>
       <Grid
         gridTemplateColumns="1fr 1fr"

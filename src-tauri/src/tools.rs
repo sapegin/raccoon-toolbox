@@ -16,6 +16,10 @@ pub const TOOLS: &[Tool] = &[
         name: "Color converter",
     },
     Tool {
+        id: "color-contrast",
+        name: "Color contrast checker",
+    },
+    Tool {
         id: "html-entity-encoder",
         name: "HTML entity encoder/decoder",
     },
