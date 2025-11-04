@@ -50,6 +50,10 @@ function DragHandle({
   );
 }
 
+/**
+ * Color picker with areas to select saturation/brightness, hue, and alpha
+ * channel.
+ */
 export function ColorPicker({ color, onChange }: ColorPickerProps) {
   const saturationValueRef = useRef<HTMLDivElement>(null);
   const hueRef = useRef<HTMLDivElement>(null);

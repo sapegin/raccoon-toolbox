@@ -1,15 +1,13 @@
 import { useState, useCallback, useEffect } from 'react';
 import { colord, type Colord } from 'colord';
-import { Grid } from '../components/Grid';
 import { Button } from '../components/Button';
 import { VisuallyHidden } from '../../styled-system/jsx';
 import { usePersistentState } from '../hooks/usePersistentState';
 import { Stack } from '../components/Stack';
 import { Input } from '../components/Input';
-import { ColorPicker } from '../components/ColorPicker';
 import { CopyButton } from '../components/CopyButton';
-import { ColorSwatch } from '../components/ColorSwatch';
 import { Screen } from '../components/Screen';
+import { ColorPickerWithPreview } from '../components/ColorPickerWithPreview';
 
 const defaultColorHex = '#fa8072';
 const defaultColorRgb = 'rgba(250, 128, 114)';
@@ -159,20 +157,12 @@ export function ColorConverter() {
           value={`hsla(${Math.round(hsl.h)}, ${Math.round(hsl.s)}%, ${Math.round(hsl.l)}%, ${hsl.a.toFixed(2)})`}
         />
       </Stack>
-      <Stack gap="s">
-        <VisuallyHidden as="h3">Color picker</VisuallyHidden>
-        <Grid
-          gridTemplateColumns="1fr 1fr"
-          border="1px solid"
-          borderColor="lightBorder"
-          borderRadius="base"
-          overflow="hidden"
-        >
-          <ColorSwatch color={baseColor.toHex()} />
-          <ColorSwatch color={hex} />
-        </Grid>
-        <ColorPicker color={color} onChange={handleColorPickerChange} />
-      </Stack>
+      <ColorPickerWithPreview
+        label="Color picker"
+        color={color}
+        baseColor={baseColor}
+        onChange={handleColorPickerChange}
+      />
     </Screen>
   );
 }
