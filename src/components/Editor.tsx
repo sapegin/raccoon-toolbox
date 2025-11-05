@@ -53,12 +53,13 @@ interface EditorProps {
 const theme = EditorView.theme({
   '&': {
     height: '100%',
-    border: '1px solid var(--colors-light-border)',
+    border: 'var(--borders-input)',
     borderRadius: 'var(--radii-input)',
+    boxShadow: 'var(--shadows-input)',
   },
   '&.cm-focused': {
     outline: 0,
-    border: '1px solid var(--colors-active-border)',
+    border: 'var(--borders-input-focus)',
   },
   '.cm-scroller': {
     overflow: 'auto',
@@ -87,11 +88,13 @@ const theme = EditorView.theme({
     fontSize: 'var(--font-sizes-s)',
     color: 'var(--colors-text-foreground)',
     backgroundColor: 'var(--colors-text-background)',
-    border: '1px solid var(--colors-light-border)',
+    border: 'var(--borders-input)',
+    borderRadius: 'var(--radii-input)',
+    boxShadow: 'var(--shadows-input)',
     outline: 0,
   },
   '.cm-textfield:focus': {
-    borderColor: 'var(--colors-active-border)',
+    border: 'var(--borders-input-focus)',
   },
   '.cm-panel': {
     color: 'var(--colors-text-foreground)',
@@ -118,14 +121,16 @@ const theme = EditorView.theme({
     paddingInline: ' var(--spacing-s)',
     fontSize: 'var(--font-sizes-s)',
     color: 'var(--colors-secondary-button-foreground)',
-    backgroundImage: 'none',
-    backgroundColor: 'var(--colors-secondary-button-background)',
-    border: '1px solid var(--colors-secondary-button-background)',
+    backgroundImage: 'var(--gradients-button)',
+    border: 'var(--borders-button)',
     borderRadius: 'var(--radii-button)',
+    boxShadow: 'var(--shadows-button)',
     outline: 0,
+    textTransform: 'capitalize',
   },
   '.cm-button:hover': {
-    backgroundColor: 'var(--colors-secondary-button-hover-background)',
+    backgroundImage: 'var(--gradients-button-hover)',
+    border: 'var(--borders-button-hover)',
   },
   '.cm-button:focus-visible': {
     outline: '2px solid var(--colors-accent)',

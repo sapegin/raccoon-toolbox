@@ -100,7 +100,7 @@ export const colors = {
 const colorsDark = {
   background: darkTheme.gray180,
   text: darkTheme.gray090,
-  primary: lightTheme.blue,
+  primary: darkTheme.blue,
   accent: darkTheme.brightPink,
 
   accentBackground: darkTheme.brightPink,
@@ -197,10 +197,69 @@ export const theme = {
         },
         radii: {
           base: { value: '3px' },
-          input: { value: '3px' },
-          button: { value: '5px' },
+          input: { value: '4px' },
+          button: { value: '6px' },
+          search: { value: '24px' },
           large: { value: '3px' },
           xlarge: { value: '5px' },
+        },
+        borders: {
+          button: {
+            value: {
+              width: '1px',
+              style: 'solid',
+              color: 'var(--colors-light-border)',
+            },
+          },
+          buttonHover: {
+            value: {
+              width: '1px',
+              style: 'solid',
+              color: 'var(--colors-border)',
+            },
+          },
+          input: {
+            value: {
+              width: '1px',
+              style: 'solid',
+              color: 'var(--colors-light-border)',
+            },
+          },
+          inputFocus: {
+            value: {
+              width: '1px',
+              style: 'solid',
+              color: 'var(--colors-active-border)',
+            },
+          },
+        },
+        gradients: {
+          button: {
+            value:
+              'linear-gradient(to bottom, oklch(from var(--colors-secondary-button-background) calc(l + 0.08) c h), var(--colors-secondary-button-background))',
+          },
+          buttonHover: {
+            value:
+              'linear-gradient(to bottom, oklch(from var(--colors-secondary-button-hover-background) calc(l + 0.15) c h), var(--colors-secondary-button-hover-background))',
+          },
+          buttonPressed: {
+            value:
+              'linear-gradient(to bottom, var(--colors-button-background), oklch(from var(--colors-button-background) calc(l + 0.18) c h))',
+          },
+          accent: {
+            value:
+              'linear-gradient(to bottom, oklch(from var(--colors-accent-background) calc(l + 0.1) c h), var(--colors-accent-background))',
+          },
+        },
+        shadows: {
+          button: { value: '0 1px 1px #00000008' },
+          buttonPressed: {
+            value:
+              'inset 0 1px 2px #0002, inset 1px 0 2px #0002, inset -1px 0 2px #0002',
+          },
+          buttonText: { value: '0 1px 1px #fff' },
+          buttonPressedText: { value: '0 1px 1px #0002' },
+          input: { value: 'inset 0 1px 3px #0001' },
         },
         easings: {
           fade: { value: 'ease-out' },

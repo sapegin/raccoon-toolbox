@@ -16,8 +16,7 @@ const SelectBox = styled('select', {
     fontFamily: 'body',
     color: 'textForeground',
     backgroundColor: 'textBackground',
-    border: '1px solid',
-    borderColor: 'lightBorder',
+    border: 'input',
     borderRadius: 'button',
     cursor: 'pointer',
     _focusVisible: {

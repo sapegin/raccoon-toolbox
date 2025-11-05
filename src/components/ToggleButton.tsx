@@ -1,15 +1,12 @@
 import { Fragment, type ReactNode } from 'react';
 import { styled } from '../../styled-system/jsx';
 
-// TODO: More visible focus indicator
-
 const ToggleButtonContainer = styled('div', {
   base: {
     display: 'inline-flex',
-    overflow: 'hidden',
-    border: '1px solid',
-    borderColor: 'lightBorder',
+    border: 'button',
     borderRadius: 'button',
+    boxShadow: 'button',
   },
 });
 
@@ -30,31 +27,41 @@ const ToggleButtonLabel = styled('label', {
     height: 'calc(1.4rem - 2px)',
     px: 's',
     fontSize: 'medium',
-    color: 'textForeground',
-    backgroundColor: 'textBackground',
-    borderWidth: 0,
     userSelect: 'none',
+    borderWidth: 0,
     outline: 0,
     transitionDuration: 'hover',
     transitionTimingFunction: 'hover',
     transitionProperty: 'all',
     cursor: 'pointer',
-    _hover: {
-      backgroundColor: 'secondaryButtonHoverBackground',
-    },
     'input:focus-visible + &': {
       outline: 'focus',
-      outlineOffset: -2,
+      outlineOffset: 'token(borderWidths.focusOutlineOffset)',
       zIndex: 10,
+    },
+    // Inner border radius must be a bit smaller than the outer
+    '&:first-of-type': {
+      borderStartRadius: '5px',
+    },
+    '&:last-of-type': {
+      borderEndRadius: '5px',
     },
   },
   variants: {
     checked: {
       true: {
+        color: 'buttonForeground',
+        bgGradient: 'buttonPressed',
+        textShadow: 'buttonPressedText',
+        boxShadow: 'buttonPressed',
+      },
+      false: {
         color: 'secondaryButtonForeground',
-        backgroundColor: 'secondaryButtonBackground',
+        bgGradient: 'button',
+        textShadow: 'buttonText',
         _hover: {
           backgroundColor: 'secondaryButtonBackground',
+          bgGradient: 'buttonHover',
         },
       },
     },

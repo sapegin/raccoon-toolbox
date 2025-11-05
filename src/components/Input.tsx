@@ -15,12 +15,12 @@ export const InputBox = styled('input', {
     fontFamily: 'code',
     color: 'textForeground',
     backgroundColor: 'textBackground',
-    border: '1px solid',
-    borderColor: 'lightBorder',
+    border: 'input',
     borderRadius: 'input',
+    boxShadow: 'input',
     outline: 0,
     _focusVisible: {
-      borderColor: 'activeBorder',
+      border: 'inputFocus',
     },
     _disabled: {
       opacity: 0.6,

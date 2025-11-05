@@ -4,9 +4,11 @@ export const Button = styled('button', {
   base: {
     display: 'inline-block',
     fontFamily: 'body',
-    borderWidth: 0,
+    border: 'button',
     borderRadius: 'button',
+    boxShadow: 'button',
     lineHeight: '1rem',
+    textShadow: 'buttonText',
     textDecoration: 'none',
     userSelect: 'none',
     outline: 0,
@@ -40,9 +42,10 @@ export const Button = styled('button', {
       },
       secondary: {
         color: 'secondaryButtonForeground',
-        backgroundColor: 'secondaryButtonBackground',
+        bgGradient: 'button',
         _hover: {
-          backgroundColor: 'secondaryButtonHoverBackground',
+          bgGradient: 'buttonHover',
+          border: 'buttonHover',
         },
       },
     },

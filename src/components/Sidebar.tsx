@@ -5,42 +5,9 @@ import { Stack } from './Stack';
 import { tools } from '../tools';
 import { NavigationButton } from './NavigationButton';
 import { Box } from './Box';
-import { styled, VisuallyHidden } from '../../styled-system/jsx';
+import { VisuallyHidden } from '../../styled-system/jsx';
 import { getShortcut } from '../util/getShortcut';
-
-const SearchButton = styled('button', {
-  base: {
-    display: 'flex',
-    width: '100%',
-    alignItems: 'center',
-    gap: 's',
-    p: 's',
-    fontSize: 's',
-    color: 'secondaryTextForeground',
-    backgroundColor: 'textBackground',
-    borderWidth: '1px',
-    borderStyle: 'solid',
-    borderColor: 'lightBorder',
-    borderRadius: 'button',
-    cursor: 'pointer',
-    outline: 0,
-    transitionDuration: 'hover',
-    transitionTimingFunction: 'hover',
-    transitionProperty: 'all',
-    _hover: {
-      color: 'activeForeground',
-      borderColor: 'activeBorder',
-    },
-    _active: {
-      transform: 'translateY(1px)',
-    },
-    _focusVisible: {
-      outline: 'focus',
-      outlineOffset: 'token(borderWidths.focusOutlineOffset)',
-    },
-  },
-});
-
+import { SearchButton } from './SearchButton';
 export function Sidebar({
   onClose,
   onSearchOpen,
