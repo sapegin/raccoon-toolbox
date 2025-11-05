@@ -6,6 +6,8 @@ import { useHotkey } from '../hooks/useHotkey';
 import { css } from '../../styled-system/css';
 import { Text } from './Text';
 import { styled } from '../../styled-system/jsx';
+import { Icon } from './Icon';
+import { externalTools } from '../externalTools';
 
 interface CommandPaletteProps {
   isOpen: boolean;
@@ -55,15 +57,18 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
   const listRef = useRef<HTMLUListElement>(null);
   const navigate = useNavigate();
 
-  const filteredTools = tools.filter((tool) => {
-    const query = searchQuery.toLowerCase();
-    return (
+  const query = searchQuery.toLowerCase();
+  const filteredTools = tools.filter(
+    (tool) =>
       tool.name.toLowerCase().includes(query) ||
-      tool.keywords.some((keyword: string) =>
-        keyword.toLowerCase().includes(query)
-      )
-    );
-  });
+      tool.keywords.some((keyword) => keyword.toLowerCase().includes(query))
+  );
+  const filteredExternalTools = externalTools.filter(
+    (tool) =>
+      tool.name.toLowerCase().includes(query) ||
+      tool.keywords.some((keyword) => keyword.toLowerCase().includes(query))
+  );
+  const allFilteredTools = [...filteredTools, ...filteredExternalTools];
 
   useEffect(() => {
     if (isOpen) {
@@ -91,25 +96,28 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
     key: 'Escape',
   });
 
+  const handleToolSelection = (tool: (typeof allFilteredTools)[0]) => {
+    if ('url' in tool) {
+      window.open(tool.url, '_blank', 'noopener,noreferrer');
+    } else {
+      void navigate(`/${tool.id}/`);
+    }
+    onClose();
+  };
+
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'ArrowDown') {
       e.preventDefault();
       setSelectedIndex((prev) =>
-        prev < filteredTools.length - 1 ? prev + 1 : prev
+        prev < allFilteredTools.length - 1 ? prev + 1 : prev
       );
     } else if (e.key === 'ArrowUp') {
       e.preventDefault();
       setSelectedIndex((prev) => (prev > 0 ? prev - 1 : prev));
-    } else if (e.key === 'Enter' && filteredTools[selectedIndex]) {
+    } else if (e.key === 'Enter' && allFilteredTools[selectedIndex]) {
       e.preventDefault();
-      void navigate(`/${filteredTools[selectedIndex].id}/`);
-      onClose();
+      handleToolSelection(allFilteredTools[selectedIndex]);
     }
-  };
-
-  const handleToolClick = (toolId: string) => {
-    void navigate(`/${toolId}/`);
-    onClose();
   };
 
   if (isOpen === false) {
@@ -144,18 +152,18 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
           onKeyDown={handleKeyDown}
         />
         <Box maxHeight="400px" overflowY="auto">
-          {filteredTools.length > 0 ? (
+          {allFilteredTools.length > 0 ? (
             <ul
               ref={listRef}
               className={css({
                 listStyle: 'none',
               })}
             >
-              {filteredTools.map((tool, index) => (
-                <li key={tool.id}>
+              {allFilteredTools.map((tool, index) => (
+                <li key={tool.name}>
                   <CommandButton
                     type="button"
-                    onClick={() => handleToolClick(tool.id)}
+                    onClick={() => handleToolSelection(tool)}
                     onMouseEnter={() => setSelectedIndex(index)}
                     backgroundColor={
                       index === selectedIndex
@@ -163,7 +171,15 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
                         : 'transparent'
                     }
                   >
-                    {tool.name}
+                    <Box
+                      display="flex"
+                      alignItems="center"
+                      justifyContent="space-between"
+                      width="100%"
+                    >
+                      <span>{tool.name}</span>
+                      {'url' in tool && <Icon icon="external" size={16} />}
+                    </Box>
                   </CommandButton>
                 </li>
               ))}

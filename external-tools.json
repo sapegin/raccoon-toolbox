@@ -1,0 +1,97 @@
+[
+  {
+    "name": "CSS arrow generator",
+    "url": "https://cssarrowplease.com/",
+    "keywords": []
+  },
+  {
+    "name": "CSS background pattern generator",
+    "url": "https://web-toolbox.dev/en/tools/css-background-pattern-generator",
+    "keywords": ["backgrounds", "patterns"]
+  },
+  {
+    "name": "CSS background patterns",
+    "url": "https://www.magicpattern.design/tools/css-backgrounds",
+    "keywords": ["backgrounds", "generator"]
+  },
+  {
+    "name": "CSS clip-path maker (Clippy)",
+    "url": "https://bennettfeely.com/clippy/",
+    "keywords": ["shapes", "generator"]
+  },
+  {
+    "name": "CSS filter generator",
+    "url": "https://web-toolbox.dev/en/tools/css-filter-generator",
+    "keywords": ["filters"]
+  },
+  {
+    "name": "CSS gradient generator",
+    "url": "https://cssgradient.io/",
+    "keywords": ["backgrounds", "css", "gradients"]
+  },
+  {
+    "name": "CSS grid generator",
+    "url": "https://cssgrid-generator.netlify.app/",
+    "keywords": ["layout"]
+  },
+  {
+    "name": "CSS pattern generator",
+    "url": "http://www.patternify.com/",
+    "keywords": ["patterns", "css", "backgrounds"]
+  },
+  {
+    "name": "Easing functions generator",
+    "url": "https://easings.net/",
+    "keywords": ["easings", "animation", "timing", "css"]
+  },
+  {
+    "name": "Fancy backgrounds with CSS gradients",
+    "url": "https://css-pattern.com/",
+    "keywords": ["patterns"]
+  },
+  {
+    "name": "Flexbox playground",
+    "url": "https://flexbox.tech/",
+    "keywords": ["css", "layout"]
+  },
+  {
+    "name": "Jest cheat sheet",
+    "url": "https://github.com/sapegin/jest-cheat-sheet",
+    "keywords": ["testing", "unit tests", "jest"]
+  },
+  {
+    "name": "Named CSS colors",
+    "url": "https://sapegin.github.io/csscolors/",
+    "keywords": []
+  },
+  {
+    "name": "OKLCH color picker & converter",
+    "url": "https://oklch.com/",
+    "keywords": ["colors", "css"]
+  },
+  {
+    "name": "Palette generator (Huetone)",
+    "url": "https://huetone.ardov.me/",
+    "keywords": ["colors", "css"]
+  },
+  {
+    "name": "Smooth shadow generator",
+    "url": "https://smoothshadows.com/",
+    "keywords": ["shadows", "css"]
+  },
+  {
+    "name": "Subtle patterns",
+    "url": "https://www.toptal.com/designers/subtlepatterns/",
+    "keywords": ["textures", "backgrounds", "css"]
+  },
+  {
+    "name": "SVG grainy gradients generator",
+    "url": "https://www.fffuel.co/gggrain/",
+    "keywords": ["css"]
+  },
+  {
+    "name": "Vitest cheat sheet",
+    "url": "https://github.com/sapegin/vitest-cheat-sheet",
+    "keywords": ["testing", "unit tests", "vitest"]
+  }
+]

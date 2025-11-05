@@ -34,7 +34,7 @@ export const tools: Tool[] = [
   {
     id: 'color-contrast',
     name: 'Color contrast checker',
-    keywords: ['wcag', 'accessibility', 'a11y', 'contrast ratio', 'compliance'],
+    keywords: ['wcag', 'accessibility', 'a11y', 'contrast ratio'],
     component: lazy(() =>
       import('./tools/ColorContrast').then((m) => ({
         default: m.ColorContrast,
@@ -168,6 +168,16 @@ export const tools: Tool[] = [
     component: lazy(() =>
       import('./tools/XmlFormatter').then((m) => ({
         default: m.XmlFormatter,
+      }))
+    ),
+  },
+  {
+    id: 'extras',
+    name: 'More tools',
+    keywords: ['external', 'extras', 'links', 'resources'],
+    component: lazy(() =>
+      import('./tools/Extras').then((m) => ({
+        default: m.Extras,
       }))
     ),
   },

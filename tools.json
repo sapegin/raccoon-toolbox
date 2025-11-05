@@ -122,5 +122,11 @@
     "name": "XML formatter",
     "module": "XmlFormatter",
     "keywords": ["beautify", "pretty", "prettier", "indent", "svg"]
+  },
+  {
+    "id": "extras",
+    "name": "More tools",
+    "module": "Extras",
+    "keywords": ["external", "extras", "links", "resources"]
   }
 ]

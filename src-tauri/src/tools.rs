@@ -71,4 +71,8 @@ pub const TOOLS: &[Tool] = &[
         id: "xml-formatter",
         name: "XML formatter",
     },
+    Tool {
+        id: "extras",
+        name: "More tools",
+    },
 ];
