@@ -15,12 +15,14 @@
       {
         "title": "Raccoon Toolbox",
         "width": 1024,
-        "height": 768
+        "height": 768,
+        "label": "main"
       }
     ],
     "security": {
       "csp": null
-    }
+    },
+    "macOSPrivateApi": true
   },
   "bundle": {
     "active": true,
@@ -31,6 +33,9 @@
       "icons/128x128@2x.png",
       "icons/icon.icns",
       "icons/icon.ico"
-    ]
+    ],
+    "macOS": {
+      "minimumSystemVersion": "10.13"
+    }
   }
 }

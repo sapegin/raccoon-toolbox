@@ -7,6 +7,11 @@
     "core:default",
     "opener:default",
     "core:window:allow-set-title",
-    "core:event:allow-listen"
+    "core:window:allow-show",
+    "core:window:allow-set-focus",
+    "core:event:allow-listen",
+    "core:app:allow-default-window-icon",
+    "core:tray:default",
+    "core:menu:default"
   ]
 }
