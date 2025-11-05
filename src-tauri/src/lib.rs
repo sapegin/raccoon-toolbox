@@ -6,7 +6,7 @@ use tauri::{
         AboutMetadata, CheckMenuItemBuilder, MenuBuilder, MenuItemBuilder, PredefinedMenuItem,
         SubmenuBuilder,
     },
-    tray::{MouseButton, MouseButtonState, TrayIconBuilder, TrayIconEvent},
+    tray::TrayIconBuilder,
     AppHandle, Emitter, Manager, WindowEvent,
 };
 
@@ -167,29 +167,6 @@ pub fn run() {
                             app.exit(0);
                         } else if TOOLS.iter().any(|tool| tool.id == event_id) {
                             let _ = app.emit("select-tool", event_id);
-                            #[cfg(target_os = "macos")]
-                            {
-                                use cocoa::appkit::NSApplicationActivationPolicy;
-                                unsafe {
-                                    let ns_app = NSApplication::sharedApplication(cocoa::base::nil);
-                                    ns_app.setActivationPolicy_(NSApplicationActivationPolicy::NSApplicationActivationPolicyRegular);
-                                    ns_app.activateIgnoringOtherApps_(cocoa::base::YES);
-                                }
-                            }
-                            if let Some(window) = app.get_webview_window("main") {
-                                let _ = window.show();
-                                let _ = window.set_focus();
-                            }
-                        }
-                    })
-                    .on_tray_icon_event(|tray, event| {
-                        if let TrayIconEvent::Click {
-                            button: MouseButton::Left,
-                            button_state: MouseButtonState::Up,
-                            ..
-                        } = event
-                        {
-                            let app = tray.app_handle();
                             #[cfg(target_os = "macos")]
                             {
                                 use cocoa::appkit::NSApplicationActivationPolicy;
