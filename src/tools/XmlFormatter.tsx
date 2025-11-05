@@ -26,6 +26,7 @@ export function XmlFormatter() {
         const formatted = await prettier.format(value, {
           parser: 'xml',
           plugins: [prettierPluginXml],
+          xmlWhitespaceSensitivity: 'ignore',
         });
         setErrorMessage('');
         setOutput(formatted);
