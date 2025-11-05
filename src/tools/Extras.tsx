@@ -22,7 +22,7 @@ export function Extras() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={css({
-                  display: 'flex',
+                  display: 'inline-flex',
                   alignItems: 'baseline',
                   gap: 'xs',
                 })}
