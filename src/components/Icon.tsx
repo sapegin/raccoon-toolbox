@@ -118,6 +118,26 @@ const ICONS: Record<string, IconInfo> = {
       </>
     ),
   },
+  select: {
+    children: (
+      <>
+        <path
+          d="M17 8L12 3L7 8"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M17 16L12 21L7 16"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </>
+    ),
+  },
 };
 
 export type IconName = keyof typeof ICONS;

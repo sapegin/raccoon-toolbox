@@ -3,6 +3,7 @@ import { styled } from '../../styled-system/jsx';
 
 const ToggleButtonContainer = styled('div', {
   base: {
+    height: '1.5rem',
     display: 'inline-flex',
     border: 'button',
     borderRadius: 'button',
@@ -24,7 +25,7 @@ const ToggleButtonLabel = styled('label', {
     display: 'inline-flex',
     alignItems: 'center',
     justifyContent: 'center',
-    height: 'calc(1.4rem - 2px)',
+    height: '100%',
     px: 's',
     fontSize: 'medium',
     userSelect: 'none',

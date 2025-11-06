@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import {
+  Box,
   Flex,
   Stack,
   styled,
@@ -7,11 +8,15 @@ import {
 } from '../../styled-system/jsx';
 import { text } from './Text';
 import { visuallyHidden } from '../../styled-system/patterns/visually-hidden';
+import { Icon } from './Icon';
 
 const SelectBox = styled('select', {
   base: {
-    height: '1.4rem',
-    px: 's',
+    display: 'inline-block',
+    height: '1.5rem',
+    m: 0,
+    pl: 's',
+    pr: 'm',
     fontSize: 'medium',
     fontFamily: 'body',
     color: 'textForeground',
@@ -19,6 +24,7 @@ const SelectBox = styled('select', {
     border: 'input',
     borderRadius: 'button',
     cursor: 'pointer',
+    appearance: 'none',
     _focusVisible: {
       outline: 'focus',
       outlineOffset: 'token(borderWidths.focusOutlineOffset)',
@@ -63,13 +69,26 @@ export function Select({
           {accessibleLabel}
         </label>
       )}
-      <SelectBox id={id} {...props}>
-        {options.map((option) => (
-          <option key={option.value} value={option.value}>
-            {option.label}
-          </option>
-        ))}
-      </SelectBox>
+      <Flex position="relative">
+        <SelectBox id={id} {...props}>
+          {options.map((option) => (
+            <option key={option.value} value={option.value}>
+              {option.label}
+            </option>
+          ))}
+        </SelectBox>
+        <Box
+          position="absolute"
+          top={0}
+          bottom={0}
+          right="xxs"
+          zIndex={10}
+          display="flex"
+          alignItems="center"
+        >
+          <Icon icon="select" size={14} />
+        </Box>
+      </Flex>
     </Stack>
   );
 }

@@ -51,7 +51,7 @@ export const Button = styled('button', {
     },
     size: {
       small: {
-        height: '1.4rem',
+        height: '1.5rem',
         px: 's',
         fontSize: 'medium',
       },
