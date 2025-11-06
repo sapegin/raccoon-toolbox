@@ -21,7 +21,7 @@ export function Header({
       transition="height 0.08s ease-in-out"
       inert={show === false}
       aria-hidden={show === false}
-      height={show ? '2.3rem' : 0}
+      height={show ? '2.38rem' : 0}
       suppressHydrationWarning
     >
       <Grid

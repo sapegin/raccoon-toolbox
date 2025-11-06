@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import type { ComponentProps, ReactNode } from 'react';
 import { ErrorMessage } from './ErrorMessage';
 import { Flex } from './Flex';
 import { Stack } from './Stack';
@@ -13,7 +13,8 @@ export function Panel({
   errorMessage,
   fullHeight,
   children,
-}: {
+  ...props
+}: ComponentProps<typeof Stack> & {
   label?: ReactNode;
   accessibleLabel?: ReactNode;
   /** Actions shown on the right side of the label (such as Copy button). */
@@ -24,7 +25,12 @@ export function Panel({
   children: ReactNode;
 }) {
   return (
-    <Stack gap="xs" css={fullHeight ? { minHeight: 0, height: '100%' } : {}}>
+    <Stack
+      gap="xs"
+      p="s"
+      css={fullHeight ? { minHeight: 0, height: '100%' } : {}}
+      {...props}
+    >
       {accessibleLabel ? (
         <VisuallyHidden as="h3">{accessibleLabel}</VisuallyHidden>
       ) : (
@@ -37,7 +43,7 @@ export function Panel({
           )}
         </Flex>
       )}
-      <Box position="relative" height="100%" minHeight={0}>
+      <Box position="relative" height="100%" minHeight={0} overflow="auto">
         {errorMessage && (
           <ErrorMessage
             position="absolute"

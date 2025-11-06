@@ -10,7 +10,7 @@ import { Link } from '../../styled-system/jsx';
 export function Extras() {
   return (
     <Screen title="More tools">
-      <Stack gap="m" overflow="auto">
+      <Stack gap="m" overflow="auto" p="s">
         <Text>
           Other useful tools and resources. Press {getShortcut('K')} for search.
         </Text>

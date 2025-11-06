@@ -12,6 +12,16 @@ export interface Tool {
 
 export const tools: Tool[] = [
   {
+    id: 'aspect-ratio',
+    name: 'Aspect ratio calculator',
+    keywords: ['dimensions', 'width', 'height', 'videos', 'images'],
+    component: lazy(() =>
+      import('./tools/AspectRatioCalculator').then((m) => ({
+        default: m.AspectRatioCalculator,
+      }))
+    ),
+  },
+  {
     id: 'base64-encoder',
     name: 'Base64 encoder/decoder',
     keywords: ['binary', 'data', 'image'],

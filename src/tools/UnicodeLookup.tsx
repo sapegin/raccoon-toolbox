@@ -90,7 +90,7 @@ export function UnicodeLookup() {
   }, [searchQuery]);
 
   return (
-    <Screen gridTemplateRows="auto 1fr">
+    <Screen gridTemplateRows="auto 1fr" p="s">
       <Input
         id="search"
         label="Search by name or code"

@@ -133,7 +133,7 @@ export function RegExpTester() {
 
   return (
     <Screen gridTemplateRows="1fr 1fr">
-      <Stack gap="m" minHeight={0} height="100%">
+      <Stack gap="m" minHeight={0} height="100%" p="s">
         <Input
           id="regexp-input"
           label="Regular expression"
@@ -147,7 +147,7 @@ export function RegExpTester() {
             </Button>
           }
         />
-        <Panel fullHeight label="Text">
+        <Panel fullHeight label="Text" p={0}>
           <Editor
             label="Text"
             value={textInput}
@@ -156,7 +156,13 @@ export function RegExpTester() {
           />
         </Panel>
       </Stack>
-      <Grid gridTemplateColumns="1fr 1fr" gap="m" minHeight={0} height="100%">
+      <Grid
+        gridTemplateColumns="1fr 1fr"
+        gap="m"
+        minHeight={0}
+        height="100%"
+        p="s"
+      >
         <Stack gap="m" minHeight={0} height="100%">
           <Input
             id="formatter"
@@ -169,6 +175,7 @@ export function RegExpTester() {
             fullHeight
             label="Matches"
             actions={<CopyButton value={output} />}
+            p={0}
           >
             <Editor label="Matches" value={output} editable={false} />
           </Panel>

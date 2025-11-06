@@ -1,5 +1,11 @@
 [
   {
+    "id": "aspect-ratio",
+    "name": "Aspect ratio calculator",
+    "module": "AspectRatioCalculator",
+    "keywords": ["dimensions", "width", "height", "videos", "images"]
+  },
+  {
     "id": "base64-encoder",
     "name": "Base64 encoder/decoder",
     "module": "Base64Encoder",

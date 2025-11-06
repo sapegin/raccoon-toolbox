@@ -2,7 +2,6 @@ import { Fragment } from 'react';
 import { Table } from './Table';
 import { Panel } from './Panel';
 import { Text } from './Text';
-import { Box } from './Box';
 
 const cheatSheetData = [
   {
@@ -87,41 +86,39 @@ const cheatSheetData = [
 export function RegExpCheatSheet() {
   return (
     <Panel fullHeight label="Cheat sheet">
-      <Box overflowY="auto" height="100%">
-        <Table variant="dense">
-          <thead>
-            <tr>
-              <th>Description</th>
-              <th>Syntax</th>
-            </tr>
-          </thead>
-          <tbody>
-            {cheatSheetData.map(({ section, items }) => (
-              <Fragment key={section}>
-                <tr>
-                  <th colSpan={2}>
-                    <Text mt="m" variant="bold">
-                      {section}
+      <Table variant="dense">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Syntax</th>
+          </tr>
+        </thead>
+        <tbody>
+          {cheatSheetData.map(({ section, items }) => (
+            <Fragment key={section}>
+              <tr>
+                <th colSpan={2}>
+                  <Text mt="m" variant="bold">
+                    {section}
+                  </Text>
+                </th>
+              </tr>
+              {items.map(({ description, syntax }) => (
+                <tr key={description}>
+                  <td>
+                    <Text>{description}</Text>
+                  </td>
+                  <td>
+                    <Text as="code" variant="code">
+                      {syntax}
                     </Text>
-                  </th>
+                  </td>
                 </tr>
-                {items.map(({ description, syntax }) => (
-                  <tr key={description}>
-                    <td>
-                      <Text>{description}</Text>
-                    </td>
-                    <td>
-                      <Text as="code" variant="code">
-                        {syntax}
-                      </Text>
-                    </td>
-                  </tr>
-                ))}
-              </Fragment>
-            ))}
-          </tbody>
-        </Table>
-      </Box>
+              ))}
+            </Fragment>
+          ))}
+        </tbody>
+      </Table>
     </Panel>
   );
 }

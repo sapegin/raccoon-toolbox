@@ -9,6 +9,7 @@ import { CopyButton } from '../components/CopyButton';
 import { Screen } from '../components/Screen';
 import { ColorPickerWithPreview } from '../components/ColorPickerWithPreview';
 import { parseColorInput } from '../util/parseColorInput';
+import { Panel } from '../components/Panel';
 
 const defaultColorHex = '#fa8072';
 const defaultColorRgb = 'rgba(250, 128, 114)';
@@ -76,44 +77,47 @@ export function ColorConverter() {
 
   return (
     <Screen gridTemplateColumns="20rem 1fr">
-      <Stack gap="m">
-        <VisuallyHidden as="h3">Input</VisuallyHidden>
-        <Input
-          id="input"
-          label="Input"
-          placeholder={`Try “${defaultColorHex}” or “${defaultColorRgb}”`}
-          type="text"
-          value={input}
-          onChange={(e) => handleInputChange(e.target.value)}
-          errorMessage={errorMessage}
-          actions={
-            <Button onClick={handleClear} disabled={input === ''}>
-              Clear
-            </Button>
-          }
+      <Panel accessibleLabel="Input" fullHeight>
+        <Stack gap="m">
+          <Input
+            id="input"
+            label="Input"
+            placeholder={`Try “${defaultColorHex}” or “${defaultColorRgb}”`}
+            type="text"
+            value={input}
+            onChange={(e) => handleInputChange(e.target.value)}
+            errorMessage={errorMessage}
+            actions={
+              <Button onClick={handleClear} disabled={input === ''}>
+                Clear
+              </Button>
+            }
+          />
+          <VisuallyHidden as="h3">Output</VisuallyHidden>
+          <Output label="Hex" value={hex} />
+          <Output label="RGB" value={`rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`} />
+          <Output
+            label="RGBA"
+            value={`rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${rgb.a.toFixed(2)})`}
+          />
+          <Output
+            label="HSL"
+            value={`hsl(${Math.round(hsl.h)}, ${Math.round(hsl.s)}%, ${Math.round(hsl.l)}%)`}
+          />
+          <Output
+            label="HSLA"
+            value={`hsla(${Math.round(hsl.h)}, ${Math.round(hsl.s)}%, ${Math.round(hsl.l)}%, ${hsl.a.toFixed(2)})`}
+          />
+        </Stack>
+      </Panel>
+      <Panel accessibleLabel="Color picker" fullHeight>
+        <ColorPickerWithPreview
+          label="Color picker"
+          color={color}
+          baseColor={baseColor}
+          onChange={handleColorPickerChange}
         />
-        <VisuallyHidden as="h3">Output</VisuallyHidden>
-        <Output label="Hex" value={hex} />
-        <Output label="RGB" value={`rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`} />
-        <Output
-          label="RGBA"
-          value={`rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${rgb.a.toFixed(2)})`}
-        />
-        <Output
-          label="HSL"
-          value={`hsl(${Math.round(hsl.h)}, ${Math.round(hsl.s)}%, ${Math.round(hsl.l)}%)`}
-        />
-        <Output
-          label="HSLA"
-          value={`hsla(${Math.round(hsl.h)}, ${Math.round(hsl.s)}%, ${Math.round(hsl.l)}%, ${hsl.a.toFixed(2)})`}
-        />
-      </Stack>
-      <ColorPickerWithPreview
-        label="Color picker"
-        color={color}
-        baseColor={baseColor}
-        onChange={handleColorPickerChange}
-      />
+      </Panel>
     </Screen>
   );
 }

@@ -8,6 +8,10 @@ pub struct Tool {
 
 pub const TOOLS: &[Tool] = &[
     Tool {
+        id: "aspect-ratio",
+        name: "Aspect ratio calculator",
+    },
+    Tool {
         id: "base64-encoder",
         name: "Base64 encoder/decoder",
     },
