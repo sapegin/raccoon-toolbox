@@ -53,12 +53,16 @@ interface EditorProps {
 const theme = EditorView.theme({
   '&': {
     height: '100%',
+  },
+  '.editor_in-page &': {
     border: 'var(--borders-input)',
     borderRadius: 'var(--radii-input)',
     boxShadow: 'var(--shadows-input)',
   },
   '&.cm-focused': {
     outline: 0,
+  },
+  '.editor_in-page &.cm-focused': {
     border: 'var(--borders-input-focus)',
   },
   '.cm-scroller': {
@@ -205,6 +209,19 @@ export function Editor({
   const viewRef = useRef<EditorView | null>(null);
   const [isFullScreen, setIsFullScreen] = useState(false);
 
+  const toggleFullScreen = () => {
+    setIsFullScreen((prev) => prev === false);
+    return true;
+  };
+
+  const exitFullScreen = () => {
+    if (isFullScreen) {
+      setIsFullScreen(false);
+      return true;
+    }
+    return false;
+  };
+
   useEffect(() => {
     if (editorRef.current === null) {
       return;
@@ -223,19 +240,6 @@ export function Editor({
     const matchHighlighter = highlightRegexp
       ? getMatchHighlighter(highlightRegexp)
       : undefined;
-
-    const toggleFullScreen = () => {
-      setIsFullScreen((prev) => prev === false);
-      return true;
-    };
-
-    const exitFullScreen = () => {
-      if (isFullScreen) {
-        setIsFullScreen(false);
-        return true;
-      }
-      return false;
-    };
 
     const state = EditorState.create({
       doc: value,
@@ -278,7 +282,7 @@ export function Editor({
       view.destroy();
       viewRef.current = null;
     };
-  }, [language, editable, onChange, highlightRegexp, isFullScreen]);
+  }, [language, editable, onChange, highlightRegexp]);
 
   useEffect(() => {
     const view = viewRef.current;
@@ -299,10 +303,11 @@ export function Editor({
       ref={editorRef}
       height="100%"
       minHeight={0}
+      backgroundColor="textBackground"
       position={isFullScreen ? 'fixed' : undefined}
       inset={isFullScreen ? '0' : undefined}
       zIndex={isFullScreen ? '1000' : undefined}
-      backgroundColor={isFullScreen ? 'var(--colors-ui-background)' : undefined}
+      className={isFullScreen ? 'editor_fullscreen' : 'editor_in-page'}
     />
   );
 }
