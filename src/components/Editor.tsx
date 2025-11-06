@@ -23,7 +23,7 @@ import {
   MatchDecorator,
 } from '@codemirror/view';
 import { EditorState } from '@codemirror/state';
-import { defaultKeymap } from '@codemirror/commands';
+import { defaultKeymap, history, historyKeymap } from '@codemirror/commands';
 import { useRef, useEffect } from 'react';
 import { Box } from './Box';
 
@@ -229,13 +229,15 @@ export function Editor({
         languageExtension,
         updateListener,
         matchHighlighter,
+        history(),
         lineNumbers(),
         highlightActiveLine(),
         highlightWhitespace(),
         search(),
         keymap.of([{ key: 'Mod-g', run: gotoLine }]),
-        keymap.of(defaultKeymap),
+        keymap.of(historyKeymap),
         keymap.of(searchKeymap),
+        keymap.of(defaultKeymap),
         EditorView.lineWrapping,
         EditorView.editable.of(editable),
         EditorView.contentAttributes.of({
