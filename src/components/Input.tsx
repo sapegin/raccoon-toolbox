@@ -19,11 +19,17 @@ export const InputBox = styled('input', {
     borderRadius: 'input',
     boxShadow: 'input',
     outline: 0,
+    // Hide up/down arrows in Firefox
+    '-moz-appearance': 'textfield',
     _focusVisible: {
       border: 'inputFocus',
     },
     _disabled: {
       opacity: 0.6,
+    },
+    // Style up/down arrows in other browsers
+    '&::-webkit-inner-spin-button': {
+      cursor: 'pointer',
     },
   },
 });

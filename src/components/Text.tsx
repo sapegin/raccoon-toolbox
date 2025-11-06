@@ -31,16 +31,16 @@ export const text = cva({
       large: {
         fontFamily: 'body',
         fontSize: 'l',
-        fontWeight: 'medium',
         lineHeight: 'heading',
         letterSpacing: 'base',
+        color: 'activeForeground',
       },
       xlarge: {
         fontFamily: 'body',
         fontSize: 'xxxl',
-        fontWeight: 'medium',
         lineHeight: 'heading',
         letterSpacing: 'base',
+        color: 'activeForeground',
       },
       code: {
         fontFamily: 'code',
