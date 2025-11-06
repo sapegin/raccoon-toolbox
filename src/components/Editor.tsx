@@ -24,7 +24,7 @@ import {
 } from '@codemirror/view';
 import { EditorState } from '@codemirror/state';
 import { defaultKeymap, history, historyKeymap } from '@codemirror/commands';
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import { Box } from './Box';
 
 const languageExtensions = {
@@ -203,6 +203,7 @@ export function Editor({
 }: EditorProps) {
   const editorRef = useRef<HTMLDivElement>(null);
   const viewRef = useRef<EditorView | null>(null);
+  const [isFullScreen, setIsFullScreen] = useState(false);
 
   useEffect(() => {
     if (editorRef.current === null) {
@@ -223,6 +224,19 @@ export function Editor({
       ? getMatchHighlighter(highlightRegexp)
       : undefined;
 
+    const toggleFullScreen = () => {
+      setIsFullScreen((prev) => prev === false);
+      return true;
+    };
+
+    const exitFullScreen = () => {
+      if (isFullScreen) {
+        setIsFullScreen(false);
+        return true;
+      }
+      return false;
+    };
+
     const state = EditorState.create({
       doc: value,
       extensions: [
@@ -234,7 +248,11 @@ export function Editor({
         highlightActiveLine(),
         highlightWhitespace(),
         search(),
-        keymap.of([{ key: 'Mod-g', run: gotoLine }]),
+        keymap.of([
+          { key: 'Alt-Enter', run: toggleFullScreen },
+          { key: 'Escape', run: exitFullScreen },
+          { key: 'Mod-g', run: gotoLine },
+        ]),
         keymap.of(historyKeymap),
         keymap.of(searchKeymap),
         keymap.of(defaultKeymap),
@@ -260,7 +278,7 @@ export function Editor({
       view.destroy();
       viewRef.current = null;
     };
-  }, [language, editable, onChange, highlightRegexp]);
+  }, [language, editable, onChange, highlightRegexp, isFullScreen]);
 
   useEffect(() => {
     const view = viewRef.current;
@@ -276,5 +294,15 @@ export function Editor({
     }
   }, [value]);
 
-  return <Box ref={editorRef} height="100%" minHeight={0} />;
+  return (
+    <Box
+      ref={editorRef}
+      height="100%"
+      minHeight={0}
+      position={isFullScreen ? 'fixed' : undefined}
+      inset={isFullScreen ? '0' : undefined}
+      zIndex={isFullScreen ? '1000' : undefined}
+      backgroundColor={isFullScreen ? 'var(--colors-ui-background)' : undefined}
+    />
+  );
 }
