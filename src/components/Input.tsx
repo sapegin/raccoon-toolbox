@@ -20,7 +20,7 @@ export const InputBox = styled('input', {
     boxShadow: 'input',
     outline: 0,
     // Hide up/down arrows in Firefox
-    '-moz-appearance': 'textfield',
+    appearance: 'textfield',
     _focusVisible: {
       border: 'inputFocus',
     },
