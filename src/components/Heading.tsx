@@ -3,7 +3,7 @@ import { Box, type BoxProps } from './Box';
 
 const heading = cva({
   base: {
-    color: 'text',
+    color: 'activeForeground',
     fontFamily: 'heading',
     fontWeight: 'heading',
     lineHeight: 'heading',
@@ -12,13 +12,13 @@ const heading = cva({
   variants: {
     level: {
       1: {
-        fontSize: 'xxxl',
+        fontSize: 'xl',
       },
       2: {
-        fontSize: 'xxl',
+        fontSize: 'l',
       },
       3: {
-        fontSize: 'xl',
+        fontSize: 'm',
       },
     },
   },

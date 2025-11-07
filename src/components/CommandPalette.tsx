@@ -4,7 +4,7 @@ import { tools } from '../tools';
 import { Box } from './Box';
 import { css } from '../../styled-system/css';
 import { Text } from './Text';
-import { styled } from '../../styled-system/jsx';
+import { styled, VisuallyHidden } from '../../styled-system/jsx';
 import { Icon } from './Icon';
 import { externalTools } from '../externalTools';
 import { Modal } from './Modal';
@@ -117,54 +117,71 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
   };
 
   return (
-    <Modal isOpen={isOpen} onClose={onClose} dialogRef={dialogRef}>
+    <Modal
+      id="search-dialog"
+      label="Search"
+      isOpen={isOpen}
+      onClose={onClose}
+      dialogRef={dialogRef}
+    >
       <SearchInput
         ref={inputRef}
+        id="search-dialog-input"
         type="text"
+        aria-label="Search tools"
         placeholder="Search tools…"
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
         onKeyDown={handleKeyDown}
       />
-      <Box maxHeight="400px" overflowY="auto">
-        {allFilteredTools.length > 0 ? (
-          <ul
-            ref={listRef}
-            className={css({
-              listStyle: 'none',
-            })}
-          >
-            {allFilteredTools.map((tool, index) => (
-              <li key={tool.name}>
-                <CommandButton
-                  type="button"
-                  onClick={() => handleToolSelection(tool)}
-                  onMouseEnter={() => setSelectedIndex(index)}
-                  backgroundColor={
-                    index === selectedIndex
-                      ? 'activeBackground'
-                      : 'transparent'
-                  }
-                >
-                  <Box
-                    display="flex"
-                    alignItems="center"
-                    justifyContent="space-between"
-                    width="100%"
+      <output htmlFor="search-dialog-input">
+        <Box maxHeight="400px" overflowY="auto">
+          {allFilteredTools.length > 0 ? (
+            <ul
+              ref={listRef}
+              className={css({
+                listStyle: 'none',
+              })}
+            >
+              {allFilteredTools.map((tool, index) => (
+                <li key={tool.name}>
+                  <CommandButton
+                    type="button"
+                    onClick={() => handleToolSelection(tool)}
+                    onMouseEnter={() => setSelectedIndex(index)}
+                    backgroundColor={
+                      index === selectedIndex
+                        ? 'activeBackground'
+                        : 'transparent'
+                    }
                   >
-                    <span>{tool.name}</span>
-                    {'url' in tool && <Icon icon="external" size={16} />}
-                  </Box>
-                </CommandButton>
-              </li>
-            ))}
-          </ul>
-        ) : (
-          <Text p="m" color="secondaryTextForeground">
-            No tools found
-          </Text>
-        )}
-      </Box>
+                    <Box
+                      display="flex"
+                      alignItems="center"
+                      justifyContent="space-between"
+                      width="100%"
+                    >
+                      <span>{tool.name}</span>
+                      {'url' in tool && (
+                        <>
+                          <VisuallyHidden as="span">
+                            (external link)
+                          </VisuallyHidden>
+                          <Icon icon="external" size={16} />
+                        </>
+                      )}
+                    </Box>
+                  </CommandButton>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <Text p="m" color="secondaryTextForeground">
+              No tools found
+            </Text>
+          )}
+        </Box>
+      </output>
     </Modal>
   );
 }

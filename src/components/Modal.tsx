@@ -1,14 +1,17 @@
 import { useEffect, useRef, type ReactNode } from 'react';
-import { styled } from '../../styled-system/jsx';
+import { styled, VisuallyHidden } from '../../styled-system/jsx';
 import { IconButton } from './IconButton';
 import { Icon } from './Icon';
 
 interface ModalProps {
+  id: string;
+  label: string;
   isOpen: boolean;
   children: ReactNode;
   showCloseButton?: boolean;
   width?: string;
   maxWidth?: string;
+  maxHeight?: string;
   dialogRef?: React.RefObject<HTMLDialogElement | null>;
   onClose: () => void;
 }
@@ -35,12 +38,15 @@ const StyledDialog = styled('dialog', {
 });
 
 export function Modal({
+  id,
+  label,
   isOpen,
   onClose,
   children,
   showCloseButton = false,
   width = '90%',
   maxWidth = '600px',
+  maxHeight = '80vh',
   dialogRef: externalDialogRef,
 }: ModalProps) {
   const internalDialogRef = useRef<HTMLDialogElement>(null);
@@ -81,8 +87,11 @@ export function Modal({
   return (
     <StyledDialog
       ref={dialogRef}
+      id={id}
+      aria-labelledby={`${id}-label`}
       width={width}
       maxWidth={maxWidth}
+      maxHeight={maxHeight}
       closedby="any"
     >
       {showCloseButton && (
@@ -99,6 +108,9 @@ export function Modal({
           <Icon icon="xmark" size={20} />
         </IconButton>
       )}
+      <VisuallyHidden as="h1" id={`${id}-label`}>
+        {label}
+      </VisuallyHidden>
       {children}
     </StyledDialog>
   );

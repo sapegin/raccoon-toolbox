@@ -27,6 +27,8 @@ import { defaultKeymap, history, historyKeymap } from '@codemirror/commands';
 import { useRef, useEffect, useState } from 'react';
 import { Box } from './Box';
 
+// TODO: Disabled Cmd+/ for commenting as it conflicts with the app toggle sidebar
+
 const languageExtensions = {
   css,
   html,

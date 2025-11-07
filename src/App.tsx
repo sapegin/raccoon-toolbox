@@ -9,6 +9,7 @@ import { useHotkey } from './hooks/useHotkey';
 import { Router } from './components/Router';
 import { Spinner } from './components/Spinner';
 import { CommandPalette } from './components/CommandPalette';
+import { HotkeysDialog } from './components/HotkeysDialog';
 import { AppLayout } from './components/AppLayout';
 import { tools } from './tools';
 import './styles.css';
@@ -21,6 +22,7 @@ export function App() {
     true
   );
   const [isCommandPaletteOpen, setIsCommandPaletteOpen] = useState(false);
+  const [isHotkeysDialogOpen, setIsHotkeysDialogOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
   const currentToolId = location.pathname.replaceAll(/[^-\w]/g, '');
@@ -37,6 +39,11 @@ export function App() {
   const toggleCommandPalette = useCallback(
     () => setIsCommandPaletteOpen((prev) => prev === false),
     [setIsCommandPaletteOpen]
+  );
+
+  const toggleHotkeysDialog = useCallback(
+    () => setIsHotkeysDialogOpen((prev) => prev === false),
+    [setIsHotkeysDialogOpen]
   );
 
   // Set the selected tool name to the window title
@@ -118,11 +125,20 @@ export function App() {
     ctrlKey: false,
   });
 
+  // Handle keyboard shortcut for toggling hotkeys dialog
+  useHotkey(toggleHotkeysDialog, {
+    key: 'F1',
+  });
+
   return (
     <>
       <CommandPalette
         isOpen={isCommandPaletteOpen}
         onClose={toggleCommandPalette}
+      />
+      <HotkeysDialog
+        isOpen={isHotkeysDialogOpen}
+        onClose={toggleHotkeysDialog}
       />
       <AppLayout
         title={currentToolName}
