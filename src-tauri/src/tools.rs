@@ -44,6 +44,14 @@ pub const TOOLS: &[Tool] = &[
         name: "CSV to JSON converter",
     },
     Tool {
+        id: "json-to-yaml",
+        name: "JSON to YAML converter",
+    },
+    Tool {
+        id: "yaml-to-json",
+        name: "YAML to JSON converter",
+    },
+    Tool {
         id: "key-codes",
         name: "Key code lookup",
     },

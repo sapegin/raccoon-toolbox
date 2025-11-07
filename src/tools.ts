@@ -84,7 +84,7 @@ export const tools: Tool[] = [
   {
     id: 'json-to-csv',
     name: 'JSON to CSV converter',
-    keywords: ['export', 'spreadsheet', 'table', 'data'],
+    keywords: ['spreadsheet', 'table', 'data'],
     component: lazy(() =>
       import('./tools/JsonToCsv').then((m) => ({
         default: m.JsonToCsv,
@@ -94,10 +94,30 @@ export const tools: Tool[] = [
   {
     id: 'csv-to-json',
     name: 'CSV to JSON converter',
-    keywords: ['import', 'spreadsheet', 'table', 'data', 'parse'],
+    keywords: ['spreadsheet', 'table', 'data'],
     component: lazy(() =>
       import('./tools/CsvToJson').then((m) => ({
         default: m.CsvToJson,
+      }))
+    ),
+  },
+  {
+    id: 'json-to-yaml',
+    name: 'JSON to YAML converter',
+    keywords: ['yaml', 'yml', 'data', 'config'],
+    component: lazy(() =>
+      import('./tools/JsonToYaml').then((m) => ({
+        default: m.JsonToYaml,
+      }))
+    ),
+  },
+  {
+    id: 'yaml-to-json',
+    name: 'YAML to JSON converter',
+    keywords: ['yaml', 'yml', 'data', 'config'],
+    component: lazy(() =>
+      import('./tools/YamlToJson').then((m) => ({
+        default: m.YamlToJson,
       }))
     ),
   },
