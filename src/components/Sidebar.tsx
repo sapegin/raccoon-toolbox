@@ -39,7 +39,7 @@ export function Sidebar({
         borderColor="lightBorder"
         backgroundColor="uiBackground"
       >
-        <Flex justifyContent="space-between" gap="s" p="s">
+        <Flex justifyContent="space-between" gap="s" pt="s" pb="xs" px="s">
           <SearchButton type="button" onClick={onSearchOpen}>
             <Icon icon="search" size={18} />
             Search
@@ -54,7 +54,7 @@ export function Sidebar({
             <Icon icon="sidebar" />
           </IconButton>
         </Flex>
-        <Stack as="ul" gap="xs" py="s" px="xs" overflowY="auto">
+        <Stack as="ul" gap="xs" p="xs" overflowY="auto">
           {tools.map((tool) => (
             <li key={tool.id}>
               <NavigationButton to={`/${tool.id}/`}>
@@ -65,8 +65,8 @@ export function Sidebar({
         </Stack>
         <Grid
           gridTemplateColumns="1fr 1fr"
-          py="s"
-          px="xs"
+          mt="auto"
+          p="xs"
           borderWidth="1px 0 0 0"
           borderStyle="solid"
           borderColor="lightBorder"
