@@ -9,6 +9,8 @@ import { Box } from './Box';
 import { Grid, VisuallyHidden } from '../../styled-system/jsx';
 import { getShortcut } from '../util/getShortcut';
 import { SearchButton } from './SearchButton';
+import { isTauri } from '@tauri-apps/api/core';
+
 export function Sidebar({
   onClose,
   onSearchOpen,
@@ -63,27 +65,29 @@ export function Sidebar({
             </li>
           ))}
         </Stack>
-        <Grid
-          gridTemplateColumns="1fr 1fr"
-          mt="auto"
-          p="xs"
-          borderWidth="1px 0 0 0"
-          borderStyle="solid"
-          borderColor="lightBorder"
-        >
-          <Box>
-            <SidebarLink onClick={onHotkeysOpen}>Hotkeys</SidebarLink>
-          </Box>
-          <SidebarLink href="https://github.com/sapegin/raccoon-toolbox/issues">
-            Report issue
-          </SidebarLink>
-          <SidebarLink href="https://buymeacoffee.com/sapegin">
-            Buy me coffee
-          </SidebarLink>
-          <SidebarLink href="https://sapegin.me/book/">
-            Read my book
-          </SidebarLink>
-        </Grid>
+        {isTauri() === false && (
+          <Grid
+            gridTemplateColumns="1fr 1fr"
+            mt="auto"
+            p="xs"
+            borderWidth="1px 0 0 0"
+            borderStyle="solid"
+            borderColor="lightBorder"
+          >
+            <Box>
+              <SidebarLink onClick={onHotkeysOpen}>Hotkeys</SidebarLink>
+            </Box>
+            <SidebarLink href="https://github.com/sapegin/raccoon-toolbox/issues">
+              Report issue
+            </SidebarLink>
+            <SidebarLink href="https://buymeacoffee.com/sapegin">
+              Buy me coffee
+            </SidebarLink>
+            <SidebarLink href="https://sapegin.me/book/">
+              Read my book
+            </SidebarLink>
+          </Grid>
+        )}
       </Stack>
     </Box>
   );
