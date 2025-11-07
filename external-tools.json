@@ -1,5 +1,20 @@
 [
   {
+    "name": "Convert JSON to code (Quicktype)",
+    "url": "https://app.quicktype.io/",
+    "keywords": [
+      "javascript",
+      "typescript",
+      "converter",
+      "generator",
+      "types",
+      "object",
+      "interface",
+      "schema",
+      "model"
+    ]
+  },
+  {
     "name": "CSS arrow generator",
     "url": "https://cssarrowplease.com/",
     "keywords": []
@@ -58,6 +73,11 @@
     "name": "Jest cheat sheet",
     "url": "https://github.com/sapegin/jest-cheat-sheet",
     "keywords": ["testing", "unit tests", "jest"]
+  },
+  {
+    "name": "JSON Web Token debugger",
+    "url": "https://www.jwt.io/",
+    "keywords": ["JWT", "decoder", "encoder"]
   },
   {
     "name": "Named CSS colors",
