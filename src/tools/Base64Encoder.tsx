@@ -110,7 +110,7 @@ export function Base64Encoder() {
           </>
         }
       >
-        <Editor label="Output" value={output} editable={false} />
+        <Editor label="Output" value={output} />
       </Panel>
     </Screen>
   );

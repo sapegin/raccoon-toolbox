@@ -49,12 +49,14 @@ export function Sidebar({
               {getShortcut('K')}
             </Box>
           </SearchButton>
-          <IconButton
-            label={`Close sidebar (${getShortcut('/')})`}
-            onClick={onClose}
-          >
-            <Icon icon="sidebar" />
-          </IconButton>
+          <Flex alignItems="center" justifyContent="center">
+            <IconButton
+              label={`Close sidebar (${getShortcut('/')})`}
+              onClick={onClose}
+            >
+              <Icon icon="sidebar" />
+            </IconButton>
+          </Flex>
         </Flex>
         <Stack as="ul" gap="xs" p="xs" overflowY="auto">
           {tools.map((tool) => (

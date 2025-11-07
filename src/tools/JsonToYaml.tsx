@@ -25,6 +25,12 @@ export function JsonToYaml() {
 
   const handleChange = useCallback((value: string) => {
     setInput(value);
+    if (value === '') {
+      setErrorMessage('');
+      setOutput('');
+      return;
+    }
+
     try {
       const parsed: unknown = JSON.parse(stripJsonComments(value));
       const yaml = jsonToYaml(parsed);

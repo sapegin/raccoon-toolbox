@@ -21,6 +21,9 @@ export const InputBox = styled('input', {
     outline: 0,
     // Hide up/down arrows in Firefox
     appearance: 'textfield',
+    _placeholder: {
+      color: 'secondaryTextForeground',
+    },
     _focusVisible: {
       border: 'inputFocus',
     },

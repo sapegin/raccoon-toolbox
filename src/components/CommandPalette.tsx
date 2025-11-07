@@ -26,6 +26,9 @@ const SearchInput = styled('input', {
     borderWidth: '0 0 1px 0',
     borderColor: 'lightBorder',
     outline: 'none',
+    _placeholder: {
+      color: 'secondaryTextForeground',
+    },
     _focusVisible: {
       // No focus style as it's always in focus
       outline: 'none',

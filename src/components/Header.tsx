@@ -5,6 +5,7 @@ import { IconButton } from './IconButton';
 import { APP_NAME } from '../constants';
 import { Box } from './Box';
 import { getShortcut } from '../util/getShortcut';
+import { Flex } from './Flex';
 
 export function Header({
   title = APP_NAME,
@@ -33,12 +34,14 @@ export function Header({
         borderColor="lightBorder"
         backgroundColor="uiBackground"
       >
-        <IconButton
-          label={`Open sidebar (${getShortcut('/')})`}
-          onClick={onOpen}
-        >
-          <Icon icon="sidebar" />
-        </IconButton>
+        <Flex alignItems="center" justifyContent="center">
+          <IconButton
+            label={`Open sidebar (${getShortcut('/')})`}
+            onClick={onOpen}
+          >
+            <Icon icon="sidebar" />
+          </IconButton>
+        </Flex>
         <Text as="h2" textAlign="center">
           {title}
         </Text>

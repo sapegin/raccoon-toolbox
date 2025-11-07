@@ -11,6 +11,7 @@ const IconButtonRaw = styled('button', {
     padding: 'xs',
     backgroundColor: 'transparent',
     color: 'icon',
+    aspectRatio: '1/1',
     cursor: 'pointer',
     outline: 0,
     transitionDuration: 'hover',

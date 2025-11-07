@@ -75,7 +75,7 @@ export function StringCaseConverter() {
           </>
         }
       >
-        <Editor label="Output" value={output} editable={false} />
+        <Editor label="Output" value={output} />
       </Panel>
     </Screen>
   );

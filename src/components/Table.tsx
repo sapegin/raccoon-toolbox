@@ -32,6 +32,7 @@ export function Table({
         '& td': {
           paddingBlock: variant === 'spacious' ? 's' : 'xs',
           paddingInline: variant === 'spacious' ? 'm' : 's',
+          color: 'textForeground',
           borderBottom: '1px solid',
           borderColor: 'lightBorder',
         },

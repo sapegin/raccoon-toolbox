@@ -74,6 +74,12 @@ export function JsonToCsv() {
 
   const handleChange = useCallback((value: string) => {
     setInput(value);
+    if (value === '') {
+      setErrorMessage('');
+      setOutput('');
+      return;
+    }
+
     try {
       const parsed: unknown = JSON.parse(stripJsonComments(value));
       const csv = jsonToCsv(parsed);

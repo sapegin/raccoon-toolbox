@@ -95,6 +95,8 @@ export const colors = {
   codeValue: lightTheme.orange,
   codeOperator: lightTheme.teal,
   codePunctuation: lightTheme.gray090,
+
+  buttonTextShadow: '0 1px 1px #fff',
 };
 
 const colorsDark = {
@@ -139,6 +141,8 @@ const colorsDark = {
   codeValue: darkTheme.orange,
   codeOperator: darkTheme.teal,
   codePunctuation: darkTheme.gray060,
+
+  buttonTextShadow: '0 -1px 1px #0006',
 };
 
 export const lineHeights = {
@@ -257,7 +261,7 @@ export const theme = {
             value:
               'inset 0 1px 2px #0002, inset 1px 0 2px #0002, inset -1px 0 2px #0002',
           },
-          buttonText: { value: '0 1px 1px #fff' },
+          buttonText: { value: 'var(--colors-button-text-shadow)' },
           buttonPressedText: { value: '0 1px 1px #0002' },
           input: { value: 'inset 0 1px 3px #0001' },
         },

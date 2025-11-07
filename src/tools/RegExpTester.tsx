@@ -177,7 +177,7 @@ export function RegExpTester() {
             actions={<CopyButton value={output} />}
             p={0}
           >
-            <Editor label="Matches" value={output} editable={false} />
+            <Editor label="Matches" value={output} />
           </Panel>
         </Stack>
         <RegExpCheatSheet />
