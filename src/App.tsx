@@ -134,11 +134,11 @@ export function App() {
     <>
       <CommandPalette
         isOpen={isCommandPaletteOpen}
-        onClose={toggleCommandPalette}
+        onClose={() => setIsCommandPaletteOpen(false)}
       />
       <HotkeysDialog
         isOpen={isHotkeysDialogOpen}
-        onClose={toggleHotkeysDialog}
+        onClose={() => setIsHotkeysDialogOpen(false)}
       />
       <AppLayout
         title={currentToolName}
