@@ -147,6 +147,7 @@ export function App() {
         onSidebarClose={toggleSidebar}
         onHeaderOpen={toggleSidebar}
         onSearchOpen={() => setIsCommandPaletteOpen(true)}
+        onHotkeysOpen={() => setIsHotkeysDialogOpen(true)}
       >
         <Suspense
           fallback={

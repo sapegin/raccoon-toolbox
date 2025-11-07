@@ -100,7 +100,7 @@ pub fn run() {
                     .build()?;
 
                 let support_project =
-                    MenuItemBuilder::with_id("support-project", "Support Project").build(app)?;
+                    MenuItemBuilder::with_id("support-project", "Buy me Coffee").build(app)?;
                 let report_issue =
                     MenuItemBuilder::with_id("report-issue", "Report Issue").build(app)?;
                 let source_code =

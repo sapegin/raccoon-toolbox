@@ -14,6 +14,7 @@ interface AppLayoutProps {
   onSidebarClose?: () => void;
   onHeaderOpen?: () => void;
   onSearchOpen?: () => void;
+  onHotkeysOpen?: () => void;
 }
 
 export function AppLayout({
@@ -24,6 +25,7 @@ export function AppLayout({
   onSidebarClose,
   onHeaderOpen,
   onSearchOpen,
+  onHotkeysOpen,
 }: AppLayoutProps) {
   return (
     <>
@@ -39,6 +41,7 @@ export function AppLayout({
           show={isSidebarOpen}
           onClose={onSidebarClose}
           onSearchOpen={onSearchOpen}
+          onHotkeysOpen={onHotkeysOpen}
         />
         <Grid gridTemplateRows="auto 1fr" height="100vh">
           <Header title={title} show={isHeaderVisible} onOpen={onHeaderOpen} />
