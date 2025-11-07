@@ -70,3 +70,16 @@ ${tools
 fs.writeFileSync('src-tauri/src/tools.rs', rsCode);
 
 console.log('Generated src-tauri/src/tools.rs');
+
+// Update README.md tools section
+const readmePath = 'README.md';
+const readme = fs.readFileSync(readmePath, 'utf8');
+const toolsList = tools.map((tool) => `- [x] ${tool.name}`).join('\n');
+const updatedReadme = readme.replace(
+  /(<!-- tools:start -->)[\s\S]*?(<!-- tools:end -->)/,
+  `$1\n\n${toolsList}\n\n$2`
+);
+
+fs.writeFileSync(readmePath, updatedReadme);
+
+console.log('Updated README.md');

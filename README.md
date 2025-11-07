@@ -12,17 +12,32 @@ A collection of developer utilities built with React and Tauri.
 
 ## Tools
 
-- **Base64 encoder/decoder** — Encode and decode Base64 strings
-- **Color converter** — Convert colors between different formats (hex, RGB, HSL, etc.)
-- **HTML entity encoder/decoder** — Encode and decode HTML entities
-- **JSON formatter** — Format and validate JSON data
-- **Lorem Ipsum generator** — Generate random sentences and paragraphs of text in different languages
-- **RegExp tester** — Test regular expressions against sample text
-- **Text diff** — Compare two text blocks and see the differences
-- **Text stats** — Number of characters, words, and so on in a text
-- **Unicode lookup** — Look up Unicode characters
-- **URL encoder/decoder** — Encode and decode URLs
-- **URL parser** — Parse URL to its individual parts – host, path, query string, and so on
+<!-- tools:start -->
+
+- [x] Aspect ratio calculator
+- [x] Base64 encoder/decoder
+- [x] Color converter
+- [x] Color contrast checker
+- [x] HTML entity encoder/decoder
+- [x] HTML formatter
+- [x] JSON formatter
+- [x] JSON to CSV converter
+- [x] CSV to JSON converter
+- [x] JSON to YAML converter
+- [x] YAML to JSON converter
+- [x] Key code lookup
+- [x] Lorem Ipsum generator
+- [x] RegExp tester
+- [x] String case converter
+- [x] Text diff
+- [x] Text stats
+- [x] Unicode lookup
+- [x] URL encoder/decoder
+- [x] URL parser
+- [x] XML formatter
+- [x] More tools
+
+<!-- tools:end -->
 
 ## Motivation
 
