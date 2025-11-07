@@ -10,6 +10,17 @@
 
 A collection of developer utilities built with React and Tauri.
 
+## Features
+
+- **Free** and open-source
+- **No tracking** or telemetry of any kind
+- **Privacy-friendly**: all processing happens locally on your device
+- **Cross-platform:** web app and macOS app
+- **Works offline** and doesn’t require an internet connection
+- **Great UX** with keyboard shortcuts and menu bar icon for quick access to tools
+- **Dark and light modes** with automatic selection
+- **Not bloated:** the macOS app is only 15 MB
+
 ## Tools
 
 <!-- tools:start -->
@@ -41,7 +52,7 @@ A collection of developer utilities built with React and Tauri.
 
 ## Motivation
 
-There are many similar apps already, such as [DevUtils](https://devutils.com/) or [DevToys](https://devtoys.app/) but they are often expensive, have poor UX or don’t have the tools I need. Also, I wanted to have a tool that I can use as a Mac app and a web app.
+There are many similar apps already, such as [DevUtils](https://devutils.com/) or [DevToys](https://devtoys.app/) but they are often expensive, have poor UX, or don’t have the tools I need. Also, I wanted to have a tool that I can use as a Mac app and a web app.
 
 ## Development
 
