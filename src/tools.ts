@@ -84,10 +84,20 @@ export const tools: Tool[] = [
   {
     id: 'json-to-csv',
     name: 'JSON to CSV converter',
-    keywords: ['convert', 'export', 'spreadsheet', 'table', 'data'],
+    keywords: ['export', 'spreadsheet', 'table', 'data'],
     component: lazy(() =>
       import('./tools/JsonToCsv').then((m) => ({
         default: m.JsonToCsv,
+      }))
+    ),
+  },
+  {
+    id: 'csv-to-json',
+    name: 'CSV to JSON converter',
+    keywords: ['import', 'spreadsheet', 'table', 'data', 'parse'],
+    component: lazy(() =>
+      import('./tools/CsvToJson').then((m) => ({
+        default: m.CsvToJson,
       }))
     ),
   },

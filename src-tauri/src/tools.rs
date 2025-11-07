@@ -40,6 +40,10 @@ pub const TOOLS: &[Tool] = &[
         name: "JSON to CSV converter",
     },
     Tool {
+        id: "csv-to-json",
+        name: "CSV to JSON converter",
+    },
+    Tool {
         id: "key-codes",
         name: "Key code lookup",
     },

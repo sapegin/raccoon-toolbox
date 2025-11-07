@@ -45,7 +45,13 @@
     "id": "json-to-csv",
     "name": "JSON to CSV converter",
     "module": "JsonToCsv",
-    "keywords": ["export", "spreadsheet", "table", "data"]
+    "keywords": ["spreadsheet", "table", "data"]
+  },
+  {
+    "id": "csv-to-json",
+    "name": "CSV to JSON converter",
+    "module": "CsvToJson",
+    "keywords": ["spreadsheet", "table", "data"]
   },
   {
     "id": "key-codes",
