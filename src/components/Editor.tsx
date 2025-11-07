@@ -3,6 +3,7 @@ import { html } from '@codemirror/lang-html';
 import { xml } from '@codemirror/lang-xml';
 import { javascript } from '@codemirror/lang-javascript';
 import { css } from '@codemirror/lang-css';
+import { yaml } from '@codemirror/lang-yaml';
 import { search, searchKeymap, gotoLine } from '@codemirror/search';
 import {
   HighlightStyle,
@@ -35,6 +36,7 @@ const languageExtensions = {
   javascript,
   json,
   xml,
+  yaml,
 } satisfies Record<string, () => LanguageSupport>;
 
 type Language = keyof typeof languageExtensions;
