@@ -42,6 +42,12 @@
     "keywords": ["beautify", "pretty", "prettier", "indent"]
   },
   {
+    "id": "json-to-csv",
+    "name": "JSON to CSV converter",
+    "module": "JsonToCsv",
+    "keywords": ["export", "spreadsheet", "table", "data"]
+  },
+  {
     "id": "key-codes",
     "name": "Key code lookup",
     "module": "KeyCodes",

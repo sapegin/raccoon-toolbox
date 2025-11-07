@@ -82,6 +82,16 @@ export const tools: Tool[] = [
     ),
   },
   {
+    id: 'json-to-csv',
+    name: 'JSON to CSV converter',
+    keywords: ['convert', 'export', 'spreadsheet', 'table', 'data'],
+    component: lazy(() =>
+      import('./tools/JsonToCsv').then((m) => ({
+        default: m.JsonToCsv,
+      }))
+    ),
+  },
+  {
     id: 'key-codes',
     name: 'Key code lookup',
     keywords: ['keyboard', 'events', 'keycodes', 'keypress'],

@@ -36,6 +36,10 @@ pub const TOOLS: &[Tool] = &[
         name: "JSON formatter",
     },
     Tool {
+        id: "json-to-csv",
+        name: "JSON to CSV converter",
+    },
+    Tool {
         id: "key-codes",
         name: "Key code lookup",
     },
