@@ -15,6 +15,11 @@
     ]
   },
   {
+    "name": "Crontab editor",
+    "url": "https://crontab.guru/",
+    "keywords": ["cron jobs"]
+  },
+  {
     "name": "CSS arrow generator",
     "url": "https://cssarrowplease.com/",
     "keywords": []
