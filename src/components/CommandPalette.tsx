@@ -2,12 +2,12 @@ import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { tools } from '../tools';
 import { Box } from './Box';
-import { useHotkey } from '../hooks/useHotkey';
 import { css } from '../../styled-system/css';
 import { Text } from './Text';
 import { styled } from '../../styled-system/jsx';
 import { Icon } from './Icon';
 import { externalTools } from '../externalTools';
+import { Modal } from './Modal';
 
 interface CommandPaletteProps {
   isOpen: boolean;
@@ -55,6 +55,7 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
   const listRef = useRef<HTMLUListElement>(null);
+  const dialogRef = useRef<HTMLDialogElement>(null);
   const navigate = useNavigate();
 
   const query = searchQuery.toLowerCase();
@@ -91,18 +92,13 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
     }
   }, [selectedIndex]);
 
-  useHotkey(onClose, {
-    enabled: isOpen,
-    key: 'Escape',
-  });
-
   const handleToolSelection = (tool: (typeof allFilteredTools)[0]) => {
     if ('url' in tool) {
       window.open(tool.url, '_blank', 'noopener,noreferrer');
     } else {
       void navigate(`/${tool.id}/`);
     }
-    onClose();
+    dialogRef.current?.close();
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
@@ -120,77 +116,55 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
     }
   };
 
-  if (isOpen === false) {
-    return null;
-  }
-
   return (
-    <>
-      <Box position="fixed" inset={0} zIndex={999} onClick={onClose} />
-      <Box
-        position="fixed"
-        top="10vh"
-        left="50%"
-        transform="translateX(-50%)"
-        width="90%"
-        maxWidth="600px"
-        backgroundColor="uiBackground"
-        borderWidth="1px"
-        borderStyle="solid"
-        borderColor="lightBorder"
-        borderRadius="xlarge"
-        boxShadow="0 0 1rem #0002"
-        zIndex={999}
-        overflow="hidden"
-      >
-        <SearchInput
-          ref={inputRef}
-          type="text"
-          placeholder="Search tools…"
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          onKeyDown={handleKeyDown}
-        />
-        <Box maxHeight="400px" overflowY="auto">
-          {allFilteredTools.length > 0 ? (
-            <ul
-              ref={listRef}
-              className={css({
-                listStyle: 'none',
-              })}
-            >
-              {allFilteredTools.map((tool, index) => (
-                <li key={tool.name}>
-                  <CommandButton
-                    type="button"
-                    onClick={() => handleToolSelection(tool)}
-                    onMouseEnter={() => setSelectedIndex(index)}
-                    backgroundColor={
-                      index === selectedIndex
-                        ? 'activeBackground'
-                        : 'transparent'
-                    }
+    <Modal isOpen={isOpen} onClose={onClose} dialogRef={dialogRef}>
+      <SearchInput
+        ref={inputRef}
+        type="text"
+        placeholder="Search tools…"
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+        onKeyDown={handleKeyDown}
+      />
+      <Box maxHeight="400px" overflowY="auto">
+        {allFilteredTools.length > 0 ? (
+          <ul
+            ref={listRef}
+            className={css({
+              listStyle: 'none',
+            })}
+          >
+            {allFilteredTools.map((tool, index) => (
+              <li key={tool.name}>
+                <CommandButton
+                  type="button"
+                  onClick={() => handleToolSelection(tool)}
+                  onMouseEnter={() => setSelectedIndex(index)}
+                  backgroundColor={
+                    index === selectedIndex
+                      ? 'activeBackground'
+                      : 'transparent'
+                  }
+                >
+                  <Box
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="space-between"
+                    width="100%"
                   >
-                    <Box
-                      display="flex"
-                      alignItems="center"
-                      justifyContent="space-between"
-                      width="100%"
-                    >
-                      <span>{tool.name}</span>
-                      {'url' in tool && <Icon icon="external" size={16} />}
-                    </Box>
-                  </CommandButton>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <Text p="m" color="secondaryTextForeground">
-              No tools found
-            </Text>
-          )}
-        </Box>
+                    <span>{tool.name}</span>
+                    {'url' in tool && <Icon icon="external" size={16} />}
+                  </Box>
+                </CommandButton>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <Text p="m" color="secondaryTextForeground">
+            No tools found
+          </Text>
+        )}
       </Box>
-    </>
+    </Modal>
   );
 }
