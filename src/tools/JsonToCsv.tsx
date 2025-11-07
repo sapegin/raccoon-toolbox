@@ -5,8 +5,7 @@ import { usePersistentState } from '../hooks/usePersistentState';
 import { Panel } from '../components/Panel';
 import { CopyButton } from '../components/CopyButton';
 import { Screen } from '../components/Screen';
-
-// TODO: Strip comments before conversion
+import { stripJsonComments } from '../util/stripJsonComments';
 
 function escapeCsvValue(value: unknown): string {
   if (value === null || value === undefined) {
@@ -76,7 +75,7 @@ export function JsonToCsv() {
   const handleChange = useCallback((value: string) => {
     setInput(value);
     try {
-      const parsed: unknown = JSON.parse(value);
+      const parsed: unknown = JSON.parse(stripJsonComments(value));
       const csv = jsonToCsv(parsed);
       setErrorMessage('');
       setOutput(csv);

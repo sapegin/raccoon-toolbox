@@ -6,8 +6,7 @@ import { usePersistentState } from '../hooks/usePersistentState';
 import { Panel } from '../components/Panel';
 import { CopyButton } from '../components/CopyButton';
 import { Screen } from '../components/Screen';
-
-// TODO: Strip comments before conversion
+import { stripJsonComments } from '../util/stripJsonComments';
 
 function jsonToYaml(json: unknown): string {
   return dump(json, { indent: 2 });
@@ -27,7 +26,7 @@ export function JsonToYaml() {
   const handleChange = useCallback((value: string) => {
     setInput(value);
     try {
-      const parsed: unknown = JSON.parse(value);
+      const parsed: unknown = JSON.parse(stripJsonComments(value));
       const yaml = jsonToYaml(parsed);
       setErrorMessage('');
       setOutput(yaml);
