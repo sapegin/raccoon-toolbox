@@ -101,13 +101,15 @@ pub fn run() {
 
                 let support_project =
                     MenuItemBuilder::with_id("support-project", "Buy me Coffee").build(app)?;
+                let read_book =
+                    MenuItemBuilder::with_id("read-book", "Read my Book").build(app)?;
                 let report_issue =
                     MenuItemBuilder::with_id("report-issue", "Report Issue").build(app)?;
                 let source_code =
                     MenuItemBuilder::with_id("source-code", "Source Code").build(app)?;
 
                 let help_menu = SubmenuBuilder::new(app, "Help")
-                    .items(&[&support_project, &report_issue, &source_code])
+                    .items(&[&support_project, &read_book, &report_issue, &source_code])
                     .build()?;
 
                 let menu = MenuBuilder::new(app)
@@ -128,6 +130,8 @@ pub fn run() {
                         let _ = app.emit("toggle-command-palette", ());
                     } else if event_id == "support-project" {
                         let _ = app.emit("open-url", "https://buymeacoffee.com/sapegin");
+                    } else if event_id == "read-book" {
+                        let _ = app.emit("open-url", "https://sapegin.me/book/");
                     } else if event_id == "report-issue" {
                         let _ = app.emit(
                             "open-url",
