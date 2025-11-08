@@ -24,12 +24,20 @@ pub const TOOLS: &[Tool] = &[
         name: "Color contrast checker",
     },
     Tool {
+        id: "css-formatter",
+        name: "CSS formatter",
+    },
+    Tool {
         id: "html-entity-encoder",
         name: "HTML entity encoder/decoder",
     },
     Tool {
         id: "html-formatter",
         name: "HTML formatter",
+    },
+    Tool {
+        id: "js-formatter",
+        name: "JavaScript formatter",
     },
     Tool {
         id: "json-formatter",

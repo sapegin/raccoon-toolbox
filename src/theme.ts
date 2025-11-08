@@ -213,8 +213,8 @@ export const theme = {
           button: { value: '6px' },
           search: { value: '24px' },
           large: { value: '3px' },
-          dialog: { value: '12px' },
-          dialogInner: { value: '11px' },
+          dialog: { value: '8px' },
+          dialogInner: { value: '7px' },
         },
         borders: {
           button: {

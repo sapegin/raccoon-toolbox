@@ -29,8 +29,10 @@ A collection of developer utilities built with React and Tauri.
 - [x] Base64 encoder/decoder
 - [x] Color converter
 - [x] Color contrast checker
+- [x] CSS formatter
 - [x] HTML entity encoder/decoder
 - [x] HTML formatter
+- [x] JavaScript formatter
 - [x] JSON formatter
 - [x] JSON to CSV converter
 - [x] CSV to JSON converter

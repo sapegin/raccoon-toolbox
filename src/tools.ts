@@ -52,6 +52,16 @@ export const tools: Tool[] = [
     ),
   },
   {
+    id: 'css-formatter',
+    name: 'CSS formatter',
+    keywords: ['beautify', 'pretty', 'prettier'],
+    component: lazy(() =>
+      import('./tools/CssFormatter').then((m) => ({
+        default: m.CssFormatter,
+      }))
+    ),
+  },
+  {
     id: 'html-entity-encoder',
     name: 'HTML entity encoder/decoder',
     keywords: ['escape', 'unescape', 'entities', 'special characters'],
@@ -68,6 +78,16 @@ export const tools: Tool[] = [
     component: lazy(() =>
       import('./tools/HtmlFormatter').then((m) => ({
         default: m.HtmlFormatter,
+      }))
+    ),
+  },
+  {
+    id: 'js-formatter',
+    name: 'JavaScript formatter',
+    keywords: ['beautify', 'pretty', 'prettier', 'typescript', 'ecmascript', 'jsx', 'tsx'],
+    component: lazy(() =>
+      import('./tools/JsFormatter').then((m) => ({
+        default: m.JsFormatter,
       }))
     ),
   },
@@ -104,7 +124,7 @@ export const tools: Tool[] = [
   {
     id: 'json-to-yaml',
     name: 'JSON to YAML converter',
-    keywords: ['yaml', 'yml', 'data', 'config'],
+    keywords: ['yml', 'data'],
     component: lazy(() =>
       import('./tools/JsonToYaml').then((m) => ({
         default: m.JsonToYaml,
@@ -114,7 +134,7 @@ export const tools: Tool[] = [
   {
     id: 'yaml-to-json',
     name: 'YAML to JSON converter',
-    keywords: ['yaml', 'yml', 'data', 'config'],
+    keywords: ['yml', 'data'],
     component: lazy(() =>
       import('./tools/YamlToJson').then((m) => ({
         default: m.YamlToJson,

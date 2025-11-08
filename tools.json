@@ -24,6 +24,12 @@
     "keywords": ["wcag", "accessibility", "a11y", "contrast ratio"]
   },
   {
+    "id": "css-formatter",
+    "name": "CSS formatter",
+    "module": "CssFormatter",
+    "keywords": ["beautify", "pretty", "prettier"]
+  },
+  {
     "id": "html-entity-encoder",
     "name": "HTML entity encoder/decoder",
     "module": "HtmlEntityEncoder",
@@ -34,6 +40,20 @@
     "name": "HTML formatter",
     "module": "HtmlFormatter",
     "keywords": ["beautify", "pretty", "prettier", "indent"]
+  },
+  {
+    "id": "js-formatter",
+    "name": "JavaScript formatter",
+    "module": "JsFormatter",
+    "keywords": [
+      "beautify",
+      "pretty",
+      "prettier",
+      "typescript",
+      "ecmascript",
+      "jsx",
+      "tsx"
+    ]
   },
   {
     "id": "json-formatter",

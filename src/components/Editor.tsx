@@ -33,7 +33,7 @@ import { Box } from './Box';
 const languageExtensions = {
   css,
   html,
-  javascript,
+  javascript: () => javascript({ jsx: true, typescript: true }),
   json,
   xml,
   yaml,
