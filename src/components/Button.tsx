@@ -8,7 +8,6 @@ export const Button = styled('button', {
     borderRadius: 'button',
     boxShadow: 'button',
     lineHeight: '1rem',
-    textShadow: 'buttonText',
     textDecoration: 'none',
     userSelect: 'none',
     outline: 0,
@@ -36,6 +35,7 @@ export const Button = styled('button', {
       primary: {
         color: 'buttonForeground',
         backgroundColor: 'buttonBackground',
+        textShadow: 'buttonText',
         _hover: {
           backgroundColor: 'buttonHoverBackground',
         },
@@ -43,6 +43,7 @@ export const Button = styled('button', {
       secondary: {
         color: 'secondaryButtonForeground',
         bgGradient: 'button',
+        textShadow: 'secondaryButtonText',
         _hover: {
           bgGradient: 'buttonHover',
           border: 'buttonHover',

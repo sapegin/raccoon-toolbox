@@ -1,5 +1,5 @@
 import { useEffect, useRef, type ReactNode } from 'react';
-import { styled, VisuallyHidden } from '../../styled-system/jsx';
+import { Box, styled, VisuallyHidden } from '../../styled-system/jsx';
 import { IconButton } from './IconButton';
 import { Icon } from './Icon';
 
@@ -16,19 +16,19 @@ interface ModalProps {
   onClose: () => void;
 }
 
-const StyledDialog = styled('dialog', {
+const StyledBox = styled('dialog', {
   base: {
     position: 'fixed',
     top: '10vh',
     left: '50%',
     transform: 'translateX(-50%)',
     margin: 0,
-    padding: 0,
+    padding: 1,
+    border: 0,
     backgroundColor: 'uiBackground',
-    borderWidth: '1px',
-    borderStyle: 'solid',
-    borderColor: 'lightBorder',
-    borderRadius: 'xlarge',
+    backgroundImage:
+      'linear-gradient(to bottom, oklch(from var(--colors-ui-background) calc(l + 0.15) c h), var(--colors-ui-background))',
+    borderRadius: 'dialog',
     boxShadow: '0 0 1rem #0002',
     overflow: 'hidden',
     _backdrop: {
@@ -85,7 +85,7 @@ export function Modal({
   }, [onClose]);
 
   return (
-    <StyledDialog
+    <StyledBox
       ref={dialogRef}
       id={id}
       aria-labelledby={`${id}-label`}
@@ -94,24 +94,26 @@ export function Modal({
       maxHeight={maxHeight}
       closedby="any"
     >
-      {showCloseButton && (
-        <IconButton
-          label="Close"
-          onClick={onClose}
-          css={{
-            position: 'absolute',
-            top: 'm',
-            right: 'm',
-            zIndex: 1,
-          }}
-        >
-          <Icon icon="xmark" size={20} />
-        </IconButton>
-      )}
-      <VisuallyHidden as="h1" id={`${id}-label`}>
-        {label}
-      </VisuallyHidden>
-      {children}
-    </StyledDialog>
+      <Box bgColor="uiBackground" borderRadius="dialogInner">
+        {showCloseButton && (
+          <IconButton
+            label="Close"
+            onClick={onClose}
+            css={{
+              position: 'absolute',
+              top: 's',
+              right: 's',
+              zIndex: 1,
+            }}
+          >
+            <Icon icon="xmark" size={24} />
+          </IconButton>
+        )}
+        <VisuallyHidden as="h1" id={`${id}-label`}>
+          {label}
+        </VisuallyHidden>
+        {children}
+      </Box>
+    </StyledBox>
   );
 }

@@ -67,6 +67,8 @@ export const colors = {
   border: lightTheme.gray140,
   buttonBackground: lightTheme.gray100,
   buttonForeground: lightTheme.gray180,
+  buttonPressedBackground: lightTheme.gray100,
+  buttonPressedForeground: lightTheme.gray180,
   buttonHoverBackground: lightTheme.gray090,
   disabledForeground: lightTheme.gray110,
   errorBackground: lightTheme.redDimer,
@@ -96,7 +98,9 @@ export const colors = {
   codeOperator: lightTheme.teal,
   codePunctuation: lightTheme.gray090,
 
-  buttonTextShadow: '0 1px 1px #fff',
+  buttonTextShadow: '0 1px 1px #0002',
+  secondaryButtonTextShadow: '0 1px 1px #fff',
+  buttonPressedTextShadow: '0 1px 1px #0002',
 };
 
 const colorsDark = {
@@ -114,6 +118,8 @@ const colorsDark = {
   buttonBackground: darkTheme.gray110,
   buttonForeground: darkTheme.gray180,
   buttonHoverBackground: darkTheme.gray090,
+  buttonPressedBackground: darkTheme.gray160,
+  buttonPressedForeground: darkTheme.gray080,
   disabledForeground: darkTheme.gray110,
   errorBackground: darkTheme.redDimer,
   errorForeground: darkTheme.redContrast,
@@ -142,7 +148,9 @@ const colorsDark = {
   codeOperator: darkTheme.teal,
   codePunctuation: darkTheme.gray060,
 
-  buttonTextShadow: '0 -1px 1px #0006',
+  buttonTextShadow: '0 1px 1px #0002',
+  secondaryButtonTextShadow: '0 -1px 1px #0006',
+  buttonPressedTextShadow: '0 -1px 1px #0002',
 };
 
 export const lineHeights = {
@@ -205,7 +213,8 @@ export const theme = {
           button: { value: '6px' },
           search: { value: '24px' },
           large: { value: '3px' },
-          xlarge: { value: '5px' },
+          dialog: { value: '12px' },
+          dialogInner: { value: '11px' },
         },
         borders: {
           button: {
@@ -248,7 +257,7 @@ export const theme = {
           },
           buttonPressed: {
             value:
-              'linear-gradient(to bottom, var(--colors-button-background), oklch(from var(--colors-button-background) calc(l + 0.18) c h))',
+              'linear-gradient(to bottom, var(--colors-button-pressed-background), oklch(from var(--colors-button-pressed-background) calc(l + 0.18) c h))',
           },
           accent: {
             value:
@@ -261,8 +270,15 @@ export const theme = {
             value:
               'inset 0 1px 2px #0002, inset 1px 0 2px #0002, inset -1px 0 2px #0002',
           },
-          buttonText: { value: 'var(--colors-button-text-shadow)' },
-          buttonPressedText: { value: '0 1px 1px #0002' },
+          buttonText: {
+            value: 'var(--colors-button-text-shadow)',
+          },
+          secondaryButtonText: {
+            value: 'var(--colors-secondary-button-text-shadow)',
+          },
+          buttonPressedText: {
+            value: 'var(--colors-button-pressed-text-shadow)',
+          },
           input: { value: 'inset 0 1px 3px #0001' },
         },
         easings: {

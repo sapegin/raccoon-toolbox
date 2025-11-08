@@ -51,7 +51,7 @@ const ToggleButtonLabel = styled('label', {
   variants: {
     checked: {
       true: {
-        color: 'buttonForeground',
+        color: 'buttonPressedForeground',
         bgGradient: 'buttonPressed',
         textShadow: 'buttonPressedText',
         boxShadow: 'buttonPressed',
