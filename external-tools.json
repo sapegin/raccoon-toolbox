@@ -110,9 +110,19 @@
     "keywords": ["textures", "backgrounds", "css"]
   },
   {
+    "name": "SVG filters",
+    "url": "https://yoksel.github.io/svg-filters/",
+    "keywords": ["images"]
+  },
+  {
     "name": "SVG grainy gradients generator",
     "url": "https://www.fffuel.co/gggrain/",
-    "keywords": ["css"]
+    "keywords": ["css", "images", "backgrounds"]
+  },
+  {
+    "name": "SVG to CSS converter",
+    "url": "https://www.svgbackgrounds.com/tools/svg-to-css/",
+    "keywords": ["images"]
   },
   {
     "name": "Vitest cheat sheet",
