@@ -53,6 +53,30 @@ const CommandButton = styled('button', {
   },
 });
 
+/** Filter tools by name and keywords but prioritize name matches. */
+function getSortedMatches<T extends { name: string; keywords: string[] }>(
+  items: T[],
+  query: string
+) {
+  return items
+    .filter(
+      (tool) =>
+        tool.name.toLowerCase().includes(query) ||
+        tool.keywords.some((keyword) => keyword.toLowerCase().includes(query))
+    )
+    .toSorted((a, b) => {
+      const aNameMatch = a.name.toLowerCase().includes(query);
+      const bNameMatch = b.name.toLowerCase().includes(query);
+      if (aNameMatch && bNameMatch === false) {
+        return -1;
+      }
+      if (aNameMatch === false && bNameMatch) {
+        return 1;
+      }
+      return 0;
+    });
+}
+
 export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -62,17 +86,11 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
   const navigate = useNavigate();
 
   const query = searchQuery.toLowerCase();
-  const filteredTools = tools.filter(
-    (tool) =>
-      tool.name.toLowerCase().includes(query) ||
-      tool.keywords.some((keyword) => keyword.toLowerCase().includes(query))
-  );
-  const filteredExternalTools = externalTools.filter(
-    (tool) =>
-      tool.name.toLowerCase().includes(query) ||
-      tool.keywords.some((keyword) => keyword.toLowerCase().includes(query))
-  );
-  const allFilteredTools = [...filteredTools, ...filteredExternalTools];
+
+  const filteredTools = [
+    ...getSortedMatches(tools, query),
+    ...getSortedMatches(externalTools, query),
+  ];
 
   useEffect(() => {
     if (isOpen) {
@@ -95,7 +113,7 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
     }
   }, [selectedIndex]);
 
-  const handleToolSelection = (tool: (typeof allFilteredTools)[0]) => {
+  const handleToolSelection = (tool: (typeof filteredTools)[0]) => {
     if ('url' in tool) {
       window.open(tool.url, '_blank', 'noopener,noreferrer');
     } else {
@@ -108,14 +126,14 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
     if (e.key === 'ArrowDown') {
       e.preventDefault();
       setSelectedIndex((prev) =>
-        prev < allFilteredTools.length - 1 ? prev + 1 : prev
+        prev < filteredTools.length - 1 ? prev + 1 : prev
       );
     } else if (e.key === 'ArrowUp') {
       e.preventDefault();
       setSelectedIndex((prev) => (prev > 0 ? prev - 1 : prev));
-    } else if (e.key === 'Enter' && allFilteredTools[selectedIndex]) {
+    } else if (e.key === 'Enter' && filteredTools[selectedIndex]) {
       e.preventDefault();
-      handleToolSelection(allFilteredTools[selectedIndex]);
+      handleToolSelection(filteredTools[selectedIndex]);
     }
   };
 
@@ -139,14 +157,14 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
       />
       <output htmlFor="search-dialog-input">
         <Box maxHeight="400px" overflowY="auto">
-          {allFilteredTools.length > 0 ? (
+          {filteredTools.length > 0 ? (
             <ul
               ref={listRef}
               className={css({
                 listStyle: 'none',
               })}
             >
-              {allFilteredTools.map((tool, index) => (
+              {filteredTools.map((tool, index) => (
                 <li key={tool.name}>
                   <CommandButton
                     type="button"
