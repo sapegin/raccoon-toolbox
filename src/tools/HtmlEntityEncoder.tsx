@@ -100,6 +100,7 @@ export function HtmlEntityEncoder() {
         actions={
           <>
             <ToggleButton
+              accessibleLabel="Conversion direction"
               name="mode"
               value={mode}
               options={[

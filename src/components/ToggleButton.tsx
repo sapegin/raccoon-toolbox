@@ -1,7 +1,10 @@
 import { Fragment, type ReactNode } from 'react';
-import { styled } from '../../styled-system/jsx';
+import { Flex, Stack, styled } from '../../styled-system/jsx';
+import { visuallyHidden } from '../../styled-system/patterns/visually-hidden';
+import { text } from './Text';
+import type { RequiredLabel } from '../types';
 
-const ToggleButtonContainer = styled('div', {
+const ToggleButtonContainer = styled('fieldset', {
   base: {
     height: '1.5rem',
     display: 'inline-flex',
@@ -74,40 +77,59 @@ interface ToggleButtonOption {
   label: ReactNode;
 }
 
-interface ToggleButtonProps {
+type ToggleButtonProps = RequiredLabel & {
   name: string;
   value: string;
   options: ToggleButtonOption[];
+  actions?: ReactNode;
   onChange: (value: string) => void;
-}
+};
 
 export function ToggleButton({
+  label,
+  accessibleLabel,
   name,
   value,
   options,
+  actions,
   onChange,
 }: ToggleButtonProps) {
   return (
-    <ToggleButtonContainer role="group" aria-label={name}>
-      {options.map((option) => {
-        const id = `${name}-${option.value}`;
-        const isChecked = value === option.value;
-        return (
-          <Fragment key={option.value}>
-            <ToggleButtonInput
-              type="radio"
-              id={id}
-              name={name}
-              value={option.value}
-              checked={isChecked}
-              onChange={(e) => onChange(e.target.value)}
-            />
-            <ToggleButtonLabel htmlFor={id} checked={isChecked}>
-              {option.label}
-            </ToggleButtonLabel>
-          </Fragment>
-        );
-      })}
-    </ToggleButtonContainer>
+    <Stack display="inline-flex" gap="xs">
+      {label && (
+        <Flex justifyContent="space-between" alignItems="center">
+          <legend className={text()}>{label}</legend>
+          {actions && (
+            <Stack direction="row" gap="s">
+              {actions}
+            </Stack>
+          )}
+        </Flex>
+      )}
+      {accessibleLabel && (
+        <legend className={visuallyHidden()}>{accessibleLabel}</legend>
+      )}
+      <ToggleButtonContainer>
+        {options.map((option) => {
+          const id = `${name}-${option.value}`;
+          const isChecked = value === option.value;
+          return (
+            <Fragment key={option.value}>
+              <ToggleButtonInput
+                type="radio"
+                id={id}
+                name={name}
+                value={option.value}
+                checked={isChecked}
+                onChange={(e) => onChange(e.target.value)}
+              />
+              <ToggleButtonLabel htmlFor={id} checked={isChecked}>
+                {option.label}
+              </ToggleButtonLabel>
+            </Fragment>
+          );
+        })}
+      </ToggleButtonContainer>
+    </Stack>
   );
 }

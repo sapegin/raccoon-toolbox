@@ -222,6 +222,16 @@ export const tools: Tool[] = [
     ),
   },
   {
+    id: 'uuid-generator',
+    name: 'UUID generator',
+    keywords: ['guid', 'identifier', 'unique', 'random'],
+    component: lazy(() =>
+      import('./tools/UuidGenerator').then((m) => ({
+        default: m.UuidGenerator,
+      }))
+    ),
+  },
+  {
     id: 'url-encoder',
     name: 'URL encoder/decoder',
     keywords: ['escape', 'unescape', 'uri', 'percent'],

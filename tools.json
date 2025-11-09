@@ -163,6 +163,12 @@
     "keywords": ["characters", "emojis", "symbols", "codepoints", "utf"]
   },
   {
+    "id": "uuid-generator",
+    "name": "UUID generator",
+    "module": "UuidGenerator",
+    "keywords": ["guid", "identifier", "unique", "random"]
+  },
+  {
     "id": "url-encoder",
     "name": "URL encoder/decoder",
     "module": "UrlEncoder",

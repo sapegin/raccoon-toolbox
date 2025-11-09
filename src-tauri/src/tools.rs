@@ -92,6 +92,10 @@ pub const TOOLS: &[Tool] = &[
         name: "Unicode lookup",
     },
     Tool {
+        id: "uuid-generator",
+        name: "UUID generator",
+    },
+    Tool {
         id: "url-encoder",
         name: "URL encoder/decoder",
     },

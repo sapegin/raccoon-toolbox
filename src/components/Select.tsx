@@ -9,6 +9,7 @@ import {
 import { text } from './Text';
 import { visuallyHidden } from '../../styled-system/patterns/visually-hidden';
 import { Icon } from './Icon';
+import type { RequiredLabel } from '../types';
 
 const SelectBox = styled('select', {
   base: {
@@ -21,7 +22,7 @@ const SelectBox = styled('select', {
     fontFamily: 'body',
     color: 'textForeground',
     backgroundColor: 'textBackground',
-    border: 'input',
+    border: 0,
     borderRadius: 'button',
     cursor: 'pointer',
     appearance: 'none',
@@ -43,15 +44,14 @@ export function Select({
   options,
   actions,
   ...props
-}: HTMLStyledProps<'select'> & {
-  id: string;
-  label?: ReactNode;
-  accessibleLabel?: ReactNode;
-  options: { value: string; label: string }[];
-  actions?: ReactNode;
-}) {
+}: HTMLStyledProps<'select'> &
+  RequiredLabel & {
+    id: string;
+    options: { value: string; label: string }[];
+    actions?: ReactNode;
+  }) {
   return (
-    <Stack gap="xs">
+    <Stack display="inline-flex" gap="xs">
       {label && (
         <Flex justifyContent="space-between" alignItems="center">
           <label htmlFor={id} className={text()}>
@@ -69,7 +69,7 @@ export function Select({
           {accessibleLabel}
         </label>
       )}
-      <Flex position="relative">
+      <Flex position="relative" border="input" borderRadius="button">
         <SelectBox id={id} {...props}>
           {options.map((option) => (
             <option key={option.value} value={option.value}>

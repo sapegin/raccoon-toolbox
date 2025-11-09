@@ -45,7 +45,14 @@ export function Panel({
           )}
         </Flex>
       )}
-      <Box position="relative" height="100%" minHeight={0} overflow="auto">
+      <Box
+        position="relative"
+        height="100%"
+        minHeight={0}
+        overflow="auto"
+        m="-s"
+        p="s"
+      >
         {errorMessage && (
           <ErrorMessage
             position="absolute"

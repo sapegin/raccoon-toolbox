@@ -98,6 +98,7 @@ export function Base64Encoder() {
         actions={
           <>
             <ToggleButton
+              accessibleLabel="Conversion direction"
               name="mode"
               value={mode}
               options={[

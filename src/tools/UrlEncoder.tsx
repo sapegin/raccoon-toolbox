@@ -78,6 +78,7 @@ export function UrlEncoder() {
         actions={
           <>
             <ToggleButton
+              accessibleLabel="Conversion direction"
               name="mode"
               value={mode}
               options={[
