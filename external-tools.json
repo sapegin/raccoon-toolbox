@@ -75,6 +75,11 @@
     "keywords": ["css", "layout"]
   },
   {
+    "name": "HTML to Markdown converter",
+    "url": "https://htmlmarkdown.com/",
+    "keywords": ["text", "markup"]
+  },
+  {
     "name": "Jest cheat sheet",
     "url": "https://github.com/sapegin/jest-cheat-sheet",
     "keywords": ["testing", "unit tests", "jest"]
