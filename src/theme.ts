@@ -194,7 +194,7 @@ export const theme = {
         fontWeights: {
           normal: { value: '400' },
           heading: { value: '300' },
-          bold: { value: '800' },
+          bold: { value: '600' },
         },
         lineHeights: {
           base: { value: lineHeights.base },

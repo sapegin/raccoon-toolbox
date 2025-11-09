@@ -32,6 +32,16 @@ export const tools: Tool[] = [
     ),
   },
   {
+    id: 'number-bases',
+    name: 'Number base converter',
+    keywords: ['numbers', 'binary', 'octal', 'decimal', 'hexadecimal', 'radix', 'base conversion'],
+    component: lazy(() =>
+      import('./tools/NumberBases').then((m) => ({
+        default: m.NumberBases,
+      }))
+    ),
+  },
+  {
     id: 'color-converter',
     name: 'Color converter',
     keywords: ['hex', 'rgb', 'hsl', 'css', 'palette'],

@@ -12,6 +12,20 @@
     "keywords": ["binary", "data", "image"]
   },
   {
+    "id": "number-bases",
+    "name": "Number base converter",
+    "module": "NumberBases",
+    "keywords": [
+      "numbers",
+      "binary",
+      "octal",
+      "decimal",
+      "hexadecimal",
+      "radix",
+      "base conversion"
+    ]
+  },
+  {
     "id": "color-converter",
     "name": "Color converter",
     "module": "ColorConverter",

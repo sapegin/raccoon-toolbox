@@ -35,7 +35,9 @@ export function Panel({
         <VisuallyHidden as="h3">{accessibleLabel}</VisuallyHidden>
       ) : (
         <Flex justifyContent="space-between" alignItems="center">
-          <Text as="h3">{label}</Text>
+          <Text as="h3" variant="bold">
+            {label}
+          </Text>
           {actions && (
             <Stack direction="row" gap="s">
               {actions}

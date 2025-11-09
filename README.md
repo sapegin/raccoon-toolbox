@@ -27,6 +27,7 @@ A collection of developer utilities built with React and Tauri.
 
 - [x] Aspect ratio calculator
 - [x] Base64 encoder/decoder
+- [x] Number base converter
 - [x] Color converter
 - [x] Color contrast checker
 - [x] CSS formatter

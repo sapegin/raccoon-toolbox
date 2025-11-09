@@ -16,6 +16,10 @@ pub const TOOLS: &[Tool] = &[
         name: "Base64 encoder/decoder",
     },
     Tool {
+        id: "number-bases",
+        name: "Number base converter",
+    },
+    Tool {
         id: "color-converter",
         name: "Color converter",
     },
