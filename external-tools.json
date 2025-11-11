@@ -40,6 +40,11 @@
     "keywords": ["shapes", "generator"]
   },
   {
+    "name": "CSS cursors",
+    "url": "https://profoundcoder.com/css-cursors/",
+    "keywords": ["mouse", "pointers"]
+  },
+  {
     "name": "CSS filter generator",
     "url": "https://web-toolbox.dev/en/tools/css-filter-generator",
     "keywords": ["filters"]
@@ -78,6 +83,11 @@
     "name": "Flexbox playground",
     "url": "https://flexbox.tech/",
     "keywords": ["css", "layout"]
+  },
+  {
+    "name": "Font stacks",
+    "url": "https://modernfontstacks.com/",
+    "keywords": ["css", "fonts", "typography"]
   },
   {
     "name": "HTML to Markdown converter",
