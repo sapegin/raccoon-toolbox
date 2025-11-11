@@ -95,6 +95,11 @@
     "keywords": ["text", "markup"]
   },
   {
+    "name": "HTTP response status codes",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status",
+    "keywords": []
+  },
+  {
     "name": "Jest cheat sheet",
     "url": "https://github.com/sapegin/jest-cheat-sheet",
     "keywords": ["testing", "unit tests", "jest"]
