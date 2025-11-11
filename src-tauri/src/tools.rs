@@ -96,6 +96,10 @@ pub const TOOLS: &[Tool] = &[
         name: "UUID generator",
     },
     Tool {
+        id: "random-string-generator",
+        name: "Random string generator",
+    },
+    Tool {
         id: "url-encoder",
         name: "URL encoder/decoder",
     },

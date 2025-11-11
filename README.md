@@ -47,6 +47,7 @@ A collection of developer utilities built with React and Tauri.
 - [x] Text stats
 - [x] Unicode lookup
 - [x] UUID generator
+- [x] Random string generator
 - [x] URL encoder/decoder
 - [x] URL parser
 - [x] XML formatter

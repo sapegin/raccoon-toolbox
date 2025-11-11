@@ -169,6 +169,12 @@
     "keywords": ["guid", "identifier", "unique", "random"]
   },
   {
+    "id": "random-string-generator",
+    "name": "Random string generator",
+    "module": "RandomStringGenerator",
+    "keywords": ["passwords", "characters", "generator", "strings"]
+  },
+  {
     "id": "url-encoder",
     "name": "URL encoder/decoder",
     "module": "UrlEncoder",

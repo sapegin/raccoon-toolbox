@@ -232,6 +232,16 @@ export const tools: Tool[] = [
     ),
   },
   {
+    id: 'random-string-generator',
+    name: 'Random string generator',
+    keywords: ['passwords', 'characters', 'generator', 'strings'],
+    component: lazy(() =>
+      import('./tools/RandomStringGenerator').then((m) => ({
+        default: m.RandomStringGenerator,
+      }))
+    ),
+  },
+  {
     id: 'url-encoder',
     name: 'URL encoder/decoder',
     keywords: ['escape', 'unescape', 'uri', 'percent'],
