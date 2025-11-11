@@ -65,6 +65,11 @@
     "keywords": ["easings", "animation", "timing", "css"]
   },
   {
+    "name": "Fake data generator (Faker)",
+    "url": "https://faker-playground.vercel.app/",
+    "keywords": []
+  },
+  {
     "name": "Fancy backgrounds with CSS gradients",
     "url": "https://css-pattern.com/",
     "keywords": ["patterns"]
