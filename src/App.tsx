@@ -79,6 +79,16 @@ export function App() {
     }
   }, []);
 
+  // Listen to the toggle hotkeys dialog menu item events
+  useEffect(() => {
+    if (isTauri()) {
+      const unlisten = listen('toggle-hotkeys-dialog', toggleHotkeysDialog);
+      return () => {
+        void unlisten.then((fn) => fn());
+      };
+    }
+  }, []);
+
   // Listen to the select tool menu item events
   useEffect(() => {
     if (isTauri()) {

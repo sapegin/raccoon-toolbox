@@ -107,9 +107,20 @@ pub fn run() {
                     MenuItemBuilder::with_id("report-issue", "Report Issue").build(app)?;
                 let source_code =
                     MenuItemBuilder::with_id("source-code", "Source Code").build(app)?;
+                let hotkeys =
+                    MenuItemBuilder::with_id("toggle-hotkeys-dialog", "Hotkeys")
+                        .accelerator("F1")
+                        .build(app)?;
 
                 let help_menu = SubmenuBuilder::new(app, "Help")
-                    .items(&[&support_project, &read_book, &report_issue, &source_code])
+                    .items(&[
+                        &hotkeys,
+                        &PredefinedMenuItem::separator(app)?,
+                        &support_project,
+                        &read_book,
+                        &report_issue,
+                        &source_code,
+                    ])
                     .build()?;
 
                 let menu = MenuBuilder::new(app)
@@ -128,6 +139,8 @@ pub fn run() {
                         let _ = app.emit("toggle-sidebar", ());
                     } else if event_id == "toggle-command-palette" {
                         let _ = app.emit("toggle-command-palette", ());
+                    } else if event_id == "toggle-hotkeys-dialog" {
+                        let _ = app.emit("toggle-hotkeys-dialog", ());
                     } else if event_id == "support-project" {
                         let _ = app.emit("open-url", "https://buymeacoffee.com/sapegin");
                     } else if event_id == "read-book" {
