@@ -1,12 +1,12 @@
 import { useCallback, useEffect, useState } from 'react';
-import { Editor } from '../components/Editor';
-import { Button } from '../components/Button';
-import { usePersistentState } from '../hooks/usePersistentState';
-import { Panel } from '../components/Panel';
 import { Stack } from '../../styled-system/jsx';
-import { calculateTextStats, type TextStats } from '../util/text-stats';
-import { Screen } from '../components/Screen';
+import { Button } from '../components/Button';
+import { Editor } from '../components/Editor';
 import { LargeValue } from '../components/LargeValue';
+import { Panel } from '../components/Panel';
+import { Screen } from '../components/Screen';
+import { usePersistentState } from '../hooks/usePersistentState';
+import { calculateTextStats, type TextStats } from '../util/text-stats';
 
 export function TextStats() {
   const [text, setText] = usePersistentState('textStats.text', '');

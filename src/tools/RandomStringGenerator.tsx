@@ -1,11 +1,11 @@
-import { useState, useCallback, useEffect } from 'react';
-import { Editor } from '../components/Editor';
-import { usePersistentState } from '../hooks/usePersistentState';
-import { Panel } from '../components/Panel';
-import { CopyButton } from '../components/CopyButton';
-import { Input } from '../components/Input';
-import { Screen } from '../components/Screen';
+import { useCallback, useEffect, useState } from 'react';
 import { Stack } from '../../styled-system/jsx';
+import { CopyButton } from '../components/CopyButton';
+import { Editor } from '../components/Editor';
+import { Input } from '../components/Input';
+import { Panel } from '../components/Panel';
+import { Screen } from '../components/Screen';
+import { usePersistentState } from '../hooks/usePersistentState';
 
 const UPPERCASE = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const LOWERCASE = 'abcdefghijklmnopqrstuvwxyz';

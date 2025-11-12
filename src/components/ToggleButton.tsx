@@ -1,8 +1,8 @@
 import { Fragment, type ReactNode } from 'react';
 import { Flex, Stack, styled } from '../../styled-system/jsx';
 import { visuallyHidden } from '../../styled-system/patterns/visually-hidden';
-import { text } from './Text';
 import type { RequiredLabel } from '../types';
+import { text } from './Text';
 
 const ToggleButtonContainer = styled('fieldset', {
   base: {

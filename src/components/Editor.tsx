@@ -1,31 +1,31 @@
-import { json } from '@codemirror/lang-json';
-import { html } from '@codemirror/lang-html';
-import { xml } from '@codemirror/lang-xml';
-import { javascript } from '@codemirror/lang-javascript';
+import { defaultKeymap, history, historyKeymap } from '@codemirror/commands';
 import { css } from '@codemirror/lang-css';
+import { html } from '@codemirror/lang-html';
+import { javascript } from '@codemirror/lang-javascript';
+import { json } from '@codemirror/lang-json';
+import { xml } from '@codemirror/lang-xml';
 import { yaml } from '@codemirror/lang-yaml';
-import { search, searchKeymap, gotoLine } from '@codemirror/search';
 import {
   HighlightStyle,
-  syntaxHighlighting,
   type LanguageSupport,
+  syntaxHighlighting,
 } from '@codemirror/language';
-import { tags } from '@lezer/highlight';
+import { gotoLine, search, searchKeymap } from '@codemirror/search';
+import { EditorState } from '@codemirror/state';
 import {
+  Decoration,
+  type DecorationSet,
   EditorView,
-  keymap,
-  lineNumbers,
   highlightActiveLine,
   highlightWhitespace,
-  Decoration,
-  ViewPlugin,
-  type DecorationSet,
-  type ViewUpdate,
+  keymap,
+  lineNumbers,
   MatchDecorator,
+  ViewPlugin,
+  type ViewUpdate,
 } from '@codemirror/view';
-import { EditorState } from '@codemirror/state';
-import { defaultKeymap, history, historyKeymap } from '@codemirror/commands';
-import { useRef, useEffect, useState } from 'react';
+import { tags } from '@lezer/highlight';
+import { useEffect, useRef, useState } from 'react';
 import { Box } from '../../styled-system/jsx';
 
 // TODO: Disabled Cmd+/ for commenting as it conflicts with the app toggle sidebar

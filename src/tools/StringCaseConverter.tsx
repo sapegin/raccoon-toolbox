@@ -1,12 +1,12 @@
-import { useState, useCallback, useEffect } from 'react';
-import { Editor } from '../components/Editor';
+import { useCallback, useEffect, useState } from 'react';
 import { Button } from '../components/Button';
-import { usePersistentState } from '../hooks/usePersistentState';
-import { Panel } from '../components/Panel';
 import { CopyButton } from '../components/CopyButton';
-import { Select } from '../components/Select';
-import { convertCase, caseOptions, type CaseType } from '../util/string-case';
+import { Editor } from '../components/Editor';
+import { Panel } from '../components/Panel';
 import { Screen } from '../components/Screen';
+import { Select } from '../components/Select';
+import { usePersistentState } from '../hooks/usePersistentState';
+import { caseOptions, type CaseType, convertCase } from '../util/string-case';
 
 export function StringCaseConverter() {
   const [input, setInput] = usePersistentState('stringCaseConverter.input', '');

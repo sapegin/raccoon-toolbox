@@ -1,7 +1,7 @@
 // Auto-generated file. Do not edit manually.
 // Generated from tools.json by scripts/generate-tools.ts
 
-import { lazy, ComponentType } from 'react';
+import { ComponentType,lazy } from 'react';
 
 export interface Tool {
   id: string;

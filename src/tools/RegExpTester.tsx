@@ -1,13 +1,13 @@
-import { useState, useCallback, useEffect } from 'react';
-import { Editor } from '../components/Editor';
+import { useCallback, useEffect, useState } from 'react';
+import { Grid, Stack } from '../../styled-system/jsx';
 import { Button } from '../components/Button';
-import { Stack, Grid } from '../../styled-system/jsx';
-import { usePersistentState } from '../hooks/usePersistentState';
-import { Panel } from '../components/Panel';
 import { CopyButton } from '../components/CopyButton';
+import { Editor } from '../components/Editor';
 import { Input } from '../components/Input';
-import { Screen } from '../components/Screen';
+import { Panel } from '../components/Panel';
 import { RegExpCheatSheet } from '../components/RegExpCheatSheet';
+import { Screen } from '../components/Screen';
+import { usePersistentState } from '../hooks/usePersistentState';
 
 const defaultFormatter = String.raw`$0\n`;
 

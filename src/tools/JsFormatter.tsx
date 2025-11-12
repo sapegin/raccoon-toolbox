@@ -1,13 +1,13 @@
-import { useState, useCallback, useEffect } from 'react';
-import prettier from 'prettier/standalone';
 import prettierPluginBabel from 'prettier/plugins/babel';
 import prettierPluginEstree from 'prettier/plugins/estree';
-import { Editor } from '../components/Editor';
+import prettier from 'prettier/standalone';
+import { useCallback, useEffect, useState } from 'react';
 import { Button } from '../components/Button';
-import { usePersistentState } from '../hooks/usePersistentState';
-import { Panel } from '../components/Panel';
 import { CopyButton } from '../components/CopyButton';
+import { Editor } from '../components/Editor';
+import { Panel } from '../components/Panel';
 import { Screen } from '../components/Screen';
+import { usePersistentState } from '../hooks/usePersistentState';
 
 export function JsFormatter() {
   const [input, setInput] = usePersistentState('jsFormatter.input', '');

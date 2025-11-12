@@ -1,11 +1,11 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { Stack } from '../../styled-system/jsx';
-import { Editor } from '../components/Editor';
 import { Button } from '../components/Button';
-import { usePersistentState } from '../hooks/usePersistentState';
+import { Editor } from '../components/Editor';
 import { Panel } from '../components/Panel';
-import { Table } from '../components/Table';
 import { Screen } from '../components/Screen';
+import { Table } from '../components/Table';
+import { usePersistentState } from '../hooks/usePersistentState';
 
 export function UrlParser() {
   const [input, setInput] = usePersistentState('urlParser.input', '');

@@ -1,8 +1,8 @@
-import { Screen } from '../components/Screen';
-import { Stack, Link } from '../../styled-system/jsx';
-import { Text } from '../components/Text';
-import { Icon } from '../components/Icon';
 import { css } from '../../styled-system/css';
+import { Link, Stack } from '../../styled-system/jsx';
+import { Icon } from '../components/Icon';
+import { Screen } from '../components/Screen';
+import { Text } from '../components/Text';
 import { externalTools } from '../externalTools';
 import { getShortcut } from '../util/getShortcut';
 

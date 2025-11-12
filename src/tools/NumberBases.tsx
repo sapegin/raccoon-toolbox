@@ -1,10 +1,10 @@
-import { useState, useCallback, type ChangeEvent } from 'react';
+import { type ChangeEvent, useCallback, useState } from 'react';
+import { Stack } from '../../styled-system/jsx';
 import { Input } from '../components/Input';
-import { usePersistentState } from '../hooks/usePersistentState';
 import { Panel } from '../components/Panel';
 import { Screen } from '../components/Screen';
-import { Stack } from '../../styled-system/jsx';
 import { Text } from '../components/Text';
+import { usePersistentState } from '../hooks/usePersistentState';
 
 type Base = 'binary' | 'octal' | 'decimal' | 'hexadecimal';
 

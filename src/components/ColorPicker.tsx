@@ -1,10 +1,10 @@
 import { type Colord, colord } from 'colord';
 import {
-  useState,
-  useEffect,
-  useCallback,
-  useRef,
   type HTMLProps,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
 } from 'react';
 import { Box, Grid } from '../../styled-system/jsx';
 

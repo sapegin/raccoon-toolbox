@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
-import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
-import { tools } from '../tools';
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import { usePersistentState } from '../hooks/usePersistentState';
+import { tools } from '../tools';
 
 export function Router() {
   const location = useLocation();

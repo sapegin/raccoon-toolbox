@@ -1,6 +1,6 @@
 import type { ComponentProps, ReactNode } from 'react';
+import { Box, Flex, Stack, VisuallyHidden } from '../../styled-system/jsx';
 import { ErrorMessage } from './ErrorMessage';
-import { Flex, Stack, Box, VisuallyHidden } from '../../styled-system/jsx';
 import { Text } from './Text';
 
 export function Panel({

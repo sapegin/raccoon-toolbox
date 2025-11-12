@@ -2,14 +2,14 @@ import type { ReactNode } from 'react';
 import {
   Box,
   Flex,
+  type HTMLStyledProps,
   Stack,
   styled,
-  type HTMLStyledProps,
 } from '../../styled-system/jsx';
-import { text } from './Text';
 import { visuallyHidden } from '../../styled-system/patterns/visually-hidden';
-import { Icon } from './Icon';
 import type { RequiredLabel } from '../types';
+import { Icon } from './Icon';
+import { text } from './Text';
 
 const SelectBox = styled('select', {
   base: {

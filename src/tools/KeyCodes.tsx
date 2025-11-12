@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import { Stack, Grid, VisuallyHidden } from '../../styled-system/jsx';
-import { Screen } from '../components/Screen';
+import { Grid, Stack, VisuallyHidden } from '../../styled-system/jsx';
 import { LargeValue } from '../components/LargeValue';
+import { Screen } from '../components/Screen';
 import { Text } from '../components/Text';
 
 interface KeyInfo {

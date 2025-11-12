@@ -1,20 +1,20 @@
+import './styles.css';
+import { invoke, isTauri } from '@tauri-apps/api/core';
+import { listen } from '@tauri-apps/api/event';
+import { getCurrentWindow } from '@tauri-apps/api/window';
+import { openUrl } from '@tauri-apps/plugin-opener';
 import { Suspense, useCallback, useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { getCurrentWindow } from '@tauri-apps/api/window';
-import { listen } from '@tauri-apps/api/event';
-import { invoke, isTauri } from '@tauri-apps/api/core';
-import { openUrl } from '@tauri-apps/plugin-opener';
-import { usePersistentState } from './hooks/usePersistentState';
-import { useHotkey } from './hooks/useHotkey';
-import { Router } from './components/Router';
-import { Spinner } from './components/Spinner';
+import { AppLayout } from './components/AppLayout';
 import { CommandPalette } from './components/CommandPalette';
 import { HotkeysDialog } from './components/HotkeysDialog';
-import { AppLayout } from './components/AppLayout';
-import { tools } from './tools';
-import './styles.css';
-import { APP_NAME } from './constants';
+import { Router } from './components/Router';
 import { Screen } from './components/Screen';
+import { Spinner } from './components/Spinner';
+import { APP_NAME } from './constants';
+import { useHotkey } from './hooks/useHotkey';
+import { usePersistentState } from './hooks/usePersistentState';
+import { tools } from './tools';
 
 export function App() {
   const [isSidebarOpen, setIsSidebarOpen] = usePersistentState(

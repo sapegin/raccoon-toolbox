@@ -1,14 +1,14 @@
-import { useState, useMemo } from 'react';
-import {
-  unicodeCharacters,
-  type UnicodeCharacter,
-} from '../data/unicode-characters';
-import { Input } from '../components/Input';
+import { useMemo, useState } from 'react';
 import { css } from '../../styled-system/css';
 import { Box, Link } from '../../styled-system/jsx';
+import { Input } from '../components/Input';
+import { Screen } from '../components/Screen';
 import { Table } from '../components/Table';
 import { Text } from '../components/Text';
-import { Screen } from '../components/Screen';
+import {
+  type UnicodeCharacter,
+  unicodeCharacters,
+} from '../data/unicode-characters';
 
 function ResultsTable({ characters }: { characters: UnicodeCharacter[] }) {
   return (

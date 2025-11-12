@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
-import { Table } from './Table';
 import { Panel } from './Panel';
+import { Table } from './Table';
 import { Text } from './Text';
 
 const cheatSheetData = [

@@ -1,10 +1,10 @@
-import { useState, useCallback, useEffect } from 'react';
-import { Editor } from '../components/Editor';
+import { useCallback, useEffect, useState } from 'react';
 import { Button } from '../components/Button';
-import { usePersistentState } from '../hooks/usePersistentState';
-import { Panel } from '../components/Panel';
 import { CopyButton } from '../components/CopyButton';
+import { Editor } from '../components/Editor';
+import { Panel } from '../components/Panel';
 import { Screen } from '../components/Screen';
+import { usePersistentState } from '../hooks/usePersistentState';
 
 // Naïve CSV parser: split by commas, handle quoted values
 function parseLine(line: string) {

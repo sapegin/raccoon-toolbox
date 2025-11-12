@@ -1,11 +1,11 @@
-import { useState, useCallback, useEffect } from 'react';
 import { dump } from 'js-yaml';
-import { Editor } from '../components/Editor';
+import { useCallback, useEffect, useState } from 'react';
 import { Button } from '../components/Button';
-import { usePersistentState } from '../hooks/usePersistentState';
-import { Panel } from '../components/Panel';
 import { CopyButton } from '../components/CopyButton';
+import { Editor } from '../components/Editor';
+import { Panel } from '../components/Panel';
 import { Screen } from '../components/Screen';
+import { usePersistentState } from '../hooks/usePersistentState';
 import { stripJsonComments } from '../util/stripJsonComments';
 
 function jsonToYaml(json: unknown): string {

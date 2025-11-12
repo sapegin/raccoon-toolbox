@@ -26,7 +26,7 @@ export default defineConfig({
   minify: true,
 
   // Where to look for CSS declarations
-  include: ['./src/**/*.{js,jsx,ts,tsx,astro}'],
+  include: ['./src/**/*.{js,jsx,ts,tsx}'],
 
   // Files to exclude
   exclude: [],

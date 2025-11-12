@@ -1,18 +1,18 @@
+import { isTauri } from '@tauri-apps/api/core';
 import {
-  Flex,
-  Stack,
   Box,
+  Flex,
   Grid,
+  Stack,
   VisuallyHidden,
 } from '../../styled-system/jsx';
+import { tools } from '../tools';
+import { getShortcut } from '../util/getShortcut';
 import { Icon } from './Icon';
 import { IconButton } from './IconButton';
-import { tools } from '../tools';
 import { NavigationButton } from './NavigationButton';
-import { SidebarLink } from './SidebarLink';
-import { getShortcut } from '../util/getShortcut';
 import { SearchButton } from './SearchButton';
-import { isTauri } from '@tauri-apps/api/core';
+import { SidebarLink } from './SidebarLink';
 
 export function Sidebar({
   onClose,

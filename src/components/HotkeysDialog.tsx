@@ -1,9 +1,9 @@
-import { Modal } from './Modal';
-import { Heading } from './Heading';
-import { Table } from './Table';
+import { css } from '../../styled-system/css';
 import { Stack } from '../../styled-system/jsx';
 import { getShortcut } from '../util/getShortcut';
-import { css } from '../../styled-system/css';
+import { Heading } from './Heading';
+import { Modal } from './Modal';
+import { Table } from './Table';
 
 interface HotkeysDialogProps {
   isOpen: boolean;

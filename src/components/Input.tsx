@@ -1,11 +1,11 @@
 import type { ReactNode } from 'react';
 import {
   Flex,
+  type HTMLStyledProps,
   Stack,
   styled,
-  type HTMLStyledProps,
 } from '../../styled-system/jsx';
-import { text, Text } from './Text';
+import { Text, text } from './Text';
 
 export const InputBox = styled('input', {
   base: {

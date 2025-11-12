@@ -1,14 +1,14 @@
-import { useState, useCallback, useEffect } from 'react';
-import { colord, type Colord } from 'colord';
+import { type Colord, colord } from 'colord';
+import { useCallback, useEffect, useState } from 'react';
+import { Stack, VisuallyHidden } from '../../styled-system/jsx';
 import { Button } from '../components/Button';
-import { VisuallyHidden, Stack } from '../../styled-system/jsx';
-import { usePersistentState } from '../hooks/usePersistentState';
-import { Input } from '../components/Input';
-import { CopyButton } from '../components/CopyButton';
-import { Screen } from '../components/Screen';
 import { ColorPickerWithPreview } from '../components/ColorPickerWithPreview';
-import { parseColorInput } from '../util/parseColorInput';
+import { CopyButton } from '../components/CopyButton';
+import { Input } from '../components/Input';
 import { Panel } from '../components/Panel';
+import { Screen } from '../components/Screen';
+import { usePersistentState } from '../hooks/usePersistentState';
+import { parseColorInput } from '../util/parseColorInput';
 
 const defaultColorHex = '#fa8072';
 const defaultColorRgb = 'rgba(250, 128, 114)';

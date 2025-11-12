@@ -1,7 +1,7 @@
-import { useEffect, useRef, type ReactNode } from 'react';
+import { type ReactNode, useEffect, useRef } from 'react';
 import { Box, styled, VisuallyHidden } from '../../styled-system/jsx';
-import { IconButton } from './IconButton';
 import { Icon } from './Icon';
+import { IconButton } from './IconButton';
 
 interface ModalProps {
   id: string;

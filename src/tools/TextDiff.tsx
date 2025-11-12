@@ -1,13 +1,13 @@
-import { useState, useCallback, useEffect } from 'react';
 import { diffChars, diffLines } from 'diff';
-import { Grid, Box } from '../../styled-system/jsx';
-import { Editor } from '../components/Editor';
-import { Button } from '../components/Button';
-import { usePersistentState } from '../hooks/usePersistentState';
-import { Panel } from '../components/Panel';
+import { useCallback, useEffect, useState } from 'react';
 import { css } from '../../styled-system/css';
-import { escapeHtml } from '../util/escapeHtml';
+import { Box, Grid } from '../../styled-system/jsx';
+import { Button } from '../components/Button';
+import { Editor } from '../components/Editor';
+import { Panel } from '../components/Panel';
 import { Screen } from '../components/Screen';
+import { usePersistentState } from '../hooks/usePersistentState';
+import { escapeHtml } from '../util/escapeHtml';
 
 const addedClass = css({
   backgroundColor: 'successBackground',

@@ -1,8 +1,8 @@
 import { type ReactNode } from 'react';
-import { VisuallyHidden, Box, Grid } from '../../styled-system/jsx';
-import { Sidebar } from './Sidebar';
-import { Header } from './Header';
+import { Box, Grid, VisuallyHidden } from '../../styled-system/jsx';
 import { APP_NAME } from '../constants';
+import { Header } from './Header';
+import { Sidebar } from './Sidebar';
 
 interface AppLayoutProps {
   title: string;

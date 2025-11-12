@@ -1,12 +1,12 @@
-import { useState, useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { tools } from '../tools';
-import { Box, styled, VisuallyHidden } from '../../styled-system/jsx';
 import { css } from '../../styled-system/css';
-import { Text } from './Text';
-import { Icon } from './Icon';
+import { Box, styled, VisuallyHidden } from '../../styled-system/jsx';
 import { externalTools } from '../externalTools';
+import { tools } from '../tools';
+import { Icon } from './Icon';
 import { Modal } from './Modal';
+import { Text } from './Text';
 
 interface CommandPaletteProps {
   isOpen: boolean;

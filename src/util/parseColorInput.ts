@@ -1,4 +1,4 @@
-import { colord, type Colord } from 'colord';
+import { type Colord, colord } from 'colord';
 
 export function parseColorInput(input: string): Colord | undefined {
   const trimmed = input.trim();
