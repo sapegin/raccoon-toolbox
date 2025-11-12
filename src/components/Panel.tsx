@@ -3,7 +3,7 @@ import { ErrorMessage } from './ErrorMessage';
 import { Flex } from './Flex';
 import { Stack } from './Stack';
 import { Text } from './Text';
-import { Box } from './Box';
+import { Box } from '../../styled-system/jsx/box';
 import { VisuallyHidden } from '../../styled-system/jsx';
 
 export function Panel({

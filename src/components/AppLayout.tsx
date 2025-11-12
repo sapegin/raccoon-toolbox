@@ -1,6 +1,6 @@
 import { type ReactNode } from 'react';
 import { VisuallyHidden } from '../../styled-system/jsx';
-import { Box } from './Box';
+import { Box } from '../../styled-system/jsx/box';
 import { Grid } from './Grid';
 import { Sidebar } from './Sidebar';
 import { Header } from './Header';

@@ -5,7 +5,7 @@ import { Stack } from './Stack';
 import { tools } from '../tools';
 import { NavigationButton } from './NavigationButton';
 import { SidebarLink } from './SidebarLink';
-import { Box } from './Box';
+import { Box } from '../../styled-system/jsx/box';
 import { Grid, VisuallyHidden } from '../../styled-system/jsx';
 import { getShortcut } from '../util/getShortcut';
 import { SearchButton } from './SearchButton';

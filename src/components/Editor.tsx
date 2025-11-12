@@ -26,7 +26,7 @@ import {
 import { EditorState } from '@codemirror/state';
 import { defaultKeymap, history, historyKeymap } from '@codemirror/commands';
 import { useRef, useEffect, useState } from 'react';
-import { Box } from './Box';
+import { Box } from '../../styled-system/jsx/box';
 
 // TODO: Disabled Cmd+/ for commenting as it conflicts with the app toggle sidebar
 

@@ -3,7 +3,7 @@ import { Text } from './Text';
 import { Icon } from './Icon';
 import { IconButton } from './IconButton';
 import { APP_NAME } from '../constants';
-import { Box } from './Box';
+import { Box } from '../../styled-system/jsx/box';
 import { getShortcut } from '../util/getShortcut';
 import { Flex } from './Flex';
 

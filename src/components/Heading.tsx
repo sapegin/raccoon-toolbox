@@ -1,5 +1,5 @@
 import { cva, type RecipeVariantProps } from '../../styled-system/css';
-import { Box, type BoxProps } from './Box';
+import { Box, type BoxProps } from '../../styled-system/jsx/box';
 
 const heading = cva({
   base: {

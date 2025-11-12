@@ -8,7 +8,7 @@ import { ToggleButton } from '../components/ToggleButton';
 import { Input } from '../components/Input';
 import { Screen } from '../components/Screen';
 import { Stack } from '../components/Stack';
-import { Box } from '../components/Box';
+import { Box } from '../../styled-system/jsx/box';
 
 function generateUuidV4(): string {
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replaceAll(/[xy]/g, (c) => {
