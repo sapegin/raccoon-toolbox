@@ -36,6 +36,10 @@ pub const TOOLS: &[Tool] = &[
         name: "HTML entity encoder/decoder",
     },
     Tool {
+        id: "hash-generator",
+        name: "Hash generator",
+    },
+    Tool {
         id: "html-formatter",
         name: "HTML formatter",
     },

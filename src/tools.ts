@@ -82,6 +82,16 @@ export const tools: Tool[] = [
     ),
   },
   {
+    id: 'hash-generator',
+    name: 'Hash generator',
+    keywords: ['md5', 'sha1', 'sha256', 'sha384', 'sha512', 'checksum', 'digest', 'cryptography'],
+    component: lazy(() =>
+      import('./tools/HashGenerator').then((m) => ({
+        default: m.HashGenerator,
+      }))
+    ),
+  },
+  {
     id: 'html-formatter',
     name: 'HTML formatter',
     keywords: ['beautify', 'pretty', 'prettier', 'indent'],
