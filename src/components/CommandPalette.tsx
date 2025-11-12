@@ -1,10 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { tools } from '../tools';
-import { Box } from '../../styled-system/jsx/box';
+import { Box, styled, VisuallyHidden } from '../../styled-system/jsx';
 import { css } from '../../styled-system/css';
 import { Text } from './Text';
-import { styled, VisuallyHidden } from '../../styled-system/jsx';
 import { Icon } from './Icon';
 import { externalTools } from '../externalTools';
 import { Modal } from './Modal';

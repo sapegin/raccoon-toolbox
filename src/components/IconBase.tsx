@@ -1,6 +1,6 @@
 import type { SVGProps } from 'react';
 import { css } from '../../styled-system/css';
-import type { BoxProps } from '../../styled-system/jsx/box';
+import type { BoxProps } from '../../styled-system/jsx';
 
 export type BaseIconProps = Pick<BoxProps, 'display' | 'verticalAlign'> &
   Omit<

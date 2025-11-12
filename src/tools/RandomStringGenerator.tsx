@@ -5,7 +5,7 @@ import { Panel } from '../components/Panel';
 import { CopyButton } from '../components/CopyButton';
 import { Input } from '../components/Input';
 import { Screen } from '../components/Screen';
-import { Stack } from '../../styled-system/jsx/stack';
+import { Stack } from '../../styled-system/jsx';
 
 const UPPERCASE = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const LOWERCASE = 'abcdefghijklmnopqrstuvwxyz';

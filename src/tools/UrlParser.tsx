@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect } from 'react';
-import { Stack } from '../../styled-system/jsx/stack';
+import { Stack } from '../../styled-system/jsx';
 import { Editor } from '../components/Editor';
 import { Button } from '../components/Button';
 import { usePersistentState } from '../hooks/usePersistentState';

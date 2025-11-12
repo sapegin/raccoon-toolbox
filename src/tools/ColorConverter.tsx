@@ -1,9 +1,8 @@
 import { useState, useCallback, useEffect } from 'react';
 import { colord, type Colord } from 'colord';
 import { Button } from '../components/Button';
-import { VisuallyHidden } from '../../styled-system/jsx';
+import { VisuallyHidden, Stack } from '../../styled-system/jsx';
 import { usePersistentState } from '../hooks/usePersistentState';
-import { Stack } from '../../styled-system/jsx/stack';
 import { Input } from '../components/Input';
 import { CopyButton } from '../components/CopyButton';
 import { Screen } from '../components/Screen';

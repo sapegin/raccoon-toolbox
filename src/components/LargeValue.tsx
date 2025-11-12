@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { Stack } from '../../styled-system/jsx/stack';
+import { Stack } from '../../styled-system/jsx';
 import { Text } from '../components/Text';
 
 /**

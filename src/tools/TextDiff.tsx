@@ -1,13 +1,12 @@
 import { useState, useCallback, useEffect } from 'react';
 import { diffChars, diffLines } from 'diff';
-import { Grid } from '../../styled-system/jsx/grid';
+import { Grid, Box } from '../../styled-system/jsx';
 import { Editor } from '../components/Editor';
 import { Button } from '../components/Button';
 import { usePersistentState } from '../hooks/usePersistentState';
 import { Panel } from '../components/Panel';
 import { css } from '../../styled-system/css';
 import { escapeHtml } from '../util/escapeHtml';
-import { Box } from '../../styled-system/jsx';
 import { Screen } from '../components/Screen';
 
 const addedClass = css({

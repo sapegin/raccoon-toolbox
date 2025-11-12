@@ -1,11 +1,10 @@
 import { useCallback, useEffect, useState } from 'react';
 import { usePersistentState } from '../hooks/usePersistentState';
 import { Panel } from '../components/Panel';
-import { Stack } from '../../styled-system/jsx/stack';
+import { Stack, Grid } from '../../styled-system/jsx';
 import { Screen } from '../components/Screen';
 import { LargeValue } from '../components/LargeValue';
 import { Input } from '../components/Input';
-import { Grid } from '../../styled-system/jsx/grid';
 
 const defaultWidth = 1920;
 const defaultHeight = 1080;

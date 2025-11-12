@@ -1,9 +1,7 @@
 import type { Colord } from 'colord';
-import { VisuallyHidden } from '../../styled-system/jsx';
+import { VisuallyHidden, Grid, Stack } from '../../styled-system/jsx';
 import { ColorPicker } from './ColorPicker';
 import { ColorSwatch } from './ColorSwatch';
-import { Grid } from '../../styled-system/jsx/grid';
-import { Stack } from '../../styled-system/jsx/stack';
 import type { ReactNode } from 'react';
 
 // TODO: Click on the base color swatch should set this color

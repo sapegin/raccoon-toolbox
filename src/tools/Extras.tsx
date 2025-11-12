@@ -1,11 +1,10 @@
 import { Screen } from '../components/Screen';
-import { Stack } from '../../styled-system/jsx/stack';
+import { Stack, Link } from '../../styled-system/jsx';
 import { Text } from '../components/Text';
 import { Icon } from '../components/Icon';
 import { css } from '../../styled-system/css';
 import { externalTools } from '../externalTools';
 import { getShortcut } from '../util/getShortcut';
-import { Link } from '../../styled-system/jsx';
 
 export function Extras() {
   return (

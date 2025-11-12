@@ -1,4 +1,4 @@
-import { Box, type BoxProps } from '../../styled-system/jsx/box';
+import { Box, type BoxProps } from '../../styled-system/jsx';
 
 export function ErrorMessage({ children, ...props }: BoxProps) {
   return (

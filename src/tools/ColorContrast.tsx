@@ -3,15 +3,13 @@ import { colord, type Colord, extend } from 'colord';
 import a11yPlugin from 'colord/plugins/a11y';
 import { Button } from '../components/Button';
 import { usePersistentState } from '../hooks/usePersistentState';
-import { Stack } from '../../styled-system/jsx/stack';
+import { Stack, Grid, Flex, VisuallyHidden } from '../../styled-system/jsx';
 import { Input } from '../components/Input';
 import { Screen } from '../components/Screen';
 import { ColorPickerWithPreview } from '../components/ColorPickerWithPreview';
-import { Grid } from '../../styled-system/jsx/grid';
 import { Text } from '../components/Text';
 import { parseColorInput } from '../util/parseColorInput';
 import { Panel } from '../components/Panel';
-import { Flex, VisuallyHidden } from '../../styled-system/jsx';
 import { Icon } from '../components/Icon';
 
 extend([a11yPlugin]);

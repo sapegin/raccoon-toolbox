@@ -1,4 +1,4 @@
-import { Box } from '../../styled-system/jsx/box';
+import { Box } from '../../styled-system/jsx';
 
 export function Spinner() {
   return (
