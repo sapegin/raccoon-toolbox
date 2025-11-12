@@ -1,7 +1,7 @@
 import { Modal } from './Modal';
 import { Heading } from './Heading';
 import { Table } from './Table';
-import { Stack } from './Stack';
+import { Stack } from '../../styled-system/jsx/stack';
 import { getShortcut } from '../util/getShortcut';
 import { css } from '../../styled-system/css';
 

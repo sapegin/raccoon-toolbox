@@ -1,7 +1,7 @@
 import type { ComponentProps, ReactNode } from 'react';
 import { ErrorMessage } from './ErrorMessage';
-import { Flex } from './Flex';
-import { Stack } from './Stack';
+import { Flex } from '../../styled-system/jsx/flex';
+import { Stack } from '../../styled-system/jsx/stack';
 import { Text } from './Text';
 import { Box } from '../../styled-system/jsx/box';
 import { VisuallyHidden } from '../../styled-system/jsx';

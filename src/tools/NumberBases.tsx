@@ -3,7 +3,7 @@ import { Input } from '../components/Input';
 import { usePersistentState } from '../hooks/usePersistentState';
 import { Panel } from '../components/Panel';
 import { Screen } from '../components/Screen';
-import { Stack } from '../components/Stack';
+import { Stack } from '../../styled-system/jsx/stack';
 import { Text } from '../components/Text';
 
 type Base = 'binary' | 'octal' | 'decimal' | 'hexadecimal';

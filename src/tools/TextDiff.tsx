@@ -1,6 +1,6 @@
 import { useState, useCallback, useEffect } from 'react';
 import { diffChars, diffLines } from 'diff';
-import { Grid } from '../components/Grid';
+import { Grid } from '../../styled-system/jsx/grid';
 import { Editor } from '../components/Editor';
 import { Button } from '../components/Button';
 import { usePersistentState } from '../hooks/usePersistentState';

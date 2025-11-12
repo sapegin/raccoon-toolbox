@@ -3,7 +3,7 @@ import { Editor } from '../components/Editor';
 import { Button } from '../components/Button';
 import { usePersistentState } from '../hooks/usePersistentState';
 import { Panel } from '../components/Panel';
-import { Stack } from '../components/Stack';
+import { Stack } from '../../styled-system/jsx/stack';
 import { calculateTextStats, type TextStats } from '../util/text-stats';
 import { Screen } from '../components/Screen';
 import { LargeValue } from '../components/LargeValue';

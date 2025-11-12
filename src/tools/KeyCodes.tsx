@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import { Stack } from '../components/Stack';
+import { Stack } from '../../styled-system/jsx/stack';
 import { Screen } from '../components/Screen';
 import { LargeValue } from '../components/LargeValue';
 import { Text } from '../components/Text';
-import { Grid } from '../components/Grid';
+import { Grid } from '../../styled-system/jsx/grid';
 import { VisuallyHidden } from '../../styled-system/jsx';
 
 interface KeyInfo {

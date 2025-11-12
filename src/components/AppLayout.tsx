@@ -1,7 +1,7 @@
 import { type ReactNode } from 'react';
 import { VisuallyHidden } from '../../styled-system/jsx';
 import { Box } from '../../styled-system/jsx/box';
-import { Grid } from './Grid';
+import { Grid } from '../../styled-system/jsx/grid';
 import { Sidebar } from './Sidebar';
 import { Header } from './Header';
 import { APP_NAME } from '../constants';

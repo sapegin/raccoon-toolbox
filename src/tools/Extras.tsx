@@ -1,5 +1,5 @@
 import { Screen } from '../components/Screen';
-import { Stack } from '../components/Stack';
+import { Stack } from '../../styled-system/jsx/stack';
 import { Text } from '../components/Text';
 import { Icon } from '../components/Icon';
 import { css } from '../../styled-system/css';

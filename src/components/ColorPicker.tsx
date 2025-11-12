@@ -7,7 +7,7 @@ import {
   type HTMLProps,
 } from 'react';
 import { Box } from '../../styled-system/jsx/box';
-import { Grid } from './Grid';
+import { Grid } from '../../styled-system/jsx/grid';
 
 interface ColorPickerProps {
   color: Colord;

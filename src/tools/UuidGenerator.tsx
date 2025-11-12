@@ -7,7 +7,7 @@ import { Select } from '../components/Select';
 import { ToggleButton } from '../components/ToggleButton';
 import { Input } from '../components/Input';
 import { Screen } from '../components/Screen';
-import { Stack } from '../components/Stack';
+import { Stack } from '../../styled-system/jsx/stack';
 import { Box } from '../../styled-system/jsx/box';
 
 function generateUuidV4(): string {

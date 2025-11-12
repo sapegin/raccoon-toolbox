@@ -1,7 +1,7 @@
-import { Flex } from './Flex';
+import { Flex } from '../../styled-system/jsx/flex';
 import { Icon } from './Icon';
 import { IconButton } from './IconButton';
-import { Stack } from './Stack';
+import { Stack } from '../../styled-system/jsx/stack';
 import { tools } from '../tools';
 import { NavigationButton } from './NavigationButton';
 import { SidebarLink } from './SidebarLink';

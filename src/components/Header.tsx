@@ -1,11 +1,11 @@
-import { Grid } from './Grid';
+import { Grid } from '../../styled-system/jsx/grid';
 import { Text } from './Text';
 import { Icon } from './Icon';
 import { IconButton } from './IconButton';
 import { APP_NAME } from '../constants';
 import { Box } from '../../styled-system/jsx/box';
 import { getShortcut } from '../util/getShortcut';
-import { Flex } from './Flex';
+import { Flex } from '../../styled-system/jsx/flex';
 
 export function Header({
   title = APP_NAME,
