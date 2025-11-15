@@ -12,20 +12,6 @@
     "keywords": ["binary", "data", "image"]
   },
   {
-    "id": "number-bases",
-    "name": "Number base converter",
-    "module": "NumberBases",
-    "keywords": [
-      "numbers",
-      "binary",
-      "octal",
-      "decimal",
-      "hexadecimal",
-      "radix",
-      "base conversion"
-    ]
-  },
-  {
     "id": "color-converter",
     "name": "Color converter",
     "module": "ColorConverter",
@@ -42,6 +28,12 @@
     "name": "CSS formatter",
     "module": "CssFormatter",
     "keywords": ["beautify", "pretty", "prettier"]
+  },
+  {
+    "id": "csv-to-json",
+    "name": "CSV to JSON converter",
+    "module": "CsvToJson",
+    "keywords": ["spreadsheet", "table", "data"]
   },
   {
     "id": "html-entity-encoder",
@@ -97,12 +89,6 @@
     "keywords": ["spreadsheet", "table", "data"]
   },
   {
-    "id": "csv-to-json",
-    "name": "CSV to JSON converter",
-    "module": "CsvToJson",
-    "keywords": ["spreadsheet", "table", "data"]
-  },
-  {
     "id": "json-to-yaml",
     "name": "JSON to YAML converter",
     "module": "JsonToYaml",
@@ -125,6 +111,26 @@
     "name": "Lorem Ipsum generator",
     "module": "LoremIpsum",
     "keywords": ["placeholders", "dummy", "texts", "fillers", "content", "fish"]
+  },
+  {
+    "id": "number-bases",
+    "name": "Number base converter",
+    "module": "NumberBases",
+    "keywords": [
+      "numbers",
+      "binary",
+      "octal",
+      "decimal",
+      "hexadecimal",
+      "radix",
+      "base conversion"
+    ]
+  },
+  {
+    "id": "random-string-generator",
+    "name": "Random string generator",
+    "module": "RandomStringGenerator",
+    "keywords": ["passwords", "characters", "generator", "strings"]
   },
   {
     "id": "regexp-tester",
@@ -178,18 +184,6 @@
     "keywords": ["characters", "emojis", "symbols", "codepoints", "utf"]
   },
   {
-    "id": "uuid-generator",
-    "name": "UUID generator",
-    "module": "UuidGenerator",
-    "keywords": ["guid", "identifier", "unique", "random"]
-  },
-  {
-    "id": "random-string-generator",
-    "name": "Random string generator",
-    "module": "RandomStringGenerator",
-    "keywords": ["passwords", "characters", "generator", "strings"]
-  },
-  {
     "id": "url-encoder",
     "name": "URL encoder/decoder",
     "module": "UrlEncoder",
@@ -207,6 +201,12 @@
       "parameters",
       "links"
     ]
+  },
+  {
+    "id": "uuid-generator",
+    "name": "UUID generator",
+    "module": "UuidGenerator",
+    "keywords": ["guid", "identifier", "unique", "random"]
   },
   {
     "id": "xml-formatter",
