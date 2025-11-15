@@ -6,6 +6,7 @@ import { Button } from '../components/Button';
 import { Editor } from '../components/Editor';
 import { Panel } from '../components/Panel';
 import { Screen } from '../components/Screen';
+import { Text } from '../components/Text';
 import { usePersistentState } from '../hooks/usePersistentState';
 import { escapeHtml } from '../util/escapeHtml';
 
@@ -119,7 +120,20 @@ export function TextDiff() {
           <Editor label="Text B" value={textB} onChange={handleTextBChange} />
         </Panel>
       </Grid>
-      <Panel fullHeight label="Difference">
+      <Panel
+        fullHeight
+        label={
+          <>
+            Difference
+            {textA === textB && (
+              <Text as="span" color="successForeground">
+                {' '}
+                (no difference)
+              </Text>
+            )}
+          </>
+        }
+      >
         <output htmlFor="text-a text-b">
           <Box
             display="block"
