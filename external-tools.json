@@ -107,7 +107,12 @@
   {
     "name": "JSON Web Token debugger",
     "url": "https://www.jwt.io/",
-    "keywords": ["JWT", "decoder", "encoder"]
+    "keywords": ["jwt", "decoder", "encoder"]
+  },
+  {
+    "name": "Jq cheat sheet",
+    "url": "https://www.ditig.com/jq-cheat-sheet",
+    "keywords": ["json", "cli"]
   },
   {
     "name": "Named CSS colors",
