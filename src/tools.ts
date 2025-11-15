@@ -32,16 +32,6 @@ export const tools: Tool[] = [
     ),
   },
   {
-    id: 'number-bases',
-    name: 'Number base converter',
-    keywords: ['numbers', 'binary', 'octal', 'decimal', 'hexadecimal', 'radix', 'base conversion'],
-    component: lazy(() =>
-      import('./tools/NumberBases').then((m) => ({
-        default: m.NumberBases,
-      }))
-    ),
-  },
-  {
     id: 'color-converter',
     name: 'Color converter',
     keywords: ['hex', 'rgb', 'hsl', 'css', 'palette'],
@@ -68,6 +58,16 @@ export const tools: Tool[] = [
     component: lazy(() =>
       import('./tools/CssFormatter').then((m) => ({
         default: m.CssFormatter,
+      }))
+    ),
+  },
+  {
+    id: 'csv-to-json',
+    name: 'CSV to JSON converter',
+    keywords: ['spreadsheet', 'table', 'data'],
+    component: lazy(() =>
+      import('./tools/CsvToJson').then((m) => ({
+        default: m.CsvToJson,
       }))
     ),
   },
@@ -132,16 +132,6 @@ export const tools: Tool[] = [
     ),
   },
   {
-    id: 'csv-to-json',
-    name: 'CSV to JSON converter',
-    keywords: ['spreadsheet', 'table', 'data'],
-    component: lazy(() =>
-      import('./tools/CsvToJson').then((m) => ({
-        default: m.CsvToJson,
-      }))
-    ),
-  },
-  {
     id: 'json-to-yaml',
     name: 'JSON to YAML converter',
     keywords: ['yml', 'data'],
@@ -172,12 +162,42 @@ export const tools: Tool[] = [
     ),
   },
   {
+    id: 'line-sort',
+    name: 'Line sort/dedupe',
+    keywords: ['sorting', 'deduplication', 'duplicates', 'unique', 'lines', 'text', 'order'],
+    component: lazy(() =>
+      import('./tools/LineSort').then((m) => ({
+        default: m.LineSort,
+      }))
+    ),
+  },
+  {
     id: 'lorem-ipsum',
     name: 'Lorem Ipsum generator',
     keywords: ['placeholders', 'dummy', 'texts', 'fillers', 'content', 'fish'],
     component: lazy(() =>
       import('./tools/LoremIpsum').then((m) => ({
         default: m.LoremIpsum,
+      }))
+    ),
+  },
+  {
+    id: 'number-bases',
+    name: 'Number base converter',
+    keywords: ['numbers', 'binary', 'octal', 'decimal', 'hexadecimal', 'radix', 'base conversion'],
+    component: lazy(() =>
+      import('./tools/NumberBases').then((m) => ({
+        default: m.NumberBases,
+      }))
+    ),
+  },
+  {
+    id: 'random-string-generator',
+    name: 'Random string generator',
+    keywords: ['passwords', 'characters', 'generator', 'strings'],
+    component: lazy(() =>
+      import('./tools/RandomStringGenerator').then((m) => ({
+        default: m.RandomStringGenerator,
       }))
     ),
   },
@@ -232,26 +252,6 @@ export const tools: Tool[] = [
     ),
   },
   {
-    id: 'uuid-generator',
-    name: 'UUID generator',
-    keywords: ['guid', 'identifier', 'unique', 'random'],
-    component: lazy(() =>
-      import('./tools/UuidGenerator').then((m) => ({
-        default: m.UuidGenerator,
-      }))
-    ),
-  },
-  {
-    id: 'random-string-generator',
-    name: 'Random string generator',
-    keywords: ['passwords', 'characters', 'generator', 'strings'],
-    component: lazy(() =>
-      import('./tools/RandomStringGenerator').then((m) => ({
-        default: m.RandomStringGenerator,
-      }))
-    ),
-  },
-  {
     id: 'url-encoder',
     name: 'URL encoder/decoder',
     keywords: ['escape', 'unescape', 'uri', 'percent'],
@@ -268,6 +268,16 @@ export const tools: Tool[] = [
     component: lazy(() =>
       import('./tools/UrlParser').then((m) => ({
         default: m.UrlParser,
+      }))
+    ),
+  },
+  {
+    id: 'uuid-generator',
+    name: 'UUID generator',
+    keywords: ['guid', 'identifier', 'unique', 'random'],
+    component: lazy(() =>
+      import('./tools/UuidGenerator').then((m) => ({
+        default: m.UuidGenerator,
       }))
     ),
   },

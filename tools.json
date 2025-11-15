@@ -107,6 +107,20 @@
     "keywords": ["keyboard", "events", "keycodes", "keypress"]
   },
   {
+    "id": "line-sort",
+    "name": "Line sort/dedupe",
+    "module": "LineSort",
+    "keywords": [
+      "sorting",
+      "deduplication",
+      "duplicates",
+      "unique",
+      "lines",
+      "text",
+      "order"
+    ]
+  },
+  {
     "id": "lorem-ipsum",
     "name": "Lorem Ipsum generator",
     "module": "LoremIpsum",
