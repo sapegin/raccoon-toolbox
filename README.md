@@ -27,18 +27,17 @@ A collection of developer utilities built with React and Tauri.
 
 - [x] Aspect ratio calculator
 - [x] Base64 encoder/decoder
-- [x] Color converter
 - [x] Color contrast checker
+- [x] Color converter
 - [x] CSS formatter
 - [x] CSV to JSON converter
-- [x] HTML entity encoder/decoder
 - [x] Hash generator
+- [x] HTML entity encoder/decoder
 - [x] HTML formatter
 - [x] JavaScript formatter
 - [x] JSON formatter
 - [x] JSON to CSV converter
 - [x] JSON to YAML converter
-- [x] YAML to JSON converter
 - [x] Key code lookup
 - [x] Line sort/dedupe
 - [x] Lorem Ipsum generator
@@ -53,6 +52,7 @@ A collection of developer utilities built with React and Tauri.
 - [x] URL parser
 - [x] UUID generator
 - [x] XML formatter
+- [x] YAML to JSON converter
 - [x] More tools
 
 <!-- tools:end -->

@@ -1,7 +1,7 @@
 // Auto-generated file. Do not edit manually.
 // Generated from tools.json by scripts/generate-tools.ts
 
-import { ComponentType,lazy } from 'react';
+import { lazy, ComponentType } from 'react';
 
 export interface Tool {
   id: string;
@@ -32,22 +32,22 @@ export const tools: Tool[] = [
     ),
   },
   {
-    id: 'color-converter',
-    name: 'Color converter',
-    keywords: ['hex', 'rgb', 'hsl', 'css', 'palette'],
-    component: lazy(() =>
-      import('./tools/ColorConverter').then((m) => ({
-        default: m.ColorConverter,
-      }))
-    ),
-  },
-  {
     id: 'color-contrast',
     name: 'Color contrast checker',
     keywords: ['wcag', 'accessibility', 'a11y', 'contrast ratio'],
     component: lazy(() =>
       import('./tools/ColorContrast').then((m) => ({
         default: m.ColorContrast,
+      }))
+    ),
+  },
+  {
+    id: 'color-converter',
+    name: 'Color converter',
+    keywords: ['hex', 'rgb', 'hsl', 'css', 'palette'],
+    component: lazy(() =>
+      import('./tools/ColorConverter').then((m) => ({
+        default: m.ColorConverter,
       }))
     ),
   },
@@ -72,22 +72,22 @@ export const tools: Tool[] = [
     ),
   },
   {
-    id: 'html-entity-encoder',
-    name: 'HTML entity encoder/decoder',
-    keywords: ['escape', 'unescape', 'entities', 'special characters'],
-    component: lazy(() =>
-      import('./tools/HtmlEntityEncoder').then((m) => ({
-        default: m.HtmlEntityEncoder,
-      }))
-    ),
-  },
-  {
     id: 'hash-generator',
     name: 'Hash generator',
     keywords: ['md5', 'sha1', 'sha256', 'sha384', 'sha512', 'checksum', 'digest', 'cryptography'],
     component: lazy(() =>
       import('./tools/HashGenerator').then((m) => ({
         default: m.HashGenerator,
+      }))
+    ),
+  },
+  {
+    id: 'html-entity-encoder',
+    name: 'HTML entity encoder/decoder',
+    keywords: ['escape', 'unescape', 'entities', 'special characters'],
+    component: lazy(() =>
+      import('./tools/HtmlEntityEncoder').then((m) => ({
+        default: m.HtmlEntityEncoder,
       }))
     ),
   },
@@ -138,16 +138,6 @@ export const tools: Tool[] = [
     component: lazy(() =>
       import('./tools/JsonToYaml').then((m) => ({
         default: m.JsonToYaml,
-      }))
-    ),
-  },
-  {
-    id: 'yaml-to-json',
-    name: 'YAML to JSON converter',
-    keywords: ['yml', 'data'],
-    component: lazy(() =>
-      import('./tools/YamlToJson').then((m) => ({
-        default: m.YamlToJson,
       }))
     ),
   },
@@ -288,6 +278,16 @@ export const tools: Tool[] = [
     component: lazy(() =>
       import('./tools/XmlFormatter').then((m) => ({
         default: m.XmlFormatter,
+      }))
+    ),
+  },
+  {
+    id: 'yaml-to-json',
+    name: 'YAML to JSON converter',
+    keywords: ['yml', 'data'],
+    component: lazy(() =>
+      import('./tools/YamlToJson').then((m) => ({
+        default: m.YamlToJson,
       }))
     ),
   },

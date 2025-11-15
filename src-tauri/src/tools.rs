@@ -16,12 +16,12 @@ pub const TOOLS: &[Tool] = &[
         name: "Base64 encoder/decoder",
     },
     Tool {
-        id: "color-converter",
-        name: "Color converter",
-    },
-    Tool {
         id: "color-contrast",
         name: "Color contrast checker",
+    },
+    Tool {
+        id: "color-converter",
+        name: "Color converter",
     },
     Tool {
         id: "css-formatter",
@@ -32,12 +32,12 @@ pub const TOOLS: &[Tool] = &[
         name: "CSV to JSON converter",
     },
     Tool {
-        id: "html-entity-encoder",
-        name: "HTML entity encoder/decoder",
-    },
-    Tool {
         id: "hash-generator",
         name: "Hash generator",
+    },
+    Tool {
+        id: "html-entity-encoder",
+        name: "HTML entity encoder/decoder",
     },
     Tool {
         id: "html-formatter",
@@ -58,10 +58,6 @@ pub const TOOLS: &[Tool] = &[
     Tool {
         id: "json-to-yaml",
         name: "JSON to YAML converter",
-    },
-    Tool {
-        id: "yaml-to-json",
-        name: "YAML to JSON converter",
     },
     Tool {
         id: "key-codes",
@@ -118,6 +114,10 @@ pub const TOOLS: &[Tool] = &[
     Tool {
         id: "xml-formatter",
         name: "XML formatter",
+    },
+    Tool {
+        id: "yaml-to-json",
+        name: "YAML to JSON converter",
     },
     Tool {
         id: "extras",
