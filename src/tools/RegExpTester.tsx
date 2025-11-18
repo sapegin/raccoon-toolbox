@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useMemo } from 'react';
 import { Grid, Stack } from '../../styled-system/jsx';
 import { Button } from '../components/Button';
 import { CopyButton } from '../components/CopyButton';
@@ -43,16 +43,6 @@ export function RegExpTester() {
     'regexpTester.formatter',
     defaultFormatter
   );
-  const [output, setOutput] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
-  const [matches, setMatches] = useState<RegExpExecArray[]>([]);
-  const [highlightRegexp, setHighlightRegexp] = useState<RegExp>();
-
-  useEffect(() => {
-    if (regexpInput !== '' && textInput !== '') {
-      handleMatch();
-    }
-  }, []);
 
   const parseRegExp = (input: string): RegExp | undefined => {
     try {
@@ -76,14 +66,19 @@ export function RegExpTester() {
     }
   };
 
-  const handleMatch = useCallback(() => {
+  const { matches, highlightRegexp, errorMessage } = useMemo(() => {
+    if (regexpInput === '' || textInput === '') {
+      return { matches: [], highlightRegexp: undefined, errorMessage: '' };
+    }
+
     try {
       const regexp = parseRegExp(regexpInput);
       if (regexp === undefined) {
-        setErrorMessage('Invalid regular expression');
-        setOutput('');
-        setHighlightRegexp(undefined);
-        return;
+        return {
+          matches: [],
+          highlightRegexp: undefined,
+          errorMessage: 'Invalid regular expression',
+        };
       }
 
       const matchesRaw = Array.from(textInput.matchAll(regexp));
@@ -92,43 +87,39 @@ export function RegExpTester() {
       // cannot highlight anything or show a list of matches in such cases. They
       // also cause infinite loops in the CodeMirror's MatchDecorator
       if (matchesRaw.every((match) => match[0] === '')) {
-        setOutput('');
-        setErrorMessage('');
-        setHighlightRegexp(undefined);
-        return;
+        return { matches: [], highlightRegexp: undefined, errorMessage: '' };
       }
 
-      setHighlightRegexp(regexp);
-      setMatches(matchesRaw);
-      setErrorMessage('');
+      return {
+        matches: matchesRaw,
+        highlightRegexp: regexp,
+        errorMessage: '',
+      };
     } catch (error) {
       if (error instanceof Error) {
-        setErrorMessage(error.message);
-        setOutput('');
+        return {
+          matches: [],
+          highlightRegexp: undefined,
+          errorMessage: error.message,
+        };
       }
+      return {
+        matches: [],
+        highlightRegexp: undefined,
+        errorMessage: 'Unknown error',
+      };
     }
   }, [regexpInput, textInput]);
 
-  useEffect(() => {
-    handleMatch();
-  }, [regexpInput, textInput, handleMatch]);
-
-  useEffect(() => {
-    setOutput(formatMatches(matches, formatter));
-  }, [regexpInput, textInput, formatter]);
-
-  useEffect(() => {
-    handleMatch();
-  }, [regexpInput, textInput, handleMatch]);
+  const output = useMemo(() => {
+    return formatMatches(matches, formatter);
+  }, [matches, formatter]);
 
   // TODO: This button clears everything which may be confusing
   const handleClear = useCallback(() => {
     setRegexpInput('');
     setTextInput('');
     setFormatter(defaultFormatter);
-    setOutput('');
-    setErrorMessage('');
-    setHighlightRegexp(undefined);
   }, []);
 
   return (

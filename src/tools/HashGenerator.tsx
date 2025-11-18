@@ -33,15 +33,8 @@ export function HashGenerator() {
   const [sha512Hash, setSha512Hash] = useState('');
 
   useEffect(() => {
-    if (input !== '') {
-      handleChange(input);
-    }
-  }, []);
-
-  const handleChange = useCallback(
-    (value: string) => {
-      setInput(value);
-      if (value === '') {
+    const computeHashes = async () => {
+      if (input === '') {
         setMd5Hash('');
         setSha1Hash('');
         setSha256Hash('');
@@ -50,33 +43,32 @@ export function HashGenerator() {
         return;
       }
 
-      void (async () => {
-        try {
-          const md5Result = md5(value);
-          const sha1 = await generateHash(value, 'SHA-1');
-          const sha256 = await generateHash(value, 'SHA-256');
-          const sha384 = await generateHash(value, 'SHA-384');
-          const sha512 = await generateHash(value, 'SHA-512');
+      try {
+        const md5Result = md5(input);
+        const sha1 = await generateHash(input, 'SHA-1');
+        const sha256 = await generateHash(input, 'SHA-256');
+        const sha384 = await generateHash(input, 'SHA-384');
+        const sha512 = await generateHash(input, 'SHA-512');
 
-          const format = (hash: string) =>
-            caseMode === 'uppercase' ? hash.toUpperCase() : hash;
+        const format = (hash: string) =>
+          caseMode === 'uppercase' ? hash.toUpperCase() : hash;
 
-          setMd5Hash(format(md5Result));
-          setSha1Hash(format(sha1));
-          setSha256Hash(format(sha256));
-          setSha384Hash(format(sha384));
-          setSha512Hash(format(sha512));
-        } catch (error) {
-          console.error('Hash generation failed:', error);
-        }
-      })();
-    },
-    [caseMode]
-  );
+        setMd5Hash(format(md5Result));
+        setSha1Hash(format(sha1));
+        setSha256Hash(format(sha256));
+        setSha384Hash(format(sha384));
+        setSha512Hash(format(sha512));
+      } catch (error) {
+        console.error('Hash generation failed:', error);
+      }
+    };
 
-  useEffect(() => {
-    handleChange(input);
-  }, [caseMode, input, handleChange]);
+    void computeHashes();
+  }, [input, caseMode]);
+
+  const handleChange = useCallback((value: string) => {
+    setInput(value);
+  }, []);
 
   const handleClear = useCallback(() => {
     setInput('');

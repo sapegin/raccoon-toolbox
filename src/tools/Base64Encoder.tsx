@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useMemo } from 'react';
 import { Button } from '../components/Button';
 import { CopyButton } from '../components/CopyButton';
 import { Editor } from '../components/Editor';
@@ -28,50 +28,38 @@ export function Base64Encoder() {
     'base64Encoder.mode',
     'encode'
   );
-  const [output, setOutput] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
 
-  useEffect(() => {
-    if (input !== '') {
-      handleChange(input);
+  const { output, errorMessage } = useMemo(() => {
+    if (input === '') {
+      return { output: '', errorMessage: '' };
     }
-  }, []);
 
-  const handleChange = useCallback(
-    (value: string) => {
-      setInput(value);
-      try {
-        if (mode === 'encode') {
-          const encoder = new TextEncoder();
-          const uint8Array = encoder.encode(value);
-          const encoded = uint8Array.toBase64();
-          setOutput(encoded);
-          setErrorMessage('');
-        } else {
-          const uint8Array = Uint8Array.fromBase64(value);
-          const decoder = new TextDecoder();
-          const decoded = decoder.decode(uint8Array);
-          setOutput(decoded);
-          setErrorMessage('');
-        }
-      } catch (error) {
-        if (error instanceof Error) {
-          setErrorMessage(error.message);
-          setOutput('');
-        }
+    try {
+      if (mode === 'encode') {
+        const encoder = new TextEncoder();
+        const uint8Array = encoder.encode(input);
+        const encoded = uint8Array.toBase64();
+        return { output: encoded, errorMessage: '' };
+      } else {
+        const uint8Array = Uint8Array.fromBase64(input);
+        const decoder = new TextDecoder();
+        const decoded = decoder.decode(uint8Array);
+        return { output: decoded, errorMessage: '' };
       }
-    },
-    [mode]
-  );
+    } catch (error) {
+      if (error instanceof Error) {
+        return { output: '', errorMessage: error.message };
+      }
+      return { output: '', errorMessage: 'Unknown error' };
+    }
+  }, [input, mode]);
 
-  useEffect(() => {
-    handleChange(input);
-  }, [mode, input, handleChange]);
+  const handleChange = useCallback((value: string) => {
+    setInput(value);
+  }, []);
 
   const handleClear = useCallback(() => {
     setInput('');
-    setOutput('');
-    setErrorMessage('');
   }, []);
 
   const handleModeChange = useCallback((value: string) => {

@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useMemo } from 'react';
 import { Stack } from '../../styled-system/jsx';
 import { Button } from '../components/Button';
 import { Editor } from '../components/Editor';
@@ -9,47 +9,43 @@ import { usePersistentState } from '../hooks/usePersistentState';
 
 export function UrlParser() {
   const [input, setInput] = usePersistentState('urlParser.input', '');
-  const [parsedData, setParsedData] = useState<URL>();
-  const [queryJson, setQueryJson] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
 
-  useEffect(() => {
-    if (input !== '') {
-      handleChange(input);
-    }
-  }, []);
-
-  const handleChange = useCallback((value: string) => {
-    setInput(value);
-
-    if (value.trim() === '') {
-      setParsedData(undefined);
-      setQueryJson('');
-      setErrorMessage('');
-      return;
+  const { parsedData, queryJson, errorMessage } = useMemo(() => {
+    if (input.trim() === '') {
+      return { parsedData: undefined, queryJson: '', errorMessage: '' };
     }
 
     try {
-      const url = new URL(value);
+      const url = new URL(input);
       const params = Object.fromEntries(url.searchParams);
 
-      setParsedData(url);
-      setQueryJson(JSON.stringify(params, null, 2));
-      setErrorMessage('');
+      return {
+        parsedData: url,
+        queryJson: JSON.stringify(params, null, 2),
+        errorMessage: '',
+      };
     } catch (error) {
       if (error instanceof Error) {
-        setErrorMessage(error.message);
-        setParsedData(undefined);
-        setQueryJson('');
+        return {
+          parsedData: undefined,
+          queryJson: '',
+          errorMessage: error.message,
+        };
       }
+      return {
+        parsedData: undefined,
+        queryJson: '',
+        errorMessage: 'Unknown error',
+      };
     }
+  }, [input]);
+
+  const handleChange = useCallback((value: string) => {
+    setInput(value);
   }, []);
 
   const handleClear = useCallback(() => {
     setInput('');
-    setParsedData(undefined);
-    setQueryJson('');
-    setErrorMessage('');
   }, []);
 
   return (

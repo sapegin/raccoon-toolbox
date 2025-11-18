@@ -1,6 +1,6 @@
 import { type Colord, colord, extend } from 'colord';
 import a11yPlugin from 'colord/plugins/a11y';
-import { type ReactNode, useCallback, useEffect, useState } from 'react';
+import { type ReactNode, useCallback, useMemo } from 'react';
 import { Flex, Grid, Stack, VisuallyHidden } from '../../styled-system/jsx';
 import { Button } from '../components/Button';
 import { ColorPickerWithPreview } from '../components/ColorPickerWithPreview';
@@ -139,94 +139,70 @@ export function ColorContrast() {
     defaultBackgroundColor
   );
 
-  const [textColor, setTextColor] = useState<Colord>(() => {
+  const { textColor, baseTextColor, textErrorMessage } = useMemo(() => {
     const parsed = parseColorInput(textInput);
-    return parsed ?? colord(defaultTextColor);
-  });
-  const [backgroundColor, setBackgroundColor] = useState<Colord>(() => {
-    const parsed = parseColorInput(backgroundInput);
-    return parsed ?? colord(defaultBackgroundColor);
-  });
-
-  const [baseTextColor, setBaseTextColor] = useState<Colord>(textColor);
-  const [baseBackgroundColor, setBaseBackgroundColor] =
-    useState<Colord>(backgroundColor);
-
-  const [textErrorMessage, setTextErrorMessage] = useState('');
-  const [bgErrorMessage, setBackgroundErrorMessage] = useState('');
-
-  useEffect(() => {
-    if (textInput !== '') {
-      handleTextInputChange(textInput);
+    if (parsed) {
+      return { textColor: parsed, baseTextColor: parsed, textErrorMessage: '' };
     }
-    if (backgroundInput !== '') {
-      handleBackgroundInputChange(backgroundInput);
+    if (textInput.trim() === '') {
+      return {
+        textColor: colord(defaultTextColor),
+        baseTextColor: colord(defaultTextColor),
+        textErrorMessage: '',
+      };
     }
-  }, []);
+    return {
+      textColor: colord(defaultTextColor),
+      baseTextColor: colord(defaultTextColor),
+      textErrorMessage: 'Invalid color format',
+    };
+  }, [textInput]);
+
+  const { backgroundColor, baseBackgroundColor, backgroundErrorMessage } =
+    useMemo(() => {
+      const parsed = parseColorInput(backgroundInput);
+      if (parsed) {
+        return {
+          backgroundColor: parsed,
+          baseBackgroundColor: parsed,
+          backgroundErrorMessage: '',
+        };
+      }
+      if (backgroundInput.trim() === '') {
+        return {
+          backgroundColor: colord(defaultBackgroundColor),
+          baseBackgroundColor: colord(defaultBackgroundColor),
+          backgroundErrorMessage: '',
+        };
+      }
+      return {
+        backgroundColor: colord(defaultBackgroundColor),
+        baseBackgroundColor: colord(defaultBackgroundColor),
+        backgroundErrorMessage: 'Invalid color format',
+      };
+    }, [backgroundInput]);
 
   const handleTextInputChange = useCallback((value: string) => {
     setTextInput(value);
-    const parsed = parseColorInput(value);
-    if (parsed) {
-      setTextColor(parsed);
-      setBaseTextColor(parsed);
-      setTextErrorMessage('');
-    } else if (value.trim() === '') {
-      setTextErrorMessage('');
-    } else {
-      setTextErrorMessage('Invalid color format');
-    }
   }, []);
 
   const handleBackgroundInputChange = useCallback((value: string) => {
     setBgInput(value);
-    const parsed = parseColorInput(value);
-    if (parsed) {
-      setBackgroundColor(parsed);
-      setBaseBackgroundColor(parsed);
-      setBackgroundErrorMessage('');
-    } else if (value.trim() === '') {
-      setBackgroundErrorMessage('');
-    } else {
-      setBackgroundErrorMessage('Invalid color format');
-    }
   }, []);
 
   const handleTextColorPickerChange = useCallback((newColor: Colord) => {
-    setTextColor(newColor);
     setTextInput(newColor.toHex());
-    setTextErrorMessage('');
   }, []);
 
   const handleBackgroundColorPickerChange = useCallback((newColor: Colord) => {
-    setBackgroundColor(newColor);
     setBgInput(newColor.toHex());
-    setBackgroundErrorMessage('');
   }, []);
 
   const handleSwap = useCallback(() => {
     const tempInput = textInput;
-    const tempColor = textColor;
-    const tempBaseColor = baseTextColor;
-
     setTextInput(backgroundInput);
-    setTextColor(backgroundColor);
-    setBaseTextColor(baseBackgroundColor);
-
     setBgInput(tempInput);
-    setBackgroundColor(tempColor);
-    setBaseBackgroundColor(tempBaseColor);
-
-    setTextErrorMessage('');
-    setBackgroundErrorMessage('');
-  }, [
-    textInput,
-    textColor,
-    baseTextColor,
-    backgroundInput,
-    backgroundColor,
-    baseBackgroundColor,
-  ]);
+  }, [textInput, backgroundInput]);
 
   const contrast = textColor.contrast(backgroundColor);
 
@@ -260,7 +236,7 @@ export function ColorContrast() {
               type="text"
               value={backgroundInput}
               onChange={(e) => handleBackgroundInputChange(e.target.value)}
-              errorMessage={bgErrorMessage}
+              errorMessage={backgroundErrorMessage}
             />
             <ColorPickerWithPreview
               label="Background color picker"

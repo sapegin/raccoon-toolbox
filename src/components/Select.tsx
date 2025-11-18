@@ -52,23 +52,23 @@ export function Select({
   }) {
   return (
     <Stack display="inline-flex" gap="xs">
-      {label && (
+      {label ? (
         <Flex justifyContent="space-between" alignItems="center">
           <label htmlFor={id} className={text()}>
             {label}
           </label>
-          {actions && (
+          {actions ? (
             <Stack direction="row" gap="s">
               {actions}
             </Stack>
-          )}
+          ) : null}
         </Flex>
-      )}
-      {accessibleLabel && (
+      ) : null}
+      {accessibleLabel ? (
         <label htmlFor={id} className={visuallyHidden()}>
           {accessibleLabel}
         </label>
-      )}
+      ) : null}
       <Flex position="relative" border="input" borderRadius="button">
         <SelectBox id={id} {...props}>
           {options.map((option) => (

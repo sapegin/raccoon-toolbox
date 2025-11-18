@@ -96,19 +96,19 @@ export function ToggleButton({
 }: ToggleButtonProps) {
   return (
     <Stack display="inline-flex" gap="xs">
-      {label && (
+      {label ? (
         <Flex justifyContent="space-between" alignItems="center">
           <legend className={text()}>{label}</legend>
-          {actions && (
+          {actions ? (
             <Stack direction="row" gap="s">
               {actions}
             </Stack>
-          )}
+          ) : null}
         </Flex>
-      )}
-      {accessibleLabel && (
+      ) : null}
+      {accessibleLabel ? (
         <legend className={visuallyHidden()}>{accessibleLabel}</legend>
-      )}
+      ) : null}
       <ToggleButtonContainer>
         {options.map((option) => {
           const id = `${name}-${option.value}`;

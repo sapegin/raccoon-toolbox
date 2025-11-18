@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useMemo } from 'react';
 import { Grid, Stack } from '../../styled-system/jsx';
 import { Input } from '../components/Input';
 import { LargeValue } from '../components/LargeValue';
@@ -91,28 +91,18 @@ export function AspectRatioCalculator() {
     ''
   );
 
-  const [calculatedRatio, setCalculatedRatio] = useState({
-    ratioWidth: defaultRatioWidth,
-    ratioHeight: defaultRatioHeight,
-    decimal: 0,
-  });
-  const [calculatedDimensions, setCalculatedDimensions] = useState({
-    calculatedWidth: defaultWidth,
-    calculatedHeight: defaultHeight,
-  });
-
-  useEffect(() => {
+  const calculatedRatio = useMemo(() => {
     const w = Number.parseInt(width, 10) || 0;
     const h = Number.parseInt(height, 10) || 0;
-    setCalculatedRatio(calculateAspectRatio(w, h));
+    return calculateAspectRatio(w, h);
   }, [width, height]);
 
-  useEffect(() => {
+  const calculatedDimensions = useMemo(() => {
     const arw = Number.parseInt(aspectRatioWidth, 10) || 0;
     const arh = Number.parseInt(aspectRatioHeight, 10) || 0;
     const w = Number.parseInt(dimensionWidth, 10) || 0;
     const h = Number.parseInt(dimensionHeight, 10) || 0;
-    setCalculatedDimensions(calculateDimensions(arw, arh, w, h));
+    return calculateDimensions(arw, arh, w, h);
   }, [aspectRatioWidth, aspectRatioHeight, dimensionWidth, dimensionHeight]);
 
   const handleWidthChange = useCallback(

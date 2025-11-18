@@ -35,11 +35,11 @@ export function Panel({
           <Text as="h3" variant="bold">
             {label}
           </Text>
-          {actions && (
+          {actions ? (
             <Stack direction="row" gap="s">
               {actions}
             </Stack>
-          )}
+          ) : null}
         </Flex>
       )}
       <Box

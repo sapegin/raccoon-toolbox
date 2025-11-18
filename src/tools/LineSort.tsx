@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useMemo } from 'react';
 import { Button } from '../components/Button';
 import { CopyButton } from '../components/CopyButton';
 import { Editor } from '../components/Editor';
@@ -106,36 +106,16 @@ export function LineSort() {
     'lineSort.dedupeMode',
     'keep'
   );
-  const [output, setOutput] = useState('');
 
-  useEffect(() => {
-    if (input !== '') {
-      handleChange(input);
-    }
+  const output = useMemo(() => {
+    const lines = toLines(input, dedupeMode);
+    const sortedLines = sortLines(lines, sortDirection);
+    return sortedLines.join('\n');
+  }, [input, sortDirection, dedupeMode]);
+
+  const handleChange = useCallback((value: string) => {
+    setInput(value);
   }, []);
-
-  const handleChange = useCallback(
-    (value: string) => {
-      setInput(value);
-      processLines(value, sortDirection, dedupeMode);
-    },
-    [sortDirection, dedupeMode]
-  );
-
-  const processLines = useCallback(
-    (value: string, direction: SortDirection, dedupe: DedupeMode) => {
-      const lines = toLines(value, dedupe);
-      const sortedLines = sortLines(lines, direction);
-      setOutput(sortedLines.join('\n'));
-    },
-    []
-  );
-
-  useEffect(() => {
-    if (input) {
-      processLines(input, sortDirection, dedupeMode);
-    }
-  }, [sortDirection, dedupeMode, input, processLines]);
 
   const handleSortDirectionChange = useCallback((value: string) => {
     setSortDirection(value as SortDirection);
@@ -147,7 +127,6 @@ export function LineSort() {
 
   const handleClear = useCallback(() => {
     setInput('');
-    setOutput('');
   }, []);
 
   return (

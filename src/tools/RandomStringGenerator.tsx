@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useMemo } from 'react';
 import { Stack } from '../../styled-system/jsx';
 import { CopyButton } from '../components/CopyButton';
 import { Editor } from '../components/Editor';
@@ -125,9 +125,8 @@ export function RandomStringGenerator() {
     'randomStringGenerator.count',
     '1'
   );
-  const [output, setOutput] = useState('');
 
-  const generateStrings = useCallback(() => {
+  const output = useMemo(() => {
     const numCount = Number.parseInt(count, 10);
     const numUppercase = Number.parseInt(uppercase, 10) || 0;
     const numLowercase = Number.parseInt(lowercase, 10) || 0;
@@ -137,8 +136,7 @@ export function RandomStringGenerator() {
     const numGroupSize = Number.parseInt(groupSize, 10) || 0;
 
     if (Number.isNaN(numCount) || numCount < 1) {
-      setOutput('');
-      return;
+      return '';
     }
 
     const strings = Array.from({ length: numCount }, () =>
@@ -153,7 +151,7 @@ export function RandomStringGenerator() {
       )
     );
 
-    setOutput(strings.join('\n'));
+    return strings.join('\n');
   }, [
     count,
     uppercase,
@@ -164,10 +162,6 @@ export function RandomStringGenerator() {
     separator,
     groupSize,
   ]);
-
-  useEffect(() => {
-    generateStrings();
-  }, [generateStrings]);
 
   const handleNumberChange =
     (setter: (value: string) => void) =>

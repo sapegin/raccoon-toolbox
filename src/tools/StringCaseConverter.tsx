@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useMemo } from 'react';
 import { Button } from '../components/Button';
 import { CopyButton } from '../components/CopyButton';
 import { Editor } from '../components/Editor';
@@ -14,29 +14,17 @@ export function StringCaseConverter() {
     'stringCaseConverter.caseType',
     'lower'
   );
-  const [output, setOutput] = useState('');
 
-  useEffect(() => {
-    if (input !== '') {
-      handleChange(input);
-    }
+  const output = useMemo(() => {
+    return convertCase(input, caseType);
+  }, [input, caseType]);
+
+  const handleChange = useCallback((value: string) => {
+    setInput(value);
   }, []);
-
-  const handleChange = useCallback(
-    (value: string) => {
-      setInput(value);
-      setOutput(convertCase(value, caseType));
-    },
-    [caseType]
-  );
-
-  useEffect(() => {
-    handleChange(input);
-  }, [caseType, input, handleChange]);
 
   const handleClear = useCallback(() => {
     setInput('');
-    setOutput('');
   }, []);
 
   const handleCaseTypeChange = useCallback(

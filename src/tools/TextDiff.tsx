@@ -1,5 +1,5 @@
 import { diffChars, diffLines } from 'diff';
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useMemo } from 'react';
 import { css } from '../../styled-system/css';
 import { Box, Grid } from '../../styled-system/jsx';
 import { Button } from '../components/Button';
@@ -23,16 +23,9 @@ const removedClass = css({
 export function TextDiff() {
   const [textA, setTextA] = usePersistentState('textDiff.textA', '');
   const [textB, setTextB] = usePersistentState('textDiff.textB', '');
-  const [result, setResult] = useState('');
 
-  useEffect(() => {
-    if (textA !== '' || textB !== '') {
-      calculateDiff(textA, textB);
-    }
-  }, []);
-
-  const calculateDiff = useCallback((a: string, b: string) => {
-    const lineDiff = diffLines(a, b);
+  const result = useMemo(() => {
+    const lineDiff = diffLines(textA, textB);
     let resultHtml = '';
     let index = 0;
 
@@ -69,24 +62,16 @@ export function TextDiff() {
       }
     }
 
-    setResult(resultHtml);
+    return resultHtml;
+  }, [textA, textB]);
+
+  const handleTextAChange = useCallback((value: string) => {
+    setTextA(value);
   }, []);
 
-  const handleTextAChange = useCallback(
-    (value: string) => {
-      setTextA(value);
-      calculateDiff(value, textB);
-    },
-    [textB, calculateDiff]
-  );
-
-  const handleTextBChange = useCallback(
-    (value: string) => {
-      setTextB(value);
-      calculateDiff(textA, value);
-    },
-    [textA, calculateDiff]
-  );
+  const handleTextBChange = useCallback((value: string) => {
+    setTextB(value);
+  }, []);
 
   const handleAClear = useCallback(() => {
     setTextA('');
@@ -145,6 +130,7 @@ export function TextDiff() {
             border="1px solid"
             borderColor="lightBorder"
             borderRadius="input"
+            // eslint-disable-next-line @eslint-react/dom/no-dangerously-set-innerhtml
             dangerouslySetInnerHTML={{ __html: result }}
           />
         </output>

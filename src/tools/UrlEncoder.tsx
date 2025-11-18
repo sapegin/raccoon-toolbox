@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useMemo } from 'react';
 import { Button } from '../components/Button';
 import { CopyButton } from '../components/CopyButton';
 import { Editor } from '../components/Editor';
@@ -12,46 +12,34 @@ type Mode = 'encode' | 'decode';
 export function UrlEncoder() {
   const [input, setInput] = usePersistentState('urlEncoder.input', '');
   const [mode, setMode] = usePersistentState<Mode>('urlEncoder.mode', 'encode');
-  const [output, setOutput] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
 
-  useEffect(() => {
-    if (input !== '') {
-      handleChange(input);
+  const { output, errorMessage } = useMemo(() => {
+    if (input === '') {
+      return { output: '', errorMessage: '' };
     }
-  }, []);
 
-  const handleChange = useCallback(
-    (value: string) => {
-      setInput(value);
-      try {
-        if (mode === 'encode') {
-          const encoded = encodeURIComponent(value);
-          setOutput(encoded);
-          setErrorMessage('');
-        } else {
-          const decoded = decodeURIComponent(value);
-          setOutput(decoded);
-          setErrorMessage('');
-        }
-      } catch (error) {
-        if (error instanceof Error) {
-          setErrorMessage(error.message);
-          setOutput('');
-        }
+    try {
+      if (mode === 'encode') {
+        const encoded = encodeURIComponent(input);
+        return { output: encoded, errorMessage: '' };
+      } else {
+        const decoded = decodeURIComponent(input);
+        return { output: decoded, errorMessage: '' };
       }
-    },
-    [mode]
-  );
+    } catch (error) {
+      if (error instanceof Error) {
+        return { output: '', errorMessage: error.message };
+      }
+      return { output: '', errorMessage: 'Unknown error' };
+    }
+  }, [input, mode]);
 
-  useEffect(() => {
-    handleChange(input);
-  }, [mode, input, handleChange]);
+  const handleChange = useCallback((value: string) => {
+    setInput(value);
+  }, []);
 
   const handleClear = useCallback(() => {
     setInput('');
-    setOutput('');
-    setErrorMessage('');
   }, []);
 
   const handleModeChange = useCallback((value: string) => {

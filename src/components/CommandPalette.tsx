@@ -93,13 +93,19 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
 
   useEffect(() => {
     if (isOpen) {
+      // Reset state when modal opens
+      // eslint-disable-next-line @eslint-react/hooks-extra/no-direct-set-state-in-use-effect
       setSearchQuery('');
+      // eslint-disable-next-line @eslint-react/hooks-extra/no-direct-set-state-in-use-effect
       setSelectedIndex(0);
-      setTimeout(() => inputRef.current?.focus(), 0);
+      const timeoutId = setTimeout(() => inputRef.current?.focus(), 0);
+      return () => clearTimeout(timeoutId);
     }
   }, [isOpen]);
 
   useEffect(() => {
+    // Reset selection index when search query changes
+    // eslint-disable-next-line @eslint-react/hooks-extra/no-direct-set-state-in-use-effect
     setSelectedIndex(0);
   }, [searchQuery]);
 

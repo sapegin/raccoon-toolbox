@@ -1,5 +1,5 @@
 import { type Colord, colord } from 'colord';
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useState } from 'react';
 import { Stack, VisuallyHidden } from '../../styled-system/jsx';
 import { Button } from '../components/Button';
 import { ColorPickerWithPreview } from '../components/ColorPickerWithPreview';
@@ -37,12 +37,6 @@ export function ColorConverter() {
   const [baseColor, setBaseColor] = useState<Colord>(color);
 
   const [errorMessage, setErrorMessage] = useState('');
-
-  useEffect(() => {
-    if (input !== '') {
-      handleInputChange(input);
-    }
-  }, []);
 
   const handleInputChange = useCallback((value: string) => {
     setInput(value);

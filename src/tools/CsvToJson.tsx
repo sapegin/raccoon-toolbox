@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useMemo } from 'react';
 import { Button } from '../components/Button';
 import { CopyButton } from '../components/CopyButton';
 import { Editor } from '../components/Editor';
@@ -67,33 +67,25 @@ function parseCsv(text: string): unknown {
 
 export function CsvToJson() {
   const [input, setInput] = usePersistentState('csvToJson.input', '');
-  const [output, setOutput] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
 
-  useEffect(() => {
-    if (input !== '') {
-      handleChange(input);
+  const { output, errorMessage } = useMemo(() => {
+    try {
+      const parsed = parseCsv(input);
+      return { output: JSON.stringify(parsed, null, 2), errorMessage: '' };
+    } catch (error) {
+      if (error instanceof Error) {
+        return { output: '', errorMessage: error.message };
+      }
+      return { output: '', errorMessage: 'Unknown error' };
     }
-  }, []);
+  }, [input]);
 
   const handleChange = useCallback((value: string) => {
     setInput(value);
-    try {
-      const parsed = parseCsv(value);
-      setErrorMessage('');
-      setOutput(JSON.stringify(parsed, null, 2));
-    } catch (error) {
-      if (error instanceof Error) {
-        setErrorMessage(error.message);
-        setOutput('');
-      }
-    }
   }, []);
 
   const handleClear = useCallback(() => {
     setInput('');
-    setOutput('');
-    setErrorMessage('');
   }, []);
 
   return (

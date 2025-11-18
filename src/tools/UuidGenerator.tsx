@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useMemo } from 'react';
 import { Box, Stack } from '../../styled-system/jsx';
 import { CopyButton } from '../components/CopyButton';
 import { Editor } from '../components/Editor';
@@ -40,13 +40,11 @@ export function UuidGenerator() {
     'lowercase'
   );
   const [count, setCount] = usePersistentState('uuidGenerator.count', '1');
-  const [output, setOutput] = useState('');
 
-  const generateUuids = useCallback(() => {
+  const output = useMemo(() => {
     const numCount = Number.parseInt(count, 10);
     if (Number.isNaN(numCount) || numCount < 1) {
-      setOutput('');
-      return;
+      return '';
     }
 
     const uuids = Array.from({ length: numCount }, () => {
@@ -54,12 +52,8 @@ export function UuidGenerator() {
       return formatUuid(uuid, withHyphens === 'true', caseType === 'uppercase');
     });
 
-    setOutput(uuids.join('\n'));
+    return uuids.join('\n');
   }, [count, withHyphens, caseType]);
-
-  useEffect(() => {
-    generateUuids();
-  }, [generateUuids]);
 
   const handleVersionChange = useCallback(
     (event: React.ChangeEvent<HTMLSelectElement>) => {

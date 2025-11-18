@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useMemo } from 'react';
 import { Stack } from '../../styled-system/jsx';
 import { Button } from '../components/Button';
 import { Editor } from '../components/Editor';
@@ -6,45 +6,22 @@ import { LargeValue } from '../components/LargeValue';
 import { Panel } from '../components/Panel';
 import { Screen } from '../components/Screen';
 import { usePersistentState } from '../hooks/usePersistentState';
-import { calculateTextStats, type TextStats } from '../util/text-stats';
+import { calculateTextStats } from '../util/text-stats';
 
 export function TextStats() {
   const [text, setText] = usePersistentState('textStats.text', '');
-  const [stats, setStats] = useState<TextStats>({
-    characters: 0,
-    charactersWithoutWhitespace: 0,
-    lines: 0,
-    words: 0,
-    paragraphs: 0,
-    sentences: 0,
-    readingTimeMinutes: 0,
-  });
 
-  useEffect(() => {
-    if (text !== '') {
-      setStats(calculateTextStats(text));
-    }
-  }, []);
+  const stats = useMemo(() => calculateTextStats(text), [text]);
 
   const handleTextChange = useCallback(
     (value: string) => {
       setText(value);
-      setStats(calculateTextStats(value));
     },
     [setText]
   );
 
   const handleClear = useCallback(() => {
     setText('');
-    setStats({
-      characters: 0,
-      charactersWithoutWhitespace: 0,
-      lines: 0,
-      words: 0,
-      paragraphs: 0,
-      sentences: 0,
-      readingTimeMinutes: 0,
-    });
   }, [setText]);
 
   return (

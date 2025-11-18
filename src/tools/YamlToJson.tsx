@@ -1,5 +1,5 @@
 import { load } from 'js-yaml';
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useMemo } from 'react';
 import { Button } from '../components/Button';
 import { CopyButton } from '../components/CopyButton';
 import { Editor } from '../components/Editor';
@@ -14,33 +14,25 @@ function yamlToJson(yaml: string): string {
 
 export function YamlToJson() {
   const [input, setInput] = usePersistentState('yamlToJson.input', '');
-  const [output, setOutput] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
 
-  useEffect(() => {
-    if (input !== '') {
-      handleChange(input);
+  const { output, errorMessage } = useMemo(() => {
+    try {
+      const json = yamlToJson(input);
+      return { output: json, errorMessage: '' };
+    } catch (error) {
+      if (error instanceof Error) {
+        return { output: '', errorMessage: error.message };
+      }
+      return { output: '', errorMessage: 'Unknown error' };
     }
-  }, []);
+  }, [input]);
 
   const handleChange = useCallback((value: string) => {
     setInput(value);
-    try {
-      const json = yamlToJson(value);
-      setErrorMessage('');
-      setOutput(json);
-    } catch (error) {
-      if (error instanceof Error) {
-        setErrorMessage(error.message);
-        setOutput('');
-      }
-    }
   }, []);
 
   const handleClear = useCallback(() => {
     setInput('');
-    setOutput('');
-    setErrorMessage('');
   }, []);
 
   return (
