@@ -45,6 +45,7 @@ A collection of developer utilities built with React and Tauri.
 - [x] Random string generator
 - [x] RegExp tester
 - [x] String case converter
+- [x] Text decoder
 - [x] Text diff
 - [x] Text stats
 - [x] Unicode lookup
@@ -53,7 +54,6 @@ A collection of developer utilities built with React and Tauri.
 - [x] UUID generator
 - [x] XML formatter
 - [x] YAML to JSON converter
-- [x] Text decoder
 - [x] More tools
 
 <!-- tools:end -->

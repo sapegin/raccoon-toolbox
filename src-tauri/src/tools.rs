@@ -88,6 +88,10 @@ pub const TOOLS: &[Tool] = &[
         name: "String case converter",
     },
     Tool {
+        id: "text-decoder",
+        name: "Text decoder",
+    },
+    Tool {
         id: "text-diff",
         name: "Text diff",
     },
@@ -118,10 +122,6 @@ pub const TOOLS: &[Tool] = &[
     Tool {
         id: "yaml-to-json",
         name: "YAML to JSON converter",
-    },
-    Tool {
-        id: "text-decoder",
-        name: "Text decoder",
     },
     Tool {
         id: "extras",

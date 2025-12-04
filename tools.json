@@ -167,6 +167,23 @@
     ]
   },
   {
+    "id": "text-decoder",
+    "name": "Text decoder",
+    "module": "TextDecoderTool",
+    "keywords": [
+      "encoding",
+      "decoding",
+      "mojibake",
+      "cyrillic",
+      "russian",
+      "windows-1251",
+      "koi8-r",
+      "iso-8859-5",
+      "ibm866",
+      "mac-cyrillic"
+    ]
+  },
+  {
     "id": "text-diff",
     "name": "Text diff",
     "module": "TextDiff",
@@ -227,23 +244,6 @@
     "name": "YAML to JSON converter",
     "module": "YamlToJson",
     "keywords": ["yml", "data"]
-  },
-  {
-    "id": "text-decoder",
-    "name": "Text decoder",
-    "module": "TextDecoderTool",
-    "keywords": [
-      "encoding",
-      "decoding",
-      "mojibake",
-      "cyrillic",
-      "russian",
-      "windows-1251",
-      "koi8-r",
-      "iso-8859-5",
-      "ibm866",
-      "mac-cyrillic"
-    ]
   },
   {
     "id": "extras",

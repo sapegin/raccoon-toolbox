@@ -1,7 +1,7 @@
 // Auto-generated file. Do not edit manually.
 // Generated from tools.json by scripts/generate-tools.ts
 
-import { ComponentType,lazy } from 'react';
+import { lazy, ComponentType } from 'react';
 
 export interface Tool {
   id: string;
@@ -212,6 +212,16 @@ export const tools: Tool[] = [
     ),
   },
   {
+    id: 'text-decoder',
+    name: 'Text decoder',
+    keywords: ['encoding', 'decoding', 'mojibake', 'cyrillic', 'russian', 'windows-1251', 'koi8-r', 'iso-8859-5', 'ibm866', 'mac-cyrillic'],
+    component: lazy(() =>
+      import('./tools/TextDecoderTool').then((m) => ({
+        default: m.TextDecoderTool,
+      }))
+    ),
+  },
+  {
     id: 'text-diff',
     name: 'Text diff',
     keywords: ['strings', 'compare', 'difference', 'changes'],
@@ -288,16 +298,6 @@ export const tools: Tool[] = [
     component: lazy(() =>
       import('./tools/YamlToJson').then((m) => ({
         default: m.YamlToJson,
-      }))
-    ),
-  },
-  {
-    id: 'text-decoder',
-    name: 'Text decoder',
-    keywords: ['encoding', 'decoding', 'mojibake', 'cyrillic', 'russian', 'windows-1251', 'koi8-r', 'iso-8859-5', 'ibm866', 'mac-cyrillic'],
-    component: lazy(() =>
-      import('./tools/TextDecoderTool').then((m) => ({
-        default: m.TextDecoderTool,
       }))
     ),
   },
