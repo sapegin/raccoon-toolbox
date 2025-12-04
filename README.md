@@ -37,7 +37,7 @@ A collection of developer utilities built with React and Tauri.
 - [x] JavaScript formatter
 - [x] JSON formatter
 - [x] JSON to CSV converter
-- [x] JSON to YAML converter
+- [x] JSON ↔ YAML converter
 - [x] Key code lookup
 - [x] Line sort/dedupe
 - [x] Lorem Ipsum generator
@@ -53,7 +53,6 @@ A collection of developer utilities built with React and Tauri.
 - [x] URL parser
 - [x] UUID generator
 - [x] XML formatter
-- [x] YAML to JSON converter
 - [x] More tools
 
 <!-- tools:end -->

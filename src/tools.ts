@@ -132,12 +132,12 @@ export const tools: Tool[] = [
     ),
   },
   {
-    id: 'json-to-yaml',
-    name: 'JSON to YAML converter',
+    id: 'json-yaml',
+    name: 'JSON ↔ YAML converter',
     keywords: ['yml', 'data'],
     component: lazy(() =>
-      import('./tools/JsonToYaml').then((m) => ({
-        default: m.JsonToYaml,
+      import('./tools/JsonYaml').then((m) => ({
+        default: m.JsonYaml,
       }))
     ),
   },
@@ -288,16 +288,6 @@ export const tools: Tool[] = [
     component: lazy(() =>
       import('./tools/XmlFormatter').then((m) => ({
         default: m.XmlFormatter,
-      }))
-    ),
-  },
-  {
-    id: 'yaml-to-json',
-    name: 'YAML to JSON converter',
-    keywords: ['yml', 'data'],
-    component: lazy(() =>
-      import('./tools/YamlToJson').then((m) => ({
-        default: m.YamlToJson,
       }))
     ),
   },

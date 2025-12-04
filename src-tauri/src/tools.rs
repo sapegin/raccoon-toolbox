@@ -56,8 +56,8 @@ pub const TOOLS: &[Tool] = &[
         name: "JSON to CSV converter",
     },
     Tool {
-        id: "json-to-yaml",
-        name: "JSON to YAML converter",
+        id: "json-yaml",
+        name: "JSON ↔ YAML converter",
     },
     Tool {
         id: "key-codes",
@@ -118,10 +118,6 @@ pub const TOOLS: &[Tool] = &[
     Tool {
         id: "xml-formatter",
         name: "XML formatter",
-    },
-    Tool {
-        id: "yaml-to-json",
-        name: "YAML to JSON converter",
     },
     Tool {
         id: "extras",
