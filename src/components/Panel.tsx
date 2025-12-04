@@ -56,6 +56,7 @@ export function Panel({
             inset={0}
             zIndex={99}
             overflow="auto"
+            m="s"
           >
             {errorMessage}
           </ErrorMessage>
