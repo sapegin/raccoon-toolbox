@@ -120,6 +120,10 @@ pub const TOOLS: &[Tool] = &[
         name: "YAML to JSON converter",
     },
     Tool {
+        id: "text-decoder",
+        name: "Text decoder",
+    },
+    Tool {
         id: "extras",
         name: "More tools",
     },

@@ -36,7 +36,7 @@ export function Panel({
             {label}
           </Text>
           {actions ? (
-            <Stack direction="row" gap="s">
+            <Stack direction="row" gap="s" alignItems="center">
               {actions}
             </Stack>
           ) : null}

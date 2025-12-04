@@ -292,6 +292,16 @@ export const tools: Tool[] = [
     ),
   },
   {
+    id: 'text-decoder',
+    name: 'Text decoder',
+    keywords: ['encoding', 'decoding', 'mojibake', 'cyrillic', 'russian', 'windows-1251', 'koi8-r', 'iso-8859-5', 'ibm866', 'mac-cyrillic'],
+    component: lazy(() =>
+      import('./tools/TextDecoderTool').then((m) => ({
+        default: m.TextDecoderTool,
+      }))
+    ),
+  },
+  {
     id: 'extras',
     name: 'More tools',
     keywords: ['external', 'extras', 'links', 'resources'],

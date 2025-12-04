@@ -229,6 +229,23 @@
     "keywords": ["yml", "data"]
   },
   {
+    "id": "text-decoder",
+    "name": "Text decoder",
+    "module": "TextDecoderTool",
+    "keywords": [
+      "encoding",
+      "decoding",
+      "mojibake",
+      "cyrillic",
+      "russian",
+      "windows-1251",
+      "koi8-r",
+      "iso-8859-5",
+      "ibm866",
+      "mac-cyrillic"
+    ]
+  },
+  {
     "id": "extras",
     "name": "More tools",
     "module": "Extras",

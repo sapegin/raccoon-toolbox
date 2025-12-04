@@ -53,6 +53,7 @@ A collection of developer utilities built with React and Tauri.
 - [x] UUID generator
 - [x] XML formatter
 - [x] YAML to JSON converter
+- [x] Text decoder
 - [x] More tools
 
 <!-- tools:end -->
