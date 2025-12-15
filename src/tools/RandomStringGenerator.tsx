@@ -1,5 +1,6 @@
-import { useMemo } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import { Stack } from '../../styled-system/jsx';
+import { Button } from '../components/Button';
 import { CopyButton } from '../components/CopyButton';
 import { Editor } from '../components/Editor';
 import { Input } from '../components/Input';
@@ -125,6 +126,9 @@ export function RandomStringGenerator() {
     'randomStringGenerator.count',
     '1'
   );
+  // Increment a state counter to force useMemo to regenerate output with same
+  // parameters
+  const [refreshKey, setRefreshKey] = useState(0);
 
   const output = useMemo(() => {
     const numCount = Number.parseInt(count, 10);
@@ -161,6 +165,7 @@ export function RandomStringGenerator() {
     words,
     separator,
     groupSize,
+    refreshKey,
   ]);
 
   const handleNumberChange =
@@ -171,6 +176,10 @@ export function RandomStringGenerator() {
         setter(value);
       }
     };
+
+  const handleRefresh = useCallback(() => {
+    setRefreshKey((key) => key + 1);
+  }, []);
 
   return (
     <Screen gridTemplateColumns="17rem 1fr">
@@ -234,7 +243,16 @@ export function RandomStringGenerator() {
           />
         </Stack>
       </Panel>
-      <Panel fullHeight label="Output" actions={<CopyButton value={output} />}>
+      <Panel
+        fullHeight
+        label="Output"
+        actions={
+          <>
+            <Button onClick={handleRefresh}>Refresh</Button>
+            <CopyButton value={output} />
+          </>
+        }
+      >
         <Editor label="Output" value={output} />
       </Panel>
     </Screen>
