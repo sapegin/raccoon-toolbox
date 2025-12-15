@@ -12,11 +12,13 @@ export function ColorPickerWithPreview({
   color,
   baseColor,
   onChange,
+  showAlpha,
 }: {
   label: ReactNode;
   color: Colord;
   baseColor: Colord;
   onChange: (color: Colord) => void;
+  showAlpha?: boolean;
 }) {
   return (
     <Stack gap="s" height="100%">
@@ -31,7 +33,7 @@ export function ColorPickerWithPreview({
         <ColorSwatch color={baseColor.toHex()} />
         <ColorSwatch color={color.toHex()} />
       </Grid>
-      <ColorPicker color={color} onChange={onChange} />
+      <ColorPicker color={color} onChange={onChange} showAlpha={showAlpha} />
     </Stack>
   );
 }

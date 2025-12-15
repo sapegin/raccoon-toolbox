@@ -225,6 +225,7 @@ export function ColorContrast() {
               color={textColor}
               baseColor={baseTextColor}
               onChange={handleTextColorPickerChange}
+              showAlpha={false}
             />
           </Stack>
         </Panel>
@@ -243,6 +244,7 @@ export function ColorContrast() {
               color={backgroundColor}
               baseColor={baseBackgroundColor}
               onChange={handleBackgroundColorPickerChange}
+              showAlpha={false}
             />
           </Stack>
         </Panel>

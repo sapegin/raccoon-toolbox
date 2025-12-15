@@ -11,6 +11,7 @@ import { Box, Grid } from '../../styled-system/jsx';
 interface ColorPickerProps {
   color: Colord;
   onChange: (color: Colord) => void;
+  showAlpha?: boolean;
 }
 
 function DragHandle({
@@ -53,7 +54,7 @@ function DragHandle({
  * Color picker with areas to select saturation/brightness, hue, and alpha
  * channel.
  */
-export function ColorPicker({ color, onChange }: ColorPickerProps) {
+export function ColorPicker({ color, onChange, showAlpha = true }: ColorPickerProps) {
   const saturationValueRef = useRef<HTMLDivElement>(null);
   const hueRef = useRef<HTMLDivElement>(null);
   const alphaRef = useRef<HTMLDivElement>(null);
@@ -145,7 +146,7 @@ export function ColorPicker({ color, onChange }: ColorPickerProps) {
   const baseHue = colord({ h, s: 100, l: 50 }).toHex();
 
   return (
-    <Grid gridTemplateColumns="1fr 2rem 2rem" gap="m" height="100%">
+    <Grid gridTemplateColumns={showAlpha ? "1fr 2rem 2rem" : "1fr 2rem"} gap="m" height="100%">
       <Box
         ref={saturationValueRef}
         position="relative"
@@ -184,24 +185,26 @@ export function ColorPicker({ color, onChange }: ColorPickerProps) {
       >
         <DragHandle style={{ top: `${(h / 360) * 100}%` }} />
       </Box>
-      <Box
-        ref={alphaRef}
-        position="relative"
-        cursor="ns-resize"
-        border="1px solid"
-        borderColor="lightBorder"
-        borderRadius="base"
-        onMouseDown={(e) => {
-          setIsDraggingAlpha(true);
-          updateAlpha(e.clientY);
-        }}
-        style={{
-          background: `linear-gradient(to bottom, ${color.toRgbString()}, transparent),
+      {showAlpha && (
+        <Box
+          ref={alphaRef}
+          position="relative"
+          cursor="ns-resize"
+          border="1px solid"
+          borderColor="lightBorder"
+          borderRadius="base"
+          onMouseDown={(e) => {
+            setIsDraggingAlpha(true);
+            updateAlpha(e.clientY);
+          }}
+          style={{
+            background: `linear-gradient(to bottom, ${color.toRgbString()}, transparent),
             repeating-conic-gradient(#ccc 0% 25%, #fff 0% 50%) 50% / 10px 10px`,
-        }}
-      >
-        <DragHandle style={{ top: `${(1 - a) * 100}%` }} />
-      </Box>
+          }}
+        >
+          <DragHandle style={{ top: `${(1 - a) * 100}%` }} />
+        </Box>
+      )}
     </Grid>
   );
 }
