@@ -16,7 +16,7 @@ function jsonToYaml(json: unknown): string {
 }
 
 function yamlToJson(yaml: string): string {
-  const parsed = parse(yaml);
+  const parsed: unknown = parse(yaml);
   return JSON.stringify(parsed, null, 2);
 }
 
