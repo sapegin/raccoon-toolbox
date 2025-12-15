@@ -11,7 +11,7 @@ import {
   syntaxHighlighting,
 } from '@codemirror/language';
 import { gotoLine, search, searchKeymap } from '@codemirror/search';
-import { EditorState } from '@codemirror/state';
+import { EditorState, StateEffect, StateField } from '@codemirror/state';
 import {
   Decoration,
   type DecorationSet,
@@ -20,9 +20,6 @@ import {
   highlightWhitespace,
   keymap,
   lineNumbers,
-  MatchDecorator,
-  ViewPlugin,
-  type ViewUpdate,
 } from '@codemirror/view';
 import { tags } from '@lezer/highlight';
 import { useEffect, useRef, useState } from 'react';
@@ -41,6 +38,11 @@ const languageExtensions = {
 
 type Language = keyof typeof languageExtensions;
 
+interface HighlightRange {
+  from: number;
+  to: number;
+}
+
 interface EditorProps {
   /** ID of the editor textarea. */
   id?: string;
@@ -50,8 +52,8 @@ interface EditorProps {
   language?: Language;
   editable?: boolean;
   onChange?: (value: string) => void;
-  /** Highlight matches in the editor. */
-  highlightRegexp?: RegExp;
+  /** Highlight specific ranges in the editor. */
+  highlightRanges?: HighlightRange[];
 }
 
 const theme = EditorView.theme({
@@ -175,30 +177,29 @@ const squirrelsongHighlighting = syntaxHighlighting(
   ])
 );
 
-function getMatchHighlighter(regExp: RegExp) {
-  return ViewPlugin.fromClass(
-    class {
-      public decorations: DecorationSet;
-      public decorator: MatchDecorator;
+const setHighlightRangesEffect = StateEffect.define<HighlightRange[]>();
 
-      public constructor(view: EditorView) {
-        this.decorator = new MatchDecorator({
-          regexp: regExp,
-          // Reuse existing search match class for highlighting
-          decoration: () => Decoration.mark({ class: 'cm-searchMatch' }),
-        });
-        this.decorations = this.decorator.createDeco(view);
+const highlightRangesField = StateField.define<DecorationSet>({
+  create() {
+    return Decoration.none;
+  },
+  update(decorations, transaction) {
+    for (const effect of transaction.effects) {
+      if (effect.is(setHighlightRangesEffect)) {
+        const ranges = effect.value;
+        const decorationRanges = ranges.map((range) =>
+          Decoration.mark({ class: 'cm-searchMatch' }).range(
+            range.from,
+            range.to
+          )
+        );
+        return Decoration.set(decorationRanges, true);
       }
-
-      public update(update: ViewUpdate) {
-        this.decorations = this.decorator.updateDeco(update, this.decorations);
-      }
-    },
-    {
-      decorations: (instance) => instance.decorations,
     }
-  );
-}
+    return decorations.map(transaction.changes);
+  },
+  provide: (field) => EditorView.decorations.from(field),
+});
 
 export function Editor({
   id,
@@ -207,7 +208,7 @@ export function Editor({
   language,
   editable = true,
   onChange,
-  highlightRegexp,
+  highlightRanges,
 }: EditorProps) {
   const editorRef = useRef<HTMLDivElement>(null);
   const viewRef = useRef<EditorView | null>(null);
@@ -241,16 +242,12 @@ export function Editor({
       }
     });
 
-    const matchHighlighter = highlightRegexp
-      ? getMatchHighlighter(highlightRegexp)
-      : undefined;
-
     const state = EditorState.create({
       doc: value,
       extensions: [
         languageExtension,
         updateListener,
-        matchHighlighter,
+        highlightRangesField,
         history(),
         lineNumbers(),
         highlightActiveLine(),
@@ -286,7 +283,20 @@ export function Editor({
       view.destroy();
       viewRef.current = null;
     };
-  }, [language, editable, onChange, highlightRegexp]);
+  }, [language, editable, onChange]);
+
+  useEffect(() => {
+    const view = viewRef.current;
+    if (view === null) {
+      return;
+    }
+
+    if (highlightRanges !== undefined) {
+      view.dispatch({
+        effects: setHighlightRangesEffect.of(highlightRanges),
+      });
+    }
+  }, [highlightRanges]);
 
   useEffect(() => {
     const view = viewRef.current;

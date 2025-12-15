@@ -8,20 +8,22 @@ import { Panel } from '../components/Panel';
 import { RegExpCheatSheet } from '../components/RegExpCheatSheet';
 import { Screen } from '../components/Screen';
 import { usePersistentState } from '../hooks/usePersistentState';
+import { useRegExpWorker } from '../hooks/useRegExpWorker';
 
 const defaultFormatter = String.raw`$0\n`;
 
-// TODO: Fix editor losing focus on every edit
-
-function formatMatches(matches: RegExpExecArray[], formatter: string) {
+function formatMatches(
+  matches: { groups: (string | undefined)[] }[],
+  formatter: string
+) {
   return matches
     .map((match) => {
       let result = formatter;
 
-      for (const [index, group] of match.entries()) {
+      for (const [index, group] of match.groups.entries()) {
         result = result.replaceAll(
           new RegExp(String.raw`\$${index}`, 'g'),
-          group || ''
+          group ?? ''
         );
       }
 
@@ -31,6 +33,32 @@ function formatMatches(matches: RegExpExecArray[], formatter: string) {
         .replaceAll(String.raw`\t`, '\t');
     })
     .join('');
+}
+
+function parseRegExpInput(input: string):
+  | {
+      pattern: string;
+      flags: string;
+    }
+  | undefined {
+  if (input === '') {
+    return undefined;
+  }
+
+  try {
+    if (input.startsWith('/')) {
+      const lastSlash = input.lastIndexOf('/');
+      if (lastSlash > 0) {
+        const pattern = input.slice(1, lastSlash);
+        const flags = input.slice(lastSlash + 1);
+        return { pattern, flags };
+      }
+    }
+
+    return { pattern: input, flags: 'g' };
+  } catch {
+    return undefined;
+  }
 }
 
 export function RegExpTester() {
@@ -44,78 +72,35 @@ export function RegExpTester() {
     defaultFormatter
   );
 
-  const parseRegExp = (input: string): RegExp | undefined => {
-    try {
-      if (input.startsWith('/')) {
-        // Full regexp provided: /[0-9a-f]+/g
-        const lastSlash = input.lastIndexOf('/');
-        if (lastSlash > 0) {
-          const pattern = input.slice(1, lastSlash);
-          const flagsRaw = input.slice(lastSlash + 1);
-          // Automatically add global flag, as it's a requirement of both
-          // matchAll and CodeMirror's MatchDecorator
-          const flags = flagsRaw.includes('g') ? flagsRaw : `${flagsRaw}g`;
-          return new RegExp(pattern, flags);
-        }
-      }
+  const regexpParsed = useMemo(
+    () => parseRegExpInput(regexpInput),
+    [regexpInput]
+  );
 
-      // Partial regexp provided: [0-9a-f]+, treat it as global
-      return new RegExp(input, 'g');
-    } catch {
-      return undefined;
+  const { matches, error: workerError } = useRegExpWorker(
+    textInput,
+    regexpParsed?.pattern ?? '',
+    regexpParsed?.flags ?? ''
+  );
+
+  const errorMessage = useMemo(() => {
+    if (regexpInput !== '' && regexpParsed === undefined) {
+      return 'Invalid regular expression';
     }
-  };
+    return workerError;
+  }, [regexpInput, regexpParsed, workerError]);
 
-  const { matches, highlightRegexp, errorMessage } = useMemo(() => {
-    if (regexpInput === '' || textInput === '') {
-      return { matches: [], highlightRegexp: undefined, errorMessage: '' };
-    }
-
-    try {
-      const regexp = parseRegExp(regexpInput);
-      if (regexp === undefined) {
-        return {
-          matches: [],
-          highlightRegexp: undefined,
-          errorMessage: 'Invalid regular expression',
-        };
-      }
-
-      const matchesRaw = Array.from(textInput.matchAll(regexp));
-
-      // Do nothing if there are no matches or only empty string matches, as we
-      // cannot highlight anything or show a list of matches in such cases. They
-      // also cause infinite loops in the CodeMirror's MatchDecorator
-      if (matchesRaw.every((match) => match[0] === '')) {
-        return { matches: [], highlightRegexp: undefined, errorMessage: '' };
-      }
-
-      return {
-        matches: matchesRaw,
-        highlightRegexp: regexp,
-        errorMessage: '',
-      };
-    } catch (error) {
-      if (error instanceof Error) {
-        return {
-          matches: [],
-          highlightRegexp: undefined,
-          errorMessage: error.message,
-        };
-      }
-      return {
-        matches: [],
-        highlightRegexp: undefined,
-        errorMessage: 'Unknown error',
-      };
-    }
-  }, [regexpInput, textInput]);
+  const highlightRanges = useMemo(() => {
+    return matches.map((match) => ({
+      from: match.index,
+      to: match.index + match.length,
+    }));
+  }, [matches]);
 
   const output = useMemo(() => {
     return formatMatches(matches, formatter);
   }, [matches, formatter]);
 
-  // TODO: This button clears everything which may be confusing
   const handleClear = useCallback(() => {
     setRegexpInput('');
     setTextInput('');
@@ -143,7 +128,7 @@ export function RegExpTester() {
             label="Text"
             value={textInput}
             onChange={setTextInput}
-            highlightRegexp={highlightRegexp}
+            highlightRanges={highlightRanges}
           />
         </Panel>
       </Stack>
