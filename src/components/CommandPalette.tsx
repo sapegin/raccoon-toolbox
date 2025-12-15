@@ -1,3 +1,5 @@
+import { isTauri } from '@tauri-apps/api/core';
+import { openUrl } from '@tauri-apps/plugin-opener';
 import { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { css } from '../../styled-system/css';
@@ -120,7 +122,11 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
 
   const handleToolSelection = (tool: (typeof filteredTools)[0]) => {
     if ('url' in tool) {
-      window.open(tool.url, '_blank', 'noopener,noreferrer');
+      if (isTauri()) {
+        void openUrl(tool.url);
+      } else {
+        window.open(tool.url, '_blank', 'noopener,noreferrer');
+      }
     } else {
       void navigate(`/${tool.id}/`);
     }
