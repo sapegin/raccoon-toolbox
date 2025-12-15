@@ -28,10 +28,6 @@ pub const TOOLS: &[Tool] = &[
         name: "CSS formatter",
     },
     Tool {
-        id: "csv-to-json",
-        name: "CSV to JSON converter",
-    },
-    Tool {
         id: "hash-generator",
         name: "Hash generator",
     },
@@ -52,8 +48,8 @@ pub const TOOLS: &[Tool] = &[
         name: "JSON formatter",
     },
     Tool {
-        id: "json-to-csv",
-        name: "JSON to CSV converter",
+        id: "json-csv",
+        name: "JSON ↔ CSV converter",
     },
     Tool {
         id: "json-yaml",

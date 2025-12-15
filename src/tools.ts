@@ -1,7 +1,7 @@
 // Auto-generated file. Do not edit manually.
 // Generated from tools.json by scripts/generate-tools.ts
 
-import { lazy, ComponentType } from 'react';
+import { ComponentType,lazy } from 'react';
 
 export interface Tool {
   id: string;
@@ -62,16 +62,6 @@ export const tools: Tool[] = [
     ),
   },
   {
-    id: 'csv-to-json',
-    name: 'CSV to JSON converter',
-    keywords: ['spreadsheet', 'table', 'data'],
-    component: lazy(() =>
-      import('./tools/CsvToJson').then((m) => ({
-        default: m.CsvToJson,
-      }))
-    ),
-  },
-  {
     id: 'hash-generator',
     name: 'Hash generator',
     keywords: ['md5', 'sha1', 'sha256', 'sha384', 'sha512', 'checksum', 'digest', 'cryptography'],
@@ -122,12 +112,12 @@ export const tools: Tool[] = [
     ),
   },
   {
-    id: 'json-to-csv',
-    name: 'JSON to CSV converter',
+    id: 'json-csv',
+    name: 'JSON ↔ CSV converter',
     keywords: ['spreadsheet', 'table', 'data'],
     component: lazy(() =>
-      import('./tools/JsonToCsv').then((m) => ({
-        default: m.JsonToCsv,
+      import('./tools/JsonCsv').then((m) => ({
+        default: m.JsonCsv,
       }))
     ),
   },

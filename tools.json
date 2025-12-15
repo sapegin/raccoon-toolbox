@@ -30,12 +30,6 @@
     "keywords": ["beautify", "pretty", "prettier"]
   },
   {
-    "id": "csv-to-json",
-    "name": "CSV to JSON converter",
-    "module": "CsvToJson",
-    "keywords": ["spreadsheet", "table", "data"]
-  },
-  {
     "id": "hash-generator",
     "name": "Hash generator",
     "module": "HashGenerator",
@@ -83,9 +77,9 @@
     "keywords": ["beautify", "pretty", "prettier", "indent"]
   },
   {
-    "id": "json-to-csv",
-    "name": "JSON to CSV converter",
-    "module": "JsonToCsv",
+    "id": "json-csv",
+    "name": "JSON ↔ CSV converter",
+    "module": "JsonCsv",
     "keywords": ["spreadsheet", "table", "data"]
   },
   {

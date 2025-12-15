@@ -30,13 +30,12 @@ A collection of developer utilities built with React and Tauri.
 - [x] Color contrast checker
 - [x] Color converter
 - [x] CSS formatter
-- [x] CSV to JSON converter
 - [x] Hash generator
 - [x] HTML entity encoder/decoder
 - [x] HTML formatter
 - [x] JavaScript formatter
 - [x] JSON formatter
-- [x] JSON to CSV converter
+- [x] JSON ↔ CSV converter
 - [x] JSON ↔ YAML converter
 - [x] Key code lookup
 - [x] Line sort/dedupe
