@@ -14,6 +14,9 @@ const linkStyles = css({
   textAlign: 'left',
   fontFamily: 'body',
   fontSize: 's',
+  transitionDuration: 'hover',
+  transitionTimingFunction: 'hover',
+  transitionProperty: 'all',
   _hover: {
     color: 'activeForeground',
     backgroundColor: 'hoverBackground',

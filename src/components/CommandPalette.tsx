@@ -47,6 +47,9 @@ const CommandButton = styled('button', {
     cursor: 'pointer',
     color: 'textForeground',
     border: 'none',
+    transitionDuration: 'hover',
+    transitionTimingFunction: 'hover',
+    transitionProperty: 'all',
     borderWidth: 0,
     _hover: {
       backgroundColor: 'hoverBackground',

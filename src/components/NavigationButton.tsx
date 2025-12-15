@@ -19,6 +19,9 @@ export function NavigationButton({
         borderRadius: 'button',
         color: 'textForeground',
         textDecoration: 'none',
+        transitionDuration: 'hover',
+        transitionTimingFunction: 'hover',
+        transitionProperty: 'all',
         _hover: {
           color: 'activeForeground',
           backgroundColor: 'hoverBackground',
