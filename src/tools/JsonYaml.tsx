@@ -1,5 +1,5 @@
-import { dump, load } from 'js-yaml';
 import { useCallback, useMemo } from 'react';
+import { parse, stringify } from 'yaml';
 import { Button } from '../components/Button';
 import { CopyButton } from '../components/CopyButton';
 import { Editor } from '../components/Editor';
@@ -12,11 +12,11 @@ import { stripJsonComments } from '../util/stripJsonComments';
 type Mode = 'json-to-yaml' | 'yaml-to-json';
 
 function jsonToYaml(json: unknown): string {
-  return dump(json, { indent: 2 });
+  return stringify(json, { indent: 2 });
 }
 
 function yamlToJson(yaml: string): string {
-  const parsed = load(yaml);
+  const parsed = parse(yaml);
   return JSON.stringify(parsed, null, 2);
 }
 

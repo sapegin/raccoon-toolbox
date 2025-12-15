@@ -51,17 +51,16 @@
     "colord": "2.9.3",
     "diff": "8.0.2",
     "js-md5": "0.8.3",
-    "js-yaml": "4.1.0",
     "nano-staged": "0.9.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "7.9.6",
-    "tamia": "^7.2.1"
+    "tamia": "^7.2.1",
+    "yaml": "2.8.2"
   },
   "devDependencies": {
     "@prettier/plugin-xml": "3.4.2",
     "@tauri-apps/cli": "^2",
-    "@types/js-yaml": "4.0.9",
     "@types/node": "24.10.1",
     "@types/react": "^19.2.6",
     "@types/react-dom": "^19.2.3",
