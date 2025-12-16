@@ -62,6 +62,16 @@ export const tools: Tool[] = [
     ),
   },
   {
+    id: 'date-converter',
+    name: 'Date converter',
+    keywords: ['time', 'timestamp', 'unix', 'iso', 'epoch', 'calendar'],
+    component: lazy(() =>
+      import('./tools/DateConverter').then((m) => ({
+        default: m.DateConverter,
+      }))
+    ),
+  },
+  {
     id: 'hash-generator',
     name: 'Hash generator',
     keywords: ['md5', 'sha1', 'sha256', 'sha384', 'sha512', 'checksum', 'digest', 'cryptography'],

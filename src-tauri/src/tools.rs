@@ -28,6 +28,10 @@ pub const TOOLS: &[Tool] = &[
         name: "CSS formatter",
     },
     Tool {
+        id: "date-converter",
+        name: "Date converter",
+    },
+    Tool {
         id: "hash-generator",
         name: "Hash generator",
     },

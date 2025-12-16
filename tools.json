@@ -30,6 +30,12 @@
     "keywords": ["beautify", "pretty", "prettier"]
   },
   {
+    "id": "date-converter",
+    "name": "Date converter",
+    "module": "DateConverter",
+    "keywords": ["time", "timestamp", "unix", "iso", "epoch", "calendar"]
+  },
+  {
     "id": "hash-generator",
     "name": "Hash generator",
     "module": "HashGenerator",

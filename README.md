@@ -30,6 +30,7 @@ A collection of developer utilities built with React and Tauri.
 - [x] Color contrast checker
 - [x] Color converter
 - [x] CSS formatter
+- [x] Date converter
 - [x] Hash generator
 - [x] HTML entity encoder/decoder
 - [x] HTML formatter
