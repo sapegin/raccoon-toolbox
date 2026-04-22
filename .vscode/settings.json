@@ -1,0 +1,11 @@
+{
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "typescript"
+  },
+  // Enable previews/sorting/lint on standalone variables:
+  // @example const somethingClassName = clsx('...')
+  "tailwindCSS.classFunctions": ["clsx"],
+  // Avoid suggesting fractional values, such as w-62.75
+  "tailwindCSS.lint.suggestCanonicalClasses": "ignore",
+  "tailwindCSS.emmetCompletions": true
+}

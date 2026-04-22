@@ -52,7 +52,7 @@ export function LoremIpsum() {
   );
 
   return (
-    <Screen gridTemplateColumns="1fr">
+    <Screen className="grid-cols-1">
       <Panel
         fullHeight
         label="Output"

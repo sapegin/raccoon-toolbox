@@ -1,6 +1,5 @@
 import { type Colord, colord } from 'colord';
 import { useCallback, useState } from 'react';
-import { Stack, VisuallyHidden } from '../../styled-system/jsx';
 import { Button } from '../components/Button';
 import { ColorPickerWithPreview } from '../components/ColorPickerWithPreview';
 import { CopyButton } from '../components/CopyButton';
@@ -69,13 +68,13 @@ export function ColorConverter() {
   const hsl = color.toHsl();
 
   return (
-    <Screen gridTemplateColumns="20rem 1fr">
+    <Screen style={{ gridTemplateColumns: '20rem 1fr' }}>
       <Panel accessibleLabel="Input" fullHeight>
-        <Stack gap="m">
+        <div className="flex flex-col gap-4">
           <Input
             id="input"
             label="Input"
-            placeholder={`Try “${defaultColorHex}” or “${defaultColorRgb}”`}
+            placeholder={`Try "${defaultColorHex}" or "${defaultColorRgb}"`}
             type="text"
             value={input}
             onChange={(e) => handleInputChange(e.target.value)}
@@ -86,7 +85,7 @@ export function ColorConverter() {
               </Button>
             }
           />
-          <VisuallyHidden as="h3">Output</VisuallyHidden>
+          <h3 className="sr-only">Output</h3>
           <Output label="Hex" value={hex} />
           <Output label="RGB" value={`rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`} />
           <Output
@@ -101,7 +100,7 @@ export function ColorConverter() {
             label="HSLA"
             value={`hsla(${Math.round(hsl.h)}, ${Math.round(hsl.s)}%, ${Math.round(hsl.l)}%, ${hsl.a.toFixed(2)})`}
           />
-        </Stack>
+        </div>
       </Panel>
       <Panel accessibleLabel="Color picker" fullHeight>
         <ColorPickerWithPreview

@@ -1,0 +1,200 @@
+:root {
+  /* Squirrelsong Light */
+  --color-gray-060: #4c4b4e;
+  --color-gray-080: #6b676f;
+  --color-gray-090: #78737d;
+  --color-gray-100: #8c8792;
+  --color-gray-110: #9c96a2;
+  --color-gray-140: #c9c4cf;
+  --color-gray-150: #dbd7e0;
+  --color-gray-160: #e8e5eb;
+  --color-gray-170: #f7f6f9;
+  --color-gray-180: #fdfdfe;
+  --color-magenta: #ac9bc5;
+  --color-green: #9bae7e;
+  --color-green-dimer: #e2ebdf;
+  --color-green-contrast: #667e44;
+  --color-teal: #5f9b8d;
+  --color-blue: #80a4be;
+  --color-blue-contrast: #527b98;
+  --color-red-dimer: #f2dbda;
+  --color-red-contrast: #c06159;
+  --color-orange: #de9e59;
+  --color-orange-contrast: #bf8240;
+  --color-bright-pink-dim: #f0a8c2;
+  --color-bright-pink-dimer: #fae1ea;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Squirrelsong Dark Deep Purple */
+    --color-gray-060: #bea3d9;
+    --color-gray-080: #a88dc3;
+    --color-gray-090: #9a7eb4;
+    --color-gray-100: #866db0;
+    --color-gray-110: #8067ad;
+    --color-gray-120: #7254a6;
+    --color-gray-130: #6c5492;
+    --color-gray-140: #644e88;
+    --color-gray-150: #503f6e;
+    --color-gray-160: #453461;
+    --color-gray-170: #36294d;
+    --color-gray-180: #271e38;
+    --color-magenta: #7f61b3;
+    --color-blue: #5993c2;
+    --color-green: #558240;
+    --color-green-contrast: #709855;
+    --color-green-dimer: #37442c;
+    --color-teal: #4f9593;
+    --color-red-dimer: #552f25;
+    --color-red-contrast: #ce574a;
+    --color-orange: #b18433;
+    --color-orange-contrast: #d8a851;
+    --color-bright-pink: #ca5a83;
+    --color-bright-pink-dim: #97576f;
+    --color-bright-pink-dimer: #482a47;
+  }
+}
+
+@theme {
+  /* Fonts */
+  --font-mono: MonoLisa, monospace;
+
+  /* Font sizes */
+  --text-root: 1.125rem;
+  --text-lg: 1.7rem;
+  --text-xl: 2rem;
+  --text-2xl: 2.4rem;
+  --text-3xl: 3.2rem;
+
+  /* Font weights */
+  --font-weight-bold: 600;
+
+  /* Letter spacings */
+  --tracking-normal: 0;
+  --tracking-heading: 0;
+  --tracking-menu: 0.1ch;
+
+  /* Radii */
+  --radius-normal: 3px;
+  --radius-input: 4px;
+  --radius-button: 6px;
+  --radius-search: 24px;
+  --radius-lg: 3px;
+  --radius-dialog: 8px;
+  --radius-dialog-inner: 7px;
+
+  /* Borders */
+  --border-width-focus: 2px;
+  --border-width-focus-offset: 2px;
+
+  /* Shadows */
+  --shadow-button: 0 1px 1px #00000008;
+  --shadow-button-pressed:
+    inset 0 1px 2px #0002, inset 1px 0 2px #0002, inset -1px 0 2px #0002;
+  --shadow-input: inset 0 1px 3px #0001;
+
+  /* Text shadows */
+  --text-shadow-button: 0 1px 1px #0002;
+  --text-shadow-secondary-button: 0 1px 1px #fff;
+  --text-shadow-button-pressed: 0 1px 1px #0002;
+
+  /* Easings */
+  --ease-fade: ease-out;
+  --ease-fadeout: ease-out;
+  --ease-hover: ease-in;
+
+  /* Durations */
+  --duration-fade: 0.15s;
+  --duration-fadeout: 1s;
+  --duration-hover: 0.1s;
+
+  /* Colors */
+  --color-background: var(--color-gray-180);
+  --color-text: var(--color-gray-090);
+  --color-primary: var(--color-blue-contrast);
+  --color-accent: var(--color-magenta);
+
+  --color-accent-background: var(--color-magenta);
+  --color-active-background: var(--color-gray-150);
+  --color-active-border: var(--color-gray-060);
+  --color-active-foreground: var(--color-gray-060);
+  --color-active-icon: var(--color-gray-060);
+  --color-border: var(--color-gray-140);
+  --color-button-background: var(--color-gray-100);
+  --color-button-foreground: var(--color-gray-180);
+  --color-button-pressed-background: var(--color-gray-100);
+  --color-button-pressed-foreground: var(--color-gray-180);
+  --color-button-hover-background: var(--color-gray-090);
+  --color-disabled-foreground: var(--color-gray-110);
+  --color-error-background: var(--color-red-dimer);
+  --color-error-foreground: var(--color-red-contrast);
+  --color-hover-background: var(--color-gray-160);
+  --color-icon: var(--color-gray-100);
+  --color-light-border: var(--color-gray-160);
+  --color-line-highlight-background: var(--color-gray-170);
+  --color-match-background: var(--color-bright-pink-dim);
+  --color-secondary-button-background: var(--color-gray-160);
+  --color-secondary-button-foreground: var(--color-gray-080);
+  --color-secondary-button-hover-background: var(--color-gray-150);
+  --color-secondary-match-background: var(--color-bright-pink-dimer);
+  --color-secondary-text-foreground: var(--color-gray-100);
+  --color-success-background: var(--color-green-dimer);
+  --color-success-foreground: var(--color-green-contrast);
+  --color-text-background: var(--color-gray-180);
+  --color-text-foreground: var(--color-gray-090);
+  --color-ui-background: var(--color-gray-170);
+  --color-warning-foreground: var(--color-orange-contrast);
+
+  --color-code-comment: var(--color-gray-110);
+  --color-code-keyword: var(--color-magenta);
+  --color-code-variable: var(--color-blue);
+  --color-code-string: var(--color-green);
+  --color-code-value: var(--color-orange);
+  --color-code-operator: var(--color-teal);
+  --color-code-punctuation: var(--color-gray-090);
+
+  /* Gradients. */
+  --gradient-button: linear-gradient(
+    to bottom,
+    oklch(from var(--color-secondary-button-background) calc(l + 0.08) c h),
+    var(--color-secondary-button-background)
+  );
+  --gradient-button-hover: linear-gradient(
+    to bottom,
+    oklch(
+      from var(--color-secondary-button-hover-background) calc(l + 0.15) c h
+    ),
+    var(--color-secondary-button-hover-background)
+  );
+  --gradient-button-pressed: linear-gradient(
+    to bottom,
+    var(--color-button-pressed-background),
+    oklch(from var(--color-button-pressed-background) calc(l + 0.18) c h)
+  );
+  --gradient-accent: linear-gradient(
+    to bottom,
+    oklch(from var(--color-accent-background) calc(l + 0.1) c h),
+    var(--color-accent-background)
+  );
+
+  --spacing-list-margin: 0;
+}
+
+/* Light theme (default) */
+:root {
+  /* TODO: These should be utilities probably */
+  /* Border shorthands */
+  --border-button: 1px solid var(--color-light-border);
+  --border-button-hover: 1px solid var(--color-border);
+  --border-input: 1px solid var(--color-light-border);
+  --border-input-focus: 1px solid var(--color-active-border);
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-shadow-secondary-button: 0 -1px 1px #0006;
+    --text-shadow-button-pressed: 0 -1px 1px #0002;
+  }
+}

@@ -1,6 +1,6 @@
+import clsx from 'clsx';
 import { type ReactNode } from 'react';
 import { NavLink } from 'react-router-dom';
-import { css } from '../../styled-system/css';
 
 export function NavigationButton({
   to,
@@ -12,33 +12,25 @@ export function NavigationButton({
   return (
     <NavLink
       to={to}
-      className={css({
-        display: 'block',
-        px: 's',
-        py: 'xs',
-        borderRadius: 'button',
-        color: 'textForeground',
-        textDecoration: 'none',
-        transitionDuration: 'hover',
-        transitionTimingFunction: 'hover',
-        transitionProperty: 'all',
-        _hover: {
-          color: 'activeForeground',
-          backgroundColor: 'hoverBackground',
-        },
-        _focusVisible: {
-          outline: 'focus',
-          outlineOffset: 'token(borderWidths.focusOutlineOffset)',
-        },
-        '&.active': {
-          color: 'buttonForeground',
-          bgGradient: 'accent',
-          textShadow: 'buttonPressedText',
-          _hover: {
-            color: 'buttonForeground',
-          },
-        },
-      })}
+      className={({ isActive }) =>
+        clsx(
+          `
+            block rounded-button px-2 py-1 no-underline focus-outline
+            transition-all duration-(--duration-hover) ease-hover
+            focus-visible:outline-2
+          `,
+          isActive
+            ? `
+              bg-(image:--gradient-accent) text-button-foreground
+              text-shadow-button-pressed
+              hover:text-button-foreground
+            `
+            : `
+              text-text-foreground
+              hover:bg-hover-background hover:text-active-foreground
+            `
+        )
+      }
     >
       {children}
     </NavLink>

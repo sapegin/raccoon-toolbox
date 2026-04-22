@@ -1,9 +1,7 @@
 import { type ChangeEvent, useCallback, useState } from 'react';
-import { Stack } from '../../styled-system/jsx';
 import { Input } from '../components/Input';
 import { Panel } from '../components/Panel';
 import { Screen } from '../components/Screen';
-import { Text } from '../components/Text';
 import { usePersistentState } from '../hooks/usePersistentState';
 
 type Base = 'binary' | 'octal' | 'decimal' | 'hexadecimal';
@@ -73,11 +71,11 @@ export function NumberBases() {
   return (
     <Screen>
       <Panel label="Number base converter" fullHeight>
-        <Stack gap="m">
-          <Text>
+        <div className="flex flex-col gap-4">
+          <p className="typo-body">
             Enter a number into any of the text fields — the rest will be
             automatically calculated.
-          </Text>
+          </p>
           <Input
             id="binary"
             label={baseLabels.binary}
@@ -102,7 +100,7 @@ export function NumberBases() {
             value={hexadecimal}
             onChange={handleChange('hexadecimal')}
           />
-        </Stack>
+        </div>
       </Panel>
     </Screen>
   );

@@ -22,8 +22,8 @@ import {
   lineNumbers,
 } from '@codemirror/view';
 import { tags } from '@lezer/highlight';
+import clsx from 'clsx';
 import { useEffect, useRef, useState } from 'react';
-import { Box } from '../../styled-system/jsx';
 
 // TODO: Disabled Cmd+/ for commenting as it conflicts with the app toggle sidebar
 
@@ -61,95 +61,95 @@ const theme = EditorView.theme({
     height: '100%',
   },
   '.editor_in-page &': {
-    border: 'var(--borders-input)',
-    borderRadius: 'var(--radii-input)',
-    boxShadow: 'var(--shadows-input)',
+    border: 'var(--border-input)',
+    borderRadius: 'var(--radius-input)',
+    boxShadow: 'var(--shadow-input)',
   },
   '&.cm-focused': {
     outline: 0,
   },
   '.editor_in-page &.cm-focused': {
-    border: 'var(--borders-input-focus)',
+    border: 'var(--border-input-focus)',
   },
   '.cm-scroller': {
     overflow: 'auto',
-    fontFamily: 'var(--fonts-code)',
+    fontFamily: 'var(--font-mono)',
   },
   '.cm-activeLine': {
-    backgroundColor: 'var(--colors-line-highlight-background)',
+    backgroundColor: 'var(--color-line-highlight-background)',
   },
   '.cm-highlightSpace': {
     backgroundImage:
-      'radial-gradient(circle at 50% 55%, var(--colors-light-border) 20%, transparent 5%)',
+      'radial-gradient(circle at 50% 55%, var(--color-light-border) 20%, transparent 5%)',
   },
   '.cm-gutters': {
-    color: 'var(--colors-disabled-foreground)',
+    color: 'var(--color-disabled-foreground)',
     backgroundColor: 'transparent',
     borderColor: 'transparent',
   },
   '.cm-searchMatch': {
-    backgroundColor: 'var(--colors-secondary-match-background)',
+    backgroundColor: 'var(--color-secondary-match-background)',
   },
   '.cm-searchMatch-selected': {
-    outline: '2px solid var(--colors-match-background)',
+    outline: '2px solid var(--color-match-background)',
   },
   '.cm-textfield': {
     padding: ' var(--spacing-xs)',
-    fontSize: 'var(--font-sizes-s)',
-    color: 'var(--colors-text-foreground)',
-    backgroundColor: 'var(--colors-text-background)',
-    border: 'var(--borders-input)',
-    borderRadius: 'var(--radii-input)',
-    boxShadow: 'var(--shadows-input)',
+    fontSize: 'var(--text-s)',
+    color: 'var(--color-text-foreground)',
+    backgroundColor: 'var(--color-text-background)',
+    border: 'var(--border-input)',
+    borderRadius: 'var(--radius-input)',
+    boxShadow: 'var(--shadow-input)',
     outline: 0,
   },
   '.cm-textfield:focus': {
-    border: 'var(--borders-input-focus)',
+    border: 'var(--border-input-focus)',
   },
   '.cm-panel': {
-    color: 'var(--colors-text-foreground)',
-    backgroundColor: 'var(--colors-ui-background)',
+    color: 'var(--color-text-foreground)',
+    backgroundColor: 'var(--color-ui-background)',
   },
   '.cm-panels-bottom': {
-    borderColor: 'var(--colors-light-border)',
+    borderColor: 'var(--color-light-border)',
   },
   '.cm-panel.cm-panel [name="close"]': {
     bottom: 'auto',
     cursor: 'pointer',
-    color: 'var(--colors-icon)',
+    color: 'var(--color-icon)',
   },
   '.cm-panel.cm-panel [name="close"]:hover': {
-    color: 'var(--colors-active-icon)',
+    color: 'var(--color-active-icon)',
   },
   '.cm-panel.cm-panel [name="close"]:focus-visible': {
-    outline: '2px solid var(--colors-accent)',
-    borderRadius: 'var(--radii-button)',
+    outline: '2px solid var(--color-accent)',
+    borderRadius: 'var(--radius-button)',
   },
   '.cm-button': {
     cursor: 'pointer',
     paddingBlock: ' var(--spacing-xs)',
     paddingInline: ' var(--spacing-s)',
-    fontSize: 'var(--font-sizes-s)',
-    color: 'var(--colors-secondary-button-foreground)',
-    backgroundImage: 'var(--gradients-button)',
-    border: 'var(--borders-button)',
-    borderRadius: 'var(--radii-button)',
-    boxShadow: 'var(--shadows-button)',
+    fontSize: 'var(--text-s)',
+    color: 'var(--color-secondary-button-foreground)',
+    backgroundImage: 'var(--gradient-button)',
+    border: 'var(--border-button)',
+    borderRadius: 'var(--radius-button)',
+    boxShadow: 'var(--shadow-button)',
     outline: 0,
     textTransform: 'capitalize',
   },
   '.cm-button:hover': {
-    backgroundImage: 'var(--gradients-button-hover)',
-    border: 'var(--borders-button-hover)',
+    backgroundImage: 'var(--gradient-button-hover)',
+    border: 'var(--border-button-hover)',
   },
   '.cm-button:focus-visible': {
-    outline: '2px solid var(--colors-accent)',
+    outline: '2px solid var(--color-accent)',
     outlineOffset: '2px',
   },
   '.cm-panel.cm-search input[type="checkbox"]:focus-visible': {
-    outline: '2px solid var(--colors-accent)',
+    outline: '2px solid var(--color-accent)',
     outlineOffset: '2px',
-    borderRadius: 'var(--radii-button)',
+    borderRadius: 'var(--radius-button)',
   },
 });
 
@@ -159,21 +159,21 @@ const squirrelsongHighlighting = syntaxHighlighting(
   HighlightStyle.define([
     {
       tag: tags.tagName,
-      color: 'var(--colors-code-keyword)',
+      color: 'var(--color-code-keyword)',
       fontWeight: 'bold',
     },
-    { tag: tags.angleBracket, color: 'var(--colors-code-keyword)' },
-    { tag: tags.keyword, color: 'var(--colors-code-keyword)' },
-    { tag: tags.comment, color: 'var(--colors-code-comment)' },
-    { tag: tags.variableName, color: 'var(--colors-code-variable)' },
-    { tag: tags.propertyName, color: 'var(--colors-code-variable)' },
-    { tag: tags.string, color: 'var(--colors-code-string)' },
-    { tag: tags.regexp, color: 'var(--colors-code-string)' },
-    { tag: tags.number, color: 'var(--colors-code-value)' },
-    { tag: tags.bool, color: 'var(--colors-code-value)' },
-    { tag: tags.null, color: 'var(--colors-code-value)' },
-    { tag: tags.operator, color: 'var(--colors-code-operator)' },
-    { tag: tags.punctuation, color: 'var(--colors-code-punctuation)' },
+    { tag: tags.angleBracket, color: 'var(--color-code-keyword)' },
+    { tag: tags.keyword, color: 'var(--color-code-keyword)' },
+    { tag: tags.comment, color: 'var(--color-code-comment)' },
+    { tag: tags.variableName, color: 'var(--color-code-variable)' },
+    { tag: tags.propertyName, color: 'var(--color-code-variable)' },
+    { tag: tags.string, color: 'var(--color-code-string)' },
+    { tag: tags.regexp, color: 'var(--color-code-string)' },
+    { tag: tags.number, color: 'var(--color-code-value)' },
+    { tag: tags.bool, color: 'var(--color-code-value)' },
+    { tag: tags.null, color: 'var(--color-code-value)' },
+    { tag: tags.operator, color: 'var(--color-code-operator)' },
+    { tag: tags.punctuation, color: 'var(--color-code-punctuation)' },
   ])
 );
 
@@ -313,15 +313,14 @@ export function Editor({
   }, [value]);
 
   return (
-    <Box
+    <div
       ref={editorRef}
-      height="100%"
-      minHeight={0}
-      backgroundColor="textBackground"
-      position={isFullScreen ? 'fixed' : undefined}
-      inset={isFullScreen ? '0' : undefined}
-      zIndex={isFullScreen ? '1000' : undefined}
-      className={isFullScreen ? 'editor_fullscreen' : 'editor_in-page'}
+      className={clsx(
+        'h-full min-h-0 bg-text-background',
+        isFullScreen
+          ? 'editor_fullscreen fixed inset-0 z-1000'
+          : 'editor_in-page'
+      )}
     />
   );
 }

@@ -1,8 +1,7 @@
+import clsx from 'clsx';
 import { useEffect, useState } from 'react';
-import { Grid, Stack, VisuallyHidden } from '../../styled-system/jsx';
 import { LargeValue } from '../components/LargeValue';
 import { Screen } from '../components/Screen';
-import { Text } from '../components/Text';
 
 interface KeyInfo {
   displayName: string;
@@ -25,13 +24,16 @@ function MetaKey({
   enabled: boolean;
 }) {
   return (
-    <Text color={enabled ? 'activeForeground' : 'disabledForeground'}>
+    <p
+      className={clsx(
+        `typo-body`,
+        enabled ? 'text-active-foreground' : 'text-disabled-foreground'
+      )}
+    >
       <span aria-hidden>{pictogram}</span>
       {` ${label} `}
-      <VisuallyHidden as="span">
-        {enabled ? '(pressed)' : '(not pressed)'}
-      </VisuallyHidden>
-    </Text>
+      <span className="sr-only">{enabled ? '(pressed)' : '(not pressed)'}</span>
+    </p>
   );
 }
 
@@ -99,32 +101,33 @@ export function KeyCodes() {
 
   return (
     <Screen>
-      <Stack gap="xl" alignItems="center" justifyContent="center" height="100%">
-        <Stack gap="m" alignItems="center">
+      <div className="flex h-full flex-col items-center justify-center gap-16">
+        <div className="flex flex-col items-center gap-4">
           {keyInfo ? (
-            <Text variant="xlarge" color="activeForeground">
-              {keyInfo.displayName}
-            </Text>
+            <p className="typo-xlarge">{keyInfo.displayName}</p>
           ) : (
-            <Text variant="large" color="secondaryTextForeground">
+            <p className="typo-large text-secondary-text-foreground">
               Press any key
-            </Text>
+            </p>
           )}
-        </Stack>
+        </div>
         {keyInfo && (
-          <Stack gap="l" width="100%" maxWidth="48rem">
-            <Grid as="dl" gridTemplateColumns="1fr 1fr 1fr 1fr" gap="m">
+          <div className="flex w-full max-w-3xl flex-col gap-8">
+            <dl
+              className="grid gap-4"
+              style={{ gridTemplateColumns: '1fr 1fr 1fr 1fr' }}
+            >
               <LargeValue label="Key" value={keyInfo.key} />
               <LargeValue label="Code" value={keyInfo.code} />
               <LargeValue label="Key code" value={keyInfo.keyCode} />
-              <Stack gap="xs">
-                <Text as="dt">Modifiers</Text>
-                <Grid
-                  as="dd"
-                  gridTemplateColumns="auto 1fr"
-                  gridTemplateRows="1fr 1fr"
-                  columnGap="m"
-                  rowGap="xs"
+              <div className="flex flex-col gap-1">
+                <dt className="typo-body">Modifiers</dt>
+                <dd
+                  className="grid gap-x-4 gap-y-1"
+                  style={{
+                    gridTemplateColumns: 'auto 1fr',
+                    gridTemplateRows: '1fr 1fr',
+                  }}
                 >
                   <MetaKey
                     enabled={keyInfo.shiftKey}
@@ -142,12 +145,12 @@ export function KeyCodes() {
                     pictogram="⌘"
                   />
                   <MetaKey enabled={keyInfo.altKey} label="Alt" pictogram="⌥" />
-                </Grid>
-              </Stack>
-            </Grid>
-          </Stack>
+                </dd>
+              </div>
+            </dl>
+          </div>
         )}
-      </Stack>
+      </div>
     </Screen>
   );
 }

@@ -1,0 +1,54 @@
+/**
+ * Table.
+ */
+@utility table {
+  & th {
+    text-align: left;
+    border-bottom: 1px solid var(--color-light-border);
+    color: var(--color-text-foreground);
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-bold);
+    border-collapse: collapse;
+  }
+
+  & th:first-child {
+    padding-left: 0;
+  }
+
+  & th:last-child {
+    padding-right: 0;
+  }
+
+  & td {
+    color: var(--color-text-foreground);
+    border-bottom: 1px solid var(--color-light-border);
+  }
+
+  & td:first-child {
+    padding-left: 0;
+  }
+
+  & td:last-child {
+    padding-right: 0;
+  }
+
+  & tbody tr:hover {
+    background-color: var(--color-line-highlight-background);
+  }
+}
+
+@utility table-spacious {
+  & th,
+  & td {
+    padding-block: --spacing(2);
+    padding-inline: --spacing(4);
+  }
+}
+
+@utility table-dense {
+  & th,
+  & td {
+    padding-block: --spacing(1);
+    padding-inline: --spacing(2);
+  }
+}

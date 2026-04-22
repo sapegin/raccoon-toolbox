@@ -1,6 +1,5 @@
 import type { Colord } from 'colord';
 import type { ReactNode } from 'react';
-import { Grid, Stack, VisuallyHidden } from '../../styled-system/jsx';
 import { ColorPicker } from './ColorPicker';
 import { ColorSwatch } from './ColorSwatch';
 
@@ -21,19 +20,18 @@ export function ColorPickerWithPreview({
   showAlpha?: boolean;
 }) {
   return (
-    <Stack gap="s" height="100%">
-      <VisuallyHidden as="h3">{label}</VisuallyHidden>
-      <Grid
-        gridTemplateColumns="1fr 1fr"
-        border="1px solid"
-        borderColor="lightBorder"
-        borderRadius="base"
-        overflow="hidden"
+    <div className="flex h-full flex-col gap-2">
+      <h3 className="sr-only">{label}</h3>
+      <div
+        className="
+          grid grid-cols-2 overflow-hidden rounded-normal border border-solid
+          border-light-border
+        "
       >
         <ColorSwatch color={baseColor.toHex()} />
         <ColorSwatch color={color.toHex()} />
-      </Grid>
+      </div>
       <ColorPicker color={color} onChange={onChange} showAlpha={showAlpha} />
-    </Stack>
+    </div>
   );
 }

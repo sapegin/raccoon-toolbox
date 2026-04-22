@@ -1,4 +1,11 @@
-@layer reset, base, tokens, recipes, utilities;
+@import 'tailwindcss';
+@import 'tamia/dist/index.css';
+@import 'tamia/dist/components/link.css';
+@import './theme.css';
+@import './styles/utilities.css';
+@import './styles/components/button.css';
+@import './styles/components/table.css';
+@import './styles/components/typography.css';
 
 @view-transition {
   navigation: auto;

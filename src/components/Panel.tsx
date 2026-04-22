@@ -1,7 +1,6 @@
+import clsx from 'clsx';
 import type { ComponentProps, ReactNode } from 'react';
-import { Box, Flex, Stack, VisuallyHidden } from '../../styled-system/jsx';
 import { ErrorMessage } from './ErrorMessage';
-import { Text } from './Text';
 
 export function Panel({
   label,
@@ -9,9 +8,11 @@ export function Panel({
   actions,
   errorMessage,
   fullHeight,
+  noPadding,
   children,
+  className,
   ...props
-}: ComponentProps<typeof Stack> & {
+}: ComponentProps<'div'> & {
   label?: ReactNode;
   accessibleLabel?: ReactNode;
   /** Actions shown on the right side of the label (such as Copy button). */
@@ -19,50 +20,37 @@ export function Panel({
   /** Show an error message overlay instead of the panel content. */
   errorMessage?: string;
   fullHeight?: boolean;
+  noPadding?: boolean;
   children: ReactNode;
 }) {
   return (
-    <Stack
-      gap="xs"
-      p="s"
-      css={fullHeight ? { minHeight: 0, height: '100%' } : {}}
+    <div
       {...props}
+      className={clsx(
+        'flex flex-col gap-1',
+        fullHeight && 'h-full min-h-0',
+        noPadding ?? 'p-2',
+        className
+      )}
     >
       {accessibleLabel ? (
-        <VisuallyHidden as="h3">{accessibleLabel}</VisuallyHidden>
+        <h3 className="sr-only">{accessibleLabel}</h3>
       ) : (
-        <Flex justifyContent="space-between" alignItems="center">
-          <Text as="h3" variant="bold">
-            {label}
-          </Text>
+        <div className="flex items-center justify-between">
+          <h3 className="typo-body font-bold">{label}</h3>
           {actions ? (
-            <Stack direction="row" gap="s" alignItems="center">
-              {actions}
-            </Stack>
+            <div className="flex flex-row items-center gap-2">{actions}</div>
           ) : null}
-        </Flex>
+        </div>
       )}
-      <Box
-        position="relative"
-        height="100%"
-        minHeight={0}
-        overflow="auto"
-        m="-s"
-        p="s"
-      >
+      <div className="relative -m-2 h-full min-h-0 overflow-auto p-2">
         {errorMessage && (
-          <ErrorMessage
-            position="absolute"
-            inset={0}
-            zIndex={99}
-            overflow="auto"
-            m="s"
-          >
+          <ErrorMessage className="absolute inset-0 z-99 m-2 overflow-auto">
             {errorMessage}
           </ErrorMessage>
         )}
         {children}
-      </Box>
-    </Stack>
+      </div>
+    </div>
   );
 }

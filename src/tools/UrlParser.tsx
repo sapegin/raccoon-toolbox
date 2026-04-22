@@ -1,5 +1,4 @@
 import { useCallback, useMemo } from 'react';
-import { Stack } from '../../styled-system/jsx';
 import { Button } from '../components/Button';
 import { Editor } from '../components/Editor';
 import { Panel } from '../components/Panel';
@@ -49,7 +48,7 @@ export function UrlParser() {
   }, []);
 
   return (
-    <Screen gridTemplateColumns="1fr 1fr">
+    <Screen className="grid-cols-2">
       <Panel
         fullHeight
         label="Input"
@@ -61,7 +60,7 @@ export function UrlParser() {
       >
         <Editor label="Input" value={input} onChange={handleChange} />
       </Panel>
-      <Stack gap="m">
+      <div className="flex flex-col gap-4">
         <Panel label="URL Components">
           {parsedData && (
             <Table>
@@ -89,7 +88,7 @@ export function UrlParser() {
         <Panel fullHeight label="Query parameters" errorMessage={errorMessage}>
           <Editor label="Query parameters" value={queryJson} language="json" />
         </Panel>
-      </Stack>
+      </div>
     </Screen>
   );
 }

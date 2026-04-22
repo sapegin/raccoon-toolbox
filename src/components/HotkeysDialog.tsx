@@ -1,7 +1,4 @@
-import { css } from '../../styled-system/css';
-import { Stack } from '../../styled-system/jsx';
 import { getShortcut } from '../util/getShortcut';
-import { Heading } from './Heading';
 import { Modal } from './Modal';
 import { Table } from './Table';
 
@@ -32,13 +29,13 @@ export function HotkeysDialog({ isOpen, onClose }: HotkeysDialogProps) {
       onClose={onClose}
       showCloseButton
     >
-      <Stack gap="l" p="l" overflow="auto">
-        <Stack gap="m">
-          <Heading level={2}>Global hotkeys</Heading>
+      <div className="flex flex-col gap-8 p-8 overflow-auto">
+        <div className="flex flex-col gap-4">
+          <h2 className="heading-2">Global hotkeys</h2>
           <Table variant="spacious">
             <thead>
               <tr>
-                <th className={css({ width: '5rem' })}>Key</th>
+                <th className="w-20">Key</th>
                 <th>Description</th>
               </tr>
             </thead>
@@ -53,13 +50,13 @@ export function HotkeysDialog({ isOpen, onClose }: HotkeysDialogProps) {
               ))}
             </tbody>
           </Table>
-        </Stack>
-        <Stack gap="m">
-          <Heading level={2}>Editor hotkeys</Heading>
+        </div>
+        <div className="flex flex-col gap-4">
+          <h2 className="heading-2">Editor hotkeys</h2>
           <Table variant="spacious">
             <thead>
               <tr>
-                <th className={css({ width: '5rem' })}>Key</th>
+                <th className="w-20">Key</th>
                 <th>Description</th>
               </tr>
             </thead>
@@ -74,8 +71,8 @@ export function HotkeysDialog({ isOpen, onClose }: HotkeysDialogProps) {
               ))}
             </tbody>
           </Table>
-        </Stack>
-      </Stack>
+        </div>
+      </div>
     </Modal>
   );
 }

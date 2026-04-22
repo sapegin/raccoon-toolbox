@@ -1,5 +1,4 @@
 import { useCallback, useMemo, useState } from 'react';
-import { Stack } from '../../styled-system/jsx';
 import { Button } from '../components/Button';
 import { CopyButton } from '../components/CopyButton';
 import { Editor } from '../components/Editor';
@@ -182,9 +181,9 @@ export function RandomStringGenerator() {
   }, []);
 
   return (
-    <Screen gridTemplateColumns="17rem 1fr">
+    <Screen style={{ gridTemplateColumns: '17rem 1fr' }}>
       <Panel fullHeight accessibleLabel="Configuration">
-        <Stack gap="m">
+        <div className="flex flex-col gap-4">
           <Input
             id="uppercase"
             label="Uppercase characters"
@@ -241,7 +240,7 @@ export function RandomStringGenerator() {
             value={count}
             onChange={handleNumberChange(setCount)}
           />
-        </Stack>
+        </div>
       </Panel>
       <Panel
         fullHeight

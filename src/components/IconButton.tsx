@@ -1,42 +1,28 @@
+import clsx from 'clsx';
 import type { ComponentProps } from 'react';
-import { styled } from '../../styled-system/jsx';
-
-const IconButtonRaw = styled('button', {
-  base: {
-    display: 'inline-flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderWidth: 0,
-    borderRadius: 'button',
-    padding: 'xs',
-    backgroundColor: 'transparent',
-    color: 'icon',
-    aspectRatio: '1/1',
-    cursor: 'pointer',
-    outline: 0,
-    transitionDuration: 'hover',
-    transitionTimingFunction: 'hover',
-    transitionProperty: 'all',
-    _hover: {
-      color: 'activeIcon',
-      backgroundColor: 'hoverBackground',
-    },
-    _active: {
-      transform: 'translateY(1px)',
-    },
-    _disabled: {
-      opacity: 0.6,
-      pointerEvents: 'none',
-    },
-    _focusVisible: {
-      outline: 'focus',
-    },
-  },
-});
 
 export function IconButton({
   label,
+  className,
   ...props
-}: { label: string } & ComponentProps<typeof IconButtonRaw>) {
-  return <IconButtonRaw {...props} title={label} aria-label={label} />;
+}: { label: string } & ComponentProps<'button'>) {
+  return (
+    <button
+      {...props}
+      title={label}
+      aria-label={label}
+      className={clsx(
+        `
+          inline-flex aspect-square cursor-pointer items-center justify-center
+          rounded-button border-0 bg-transparent p-1 text-icon focus-outline
+          outline-0 transition-all duration-(--duration-hover) ease-hover
+          hover:bg-hover-background hover:text-active-icon
+          focus-visible:outline-2
+          active:translate-y-px
+          disabled:pointer-events-none disabled:opacity-60
+        `,
+        className
+      )}
+    />
+  );
 }

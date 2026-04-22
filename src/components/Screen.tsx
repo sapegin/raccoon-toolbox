@@ -1,12 +1,6 @@
-import { Grid, type GridProps } from '../../styled-system/jsx';
+import clsx from 'clsx';
+import type { ComponentProps } from 'react';
 
-export function Screen(props: GridProps) {
-  return (
-    <Grid
-      gap={{ base: 0, desktop: 's' }}
-      {...props}
-      height="100%"
-      cursor="default"
-    />
-  );
+export function Screen({ className, ...props }: ComponentProps<'div'>) {
+  return <div {...props} className={clsx('screen', className)} />;
 }

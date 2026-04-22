@@ -1,41 +1,21 @@
-import type { ReactNode } from 'react';
-import {
-  Flex,
-  type HTMLStyledProps,
-  Stack,
-  styled,
-} from '../../styled-system/jsx';
-import { Text, text } from './Text';
+import type { ComponentProps, ReactNode } from 'react';
 
-export const InputBox = styled('input', {
-  base: {
-    width: '100%',
-    padding: 's',
-    fontSize: 'm',
-    fontFamily: 'code',
-    color: 'textForeground',
-    backgroundColor: 'textBackground',
-    border: 'input',
-    borderRadius: 'input',
-    boxShadow: 'input',
-    outline: 0,
-    // Hide up/down arrows in Firefox
-    appearance: 'textfield',
-    _placeholder: {
-      color: 'secondaryTextForeground',
-    },
-    _focusVisible: {
-      border: 'inputFocus',
-    },
-    _disabled: {
-      opacity: 0.6,
-    },
-    // Style up/down arrows in other browsers
-    '&::-webkit-inner-spin-button': {
-      cursor: 'pointer',
-    },
-  },
-});
+export function InputBox(props: ComponentProps<'input'>) {
+  return (
+    <input
+      {...props}
+      className="
+        w-full [appearance:textfield] rounded-input border border-light-border
+        bg-text-background p-2 font-mono text-base/none text-text-foreground
+        shadow-input outline-0
+        placeholder:text-secondary-text-foreground
+        focus-visible:border-active-border
+        disabled:opacity-60
+        [&::-webkit-inner-spin-button]:cursor-pointer
+      "
+    />
+  );
+}
 
 export function Input({
   id,
@@ -43,7 +23,7 @@ export function Input({
   actions,
   errorMessage,
   ...props
-}: HTMLStyledProps<'input'> & {
+}: ComponentProps<'input'> & {
   id: string;
   label: ReactNode;
   /** Actions shown on the right side of the label (such as Copy button). */
@@ -52,19 +32,17 @@ export function Input({
   errorMessage?: string;
 }) {
   return (
-    <Stack gap="xs">
-      <Flex justifyContent="space-between" alignItems="center">
-        <label htmlFor={id} className={text()}>
+    <div className="flex flex-col gap-1">
+      <div className="flex items-center justify-between">
+        <label htmlFor={id} className="typo-body">
           {label}
         </label>
-        <Stack direction="row" gap="s">
-          {actions}
-        </Stack>
-      </Flex>
-      <Stack gap="s">
+        <div className="flex flex-row gap-2">{actions}</div>
+      </div>
+      <div className="flex flex-col gap-2">
         <InputBox id={id} {...props} />
-        {errorMessage && <Text variant="error">{errorMessage}</Text>}
-      </Stack>
-    </Stack>
+        {errorMessage && <p className="typo-error">{errorMessage}</p>}
+      </div>
+    </div>
   );
 }

@@ -1,24 +1,16 @@
+import clsx from 'clsx';
 import { diffChars, diffLines } from 'diff';
 import { useCallback, useMemo } from 'react';
-import { css } from '../../styled-system/css';
-import { Box, Grid } from '../../styled-system/jsx';
 import { Button } from '../components/Button';
 import { Editor } from '../components/Editor';
 import { Panel } from '../components/Panel';
 import { Screen } from '../components/Screen';
-import { Text } from '../components/Text';
 import { usePersistentState } from '../hooks/usePersistentState';
 import { escapeHtml } from '../util/escapeHtml';
 
-const addedClass = css({
-  backgroundColor: 'successBackground',
-  textDecoration: 'underline',
-});
-
-const removedClass = css({
-  backgroundColor: 'errorBackground',
-  textDecoration: 'line-through',
-});
+// TODO: Move to Tailwind utilities
+const addedClass = clsx('bg-success-background underline');
+const removedClass = clsx('bg-error-background line-through');
 
 export function TextDiff() {
   const [textA, setTextA] = usePersistentState('textDiff.textA', '');
@@ -82,8 +74,8 @@ export function TextDiff() {
   }, []);
 
   return (
-    <Screen gridTemplateRows="1fr 1fr">
-      <Grid gridTemplateColumns="1fr 1fr" gap="m">
+    <Screen style={{ gridTemplateRows: '1fr 1fr' }}>
+      <div className="grid grid-cols-2 gap-4">
         <Panel
           label="Text A"
           actions={
@@ -104,32 +96,27 @@ export function TextDiff() {
         >
           <Editor label="Text B" value={textB} onChange={handleTextBChange} />
         </Panel>
-      </Grid>
+      </div>
       <Panel
         fullHeight
         label={
           <>
             Difference
             {textA === textB && (
-              <Text as="span" color="successForeground">
+              <span className="typo-body text-success-foreground">
                 {' '}
                 (no difference)
-              </Text>
+              </span>
             )}
           </>
         }
       >
         <output htmlFor="text-a text-b">
-          <Box
-            display="block"
-            overflow="auto"
-            height="100%"
-            fontFamily="code"
-            padding="s"
-            whiteSpace="pre-wrap"
-            border="1px solid"
-            borderColor="lightBorder"
-            borderRadius="input"
+          <div
+            className="
+              block h-full overflow-auto rounded-input border border-solid
+              border-light-border p-2 font-mono whitespace-pre-wrap
+            "
             // eslint-disable-next-line @eslint-react/dom/no-dangerously-set-innerhtml
             dangerouslySetInnerHTML={{ __html: result }}
           />

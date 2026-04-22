@@ -1,10 +1,7 @@
 import { useMemo, useState } from 'react';
-import { css } from '../../styled-system/css';
-import { Box, Link } from '../../styled-system/jsx';
 import { Input } from '../components/Input';
 import { Screen } from '../components/Screen';
 import { Table } from '../components/Table';
-import { Text } from '../components/Text';
 import {
   type UnicodeCharacter,
   unicodeCharacters,
@@ -15,8 +12,8 @@ function ResultsTable({ characters }: { characters: UnicodeCharacter[] }) {
     <Table>
       <thead>
         <tr>
-          <th className={css({ width: '3rem' })}>Character</th>
-          <th className={css({ width: '6rem' })}>Code</th>
+          <th className="w-12">Character</th>
+          <th className="w-24">Code</th>
           <th>Name</th>
         </tr>
       </thead>
@@ -26,23 +23,18 @@ function ResultsTable({ characters }: { characters: UnicodeCharacter[] }) {
           const codeString = `U+${code.toString(16).toUpperCase().padStart(4, '0')}`;
           return (
             <tr key={code}>
-              <td
-                className={css({
-                  fontSize: 'xl',
-                  fontFamily: 'system-ui',
-                  textAlign: 'center',
-                })}
-              >
+              <td className="text-center font-[system-ui] text-xl">
                 {String.fromCodePoint(code)}
               </td>
               <td>
-                <Link
+                <a
                   href={`https://unicodeplus.com/${codeString}`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="link"
                 >
                   {codeString}
-                </Link>
+                </a>
               </td>
               <td>{name}</td>
             </tr>
@@ -90,21 +82,21 @@ export function UnicodeLookup() {
   }, [searchQuery]);
 
   return (
-    <Screen gridTemplateRows="auto 1fr" p="s">
+    <Screen style={{ gridTemplateRows: 'auto 1fr' }} className="p-2">
       <Input
         id="search"
         label="Search by name or code"
-        placeholder="Try “cat” or “U+1F600”"
+        placeholder={'Try \u201ccat\u201d or \u201cU+1F600\u201d'}
         value={searchQuery}
         onChange={(event) => setSearchQuery(event.target.value)}
       />
       {filteredCharacters.length > 0 && (
-        <Box overflow="auto">
+        <div className="overflow-auto">
           <ResultsTable characters={filteredCharacters} />
-        </Box>
+        </div>
       )}
       {searchQuery.trim() && filteredCharacters.length === 0 && (
-        <Text>No characters found</Text>
+        <p className="typo-body">No characters found</p>
       )}
     </Screen>
   );

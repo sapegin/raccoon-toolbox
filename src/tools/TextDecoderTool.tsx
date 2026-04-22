@@ -5,7 +5,6 @@ import { Editor } from '../components/Editor';
 import { Panel } from '../components/Panel';
 import { Screen } from '../components/Screen';
 import { Select } from '../components/Select';
-import { Text } from '../components/Text';
 import { usePersistentState } from '../hooks/usePersistentState';
 
 // Common Cyrillic encodings supported by TextDecoder
@@ -132,7 +131,7 @@ export function TextDecoderTool() {
   }, []);
 
   return (
-    <Screen gridTemplateColumns="1fr 1fr">
+    <Screen className="grid-cols-2">
       <Panel
         fullHeight
         label="Input"
@@ -159,11 +158,11 @@ export function TextDecoderTool() {
         actions={
           <>
             {encoding === 'auto' && detectedEncoding && (
-              <Text variant="small">
+              <p className="typo-small">
                 Detected:{' '}
                 {ENCODINGS.find((e) => e.value === detectedEncoding)?.label ??
                   detectedEncoding}
-              </Text>
+              </p>
             )}
             <CopyButton value={output} />
           </>

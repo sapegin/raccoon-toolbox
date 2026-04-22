@@ -1,5 +1,5 @@
+import clsx from 'clsx';
 import { type ReactNode } from 'react';
-import { Box, Grid, VisuallyHidden } from '../../styled-system/jsx';
 import { APP_NAME } from '../constants';
 import { Header } from './Header';
 import { Sidebar } from './Sidebar';
@@ -27,12 +27,12 @@ export function AppLayout({
 }: AppLayoutProps) {
   return (
     <>
-      <VisuallyHidden as="h1">{APP_NAME}</VisuallyHidden>
-      <Grid
-        gridTemplateColumns="auto 1fr"
-        gap={isSidebarOpen ? 's' : 0}
-        width="100vw"
-        height="100vh"
+      <h1 className="sr-only">{APP_NAME}</h1>
+      <div
+        className={clsx(
+          'grid h-screen w-screen grid-cols-[auto_1fr]',
+          isSidebarOpen && 'gap-2'
+        )}
         suppressHydrationWarning
       >
         <Sidebar
@@ -41,13 +41,11 @@ export function AppLayout({
           onSearchOpen={onSearchOpen}
           onHotkeysOpen={onHotkeysOpen}
         />
-        <Grid gridTemplateRows="auto 1fr" height="100vh">
+        <div className="grid h-screen" style={{ gridTemplateRows: 'auto 1fr' }}>
           <Header title={title} show={isHeaderVisible} onOpen={onHeaderOpen} />
-          <Box minHeight={0} height="100%">
-            {children}
-          </Box>
-        </Grid>
-      </Grid>
+          <div className="h-full min-h-0">{children}</div>
+        </div>
+      </div>
     </>
   );
 }

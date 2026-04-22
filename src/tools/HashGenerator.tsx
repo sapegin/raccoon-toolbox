@@ -1,6 +1,5 @@
 import { md5 } from 'js-md5';
 import { useCallback, useEffect, useState } from 'react';
-import { Stack } from '../../styled-system/jsx';
 import { Button } from '../components/Button';
 import { CopyButton } from '../components/CopyButton';
 import { Editor } from '../components/Editor';
@@ -84,7 +83,7 @@ export function HashGenerator() {
   }, []);
 
   return (
-    <Screen gridTemplateColumns="1fr 1fr">
+    <Screen className="grid-cols-2">
       <Panel
         fullHeight
         label="Input"
@@ -112,7 +111,7 @@ export function HashGenerator() {
           />
         }
       >
-        <Stack gap="m">
+        <div className="flex flex-col gap-4">
           <Input
             id="md5"
             label="MD5"
@@ -148,7 +147,7 @@ export function HashGenerator() {
             readOnly
             actions={<CopyButton value={sha512Hash} />}
           />
-        </Stack>
+        </div>
       </Panel>
     </Screen>
   );

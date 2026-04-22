@@ -1,40 +1,33 @@
-import { css } from '../../styled-system/css';
-import { Link, Stack } from '../../styled-system/jsx';
 import { Icon } from '../components/Icon';
 import { Screen } from '../components/Screen';
-import { Text } from '../components/Text';
 import { externalTools } from '../externalTools';
 import { getShortcut } from '../util/getShortcut';
 
 export function Extras() {
   return (
     <Screen title="More tools">
-      <Stack gap="m" overflow="auto" p="s">
-        <Text>
+      <div className="flex flex-col gap-4 overflow-auto p-2">
+        <p className="typo-body">
           Other useful tools and resources. Press {getShortcut('K')} for search.
-        </Text>
-        <Stack as="ul" gap="s">
+        </p>
+        <ul className="flex flex-col gap-2">
           {externalTools.map((tool) => (
             <li key={tool.name}>
-              <Link
+              <a
                 href={tool.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={css({
-                  display: 'inline-flex',
-                  alignItems: 'baseline',
-                  gap: 'xs',
-                })}
+                className="link inline-flex items-baseline gap-1"
               >
                 <span>{tool.name}</span>
                 <span>
                   <Icon icon="external" size={12} />
                 </span>
-              </Link>
+              </a>
             </li>
           ))}
-        </Stack>
-      </Stack>
+        </ul>
+      </div>
     </Screen>
   );
 }

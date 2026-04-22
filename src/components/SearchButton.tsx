@@ -1,33 +1,25 @@
-import { styled } from '../../styled-system/jsx';
+import clsx from 'clsx';
+import type { ComponentProps } from 'react';
 
-export const SearchButton = styled('button', {
-  base: {
-    display: 'flex',
-    width: '100%',
-    alignItems: 'center',
-    gap: 's',
-    p: 's',
-    fontSize: 's',
-    color: 'secondaryTextForeground',
-    backgroundColor: 'textBackground',
-    border: 'input',
-    borderRadius: 'search',
-    boxShadow: 'input',
-    cursor: 'pointer',
-    outline: 0,
-    transitionDuration: 'hover',
-    transitionTimingFunction: 'hover',
-    transitionProperty: 'all',
-    _hover: {
-      color: 'activeForeground',
-      borderColor: 'activeBorder',
-    },
-    _active: {
-      transform: 'translateY(1px)',
-    },
-    _focusVisible: {
-      outline: 'focus',
-      outlineOffset: 'token(borderWidths.focusOutlineOffset)',
-    },
-  },
-});
+export function SearchButton({
+  className,
+  ...props
+}: ComponentProps<'button'>) {
+  return (
+    <button
+      {...props}
+      className={clsx(
+        `
+          flex w-full cursor-pointer items-center gap-2 rounded-search border
+          border-light-border bg-text-background p-2 text-sm leading-[1.2]
+          text-secondary-text-foreground shadow-input focus-outline outline-0
+          transition-all duration-(--duration-hover) ease-hover
+          hover:border-active-border hover:text-active-foreground
+          focus-visible:outline-2
+          active:translate-y-px
+        `,
+        className
+      )}
+    />
+  );
+}

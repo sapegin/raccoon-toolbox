@@ -1,15 +1,10 @@
-import { Box } from '../../styled-system/jsx';
-
 export function Spinner() {
   return (
-    <Box
-      width="2rem"
-      height="2rem"
-      border="3px solid"
-      borderColor="lightBorder"
-      borderTopColor="accent"
-      borderRadius="100%"
-      animation="spin 2s linear infinite"
+    <div
+      className="
+        size-8 animate-spin rounded-full border-3 border-solid
+        border-light-border border-t-accent
+      "
     />
   );
 }

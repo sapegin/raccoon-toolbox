@@ -1,31 +1,15 @@
+import clsx from 'clsx';
 import { type ReactNode } from 'react';
-import { css } from '../../styled-system/css';
 
-const linkStyles = css({
-  display: 'inline-block',
-  px: 's',
-  py: 'xs',
-  borderRadius: 'button',
-  color: 'textForeground',
-  textDecoration: 'none',
-  cursor: 'pointer',
-  background: 'none',
-  border: 'none',
-  textAlign: 'left',
-  fontFamily: 'body',
-  fontSize: 's',
-  transitionDuration: 'hover',
-  transitionTimingFunction: 'hover',
-  transitionProperty: 'all',
-  _hover: {
-    color: 'activeForeground',
-    backgroundColor: 'hoverBackground',
-  },
-  _focusVisible: {
-    outline: 'focus',
-    outlineOffset: 'token(borderWidths.focusOutlineOffset)',
-  },
-});
+const linkClasses = clsx(
+  `
+    inline-block cursor-pointer rounded-button border-none bg-none px-2 py-1
+    text-left font-body text-sm text-text-foreground no-underline focus-outline
+    transition-all duration-(--duration-hover) ease-hover
+    hover:bg-hover-background hover:text-active-foreground
+    focus-visible:outline-2
+  `
+);
 
 export function SidebarLink({
   href,
@@ -39,7 +23,7 @@ export function SidebarLink({
   if (href) {
     return (
       <a
-        className={linkStyles}
+        className={linkClasses}
         href={href}
         target="_blank"
         rel="noopener noreferrer"
@@ -50,7 +34,7 @@ export function SidebarLink({
   }
 
   return (
-    <button className={linkStyles} onClick={onClick} type="button">
+    <button className={linkClasses} onClick={onClick} type="button">
       {children}
     </button>
   );

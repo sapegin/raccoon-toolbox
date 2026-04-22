@@ -1,9 +1,7 @@
-import { Box, Flex, Grid } from '../../styled-system/jsx';
 import { APP_NAME } from '../constants';
 import { getShortcut } from '../util/getShortcut';
 import { Icon } from './Icon';
 import { IconButton } from './IconButton';
-import { Text } from './Text';
 
 export function Header({
   title = APP_NAME,
@@ -15,36 +13,35 @@ export function Header({
   show?: boolean;
 }) {
   return (
-    <Box
-      overflowY="hidden"
-      transition="height 0.08s ease-in-out"
+    <div
+      className="
+        overflow-y-hidden transition-[height] duration-[0.08s] ease-in-out
+      "
       inert={show === false}
       aria-hidden={show === false}
-      height={show ? '2.38rem' : 0}
+      // TODO: Move to a theme variable? Use calc(header height + 1px)?
+      style={{ height: show ? '2.38rem' : 0 }}
       suppressHydrationWarning
     >
-      <Grid
-        gridTemplateColumns="2rem auto 2rem"
-        gap="m"
-        p="xs"
-        borderStyle="solid"
-        borderWidth="0 0 1px 0"
-        borderColor="lightBorder"
-        backgroundColor="uiBackground"
+      <div
+        className="
+          grid grid-cols-[2rem_auto_2rem] gap-4 border-b border-solid
+          border-light-border bg-ui-background p-1
+        "
       >
-        <Flex alignItems="center" justifyContent="center">
+        <div className="flex items-center justify-center">
           <IconButton
             label={`Open sidebar (${getShortcut('/')})`}
             onClick={onOpen}
           >
             <Icon icon="sidebar" />
           </IconButton>
-        </Flex>
-        <Text as="h2" textAlign="center">
+        </div>
+        <h2 className="typo-body text-center">
           {title}
-        </Text>
+        </h2>
         <div />
-      </Grid>
-    </Box>
+      </div>
+    </div>
   );
 }

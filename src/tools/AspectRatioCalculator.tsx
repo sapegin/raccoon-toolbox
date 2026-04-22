@@ -1,5 +1,4 @@
 import { useCallback, useMemo } from 'react';
-import { Grid, Stack } from '../../styled-system/jsx';
 import { Input } from '../components/Input';
 import { LargeValue } from '../components/LargeValue';
 import { Panel } from '../components/Panel';
@@ -148,10 +147,10 @@ export function AspectRatioCalculator() {
   );
 
   return (
-    <Screen gridTemplateColumns="1fr 1fr" gap="m">
+    <Screen className="grid-cols-2 gap-4">
       <Panel label="Calculate aspect ratio" fullHeight>
-        <Stack gap="l">
-          <Grid gridTemplateColumns="1fr 1fr" gap="m">
+        <div className="flex flex-col gap-8">
+          <div className="grid grid-cols-2 gap-4">
             <Input
               id="width"
               label="Width"
@@ -166,8 +165,8 @@ export function AspectRatioCalculator() {
               value={height}
               onChange={handleHeightChange}
             />
-          </Grid>
-          <Stack as="dl" direction="row" gap="m">
+          </div>
+          <dl className="flex flex-row gap-4">
             <LargeValue
               label="Aspect ratio"
               value={`${calculatedRatio.ratioWidth}:${calculatedRatio.ratioHeight}`}
@@ -180,12 +179,12 @@ export function AspectRatioCalculator() {
               label="Decimal"
               value={calculatedRatio.decimal.toFixed(2)}
             />
-          </Stack>
-        </Stack>
+          </dl>
+        </div>
       </Panel>
       <Panel label="Calculate dimensions" fullHeight>
-        <Stack gap="m">
-          <Grid gridTemplateColumns="1fr 1fr" gap="m">
+        <div className="flex flex-col gap-4">
+          <div className="grid grid-cols-2 gap-4">
             <Input
               id="aspect-ratio-width"
               label="Aspect ratio width"
@@ -200,8 +199,8 @@ export function AspectRatioCalculator() {
               value={aspectRatioHeight}
               onChange={handleAspectRatioHeightChange}
             />
-          </Grid>
-          <Grid gridTemplateColumns="1fr 1fr" gap="m">
+          </div>
+          <div className="grid grid-cols-2 gap-4">
             <Input
               id="dimension-width"
               label="Width"
@@ -216,8 +215,8 @@ export function AspectRatioCalculator() {
               value={dimensionHeight}
               onChange={handleDimensionHeightChange}
             />
-          </Grid>
-          <Stack as="dl" direction="row" gap="m">
+          </div>
+          <dl className="flex flex-row gap-4">
             <LargeValue
               label="Width"
               value={calculatedDimensions.calculatedWidth}
@@ -226,8 +225,8 @@ export function AspectRatioCalculator() {
               label="Height"
               value={calculatedDimensions.calculatedHeight}
             />
-          </Stack>
-        </Stack>
+          </dl>
+        </div>
       </Panel>
     </Screen>
   );

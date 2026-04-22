@@ -1,11 +1,9 @@
 import { type ChangeEvent, useCallback, useState } from 'react';
-import { Grid, Stack } from '../../styled-system/jsx';
 import { Button } from '../components/Button';
 import { Input } from '../components/Input';
 import { LargeValue } from '../components/LargeValue';
 import { Panel } from '../components/Panel';
 import { Screen } from '../components/Screen';
-import { Text } from '../components/Text';
 import { usePersistentState } from '../hooks/usePersistentState';
 
 const MILLISECONDS_PER_DAY = 86_400_000;
@@ -211,9 +209,9 @@ export function DateConverter() {
   const relativeTime = getRelativeTime(date);
 
   return (
-    <Screen gridTemplateColumns="1fr 1fr">
+    <Screen className="grid-cols-2">
       <Panel title="Date and time">
-        <Stack gap="m">
+        <div className="flex flex-col gap-4">
           <Input
             id="timestamp"
             label="Timestamp (milliseconds)"
@@ -237,7 +235,10 @@ export function DateConverter() {
             onChange={handleIsoChange}
             onBlur={handleIsoBlur}
           />
-          <Grid gridTemplateColumns="1fr 1fr 1fr" gap="m">
+          <div
+            className="grid gap-4"
+            style={{ gridTemplateColumns: '1fr 1fr 1fr' }}
+          >
             <Input
               id="year"
               label="Year"
@@ -280,37 +281,37 @@ export function DateConverter() {
               value={String(date.getSeconds())}
               onChange={handleSecondChange}
             />
-          </Grid>
-        </Stack>
+          </div>
+        </div>
       </Panel>
       <Panel title="Date preview">
-        <Stack gap="m">
+        <div className="flex flex-col gap-4">
           <LargeValue label="Date" value={humanReadable} />
-          <Stack gap="xs">
-            <Text as="dt" variant="small" color="secondaryTextForeground">
+          <div className="flex flex-col gap-1">
+            <dt className="typo-small text-[color:var(--color-secondary-text-foreground)]">
               Day of year
-            </Text>
-            <Text as="dd">{dayOfYear}</Text>
-          </Stack>
-          <Stack gap="xs">
-            <Text as="dt" variant="small" color="secondaryTextForeground">
+            </dt>
+            <dd className="typo-body">{dayOfYear}</dd>
+          </div>
+          <div className="flex flex-col gap-1">
+            <dt className="typo-small text-[color:var(--color-secondary-text-foreground)]">
               Week number
-            </Text>
-            <Text as="dd">{weekNumber}</Text>
-          </Stack>
-          <Stack gap="xs">
-            <Text as="dt" variant="small" color="secondaryTextForeground">
+            </dt>
+            <dd className="typo-body">{weekNumber}</dd>
+          </div>
+          <div className="flex flex-col gap-1">
+            <dt className="typo-small text-[color:var(--color-secondary-text-foreground)]">
               Leap year
-            </Text>
-            <Text as="dd">{leapYear ? 'Yes' : 'No'}</Text>
-          </Stack>
-          <Stack gap="xs">
-            <Text as="dt" variant="small" color="secondaryTextForeground">
+            </dt>
+            <dd className="typo-body">{leapYear ? 'Yes' : 'No'}</dd>
+          </div>
+          <div className="flex flex-col gap-1">
+            <dt className="typo-small text-[color:var(--color-secondary-text-foreground)]">
               Relative time
-            </Text>
-            <Text as="dd">{relativeTime}</Text>
-          </Stack>
-        </Stack>
+            </dt>
+            <dd className="typo-body">{relativeTime}</dd>
+          </div>
+        </div>
       </Panel>
     </Screen>
   );

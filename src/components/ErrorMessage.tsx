@@ -1,15 +1,20 @@
-import { Box, type BoxProps } from '../../styled-system/jsx';
+import clsx from 'clsx';
+import type { ComponentProps } from 'react';
 
-export function ErrorMessage({ children, ...props }: BoxProps) {
+export function ErrorMessage({
+  className,
+  children,
+  ...props
+}: ComponentProps<'div'>) {
   return (
-    <Box
+    <div
       {...props}
-      color="errorForeground"
-      backgroundColor="textBackground"
-      whiteSpace="pre-wrap"
-      fontFamily="code"
+      className={clsx(
+        `bg-text-background font-mono whitespace-pre-wrap text-error-foreground`,
+        className
+      )}
     >
       {children}
-    </Box>
+    </div>
   );
 }

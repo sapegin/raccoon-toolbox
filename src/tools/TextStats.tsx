@@ -1,5 +1,4 @@
 import { useCallback, useMemo } from 'react';
-import { Stack } from '../../styled-system/jsx';
 import { Button } from '../components/Button';
 import { Editor } from '../components/Editor';
 import { LargeValue } from '../components/LargeValue';
@@ -25,7 +24,7 @@ export function TextStats() {
   }, [setText]);
 
   return (
-    <Screen gridTemplateColumns="1fr 12rem">
+    <Screen style={{ gridTemplateColumns: '1fr 12rem' }}>
       <Panel
         fullHeight
         label="Text"
@@ -39,7 +38,7 @@ export function TextStats() {
       </Panel>
       <Panel fullHeight accessibleLabel="Statistics">
         <output htmlFor="text">
-          <Stack as="dl" gap="m" overflow="auto" height="100%">
+          <dl className="flex flex-col gap-4 overflow-auto h-full">
             <LargeValue label="Characters" value={stats.characters} />
             <LargeValue
               label="Non-space characters"
@@ -53,7 +52,7 @@ export function TextStats() {
               label="Reading time"
               value={`${stats.readingTimeMinutes} min`}
             />
-          </Stack>
+          </dl>
         </output>
       </Panel>
     </Screen>

@@ -47,7 +47,7 @@ export function HtmlFormatter() {
   }, []);
 
   return (
-    <Screen gridTemplateColumns="1fr 1fr">
+    <Screen className="grid-cols-2">
       <Panel
         fullHeight
         label="Input"

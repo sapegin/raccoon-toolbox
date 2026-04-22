@@ -1,5 +1,4 @@
 import { useCallback, useMemo } from 'react';
-import { Grid, Stack } from '../../styled-system/jsx';
 import { Button } from '../components/Button';
 import { CopyButton } from '../components/CopyButton';
 import { Editor } from '../components/Editor';
@@ -108,8 +107,8 @@ export function RegExpTester() {
   }, []);
 
   return (
-    <Screen gridTemplateRows="1fr 1fr">
-      <Stack gap="m" minHeight={0} height="100%" p="s">
+    <Screen style={{ gridTemplateRows: '1fr 1fr' }}>
+      <div className="flex h-full min-h-0 flex-col gap-4 p-2">
         <Input
           id="regexp-input"
           label="Regular expression"
@@ -123,7 +122,7 @@ export function RegExpTester() {
             </Button>
           }
         />
-        <Panel fullHeight label="Text" p={0}>
+        <Panel fullHeight noPadding label="Text">
           <Editor
             label="Text"
             value={textInput}
@@ -131,15 +130,9 @@ export function RegExpTester() {
             highlightRanges={highlightRanges}
           />
         </Panel>
-      </Stack>
-      <Grid
-        gridTemplateColumns="1fr 1fr"
-        gap="m"
-        minHeight={0}
-        height="100%"
-        p="s"
-      >
-        <Stack gap="m" minHeight={0} height="100%">
+      </div>
+      <div className="grid h-full min-h-0 grid-cols-2 gap-4 p-2">
+        <div className="flex h-full min-h-0 flex-col gap-4">
           <Input
             id="formatter"
             label="Match formatter"
@@ -149,15 +142,15 @@ export function RegExpTester() {
           />
           <Panel
             fullHeight
+            noPadding
             label="Matches"
             actions={<CopyButton value={output} />}
-            p={0}
           >
             <Editor label="Matches" value={output} />
           </Panel>
-        </Stack>
+        </div>
         <RegExpCheatSheet />
-      </Grid>
+      </div>
     </Screen>
   );
 }

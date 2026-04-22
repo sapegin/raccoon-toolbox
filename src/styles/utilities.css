@@ -1,0 +1,13 @@
+@utility screen {
+  display: grid;
+  /* TODO: vh or something? */
+  height: 100%;
+  cursor: default;
+  gap: 0;
+
+  @media (width >= 48rem) {
+    gap: --spacing(2);
+  }
+}
+
+

@@ -1,14 +1,12 @@
 import { type Colord, colord, extend } from 'colord';
 import a11yPlugin from 'colord/plugins/a11y';
 import { type ReactNode, useCallback, useMemo } from 'react';
-import { Flex, Grid, Stack, VisuallyHidden } from '../../styled-system/jsx';
 import { Button } from '../components/Button';
 import { ColorPickerWithPreview } from '../components/ColorPickerWithPreview';
 import { Icon } from '../components/Icon';
 import { Input } from '../components/Input';
 import { Panel } from '../components/Panel';
 import { Screen } from '../components/Screen';
-import { Text } from '../components/Text';
 import { usePersistentState } from '../hooks/usePersistentState';
 import { parseColorInput } from '../util/parseColorInput';
 
@@ -44,30 +42,37 @@ function getContrastLevel(
 function getContrastLabelColor(ratio: number) {
   const levelLargeText = getContrastLevel(ratio, true);
   if (levelLargeText === 'Fail') {
-    return 'errorForeground';
+    return 'text-error-foreground';
   }
 
   const levelNormalText = getContrastLevel(ratio, false);
   if (levelNormalText === 'Fail') {
-    return 'warningForeground';
+    return 'text-[color:var(--color-warning-foreground)]';
   }
 
-  return 'activeForeground';
+  return 'text-active-foreground';
 }
 
 function ContrastRatio({ ratio }: { ratio: number }) {
   return (
-    <Stack gap="s" alignItems="center">
+    <div className="flex flex-col items-center gap-2">
       <output htmlFor="text-color background-color">
-        <Flex height="5.5rem" alignItems="center">
-          <Text variant="xlarge" color={getContrastLabelColor(ratio)}>
-            <VisuallyHidden>Contrast ratio: </VisuallyHidden>
+        <div className="flex h-22 items-center">
+          <p
+            className={`
+              typo-xlarge
+              ${getContrastLabelColor(ratio)}
+            `}
+          >
+            <span className="sr-only">Contrast ratio: </span>
             {ratio.toFixed(2)}:1
-          </Text>
-        </Flex>
+          </p>
+        </div>
       </output>
-      <Text aria-hidden>Contrast ratio</Text>
-    </Stack>
+      <p className="typo-body" aria-hidden>
+        Contrast ratio
+      </p>
+    </div>
   );
 }
 
@@ -92,40 +97,39 @@ function ContrastResult({
   const passes = level !== 'Fail';
 
   return (
-    <Stack gap="s" alignItems="center">
-      <Flex
-        width="100%"
-        height="5.5rem"
-        padding="s"
-        alignItems="center"
-        justifyContent="center"
-        borderRadius="input"
-        border="1px solid"
-        textAlign="center"
-        overflow="hidden"
-        fontSize={isLargeText ? '24px' : '16px'}
-        lineHeight={isLargeText ? '28px' : '22px'}
-        borderColor={passes ? 'lightBorder' : 'errorForeground'}
+    <div className="flex flex-col items-center gap-2">
+      <div
+        className="
+          flex h-22 w-full items-center justify-center overflow-hidden
+          rounded-input border border-solid p-2 text-center
+        "
         style={{
+          fontSize: isLargeText ? '24px' : '16px',
+          lineHeight: isLargeText ? '28px' : '22px',
+          borderColor: passes
+            ? 'var(--color-light-border)'
+            : 'var(--color-error-foreground)',
           backgroundColor,
           color: textColor,
         }}
       >
         {preview}
-      </Flex>
-      <Flex width="100%" justifyContent="space-between" title={hint}>
-        <Text>{label}</Text>
-        <Flex
-          as="span"
-          alignItems="center"
-          fontWeight="bold"
-          color={passes ? 'successForeground' : 'errorForeground'}
+      </div>
+      <div className="flex w-full justify-between" title={hint}>
+        <p className="typo-body">{label}</p>
+        <span
+          className="inline-flex items-center font-bold"
+          style={{
+            color: passes
+              ? 'var(--color-success-foreground)'
+              : 'var(--color-error-foreground)',
+          }}
         >
           <Icon icon={passes ? 'check' : 'xmark'} />
           {passes ? level : 'Fail'}
-        </Flex>
-      </Flex>
-    </Stack>
+        </span>
+      </div>
+    </div>
   );
 }
 
@@ -207,10 +211,10 @@ export function ColorContrast() {
   const contrast = textColor.contrast(backgroundColor);
 
   return (
-    <Screen gridTemplateRows="2fr 1fr" gap="l">
-      <Grid gridTemplateColumns="1fr 1fr" gap="m">
+    <Screen className="grid-rows-[2fr_1fr] gap-8">
+      <div className="grid h-full grid-cols-2 gap-4">
         <Panel accessibleLabel="Text color" fullHeight>
-          <Stack gap="m" height="100%">
+          <div className="flex h-full flex-col gap-4">
             <Input
               id="text-color"
               label="Text color"
@@ -227,10 +231,10 @@ export function ColorContrast() {
               onChange={handleTextColorPickerChange}
               showAlpha={false}
             />
-          </Stack>
+          </div>
         </Panel>
         <Panel accessibleLabel="Background color" fullHeight>
-          <Stack gap="m" height="100%">
+          <div className="flex h-full flex-col gap-4">
             <Input
               id="background-color"
               label="Background color"
@@ -246,11 +250,11 @@ export function ColorContrast() {
               onChange={handleBackgroundColorPickerChange}
               showAlpha={false}
             />
-          </Stack>
+          </div>
         </Panel>
-      </Grid>
+      </div>
       <Panel accessibleLabel="Results">
-        <Grid gridTemplateColumns="1fr 1fr 1fr 1fr" gap="m">
+        <div className="grid grid-cols-4 gap-4">
           <ContrastRatio ratio={contrast} />
           <ContrastResult
             label="Normal text (< 24px)"
@@ -274,18 +278,18 @@ export function ColorContrast() {
             label="Icons"
             hint="Required contrast ratio AA: 3.0, AAA: 4.5"
             preview={
-              <Stack direction="row" gap="xs">
+              <div className="flex flex-row gap-1">
                 <Icon icon="search" size={28} />
                 <Icon icon="fish" size={28} />
                 <Icon icon="sidebar" size={28} />
-              </Stack>
+              </div>
             }
             ratio={contrast}
             isLargeText
             textColor={textColor.toHex()}
             backgroundColor={backgroundColor.toHex()}
           />
-        </Grid>
+        </div>
       </Panel>
     </Screen>
   );

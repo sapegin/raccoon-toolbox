@@ -167,7 +167,7 @@ export function JsonCsv() {
   const outputLabel = mode === 'json-to-csv' ? 'CSV' : 'JSON';
 
   return (
-    <Screen gridTemplateColumns="1fr 1fr">
+    <Screen className="grid-cols-2">
       <Panel
         fullHeight
         label={inputLabel}

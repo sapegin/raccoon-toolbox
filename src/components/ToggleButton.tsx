@@ -1,76 +1,6 @@
+import clsx from 'clsx';
 import { Fragment, type ReactNode } from 'react';
-import { Flex, Stack, styled } from '../../styled-system/jsx';
-import { visuallyHidden } from '../../styled-system/patterns/visually-hidden';
 import type { RequiredLabel } from '../types';
-import { text } from './Text';
-
-const ToggleButtonContainer = styled('fieldset', {
-  base: {
-    height: '1.5rem',
-    display: 'inline-flex',
-    border: 'button',
-    borderRadius: 'button',
-    boxShadow: 'button',
-  },
-});
-
-const ToggleButtonInput = styled('input', {
-  base: {
-    position: 'absolute',
-    opacity: 0,
-    width: 0,
-    height: 0,
-  },
-});
-
-const ToggleButtonLabel = styled('label', {
-  base: {
-    display: 'inline-flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    height: '100%',
-    px: 's',
-    fontSize: 'medium',
-    userSelect: 'none',
-    borderWidth: 0,
-    outline: 0,
-    transitionDuration: 'hover',
-    transitionTimingFunction: 'hover',
-    transitionProperty: 'all',
-    cursor: 'pointer',
-    'input:focus-visible + &': {
-      outline: 'focus',
-      outlineOffset: 'token(borderWidths.focusOutlineOffset)',
-      zIndex: 10,
-    },
-    // Inner border radius must be a bit smaller than the outer
-    '&:first-of-type': {
-      borderStartRadius: '5px',
-    },
-    '&:last-of-type': {
-      borderEndRadius: '5px',
-    },
-  },
-  variants: {
-    checked: {
-      true: {
-        color: 'buttonPressedForeground',
-        bgGradient: 'buttonPressed',
-        textShadow: 'buttonPressedText',
-        boxShadow: 'buttonPressed',
-      },
-      false: {
-        color: 'secondaryButtonForeground',
-        bgGradient: 'button',
-        textShadow: 'buttonText',
-        _hover: {
-          backgroundColor: 'secondaryButtonBackground',
-          bgGradient: 'buttonHover',
-        },
-      },
-    },
-  },
-});
 
 interface ToggleButtonOption {
   value: string;
@@ -95,41 +25,72 @@ export function ToggleButton({
   onChange,
 }: ToggleButtonProps) {
   return (
-    <Stack display="inline-flex" gap="xs">
+    <fieldset className="inline-flex flex-col gap-1">
       {label ? (
-        <Flex justifyContent="space-between" alignItems="center">
-          <legend className={text()}>{label}</legend>
+        <div className="flex items-center justify-between">
+          <legend className="typo-body">{label}</legend>
           {actions ? (
-            <Stack direction="row" gap="s">
-              {actions}
-            </Stack>
+            <div className="flex flex-row gap-2">{actions}</div>
           ) : null}
-        </Flex>
+        </div>
       ) : null}
       {accessibleLabel ? (
-        <legend className={visuallyHidden()}>{accessibleLabel}</legend>
+        <legend className="sr-only">{accessibleLabel}</legend>
       ) : null}
-      <ToggleButtonContainer>
+      <div
+        className="
+          inline-flex h-6 rounded-button border border-light-border
+          shadow-button
+        "
+      >
         {options.map((option) => {
           const id = `${name}-${option.value}`;
           const isChecked = value === option.value;
           return (
             <Fragment key={option.value}>
-              <ToggleButtonInput
+              <input
                 type="radio"
                 id={id}
                 name={name}
                 value={option.value}
                 checked={isChecked}
                 onChange={(e) => onChange(e.target.value)}
+                className="absolute size-0 opacity-0"
               />
-              <ToggleButtonLabel htmlFor={id} checked={isChecked}>
+              <label
+                htmlFor={id}
+                className={clsx(
+                  `
+                    inline-flex h-full cursor-pointer items-center
+                    justify-center border-0 px-2 text-sm outline-0
+                    transition-all duration-(--duration-hover) ease-hover
+                    select-none
+                    first-of-type:rounded-l-[5px]
+                    last-of-type:rounded-r-[5px]
+                    [input:focus-visible+&]:z-10
+                    [input:focus-visible+&]:outline-2
+                    [input:focus-visible+&]:outline-offset-(--border-width-focus-offset)
+                    [input:focus-visible+&]:outline-accent
+                  `,
+                  isChecked
+                    ? `
+                      bg-(image:--gradient-button-pressed)
+                      text-button-pressed-foreground shadow-button-pressed
+                      text-shadow-button-pressed
+                    `
+                    : `
+                      bg-(image:--gradient-button)
+                      text-secondary-button-foreground text-shadow-button
+                      hover:bg-hover-background
+                    `
+                )}
+              >
                 {option.label}
-              </ToggleButtonLabel>
+              </label>
             </Fragment>
           );
         })}
-      </ToggleButtonContainer>
-    </Stack>
+      </div>
+    </fieldset>
   );
 }

@@ -161,7 +161,7 @@ export function App() {
       >
         <Suspense
           fallback={
-            <Screen alignItems="center" justifyContent="center">
+            <Screen className="place-items-center justify-center">
               <Spinner />
             </Screen>
           }

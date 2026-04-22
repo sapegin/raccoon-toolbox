@@ -1,5 +1,3 @@
-import { Box } from '../../styled-system/jsx';
-
 export function ColorSwatch({ color }: { color: string }) {
-  return <Box height="6rem" style={{ backgroundColor: color }} />;
+  return <div className="h-24" style={{ backgroundColor: color }} />;
 }

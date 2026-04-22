@@ -1,11 +1,5 @@
 import { isTauri } from '@tauri-apps/api/core';
-import {
-  Box,
-  Flex,
-  Grid,
-  Stack,
-  VisuallyHidden,
-} from '../../styled-system/jsx';
+import clsx from 'clsx';
 import { tools } from '../tools';
 import { getShortcut } from '../util/getShortcut';
 import { Icon } from './Icon';
@@ -26,42 +20,43 @@ export function Sidebar({
   show?: boolean;
 }) {
   return (
-    <Box
-      overflowX="hidden"
-      transition="width 0.08s ease-in-out"
-      height="100%"
-      width={show ? '16rem' : 0}
+    <div
+      className={clsx(
+        `
+          h-full overflow-x-hidden transition-[width] duration-[0.08s]
+          ease-in-out
+        `,
+        show ? 'w-64' : 'w-0'
+      )}
       inert={show === false}
       aria-hidden={show === false}
       suppressHydrationWarning
     >
-      <VisuallyHidden as="h2">Tools</VisuallyHidden>
-      <Stack
-        width="16rem"
-        height="100%"
-        borderStyle="solid"
-        borderWidth="0 1px 0 0"
-        borderColor="lightBorder"
-        backgroundColor="uiBackground"
+      <h2 className="sr-only">Tools</h2>
+      <div
+        className="
+          flex h-full w-64 flex-col border-r border-solid border-light-border
+          bg-ui-background
+        "
       >
-        <Flex justifyContent="space-between" gap="s" pt="s" pb="xs" px="s">
+        <div className="flex justify-between gap-2 px-2 pt-2 pb-1">
           <SearchButton type="button" onClick={onSearchOpen}>
             <Icon icon="search" size={18} />
             Search
-            <Box as="kbd" ml="auto" fontSize="xs" color="disabledForeground">
+            <kbd className="ml-auto text-xs text-disabled-foreground">
               {getShortcut('K')}
-            </Box>
+            </kbd>
           </SearchButton>
-          <Flex alignItems="center" justifyContent="center">
+          <div className="flex items-center justify-center">
             <IconButton
               label={`Close sidebar (${getShortcut('/')})`}
               onClick={onClose}
             >
               <Icon icon="sidebar" />
             </IconButton>
-          </Flex>
-        </Flex>
-        <Stack as="ul" gap="xs" p="xs" overflowY="auto">
+          </div>
+        </div>
+        <ul className="flex flex-col gap-1 overflow-y-auto p-1">
           {tools.map((tool) => (
             <li key={tool.id}>
               <NavigationButton to={`/${tool.id}/`}>
@@ -69,19 +64,17 @@ export function Sidebar({
               </NavigationButton>
             </li>
           ))}
-        </Stack>
+        </ul>
         {isTauri() === false && (
-          <Grid
-            gridTemplateColumns="1fr 1fr"
-            mt="auto"
-            p="xs"
-            borderWidth="1px 0 0 0"
-            borderStyle="solid"
-            borderColor="lightBorder"
+          <div
+            className="
+              mt-auto grid grid-cols-2 border-t border-solid border-light-border
+              p-1
+            "
           >
-            <Box>
+            <div>
               <SidebarLink onClick={onHotkeysOpen}>Hotkeys</SidebarLink>
-            </Box>
+            </div>
             <SidebarLink href="https://github.com/sapegin/raccoon-toolbox/issues">
               Report issue
             </SidebarLink>
@@ -91,9 +84,9 @@ export function Sidebar({
             <SidebarLink href="https://sapegin.me/book/">
               Read my book
             </SidebarLink>
-          </Grid>
+          </div>
         )}
-      </Stack>
-    </Box>
+      </div>
+    </div>
   );
 }

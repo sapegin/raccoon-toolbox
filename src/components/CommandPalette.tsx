@@ -1,61 +1,17 @@
 import { isTauri } from '@tauri-apps/api/core';
 import { openUrl } from '@tauri-apps/plugin-opener';
+import clsx from 'clsx';
 import { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { css } from '../../styled-system/css';
-import { Box, styled, VisuallyHidden } from '../../styled-system/jsx';
 import { externalTools } from '../externalTools';
 import { tools } from '../tools';
 import { Icon } from './Icon';
 import { Modal } from './Modal';
-import { Text } from './Text';
 
 interface CommandPaletteProps {
   isOpen: boolean;
   onClose: () => void;
 }
-
-const SearchInput = styled('input', {
-  base: {
-    width: '100%',
-    padding: 'm',
-    fontSize: 'm',
-    fontFamily: 'body',
-    color: 'textForeground',
-    backgroundColor: 'textBackground',
-    borderStyle: 'solid',
-    borderWidth: '0 0 1px 0',
-    borderColor: 'lightBorder',
-    outline: 'none',
-    _placeholder: {
-      color: 'secondaryTextForeground',
-    },
-    _focusVisible: {
-      // No focus style as it's always in focus
-      outline: 'none',
-    },
-  },
-});
-
-const CommandButton = styled('button', {
-  base: {
-    width: '100%',
-    padding: 'm',
-    textAlign: 'left',
-    fontFamily: 'body',
-    fontSize: 'm',
-    cursor: 'pointer',
-    color: 'textForeground',
-    border: 'none',
-    transitionDuration: 'hover',
-    transitionTimingFunction: 'hover',
-    transitionProperty: 'all',
-    borderWidth: 0,
-    _hover: {
-      backgroundColor: 'hoverBackground',
-    },
-  },
-});
 
 /** Filter tools by name and keywords but prioritize name matches. */
 function getSortedMatches<T extends { name: string; keywords: string[] }>(
@@ -159,7 +115,7 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
       onClose={onClose}
       dialogRef={dialogRef}
     >
-      <SearchInput
+      <input
         ref={inputRef}
         id="search-dialog-input"
         type="text"
@@ -168,54 +124,53 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
         onKeyDown={handleKeyDown}
+        className="
+          w-full border-x-0 border-t-0 border-b border-solid border-light-border
+          bg-text-background p-4 font-body text-base/none text-text-foreground
+          outline-none
+          placeholder:text-secondary-text-foreground
+          focus-visible:outline-none
+        "
       />
       <output htmlFor="search-dialog-input">
-        <Box maxHeight="400px" overflowY="auto">
+        <div className="max-h-[400px] overflow-y-auto">
           {filteredTools.length > 0 ? (
-            <ul
-              ref={listRef}
-              className={css({
-                listStyle: 'none',
-              })}
-            >
+            <ul ref={listRef} className="list-none">
               {filteredTools.map((tool, index) => (
                 <li key={tool.name}>
-                  <CommandButton
+                  <button
                     type="button"
                     onClick={() => handleToolSelection(tool)}
                     onMouseEnter={() => setSelectedIndex(index)}
-                    backgroundColor={
-                      index === selectedIndex
-                        ? 'activeBackground'
-                        : 'transparent'
-                    }
+                    className={clsx(
+                      `
+                        w-full cursor-pointer border-0 border-none p-4 text-left
+                        font-body text-base/snug text-text-foreground
+                        transition-all duration-(--duration-hover) ease-hover
+                        hover:bg-hover-background
+                      `,
+                      index === selectedIndex && 'bg-active-background'
+                    )}
                   >
-                    <Box
-                      display="flex"
-                      alignItems="center"
-                      justifyContent="space-between"
-                      width="100%"
-                    >
+                    <div className="flex w-full items-center justify-between">
                       <span>{tool.name}</span>
                       {'url' in tool && (
                         <>
-                          <VisuallyHidden as="span">
-                            (external link)
-                          </VisuallyHidden>
+                          <span className="sr-only">(external link)</span>
                           <Icon icon="external" size={16} />
                         </>
                       )}
-                    </Box>
-                  </CommandButton>
+                    </div>
+                  </button>
                 </li>
               ))}
             </ul>
           ) : (
-            <Text p="m" color="secondaryTextForeground">
+            <p className="p-4 typo-body text-secondary-text-foreground">
               No tools found
-            </Text>
+            </p>
           )}
-        </Box>
+        </div>
       </output>
     </Modal>
   );

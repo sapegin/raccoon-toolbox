@@ -1,3 +1,4 @@
+// TODO: Import from Tâmia
 import { IconBase } from './IconBase';
 
 interface IconInfo {

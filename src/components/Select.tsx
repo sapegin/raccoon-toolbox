@@ -1,41 +1,6 @@
-import type { ReactNode } from 'react';
-import {
-  Box,
-  Flex,
-  type HTMLStyledProps,
-  Stack,
-  styled,
-} from '../../styled-system/jsx';
-import { visuallyHidden } from '../../styled-system/patterns/visually-hidden';
+import type { ComponentProps, ReactNode } from 'react';
 import type { RequiredLabel } from '../types';
 import { Icon } from './Icon';
-import { text } from './Text';
-
-const SelectBox = styled('select', {
-  base: {
-    display: 'inline-block',
-    height: '1.5rem',
-    m: 0,
-    pl: 's',
-    pr: 'm',
-    fontSize: 'medium',
-    fontFamily: 'body',
-    color: 'textForeground',
-    backgroundColor: 'textBackground',
-    border: 0,
-    borderRadius: 'button',
-    cursor: 'pointer',
-    appearance: 'none',
-    _focusVisible: {
-      outline: 'focus',
-      outlineOffset: 'token(borderWidths.focusOutlineOffset)',
-    },
-    _disabled: {
-      opacity: 0.6,
-      cursor: 'default',
-    },
-  },
-});
 
 export function Select({
   id,
@@ -44,51 +9,50 @@ export function Select({
   options,
   actions,
   ...props
-}: HTMLStyledProps<'select'> &
+}: ComponentProps<'select'> &
   RequiredLabel & {
     id: string;
     options: { value: string; label: string }[];
     actions?: ReactNode;
   }) {
   return (
-    <Stack display="inline-flex" gap="xs">
+    <div className="inline-flex flex-col gap-1">
       {label ? (
-        <Flex justifyContent="space-between" alignItems="center">
-          <label htmlFor={id} className={text()}>
+        <div className="flex items-center justify-between">
+          <label htmlFor={id} className="typo-body">
             {label}
           </label>
           {actions ? (
-            <Stack direction="row" gap="s">
-              {actions}
-            </Stack>
+            <div className="flex flex-row gap-2">{actions}</div>
           ) : null}
-        </Flex>
+        </div>
       ) : null}
       {accessibleLabel ? (
-        <label htmlFor={id} className={visuallyHidden()}>
+        <label htmlFor={id} className="sr-only">
           {accessibleLabel}
         </label>
       ) : null}
-      <Flex position="relative" border="input" borderRadius="button">
-        <SelectBox id={id} {...props}>
+      <div className="relative flex rounded-button border border-light-border">
+        <select
+          {...props}
+          className="
+            m-0 inline-block h-6 cursor-pointer appearance-none rounded-button
+            border-0 bg-text-background pr-4 pl-2 font-body text-sm
+            text-text-foreground focus-outline
+            focus-visible:outline-2
+            disabled:cursor-default disabled:opacity-60
+          "
+        >
           {options.map((option) => (
             <option key={option.value} value={option.value}>
               {option.label}
             </option>
           ))}
-        </SelectBox>
-        <Box
-          position="absolute"
-          top={0}
-          bottom={0}
-          right="xxs"
-          zIndex={10}
-          display="flex"
-          alignItems="center"
-        >
+        </select>
+        <div className="absolute inset-y-0 right-0.5 z-10 flex items-center">
           <Icon icon="select" size={14} />
-        </Box>
-      </Flex>
-    </Stack>
+        </div>
+      </div>
+    </div>
   );
 }

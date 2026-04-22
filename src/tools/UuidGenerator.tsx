@@ -1,5 +1,4 @@
 import { useCallback, useMemo, useState } from 'react';
-import { Box, Stack } from '../../styled-system/jsx';
 import { Button } from '../components/Button';
 import { CopyButton } from '../components/CopyButton';
 import { Editor } from '../components/Editor';
@@ -81,9 +80,9 @@ export function UuidGenerator() {
   }, []);
 
   return (
-    <Screen gridTemplateColumns="17rem 1fr">
+    <Screen style={{ gridTemplateColumns: '17rem 1fr' }}>
       <Panel fullHeight accessibleLabel="Configuration">
-        <Stack gap="m" alignItems="start">
+        <div className="flex flex-col gap-4 items-start">
           <Select
             id="version"
             label="UUID version"
@@ -111,7 +110,7 @@ export function UuidGenerator() {
               { value: 'uppercase', label: 'Uppercase' },
             ]}
           />
-          <Box width="100%">
+          <div className="w-full">
             <Input
               id="count"
               label="Number of UUIDs"
@@ -119,8 +118,8 @@ export function UuidGenerator() {
               value={count}
               onChange={handleCountChange}
             />
-          </Box>
-        </Stack>
+          </div>
+        </div>
       </Panel>
       <Panel
         fullHeight

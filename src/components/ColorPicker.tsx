@@ -6,7 +6,6 @@ import {
   useRef,
   useState,
 } from 'react';
-import { Box, Grid } from '../../styled-system/jsx';
 
 interface ColorPickerProps {
   color: Colord;
@@ -21,30 +20,30 @@ function DragHandle({
   variant?: 'circle' | 'rectangle';
   style: HTMLProps<HTMLDivElement>['style'];
 }) {
+  if (variant === 'circle') {
+    return (
+      <div
+        className="
+          pointer-events-none absolute size-3 rounded-full border-2
+          border-[white] shadow-[0_0_3px_#000c] outline outline-[black]
+        "
+        style={{
+          ...style,
+          transform: 'translate(-50%, -50%)',
+        }}
+      />
+    );
+  }
   return (
-    <Box
-      position="absolute"
-      border="2px solid #fff"
-      outline="1px solid #000"
-      boxShadow="0 0 3px #000c"
-      pointerEvents="none"
-      {...(variant === 'circle'
-        ? {
-            width: '0.75rem',
-            height: '0.75rem',
-            borderRadius: '100%',
-          }
-        : {
-            mx: '-0.2rem',
-            width: 'calc(100% + 0.4rem)',
-            height: '0.3rem',
-            borderRadius: 'base',
-            backgroundColor: '#fff',
-          })}
+    <div
+      className="
+        pointer-events-none absolute -mx-[0.2rem] h-[0.3rem]
+        w-[calc(100%+0.4rem)] rounded-normal border-2 border-[white] bg-[white]
+        shadow-[0_0_3px_#000c] outline outline-[black]
+      "
       style={{
         ...style,
-        transform:
-          variant === 'circle' ? 'translate(-50%, -50%)' : 'translateY(-50%)',
+        transform: 'translateY(-50%)',
       }}
     />
   );
@@ -54,7 +53,11 @@ function DragHandle({
  * Color picker with areas to select saturation/brightness, hue, and alpha
  * channel.
  */
-export function ColorPicker({ color, onChange, showAlpha = true }: ColorPickerProps) {
+export function ColorPicker({
+  color,
+  onChange,
+  showAlpha = true,
+}: ColorPickerProps) {
   const saturationValueRef = useRef<HTMLDivElement>(null);
   const hueRef = useRef<HTMLDivElement>(null);
   const alphaRef = useRef<HTMLDivElement>(null);
@@ -146,14 +149,18 @@ export function ColorPicker({ color, onChange, showAlpha = true }: ColorPickerPr
   const baseHue = colord({ h, s: 100, l: 50 }).toHex();
 
   return (
-    <Grid gridTemplateColumns={showAlpha ? "1fr 2rem 2rem" : "1fr 2rem"} gap="m" height="100%">
-      <Box
+    <div
+      className="grid h-full gap-4"
+      style={{
+        gridTemplateColumns: showAlpha ? '1fr 2rem 2rem' : '1fr 2rem',
+      }}
+    >
+      <div
         ref={saturationValueRef}
-        position="relative"
-        cursor="crosshair"
-        border="1px solid"
-        borderColor="lightBorder"
-        borderRadius="base"
+        className="
+          relative cursor-crosshair rounded-normal border border-solid
+          border-light-border
+        "
         onMouseDown={(e) => {
           setIsDraggingSaturationValue(true);
           updateSaturationValue(e.clientX, e.clientY);
@@ -166,14 +173,13 @@ export function ColorPicker({ color, onChange, showAlpha = true }: ColorPickerPr
           variant="circle"
           style={{ left: `${s}%`, top: `${100 - v}%` }}
         />
-      </Box>
-      <Box
+      </div>
+      <div
         ref={hueRef}
-        position="relative"
-        cursor="ns-resize"
-        border="1px solid"
-        borderColor="lightBorder"
-        borderRadius="base"
+        className="
+          relative cursor-ns-resize rounded-normal border border-solid
+          border-light-border
+        "
         onMouseDown={(e) => {
           setIsDraggingHue(true);
           updateHue(e.clientY);
@@ -184,15 +190,14 @@ export function ColorPicker({ color, onChange, showAlpha = true }: ColorPickerPr
         }}
       >
         <DragHandle style={{ top: `${(h / 360) * 100}%` }} />
-      </Box>
+      </div>
       {showAlpha && (
-        <Box
+        <div
           ref={alphaRef}
-          position="relative"
-          cursor="ns-resize"
-          border="1px solid"
-          borderColor="lightBorder"
-          borderRadius="base"
+          className="
+            relative cursor-ns-resize rounded-normal border border-solid
+            border-light-border
+          "
           onMouseDown={(e) => {
             setIsDraggingAlpha(true);
             updateAlpha(e.clientY);
@@ -203,8 +208,8 @@ export function ColorPicker({ color, onChange, showAlpha = true }: ColorPickerPr
           }}
         >
           <DragHandle style={{ top: `${(1 - a) * 100}%` }} />
-        </Box>
+        </div>
       )}
-    </Grid>
+    </div>
   );
 }

@@ -1,7 +1,6 @@
 import { Fragment } from 'react';
 import { Panel } from './Panel';
 import { Table } from './Table';
-import { Text } from './Text';
 
 const cheatSheetData = [
   {
@@ -98,20 +97,20 @@ export function RegExpCheatSheet() {
             <Fragment key={section}>
               <tr>
                 <th colSpan={2}>
-                  <Text mt="m" variant="bold">
+                  <p className="typo-body font-bold mt-4">
                     {section}
-                  </Text>
+                  </p>
                 </th>
               </tr>
               {items.map(({ description, syntax }) => (
                 <tr key={description}>
                   <td>
-                    <Text>{description}</Text>
+                    <p className="typo-body">{description}</p>
                   </td>
                   <td>
-                    <Text as="code" variant="code">
+                    <code className="typo-code">
                       {syntax}
-                    </Text>
+                    </code>
                   </td>
                 </tr>
               ))}
