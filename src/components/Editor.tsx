@@ -317,9 +317,9 @@ export function Editor({
       ref={editorRef}
       className={clsx(
         'h-full min-h-0 bg-text-background',
-        isFullScreen
-          ? 'editor_fullscreen fixed inset-0 z-1000'
-          : 'editor_in-page'
+        isFullScreen && 'fixed inset-0 z-1000',
+        // eslint-disable-next-line better-tailwindcss/no-unknown-classes
+        isFullScreen ? 'editor_fullscreen' : 'editor_in-page'
       )}
     />
   );
