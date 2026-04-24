@@ -84,7 +84,7 @@ export function Modal({
             onClick={onClose}
             className="absolute top-2 right-2 z-1"
           >
-            <Icon icon="xmark" size={24} />
+            <Icon icon="xmark" className="size-5.5" />
           </IconButton>
         )}
         <h1 className="sr-only" id={`${id}-label`}>

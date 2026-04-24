@@ -157,7 +157,7 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
                       {'url' in tool && (
                         <>
                           <span className="sr-only">(external link)</span>
-                          <Icon icon="external" size={16} />
+                          <Icon icon="external" className="size-4" />
                         </>
                       )}
                     </div>

@@ -17,7 +17,7 @@ export function Header({
     <div
       className={clsx(
         'overflow-y-hidden transition-[height] duration-[0.08s] ease-in-out',
-        show ? 'h-[2.38rem]' : 'h-0'
+        show ? 'h-[2.39rem]' : 'h-0'
       )}
       inert={show === false}
       aria-hidden={show === false}
@@ -33,8 +33,9 @@ export function Header({
           <IconButton
             label={`Open sidebar (${getShortcut('/')})`}
             onClick={onOpen}
+            className="-mb-0.5"
           >
-            <Icon icon="sidebar" />
+            <Icon icon="sidebar" className="size-5.5" />
           </IconButton>
         </div>
         <h2 className="text-center typo-body">{title}</h2>

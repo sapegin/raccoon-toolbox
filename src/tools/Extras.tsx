@@ -21,7 +21,7 @@ export function Extras() {
               >
                 <span>{tool.name}</span>
                 <span>
-                  <Icon icon="external" size={12} />
+                  <Icon icon="external" className="size-3" />
                 </span>
               </a>
             </li>

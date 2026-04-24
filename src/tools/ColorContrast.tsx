@@ -277,9 +277,9 @@ export function ColorContrast() {
             hint="Required contrast ratio AA: 3.0, AAA: 4.5"
             preview={
               <div className="flex flex-row gap-1">
-                <Icon icon="search" size={28} />
-                <Icon icon="fish" size={28} />
-                <Icon icon="sidebar" size={28} />
+                <Icon icon="search" className="size-7" />
+                <Icon icon="fish" className="size-7" />
+                <Icon icon="sidebar" className="size-7" />
               </div>
             }
             ratio={contrast}

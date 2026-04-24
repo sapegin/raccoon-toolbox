@@ -1,5 +1,4 @@
-// TODO: Import from Tâmia
-import { IconBase } from './IconBase';
+import { IconBase } from 'tamia/dist/components/IconBase';
 
 interface IconInfo {
   children?: React.ReactElement;
@@ -9,7 +8,6 @@ interface IconInfo {
 // Icons from https://iconoir.com/
 
 const BASE_SIZE = 24;
-const DEFAULT_SIZE = 24;
 const ICONS: Record<string, IconInfo> = {
   sidebar: {
     children: (
@@ -145,10 +143,10 @@ export type IconName = keyof typeof ICONS;
 
 interface Props {
   icon: IconName;
-  size?: number;
+  className?: string;
 }
 
-export function Icon({ icon, size = DEFAULT_SIZE }: Props) {
+export function Icon({ icon, className }: Props) {
   const { size: baseSize, children } = ICONS[icon];
   return (
     <IconBase
@@ -156,8 +154,8 @@ export function Icon({ icon, size = DEFAULT_SIZE }: Props) {
         width: baseSize ?? BASE_SIZE,
         height: baseSize ?? BASE_SIZE,
       }}
-      width={size}
-      height={size}
+      fill="none"
+      className={className}
     >
       {children}
     </IconBase>

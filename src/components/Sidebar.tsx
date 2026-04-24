@@ -41,7 +41,7 @@ export function Sidebar({
       >
         <div className="flex justify-between gap-2 px-2 pt-2 pb-1">
           <SearchButton type="button" onClick={onSearchOpen}>
-            <Icon icon="search" size={18} />
+            <Icon icon="search" className="size-4" />
             Search
             <kbd className="ml-auto text-xs text-disabled-foreground">
               {getShortcut('K')}
@@ -52,7 +52,7 @@ export function Sidebar({
               label={`Close sidebar (${getShortcut('/')})`}
               onClick={onClose}
             >
-              <Icon icon="sidebar" />
+              <Icon icon="sidebar" className="size-5.5" />
             </IconButton>
           </div>
         </div>

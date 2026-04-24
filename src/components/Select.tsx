@@ -50,7 +50,7 @@ export function Select({
           ))}
         </select>
         <div className="absolute inset-y-0 right-0.5 z-10 flex items-center">
-          <Icon icon="select" size={14} />
+          <Icon icon="select" className="size-3.5" />
         </div>
       </div>
     </div>
