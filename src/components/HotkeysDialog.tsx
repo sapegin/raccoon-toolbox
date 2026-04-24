@@ -29,7 +29,7 @@ export function HotkeysDialog({ isOpen, onClose }: HotkeysDialogProps) {
       onClose={onClose}
       showCloseButton
     >
-      <div className="flex flex-col gap-8 p-8 overflow-auto">
+      <div className="flex flex-col gap-8 overflow-auto p-8">
         <div className="flex flex-col gap-4">
           <h2 className="heading-2">Global hotkeys</h2>
           <Table variant="spacious">

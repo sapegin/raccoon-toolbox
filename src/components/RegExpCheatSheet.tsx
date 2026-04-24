@@ -97,7 +97,7 @@ export function RegExpCheatSheet() {
             <Fragment key={section}>
               <tr>
                 <th colSpan={2}>
-                  <p className="typo-body font-bold mt-4">
+                  <p className="mt-4 typo-body font-bold">
                     {section}
                   </p>
                 </th>

@@ -38,7 +38,7 @@ export function TextStats() {
       </Panel>
       <Panel fullHeight accessibleLabel="Statistics">
         <output htmlFor="text">
-          <dl className="flex flex-col gap-4 overflow-auto h-full">
+          <dl className="flex h-full flex-col gap-4 overflow-auto">
             <LargeValue label="Characters" value={stats.characters} />
             <LargeValue
               label="Non-space characters"

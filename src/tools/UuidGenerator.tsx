@@ -82,7 +82,7 @@ export function UuidGenerator() {
   return (
     <Screen className="grid-cols-[17rem_1fr]">
       <Panel fullHeight accessibleLabel="Configuration">
-        <div className="flex flex-col gap-4 items-start">
+        <div className="flex flex-col items-start gap-4">
           <Select
             id="version"
             label="UUID version"

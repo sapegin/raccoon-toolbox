@@ -122,7 +122,10 @@ export function KeyCodes() {
               <div className="flex flex-col gap-1">
                 <dt className="typo-body">Modifiers</dt>
                 <dd
-                  className="grid grid-cols-[auto_1fr] grid-rows-[1fr_1fr] gap-x-4 gap-y-1"
+                  className="
+                    grid grid-cols-[auto_1fr] grid-rows-[1fr_1fr] gap-x-4
+                    gap-y-1
+                  "
                 >
                   <MetaKey
                     enabled={keyInfo.shiftKey}

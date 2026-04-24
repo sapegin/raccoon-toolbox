@@ -235,9 +235,7 @@ export function DateConverter() {
             onChange={handleIsoChange}
             onBlur={handleIsoBlur}
           />
-          <div
-            className="grid grid-cols-3 gap-4"
-          >
+          <div className="grid grid-cols-3 gap-4">
             <Input
               id="year"
               label="Year"
@@ -287,25 +285,25 @@ export function DateConverter() {
         <div className="flex flex-col gap-4">
           <LargeValue label="Date" value={humanReadable} />
           <div className="flex flex-col gap-1">
-            <dt className="typo-small text-[color:var(--color-secondary-text-foreground)]">
+            <dt className="typo-small text-secondary-text-foreground">
               Day of year
             </dt>
             <dd className="typo-body">{dayOfYear}</dd>
           </div>
           <div className="flex flex-col gap-1">
-            <dt className="typo-small text-[color:var(--color-secondary-text-foreground)]">
+            <dt className="typo-small text-secondary-text-foreground">
               Week number
             </dt>
             <dd className="typo-body">{weekNumber}</dd>
           </div>
           <div className="flex flex-col gap-1">
-            <dt className="typo-small text-[color:var(--color-secondary-text-foreground)]">
+            <dt className="typo-small text-secondary-text-foreground">
               Leap year
             </dt>
             <dd className="typo-body">{leapYear ? 'Yes' : 'No'}</dd>
           </div>
           <div className="flex flex-col gap-1">
-            <dt className="typo-small text-[color:var(--color-secondary-text-foreground)]">
+            <dt className="typo-small text-secondary-text-foreground">
               Relative time
             </dt>
             <dd className="typo-body">{relativeTime}</dd>
