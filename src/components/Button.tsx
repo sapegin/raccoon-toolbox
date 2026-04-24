@@ -25,7 +25,7 @@ export function Button({
     <button
       {...props}
       className={clsx(
-        'button focus-outline',
+        'button',
         variantClasses[variant],
         sizeClasses[size],
         className
