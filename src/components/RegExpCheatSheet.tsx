@@ -97,9 +97,7 @@ export function RegExpCheatSheet() {
             <Fragment key={section}>
               <tr>
                 <th colSpan={2}>
-                  <p className="mt-4 typo-body font-bold">
-                    {section}
-                  </p>
+                  <p className="mt-4 typo-body font-bold">{section}</p>
                 </th>
               </tr>
               {items.map(({ description, syntax }) => (
@@ -108,9 +106,7 @@ export function RegExpCheatSheet() {
                     <p className="typo-body">{description}</p>
                   </td>
                   <td>
-                    <code className="typo-code">
-                      {syntax}
-                    </code>
+                    <code className="typo-code">{syntax}</code>
                   </td>
                 </tr>
               ))}

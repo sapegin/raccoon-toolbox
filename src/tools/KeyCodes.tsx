@@ -113,9 +113,7 @@ export function KeyCodes() {
         </div>
         {keyInfo && (
           <div className="flex w-full max-w-3xl flex-col gap-8">
-            <dl
-              className="grid grid-cols-4 gap-4"
-            >
+            <dl className="grid grid-cols-4 gap-4">
               <LargeValue label="Key" value={keyInfo.key} />
               <LargeValue label="Code" value={keyInfo.code} />
               <LargeValue label="Key code" value={keyInfo.keyCode} />

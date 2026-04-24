@@ -45,10 +45,7 @@ export function ColorSlider({
       aria-label={ariaLabel}
       aria-valuenow={ariaValueNow}
       aria-valuetext={ariaValueText}
-      className={clsx(
-        `relative focus-outline`,
-        className
-      )}
+      className={clsx(`relative focus-outline`, className)}
       style={style}
       onMouseDown={(e) => {
         onDragStart();

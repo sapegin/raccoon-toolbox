@@ -25,11 +25,7 @@ export type BaseIconProps = Omit<
  *   <path d="..." />
  * </IconBase>
  */
-export function IconBase({
-  viewBox,
-  children,
-  ...props
-}: BaseIconProps) {
+export function IconBase({ viewBox, children, ...props }: BaseIconProps) {
   return (
     <svg
       {...props}
