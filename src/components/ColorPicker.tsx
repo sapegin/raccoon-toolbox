@@ -7,6 +7,7 @@ import {
   useRef,
   useState,
 } from 'react';
+import { ColorSlider } from './ColorSlider';
 
 interface ColorPickerProps {
   color: Colord;
@@ -150,16 +151,27 @@ export function ColorPicker({
         showAlpha ? 'grid-cols-[1fr_2rem_2rem]' : 'grid-cols-[1fr_2rem]'
       )}
     >
-      <div
-        ref={saturationValueRef}
+      <ColorSlider
+        areaRef={saturationValueRef}
+        ariaLabel="Saturation and brightness"
+        ariaValueNow={Math.round(s)}
+        ariaValueText={`Saturation: ${Math.round(s)}%, brightness: ${Math.round(v)}%`}
+        onDragStart={() => setIsDraggingSaturationValue(true)}
+        onDrag={(clientX, clientY) => updateSaturationValue(clientX, clientY)}
+        onStep={(dx, dy) =>
+          onChange(
+            colord({
+              h,
+              s: Math.max(0, Math.min(100, s + dx)),
+              v: Math.max(0, Math.min(100, v - dy)),
+              a,
+            })
+          )
+        }
         className="
-          relative cursor-crosshair rounded-normal border border-solid
+          cursor-crosshair rounded-normal border border-solid
           border-light-border
         "
-        onMouseDown={(e) => {
-          setIsDraggingSaturationValue(true);
-          updateSaturationValue(e.clientX, e.clientY);
-        }}
         style={{
           background: `linear-gradient(to top, #000, transparent), linear-gradient(to right, #fff, ${baseHue})`,
         }}
@@ -168,42 +180,64 @@ export function ColorPicker({
           variant="circle"
           style={{ left: `${s}%`, top: `${100 - v}%` }}
         />
-      </div>
-      <div
-        ref={hueRef}
+      </ColorSlider>
+      <ColorSlider
+        areaRef={hueRef}
+        ariaLabel="Hue"
+        ariaValueNow={Math.round(h)}
+        ariaValueText={`${Math.round(h)}°`}
+        onDragStart={() => setIsDraggingHue(true)}
+        onDrag={(_clientX, clientY) => updateHue(clientY)}
+        onStep={(_dx, dy) =>
+          onChange(
+            colord({
+              h: Math.max(0, Math.min(360, h + (dy / 100) * 360)),
+              s,
+              v,
+              a,
+            })
+          )
+        }
         className="
-          relative cursor-ns-resize rounded-normal border border-solid
+          cursor-ns-resize rounded-normal border border-solid
           border-light-border
         "
-        onMouseDown={(e) => {
-          setIsDraggingHue(true);
-          updateHue(e.clientY);
-        }}
         style={{
           background:
             'linear-gradient(to bottom, #f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%)',
         }}
       >
         <DragHandle style={{ top: `${(h / 360) * 100}%` }} />
-      </div>
+      </ColorSlider>
       {showAlpha && (
-        <div
-          ref={alphaRef}
+        <ColorSlider
+          areaRef={alphaRef}
+          ariaLabel="Opacity"
+          ariaValueNow={Math.round(a * 100)}
+          ariaValueText={`${Math.round(a * 100)}%`}
+          onDragStart={() => setIsDraggingAlpha(true)}
+          onDrag={(_clientX, clientY) => updateAlpha(clientY)}
+          onStep={(_dx, dy) =>
+            onChange(
+              colord({
+                h,
+                s,
+                v,
+                a: Math.max(0, Math.min(1, a - dy / 100)),
+              })
+            )
+          }
           className="
-            relative cursor-ns-resize rounded-normal border border-solid
+            cursor-ns-resize rounded-normal border border-solid
             border-light-border
           "
-          onMouseDown={(e) => {
-            setIsDraggingAlpha(true);
-            updateAlpha(e.clientY);
-          }}
           style={{
             background: `linear-gradient(to bottom, ${color.toRgbString()}, transparent),
             repeating-conic-gradient(#ccc 0% 25%, #fff 0% 50%) 50% / 10px 10px`,
           }}
         >
           <DragHandle style={{ top: `${(1 - a) * 100}%` }} />
-        </div>
+        </ColorSlider>
       )}
     </div>
   );
