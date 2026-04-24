@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import { type Colord, colord } from 'colord';
 import {
   type HTMLProps,
@@ -24,13 +25,10 @@ function DragHandle({
     return (
       <div
         className="
-          pointer-events-none absolute size-3 rounded-full border-2
-          border-[white] shadow-[0_0_3px_#000c] outline outline-[black]
+          pointer-events-none absolute size-3 -translate-1/2 rounded-full
+          border-2 border-[white] shadow-[0_0_3px_#000c] outline outline-[black]
         "
-        style={{
-          ...style,
-          transform: 'translate(-50%, -50%)',
-        }}
+        style={style}
       />
     );
   }
@@ -38,13 +36,10 @@ function DragHandle({
     <div
       className="
         pointer-events-none absolute -mx-[0.2rem] h-[0.3rem]
-        w-[calc(100%+0.4rem)] rounded-normal border-2 border-[white] bg-[white]
-        shadow-[0_0_3px_#000c] outline outline-[black]
+        w-[calc(100%+0.4rem)] -translate-y-1/2 rounded-normal border-2
+        border-[white] bg-[white] shadow-[0_0_3px_#000c] outline outline-[black]
       "
-      style={{
-        ...style,
-        transform: 'translateY(-50%)',
-      }}
+      style={style}
     />
   );
 }
@@ -150,10 +145,10 @@ export function ColorPicker({
 
   return (
     <div
-      className="grid h-full gap-4"
-      style={{
-        gridTemplateColumns: showAlpha ? '1fr 2rem 2rem' : '1fr 2rem',
-      }}
+      className={clsx(
+        'grid h-full gap-4',
+        showAlpha ? 'grid-cols-[1fr_2rem_2rem]' : 'grid-cols-[1fr_2rem]'
+      )}
     >
       <div
         ref={saturationValueRef}

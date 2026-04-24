@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import { type Colord, colord, extend } from 'colord';
 import a11yPlugin from 'colord/plugins/a11y';
 import { type ReactNode, useCallback, useMemo } from 'react';
@@ -99,16 +100,15 @@ function ContrastResult({
   return (
     <div className="flex flex-col items-center gap-2">
       <div
-        className="
-          flex h-22 w-full items-center justify-center overflow-hidden
-          rounded-input border border-solid p-2 text-center
-        "
+        className={clsx(
+          `
+            flex h-22 w-full items-center justify-center overflow-hidden
+            rounded-input border border-solid p-2 text-center
+          `,
+          isLargeText ? 'text-2xl/[28px]' : 'text-base/[22px]',
+          passes ? 'border-light-border' : 'border-error-foreground'
+        )}
         style={{
-          fontSize: isLargeText ? '24px' : '16px',
-          lineHeight: isLargeText ? '28px' : '22px',
-          borderColor: passes
-            ? 'var(--color-light-border)'
-            : 'var(--color-error-foreground)',
           backgroundColor,
           color: textColor,
         }}
@@ -118,12 +118,10 @@ function ContrastResult({
       <div className="flex w-full justify-between" title={hint}>
         <p className="typo-body">{label}</p>
         <span
-          className="inline-flex items-center font-bold"
-          style={{
-            color: passes
-              ? 'var(--color-success-foreground)'
-              : 'var(--color-error-foreground)',
-          }}
+          className={clsx(
+            'inline-flex items-center font-bold',
+            passes ? 'text-success-foreground' : 'text-error-foreground'
+          )}
         >
           <Icon icon={passes ? 'check' : 'xmark'} />
           {passes ? level : 'Fail'}

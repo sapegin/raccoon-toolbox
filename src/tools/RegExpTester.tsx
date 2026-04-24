@@ -107,7 +107,7 @@ export function RegExpTester() {
   }, []);
 
   return (
-    <Screen style={{ gridTemplateRows: '1fr 1fr' }}>
+    <Screen className="grid-rows-[1fr_1fr]">
       <div className="flex h-full min-h-0 flex-col gap-4 p-2">
         <Input
           id="regexp-input"

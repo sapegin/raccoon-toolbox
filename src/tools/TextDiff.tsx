@@ -74,7 +74,7 @@ export function TextDiff() {
   }, []);
 
   return (
-    <Screen style={{ gridTemplateRows: '1fr 1fr' }}>
+    <Screen className="grid-rows-[1fr_1fr]">
       <div className="grid grid-cols-2 gap-4">
         <Panel
           label="Text A"

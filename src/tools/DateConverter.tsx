@@ -236,8 +236,7 @@ export function DateConverter() {
             onBlur={handleIsoBlur}
           />
           <div
-            className="grid gap-4"
-            style={{ gridTemplateColumns: '1fr 1fr 1fr' }}
+            className="grid grid-cols-3 gap-4"
           >
             <Input
               id="year"

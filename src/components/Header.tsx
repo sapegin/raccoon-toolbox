@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import { APP_NAME } from '../constants';
 import { getShortcut } from '../util/getShortcut';
 import { Icon } from './Icon';
@@ -14,13 +15,12 @@ export function Header({
 }) {
   return (
     <div
-      className="
-        overflow-y-hidden transition-[height] duration-[0.08s] ease-in-out
-      "
+      className={clsx(
+        'overflow-y-hidden transition-[height] duration-[0.08s] ease-in-out',
+        show ? 'h-[2.38rem]' : 'h-0'
+      )}
       inert={show === false}
       aria-hidden={show === false}
-      // TODO: Move to a theme variable? Use calc(header height + 1px)?
-      style={{ height: show ? '2.38rem' : 0 }}
       suppressHydrationWarning
     >
       <div
@@ -37,9 +37,7 @@ export function Header({
             <Icon icon="sidebar" />
           </IconButton>
         </div>
-        <h2 className="typo-body text-center">
-          {title}
-        </h2>
+        <h2 className="text-center typo-body">{title}</h2>
         <div />
       </div>
     </div>

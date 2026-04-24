@@ -68,7 +68,7 @@ export function ColorConverter() {
   const hsl = color.toHsl();
 
   return (
-    <Screen style={{ gridTemplateColumns: '20rem 1fr' }}>
+    <Screen className="grid-cols-[20rem_1fr]">
       <Panel accessibleLabel="Input" fullHeight>
         <div className="flex flex-col gap-4">
           <Input

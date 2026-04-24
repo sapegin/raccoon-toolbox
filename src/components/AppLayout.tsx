@@ -41,7 +41,7 @@ export function AppLayout({
           onSearchOpen={onSearchOpen}
           onHotkeysOpen={onHotkeysOpen}
         />
-        <div className="grid h-screen" style={{ gridTemplateRows: 'auto 1fr' }}>
+        <div className="grid h-screen grid-rows-[auto_1fr]">
           <Header title={title} show={isHeaderVisible} onOpen={onHeaderOpen} />
           <div className="h-full min-h-0">{children}</div>
         </div>

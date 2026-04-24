@@ -24,7 +24,7 @@ export function TextStats() {
   }, [setText]);
 
   return (
-    <Screen style={{ gridTemplateColumns: '1fr 12rem' }}>
+    <Screen className="grid-cols-[1fr_12rem]">
       <Panel
         fullHeight
         label="Text"

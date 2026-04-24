@@ -114,8 +114,7 @@ export function KeyCodes() {
         {keyInfo && (
           <div className="flex w-full max-w-3xl flex-col gap-8">
             <dl
-              className="grid gap-4"
-              style={{ gridTemplateColumns: '1fr 1fr 1fr 1fr' }}
+              className="grid grid-cols-4 gap-4"
             >
               <LargeValue label="Key" value={keyInfo.key} />
               <LargeValue label="Code" value={keyInfo.code} />
@@ -123,11 +122,7 @@ export function KeyCodes() {
               <div className="flex flex-col gap-1">
                 <dt className="typo-body">Modifiers</dt>
                 <dd
-                  className="grid gap-x-4 gap-y-1"
-                  style={{
-                    gridTemplateColumns: 'auto 1fr',
-                    gridTemplateRows: '1fr 1fr',
-                  }}
+                  className="grid grid-cols-[auto_1fr] grid-rows-[1fr_1fr] gap-x-4 gap-y-1"
                 >
                   <MetaKey
                     enabled={keyInfo.shiftKey}

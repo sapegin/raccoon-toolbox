@@ -82,7 +82,7 @@ export function UnicodeLookup() {
   }, [searchQuery]);
 
   return (
-    <Screen style={{ gridTemplateRows: 'auto 1fr' }} className="p-2">
+    <Screen className="grid-rows-[auto_1fr] p-2">
       <Input
         id="search"
         label="Search by name or code"

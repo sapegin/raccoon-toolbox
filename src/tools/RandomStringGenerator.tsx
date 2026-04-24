@@ -181,7 +181,7 @@ export function RandomStringGenerator() {
   }, []);
 
   return (
-    <Screen style={{ gridTemplateColumns: '17rem 1fr' }}>
+    <Screen className="grid-cols-[17rem_1fr]">
       <Panel fullHeight accessibleLabel="Configuration">
         <div className="flex flex-col gap-4">
           <Input
