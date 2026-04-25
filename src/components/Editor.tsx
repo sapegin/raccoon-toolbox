@@ -3,6 +3,7 @@ import { css } from '@codemirror/lang-css';
 import { html } from '@codemirror/lang-html';
 import { javascript } from '@codemirror/lang-javascript';
 import { json } from '@codemirror/lang-json';
+import { markdown } from '@codemirror/lang-markdown';
 import { xml } from '@codemirror/lang-xml';
 import { yaml } from '@codemirror/lang-yaml';
 import {
@@ -33,6 +34,7 @@ const languageExtensions = {
   html,
   javascript: () => javascript({ jsx: true, typescript: true }),
   json,
+  markdown,
   xml,
   yaml,
 } satisfies Record<string, () => LanguageSupport>;

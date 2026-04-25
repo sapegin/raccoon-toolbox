@@ -177,8 +177,6 @@
     oklch(from var(--color-accent-background) calc(l + 0.1) c h),
     var(--color-accent-background)
   );
-
-  --spacing-list-margin: 0;
 }
 
 /* Light theme (default) */

@@ -41,6 +41,7 @@ A collection of developer utilities built with React and Tauri.
 - [x] Key code lookup
 - [x] Line sort/dedupe
 - [x] Lorem Ipsum generator
+- [x] Markdown preview
 - [x] Number base converter
 - [x] Random string generator
 - [x] RegExp tester

@@ -1,7 +1,7 @@
 // Auto-generated file. Do not edit manually.
 // Generated from tools.json by scripts/generate-tools.ts
 
-import { ComponentType,lazy } from 'react';
+import { lazy, ComponentType } from 'react';
 
 export interface Tool {
   id: string;
@@ -168,6 +168,16 @@ export const tools: Tool[] = [
     component: lazy(() =>
       import('./tools/LoremIpsum').then((m) => ({
         default: m.LoremIpsum,
+      }))
+    ),
+  },
+  {
+    id: 'markdown-preview',
+    name: 'Markdown preview',
+    keywords: ['md', 'markdown', 'markup', 'preview', 'rendering'],
+    component: lazy(() =>
+      import('./tools/MarkdownPreview').then((m) => ({
+        default: m.MarkdownPreview,
       }))
     ),
   },

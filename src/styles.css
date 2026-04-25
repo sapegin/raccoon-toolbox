@@ -1,6 +1,7 @@
 @import 'tailwindcss';
 @import 'tamia/dist/index.css';
 @import 'tamia/dist/components/link.css';
+@import 'tamia/dist/components/prose.css';
 @import './theme.css';
 @import './styles/utilities.css';
 @import './styles/components/button.css';

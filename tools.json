@@ -121,6 +121,12 @@
     "keywords": ["placeholders", "dummy", "texts", "fillers", "content", "fish"]
   },
   {
+    "id": "markdown-preview",
+    "name": "Markdown preview",
+    "module": "MarkdownPreview",
+    "keywords": ["md", "markdown", "markup", "preview", "rendering"]
+  },
+  {
     "id": "number-bases",
     "name": "Number base converter",
     "module": "NumberBases",

@@ -72,6 +72,10 @@ pub const TOOLS: &[Tool] = &[
         name: "Lorem Ipsum generator",
     },
     Tool {
+        id: "markdown-preview",
+        name: "Markdown preview",
+    },
+    Tool {
         id: "number-bases",
         name: "Number base converter",
     },
