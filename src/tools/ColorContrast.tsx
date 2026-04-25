@@ -105,7 +105,7 @@ function ContrastResult({
             flex h-22 w-full items-center justify-center overflow-hidden
             rounded-input border border-solid p-2 text-center
           `,
-          isLargeText ? 'text-2xl/[28px]' : 'text-base/[22px]',
+          isLargeText ? 'text-[1.35rem]/heading' : 'text-base/normal',
           passes ? 'border-light-border' : 'border-error-foreground'
         )}
         style={{
@@ -276,7 +276,7 @@ export function ColorContrast() {
             label="Icons"
             hint="Required contrast ratio AA: 3.0, AAA: 4.5"
             preview={
-              <div className="flex flex-row gap-1">
+              <div className="flex gap-2">
                 <Icon icon="search" className="size-7" />
                 <Icon icon="fish" className="size-7" />
                 <Icon icon="sidebar" className="size-7" />
