@@ -72,7 +72,7 @@ export function Modal({
         fixed top-[10vh] left-1/2 m-0 -translate-x-1/2 overflow-hidden
         rounded-dialog border-0 bg-text-background
         bg-[linear-gradient(to_bottom,oklch(from_var(--color-ui-background)_calc(l+0.15)_c_h),var(--color-ui-background))]
-        p-px shadow-[0_0_1rem_#0002]
+        p-px pb-1 shadow-[0_0_1rem_#0002]
         backdrop:bg-[#0006]
       "
       style={{ width, maxWidth, maxHeight }}
