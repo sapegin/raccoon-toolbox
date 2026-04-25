@@ -75,8 +75,9 @@ export function TextDiff() {
 
   return (
     <Screen className="grid-rows-[1fr_1fr]">
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid h-full min-h-0 grid-cols-2 gap-4">
         <Panel
+          fullHeight
           label="Text A"
           actions={
             <Button onClick={handleAClear} disabled={textA === ''}>
@@ -87,6 +88,7 @@ export function TextDiff() {
           <Editor label="Text A" value={textA} onChange={handleTextAChange} />
         </Panel>
         <Panel
+          fullHeight
           label="Text B"
           actions={
             <Button onClick={handleBClear} disabled={textB === ''}>
