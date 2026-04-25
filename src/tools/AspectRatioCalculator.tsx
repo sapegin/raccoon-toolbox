@@ -166,7 +166,7 @@ export function AspectRatioCalculator() {
               onChange={handleHeightChange}
             />
           </div>
-          <dl className="flex flex-row gap-4">
+          <dl className="flex gap-4">
             <LargeValue
               label="Aspect ratio"
               value={`${calculatedRatio.ratioWidth}:${calculatedRatio.ratioHeight}`}
@@ -216,7 +216,7 @@ export function AspectRatioCalculator() {
               onChange={handleDimensionHeightChange}
             />
           </div>
-          <dl className="flex flex-row gap-4">
+          <dl className="flex gap-4">
             <LargeValue
               label="Width"
               value={calculatedDimensions.calculatedWidth}

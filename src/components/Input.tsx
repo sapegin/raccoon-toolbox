@@ -37,7 +37,7 @@ export function Input({
         <label htmlFor={id} className="typo-body">
           {label}
         </label>
-        <div className="flex flex-row gap-2">{actions}</div>
+        <div className="flex gap-2">{actions}</div>
       </div>
       <div className="flex flex-col gap-2">
         <InputBox id={id} {...props} />

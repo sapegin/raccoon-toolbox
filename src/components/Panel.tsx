@@ -39,7 +39,7 @@ export function Panel({
         <div className="flex items-center justify-between">
           <h3 className="typo-body font-bold">{label}</h3>
           {actions ? (
-            <div className="flex flex-row items-center gap-2">{actions}</div>
+            <div className="flex items-center gap-2">{actions}</div>
           ) : null}
         </div>
       )}

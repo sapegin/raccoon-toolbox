@@ -22,9 +22,7 @@ export function Select({
           <label htmlFor={id} className="typo-body">
             {label}
           </label>
-          {actions ? (
-            <div className="flex flex-row gap-2">{actions}</div>
-          ) : null}
+          {actions ? <div className="flex gap-2">{actions}</div> : null}
         </div>
       ) : null}
       {accessibleLabel ? (

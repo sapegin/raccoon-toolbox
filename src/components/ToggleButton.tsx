@@ -29,9 +29,7 @@ export function ToggleButton({
       {label ? (
         <div className="flex items-center justify-between">
           <legend className="typo-body">{label}</legend>
-          {actions ? (
-            <div className="flex flex-row gap-2">{actions}</div>
-          ) : null}
+          {actions ? <div className="flex gap-2">{actions}</div> : null}
         </div>
       ) : null}
       {accessibleLabel ? (
