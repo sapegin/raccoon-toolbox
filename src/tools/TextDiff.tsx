@@ -75,7 +75,7 @@ export function TextDiff() {
 
   return (
     <Screen className="grid-rows-[1fr_1fr]">
-      <div className="grid h-full min-h-0 grid-cols-2 gap-4">
+      <div className="grid h-full min-h-0 grid-cols-2 gap-2">
         <Panel
           fullHeight
           label="Text A"
