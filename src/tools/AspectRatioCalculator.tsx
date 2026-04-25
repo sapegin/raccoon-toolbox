@@ -1,4 +1,5 @@
 import { useCallback, useMemo } from 'react';
+import { Button } from '../components/Button';
 import { Input } from '../components/Input';
 import { LargeValue } from '../components/LargeValue';
 import { Panel } from '../components/Panel';
@@ -146,10 +147,42 @@ export function AspectRatioCalculator() {
     [setDimensionHeight]
   );
 
+  const handleCopyRatioToDimensions = useCallback(() => {
+    setAspectRatioWidth(calculatedRatio.ratioWidth.toString());
+    setAspectRatioHeight(calculatedRatio.ratioHeight.toString());
+  }, [
+    calculatedRatio.ratioWidth,
+    calculatedRatio.ratioHeight,
+    setAspectRatioWidth,
+    setAspectRatioHeight,
+  ]);
+
+  const handleCopyDimensionsRatioToRatio = useCallback(() => {
+    setWidth(aspectRatioWidth);
+    setHeight(aspectRatioHeight);
+  }, [aspectRatioWidth, aspectRatioHeight, setWidth, setHeight]);
+
+  const canCopyRatio =
+    calculatedRatio.ratioWidth > 0 && calculatedRatio.ratioHeight > 0;
+  const canCopyDimensionsRatio =
+    (Number.parseInt(aspectRatioWidth, 10) || 0) > 0 &&
+    (Number.parseInt(aspectRatioHeight, 10) || 0) > 0;
+
   return (
     <Screen className="grid-cols-2 gap-4">
-      <Panel label="Calculate aspect ratio" fullHeight>
-        <div className="flex flex-col gap-8">
+      <Panel
+        label="Calculate aspect ratio"
+        fullHeight
+        actions={
+          <Button
+            onClick={handleCopyRatioToDimensions}
+            disabled={canCopyRatio === false}
+          >
+            Copy to dimensions →
+          </Button>
+        }
+      >
+        <div className="flex flex-col gap-4">
           <div className="grid grid-cols-2 gap-4">
             <Input
               id="width"
@@ -182,7 +215,18 @@ export function AspectRatioCalculator() {
           </dl>
         </div>
       </Panel>
-      <Panel label="Calculate dimensions" fullHeight>
+      <Panel
+        label="Calculate dimensions"
+        fullHeight
+        actions={
+          <Button
+            onClick={handleCopyDimensionsRatioToRatio}
+            disabled={canCopyDimensionsRatio === false}
+          >
+            ← Copy to aspect ratio
+          </Button>
+        }
+      >
         <div className="flex flex-col gap-4">
           <div className="grid grid-cols-2 gap-4">
             <Input
