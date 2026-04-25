@@ -34,8 +34,8 @@ export function Select({
         <select
           {...props}
           className="
-            m-0 inline-block h-6 cursor-pointer appearance-none rounded-button
-            border-0 bg-text-background pr-4 pl-2 font-body text-sm
+            m-0 inline-block h-5.5 cursor-pointer appearance-none rounded-button
+            border-0 bg-text-background py-0 pr-4 pl-2 font-body text-sm
             text-text-foreground focus-outline
             focus-visible:outline-2
             disabled:cursor-default disabled:opacity-60
