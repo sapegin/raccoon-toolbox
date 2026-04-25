@@ -12,6 +12,11 @@ import { Router } from './components/Router';
 import { Screen } from './components/Screen';
 import { Spinner } from './components/Spinner';
 import { APP_NAME } from './constants';
+import {
+  getEditorSettings,
+  setEditorSettings,
+  useEditorSettings,
+} from './hooks/useEditorSettings';
 import { useHotkey } from './hooks/useHotkey';
 import { usePersistentState } from './hooks/usePersistentState';
 import { tools } from './tools';
@@ -23,6 +28,7 @@ export function App() {
   );
   const [isCommandPaletteOpen, setIsCommandPaletteOpen] = useState(false);
   const [isHotkeysDialogOpen, setIsHotkeysDialogOpen] = useState(false);
+  const { showWhitespace } = useEditorSettings();
   const location = useLocation();
   const navigate = useNavigate();
   const currentToolId = location.pathname.replaceAll(/[^-\w]/g, '');
@@ -88,6 +94,27 @@ export function App() {
       };
     }
   }, []);
+
+  // Listen to the toggle show whitespace menu item events
+  useEffect(() => {
+    if (isTauri()) {
+      const unlisten = listen('toggle-show-whitespace', () => {
+        setEditorSettings({
+          showWhitespace: getEditorSettings().showWhitespace === false,
+        });
+      });
+      return () => {
+        void unlisten.then((fn) => fn());
+      };
+    }
+  }, []);
+
+  // Sync the show whitespace menu item state with the persisted setting
+  useEffect(() => {
+    if (isTauri()) {
+      void invoke('set_show_whitespace', { checked: showWhitespace });
+    }
+  }, [showWhitespace]);
 
   // Listen to the select tool menu item events
   useEffect(() => {

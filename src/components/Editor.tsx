@@ -24,6 +24,7 @@ import {
 import { tags } from '@lezer/highlight';
 import clsx from 'clsx';
 import { useEffect, useRef, useState } from 'react';
+import { useEditorSettings } from '../hooks/useEditorSettings';
 
 // TODO: Disabled Cmd+/ for commenting as it conflicts with the app toggle sidebar
 
@@ -213,6 +214,7 @@ export function Editor({
   const editorRef = useRef<HTMLDivElement>(null);
   const viewRef = useRef<EditorView | null>(null);
   const [isFullScreen, setIsFullScreen] = useState(false);
+  const { showWhitespace } = useEditorSettings();
 
   const toggleFullScreen = () => {
     setIsFullScreen((prev) => prev === false);
@@ -251,7 +253,7 @@ export function Editor({
         history(),
         lineNumbers(),
         highlightActiveLine(),
-        highlightWhitespace(),
+        showWhitespace ? highlightWhitespace() : undefined,
         search(),
         keymap.of([
           { key: 'Alt-Enter', run: toggleFullScreen },
@@ -283,7 +285,7 @@ export function Editor({
       view.destroy();
       viewRef.current = null;
     };
-  }, [language, editable, onChange]);
+  }, [language, editable, onChange, showWhitespace]);
 
   useEffect(() => {
     const view = viewRef.current;

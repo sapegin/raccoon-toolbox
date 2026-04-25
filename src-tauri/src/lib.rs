@@ -16,6 +16,19 @@ use cocoa::appkit::NSApplication;
 use tools::TOOLS;
 
 #[tauri::command]
+fn set_show_whitespace(app: AppHandle, checked: bool) -> Result<(), String> {
+    let menu = app.menu().ok_or("Menu not found")?;
+    let item = menu
+        .get("toggle-show-whitespace")
+        .ok_or("Show Whitespace menu item not found")?;
+    let check_item = item
+        .as_check_menuitem()
+        .ok_or("Show Whitespace menu item is not a check item")?;
+    check_item.set_checked(checked).map_err(|e| e.to_string())?;
+    Ok(())
+}
+
+#[tauri::command]
 fn set_selected_tool(app: AppHandle, tool_id: &str) -> Result<(), String> {
     let menu = app.menu().ok_or("Menu not found")?;
     let tools_menu_item = menu.get("tools-menu").ok_or("Tools menu not found")?;
@@ -39,7 +52,10 @@ pub fn run() {
     tauri::Builder::default()
         .plugin(tauri_plugin_window_state::Builder::default().build())
         .plugin(tauri_plugin_opener::init())
-        .invoke_handler(tauri::generate_handler![set_selected_tool])
+        .invoke_handler(tauri::generate_handler![
+            set_selected_tool,
+            set_show_whitespace
+        ])
         .setup(|app| {
             #[cfg(target_os = "macos")]
             {
@@ -52,6 +68,11 @@ pub fn run() {
                         .accelerator("CmdOrCtrl+K")
                         .build(app)?;
 
+                let toggle_show_whitespace =
+                    CheckMenuItemBuilder::with_id("toggle-show-whitespace", "Show Whitespace")
+                        .checked(true)
+                        .build(app)?;
+
                 let mut tools_menu = SubmenuBuilder::new(app, "Tools").id("tools-menu");
                 for tool in TOOLS {
                     let item = CheckMenuItemBuilder::with_id(tool.id, tool.name).build(app)?;
@@ -62,6 +83,8 @@ pub fn run() {
                 let view_menu = SubmenuBuilder::new(app, "View")
                     .item(&toggle_command_palette)
                     .item(&toggle_sidebar)
+                    .item(&PredefinedMenuItem::separator(app)?)
+                    .item(&toggle_show_whitespace)
                     .build()?;
 
                 let edit_menu = SubmenuBuilder::new(app, "Edit")
@@ -141,6 +164,8 @@ pub fn run() {
                         let _ = app.emit("toggle-command-palette", ());
                     } else if event_id == "toggle-hotkeys-dialog" {
                         let _ = app.emit("toggle-hotkeys-dialog", ());
+                    } else if event_id == "toggle-show-whitespace" {
+                        let _ = app.emit("toggle-show-whitespace", ());
                     } else if event_id == "support-project" {
                         let _ = app.emit("open-url", "https://buymeacoffee.com/sapegin");
                     } else if event_id == "read-book" {
