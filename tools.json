@@ -12,6 +12,12 @@
     "keywords": ["binary", "data", "image"]
   },
   {
+    "id": "coin-toss",
+    "name": "Coin toss",
+    "module": "CoinToss",
+    "keywords": ["random", "flip", "heads", "tails", "chance", "decision"]
+  },
+  {
     "id": "color-contrast",
     "name": "Color contrast checker",
     "module": "ColorContrast",

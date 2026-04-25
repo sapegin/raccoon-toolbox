@@ -32,6 +32,16 @@ export const tools: Tool[] = [
     ),
   },
   {
+    id: 'coin-toss',
+    name: 'Coin toss',
+    keywords: ['random', 'flip', 'heads', 'tails', 'chance', 'decision'],
+    component: lazy(() =>
+      import('./tools/CoinToss').then((m) => ({
+        default: m.CoinToss,
+      }))
+    ),
+  },
+  {
     id: 'color-contrast',
     name: 'Color contrast checker',
     keywords: ['wcag', 'accessibility', 'a11y', 'contrast ratio'],

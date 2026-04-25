@@ -16,6 +16,10 @@ pub const TOOLS: &[Tool] = &[
         name: "Base64 encoder/decoder",
     },
     Tool {
+        id: "coin-toss",
+        name: "Coin toss",
+    },
+    Tool {
         id: "color-contrast",
         name: "Color contrast checker",
     },

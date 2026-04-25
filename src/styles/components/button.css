@@ -5,12 +5,19 @@
   border: 1px solid var(--color-light-border);
   border-radius: var(--radius-button);
   box-shadow: var(--shadow-button);
-  line-height: calc(var(--spacing) * 4);
   text-decoration: none;
+  color: var(--color-secondary-button-foreground);
+  background-image: var(--gradient-button);
+  text-shadow: var(--text-shadow-secondary-button);
   user-select: none;
   outline: 0;
   transition: all var(--duration-hover) var(--ease-hover);
   cursor: pointer;
+
+  &:hover {
+    background-image: var(--gradient-button-hover);
+    border-color: var(--color-border);
+  }
 
   &:active {
     translate: 0 1px;
@@ -27,23 +34,15 @@
   }
 }
 
-@utility button-primary {
-  color: var(--color-button-foreground);
-  background-color: var(--color-button-background);
-  text-shadow: var(--text-shadow-button);
-
-  &:hover {
-    background-color: var(--color-button-hover-background);
-  }
+@utility button-small {
+  height: --spacing(6);
+  padding-inline: --spacing(2);
+  font-size: var(--text-sm);
+  line-height: 0.9;
 }
 
-@utility button-secondary {
-  color: var(--color-secondary-button-foreground);
-  background-image: var(--gradient-button);
-  text-shadow: var(--text-shadow-secondary-button);
-
-  &:hover {
-    background-image: var(--gradient-button-hover);
-    border-color: var(--color-border);
-  }
+@utility button-large {
+  padding-inline: --spacing(4);
+  font-size: var(--text-lg);
+  line-height: 1.5;
 }
