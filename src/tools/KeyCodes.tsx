@@ -106,13 +106,15 @@ export function KeyCodes() {
           {keyInfo ? (
             <p className="typo-xlarge">{keyInfo.displayName}</p>
           ) : (
-            <p className="typo-large text-secondary-text-foreground">
+            <p
+              className="pb-8 typo-large text-secondary-text-foreground"
+            >
               Press any key
             </p>
           )}
         </div>
         {keyInfo && (
-          <div className="flex w-full max-w-3xl flex-col gap-8">
+          <div className="flex w-full max-w-3xl flex-col gap-8 pb-8">
             <dl className="grid grid-cols-4 gap-4">
               <LargeValue label="Key" value={keyInfo.key} />
               <LargeValue label="Code" value={keyInfo.code} />
