@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import { usePersistentState } from '../hooks/usePersistentState';
 import { tools } from '../tools';
+import { getToolIdFromPath } from '../util/getToolIdFromPath';
 
 export function Router() {
   const location = useLocation();
@@ -11,9 +12,9 @@ export function Router() {
   );
 
   useEffect(() => {
-    const currentPath = location.pathname.slice(1);
-    if (currentPath && tools.some((tool) => tool.id === currentPath)) {
-      setLastToolId(currentPath);
+    const currentToolId = getToolIdFromPath(location.pathname);
+    if (currentToolId && tools.some((tool) => tool.id === currentToolId)) {
+      setLastToolId(currentToolId);
     }
   }, [location.pathname, setLastToolId]);
 

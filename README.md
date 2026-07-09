@@ -63,6 +63,26 @@ A collection of developer utilities built with React and Tauri.
 
 There are many similar apps already, such as [DevUtils](https://devutils.com/) or [DevToys](https://devtoys.app/) but they are often expensive, have poor UX, or don’t have the tools I need. Also, I wanted to have a tool that I can use as a Mac app and a web app.
 
+## Prerequisites
+
+The desktop app is built with [Tauri](https://tauri.app/), which requires the Rust toolchain (this provides `cargo`):
+
+```bash
+brew install rust
+```
+
+Alternatively, install via [rustup](https://rustup.rs/) (recommended by Tauri):
+
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+Verify the installation:
+
+```bash
+cargo --version
+```
+
 ## Development
 
 ```bash

@@ -20,6 +20,7 @@ import {
 import { useHotkey } from './hooks/useHotkey';
 import { usePersistentState } from './hooks/usePersistentState';
 import { tools } from './tools';
+import { getToolIdFromPath } from './util/getToolIdFromPath';
 
 export function App() {
   const [isSidebarOpen, setIsSidebarOpen] = usePersistentState(
@@ -31,7 +32,7 @@ export function App() {
   const { showWhitespace } = useEditorSettings();
   const location = useLocation();
   const navigate = useNavigate();
-  const currentToolId = location.pathname.replaceAll(/[^-\w]/g, '');
+  const currentToolId = getToolIdFromPath(location.pathname);
   const currentTool = tools.find((tool) => tool.id === currentToolId);
   const currentToolName = currentTool?.name ?? 'Loading…';
 
