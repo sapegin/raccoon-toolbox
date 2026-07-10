@@ -27,7 +27,10 @@ import clsx from 'clsx';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useEditorSettings } from '../hooks/useEditorSettings';
 
-// TODO: Disabled Cmd+/ for commenting as it conflicts with the app toggle sidebar
+// Indent shortcuts reserved for toggling the app sidebar.
+const editorKeymap = defaultKeymap.filter(
+  (binding) => binding.key !== 'Mod-[' && binding.key !== 'Mod-]'
+);
 
 const languageExtensions = {
   css,
@@ -274,7 +277,7 @@ export function Editor({
         ]),
         keymap.of(historyKeymap),
         keymap.of(searchKeymap),
-        keymap.of(defaultKeymap),
+        keymap.of(editorKeymap),
         EditorView.lineWrapping,
         EditorView.editable.of(editable),
         EditorView.contentAttributes.of({

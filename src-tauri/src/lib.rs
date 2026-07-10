@@ -60,7 +60,7 @@ pub fn run() {
             #[cfg(target_os = "macos")]
             {
                 let toggle_sidebar = MenuItemBuilder::with_id("toggle-sidebar", "Toggle Sidebar")
-                    .accelerator("CmdOrCtrl+/")
+                    .accelerator("CmdOrCtrl+[")
                     .build(app)?;
 
                 let toggle_command_palette =

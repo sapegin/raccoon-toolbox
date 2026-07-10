@@ -41,7 +41,7 @@ export function Header({
           <>
             <div className="flex items-center justify-center">
               <IconButton
-                label={`Open sidebar (${getShortcut('/')})`}
+                label={`Open sidebar (${getShortcut('[')})`}
                 onClick={onOpen}
                 className="-mb-0.5"
               >

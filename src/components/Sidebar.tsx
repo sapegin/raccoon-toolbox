@@ -41,7 +41,7 @@ export function Sidebar({
           </SearchButton>
           <div className="flex items-center justify-center">
             <IconButton
-              label={`Close sidebar (${getShortcut('/')})`}
+              label={`Close sidebar (${getShortcut('[')})`}
               onClick={onClose}
             >
               <Icon icon="sidebar" className="size-5.5" />

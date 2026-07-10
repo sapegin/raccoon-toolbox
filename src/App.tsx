@@ -157,7 +157,7 @@ export function App() {
   // Handle keyboard shortcut for toggling sidebar
   useHotkey(toggleSidebar, {
     enabled: isTauri() === false,
-    key: '/',
+    key: '[',
     metaKey: true,
     ctrlKey: false,
   });

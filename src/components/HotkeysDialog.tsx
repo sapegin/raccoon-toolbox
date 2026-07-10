@@ -10,7 +10,7 @@ interface HotkeysDialogProps {
 export function HotkeysDialog({ isOpen, onClose }: HotkeysDialogProps) {
   const globalHotkeys = [
     { key: getShortcut('K'), description: 'Search tools' },
-    { key: getShortcut('/'), description: 'Toggle sidebar' },
+    { key: getShortcut('['), description: 'Toggle sidebar' },
     { key: 'F1', description: 'Show hotkeys (this dialog)' },
   ];
 
