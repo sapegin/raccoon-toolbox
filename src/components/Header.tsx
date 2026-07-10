@@ -48,7 +48,9 @@ export function Header({
                 <Icon icon="sidebar" className="size-5.5" />
               </IconButton>
             </div>
-            <h2 className="typo-body text-center">{title}</h2>
+            <h2 className="typo-body text-title-foreground text-center">
+              {title}
+            </h2>
             <div />
           </>
         )}

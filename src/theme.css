@@ -121,12 +121,13 @@
   --color-active-border: var(--color-gray-060);
   --color-active-foreground: var(--color-gray-060);
   --color-active-icon: var(--color-gray-060);
+  --color-backdrop: #0006;
   --color-border: var(--color-gray-140);
   --color-button-background: var(--color-gray-100);
   --color-button-foreground: var(--color-gray-180);
+  --color-button-hover-background: var(--color-gray-090);
   --color-button-pressed-background: var(--color-gray-100);
   --color-button-pressed-foreground: var(--color-gray-180);
-  --color-button-hover-background: var(--color-gray-090);
   --color-disabled-foreground: var(--color-gray-110);
   --color-error-background: var(--color-red-dimer);
   --color-error-foreground: var(--color-red-contrast);
@@ -140,14 +141,14 @@
   --color-secondary-button-hover-background: var(--color-gray-150);
   --color-secondary-match-background: var(--color-bright-pink-dimer);
   --color-secondary-text-foreground: var(--color-gray-100);
+  --color-secondary-ui-background: var(--color-gray-160);
   --color-success-background: var(--color-green-dimer);
   --color-success-foreground: var(--color-green-contrast);
   --color-text-background: var(--color-gray-180);
   --color-text-foreground: var(--color-gray-090);
+  --color-title-foreground: var(--color-gray-060);
   --color-ui-background: var(--color-gray-170);
-  --color-secondary-ui-background: var(--color-gray-160);
   --color-warning-foreground: var(--color-orange-contrast);
-  --color-backdrop: #0006;
 
   --color-code-comment: var(--color-gray-110);
   --color-code-keyword: var(--color-magenta);
