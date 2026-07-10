@@ -22,9 +22,9 @@ export function Router() {
   const isServerSide = 'window' in globalThis === false;
   const initialRoute =
     location.pathname === '/'
-      ? isServerSide
+      ? (isServerSide
         ? tools[0].id
-        : lastToolId
+        : lastToolId)
       : location.pathname.slice(1);
 
   return (
