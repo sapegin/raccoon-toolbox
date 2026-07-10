@@ -115,11 +115,7 @@ export function TextDiff() {
       >
         <output htmlFor="text-a text-b">
           <div
-            className="
-              block h-full overflow-auto rounded-input border border-solid
-              border-light-border p-2 font-mono whitespace-pre-wrap
-            "
-            // eslint-disable-next-line @eslint-react/dom/no-dangerously-set-innerhtml
+            className="rounded-input border-light-border block h-full overflow-auto border border-solid p-2 font-mono whitespace-pre-wrap"
             dangerouslySetInnerHTML={{ __html: result }}
           />
         </output>

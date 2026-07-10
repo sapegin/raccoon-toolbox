@@ -17,7 +17,7 @@ export function Extras() {
                 href={tool.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex link items-baseline gap-1"
+                className="link inline-flex items-baseline gap-1"
               >
                 <span>{tool.name}</span>
                 <span>

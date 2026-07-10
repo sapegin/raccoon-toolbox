@@ -1,5 +1,5 @@
-import type { Colord } from 'colord';
-import type { ReactNode } from 'react';
+import { type Colord } from 'colord';
+import { type ReactNode } from 'react';
 import { ColorPicker } from './ColorPicker';
 import { ColorSwatch } from './ColorSwatch';
 
@@ -22,12 +22,7 @@ export function ColorPickerWithPreview({
   return (
     <div className="flex h-full flex-col gap-2">
       <h3 className="sr-only">{label}</h3>
-      <div
-        className="
-          grid grid-cols-2 overflow-hidden rounded-normal border border-solid
-          border-light-border
-        "
-      >
+      <div className="rounded-normal border-light-border grid grid-cols-2 overflow-hidden border border-solid">
         <ColorSwatch color={baseColor.toHex()} />
         <ColorSwatch color={color.toHex()} />
       </div>

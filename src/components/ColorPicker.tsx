@@ -25,21 +25,14 @@ function DragHandle({
   if (variant === 'circle') {
     return (
       <div
-        className="
-          pointer-events-none absolute size-3 -translate-1/2 rounded-full
-          border-2 border-[white] shadow-[0_0_3px_#000c] outline outline-[black]
-        "
+        className="pointer-events-none absolute size-3 -translate-1/2 rounded-full border-2 border-[white] shadow-[0_0_3px_#000c] outline outline-[black]"
         style={style}
       />
     );
   }
   return (
     <div
-      className="
-        pointer-events-none absolute -mx-[0.2rem] h-[0.3rem]
-        w-[calc(100%+0.4rem)] -translate-y-1/2 rounded-normal border-2
-        border-[white] bg-[white] shadow-[0_0_3px_#000c] outline outline-[black]
-      "
+      className="rounded-normal pointer-events-none absolute mx-[-0.2rem] h-[0.3rem] w-[calc(100%+0.4rem)] -translate-y-1/2 border-2 border-[white] bg-[white] shadow-[0_0_3px_#000c] outline outline-[black]"
       style={style}
     />
   );
@@ -168,10 +161,7 @@ export function ColorPicker({
             })
           )
         }
-        className="
-          cursor-crosshair rounded-normal border border-solid
-          border-light-border
-        "
+        className="rounded-normal border-light-border cursor-crosshair border border-solid"
         style={{
           background: `linear-gradient(to top, #000, transparent), linear-gradient(to right, #fff, ${baseHue})`,
         }}
@@ -198,10 +188,7 @@ export function ColorPicker({
             })
           )
         }
-        className="
-          cursor-ns-resize rounded-normal border border-solid
-          border-light-border
-        "
+        className="rounded-normal border-light-border cursor-ns-resize border border-solid"
         style={{
           background:
             'linear-gradient(to bottom, #f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%)',
@@ -227,10 +214,7 @@ export function ColorPicker({
               })
             )
           }
-          className="
-            cursor-ns-resize rounded-normal border border-solid
-            border-light-border
-          "
+          className="rounded-normal border-light-border cursor-ns-resize border border-solid"
           style={{
             background: `linear-gradient(to bottom, ${color.toRgbString()}, transparent),
             repeating-conic-gradient(#ccc 0% 25%, #fff 0% 50%) 50% / 10px 10px`,

@@ -86,7 +86,7 @@ export function UnicodeLookup() {
       <Input
         id="search"
         label="Search by name or code"
-        placeholder={'Try \u201ccat\u201d or \u201cU+1F600\u201d'}
+        placeholder={'Try \u201Ccat\u201D or \u201CU+1F600\u201D'}
         value={searchQuery}
         onChange={(event) => setSearchQuery(event.target.value)}
       />

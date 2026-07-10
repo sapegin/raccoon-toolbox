@@ -59,12 +59,7 @@ function ContrastRatio({ ratio }: { ratio: number }) {
     <div className="flex flex-col items-center gap-2">
       <output htmlFor="text-color background-color">
         <div className="flex h-22 items-center">
-          <p
-            className={`
-              typo-xlarge
-              ${getContrastLabelColor(ratio)}
-            `}
-          >
+          <p className={clsx('typo-xlarge', getContrastLabelColor(ratio))}>
             <span className="sr-only">Contrast ratio: </span>
             {ratio.toFixed(2)}:1
           </p>
@@ -101,10 +96,7 @@ function ContrastResult({
     <div className="flex flex-col items-center gap-2">
       <div
         className={clsx(
-          `
-            flex h-22 w-full items-center justify-center overflow-hidden
-            rounded-input border border-solid p-2 text-center
-          `,
+          `rounded-input flex h-22 w-full items-center justify-center overflow-hidden border border-solid p-2 text-center`,
           isLargeText ? 'text-[1.35rem]/heading' : 'text-base/normal',
           passes ? 'border-light-border' : 'border-error-foreground'
         )}

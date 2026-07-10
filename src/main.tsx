@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { App } from './App';
 
-const rootElement = document.getElementById('root') as HTMLElement;
+const rootElement = document.querySelector('#root') as HTMLElement;
 
 if (rootElement.innerHTML) {
   // Hydrate if there's server-rendered content

@@ -14,21 +14,10 @@ export function NavigationButton({
       to={to}
       className={({ isActive }) =>
         clsx(
-          `
-            block rounded-button px-2 py-1 no-underline focus-outline
-            transition-all duration-(--duration-hover) ease-hover
-            focus-visible:outline-2
-          `,
+          `rounded-button focus-outline ease-hover block px-2 py-1 no-underline transition-all duration-(--duration-hover) focus-visible:outline-2`,
           isActive
-            ? `
-              bg-(image:--gradient-accent) text-button-foreground
-              text-shadow-button-pressed
-              hover:text-button-foreground
-            `
-            : `
-              text-text-foreground
-              hover:bg-hover-background hover:text-active-foreground
-            `
+            ? `text-button-foreground text-shadow-button-pressed hover:text-button-foreground bg-(image:--gradient-accent)`
+            : `text-text-foreground hover:bg-hover-background hover:text-active-foreground`
         )
       }
     >

@@ -1,18 +1,10 @@
-import type { ComponentProps, ReactNode } from 'react';
+import { type ComponentProps, type ReactNode } from 'react';
 
 export function InputBox(props: ComponentProps<'input'>) {
   return (
     <input
       {...props}
-      className="
-        w-full [appearance:textfield] rounded-input border border-light-border
-        bg-text-background p-2 font-mono text-base/none text-text-foreground
-        shadow-input outline-0
-        placeholder:text-secondary-text-foreground
-        focus-visible:border-active-border
-        disabled:opacity-60
-        [&::-webkit-inner-spin-button]:cursor-pointer
-      "
+      className="rounded-input border-light-border bg-text-background text-text-foreground shadow-input placeholder:text-secondary-text-foreground focus-visible:border-active-border w-full [appearance:textfield] border p-2 font-mono text-base/none outline-0 disabled:opacity-60 [&::-webkit-inner-spin-button]:cursor-pointer"
     />
   );
 }

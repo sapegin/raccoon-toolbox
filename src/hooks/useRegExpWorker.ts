@@ -43,12 +43,10 @@ export function useRegExpWorker(
 
   useEffect(() => {
     if (pattern === '' || text === '') {
-      // eslint-disable-next-line @eslint-react/hooks-extra/no-direct-set-state-in-use-effect
       setState({ matches: [], error: '', isProcessing: false });
       return;
     }
 
-    // eslint-disable-next-line @eslint-react/hooks-extra/no-direct-set-state-in-use-effect
     setState((prev) => ({ ...prev, isProcessing: true }));
 
     if (workerRef.current !== null) {

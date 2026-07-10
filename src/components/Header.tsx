@@ -23,12 +23,7 @@ export function Header({
       aria-hidden={show === false}
       suppressHydrationWarning
     >
-      <div
-        className="
-          grid grid-cols-[2rem_auto_2rem] gap-4 border-b border-solid
-          border-light-border bg-ui-background p-1
-        "
-      >
+      <div className="border-light-border bg-ui-background grid grid-cols-[2rem_auto_2rem] gap-4 border-b border-solid p-1">
         <div className="flex items-center justify-center">
           <IconButton
             label={`Open sidebar (${getShortcut('/')})`}
@@ -38,7 +33,7 @@ export function Header({
             <Icon icon="sidebar" className="size-5.5" />
           </IconButton>
         </div>
-        <h2 className="text-center typo-body">{title}</h2>
+        <h2 className="typo-body text-center">{title}</h2>
         <div />
       </div>
     </div>

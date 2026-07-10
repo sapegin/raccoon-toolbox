@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import type { ComponentProps } from 'react';
+import { type ComponentProps } from 'react';
 
 const sizeClasses = {
   small: 'button-small',

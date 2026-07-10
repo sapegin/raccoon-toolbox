@@ -67,7 +67,7 @@ function generateRandomString(
   result += getRandomChars(SYMBOLS, symbols);
   result += getRandomChars(DIGITS, digits);
 
-  const chars = result.split('');
+  const chars = [...result];
   for (let i = chars.length - 1; i > 0; i--) {
     const j = getRandomInt(i + 1);
     [chars[i], chars[j]] = [chars[j], chars[i]];

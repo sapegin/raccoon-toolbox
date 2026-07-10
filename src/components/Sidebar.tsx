@@ -22,10 +22,7 @@ export function Sidebar({
   return (
     <div
       className={clsx(
-        `
-          h-full overflow-x-hidden transition-[width] duration-[0.08s]
-          ease-in-out
-        `,
+        `h-full overflow-x-hidden transition-[width] duration-[0.08s] ease-in-out`,
         show ? 'w-64' : 'w-0'
       )}
       inert={show === false}
@@ -33,17 +30,12 @@ export function Sidebar({
       suppressHydrationWarning
     >
       <h2 className="sr-only">Tools</h2>
-      <div
-        className="
-          flex h-full w-64 flex-col border-r border-solid border-light-border
-          bg-ui-background
-        "
-      >
+      <div className="border-light-border bg-ui-background flex h-full w-64 flex-col border-r border-solid">
         <div className="flex justify-between gap-2 px-2 pt-2 pb-1">
           <SearchButton type="button" onClick={onSearchOpen}>
             <Icon icon="search" className="size-4" />
             Search
-            <kbd className="ml-auto text-xs text-disabled-foreground">
+            <kbd className="text-disabled-foreground ml-auto text-xs">
               {getShortcut('K')}
             </kbd>
           </SearchButton>
@@ -66,12 +58,7 @@ export function Sidebar({
           ))}
         </ul>
         {isTauri() === false && (
-          <div
-            className="
-              mt-auto grid grid-cols-2 border-t border-solid border-light-border
-              p-1
-            "
-          >
+          <div className="border-light-border mt-auto grid grid-cols-2 border-t border-solid p-1">
             <div>
               <SidebarLink onClick={onHotkeysOpen}>Hotkeys</SidebarLink>
             </div>

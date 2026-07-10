@@ -55,9 +55,7 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
   useEffect(() => {
     if (isOpen) {
       // Reset state when modal opens
-      // eslint-disable-next-line @eslint-react/hooks-extra/no-direct-set-state-in-use-effect
       setSearchQuery('');
-      // eslint-disable-next-line @eslint-react/hooks-extra/no-direct-set-state-in-use-effect
       setSelectedIndex(0);
       const timeoutId = setTimeout(() => inputRef.current?.focus(), 0);
       return () => clearTimeout(timeoutId);
@@ -66,7 +64,6 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
 
   useEffect(() => {
     // Reset selection index when search query changes
-    // eslint-disable-next-line @eslint-react/hooks-extra/no-direct-set-state-in-use-effect
     setSelectedIndex(0);
   }, [searchQuery]);
 
@@ -124,16 +121,10 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
         onKeyDown={handleKeyDown}
-        className="
-          w-full border-x-0 border-t-0 border-b border-solid border-light-border
-          bg-text-background p-4 font-body text-base/none text-text-foreground
-          outline-none
-          placeholder:text-secondary-text-foreground
-          focus-visible:outline-none
-        "
+        className="border-light-border bg-text-background font-body text-text-foreground placeholder:text-secondary-text-foreground w-full border-x-0 border-t-0 border-b border-solid p-4 text-base/none outline-none focus-visible:outline-none"
       />
       <output htmlFor="search-dialog-input">
-        <div className="max-h-[400px] overflow-y-auto">
+        <div className="max-h-100 overflow-y-auto">
           {filteredTools.length > 0 ? (
             <ul ref={listRef} className="list-none">
               {filteredTools.map((tool, index) => (
@@ -143,12 +134,7 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
                     onClick={() => handleToolSelection(tool)}
                     onMouseEnter={() => setSelectedIndex(index)}
                     className={clsx(
-                      `
-                        w-full cursor-pointer border-0 border-none p-4 text-left
-                        font-body text-base/snug text-text-foreground
-                        transition-all duration-(--duration-hover) ease-hover
-                        hover:bg-hover-background
-                      `,
+                      `font-body text-text-foreground ease-hover hover:bg-hover-background w-full cursor-pointer border-0 border-none p-4 text-left text-base/snug transition-all duration-(--duration-hover)`,
                       index === selectedIndex && 'bg-active-background'
                     )}
                   >
@@ -166,7 +152,7 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
               ))}
             </ul>
           ) : (
-            <p className="p-4 typo-body text-secondary-text-foreground">
+            <p className="typo-body text-secondary-text-foreground p-4">
               No tools found
             </p>
           )}

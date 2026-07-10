@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import type { ComponentProps, ReactNode } from 'react';
+import { type ComponentProps, type ReactNode } from 'react';
 import { ErrorMessage } from './ErrorMessage';
 
 export function Panel({

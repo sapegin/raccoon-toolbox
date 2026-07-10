@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import { type ReactNode } from 'react';
 
 /** Require either label or accessibleLabel. */
 export type RequiredLabel =

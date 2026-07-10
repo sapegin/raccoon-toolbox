@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import type { ComponentProps } from 'react';
+import { type ComponentProps } from 'react';
 
 export function ErrorMessage({
   className,
@@ -10,7 +10,7 @@ export function ErrorMessage({
     <div
       {...props}
       className={clsx(
-        `bg-text-background font-mono whitespace-pre-wrap text-error-foreground`,
+        `bg-text-background text-error-foreground font-mono whitespace-pre-wrap`,
         className
       )}
     >

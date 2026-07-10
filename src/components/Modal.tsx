@@ -68,13 +68,7 @@ export function Modal({
       id={id}
       aria-labelledby={`${id}-label`}
       closedby="any"
-      className="
-        fixed top-[10vh] left-1/2 m-0 -translate-x-1/2 overflow-hidden
-        rounded-dialog border-0 bg-text-background
-        bg-[linear-gradient(to_bottom,oklch(from_var(--color-ui-background)_calc(l+0.15)_c_h),var(--color-ui-background))]
-        p-px pb-1 shadow-[0_0_1rem_#0002]
-        backdrop:bg-[#0006]
-      "
+      className="rounded-dialog bg-text-background fixed top-[10vh] left-1/2 m-0 -translate-x-1/2 overflow-hidden border-0 bg-[linear-gradient(to_bottom,oklch(from_var(--color-ui-background)_calc(l+0.15)_c_h),var(--color-ui-background))] p-px pb-1 shadow-[0_0_1rem_#0002] backdrop:bg-[#0006]"
       style={{ width, maxWidth, maxHeight }}
     >
       <div className="rounded-dialog-inner bg-ui-background">

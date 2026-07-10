@@ -322,7 +322,6 @@ export function Editor({
       className={clsx(
         'h-full min-h-0 bg-text-background',
         isFullScreen && 'fixed inset-0 z-1000',
-        // eslint-disable-next-line better-tailwindcss/no-unknown-classes
         isFullScreen ? 'editor_fullscreen' : 'editor_in-page'
       )}
     />

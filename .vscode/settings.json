@@ -1,4 +1,17 @@
 {
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+  "editor.codeActionsOnSave": {
+    "source.format.oxc": "always",
+    "source.fixAll.oxc": "always"
+  },
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.format.oxc": "never",
+      "source.fixAll.oxc": "always"
+    }
+  },
   "tailwindCSS.includeLanguages": {
     "plaintext": "typescript"
   },

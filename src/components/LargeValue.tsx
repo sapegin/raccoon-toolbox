@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import { type ReactNode } from 'react';
 
 /**
  * Shows a value in large type with a label as <dt>/<dd>. Must be rendered

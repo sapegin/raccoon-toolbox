@@ -53,7 +53,7 @@ function jsonToCsv(json: unknown): string {
     }
   }
 
-  const headerArray = Array.from(headers);
+  const headerArray = [...headers];
 
   const rows = json.map((row) => {
     return headerArray

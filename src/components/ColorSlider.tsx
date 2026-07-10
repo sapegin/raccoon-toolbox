@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import type { ReactNode, RefObject } from 'react';
+import { type ReactNode, type RefObject } from 'react';
 
 // Percentage per key press
 const KEYBOARD_STEP = 1;
@@ -45,7 +45,7 @@ export function ColorSlider({
       aria-label={ariaLabel}
       aria-valuenow={ariaValueNow}
       aria-valuetext={ariaValueText}
-      className={clsx(`relative focus-outline`, className)}
+      className={clsx(`focus-outline relative`, className)}
       style={style}
       onMouseDown={(e) => {
         onDragStart();

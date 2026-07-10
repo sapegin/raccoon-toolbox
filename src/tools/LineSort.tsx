@@ -72,7 +72,7 @@ function toLines(text: string, dedupe: DedupeMode) {
     .filter((line) => line !== '');
 
   // Remove duplicates if needed
-  return dedupe === 'keep' ? lines : Array.from(new Set(lines));
+  return dedupe === 'keep' ? lines : [...new Set(lines)];
 }
 
 function sortLines(lines: string[], direction: SortDirection) {

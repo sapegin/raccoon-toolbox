@@ -18,14 +18,14 @@ const ICONS: Record<string, IconInfo> = {
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
-        ></path>
+        />
         <path
           d="M9.5 21V3"
           stroke="currentColor"
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
-        ></path>
+        />
       </>
     ),
   },

@@ -1,9 +1,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 import toolsData from '../tools.json' with { type: 'json' };
 
-const dirname = path.dirname(fileURLToPath(import.meta.url));
+const dirname = import.meta.dirname;
 const toAbsolute = (p: string) => path.resolve(dirname, '..', p);
 
 const template = fs.readFileSync(toAbsolute('dist/index.html'), 'utf8');

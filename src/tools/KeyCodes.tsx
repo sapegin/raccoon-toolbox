@@ -106,9 +106,7 @@ export function KeyCodes() {
           {keyInfo ? (
             <p className="typo-xlarge">{keyInfo.displayName}</p>
           ) : (
-            <p
-              className="pb-8 typo-large text-secondary-text-foreground"
-            >
+            <p className="typo-large text-secondary-text-foreground pb-8">
               Press any key
             </p>
           )}
@@ -121,12 +119,7 @@ export function KeyCodes() {
               <LargeValue label="Key code" value={keyInfo.keyCode} />
               <div className="flex flex-col gap-1">
                 <dt className="typo-body">Modifiers</dt>
-                <dd
-                  className="
-                    grid grid-cols-[auto_1fr] grid-rows-[1fr_1fr] gap-x-4
-                    gap-y-1
-                  "
-                >
+                <dd className="grid grid-cols-[auto_1fr] grid-rows-[1fr_1fr] gap-x-4 gap-y-1">
                   <MetaKey
                     enabled={keyInfo.shiftKey}
                     label="Shift"
