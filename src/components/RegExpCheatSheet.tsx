@@ -97,9 +97,7 @@ export function RegExpCheatSheet() {
             <Fragment key={section}>
               <tr>
                 <th colSpan={2}>
-                  <p className="font-body text-text mt-4 text-base leading-normal font-bold">
-                    {section}
-                  </p>
+                  <p className="typo-body mt-4 font-bold">{section}</p>
                 </th>
               </tr>
               {items.map(({ description, syntax }) => (
