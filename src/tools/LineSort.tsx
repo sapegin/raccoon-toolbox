@@ -113,21 +113,30 @@ export function LineSort() {
     return sortedLines.join('\n');
   }, [input, sortDirection, dedupeMode]);
 
-  const handleChange = useCallback((value: string) => {
-    setInput(value);
-  }, []);
+  const handleChange = useCallback(
+    (value: string) => {
+      setInput(value);
+    },
+    [setInput]
+  );
 
-  const handleSortDirectionChange = useCallback((value: string) => {
-    setSortDirection(value as SortDirection);
-  }, []);
+  const handleSortDirectionChange = useCallback(
+    (value: string) => {
+      setSortDirection(value as SortDirection);
+    },
+    [setSortDirection]
+  );
 
-  const handleDedupeModeChange = useCallback((value: string) => {
-    setDedupeMode(value as DedupeMode);
-  }, []);
+  const handleDedupeModeChange = useCallback(
+    (value: string) => {
+      setDedupeMode(value as DedupeMode);
+    },
+    [setDedupeMode]
+  );
 
   const handleClear = useCallback(() => {
     setInput('');
-  }, []);
+  }, [setInput]);
 
   return (
     <Screen className="grid-cols-2">

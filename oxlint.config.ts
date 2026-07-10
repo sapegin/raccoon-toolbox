@@ -4,24 +4,14 @@ import typescriptReactTailwind from 'oxlint-config-raccoon/typescript-react-tail
 export default defineConfig({
   extends: [typescriptReactTailwind],
   options: { typeAware: true, typeCheck: true },
+  // Worker and MessagePort postMessage APIs have no targetOrigin; this rule only applies to window.postMessage.
+  rules: {
+    'unicorn/require-post-message-target-origin': 'off',
+  },
   settings: {
     tailwindcss: {
       entryPoint: 'src/styles.css',
     },
-  },
-  rules: {
-    'jsx-a11y/prefer-tag-over-role': 'off',
-    'promise/prefer-await-to-callbacks': 'off',
-    'promise/prefer-await-to-then': 'off',
-    'react-hooks/exhaustive-deps': 'off',
-    'react/button-has-type': 'off',
-    'react/no-danger': 'off',
-    'tailwindcss/no-conflicting-classes': 'off',
-    'tailwindcss/no-unknown-classes': 'off',
-    'typescript/no-misused-spread': 'off',
-    'typescript/no-useless-default-assignment': 'off',
-    'unicorn/consistent-function-scoping': 'off',
-    'unicorn/prefer-global-this': 'off',
   },
   ignorePatterns: [
     'src-tauri/',

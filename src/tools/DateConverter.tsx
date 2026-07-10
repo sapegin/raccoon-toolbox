@@ -1,4 +1,4 @@
-import { type ChangeEvent, useCallback, useState } from 'react';
+import { type ChangeEvent, useCallback, useMemo, useState } from 'react';
 import { Button } from '../components/Button';
 import { Input } from '../components/Input';
 import { LargeValue } from '../components/LargeValue';
@@ -71,7 +71,7 @@ export function DateConverter() {
   );
 
   const timestampNum = Number.parseInt(timestamp, 10) || Date.now();
-  const date = new Date(timestampNum);
+  const date = useMemo(() => new Date(timestampNum), [timestampNum]);
 
   const [isoInput, setIsoInput] = useState(date.toISOString());
   const [prevTimestampNum, setPrevTimestampNum] = useState(timestampNum);

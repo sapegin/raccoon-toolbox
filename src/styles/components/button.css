@@ -7,7 +7,7 @@
   box-shadow: var(--shadow-button);
   text-decoration: none;
   color: var(--color-secondary-button-foreground);
-  background-image: var(--gradient-button);
+  background-image: var(--background-image-gradient-button);
   text-shadow: var(--text-shadow-secondary-button);
   user-select: none;
   outline: 0;
@@ -15,7 +15,7 @@
   cursor: pointer;
 
   &:hover {
-    background-image: var(--gradient-button-hover);
+    background-image: var(--background-image-gradient-button-hover);
     border-color: var(--color-border);
   }
 

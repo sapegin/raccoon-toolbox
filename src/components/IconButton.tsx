@@ -8,6 +8,7 @@ export function IconButton({
 }: { label: string } & ComponentProps<'button'>) {
   return (
     <button
+      type="button"
       {...props}
       title={label}
       aria-label={label}

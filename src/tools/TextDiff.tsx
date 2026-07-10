@@ -1,12 +1,11 @@
 import clsx from 'clsx';
 import { diffChars, diffLines } from 'diff';
-import { useCallback, useMemo } from 'react';
+import { Fragment, type ReactNode, useCallback, useMemo } from 'react';
 import { Button } from '../components/Button';
 import { Editor } from '../components/Editor';
 import { Panel } from '../components/Panel';
 import { Screen } from '../components/Screen';
 import { usePersistentState } from '../hooks/usePersistentState';
-import { escapeHtml } from '../util/escapeHtml';
 
 // TODO: Move to Tailwind utilities
 const addedClass = clsx('bg-success-background underline');
@@ -18,8 +17,9 @@ export function TextDiff() {
 
   const result = useMemo(() => {
     const lineDiff = diffLines(textA, textB);
-    let resultHtml = '';
+    const resultParts: ReactNode[] = [];
     let index = 0;
+    let key = 0;
 
     while (index < lineDiff.length) {
       const part = lineDiff[index];
@@ -31,47 +31,68 @@ export function TextDiff() {
         const charDiff = diffChars(removed.value, added.value);
 
         for (const char of charDiff) {
-          const charSafe = escapeHtml(char.value);
           if (char.added) {
-            resultHtml += `<ins class="${addedClass}">${charSafe}</ins>`;
+            resultParts.push(
+              <ins key={key++} className={addedClass}>
+                {char.value}
+              </ins>
+            );
           } else if (char.removed) {
-            resultHtml += `<del class="${removedClass}">${charSafe}</del>`;
+            resultParts.push(
+              <del key={key++} className={removedClass}>
+                {char.value}
+              </del>
+            );
           } else {
-            resultHtml += charSafe;
+            resultParts.push(<Fragment key={key++}>{char.value}</Fragment>);
           }
         }
         // Skip both the removed and added parts
         index += 2;
       } else if (part.added) {
-        resultHtml += `<ins class="${addedClass}">${escapeHtml(part.value)}</ins>`;
+        resultParts.push(
+          <ins key={key++} className={addedClass}>
+            {part.value}
+          </ins>
+        );
         index++;
       } else if (part.removed) {
-        resultHtml += `<del class="${removedClass}">${escapeHtml(part.value)}</del>`;
+        resultParts.push(
+          <del key={key++} className={removedClass}>
+            {part.value}
+          </del>
+        );
         index++;
       } else {
-        resultHtml += escapeHtml(part.value);
+        resultParts.push(<Fragment key={key++}>{part.value}</Fragment>);
         index++;
       }
     }
 
-    return resultHtml;
+    return resultParts;
   }, [textA, textB]);
 
-  const handleTextAChange = useCallback((value: string) => {
-    setTextA(value);
-  }, []);
+  const handleTextAChange = useCallback(
+    (value: string) => {
+      setTextA(value);
+    },
+    [setTextA]
+  );
 
-  const handleTextBChange = useCallback((value: string) => {
-    setTextB(value);
-  }, []);
+  const handleTextBChange = useCallback(
+    (value: string) => {
+      setTextB(value);
+    },
+    [setTextB]
+  );
 
   const handleAClear = useCallback(() => {
     setTextA('');
-  }, []);
+  }, [setTextA]);
 
   const handleBClear = useCallback(() => {
     setTextB('');
-  }, []);
+  }, [setTextB]);
 
   return (
     <Screen className="grid-rows-[1fr_1fr]">
@@ -114,10 +135,9 @@ export function TextDiff() {
         }
       >
         <output htmlFor="text-a text-b">
-          <div
-            className="rounded-input border-light-border block h-full overflow-auto border border-solid p-2 font-mono whitespace-pre-wrap"
-            dangerouslySetInnerHTML={{ __html: result }}
-          />
+          <div className="rounded-input border-light-border block h-full overflow-auto border border-solid p-2 font-mono whitespace-pre-wrap">
+            {result}
+          </div>
         </output>
       </Panel>
     </Screen>

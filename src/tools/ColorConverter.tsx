@@ -37,31 +37,37 @@ export function ColorConverter() {
 
   const [errorMessage, setErrorMessage] = useState('');
 
-  const handleInputChange = useCallback((value: string) => {
-    setInput(value);
-    const parsed = parseColorInput(value);
-    if (parsed) {
-      setColor(parsed);
-      setBaseColor(parsed);
-      setErrorMessage('');
-    } else if (value.trim() === '') {
-      setErrorMessage('');
-    } else {
-      setErrorMessage('Invalid color format');
-    }
-  }, []);
+  const handleInputChange = useCallback(
+    (value: string) => {
+      setInput(value);
+      const parsed = parseColorInput(value);
+      if (parsed) {
+        setColor(parsed);
+        setBaseColor(parsed);
+        setErrorMessage('');
+      } else if (value.trim() === '') {
+        setErrorMessage('');
+      } else {
+        setErrorMessage('Invalid color format');
+      }
+    },
+    [setInput]
+  );
 
-  const handleColorPickerChange = useCallback((newColor: Colord) => {
-    setColor(newColor);
-    setInput(newColor.toHex());
-    setErrorMessage('');
-  }, []);
+  const handleColorPickerChange = useCallback(
+    (newColor: Colord) => {
+      setColor(newColor);
+      setInput(newColor.toHex());
+      setErrorMessage('');
+    },
+    [setInput]
+  );
 
   const handleClear = useCallback(() => {
     setInput('');
     setColor(colord(defaultColorHex));
     setErrorMessage('');
-  }, []);
+  }, [setInput]);
 
   const hex = color.toHex();
   const rgb = color.toRgb();

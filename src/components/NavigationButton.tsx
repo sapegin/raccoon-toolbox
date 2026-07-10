@@ -16,7 +16,7 @@ export function NavigationButton({
         clsx(
           `rounded-button focus-outline ease-hover block px-2 py-1 no-underline transition-all duration-(--duration-hover) focus-visible:outline-2`,
           isActive
-            ? `text-button-foreground text-shadow-button-pressed hover:text-button-foreground bg-(image:--gradient-accent)`
+            ? `text-button-foreground text-shadow-button-pressed bg-gradient-accent`
             : `text-text-foreground hover:bg-hover-background hover:text-active-foreground`
         )
       }

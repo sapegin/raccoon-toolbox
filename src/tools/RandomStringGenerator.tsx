@@ -16,7 +16,7 @@ const CONSONANTS = 'bcdfghjklmnpqrstvwxz';
 
 function getRandomInt(max: number): number {
   const array = new Uint32Array(1);
-  window.crypto.getRandomValues(array);
+  globalThis.crypto.getRandomValues(array);
   return array[0] % max;
 }
 
@@ -67,6 +67,8 @@ function generateRandomString(
   result += getRandomChars(SYMBOLS, symbols);
   result += getRandomChars(DIGITS, digits);
 
+  // Result contains ASCII-only generated characters.
+  // oxlint-disable-next-line typescript/no-misused-spread
   const chars = [...result];
   for (let i = chars.length - 1; i > 0; i--) {
     const j = getRandomInt(i + 1);
@@ -91,6 +93,15 @@ function generateRandomString(
 
   return result;
 }
+
+const handleNumberChange =
+  (setter: (value: string) => void) =>
+  (event: React.ChangeEvent<HTMLInputElement>) => {
+    const value = event.target.value;
+    if (value === '' || /^\d+$/.test(value)) {
+      setter(value);
+    }
+  };
 
 export function RandomStringGenerator() {
   const [uppercase, setUppercase] = usePersistentState(
@@ -155,6 +166,8 @@ export function RandomStringGenerator() {
     );
 
     return strings.join('\n');
+    // refreshKey intentionally forces random regeneration with unchanged inputs.
+    // oxlint-disable-next-line react-hooks/exhaustive-deps
   }, [
     count,
     uppercase,
@@ -166,15 +179,6 @@ export function RandomStringGenerator() {
     groupSize,
     refreshKey,
   ]);
-
-  const handleNumberChange =
-    (setter: (value: string) => void) =>
-    (event: React.ChangeEvent<HTMLInputElement>) => {
-      const value = event.target.value;
-      if (value === '' || /^\d+$/.test(value)) {
-        setter(value);
-      }
-    };
 
   const handleRefresh = useCallback(() => {
     setRefreshKey((key) => key + 1);

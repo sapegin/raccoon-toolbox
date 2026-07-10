@@ -104,7 +104,7 @@ export function RegExpTester() {
     setRegexpInput('');
     setTextInput('');
     setFormatter(defaultFormatter);
-  }, []);
+  }, [setRegexpInput, setTextInput, setFormatter]);
 
   return (
     <Screen className="grid-rows-[1fr_1fr]">

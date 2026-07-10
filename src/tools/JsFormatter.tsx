@@ -14,12 +14,6 @@ export function JsFormatter() {
   const [output, setOutput] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
-  useEffect(() => {
-    if (input !== '') {
-      handleChange(input);
-    }
-  }, []);
-
   const handleChange = useCallback((value: string) => {
     setInput(value);
     const formatJavaScript = async () => {
@@ -39,12 +33,21 @@ export function JsFormatter() {
     };
 
     void formatJavaScript();
+    // oxlint-disable-next-line react-hooks/exhaustive-deps -- setInput is stable
+  }, []);
+
+  useEffect(() => {
+    if (input !== '') {
+      handleChange(input);
+    }
+    // oxlint-disable-next-line react-hooks/exhaustive-deps -- format persisted input on mount only
   }, []);
 
   const handleClear = useCallback(() => {
     setInput('');
     setOutput('');
     setErrorMessage('');
+    // oxlint-disable-next-line react-hooks/exhaustive-deps -- setInput is stable
   }, []);
 
   return (

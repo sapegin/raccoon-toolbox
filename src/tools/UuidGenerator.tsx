@@ -56,6 +56,8 @@ export function UuidGenerator() {
     });
 
     return uuids.join('\n');
+    // refreshKey intentionally forces random regeneration with unchanged inputs.
+    // oxlint-disable-next-line react-hooks/exhaustive-deps
   }, [count, withHyphens, caseType, refreshKey]);
 
   const handleVersionChange = useCallback(

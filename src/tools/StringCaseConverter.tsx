@@ -19,19 +19,22 @@ export function StringCaseConverter() {
     return convertCase(input, caseType);
   }, [input, caseType]);
 
-  const handleChange = useCallback((value: string) => {
-    setInput(value);
-  }, []);
+  const handleChange = useCallback(
+    (value: string) => {
+      setInput(value);
+    },
+    [setInput]
+  );
 
   const handleClear = useCallback(() => {
     setInput('');
-  }, []);
+  }, [setInput]);
 
   const handleCaseTypeChange = useCallback(
     (event: React.ChangeEvent<HTMLSelectElement>) => {
       setCaseType(event.target.value as CaseType);
     },
-    []
+    [setCaseType]
   );
 
   return (

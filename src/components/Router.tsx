@@ -19,12 +19,12 @@ export function Router() {
   }, [location.pathname, setLastToolId]);
 
   // Determine the initial route
-  const isServerSide = typeof window === 'undefined';
+  const isServerSide = 'window' in globalThis === false;
   const initialRoute =
     location.pathname === '/'
-      ? isServerSide
+      ? (isServerSide
         ? tools[0].id
-        : lastToolId
+        : lastToolId)
       : location.pathname.slice(1);
 
   return (

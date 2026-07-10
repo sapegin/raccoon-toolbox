@@ -40,6 +40,8 @@ export function ColorSlider({
   return (
     <div
       ref={areaRef}
+      /* Native range inputs cannot represent this two-dimensional color area. */
+      /* oxlint-disable-next-line jsx-a11y/prefer-tag-over-role */
       role="slider"
       tabIndex={0}
       aria-label={ariaLabel}

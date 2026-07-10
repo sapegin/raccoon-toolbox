@@ -37,7 +37,9 @@ export function Panel({
         <h3 className="sr-only">{accessibleLabel}</h3>
       ) : (
         <div className="flex items-center justify-between">
-          <h3 className="typo-body font-bold">{label}</h3>
+          <h3 className="font-body text-text text-base leading-normal font-bold">
+            {label}
+          </h3>
           {actions ? (
             <div className="flex items-center gap-2">{actions}</div>
           ) : null}

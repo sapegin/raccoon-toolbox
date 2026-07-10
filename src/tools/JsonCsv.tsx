@@ -149,17 +149,23 @@ export function JsonCsv() {
     }
   }, [input, mode]);
 
-  const handleChange = useCallback((value: string) => {
-    setInput(value);
-  }, []);
+  const handleChange = useCallback(
+    (value: string) => {
+      setInput(value);
+    },
+    [setInput]
+  );
 
   const handleClear = useCallback(() => {
     setInput('');
-  }, []);
+  }, [setInput]);
 
-  const handleModeChange = useCallback((value: string) => {
-    setMode(value as Mode);
-  }, []);
+  const handleModeChange = useCallback(
+    (value: string) => {
+      setMode(value as Mode);
+    },
+    [setMode]
+  );
 
   const inputLanguage = mode === 'json-to-csv' ? 'json' : undefined;
   const outputLanguage = mode === 'json-to-csv' ? undefined : 'json';

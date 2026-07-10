@@ -128,7 +128,7 @@ export function TextDecoderTool() {
 
   const handleClear = useCallback(() => {
     setInput('');
-  }, []);
+  }, [setInput]);
 
   return (
     <Screen className="grid-cols-2">

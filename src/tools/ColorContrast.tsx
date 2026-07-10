@@ -176,27 +176,39 @@ export function ColorContrast() {
       };
     }, [backgroundInput]);
 
-  const handleTextInputChange = useCallback((value: string) => {
-    setTextInput(value);
-  }, []);
+  const handleTextInputChange = useCallback(
+    (value: string) => {
+      setTextInput(value);
+    },
+    [setTextInput]
+  );
 
-  const handleBackgroundInputChange = useCallback((value: string) => {
-    setBgInput(value);
-  }, []);
+  const handleBackgroundInputChange = useCallback(
+    (value: string) => {
+      setBgInput(value);
+    },
+    [setBgInput]
+  );
 
-  const handleTextColorPickerChange = useCallback((newColor: Colord) => {
-    setTextInput(newColor.toHex());
-  }, []);
+  const handleTextColorPickerChange = useCallback(
+    (newColor: Colord) => {
+      setTextInput(newColor.toHex());
+    },
+    [setTextInput]
+  );
 
-  const handleBackgroundColorPickerChange = useCallback((newColor: Colord) => {
-    setBgInput(newColor.toHex());
-  }, []);
+  const handleBackgroundColorPickerChange = useCallback(
+    (newColor: Colord) => {
+      setBgInput(newColor.toHex());
+    },
+    [setBgInput]
+  );
 
   const handleSwap = useCallback(() => {
     const tempInput = textInput;
     setTextInput(backgroundInput);
     setBgInput(tempInput);
-  }, [textInput, backgroundInput]);
+  }, [textInput, backgroundInput, setTextInput, setBgInput]);
 
   const contrast = textColor.contrast(backgroundColor);
 

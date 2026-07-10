@@ -121,7 +121,7 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
         onKeyDown={handleKeyDown}
-        className="border-light-border bg-text-background font-body text-text-foreground placeholder:text-secondary-text-foreground w-full border-x-0 border-t-0 border-b border-solid p-4 text-base/none outline-none focus-visible:outline-none"
+        className="border-light-border bg-text-background font-body text-text-foreground placeholder:text-secondary-text-foreground w-full border-x-0 border-t-0 border-b border-solid p-4 text-base/none outline-none"
       />
       <output htmlFor="search-dialog-input">
         <div className="max-h-100 overflow-y-auto">

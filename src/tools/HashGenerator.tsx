@@ -65,9 +65,12 @@ export function HashGenerator() {
     void computeHashes();
   }, [input, caseMode]);
 
-  const handleChange = useCallback((value: string) => {
-    setInput(value);
-  }, []);
+  const handleChange = useCallback(
+    (value: string) => {
+      setInput(value);
+    },
+    [setInput]
+  );
 
   const handleClear = useCallback(() => {
     setInput('');
@@ -76,11 +79,14 @@ export function HashGenerator() {
     setSha256Hash('');
     setSha384Hash('');
     setSha512Hash('');
-  }, []);
+  }, [setInput]);
 
-  const handleCaseChange = useCallback((value: string) => {
-    setCaseMode(value as Case);
-  }, []);
+  const handleCaseChange = useCallback(
+    (value: string) => {
+      setCaseMode(value as Case);
+    },
+    [setCaseMode]
+  );
 
   return (
     <Screen className="grid-cols-2">

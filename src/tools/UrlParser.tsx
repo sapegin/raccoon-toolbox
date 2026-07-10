@@ -39,13 +39,16 @@ export function UrlParser() {
     }
   }, [input]);
 
-  const handleChange = useCallback((value: string) => {
-    setInput(value);
-  }, []);
+  const handleChange = useCallback(
+    (value: string) => {
+      setInput(value);
+    },
+    [setInput]
+  );
 
   const handleClear = useCallback(() => {
     setInput('');
-  }, []);
+  }, [setInput]);
 
   return (
     <Screen className="grid-cols-2">

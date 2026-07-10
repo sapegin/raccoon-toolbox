@@ -71,30 +71,36 @@ export function App() {
     if (isTauri()) {
       const unlisten = listen('toggle-sidebar', toggleSidebar);
       return () => {
-        void unlisten.then((fn) => fn());
+        void (async () => {
+          (await unlisten)();
+        })();
       };
     }
-  }, []);
+  }, [toggleSidebar]);
 
   // Listen to the toggle command palette menu item events
   useEffect(() => {
     if (isTauri()) {
       const unlisten = listen('toggle-command-palette', toggleCommandPalette);
       return () => {
-        void unlisten.then((fn) => fn());
+        void (async () => {
+          (await unlisten)();
+        })();
       };
     }
-  }, []);
+  }, [toggleCommandPalette]);
 
   // Listen to the toggle hotkeys dialog menu item events
   useEffect(() => {
     if (isTauri()) {
       const unlisten = listen('toggle-hotkeys-dialog', toggleHotkeysDialog);
       return () => {
-        void unlisten.then((fn) => fn());
+        void (async () => {
+          (await unlisten)();
+        })();
       };
     }
-  }, []);
+  }, [toggleHotkeysDialog]);
 
   // Listen to the toggle show whitespace menu item events
   useEffect(() => {
@@ -105,7 +111,9 @@ export function App() {
         });
       });
       return () => {
-        void unlisten.then((fn) => fn());
+        void (async () => {
+          (await unlisten)();
+        })();
       };
     }
   }, []);
@@ -124,7 +132,9 @@ export function App() {
         void navigate(`/${event.payload}/`);
       });
       return () => {
-        void unlisten.then((fn) => fn());
+        void (async () => {
+          (await unlisten)();
+        })();
       };
     }
   }, [navigate]);
@@ -136,7 +146,9 @@ export function App() {
         void openUrl(event.payload);
       });
       return () => {
-        void unlisten.then((fn) => fn());
+        void (async () => {
+          (await unlisten)();
+        })();
       };
     }
   }, []);

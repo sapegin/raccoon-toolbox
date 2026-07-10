@@ -9,7 +9,7 @@ export function getModifierKey(): ModifierKey {
   }
 
   // SSR safety: return 'Ctrl' as default when window is not available
-  if (typeof window === 'undefined') {
+  if ('window' in globalThis === false) {
     return 'Ctrl';
   }
 

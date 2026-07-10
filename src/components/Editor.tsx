@@ -24,7 +24,7 @@ import {
 } from '@codemirror/view';
 import { tags } from '@lezer/highlight';
 import clsx from 'clsx';
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { useEditorSettings } from '../hooks/useEditorSettings';
 
 // TODO: Disabled Cmd+/ for commenting as it conflicts with the app toggle sidebar
@@ -63,7 +63,7 @@ const theme = EditorView.theme({
   '&': {
     height: '100%',
   },
-  '.editor_in-page &': {
+  '[data-editor-mode="in-page"] &': {
     border: 'var(--border-input)',
     borderRadius: 'var(--radius-input)',
     boxShadow: 'var(--shadow-input)',
@@ -71,7 +71,7 @@ const theme = EditorView.theme({
   '&.cm-focused': {
     outline: 0,
   },
-  '.editor_in-page &.cm-focused': {
+  '[data-editor-mode="in-page"] &.cm-focused': {
     border: 'var(--border-input-focus)',
   },
   '.cm-scroller': {
@@ -134,7 +134,7 @@ const theme = EditorView.theme({
     paddingInline: ' var(--spacing-s)',
     fontSize: 'var(--text-s)',
     color: 'var(--color-secondary-button-foreground)',
-    backgroundImage: 'var(--gradient-button)',
+    backgroundImage: 'var(--background-image-gradient-button)',
     border: 'var(--border-button)',
     borderRadius: 'var(--radius-button)',
     boxShadow: 'var(--shadow-button)',
@@ -142,7 +142,7 @@ const theme = EditorView.theme({
     textTransform: 'capitalize',
   },
   '.cm-button:hover': {
-    backgroundImage: 'var(--gradient-button-hover)',
+    backgroundImage: 'var(--background-image-gradient-button-hover)',
     border: 'var(--border-button-hover)',
   },
   '.cm-button:focus-visible': {
@@ -215,21 +215,31 @@ export function Editor({
 }: EditorProps) {
   const editorRef = useRef<HTMLDivElement>(null);
   const viewRef = useRef<EditorView | null>(null);
+  const onChangeRef = useRef(onChange);
+  const isFullScreenRef = useRef(false);
   const [isFullScreen, setIsFullScreen] = useState(false);
   const { showWhitespace } = useEditorSettings();
 
-  const toggleFullScreen = () => {
+  useEffect(() => {
+    onChangeRef.current = onChange;
+  }, [onChange]);
+
+  useEffect(() => {
+    isFullScreenRef.current = isFullScreen;
+  }, [isFullScreen]);
+
+  const toggleFullScreen = useCallback(() => {
     setIsFullScreen((prev) => prev === false);
     return true;
-  };
+  }, []);
 
-  const exitFullScreen = () => {
-    if (isFullScreen) {
+  const exitFullScreen = useCallback(() => {
+    if (isFullScreenRef.current) {
       setIsFullScreen(false);
       return true;
     }
     return false;
-  };
+  }, []);
 
   useEffect(() => {
     if (editorRef.current === null) {
@@ -241,8 +251,8 @@ export function Editor({
       : undefined;
 
     const updateListener = EditorView.updateListener.of((update) => {
-      if (update.docChanged && onChange) {
-        onChange(update.state.doc.toString());
+      if (update.docChanged && onChangeRef.current) {
+        onChangeRef.current(update.state.doc.toString());
       }
     });
 
@@ -287,7 +297,9 @@ export function Editor({
       view.destroy();
       viewRef.current = null;
     };
-  }, [language, editable, onChange, showWhitespace]);
+    // onChange, value, id, and label are synced via refs or separate effects to avoid remounting on every keystroke.
+    // oxlint-disable-next-line react-hooks/exhaustive-deps
+  }, [language, editable, showWhitespace, toggleFullScreen, exitFullScreen]);
 
   useEffect(() => {
     const view = viewRef.current;
@@ -321,9 +333,9 @@ export function Editor({
       ref={editorRef}
       className={clsx(
         'h-full min-h-0 bg-text-background',
-        isFullScreen && 'fixed inset-0 z-1000',
-        isFullScreen ? 'editor_fullscreen' : 'editor_in-page'
+        isFullScreen && 'fixed inset-0 z-1000'
       )}
+      data-editor-mode={isFullScreen ? 'fullscreen' : 'in-page'}
     />
   );
 }

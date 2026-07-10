@@ -145,6 +145,7 @@
   --color-text-foreground: var(--color-gray-090);
   --color-ui-background: var(--color-gray-170);
   --color-warning-foreground: var(--color-orange-contrast);
+  --color-backdrop: #0006;
 
   --color-code-comment: var(--color-gray-110);
   --color-code-keyword: var(--color-magenta);
@@ -155,24 +156,24 @@
   --color-code-punctuation: var(--color-gray-090);
 
   /* Gradients. */
-  --gradient-button: linear-gradient(
+  --background-image-gradient-button: linear-gradient(
     to bottom,
     oklch(from var(--color-secondary-button-background) calc(l + 0.08) c h),
     var(--color-secondary-button-background)
   );
-  --gradient-button-hover: linear-gradient(
+  --background-image-gradient-button-hover: linear-gradient(
     to bottom,
     oklch(
       from var(--color-secondary-button-hover-background) calc(l + 0.15) c h
     ),
     var(--color-secondary-button-hover-background)
   );
-  --gradient-button-pressed: linear-gradient(
+  --background-image-gradient-button-pressed: linear-gradient(
     to bottom,
     var(--color-button-pressed-background),
     oklch(from var(--color-button-pressed-background) calc(l + 0.18) c h)
   );
-  --gradient-accent: linear-gradient(
+  --background-image-gradient-accent: linear-gradient(
     to bottom,
     oklch(from var(--color-accent-background) calc(l + 0.1) c h),
     var(--color-accent-background)

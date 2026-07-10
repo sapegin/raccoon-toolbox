@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 /** Register a global hotkey. */
 export function useHotkey(
-  callback: () => void,
+  callback: () => Promise<void> | void,
   config: {
     enabled?: boolean;
     key: string;
@@ -17,6 +17,7 @@ export function useHotkey(
       return;
     }
 
+    // oxlint-disable-next-line promise/prefer-await-to-callbacks
     const handleKeyDown = (event: KeyboardEvent) => {
       const metaKeyMatch =
         config.metaKey === undefined || event.metaKey === config.metaKey;
@@ -35,11 +36,14 @@ export function useHotkey(
         altKeyMatch
       ) {
         event.preventDefault();
-        callback();
+        void (async () => {
+          // oxlint-disable-next-line promise/prefer-await-to-callbacks
+          await callback();
+        })();
       }
     };
 
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
+    globalThis.addEventListener('keydown', handleKeyDown);
+    return () => globalThis.removeEventListener('keydown', handleKeyDown);
   }, [callback, config]);
 }

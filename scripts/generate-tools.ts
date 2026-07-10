@@ -15,7 +15,7 @@ const tools = JSON.parse(
 const tsCode = `// Auto-generated file. Do not edit manually.
 // Generated from tools.json by scripts/generate-tools.ts
 
-import { lazy, ComponentType } from 'react';
+import { ComponentType, lazy } from 'react';
 
 export interface Tool {
   id: string;
@@ -31,11 +31,10 @@ ${tools
     id: '${tool.id}',
     name: '${tool.name}',
     keywords: ['${tool.keywords.join("', '")}'],
-    component: lazy(() =>
-      import('./tools/${tool.module}').then((m) => ({
-        default: m.${tool.module},
-      }))
-    ),
+    component: lazy(async () => {
+      const module = await import('./tools/${tool.module}');
+      return { default: module.${tool.module} };
+    }),
   },`
   )
   .join('\n')}

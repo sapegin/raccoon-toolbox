@@ -49,17 +49,23 @@ export function JsonYaml() {
     }
   }, [input, mode]);
 
-  const handleChange = useCallback((value: string) => {
-    setInput(value);
-  }, []);
+  const handleChange = useCallback(
+    (value: string) => {
+      setInput(value);
+    },
+    [setInput]
+  );
 
   const handleClear = useCallback(() => {
     setInput('');
-  }, []);
+  }, [setInput]);
 
-  const handleModeChange = useCallback((value: string) => {
-    setMode(value as Mode);
-  }, []);
+  const handleModeChange = useCallback(
+    (value: string) => {
+      setMode(value as Mode);
+    },
+    [setMode]
+  );
 
   const inputLanguage = mode === 'json-to-yaml' ? 'json' : 'yaml';
   const outputLanguage = mode === 'json-to-yaml' ? 'yaml' : 'json';

@@ -54,17 +54,23 @@ export function Base64Encoder() {
     }
   }, [input, mode]);
 
-  const handleChange = useCallback((value: string) => {
-    setInput(value);
-  }, []);
+  const handleChange = useCallback(
+    (value: string) => {
+      setInput(value);
+    },
+    [setInput]
+  );
 
   const handleClear = useCallback(() => {
     setInput('');
-  }, []);
+  }, [setInput]);
 
-  const handleModeChange = useCallback((value: string) => {
-    setMode(value as Mode);
-  }, []);
+  const handleModeChange = useCallback(
+    (value: string) => {
+      setMode(value as Mode);
+    },
+    [setMode]
+  );
 
   return (
     <Screen className="grid-cols-2">

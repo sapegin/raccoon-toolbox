@@ -56,7 +56,7 @@ export function ColorPicker({
   const [isDraggingAlpha, setIsDraggingAlpha] = useState(false);
 
   const hsv = color.toHsv();
-  const { h, s, v, a = 1 } = hsv;
+  const { h, s, v, a } = hsv;
 
   const updateSaturationValue = useCallback(
     (clientX: number, clientY: number) => {

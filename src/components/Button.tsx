@@ -13,6 +13,7 @@ type ButtonProps = ComponentProps<'button'> & {
 export function Button({ size = 'small', className, ...props }: ButtonProps) {
   return (
     <button
+      type="button"
       {...props}
       className={clsx('button', sizeClasses[size], className)}
     />
