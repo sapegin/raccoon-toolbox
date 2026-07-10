@@ -1,3 +1,4 @@
+import { isTauri } from '@tauri-apps/api/core';
 import clsx from 'clsx';
 import { type ReactNode } from 'react';
 import { APP_NAME } from '../constants';
@@ -29,21 +30,28 @@ export function AppLayout({
     <>
       <h1 className="sr-only">{APP_NAME}</h1>
       <div
-        className={clsx(
-          'grid h-screen w-screen grid-cols-[auto_1fr]',
-          isSidebarOpen && 'gap-2'
-        )}
+        className="grid h-screen w-screen grid-rows-[auto_1fr]"
         suppressHydrationWarning
       >
-        <Sidebar
-          show={isSidebarOpen}
-          onClose={onSidebarClose}
-          onSearchOpen={onSearchOpen}
-          onHotkeysOpen={onHotkeysOpen}
+        <Header
+          title={title}
+          show={isHeaderVisible}
+          showOpenButton={isTauri() === false}
+          onOpen={onHeaderOpen}
         />
-        <div className="grid h-screen grid-rows-[auto_1fr]">
-          <Header title={title} show={isHeaderVisible} onOpen={onHeaderOpen} />
-          <div className="h-full min-h-0">{children}</div>
+        <div
+          className={clsx(
+            'grid min-h-0 grid-cols-[auto_1fr]',
+            isSidebarOpen && 'gap-2'
+          )}
+        >
+          <Sidebar
+            show={isSidebarOpen}
+            onClose={onSidebarClose}
+            onSearchOpen={onSearchOpen}
+            onHotkeysOpen={onHotkeysOpen}
+          />
+          <div className="min-h-0">{children}</div>
         </div>
       </div>
     </>

@@ -1,7 +1,6 @@
 import './styles.css';
 import { invoke, isTauri } from '@tauri-apps/api/core';
 import { listen } from '@tauri-apps/api/event';
-import { getCurrentWindow } from '@tauri-apps/api/window';
 import { openUrl } from '@tauri-apps/plugin-opener';
 import { Suspense, useCallback, useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -36,7 +35,7 @@ export function App() {
   const currentTool = tools.find((tool) => tool.id === currentToolId);
   const currentToolName = currentTool?.name ?? 'Loading…';
 
-  const isHeaderVisible = isSidebarOpen === false && isTauri() === false;
+  const isHeaderVisible = isTauri() || isSidebarOpen === false;
 
   const toggleSidebar = useCallback(
     () => setIsSidebarOpen((prev) => prev === false),
@@ -53,17 +52,12 @@ export function App() {
     [setIsHotkeysDialogOpen]
   );
 
-  // Set the selected tool name to the window title
+  // Set the page title (tool name is shown in the in-app header on desktop)
   useEffect(() => {
-    if (isTauri()) {
-      if (currentTool) {
-        void getCurrentWindow().setTitle(currentTool.name);
-      }
-    } else {
-      document.title = currentTool
-        ? `${currentTool.name} — ${APP_NAME}`
-        : APP_NAME;
-    }
+    document.title =
+      isTauri() || currentTool === undefined
+        ? APP_NAME
+        : `${currentTool.name} — ${APP_NAME}`;
   }, [currentTool]);
 
   // Listen to the toggle sidebar menu item events

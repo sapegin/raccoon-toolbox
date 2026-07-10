@@ -1,3 +1,4 @@
+import { isTauri } from '@tauri-apps/api/core';
 import clsx from 'clsx';
 import { APP_NAME } from '../constants';
 import { getShortcut } from '../util/getShortcut';
@@ -8,11 +9,15 @@ export function Header({
   title = APP_NAME,
   onOpen,
   show,
+  showOpenButton = true,
 }: {
   title?: string;
   onOpen?: () => void;
   show?: boolean;
+  showOpenButton?: boolean;
 }) {
+  const draggable = isTauri();
+
   return (
     <div
       className={clsx(
@@ -23,18 +28,33 @@ export function Header({
       aria-hidden={show === false}
       suppressHydrationWarning
     >
-      <div className="border-light-border bg-ui-background grid grid-cols-[2rem_auto_2rem] gap-4 border-b border-solid p-1">
-        <div className="flex items-center justify-center">
-          <IconButton
-            label={`Open sidebar (${getShortcut('/')})`}
-            onClick={onOpen}
-            className="-mb-0.5"
-          >
-            <Icon icon="sidebar" className="size-5.5" />
-          </IconButton>
-        </div>
-        <h2 className="typo-body text-center">{title}</h2>
-        <div />
+      <div
+        className={clsx(
+          'border-border bg-secondary-ui-background border-b-hair border-solid p-1',
+          showOpenButton
+            ? 'grid grid-cols-[2rem_auto_2rem] gap-4'
+            : 'flex h-full items-center justify-center'
+        )}
+        data-tauri-drag-region={draggable ? true : undefined}
+      >
+        {showOpenButton && (
+          <>
+            <div className="flex items-center justify-center">
+              <IconButton
+                label={`Open sidebar (${getShortcut('/')})`}
+                onClick={onOpen}
+                className="-mb-0.5"
+              >
+                <Icon icon="sidebar" className="size-5.5" />
+              </IconButton>
+            </div>
+            <h2 className="typo-body text-center">{title}</h2>
+            <div />
+          </>
+        )}
+        {showOpenButton === false && (
+          <h2 className="typo-body text-center">{title}</h2>
+        )}
       </div>
     </div>
   );

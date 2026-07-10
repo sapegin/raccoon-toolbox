@@ -85,6 +85,7 @@
   --radius-dialog-inner: 7px;
 
   /* Borders */
+  --border-width-hair: 0.5px;
   --border-width-focus: 2px;
   --border-width-focus-offset: 2px;
 
@@ -144,6 +145,7 @@
   --color-text-background: var(--color-gray-180);
   --color-text-foreground: var(--color-gray-090);
   --color-ui-background: var(--color-gray-170);
+  --color-secondary-ui-background: var(--color-gray-160);
   --color-warning-foreground: var(--color-orange-contrast);
   --color-backdrop: #0006;
 

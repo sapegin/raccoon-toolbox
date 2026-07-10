@@ -16,7 +16,10 @@
         "title": "Raccoon Toolbox",
         "width": 1024,
         "height": 768,
-        "label": "main"
+        "label": "main",
+        "hiddenTitle": true,
+        "titleBarStyle": "Overlay",
+        "trafficLightPosition": { "x": 12, "y": 24 }
       }
     ],
     "security": {
