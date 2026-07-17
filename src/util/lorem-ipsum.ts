@@ -300,7 +300,7 @@ export const corpora: TextCorpus[] = [
       'gently',
       'rapping',
       'at',
-      'my chamber door.',
+      'my chamber door',
       '’tis',
       'some',
       'visitor',
