@@ -53,7 +53,7 @@ export function ToggleButton({
               <label
                 htmlFor={id}
                 className={clsx(
-                  `ease-hover [input:focus-visible+&]:outline-accent inline-flex h-full cursor-pointer items-center justify-center border-0 px-2 text-sm outline-0 transition-all duration-(--duration-hover) select-none first-of-type:rounded-l-[5px] last-of-type:rounded-r-[5px] [input:focus-visible+&]:z-10 [input:focus-visible+&]:outline-2 [input:focus-visible+&]:outline-offset-(--border-width-focus-offset)`,
+                  `ease-hover [input:focus-visible+&]:outline-accent inline-flex h-full items-center justify-center border-0 px-2 text-sm outline-0 transition-all duration-(--duration-hover) select-none first-of-type:rounded-l-[5px] last-of-type:rounded-r-[5px] [input:focus-visible+&]:z-10 [input:focus-visible+&]:outline-2 [input:focus-visible+&]:outline-offset-(--border-width-focus-offset)`,
                   isChecked
                     ? `text-button-pressed-foreground shadow-button-pressed text-shadow-button-pressed bg-gradient-button-pressed`
                     : `text-secondary-button-foreground text-shadow-button hover:bg-hover-background bg-gradient-button`

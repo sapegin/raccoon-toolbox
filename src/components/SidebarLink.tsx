@@ -3,7 +3,7 @@ import { type ReactNode } from 'react';
 
 const linkClasses = clsx(
   `
-    inline-block cursor-pointer rounded-button border-none bg-none px-2 py-1
+    inline-block rounded-button border-none bg-none px-2 py-1
     text-left font-body text-sm text-text-foreground no-underline focus-outline
     transition-all duration-(--duration-hover) ease-hover
     hover:bg-hover-background hover:text-active-foreground

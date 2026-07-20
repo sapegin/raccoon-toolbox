@@ -12,7 +12,6 @@
   user-select: none;
   outline: 0;
   transition: all var(--duration-hover) var(--ease-hover);
-  cursor: pointer;
 
   &:hover {
     background-image: var(--background-image-gradient-button-hover);

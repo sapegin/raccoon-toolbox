@@ -134,7 +134,7 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
                     onClick={() => handleToolSelection(tool)}
                     onMouseEnter={() => setSelectedIndex(index)}
                     className={clsx(
-                      `font-body text-text-foreground ease-hover hover:bg-hover-background w-full cursor-pointer border-0 border-none p-4 text-left text-base/snug transition-all duration-(--duration-hover)`,
+                      `font-body text-text-foreground ease-hover hover:bg-hover-background w-full border-0 border-none p-4 text-left text-base/snug transition-all duration-(--duration-hover)`,
                       index === selectedIndex && 'bg-active-background'
                     )}
                   >

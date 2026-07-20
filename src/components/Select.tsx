@@ -33,7 +33,7 @@ export function Select({
       <div className="rounded-button border-light-border relative flex border">
         <select
           {...props}
-          className="rounded-button bg-text-background font-body text-text-foreground focus-outline m-0 inline-block h-5.5 cursor-pointer appearance-none border-0 py-0 pr-4 pl-2 text-sm focus-visible:outline-2 disabled:cursor-default disabled:opacity-60"
+          className="rounded-button bg-text-background font-body text-text-foreground focus-outline m-0 inline-block h-5.5 appearance-none border-0 py-0 pr-4 pl-2 text-sm focus-visible:outline-2 disabled:cursor-default disabled:opacity-60"
         >
           {options.map((option) => (
             <option key={option.value} value={option.value}>
