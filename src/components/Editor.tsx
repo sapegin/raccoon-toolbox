@@ -26,6 +26,7 @@ import { tags } from '@lezer/highlight';
 import clsx from 'clsx';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useEditorSettings } from '../hooks/useEditorSettings';
+import { codemirrorTheme } from './codemirrorTheme';
 
 // Indent shortcuts reserved for toggling the app sidebar.
 const editorKeymap = defaultKeymap.filter(
@@ -61,103 +62,6 @@ interface EditorProps {
   /** Highlight specific ranges in the editor. */
   highlightRanges?: HighlightRange[];
 }
-
-const theme = EditorView.theme({
-  '&': {
-    height: '100%',
-  },
-  '[data-editor-mode="in-page"] &': {
-    border: 'var(--border-input)',
-    borderRadius: 'var(--radius-input)',
-    boxShadow: 'var(--shadow-input)',
-  },
-  '&.cm-focused': {
-    outline: 0,
-  },
-  '[data-editor-mode="in-page"] &.cm-focused': {
-    border: 'var(--border-input-focus)',
-  },
-  '.cm-scroller': {
-    overflow: 'auto',
-    fontFamily: 'var(--font-mono)',
-  },
-  '.cm-activeLine': {
-    backgroundColor: 'var(--color-line-highlight-background)',
-  },
-  '.cm-highlightSpace': {
-    backgroundImage:
-      'radial-gradient(circle at 50% 55%, var(--color-light-border) 20%, transparent 5%)',
-  },
-  '.cm-gutters': {
-    color: 'var(--color-disabled-foreground)',
-    backgroundColor: 'transparent',
-    borderColor: 'transparent',
-  },
-  '.cm-searchMatch': {
-    backgroundColor: 'var(--color-secondary-match-background)',
-  },
-  '.cm-searchMatch-selected': {
-    outline: '2px solid var(--color-match-background)',
-  },
-  '.cm-textfield': {
-    padding: ' var(--spacing-xs)',
-    fontSize: 'var(--text-s)',
-    color: 'var(--color-text-foreground)',
-    backgroundColor: 'var(--color-text-background)',
-    border: 'var(--border-input)',
-    borderRadius: 'var(--radius-input)',
-    boxShadow: 'var(--shadow-input)',
-    outline: 0,
-  },
-  '.cm-textfield:focus': {
-    border: 'var(--border-input-focus)',
-  },
-  '.cm-panel': {
-    color: 'var(--color-text-foreground)',
-    backgroundColor: 'var(--color-ui-background)',
-  },
-  '.cm-panels-bottom': {
-    borderColor: 'var(--color-light-border)',
-  },
-  '.cm-panel.cm-panel [name="close"]': {
-    bottom: 'auto',
-    cursor: 'pointer',
-    color: 'var(--color-icon)',
-  },
-  '.cm-panel.cm-panel [name="close"]:hover': {
-    color: 'var(--color-active-icon)',
-  },
-  '.cm-panel.cm-panel [name="close"]:focus-visible': {
-    outline: '2px solid var(--color-accent)',
-    borderRadius: 'var(--radius-button)',
-  },
-  '.cm-button': {
-    cursor: 'pointer',
-    paddingBlock: ' var(--spacing-xs)',
-    paddingInline: ' var(--spacing-s)',
-    fontSize: 'var(--text-s)',
-    color: 'var(--color-secondary-button-foreground)',
-    backgroundImage: 'var(--background-image-gradient-button)',
-    border: 'var(--border-button)',
-    borderRadius: 'var(--radius-button)',
-    boxShadow: 'var(--shadow-button)',
-    outline: 0,
-    textTransform: 'capitalize',
-  },
-  '.cm-button:hover': {
-    backgroundImage: 'var(--background-image-gradient-button-hover)',
-    border: 'var(--border-button-hover)',
-  },
-  '.cm-button:focus-visible': {
-    outline: '2px solid var(--color-accent)',
-    outlineOffset: '2px',
-  },
-  '.cm-panel.cm-search input[type="checkbox"]:focus-visible': {
-    outline: '2px solid var(--color-accent)',
-    outlineOffset: '2px',
-    borderRadius: 'var(--radius-button)',
-  },
-});
 
 // All available tags:
 // https://lezer.codemirror.net/docs/ref/#highlight.tags
@@ -285,7 +189,7 @@ export function Editor({
           'aria-label': label,
         }),
         squirrelsongHighlighting,
-        theme,
+        codemirrorTheme,
       ].filter((x) => x !== undefined),
     });
 
