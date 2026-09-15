@@ -13,6 +13,14 @@
 }
 
 @layer base {
+  html {
+    /*
+      Tamia reserves a scrollbar gutter, but this app fills the viewport with
+      overflow hidden on body.
+    */
+    scrollbar-gutter: auto;
+  }
+
   body {
     overflow: hidden;
   }

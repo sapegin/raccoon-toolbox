@@ -30,7 +30,7 @@ export function AppLayout({
     <>
       <h1 className="sr-only">{APP_NAME}</h1>
       <div
-        className="grid h-screen w-screen grid-rows-[auto_1fr]"
+        className="grid h-screen w-full grid-rows-[auto_1fr]"
         suppressHydrationWarning
       >
         <Header

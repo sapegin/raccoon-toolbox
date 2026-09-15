@@ -1,5 +1,7 @@
 # AGENTS.md
 
+Ecosystem context: read `~/dotfiles/ai/raccoonarium.md`.
+
 ## Creating new tools
 
 - Register a tool at `tools.json`.
