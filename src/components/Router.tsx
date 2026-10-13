@@ -4,6 +4,13 @@ import { usePersistentState } from '../hooks/usePersistentState';
 import { tools } from '../tools';
 import { getToolIdFromPath } from '../util/getToolIdFromPath';
 
+function getHomeRedirectToolId(
+  isServerSide: boolean,
+  lastToolId: string
+): string {
+  return isServerSide ? tools[0].id : lastToolId;
+}
+
 export function Router() {
   const location = useLocation();
   const [lastToolId, setLastToolId] = usePersistentState(
@@ -22,9 +29,7 @@ export function Router() {
   const isServerSide = 'window' in globalThis === false;
   const initialRoute =
     location.pathname === '/'
-      ? (isServerSide
-        ? tools[0].id
-        : lastToolId)
+      ? getHomeRedirectToolId(isServerSide, lastToolId)
       : location.pathname.slice(1);
 
   return (

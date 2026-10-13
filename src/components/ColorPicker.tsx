@@ -25,6 +25,7 @@ function DragHandle({
   if (variant === 'circle') {
     return (
       <div
+        // oxlint-disable-next-line tailwindcss/no-hardcoded-colors
         className="pointer-events-none absolute size-3 -translate-1/2 rounded-full border-2 border-[white] shadow-[0_0_3px_#000c] outline outline-[black]"
         style={style}
       />
@@ -32,6 +33,7 @@ function DragHandle({
   }
   return (
     <div
+      // oxlint-disable-next-line tailwindcss/no-hardcoded-colors
       className="rounded-normal pointer-events-none absolute mx-[-0.2rem] h-[0.3rem] w-[calc(100%+0.4rem)] -translate-y-1/2 border-2 border-[white] bg-[white] shadow-[0_0_3px_#000c] outline outline-[black]"
       style={style}
     />

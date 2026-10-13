@@ -1,15 +1,31 @@
 import { useEffect, useState } from 'react';
 
+function resolveInitialValue<T>(initialValue: T | (() => T)): T {
+  if (typeof initialValue === 'function') {
+    return (initialValue as () => T)();
+  }
+  return initialValue;
+}
+
+export function usePersistentState<T>(
+  key: string,
+  initialValue: () => T
+): [T, React.Dispatch<React.SetStateAction<T>>];
 export function usePersistentState<T>(
   key: string,
   initialValue: T
+): [T, React.Dispatch<React.SetStateAction<T>>];
+export function usePersistentState<T>(
+  key: string,
+  initialValue: T | (() => T)
 ): [T, React.Dispatch<React.SetStateAction<T>>] {
   const [state, setState] = useState<T>(() => {
+    const resolvedInitialValue = resolveInitialValue(initialValue);
     try {
       const item = localStorage.getItem(key);
-      return item ? (JSON.parse(item) as T) : initialValue;
+      return item ? (JSON.parse(item) as T) : resolvedInitialValue;
     } catch {
-      return initialValue;
+      return resolvedInitialValue;
     }
   });
 

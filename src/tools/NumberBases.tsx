@@ -37,9 +37,8 @@ export function NumberBases() {
       setOctal(value.toString(8));
       setDecimal(value.toString(10));
       setHexadecimal(value.toString(16).toUpperCase());
-      setDecimal(value.toString(10));
     },
-    [setDecimal]
+    [setBinary, setDecimal, setHexadecimal, setOctal]
   );
 
   const handleChange = useCallback(
@@ -51,7 +50,6 @@ export function NumberBases() {
         setOctal('');
         setDecimal('');
         setHexadecimal('');
-        setDecimal('');
         return;
       }
 
@@ -65,7 +63,7 @@ export function NumberBases() {
 
       updateAllFields(number);
     },
-    [updateAllFields, setDecimal]
+    [setBinary, setDecimal, setHexadecimal, setOctal, updateAllFields]
   );
 
   return (

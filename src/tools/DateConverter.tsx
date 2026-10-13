@@ -1,4 +1,10 @@
-import { type ChangeEvent, useCallback, useMemo, useState } from 'react';
+import {
+  type ChangeEvent,
+  useCallback,
+  useMemo,
+  useRef,
+  useState,
+} from 'react';
 import { Button } from '../components/Button';
 import { Input } from '../components/Input';
 import { LargeValue } from '../components/LargeValue';
@@ -65,12 +71,17 @@ function getRelativeTime(date: Date): string {
 }
 
 export function DateConverter() {
+  const invalidTimestampFallbackRef = useRef(Date.now());
+
   const [timestamp, setTimestamp] = usePersistentState(
     'dateConverter.timestamp',
-    String(Date.now())
+    () => String(Date.now())
   );
 
-  const timestampNum = Number.parseInt(timestamp, 10) || Date.now();
+  const parsedTimestamp = Number.parseInt(timestamp, 10);
+  const timestampNum = Number.isNaN(parsedTimestamp)
+    ? invalidTimestampFallbackRef.current
+    : parsedTimestamp;
   const date = useMemo(() => new Date(timestampNum), [timestampNum]);
 
   const [isoInput, setIsoInput] = useState(date.toISOString());

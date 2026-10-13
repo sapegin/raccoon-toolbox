@@ -14,7 +14,7 @@ export function LargeValue({
   return (
     <div className="flex flex-col gap-1">
       <dt className="typo-body">{label}</dt>
-      <dd className="typo-large">{value}</dd>
+      <dd className="typo-large text-active-foreground">{value}</dd>
     </div>
   );
 }

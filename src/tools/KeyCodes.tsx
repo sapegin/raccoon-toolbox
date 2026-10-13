@@ -104,7 +104,9 @@ export function KeyCodes() {
       <div className="flex h-full flex-col items-center justify-center gap-16">
         <div className="flex flex-col items-center gap-4">
           {keyInfo ? (
-            <p className="typo-xlarge">{keyInfo.displayName}</p>
+            <p className="typo-xlarge text-active-foreground">
+              {keyInfo.displayName}
+            </p>
           ) : (
             <p className="typo-large text-secondary-text-foreground pb-8">
               Press any key

@@ -43,7 +43,7 @@ export function CoinToss() {
   return (
     <Screen>
       <div className="flex h-full flex-col items-center justify-center gap-16">
-        <p className="typo-xlarge text-center">
+        <p className="typo-xlarge text-active-foreground text-center">
           {lastResult ? (
             <span className="capitalize">{lastResult}</span>
           ) : (
