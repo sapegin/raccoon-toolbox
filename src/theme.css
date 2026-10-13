@@ -94,6 +94,8 @@
   --shadow-button-pressed:
     inset 0 1px 2px #0002, inset 1px 0 2px #0002, inset -1px 0 2px #0002;
   --shadow-input: inset 0 1px 3px #0001;
+  --shadow-dialog: 0 0 1rem #0002;
+  --shadow-color-picker-handle: 0 0 3px #000c;
 
   /* Text shadows */
   --text-shadow-button: 0 1px 1px #0002;
