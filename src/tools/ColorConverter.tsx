@@ -63,6 +63,16 @@ export function ColorConverter() {
     [setInput]
   );
 
+  const handleScreenColor = useCallback(
+    (newColor: Colord) => {
+      setColor(newColor);
+      setBaseColor(newColor);
+      setInput(newColor.toHex());
+      setErrorMessage('');
+    },
+    [setInput]
+  );
+
   const handleClear = useCallback(() => {
     setInput('');
     setColor(colord(defaultColorHex));
@@ -114,6 +124,7 @@ export function ColorConverter() {
           color={color}
           baseColor={baseColor}
           onChange={handleColorPickerChange}
+          onScreenColor={handleScreenColor}
         />
       </Panel>
     </Screen>

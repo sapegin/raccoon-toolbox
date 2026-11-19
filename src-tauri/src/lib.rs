@@ -46,6 +46,20 @@ fn set_selected_tool(app: AppHandle, tool_id: &str) -> Result<(), String> {
     Ok(())
 }
 
+/// Sample a color from the screen with the system eyedropper (macOS only).
+#[tauri::command]
+async fn pick_screen_color(app: AppHandle) -> Result<Option<String>, String> {
+    #[cfg(target_os = "macos")]
+    {
+        macos::pick_screen_color(app).await
+    }
+    #[cfg(not(target_os = "macos"))]
+    {
+        let _ = app;
+        Err("Screen color picker is only available on macOS".into())
+    }
+}
+
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
     tauri::Builder::default()
@@ -53,7 +67,8 @@ pub fn run() {
         .plugin(tauri_plugin_opener::init())
         .invoke_handler(tauri::generate_handler![
             set_selected_tool,
-            set_show_whitespace
+            set_show_whitespace,
+            pick_screen_color
         ])
         .setup(|app| {
             #[cfg(target_os = "macos")]

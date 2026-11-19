@@ -2856,6 +2856,7 @@ checksum = "69cdb34c158ceb288df11e18b4bd39de994f6657d83847bdffdbd7f346754b0f"
 name = "raccoon-toolbox"
 version = "0.1.0"
 dependencies = [
+ "block2 0.6.2",
  "objc2 0.6.4",
  "objc2-app-kit",
  "serde",
@@ -2864,6 +2865,7 @@ dependencies = [
  "tauri-build",
  "tauri-plugin-opener",
  "tauri-plugin-window-state",
+ "tokio",
 ]
 
 [[package]]
