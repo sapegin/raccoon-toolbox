@@ -1,3 +1,5 @@
+#[cfg(target_os = "macos")]
+mod macos;
 mod tools;
 
 use tauri::{
@@ -9,9 +11,6 @@ use tauri::{
     tray::TrayIconBuilder,
     AppHandle, Emitter, Manager, WindowEvent,
 };
-
-#[cfg(target_os = "macos")]
-use cocoa::appkit::NSApplication;
 
 use tools::TOOLS;
 
@@ -124,16 +123,14 @@ pub fn run() {
 
                 let support_project =
                     MenuItemBuilder::with_id("support-project", "Buy me Coffee").build(app)?;
-                let read_book =
-                    MenuItemBuilder::with_id("read-book", "Read my Book").build(app)?;
+                let read_book = MenuItemBuilder::with_id("read-book", "Read my Book").build(app)?;
                 let report_issue =
                     MenuItemBuilder::with_id("report-issue", "Report Issue").build(app)?;
                 let source_code =
                     MenuItemBuilder::with_id("source-code", "Source Code").build(app)?;
-                let hotkeys =
-                    MenuItemBuilder::with_id("toggle-hotkeys-dialog", "Hotkeys")
-                        .accelerator("F1")
-                        .build(app)?;
+                let hotkeys = MenuItemBuilder::with_id("toggle-hotkeys-dialog", "Hotkeys")
+                    .accelerator("F1")
+                    .build(app)?;
 
                 let help_menu = SubmenuBuilder::new(app, "Help")
                     .items(&[
@@ -186,12 +183,13 @@ pub fn run() {
                 let mut tray_menu_builder = MenuBuilder::new(app);
 
                 for tool in TOOLS {
-                      let item = MenuItemBuilder::with_id(tool.id, tool.name).build(app)?;
-                      tray_menu_builder = tray_menu_builder.item(&item);
+                    let item = MenuItemBuilder::with_id(tool.id, tool.name).build(app)?;
+                    tray_menu_builder = tray_menu_builder.item(&item);
                 }
 
                 let tray_separator = PredefinedMenuItem::separator(app)?;
-                let tray_quit = MenuItemBuilder::with_id("tray-quit", "Quit Raccoon Toolbox").build(app)?;
+                let tray_quit =
+                    MenuItemBuilder::with_id("tray-quit", "Quit Raccoon Toolbox").build(app)?;
                 let tray_menu = tray_menu_builder
                     .item(&tray_separator)
                     .item(&tray_quit)
@@ -210,14 +208,7 @@ pub fn run() {
                         } else if TOOLS.iter().any(|tool| tool.id == event_id) {
                             let _ = app.emit("select-tool", event_id);
                             #[cfg(target_os = "macos")]
-                            {
-                                use cocoa::appkit::NSApplicationActivationPolicy;
-                                unsafe {
-                                    let ns_app = NSApplication::sharedApplication(cocoa::base::nil);
-                                    ns_app.setActivationPolicy_(NSApplicationActivationPolicy::NSApplicationActivationPolicyRegular);
-                                    ns_app.activateIgnoringOtherApps_(cocoa::base::YES);
-                                }
-                            }
+                            macos::activate_frontmost();
                             if let Some(window) = app.get_webview_window("main") {
                                 let _ = window.show();
                                 let _ = window.set_focus();
@@ -238,11 +229,8 @@ pub fn run() {
                         }
                         #[cfg(target_os = "macos")]
                         {
-                            use cocoa::appkit::NSApplicationActivationPolicy;
-                            unsafe {
-                                let app = NSApplication::sharedApplication(cocoa::base::nil);
-                                app.setActivationPolicy_(NSApplicationActivationPolicy::NSApplicationActivationPolicyAccessory);
-                            }
+                            use objc2_app_kit::NSApplicationActivationPolicy;
+                            macos::set_activation_policy(NSApplicationActivationPolicy::Accessory);
                         }
                     }
                 });
