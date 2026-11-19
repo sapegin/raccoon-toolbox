@@ -10,7 +10,7 @@ export default defineConfig((env) => ({
 
   build: {
     chunkSizeWarningLimit: 1024,
-    rollupOptions:
+    rolldownOptions:
       env.isSsrBuild || env.mode === 'ssr'
         ? {
             input: './src/entry-server.tsx',

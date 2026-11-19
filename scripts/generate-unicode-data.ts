@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import unicodeNames from '@unicode/unicode-17.0.0/Names/index.js';
+import unicodeNames from '@unicode/unicode-17.0.0/Names/index.mjs';
 
 type UnicodeCharacter = [number, string];
 
@@ -95,7 +95,7 @@ const allowedCodePoints = new Set<number>();
 for (const blockName of includeBlocks) {
   try {
     const blockModule = (await import(
-      `@unicode/unicode-17.0.0/Block/${blockName}/code-points.js`
+      `@unicode/unicode-17.0.0/Block/${blockName}/code-points.mjs`
     )) as { default: number[] };
     const codePoints = blockModule.default;
     for (const code of codePoints) {
