@@ -1,9 +1,10 @@
 import { type Colord, colord } from 'colord';
 import { type ReactNode, useCallback, useState } from 'react';
 import { canPickScreenColor, pickScreenColor } from '../util/pickScreenColor';
-import { Button } from './Button';
 import { ColorPicker } from './ColorPicker';
 import { ColorSwatch } from './ColorSwatch';
+import { Icon } from './Icon';
+import { IconButton } from './IconButton';
 
 // TODO: Click on the base color swatch should set this color
 
@@ -45,18 +46,19 @@ export function ColorPickerWithPreview({
   return (
     <div className="flex h-full flex-col gap-2">
       <h3 className="sr-only">{label}</h3>
-      {showEyedropper && (
-        <Button
-          className="self-end"
-          onClick={handlePickFromScreen}
-          disabled={isPicking}
-        >
-          Pick color
-        </Button>
-      )}
-      <div className="rounded-normal border-light-border grid grid-cols-2 overflow-hidden border border-solid">
+      <div className="rounded-normal border-light-border relative grid grid-cols-2 overflow-hidden border border-solid">
         <ColorSwatch color={baseColor.toHex()} />
         <ColorSwatch color={color.toHex()} />
+        {showEyedropper && (
+          <IconButton
+            label="Pick color"
+            onClick={handlePickFromScreen}
+            disabled={isPicking}
+            className="bg-ui-background absolute top-2 right-2 z-1"
+          >
+            <Icon icon="eyedropper" className="size-5" />
+          </IconButton>
+        )}
       </div>
       <ColorPicker color={color} onChange={onChange} showAlpha={showAlpha} />
     </div>
